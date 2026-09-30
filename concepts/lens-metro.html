@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metro Lens Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/lens.css">
+<style>
+  svg.map .line{cursor:pointer}
+  svg.map .line:hover path.track{stroke-width:11}
+  svg.map .stn{cursor:pointer}
+  svg.map .stn:hover text{text-decoration:underline}
+  svg.map .badge text{font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">WikiMindMap <span>2027 · lens previews</span></div>
+    <nav class="lensnav" aria-label="Lenses">
+      <a href="lens-chapters.html">Chapters</a>
+      <a href="lens-kinds.html">Kinds</a>
+      <a href="lens-links.html">Links in / out</a>
+      <a href="lens-metro.html" aria-current="page">Metro</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p class="eyebrow">Lens preview · option 5</p>
+    <h1>Metro: the threads that run through an article</h1>
+    <p class="lede">The article is drawn as a metro line map. The grey line at the top is the article in reading order, one station per chapter. Each colored line is a linked article that comes up in several chapters. It stops wherever that chapter mentions it. You see at a glance which ideas carry the whole article and which appear only once.</p>
+  </div>
+
+  <div class="layout">
+    <div class="stage">
+      <div class="bar">
+        <div class="trail" id="trail" aria-label="Your path"></div>
+        <div class="controls">
+          <label for="density">Lines <input id="density" type="range" min="2" max="6" value="5"><output id="densityOut" for="density">5</output></label>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="chips" id="chips" aria-label="Sample articles"></div>
+        <span class="tag">Sample data</span>
+      </div>
+      <div class="map-scroll">
+        <svg class="map" id="map" viewBox="-620 -300 1240 600" role="img" aria-label="Metro lens map of the current article"></svg>
+      </div>
+      <div class="peek" id="peek" hidden>
+        <button class="x" id="peekX" type="button" aria-label="Close preview">×</button>
+        <p class="eyebrow" id="peekSec"></p>
+        <h3 id="peekT"></h3>
+        <p id="peekP"></p>
+        <dl id="peekFacts"></dl>
+        <div class="row" id="peekRow"></div>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <div class="card">
+        <h2>Reading the map</h2>
+        <ul>
+          <li><b>Grey line:</b> the article, one station per chapter, left to right</li>
+          <li><b>Colored line:</b> a linked article mentioned in two or more chapters</li>
+          <li><b>Stop:</b> a chapter that mentions it; the thin connector leads up to that chapter</li>
+          <li><b>Longer line:</b> a thread that runs through more of the article</li>
+        </ul>
+        <p class="muted">Tap a chapter name to list its links. Tap a line or its badge for a preview, and ⊕ to make it the center.</p>
+      </div>
+      <div class="card">
+        <h2>What this lens is good at</h2>
+        <ul>
+          <li>Shows what holds a long article together</li>
+          <li>Keeps the article’s reading order, unlike the other lenses</li>
+          <li>Needs no AI in this form: a line is simply a link that recurs across chapters</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Weak spots to judge</h2>
+        <ul>
+          <li>Short articles have few recurring links, so the map is nearly empty</li>
+          <li>Generic links (a country, a year) recur a lot and need filtering</li>
+          <li>Real themes that use different words in each chapter need AI to spot</li>
+          <li>Recentering jumps from a timeline view to another timeline; it feels less like wandering</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <p class="foot">Titles are real Wikipedia articles. Chapter names and link placement are simplified sample data in <code>assets/sample-data.js</code>. Bold labels have sample data behind them.</p>
+</div>
+
+<script src="assets/sample-data.js"></script>
+<script src="assets/lens-common.js"></script>
+<script>
+(function () {
+  const { el, center, radius, peekLink, openPeek, recenter, onActivate, linkOf, fmt, redraw } = window.WMMStage;
+  const { ARTICLES } = window.WMM;
+  const COLORS = ["--b1", "--b3", "--b2", "--b4", "--b5", "--b6"];
+  const density = document.getElementById("density");
+  const densityOut = document.getElementById("densityOut");
+  const BASE_Y = -165;
+
+  const linksIn = (s) => (s.subs ? s.subs.flatMap((x) => x.links) : s.links);
+
+  function render(g, term, a) {
+    const secs = a.sections.filter((s) => !s.housekeeping);
+    const n = secs.length;
+    const xs = secs.map((_, i) => -260 + i * (820 / Math.max(n - 1, 1)));
+
+    // Lines: links that appear in two or more chapters.
+    const where = new Map();
+    secs.forEach((s, i) => new Set(linksIn(s)).forEach((t) => where.set(t, [...(where.get(t) || []), i])));
+    let lines = [...where.entries()]
+      .filter(([, at]) => at.length >= 2)
+      .map(([t, at]) => ({ link: linkOf(a, t), at }))
+      .sort((p, q) => q.at.length - p.at.length || q.link.v - p.link.v)
+      .slice(0, +density.value)
+      .sort((p, q) => p.at[0] - q.at[0] || q.at.length - p.at.length);
+    const lane = Math.min(62, 300 / Math.max(lines.length - 1, 1));
+    lines.forEach((l, k) => { l.y = -80 + k * lane; l.color = `var(${COLORS[k % COLORS.length]})`; });
+
+    // Article title in the top left corner.
+    const tg = el("g", { transform: "translate(-490,-250)" }, g);
+    center(tg, term);
+
+    // The article line.
+    el("path", { d: `M${xs[0]} ${BASE_Y} L${xs[n - 1]} ${BASE_Y}`, stroke: "var(--muted)", "stroke-width": 5, "stroke-linecap": "round", opacity: 0.55 }, g);
+
+    // Connectors from each chapter station down to its lowest stop.
+    secs.forEach((s, i) => {
+      const stops = lines.filter((l) => l.at.includes(i));
+      if (stops.length) {
+        const low = Math.max(...stops.map((l) => l.y));
+        el("path", { d: `M${xs[i]} ${BASE_Y} L${xs[i]} ${low}`, stroke: "var(--muted)", "stroke-width": 1.5, "stroke-dasharray": "3 4", opacity: 0.7 }, g);
+      }
+    });
+
+    // Colored lines with badges.
+    lines.forEach((l) => {
+      const from = `${l.at.length} chapters`;
+      const lg = el("g", { class: "line", tabindex: 0, role: "button", "aria-label": `Preview ${l.link.t}` }, g);
+      el("path", { class: "track", d: `M${xs[l.at[0]]} ${l.y} L${xs[l.at[l.at.length - 1]]} ${l.y}`, stroke: l.color, "stroke-width": 9, "stroke-linecap": "round", fill: "none" }, lg);
+      onActivate(lg, () => peekLink(l.link, from));
+
+      const bg = el("g", { class: "badge line", tabindex: 0, role: "button", "aria-label": `Preview ${l.link.t}` }, g);
+      const t = el("text", { x: -588, y: l.y + 5, "font-size": 14 }, bg);
+      t.style.fill = "var(--paper)";
+      t.textContent = l.link.t;
+      const w = t.getComputedTextLength() + 26;
+      bg.insertBefore(el("rect", { x: -600, y: l.y - 15, width: w, height: 30, rx: 15, fill: l.color }), t);
+      onActivate(bg, () => peekLink(l.link, from));
+      const endX = -600 + w;
+      if (xs[l.at[0]] - endX > 40) {
+        el("path", { d: `M${endX + 30} ${l.y} L${xs[l.at[0]] - 12} ${l.y}`, stroke: l.color, "stroke-width": 2, "stroke-dasharray": "1 6", "stroke-linecap": "round", opacity: 0.8 }, g);
+      }
+      const cx = endX + 15;
+      const rc = el("g", { class: "rc", tabindex: 0, role: "button", "aria-label": `Make ${l.link.t} the center` }, g);
+      el("circle", { cx, cy: l.y, r: 9, fill: "var(--accent-soft)", stroke: "var(--accent)", "stroke-width": 1.2 }, rc);
+      el("path", { d: `M${cx} ${l.y - 5}v3M${cx} ${l.y + 2}v3M${cx - 5} ${l.y}h3M${cx + 2} ${l.y}h3`, stroke: "var(--accent)", "stroke-width": 1.6, "stroke-linecap": "round" }, rc);
+      onActivate(rc, () => recenter(l.link.t));
+
+      // Stops
+      l.at.forEach((i) => el("circle", { cx: xs[i], cy: l.y, r: 7, fill: "var(--paper)", stroke: "var(--ink)", "stroke-width": 3 }, g));
+    });
+
+    // Chapter stations and names on the article line.
+    secs.forEach((s, i) => {
+      const all = linksIn(s);
+      const stops = lines.filter((l) => l.at.includes(i)).map((l) => l.link.t);
+      const sg = el("g", { class: "stn", tabindex: 0, role: "button", "aria-label": `Chapter ${s.t}` }, g);
+      el("circle", { cx: xs[i], cy: BASE_Y, r: 9, fill: "var(--paper)", stroke: "var(--ink)", "stroke-width": 3 }, sg);
+      const t = el("text", { x: xs[i] + 4, y: BASE_Y - 20, "font-size": 15, "font-weight": 800, transform: `rotate(-28 ${xs[i] + 4} ${BASE_Y - 20})` }, sg);
+      t.textContent = s.t;
+      const c = el("text", { x: xs[i], y: BASE_Y + 26, "text-anchor": "middle", "font-size": 11, class: "muted" }, g);
+      c.style.fontFamily = "var(--mono)";
+      c.textContent = `${i + 1} · ${all.length} links`;
+      onActivate(sg, () => openPeek({
+        eyebrow: `Chapter ${i + 1} of ${n}`,
+        title: s.t,
+        text: "Links in this chapter: " + [...new Set(all)].join(", ") + ".",
+        facts: [["links", fmt(new Set(all).size)], ["lines stopping", stops.length ? stops.join(", ") : "none"], ["subchapters", s.subs ? s.subs.map((x) => x.t).join(", ") : "none"]],
+        wiki: `${term}#${s.t}`
+      }));
+    });
+
+    if (!lines.length) {
+      const e = el("text", { x: 150, y: 40, "text-anchor": "middle", "font-size": 15, class: "muted" }, g);
+      e.textContent = "No link appears in more than one chapter.";
+    }
+  }
+
+  density.addEventListener("input", () => { densityOut.textContent = density.value; redraw(); });
+  window.WMMStage.init({ render });
+})();
+</script>
+</body>
+</html>

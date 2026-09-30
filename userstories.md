@@ -1,0 +1,303 @@
+# User stories and implementation plan
+
+Work through the milestones in order. A milestone is done when every story in it is ticked and its **Done when** line holds. The MVP ("Relaunch") is M0–M4. The other lenses follow in M5–M7.
+
+**Conventions**
+- `US-xx` is a user story (visible to readers). `TS-xx` is a technical story (needed, not visible).
+- Tick `[x]` when an acceptance criterion is met and tested. If something ended up different from the plan, add a line `> Note: …` under the story.
+- Size: **S** takes a few hours, **M** about a day, **L** several days (of AI-assisted work).
+
+**Personas**
+- **Curious reader:** wanders from topic to topic for fun.
+- **Student:** wants a quick overview of one article before reading it.
+- **Teacher:** shares a map as a starting point for a class.
+
+---
+
+## M0 – Setup and spike
+
+Goal: a reproducible dev environment, a deployable empty app, and certainty that the Wikipedia APIs behave as `architecture.md` assumes.
+
+### TS-00 Dev container · S
+Set up the development environment as described in `architecture.md` §14. All later stories are done inside it.
+- [ ] `.devcontainer/devcontainer.json` based on `mcr.microsoft.com/devcontainers/typescript-node:22` (Node 22 LTS, npm, git)
+- [ ] Features: GitHub CLI and Claude Code (`ghcr.io/anthropics/devcontainer-features/claude-code`; check the current name and version before use)
+- [ ] VS Code extensions installed automatically: Claude Code, ESLint, Prettier, Vitest, Playwright, EditorConfig
+- [ ] `node_modules` lives in a named volume (fast on macOS). `~/.claude` lives in a named volume, so the Claude login and settings survive rebuilds.
+- [ ] `postCreateCommand` runs `npm ci` (once `package.json` exists) and `npx playwright install --with-deps chromium`
+- [ ] Ports forwarded: 5173 (dev server), 4173 (preview build), 9323 (Playwright report)
+- [ ] Format on save with Prettier, and ESLint fixes on save, in `.devcontainer` settings
+- [ ] Opening the repo in VS Code offers "Reopen in Container". After the build, `node -v` shows v22 and `claude --version` works in the container terminal.
+- [ ] The README says how to start (Docker Desktop or OrbStack on the host, then "Reopen in Container") and that nothing else needs installing on the host
+
+> Order: TS-00 comes first. Create `devcontainer.json` with the `npm ci` step guarded (`[ -f package.json ] && npm ci || true`), so the container builds before TS-02 creates `package.json`.
+
+### TS-01 API spike · S
+Check the open points in `architecture.md` §13 with a throwaway script (`scripts/spike.ts`, deleted afterwards) or in the browser console on a GitHub Pages test page.
+- [ ] `rest.php/v1/page/{title}/html` returns Parsoid HTML with nested `<section>` elements, for `en` and `de`
+- [ ] CORS works from a `github.io` origin for `rest.php` and `api.php?origin=*`, with the `Api-User-Agent` header
+- [ ] The summary endpoint to use is decided
+- [ ] How red links and redirects appear in Parsoid HTML is documented
+- [ ] `prop=pageviews` is available on `en`, `de` and `fr`
+- [ ] Findings are written into `architecture.md` §13 and the plan is adjusted if needed
+
+### TS-02 Project scaffold · S
+- [ ] Vite + React 19 + TypeScript (strict), Node 22, npm, all run inside the dev container
+- [ ] `.nvmrc` / `engines` set to Node 22, so CI and the container match
+- [ ] ESLint (typescript-eslint, react-hooks, `no-restricted-imports` for the layer rules in `architecture.md` §8) + Prettier
+- [ ] Vitest with happy-dom, and Playwright installed
+- [ ] Scripts: `dev`, `build`, `check`, `test`, `e2e`, `fixtures`
+- [ ] Folder structure from `architecture.md` §8 with placeholder `index.ts` files
+- [ ] `.gitignore` (node_modules, dist, .DS_Store, test results)
+- [ ] `src/ui/styles/tokens.css` with the tokens from `concepts/assets/lens.css` (light + dark)
+- [ ] A top-level `README.md` with a short project description and the commands
+
+### TS-03 CI and deploy to GitHub Pages · S
+- [ ] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
+- [ ] `BASE_PATH` is set for `/wikimindmap-next/`
+- [ ] `404.html` is a copy of `index.html`, so deep links load the app
+- [ ] The placeholder page is live on `https://nyfelix.github.io/wikimindmap-next/`, and `/en/Mind_map` on it loads the app instead of GitHub's 404 page
+
+### TS-04 HTTP client and fixture recorder · M
+- [ ] `src/sources/http.ts`: adds `Api-User-Agent`, adds `origin=*` for `api.php`, allows at most 4 requests in flight, retries on 429/503 with backoff (1 s, 2 s, 4 s), and times out after 15 s
+- [ ] Typed errors: `NotFound`, `RateLimited`, `Network`, `Unexpected`
+- [ ] `npm run fixtures -- <lang> "<Title>"` stores the files from `datamodel.md` §9
+- [ ] The starter set of fixtures from `datamodel.md` §9 is recorded and committed
+- [ ] Unit tests for the retry and concurrency logic, with a mocked `fetch`
+
+**Done when:** the repo opens in the dev container with everything working, the empty app deploys from `main`, and the spike findings are recorded.
+
+---
+
+## M1 – Article model
+
+Goal: any Wikipedia article can be turned into a reliable `Article`.
+
+### TS-05 Core types and title helpers · S
+- [ ] `src/core/types.ts` matches `datamodel.md` §1–§6
+- [ ] `titles.ts`: URL ↔ title, href → target + fragment, and namespace check using siteinfo
+- [ ] `housekeeping.ts` with the lists from `datamodel.md` §7
+- [ ] Unit tests: umlauts, parentheses, `#fragment`, `File:` / `Datei:` links, underscores
+
+### TS-06 Parsoid parser · L
+- [ ] `parseParsoid(html, ref, siteinfo, domParser): Article` follows the rules in `datamodel.md` §2
+- [ ] Nested sections become `children` with correct `level`
+- [ ] Every link has the correct `origin`: body, hatnote, infobox, navbox, template or reference
+- [ ] Self-links, non-article namespaces and duplicates at the same position are skipped
+- [ ] Red links are flagged
+- [ ] The parser spec version is read and a warning is logged when it's newer than tested
+- [ ] Snapshot tests for all starter fixtures, plus targeted assertions:
+  - Mind map has a section "History"
+  - a link to Tony Buzan appears in body text
+  - navbox links are marked `navbox`
+- [ ] Parsing the longest fixture (World War II) takes < 150 ms in the test run
+
+### TS-07 Fallback parser · M
+- [ ] `parseFallback` builds the same `Article` shape from `action=parse&prop=sections` and per-section `prop=links`. `origin` is always `body`, since this route can't tell where links come from.
+- [ ] `loadArticle(ref)` uses Parsoid first and the fallback on parser error, and records which one was used
+- [ ] A test compares both results for "Mind map": same sections, and ≥ 90 % overlap of body links
+
+### TS-08 Redirect resolution · S
+- [ ] `resolveRedirects(lang, titles)` works in batches of 50 and returns `Map<Title, Title>`
+- [ ] Leaves are deduplicated after resolution (`Mind-map` and `Mind map` become one)
+- [ ] Unit tests with a recorded `redirects.json`
+
+**Done when:** `loadArticle` returns a correct `Article` for all fixtures, and tests cover both parsers.
+
+---
+
+## M2 – Chapters lens on a static map
+
+Goal: the 2007 map, drawn from a fixture, with no search yet. This is the core of the product.
+
+### US-01 See an article as a mind map · L
+*As a curious reader, I want to see an article's chapters as branches and its links as leaves, so I get an overview at a glance.*
+- [ ] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
+- [ ] Only `body` and `hatnote` links are shown by default
+- [ ] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
+- [ ] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
+  - chapters are split between the right and left side, clockwise from the top right, so both sides get a similar number of rows
+  - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
+- [ ] `ui/map/SvgMap.tsx` renders `PositionedMap`:
+  - center pill
+  - thick trunks, medium branches, thin twigs
+  - leaf dots and labels
+  - same look as `concepts/lens-chapters.html`
+- [ ] A dev-only route `/dev/fixture/:lang/:title` renders any fixture
+
+### US-02 Fold and unfold parts · M
+*As a student, I want to fold chapters I'm not interested in, so long articles stay readable.*
+- [ ] Clicking or pressing Enter on a chapter or subchapter name toggles it. A folded part shows `+N links`.
+- [ ] Folding re-runs the layout, and nodes move smoothly (≤ 450 ms, none with reduced motion)
+- [ ] Folded IDs are written to the URL (`fold=`)
+
+### US-03 Control how much is shown · S
+*As a reader, I want to choose how many links each part shows, so I can go from overview to detail.*
+- [ ] A density slider (2–8, default 4) and a "Show See also" toggle
+- [ ] Parts with more links show a `+N more` node
+- [ ] Both settings are written to the URL (`density=`, `hk=`)
+
+### TS-09 Lens registry · S
+- [ ] `lenses/index.ts` exports `lenses: Record<LensId, Lens>` and `getLens(id)`
+- [ ] The UI only talks to lenses through this registry, so M5–M7 add a file and one line
+
+**Done when:** every starter fixture renders as a readable Chapters map in `/dev/fixture/…`, in light and dark, and with folding.
+
+---
+
+## M3 – Live search, recenter and trail
+
+Goal: the full 2007 loop with live data.
+
+### US-04 Search for a term · M
+*As a reader, I want to type a term and pick from suggestions, so I land on the right article.*
+- [ ] A search box with suggestions after 2 characters, debounced by 200 ms. Each suggestion shows its title and short description.
+- [ ] Arrow keys, Enter and Escape work. Choosing a suggestion navigates to `/{lang}/{Title}`.
+- [ ] Pressing Enter without choosing picks the first suggestion. With no results, the box shows "No article found for '…'".
+- [ ] The start page shows the search box, a featured-article link and a random-article link
+
+### US-05 Open any article by URL · M
+*As a teacher, I want to share a link that opens a specific map, so my class starts at the same place.*
+- [ ] `/{lang}/{Title}` loads the article live, applying the query parameters from `datamodel.md` §8
+- [ ] Redirect titles are replaced in the URL by the target title (`/en/Mindmap` becomes `/en/Mind_map`)
+- [ ] Unknown titles show "This article doesn't exist on {lang}.wikipedia.org", with a search box
+- [ ] Loading shows the center immediately and the branches as soon as they're parsed. There's no blank screen.
+- [ ] Network errors show a message with a retry button
+
+### US-06 Preview a linked article · M
+*As a reader, I want a short preview of a leaf before I jump, so I know where I'm going.*
+- [ ] Clicking or pressing Enter on a leaf label opens the preview card. It shows the title, short description, the extract (1–3 sentences), a thumbnail if there is one, and which chapter the link is in.
+- [ ] Buttons: "⊕ Make it the center" and "Open on Wikipedia ↗" (opens in a new tab)
+- [ ] Clicking the center pill shows the article's own summary
+- [ ] Summaries load when a card opens and are cached. Escape closes the card.
+
+### US-07 Recenter on a leaf · L
+*As a curious reader, I want to make any leaf the new center with one tap, so I can wander through Wikipedia.*
+- [ ] Every leaf has a ⊕ button (a separate focusable control with `aria-label="Make {title} the center"`)
+- [ ] Recentering navigates to the new URL. The new map animates in, nodes present in both maps move, and the others fade. ≤ 450 ms; none with reduced motion.
+- [ ] The lens, density and hide/show settings are kept; folds are reset
+- [ ] Red links have no ⊕ and are shown muted
+
+### US-08 See and use my trail · M
+*As a curious reader, I want to see the path I took and jump back, so I don't get lost.*
+- [ ] A trail above the map: `Mind map › Tony Buzan › Chess`, with the current step highlighted
+- [ ] Clicking a step goes back to it. Browser back and forward move along the trail.
+- [ ] Recentering from an earlier step cuts off the later steps
+- [ ] The trail survives a page reload (`sessionStorage`)
+
+### TS-10 Caching · S
+- [ ] TanStack Query with an IndexedDB persister, using the keys and lifetimes from `architecture.md` §6
+- [ ] Going back along the trail makes no network request (verified in an e2e test)
+- [ ] The app still works when IndexedDB is unavailable
+
+**Done when:** a reader can search, open a map, preview, recenter three times and go back, all with live data on the deployed site.
+
+---
+
+## M4 – MVP polish and relaunch
+
+Goal: good enough to announce.
+
+### US-09 Choose the Wikipedia language · S
+*As a German-speaking reader, I want maps from de.wikipedia.org.*
+- [ ] A language picker in the search box. The initial choice is the browser language if a wiki exists for it, otherwise `en`.
+- [ ] Switching language on a map offers the same article in the other language, if it exists (using `langlinks`)
+- [ ] Housekeeping lists work for `en`, `de` and `fr`
+
+### US-10 Use it on a phone · M
+*As a reader on a phone, I want the map to fit and be tappable.*
+- [ ] Below 768 px, first-level branches are shown and tapping one expands its leaves
+- [ ] The preview card is a bottom sheet
+- [ ] All tap targets are ≥ 44 × 44 px. Pinch-zoom and pan work on the map.
+- [ ] Playwright tests at 375 × 812
+
+### US-11 Read the map without seeing it · M
+*As a screen-reader user, I want the map as a structured list, so I can use the same features.*
+- [ ] `OutlineView` renders the same `MapGraph` as nested lists, with the same preview and recenter buttons
+- [ ] An "Outline / Map" toggle. Screen readers get the outline first (skip link).
+- [ ] The whole flow works with keyboard only: search → map → preview → recenter → trail
+- [ ] An axe-core check in Playwright shows no serious issues
+
+### US-12 Know what this is · S
+*As a first-time visitor, I want to understand the idea and its history.*
+- [ ] An "About" page: the idea, the 2007 history, a link to the old repo and to Wikipedia, and a note on data sources and licenses (Wikipedia content is CC BY-SA)
+- [ ] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article
+
+### TS-11 Performance and error budget · S
+- [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
+- [ ] Initial JS is < 200 kB gzipped
+- [ ] Errors are caught by an error boundary with a friendly message; no blank screens
+
+### TS-12 Release · S
+- [ ] Version `1.0.0` is tagged, with a changelog in `README.md`
+- [ ] If a custom domain is chosen, DNS is set up and `BASE_PATH` switched to `/`
+
+**Done when:** the MVP is live and announced. 🎉
+
+---
+
+## M5 – Kinds lens
+
+Preview: `concepts/lens-kinds.html`
+
+### TS-13 Kind mapping table · M
+- [ ] `scripts/build-kind-map.ts` queries Wikidata SPARQL for the ~1,000 most common P31 classes of articles and walks their P279 superclasses to one of the six kinds. It writes `lenses/kindMap.json` (QID → kind).
+- [ ] Rules from the preview: humans and fictional characters → people; organizations → orgs; creative works and software → works; events → events; geographic features → places; anything else → concepts
+- [ ] The table is checked in and regenerated manually (documented in `README.md`)
+
+### TS-14 Page views and Wikidata sources · M
+- [ ] `sources/pageviews.ts` (batches of 50, 30-day sum) and `sources/wikidata.ts` (pageprops → `wbgetentities` P31 → `kindMap`)
+- [ ] The loader fetches them only when the active lens declares `pageviews` or `kinds` in `needs`
+- [ ] Fixtures are recorded for the starter set
+
+### US-13 See links grouped by kind · M
+*As a curious reader, I want to see people, places, works and so on as fixed branches, so every map reads the same way.*
+- [ ] Six fixed branches in fixed positions, the same as the preview. Empty branches are shown as dotted lines with "none linked".
+- [ ] Dot size is based on page views. Leaves are ranked by page views.
+- [ ] The preview card shows kind, "instance of" and views per month
+
+### US-14 Switch lenses · S
+*As a reader, I want to switch between Chapters and Kinds on the same article.*
+- [ ] The lens switch shows the registered lenses, and switching keeps the center and the trail
+- [ ] `lens=` is in the URL, and the trail records the lens used for each step
+
+---
+
+## M6 – Links in / out lens
+
+Preview: `concepts/lens-links.html`
+
+### TS-15 Incoming links source · S
+- [ ] `sources/linksHere.ts` uses `list=backlinks` in namespace 0 without redirects, pages up to a cap of 2,000, and reports `total` and `capped`
+- [ ] Links coming only from navigation boxes are excluded where they can be detected (optional, noted if not feasible)
+
+### US-15 See where a topic comes from and leads to · M
+*As a student, I want to see which articles point to this one and which it points to, so I understand its context.*
+- [ ] `layouts/bipolar.ts`: incoming links on the left, outgoing on the right, both-way links as pills in a band on top, with arrows showing direction
+- [ ] Each side is ranked by page views and has its own density
+- [ ] Totals are shown per side ("Links here · 2,000+")
+
+---
+
+## M7 – Metro lens
+
+Preview: `concepts/lens-metro.html`
+
+### US-16 See the threads through an article · M
+*As a student, I want to see which ideas run through a long article, so I know what holds it together.*
+- [ ] `lenses/metro.ts`: a line is a linked article that occurs in ≥ 2 top-level chapters (body and hatnote links only). Rank by chapter count, then page views.
+- [ ] `layouts/metroLines.ts`: the article line on top, one station per chapter, and colored lines with stops on their own lanes, as in the preview
+- [ ] Clicking a station shows the chapter's links. Clicking a line gives the preview and recenter.
+- [ ] Articles without recurring links show "No link appears in more than one chapter"
+
+---
+
+## Later (not planned in detail)
+
+- Export the map as PNG, SVG, OPML and Markdown
+- Share a journey (the whole trail as a link)
+- Reader clicks lens (Wikipedia Clickstream; needs a Worker)
+- Path finder between two articles; "Why is this linked?" with the quoted sentence and optional AI explanation
+- Compare two maps
+- Classroom mode
+- Other wikis (Wiktionary, Wikivoyage)

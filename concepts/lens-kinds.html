@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kinds Lens Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/lens.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">WikiMindMap <span>2027 · lens previews</span></div>
+    <nav class="lensnav" aria-label="Lenses">
+      <a href="lens-chapters.html">Chapters</a>
+      <a href="lens-kinds.html" aria-current="page">Kinds</a>
+      <a href="lens-links.html">Links in / out</a>
+      <a href="lens-metro.html">Metro</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p class="eyebrow">Lens preview · option 1</p>
+    <h1>Kinds: the same six branches on every map</h1>
+    <p class="lede">Branches no longer follow the article’s chapters. Every linked article is sorted by what it is, according to Wikidata: a person, an organization, a work, a concept, an event or a place. The branches always sit in the same spot, so readers learn where to look. Dot size shows how many people read that article each month.</p>
+  </div>
+
+  <div class="layout">
+    <div class="stage">
+      <div class="bar">
+        <div class="trail" id="trail" aria-label="Your path"></div>
+        <div class="controls">
+          <label for="density">Leaves per branch <input id="density" type="range" min="2" max="8" value="5"><output id="densityOut" for="density">5</output></label>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="chips" id="chips" aria-label="Sample articles"></div>
+        <span class="tag">Sample data</span>
+      </div>
+      <div class="map-scroll">
+        <svg class="map" id="map" viewBox="-580 -300 1160 600" role="img" aria-label="Kinds lens map of the current article"></svg>
+      </div>
+      <div class="peek" id="peek" hidden>
+        <button class="x" id="peekX" type="button" aria-label="Close preview">×</button>
+        <p class="eyebrow" id="peekSec"></p>
+        <h3 id="peekT"></h3>
+        <p id="peekP"></p>
+        <dl id="peekFacts"></dl>
+        <div class="row" id="peekRow"></div>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <div class="card">
+        <h2>How a link gets its branch</h2>
+        <ul class="legend" id="legend"></ul>
+        <p class="muted">The app reads the Wikidata “instance of” value of each linked article and walks up its parent classes until one of these six matches. Anything unmatched goes to Concepts.</p>
+      </div>
+      <div class="card">
+        <h2>What this lens is good at</h2>
+        <ul>
+          <li>Answers “who and what is connected to this?” at a glance</li>
+          <li>Every map has the same shape, so it can be learned</li>
+          <li>Empty branches carry meaning too: no places, no events</li>
+          <li>Needs no AI, only Wikidata and page views</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Weak spots to judge</h2>
+        <ul>
+          <li>Concepts gets crowded on abstract topics; it may need its own split, for example methods vs. fields</li>
+          <li>The link to the article’s own text is lost; the preview card has to show where the link appears</li>
+          <li>Some Wikidata types are odd or missing and need a hand-made mapping</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <p class="foot">Titles are real Wikipedia articles. Kinds, “instance of” values, view counts and link directions are illustrative sample data in <code>assets/sample-data.js</code>. Tap a label for a preview, tap ⊕ to make it the center. Bold labels have sample data behind them.</p>
+</div>
+
+<script src="assets/sample-data.js"></script>
+<script src="assets/lens-common.js"></script>
+<script>
+(function () {
+  const { el, node, center, radius, fmt, peekLink } = window.WMMStage;
+  const { KINDS, ARTICLES } = window.WMM;
+
+  // Fixed slots: left column and right column, like a hand-drawn mind map.
+  const SLOTS = {
+    people:   { side: -1, y: -185 },
+    orgs:     { side: -1, y: 0 },
+    places:   { side: -1, y: 185 },
+    concepts: { side:  1, y: -185 },
+    works:    { side:  1, y: 0 },
+    events:   { side:  1, y: 185 }
+  };
+  const density = document.getElementById("density");
+  const densityOut = document.getElementById("densityOut");
+
+  const legend = document.getElementById("legend");
+  KINDS.forEach((k) => {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", `var(${k.color})`);
+    li.innerHTML = `<div><b>${k.label}</b><br><span>${k.rule}</span></div>`;
+    legend.appendChild(li);
+  });
+
+  function render(g, term, a) {
+    const max = +density.value;
+    KINDS.forEach((k) => {
+      const s = SLOTS[k.id];
+      const col = `var(${k.color})`;
+      const items = a.links.filter((l) => l.kind === k.id).sort((x, y) => y.v - x.v);
+      const shown = items.slice(0, max);
+      const bx = s.side * 175, by = s.y;
+      const right = s.side > 0;
+      const empty = !items.length;
+
+      // trunk from center to branch point
+      el("path", {
+        d: `M${s.side * 60} ${s.y * 0.08} C${s.side * 120} ${s.y * 0.1}, ${s.side * 130} ${by}, ${bx} ${by}`,
+        stroke: col, "stroke-width": empty ? 3 : 9, fill: "none", "stroke-linecap": "round",
+        "stroke-dasharray": empty ? "2 9" : "none", opacity: empty ? 0.6 : 1
+      }, g);
+
+      // branch label sits above the branch point
+      const lbl = el("text", { x: bx, y: by - 16, "text-anchor": "middle", "font-size": 17, "font-weight": 800, class: empty ? "muted" : "" }, g);
+      lbl.textContent = k.label;
+      const cnt = el("text", { x: bx, y: by + 26, "text-anchor": "middle", "font-size": 11, class: "muted" }, g);
+      cnt.style.fontFamily = "var(--mono)";
+      cnt.textContent = empty ? "none linked" : `${items.length} linked`;
+
+      // leaves stacked in a column beside the branch
+      const gap = 23;
+      shown.forEach((l, i) => {
+        const ly = by + (i - (shown.length - 1) / 2) * gap;
+        const lx = s.side * 290;
+        el("path", {
+          d: `M${bx + s.side * 8} ${by} C${bx + s.side * 60} ${by}, ${lx - s.side * 70} ${ly}, ${lx} ${ly}`,
+          stroke: col, "stroke-width": 1.8, fill: "none", opacity: 0.75
+        }, g);
+        node(g, {
+          x: lx, y: ly, r: radius(l.v), color: col, label: l.t, right,
+          bold: !!ARTICLES[l.t], link: l, onPeek: () => peekLink(l, k.label)
+        });
+      });
+      if (items.length > shown.length) {
+        const more = el("text", {
+          x: s.side * 290, y: by + ((shown.length - 1) / 2) * gap + 24,
+          "text-anchor": right ? "start" : "end", "font-size": 12, class: "muted"
+        }, g);
+        more.textContent = `+${items.length - shown.length} more`;
+      }
+    });
+    center(g, term);
+  }
+
+  density.addEventListener("input", () => {
+    densityOut.textContent = density.value;
+    window.WMMStage.redraw();
+  });
+
+  window.WMMStage.init({ render });
+})();
+</script>
+</body>
+</html>

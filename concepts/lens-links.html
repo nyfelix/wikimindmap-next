@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Links In/Out Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/lens.css">
+<style>
+  svg.map .pill:hover .lbl{text-decoration:underline}
+  svg.map .zone{font-family:var(--mono);font-size:12px;letter-spacing:.08em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">WikiMindMap <span>2027 · lens previews</span></div>
+    <nav class="lensnav" aria-label="Lenses">
+      <a href="lens-chapters.html">Chapters</a>
+      <a href="lens-kinds.html">Kinds</a>
+      <a href="lens-links.html" aria-current="page">Links in / out</a>
+      <a href="lens-metro.html">Metro</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p class="eyebrow">Lens preview · option 3</p>
+    <h1>Links in / out: where a topic comes from and where it leads</h1>
+    <p class="lede">The map is split by link direction. On the left are articles that link <em>to</em> this one: the context the topic belongs to. On the right are articles this one links <em>to</em>: its content. Links that go both ways are the strongest ties and sit in their own band on top.</p>
+  </div>
+
+  <div class="layout">
+    <div class="stage">
+      <div class="bar">
+        <div class="trail" id="trail" aria-label="Your path"></div>
+        <div class="controls">
+          <label for="density">Per side <input id="density" type="range" min="3" max="8" value="6"><output id="densityOut" for="density">6</output></label>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="chips" id="chips" aria-label="Sample articles"></div>
+        <span class="tag">Sample data</span>
+      </div>
+      <div class="map-scroll">
+        <svg class="map" id="map" viewBox="-600 -320 1200 640" role="img" aria-label="Links in and out map of the current article">
+        </svg>
+      </div>
+      <div class="peek" id="peek" hidden>
+        <button class="x" id="peekX" type="button" aria-label="Close preview">×</button>
+        <p class="eyebrow" id="peekSec"></p>
+        <h3 id="peekT"></h3>
+        <p id="peekP"></p>
+        <dl id="peekFacts"></dl>
+        <div class="row" id="peekRow"></div>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <div class="card">
+        <h2>Reading the map</h2>
+        <ul class="legend">
+          <li style="--c:var(--b3)"><div><b>Links here</b><br><span>They mention this topic, it does not mention them. Often the bigger picture.</span></div></li>
+          <li style="--c:var(--b4)"><div><b>Both ways</b><br><span>They link each other. The closest relatives.</span></div></li>
+          <li style="--c:var(--b1)"><div><b>Links out</b><br><span>This article mentions them, they don’t link back. Often details and background.</span></div></li>
+        </ul>
+        <p class="muted">Each side shows the most-read articles first. The totals show how many links exist in each direction.</p>
+      </div>
+      <div class="card">
+        <h2>What this lens is good at</h2>
+        <ul>
+          <li>Shows context the article itself never mentions (who cites this topic)</li>
+          <li>“Both ways” is a cheap, strong signal of close relatives</li>
+          <li>Two API calls per map: <code>prop=links</code> and <code>prop=linkshere</code></li>
+          <li>Works the same on every article and every language</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Weak spots to judge</h2>
+        <ul>
+          <li>Popular topics have thousands of incoming links; ranking decides everything</li>
+          <li>Incoming links from lists, templates and navigation boxes add noise and need filtering</li>
+          <li>Says nothing about what kind of thing a link is; could be combined with the Kinds lens as node colors</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <p class="foot">Titles are real Wikipedia articles. Link directions, totals and view counts are illustrative sample data in <code>assets/sample-data.js</code>. Tap a label for a preview, tap ⊕ to make it the center. Bold labels have sample data behind them.</p>
+</div>
+
+<script src="assets/sample-data.js"></script>
+<script src="assets/lens-common.js"></script>
+<script>
+(function () {
+  const { el, node, center, radius, fmt, peekLink, recenter, onActivate } = window.WMMStage;
+  const { ARTICLES } = window.WMM;
+  const density = document.getElementById("density");
+  const densityOut = document.getElementById("densityOut");
+  const svg = document.getElementById("map");
+
+  // Arrowhead markers, one per direction color.
+  function defs(g) {
+    const d = el("defs", {}, g);
+    [["in", "--b3"], ["out", "--b1"], ["both", "--b4"]].forEach(([id, c]) => {
+      const m = el("marker", { id: "arr-" + id, viewBox: "0 0 10 10", refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse" }, d);
+      el("path", { d: "M0 0L10 5L0 10z", fill: `var(${c})` }, m);
+    });
+  }
+
+  function column(g, items, total, side, colorVar, label, fromLabel, cw) {
+    const col = `var(${colorVar})`;
+    const x = side * 310, gap = 40;
+    const top = 30 - ((items.length - 1) / 2) * gap;
+    const head = el("text", { x: side * 300, y: -150, "text-anchor": side < 0 ? "end" : "start", class: "zone" }, g);
+    head.style.fill = col;
+    head.textContent = `${label} · ${fmt(total)}`;
+    items.forEach((l, i) => {
+      const y = top + i * gap;
+      const cx = side * (cw / 2 + 6);
+      // in: arrow points at the center; out: arrow points at the leaf
+      const d = side < 0
+        ? `M${x + 10} ${y} C${x + 140} ${y}, ${cx - 90} 0, ${cx - 6} 0`
+        : `M${cx + 6} 0 C${cx + 90} 0, ${x - 140} ${y}, ${x - 10} ${y}`;
+      el("path", { d, stroke: col, "stroke-width": 2, fill: "none", opacity: 0.85, "marker-end": side < 0 ? "url(#arr-in)" : "url(#arr-out)" }, g);
+      node(g, { x, y, r: radius(l.v), color: col, label: l.t, right: side > 0, bold: !!ARTICLES[l.t], link: l, onPeek: () => peekLink(l, fromLabel) });
+    });
+  }
+
+  // Both-ways links as pills, wrapped into centered rows above the center.
+  function band(g, items, total) {
+    const col = "var(--b4)";
+    const head = el("text", { x: 0, y: -292, "text-anchor": "middle", class: "zone" }, g);
+    head.style.fill = col;
+    head.textContent = `BOTH WAYS · ${fmt(total)}`;
+    el("path", { d: "M0 -32 L0 -178", stroke: col, "stroke-width": 3, fill: "none", "marker-start": "url(#arr-both)", "marker-end": "url(#arr-both)" }, g);
+
+    const pills = items.map((l) => {
+      const p = el("g", {}, g);
+      const t = el("text", { x: 0, y: 0, "font-size": 14, "font-weight": ARTICLES[l.t] ? 700 : 400, class: "lbl" }, p);
+      t.textContent = l.t;
+      return { l, p, t, w: t.getComputedTextLength() + 58 };
+    });
+    const maxW = 1080, rowH = 44;
+    const rows = [[]];
+    let cur = 0;
+    pills.forEach((pl) => {
+      if (cur + pl.w > maxW && rows[rows.length - 1].length) { rows.push([]); cur = 0; }
+      rows[rows.length - 1].push(pl);
+      cur += pl.w + 10;
+    });
+    rows.forEach((row, ri) => {
+      const width = row.reduce((s, p) => s + p.w, 0) + (row.length - 1) * 10;
+      let x = -width / 2;
+      const y = -250 + ri * rowH - (rows.length - 1) * rowH / 2 + 20;
+      row.forEach(({ l, p, t, w }) => {
+        p.setAttribute("class", "pill node");
+        p.setAttribute("tabindex", 0);
+        p.setAttribute("role", "button");
+        p.setAttribute("aria-label", `Preview ${l.t}`);
+        const rect = el("rect", { x, y: y - 17, width: w, height: 34, rx: 17, fill: "var(--paper)", stroke: col, "stroke-width": 2 });
+        p.insertBefore(rect, t);
+        const dot = el("circle", { cx: x + 16, cy: y, r: radius(l.v) * 0.8, fill: col });
+        p.insertBefore(dot, t);
+        t.setAttribute("x", x + 28);
+        t.setAttribute("y", y + 5);
+        onActivate(p, () => peekLink(l, "both ways"));
+        const rx = x + w - 17;
+        const rc = el("g", { class: "rc", tabindex: 0, role: "button", "aria-label": `Make ${l.t} the center` }, g);
+        el("circle", { cx: rx, cy: y, r: 9, fill: "var(--accent-soft)", stroke: "var(--accent)", "stroke-width": 1.2 }, rc);
+        el("path", { d: `M${rx} ${y - 5}v3M${rx} ${y + 2}v3M${rx - 5} ${y}h3M${rx + 2} ${y}h3`, stroke: "var(--accent)", "stroke-width": 1.6, "stroke-linecap": "round" }, rc);
+        onActivate(rc, () => recenter(l.t));
+        x += w + 10;
+      });
+    });
+  }
+
+  function render(g, term, a) {
+    defs(g);
+    const max = +density.value;
+    const by = (dir) => a.links.filter((l) => l.dir === dir).sort((x, y) => y.v - x.v).slice(0, max);
+    const cw = Math.max(150, term.length * 12 + 44);
+    column(g, by("in"), a.totals.in, -1, "--b3", "LINKS HERE", "links here", cw);
+    column(g, by("out"), a.totals.out, 1, "--b1", "LINKS OUT", "links out", cw);
+    band(g, by("both"), a.totals.both);
+    center(g, term);
+  }
+
+  density.addEventListener("input", () => {
+    densityOut.textContent = density.value;
+    window.WMMStage.redraw();
+  });
+
+  window.WMMStage.init({ render });
+})();
+</script>
+</body>
+</html>

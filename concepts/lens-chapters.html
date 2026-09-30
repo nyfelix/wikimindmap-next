@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chapters Lens Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/lens.css">
+<style>
+  svg.map .fold{cursor:pointer}
+  svg.map .fold:hover text{text-decoration:underline}
+  .controls input[type=checkbox]{accent-color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">WikiMindMap <span>2027 · lens previews</span></div>
+    <nav class="lensnav" aria-label="Lenses">
+      <a href="lens-chapters.html" aria-current="page">Chapters</a>
+      <a href="lens-kinds.html">Kinds</a>
+      <a href="lens-links.html">Links in / out</a>
+      <a href="lens-metro.html">Metro</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p class="eyebrow">Lens preview · the 2007 original</p>
+    <h1>Chapters: the article’s own outline as a map</h1>
+    <p class="lede">This is how WikiMindMap worked in 2007. Chapters become branches, subchapters become sub-branches, and the links in each part become leaves. Tap a chapter or subchapter name to fold or unfold it, just like the old viewer.</p>
+  </div>
+
+  <div class="layout">
+    <div class="stage">
+      <div class="bar">
+        <div class="trail" id="trail" aria-label="Your path"></div>
+        <div class="controls">
+          <label for="density">Links per part <input id="density" type="range" min="2" max="6" value="4"><output id="densityOut" for="density">4</output></label>
+          <label for="hk"><input id="hk" type="checkbox"> Show “See also”</label>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="chips" id="chips" aria-label="Sample articles"></div>
+        <span class="tag">Sample data</span>
+      </div>
+      <div class="map-scroll">
+        <svg class="map" id="map" viewBox="-640 -300 1280 600" role="img" aria-label="Chapters lens map of the current article"></svg>
+      </div>
+      <div class="peek" id="peek" hidden>
+        <button class="x" id="peekX" type="button" aria-label="Close preview">×</button>
+        <p class="eyebrow" id="peekSec"></p>
+        <h3 id="peekT"></h3>
+        <p id="peekP"></p>
+        <dl id="peekFacts"></dl>
+        <div class="row" id="peekRow"></div>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <div class="card">
+        <h2>Reading the map</h2>
+        <ul>
+          <li><b>Thick branch:</b> a chapter, in reading order clockwise from the top right</li>
+          <li><b>Thin branch:</b> a subchapter</li>
+          <li><b>Leaf:</b> a link that appears in that part of the text</li>
+          <li><b>+N:</b> a folded part; tap its name to open it</li>
+        </ul>
+        <p class="muted">“See also”, “References” and similar housekeeping chapters are hidden by default.</p>
+      </div>
+      <div class="card">
+        <h2>What this lens is good at</h2>
+        <ul>
+          <li>Mirrors the article, so the map and the text match one to one</li>
+          <li>Good for understanding and summarising one article</li>
+          <li>Simplest to build: one <code>action=parse</code> call gives sections and links</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Weak spots to judge</h2>
+        <ul>
+          <li>Branches show how editors write (History, Reception…), not what the topic is</li>
+          <li>The same link shows up in several branches: Memory appears three times on Mind map</li>
+          <li>Long articles get deep and wide fast; folding is essential</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <p class="foot">Titles are real Wikipedia articles. Chapter names and link placement are simplified sample data in <code>assets/sample-data.js</code>. Tap a leaf for a preview, tap ⊕ to make it the center. Bold labels have sample data behind them.</p>
+</div>
+
+<script src="assets/sample-data.js"></script>
+<script src="assets/lens-common.js"></script>
+<script>
+(function () {
+  const { el, node, center, radius, peekLink, onActivate, linkOf, redraw } = window.WMMStage;
+  const { ARTICLES } = window.WMM;
+  const COLORS = ["--b1", "--b2", "--b3", "--b4", "--b5", "--b6"];
+  const density = document.getElementById("density");
+  const densityOut = document.getElementById("densityOut");
+  const hk = document.getElementById("hk");
+  const folded = new Set();          // keys of folded chapters / subchapters
+  const X = { 1: 130, 2: 260, 3: 385 }; // x distance from center per depth
+
+  // Build the visible tree for one article.
+  function tree(term, a) {
+    const max = +density.value;
+    const leafRows = (links, depth, color, from) => {
+      const shown = links.slice(0, max).map((t) => ({ type: "link", link: linkOf(a, t), depth, color, from }));
+      if (links.length > max) shown.push({ type: "more", n: links.length - max, depth, color });
+      return shown;
+    };
+    return a.sections
+      .map((s, i) => ({ s, i }))
+      .filter(({ s }) => hk.checked || !s.housekeeping)
+      .map(({ s, i }, n) => {
+        const color = s.housekeeping ? "--muted" : COLORS[n % COLORS.length];
+        const key = `${term}|${i}`;
+        const count = s.subs ? s.subs.reduce((c, x) => c + x.links.length, 0) : s.links.length;
+        const sec = { type: "part", label: s.t, key, depth: 1, color, count, children: [] };
+        if (folded.has(key)) return sec;
+        if (s.subs) {
+          sec.children = s.subs.map((sub, j) => {
+            const k2 = `${key}|${j}`;
+            return {
+              type: "part", label: sub.t, key: k2, depth: 2, color, count: sub.links.length,
+              children: folded.has(k2) ? [] : leafRows(sub.links, 3, color, `${s.t} › ${sub.t}`)
+            };
+          });
+        } else {
+          sec.children = leafRows(s.links, 2, color, s.t);
+        }
+        return sec;
+      });
+  }
+
+  const rows = (n) => (n.children && n.children.length ? n.children.reduce((c, k) => c + rows(k), 0) : 1);
+
+  function place(list) {
+    const total = list.reduce((c, n) => c + rows(n), 0);
+    const gap = Math.min(30, 540 / Math.max(total, 1));
+    let row = 0;
+    const walk = (n) => {
+      if (n.children && n.children.length) {
+        const ys = n.children.map(walk);
+        n.y = (ys[0] + ys[ys.length - 1]) / 2;
+      } else {
+        n.y = (row - (total - 1) / 2) * gap;
+        row++;
+      }
+      return n.y;
+    };
+    list.forEach(walk);
+  }
+
+  function drawNode(g, n, side, px, py) {
+    const x = side * X[n.depth];
+    const col = n.color === "--muted" ? "var(--muted)" : `var(${n.color})`;
+    const w = n.type === "part" ? (n.depth === 1 ? 8 : 4) : 1.8;
+    const x0 = px + side * (n.depth === 1 ? 40 : 4);
+    el("path", {
+      d: `M${x0} ${py} C${x0 + side * 60} ${py}, ${x - side * 60} ${n.y}, ${x} ${n.y}`,
+      stroke: col, "stroke-width": w, fill: "none", "stroke-linecap": "round", opacity: n.type === "part" ? 1 : 0.8
+    }, g);
+
+    if (n.type === "part") {
+      const open = n.children.length > 0;
+      const f = el("g", { class: "fold", tabindex: 0, role: "button", "aria-expanded": String(open), "aria-label": `${open ? "Fold" : "Unfold"} ${n.label}` }, g);
+      const t = el("text", {
+        x: x - side * 2, y: n.y - 9, "text-anchor": side > 0 ? "end" : "start",
+        "font-size": n.depth === 1 ? 16 : 13, "font-weight": n.depth === 1 ? 800 : 600
+      }, f);
+      t.textContent = n.label;
+      el("circle", { cx: x, cy: n.y, r: n.depth === 1 ? 5 : 3.5, fill: col }, f);
+      if (!open) {
+        const m = el("text", { x: x + side * 12, y: n.y + 4, "text-anchor": side > 0 ? "start" : "end", "font-size": 12, class: "muted" }, f);
+        m.style.fontFamily = "var(--mono)";
+        m.textContent = `+${n.count} links`;
+      }
+      onActivate(f, () => { folded.has(n.key) ? folded.delete(n.key) : folded.add(n.key); redraw(); });
+      n.children.forEach((c) => drawNode(g, c, side, x, n.y));
+    } else if (n.type === "link") {
+      node(g, {
+        x, y: n.y, r: radius(n.link.v), color: col, label: n.link.t, right: side > 0,
+        bold: !!ARTICLES[n.link.t], link: n.link, onPeek: () => peekLink(n.link, n.from)
+      });
+    } else {
+      const m = el("text", { x: x + side * 4, y: n.y + 4, "text-anchor": side > 0 ? "start" : "end", "font-size": 12, class: "muted" }, g);
+      m.style.fontFamily = "var(--mono)";
+      m.textContent = `+${n.n} more`;
+    }
+  }
+
+  function render(g, term, a) {
+    const secs = tree(term, a);
+    // Clockwise from the top right: first chapters go right, the rest left (bottom to top).
+    const total = secs.reduce((c, n) => c + rows(n), 0);
+    const right = [], left = [];
+    let acc = 0;
+    secs.forEach((n) => {
+      if (right.length === 0 || acc + rows(n) / 2 <= total / 2) { right.push(n); acc += rows(n); }
+      else left.push(n);
+    });
+    left.reverse();
+    place(right);
+    place(left);
+    right.forEach((n) => drawNode(g, n, 1, 0, 0));
+    left.forEach((n) => drawNode(g, n, -1, 0, 0));
+    center(g, term);
+  }
+
+  density.addEventListener("input", () => { densityOut.textContent = density.value; redraw(); });
+  hk.addEventListener("change", redraw);
+
+  window.WMMStage.init({ render });
+})();
+</script>
+</body>
+</html>
