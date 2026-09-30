@@ -3,16 +3,18 @@
  *
  *   npm run fixtures -- en "Mind map"      one article
  *   npm run fixtures -- --starter          the whole starter set
+ *   npm run fixtures -- en "Mind map" --fallback   also the action=parse fallback responses
  *
  * Writes, per article: page.html, headers.json, summary.json, redirects.json,
- * and per language: siteinfo.json. Enrichments for later milestones
+ * and per language: siteinfo.json. With --fallback also fallback.json (TS-07). Enrichments for later milestones
  * (linksback, pageviews, wikidata, linkshere) are added by their stories.
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { Window } from "happy-dom";
-import { API_USER_AGENT, actionUrl, createHttpClient, restUrl } from "../src/sources/http.ts";
-import { titleToPath } from "../src/core/titles.ts";
+import { pageHtmlUrl, titleFromPageUrl } from "../src/sources/article.ts";
+import { API_USER_AGENT, actionUrl, createHttpClient } from "../src/sources/http.ts";
+import { loadFallback } from "../src/sources/parseFallback.ts";
 
 const STARTER: Record<string, string[]> = {
   en: [
@@ -61,11 +63,10 @@ function redirectLinkTitles(html: string): string[] {
   return [...titles];
 }
 
-async function recordArticle(lang: string, requested: string) {
-  const page = await http.getText(restUrl(lang, `page/${titleToPath(requested)}/html`));
+async function recordArticle(lang: string, requested: string, fallback: boolean) {
+  const page = await http.getText(pageHtmlUrl({ lang, title: requested }));
   // A redirect title is answered with 307 to the target; store under the real title.
-  const segment = new URL(page.url).pathname.match(/\/page\/([^/]+)\/html$/)?.[1];
-  const title = segment ? decodeURIComponent(segment).replaceAll("_", " ") : requested;
+  const title = titleFromPageUrl(page.url) ?? requested;
   const dir = join(ROOT, lang, title.replaceAll(" ", "_"));
   await mkdir(dir, { recursive: true });
 
@@ -102,13 +103,18 @@ async function recordArticle(lang: string, requested: string) {
   }
   await writeJson(join(dir, "redirects.json"), batches);
 
+  if (fallback)
+    await writeJson(join(dir, "fallback.json"), await loadFallback({ lang, title }, http));
+
   console.log(
     `${lang}:${title}  ${Math.round(page.data.length / 1024)} kB, ${targets.length} redirect links`,
   );
 }
 
 async function main() {
-  const [first, second, ...rest] = process.argv.slice(2);
+  const all = process.argv.slice(2);
+  const fallback = all.includes("--fallback");
+  const [first, second, ...rest] = all.filter((a) => a !== "--fallback");
   const jobs: [string, string][] =
     first === "--starter"
       ? Object.entries(STARTER).flatMap(([lang, titles]) =>
@@ -125,7 +131,7 @@ async function main() {
   }
   for (const lang of new Set(jobs.map(([lang]) => lang))) await recordSiteinfo(lang);
   // One article at a time: polite to the API, and the client limits requests anyway.
-  for (const [lang, title] of jobs) await recordArticle(lang, title);
+  for (const [lang, title] of jobs) await recordArticle(lang, title, fallback);
 }
 
 await main();

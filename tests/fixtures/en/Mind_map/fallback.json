@@ -1,0 +1,1311 @@
+{
+  "toc": {
+    "parse": {
+      "title": "Mind map",
+      "pageid": 19688,
+      "revid": 1374343935,
+      "redirects": [],
+      "tocdata": {
+        "sections": [
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Origin",
+            "number": "1",
+            "index": "1",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 1679,
+            "anchor": "Origin"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Differences from other visualizations",
+            "number": "2",
+            "index": "2",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 4762,
+            "anchor": "Differences_from_other_visualizations"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Research",
+            "number": "3",
+            "index": "3",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 6936,
+            "anchor": "Research"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Effectiveness",
+            "number": "3.1",
+            "index": "4",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 6950,
+            "anchor": "Effectiveness"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Features",
+            "number": "3.2",
+            "index": "5",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 10161,
+            "anchor": "Features"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Automatic creation",
+            "number": "3.3",
+            "index": "6",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 11360,
+            "anchor": "Automatic_creation"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Tools",
+            "number": "4",
+            "index": "7",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 12437,
+            "anchor": "Tools"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Gallery",
+            "number": "5",
+            "index": "8",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 13602,
+            "anchor": "Gallery"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "See also",
+            "number": "6",
+            "index": "9",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 14379,
+            "anchor": "See_also"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "References",
+            "number": "7",
+            "index": "10",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 14972,
+            "anchor": "References"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "External links",
+            "number": "8",
+            "index": "11",
+            "fromTitle": "Mind_map",
+            "codepointOffset": 15005,
+            "anchor": "External_links"
+          }
+        ],
+        "extensionData": []
+      },
+      "showtoc": true,
+      "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Mind map</span></span>"
+    }
+  },
+  "links": {
+    "0": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Mental mapping",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Argument map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Cladistics",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Cognitive map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept lattice",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Conceptual graph",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Cubital fossa",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Data and information visualization",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Decision tree",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Dendrogram",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Design rationale",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Diagram",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Diagrammatic reasoning",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Entity–relationship model",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Geovisualization",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Graph drawing",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Graphic communication",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hierarchy",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Houghton Mifflin",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hyperbolic tree",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hypertext",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Illustration",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Infographic",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Information design",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Issue-based information system",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Issue tree",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Knowledge visualization",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Layered graph drawing",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "List of concept- and mind-mapping software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Mental model",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Morphological analysis (problem-solving)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "OCLC (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Object–role modeling",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Olog",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Ontology",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Ontology (information science)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Organizational chart",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Pathfinder network",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Problem structuring methods",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Radial tree",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Schema (psychology)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantic Web",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantic network",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Sociogram",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Timeline",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Topic map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tree structure",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Treemapping",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Visual analytics",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Visual language",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Wicked problem",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ZigZag (software)",
+            "exists": true
+          },
+          {
+            "ns": 10,
+            "title": "Template:Information mapping",
+            "exists": true
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Information mapping",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "1": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "BBC",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Brainstorming",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Categories (Aristotle)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Doi (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Manuel Lima",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Memory",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "OCLC (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Popular psychology",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Porphyry of Tyros",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Princeton Architectural Press",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Problem solving",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Radial tree",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Ramon Llull",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "S2CID (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "The Times",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tony Buzan",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Visual thinking",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "2": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "College Teaching",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept maps",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Doi (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Graphical modeling language",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "JSTOR (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Mnemonic",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Personal knowledge base",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tree structure",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "UML diagram",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "3": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "ArXiv (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Doi (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hdl (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindMeister",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Note-taking",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "PMID (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "S2CID (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Spider diagram",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "4": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Doi (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hdl (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Note-taking",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "PMID (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "S2CID (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Spider diagram",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "5": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindMeister",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "6": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "ArXiv (identifier)",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "7": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "List of concept- and mind-mapping software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Note-taking",
+            "exists": true
+          },
+          {
+            "ns": 12,
+            "title": "Help:Cite errors/Cite error references no text",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "8": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Tree structure",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "9": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Cluster analysis",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Exquisite corpse",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Graph (discrete mathematics)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Idea",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Knowledge representation and reasoning",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Mental literacy",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Nodal organizational structure",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Nomological network",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Personal wiki",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Rhizome (philosophy)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantic network",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Social map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Spider mapping",
+            "exists": true
+          },
+          {
+            "ns": 100,
+            "title": "Portal:Education",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "10": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": []
+      }
+    },
+    "11": {
+      "parse": {
+        "title": "Mind map",
+        "pageid": 19688,
+        "revid": 1374343935,
+        "links": [
+          {
+            "ns": 10,
+            "title": "Template:Group creativity techniques",
+            "exists": true
+          },
+          {
+            "ns": 10,
+            "title": "Template:Strategic planning tools",
+            "exists": true
+          },
+          {
+            "ns": 10,
+            "title": "Template:Mindmaps",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "3D Topicscape",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "6-3-5 Brainwriting",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Affinity diagram",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Ansoff matrix",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Araucaria (software)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Argument map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Argüman",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Balanced scorecard",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Bowman's Strategy Clock",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Brainstorming",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Business model canvas",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "CmapTools",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Coggle",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Compendium (software)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Competitor analysis",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Computer supported brainstorming",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ConceptDraw DIAGRAM",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "ConceptDraw MINDMAP",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Creately",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Creativity techniques",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Debategraph",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Desktop app",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Dia (software)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Diagrams.net",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Disney method",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "FreeMind",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Free and open-source software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Freeplane",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Google Drawings",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Growth–share matrix",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Java (software platform)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kialo",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kraljic matrix",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "LibreOffice Draw",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "List of concept- and mind-mapping software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Lucidchart",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MECE principle",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Managerial grid model",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Market Opportunity Navigator",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Microsoft Visio",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Mind42",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindManager",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindMapper",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindMeister",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindMup",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Mindomo",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Nominal group technique",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "OGSM",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "OmniGraffle",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Overleaf",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "PEST analysis",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "PGF/TikZ",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Pareto priority index",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "PlantUML",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Porter's five forces analysis",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Prezi",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Proprietary software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Qiqqa",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "SWOT analysis",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Scenario planning",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Segmenting-targeting-positioning",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantic Research",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "SmartDraw",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "SpicyNodes",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Strategic grid model",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Strategic planning",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Strategy map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Structure follows Strategy",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "TheBrain",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tinderbox (application software)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Toolkit for Conceptual Modeling",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "VRIO",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Visual Mind",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Visual Understanding Environment",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Vym (software)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Web app",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "XMind",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "YEd",
+            "exists": true
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Mindmaps",
+            "exists": true
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Strategic planning tools",
+            "exists": true
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Group creativity techniques",
+            "exists": false
+          },
+          {
+            "ns": 12,
+            "title": "Help:Authority control",
+            "exists": true
+          },
+          {
+            "ns": 14,
+            "title": "Category:Argument mapping",
+            "exists": true
+          },
+          {
+            "ns": 14,
+            "title": "Category:Concept mapping software",
+            "exists": true
+          },
+          {
+            "ns": 14,
+            "title": "Category:Knowledge representation",
+            "exists": true
+          },
+          {
+            "ns": 14,
+            "title": "Category:Mind-mapping software",
+            "exists": true
+          },
+          {
+            "ns": 14,
+            "title": "Category:Visual thinking",
+            "exists": true
+          }
+        ]
+      }
+    }
+  }
+}

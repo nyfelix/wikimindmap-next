@@ -1,0 +1,663 @@
+{
+  "toc": {
+    "parse": {
+      "title": "Mindmap",
+      "pageid": 34919,
+      "revid": 263055398,
+      "redirects": [],
+      "tocdata": {
+        "sections": [
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Erstellung",
+            "number": "1",
+            "index": "1",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 948,
+            "anchor": "Erstellung"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Methode",
+            "number": "2",
+            "index": "2",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 2854,
+            "anchor": "Methode"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Mindmap-Software",
+            "number": "3",
+            "index": "3",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 3983,
+            "anchor": "Mindmap-Software"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Eignung",
+            "number": "4",
+            "index": "4",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 5810,
+            "anchor": "Eignung"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Ideensammlung und Brainstorming",
+            "number": "4.1",
+            "index": "5",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 6297,
+            "anchor": "Ideensammlung_und_Brainstorming"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Sachtexte strukturieren",
+            "number": "4.2",
+            "index": "6",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 6536,
+            "anchor": "Sachtexte_strukturieren"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Vortrag entwerfen",
+            "number": "4.3",
+            "index": "7",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 6816,
+            "anchor": "Vortrag_entwerfen"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Protokoll",
+            "number": "4.4",
+            "index": "8",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 7378,
+            "anchor": "Protokoll"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Planung und Organisation",
+            "number": "4.5",
+            "index": "9",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 7708,
+            "anchor": "Planung_und_Organisation"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Lernen, Prüfungsvorbereitung",
+            "number": "4.6",
+            "index": "10",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 8035,
+            "anchor": "Lernen,_Prüfungsvorbereitung"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Leistungsvorteile",
+            "number": "5",
+            "index": "11",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 9013,
+            "anchor": "Leistungsvorteile"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Mängel",
+            "number": "6",
+            "index": "12",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 10490,
+            "anchor": "Mängel"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Vergleiche von Mindmaps mit ähnlichen Strukturen",
+            "number": "7",
+            "index": "13",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 12483,
+            "anchor": "Vergleiche_von_Mindmaps_mit_ähnlichen_Strukturen"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Cognitive Maps",
+            "number": "7.1",
+            "index": "14",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 12538,
+            "anchor": "Cognitive_Maps"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "iMapping",
+            "number": "7.2",
+            "index": "15",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 14859,
+            "anchor": "iMapping"
+          },
+          {
+            "tocLevel": 2,
+            "hLevel": 3,
+            "line": "Freie Strukturierung",
+            "number": "7.3",
+            "index": "16",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 15308,
+            "anchor": "Freie_Strukturierung"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Literatur",
+            "number": "8",
+            "index": "17",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 16341,
+            "anchor": "Literatur"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Weblinks",
+            "number": "9",
+            "index": "18",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 16797,
+            "anchor": "Weblinks"
+          },
+          {
+            "tocLevel": 1,
+            "hLevel": 2,
+            "line": "Einzelnachweise",
+            "number": "10",
+            "index": "19",
+            "fromTitle": "Mindmap",
+            "codepointOffset": 16863,
+            "anchor": "Einzelnachweise"
+          }
+        ],
+        "extensionData": []
+      },
+      "showtoc": true,
+      "displaytitle": "<span lang=\"de\" dir=\"ltr\"><span class=\"mw-page-title-main\">Mindmap</span></span>"
+    }
+  },
+  "links": {
+    "0": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Assoziation (Psychologie)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Englische Sprache",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kategorisierung (Kognitionswissenschaft)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kognitiv",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tony Buzan",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "1": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "3D",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Psychologe",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tony Buzan",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "2": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Baumdiagramm",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Begriff",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Brainstorming",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Concept-Map",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Informetrie",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Ontologie (Informatik)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Pinnwandmoderation",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantik",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Wissensbilanz",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "3": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Abspaltung (Softwareentwicklung)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Docear",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "FreeMind",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Freeplane",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Freie Software",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "GPL",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindManager",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "MindView",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "OpenMind",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Plattformunabhängig",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Tony Buzan",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Wissensmanagement",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "XMind",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "4": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Assoziogramm",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Semantik",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "5": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "6": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "7": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "8": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Assoziogramm",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "9": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "10": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Semantik",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "11": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "12": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Ontologie (Informatik)",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Taxonomie",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "13": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Freie Strukturierung",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Fuzzy Logic",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hasse-Diagramm",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "IMapping",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Internet Archive",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kognitive Karte",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Webarchivierung",
+            "exists": true
+          },
+          {
+            "ns": 2,
+            "title": "Benutzer:InternetArchiveBot/Anleitung/Archivlink",
+            "exists": true
+          },
+          {
+            "ns": 10,
+            "title": "Vorlage:Webachiv/IABot/www.ochoadeaspuru.com",
+            "exists": false
+          }
+        ]
+      }
+    },
+    "14": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Fuzzy Logic",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Hasse-Diagramm",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Internet Archive",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Kognitive Karte",
+            "exists": true
+          },
+          {
+            "ns": 0,
+            "title": "Webarchivierung",
+            "exists": true
+          },
+          {
+            "ns": 2,
+            "title": "Benutzer:InternetArchiveBot/Anleitung/Archivlink",
+            "exists": true
+          },
+          {
+            "ns": 10,
+            "title": "Vorlage:Webachiv/IABot/www.ochoadeaspuru.com",
+            "exists": false
+          }
+        ]
+      }
+    },
+    "15": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "IMapping",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "16": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Freie Strukturierung",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "17": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": []
+      }
+    },
+    "18": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Deutsche Nationalbibliothek",
+            "exists": true
+          }
+        ]
+      }
+    },
+    "19": {
+      "parse": {
+        "title": "Mindmap",
+        "pageid": 34919,
+        "revid": 263055398,
+        "links": [
+          {
+            "ns": 0,
+            "title": "Gemeinsame Normdatei",
+            "exists": true
+          }
+        ]
+      }
+    }
+  }
+}

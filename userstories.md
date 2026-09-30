@@ -36,11 +36,6 @@ Goal: a reproducible dev environment, a deployable empty app, and certainty that
 
 Goal: any Wikipedia article can be turned into a reliable `Article`.
 
-### TS-07 Fallback parser · M
-- [ ] `parseFallback` builds the same `Article` shape from `action=parse&prop=sections` and per-section `prop=links`. `origin` is always `body`, since this route can't tell where links come from.
-- [ ] `loadArticle(ref)` uses Parsoid first and the fallback on parser error, and records which one was used
-- [ ] A test compares both results for "Mind map": same sections, and ≥ 90 % overlap of body links
-
 ### TS-08 Redirect resolution · S
 - [ ] `resolveRedirects(lang, titles)` works in batches of 50 and returns `Map<Title, Title>`. It is called only for link targets flagged `redirect`.
 - [ ] Leaves are deduplicated after resolution (`Mind-map` and `Mind map` become one)
@@ -381,3 +376,10 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Parsing the longest fixture (World War II) takes < 150 ms in the test run
 
 > Note: The recorded Mind map revision has no "History" chapter (the first one is now "Origin"), so the test asserts "Origin". The 150 ms budget covers our extraction only: happy-dom needs ~200 ms just to build the World War II DOM, which a browser's native `DOMParser` does much faster; extraction takes ~50 ms (`tests/unit/parsoid.perf.test.ts`, its own worker). Origin rules were refined on the fixtures (`datamodel.md` §2): template output is matched by its shared `about` ID; links that authors wrote into template parameters (`{{div col}}`, `{{annotated link}}`) count as `body`, so "See also" lists aren't lost; de uses its own marker classes (`vorlage-weiterleitungshinweis`, `navileiste`). Sidebars stay `template`. Snapshots are compact outlines (sections, link counts by origin, first body links), not full JSON.
+
+### TS-07 Fallback parser · M · M1
+- [x] `parseFallback` builds the same `Article` shape from `action=parse&prop=sections` and per-section `prop=links`. `origin` is always `body`, since this route can't tell where links come from.
+- [x] `loadArticle(ref)` uses Parsoid first and the fallback on parser error, and records which one was used
+- [x] A test compares both results for "Mind map": same sections, and ≥ 90 % overlap of body links
+
+> Note: Uses `prop=tocdata` (`prop=sections` is deprecated) and requests the sections by `oldid`, so all parts come from one revision. A section's `prop=links` includes its subsections, so each section keeps only the links not found below it. This route can't see redirects, so every link is `redirect: true` and goes through the lookup (TS-08). Links are alphabetical within a section, not in reading order. `loadArticle` falls back only on parser errors; HTTP errors such as `NotFound` pass through. Fallback fixtures exist for en Mind map and de Mindmap; the overlap of body links is 100 % for both.

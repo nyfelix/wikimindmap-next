@@ -82,7 +82,7 @@ To keep the risk contained:
 - Only `src/sources/parsoid.ts` reads the HTML.
 - The spec version is read from the `Content-Type` profile, and a warning is logged if it's newer than the version we tested.
 - Tests run on about 20 recorded articles in `en` and `de`.
-- **Fallback:** if parsing fails, fetch `action=parse&prop=sections` and then `action=parse&section=N&prop=links` for each section. This is slower but gives the same `Article`.
+- **Fallback:** if parsing fails, fetch `action=parse&prop=tocdata|revid|displaytitle` and then `action=parse&oldid={revid}&section=N&prop=links` for each section. This is slower but gives the same `Article`, with every link as `body`. (`prop=sections` is deprecated in favour of `prop=tocdata`; found in TS-07.)
 
 ### API etiquette
 

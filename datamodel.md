@@ -289,12 +289,13 @@ tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en
   summary.json       action=query&prop=extracts|pageimages|description for the article
   redirects.json     array of raw action=query&redirects responses, one per batch of 50,
                      for the link targets marked mw-redirect
+  fallback.json      (en Mind map, de Mindmap) { toc, links }: action=parse tocdata and links per section
   linksback.json     links back to the center (M3)
   pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
 tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
 ```
 
-Record with `npm run fixtures -- <lang> "<Title>"`, or `npm run fixtures -- --starter` for the whole set below.
+Record with `npm run fixtures -- <lang> "<Title>"` (add `--fallback` for `fallback.json`), or `npm run fixtures -- --starter` for the whole set below.
 
 Starter set, recorded in M0:
 - **en:** Mind map, Tony Buzan, Concept map, Zürich, Albert Einstein, Photosynthesis, World War II, Python (programming language), Chess, Mount Everest
