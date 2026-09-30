@@ -20,11 +20,13 @@ Work through the milestones in order. A milestone is done when every story in it
 Goal: a reproducible dev environment, a deployable empty app, and certainty that the Wikipedia APIs behave as `architecture.md` assumes.
 
 ### TS-03 CI and deploy to GitHub Pages · S
-- [ ] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
-- [ ] `BASE_PATH` is set for `/wikimindmap-next/`
-- [ ] `404.html` is a copy of `index.html`, so deep links load the app
+- [x] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
+- [x] `BASE_PATH` is set for `/wikimindmap-next/`
+- [x] `404.html` is a copy of `index.html`, so deep links load the app
 - [ ] The placeholder page is live on `https://nyfelix.github.io/wikimindmap-next/`, and `/en/Mind_map` on it loads the app instead of GitHub's 404 page
 - [ ] From the live page, the browser console confirms a `rest.php` and an `api.php` request with `Api-User-Agent` pass CORS (repeats TS-01 from the real origin)
+
+> Note: The workflow is `.github/workflows/deploy.yml`; it also runs `check` and `build` on pull requests, without deploying. `BASE_PATH` comes from the repository name. `404.html` is written by a small plugin in `vite.config.ts`. **Open:** the last two items need a push to GitHub and Settings → Pages → Source set to "GitHub Actions" (done by the owner).
 
 ### TS-04 HTTP client and fixture recorder · M
 - [ ] `src/sources/http.ts`: adds `Api-User-Agent`, adds `origin=*` for `api.php`, allows at most 4 requests in flight, retries on 429/503 with backoff (1 s, 2 s, 4 s), and times out after 15 s
