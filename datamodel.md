@@ -147,7 +147,8 @@ interface LensOptions {
   density: number;             // max leaves per group (Chapters: 2–8, default 4)
   showHousekeeping: boolean;   // include "See also" etc. (default false)
   includeOrigins: LinkOrigin[];// default ["body", "hatnote"]
-  folded: string[];            // IDs of folded groups (Chapters)
+  folded: string[];            // IDs of folded groups
+  expanded: string[];          // IDs of groups showing all links ("+N more" clicked)
 }
 ```
 
@@ -156,7 +157,7 @@ interface LensOptions {
 - Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded. Incoming-only links (`in`) come from `linksHere`.
 - Every node that has children can fold (`folded` is defined, `false` when open).
 - Leaves are deduplicated **within a group** (a link used twice in one chapter shows once). Across groups a leaf may repeat, and its node `id` includes the group so IDs stay unique.
-- When a group has more leaves than `density`, keep the first `density` by rank and add one `more` node with the count.
+- When a group has more leaves than `density`, keep the first `density` by rank and add one `more` node with the count. Groups listed in `expanded` show all their leaves.
 - **Rank within a group:** Chapters ranks by reading order, then by occurrence count. Lenses with page views rank by views. Ties are broken by reading order.
 
 ## 5. MapGraph (lens output, layout input)
@@ -178,7 +179,7 @@ interface MapNode {
   target?: Title;              // leaves (and center): the article it stands for
   parent?: string;             // node id; undefined only for center
   colorSlot?: number;          // 1–6 → --b1…--b6; undefined → muted
-  weight?: number;             // 0–1, drives dot size (e.g. from pageviews)
+  weight?: number;             // 0–1 relative page views; drives the bar behind the label (Kinds, Links). Symbol size stays fixed.
   count?: number;              // "more" nodes and folded groups: hidden items
   folded?: boolean;            // set on every node that has children; true = folded
   direction?: LinkDirection;   // leaves: shown as a symbol (styleguide.md §5)
@@ -244,17 +245,18 @@ Unknown languages fall back to the `en` list. More languages are added as needed
 The URL is the source of truth for anything shareable.
 
 ```
-/{lang}/{Title}?lens=chapters&density=4&hk=0&fold=2,5.1
+/{lang}/{Title}?lens=chapters&density=4&hk=0&fold=2,5.1&more=3
 ```
 
 | Param | Meaning | Default |
 |---|---|---|
 | path `lang` | Wikipedia language | browser language if a wiki exists for it, else `en` |
-| path `Title` | center article | — (start page when missing) |
+| path `Title` | center article | missing → start page: the map of "Mind map" in the current language (en *Mind map*, de *Mindmap*, fr *Carte heuristique*, others via `langlinks`); the URL stays `/` |
 | `lens` | active lens | `chapters` |
 | `density` | leaves per group | lens default |
 | `hk` | show housekeeping sections (`1`/`0`) | `0` |
 | `fold` | folded group IDs, comma-separated | none |
+| `more` | group IDs showing all links, comma-separated | none |
 
 State that isn't in the URL:
 

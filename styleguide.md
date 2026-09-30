@@ -17,7 +17,7 @@ How WikiMindMap looks and behaves on screen. `architecture.md` says how it's bui
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│ [logo | search…  /]                  [Chapters Kinds Links Metro][?][i]│
+│ [logo▾ | EN▾ search…  /]      [Chapters Kinds· Links· Metro·][?][i][≡]│
 │                                                                        │
 │                                                        ┌────────────┐ │
 │                  full-window map canvas                │ How this   │ │
@@ -25,18 +25,20 @@ How WikiMindMap looks and behaves on screen. `architecture.md` says how it's bui
 │                                                        │ built  (i) │ │
 │                                                        └────────────┘ │
 │ [TRAIL  Mind map › Tony Buzan]       [Links ─●─ 4 ☐ See also | → ⇄ | + − ⤢]│
+│                                        CONTENT FROM WIKIPEDIA · CC BY-SA │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
 | Area | Content | Notes |
 |---|---|---|
 | Canvas | The map, full window | Background `--bg`. Drag the empty canvas to pan; wheel, trackpad or `+` `−` to zoom; `⤢` fits the map to the window. Every new map is fitted automatically. |
-| Top left | Logo and search | The search field expands with suggestions while typing. `/` focuses it. |
-| Top right | Lens switch, `?` (label the map), `i` (how this map is built) | Segmented control. The active lens is raised. |
+| Top left | Logo, language, search | Clicking the logo opens a small menu: About, How lenses work, GitHub. The language picker `EN ▾` sits in the search panel, in mono capitals. The search field expands with suggestions while typing. `/` focuses it. |
+| Top right | Lens switch, `?` (label the map), `i` (how this map is built), `≡` (outline view, `o`) | Segmented control. The active lens is raised. Lenses that aren't built yet are shown with a small `SOON` in mono capitals, in `--muted`. They can't be selected: hover shows a one-line description, and a click opens the help page at that lens. |
 | Bottom left | Trail | Chapter-style breadcrumb. Clicking a step goes back to it. |
 | Bottom right | Map controls: density, See also, direction legend, zoom | Only the controls the active lens uses. |
+| Under bottom right | Attribution | `CONTENT FROM WIKIPEDIA · CC BY-SA` in mono capitals, `--muted`, linking to the article. Always visible. |
 | Right drawer | "How this map is built" | 340 px, floats above the map, closed by default. |
-| Preview card | Next to the node that was clicked | 300 px. Stays inside the window. Closes with `Esc` or a click on the canvas. |
+| Preview card | Next to the node that was clicked | 300 px. Stays inside the window. Closes with `Esc` or a click on the canvas. A thumbnail, if there is one, sits top right at 64 × 64 px with an 8 px radius. |
 
 **Floating panels:** `--glass` background (translucent paper) with a backdrop blur, 1 px `--line` border, 14 px radius, soft shadow, 14 px from the window edge. Panels never cover more than about 12 % of the window together, with the drawer closed.
 
@@ -74,7 +76,8 @@ Whether a reader has seen the labels is remembered per lens in `localStorage`. I
 | **Group label** | Display face, 18 px (level 1) / 14.5 px (level 2), above the branch end, on the side away from the center | — |
 | **Leaf** | Direction symbol (§5), then label in the label face, 14.5 px. Bold when a map for it is already cached. | Click: preview card |
 | **Recenter ⊕** | 18 px circle after the label, `--accent-soft` fill, `--accent` ring and cross. Filled `--accent` on hover. | Click: recenter |
-| **More** | `+N more` in muted text | Raises the density by one step for that group (M4) |
+| **More** | `+N more` in muted text | Shows all links of that one group; the others keep the density. The group then ends with "Show fewer". Kept in the URL (`more=`). |
+| **Red link** (missing article) | Label in `--muted`; a dashed 13 px ring instead of a direction symbol; no ⊕ | Click: a card saying the article doesn't exist yet on Wikipedia |
 
 **Hierarchy rule:** in **every lens**, every node that has children can be folded. That covers chapters, subchapters, kinds branches and metro lines with stations. Folding works with mouse and keyboard, the state is kept in the URL (`fold=`), and the layout re-flows smoothly.
 
@@ -90,6 +93,8 @@ Every leaf in every lens shows the direction of its link. The meaning is carried
 | **Pending** | Hollow ring without an arrow | Direction not yet checked | Briefly, while the check loads |
 
 The arrow is mirrored on the left side of the map so it always points away from (out) or toward (in) the center.
+
+Symbols always keep their fixed size. Where a lens ranks by page views (Kinds, Links in / out), popularity is shown as a thin bar (3 px, the group color at 25 % opacity) behind the label, as long as the label at most, and as a number in the preview card.
 
 Data: see `architecture.md` §4 ("Links back"). For Chapters, every leaf starts as *pending* and becomes *out* or *both ways* once the batch check returns.
 
@@ -170,7 +175,7 @@ Paid upgrades:
 2. It has character at 18–40 px in the display face.
 3. **Script coverage:** labels come from every Wikipedia language. The label face must cover at least Latin Extended. The fallback stack must cover Cyrillic, Greek, Arabic, Hebrew and CJK gracefully (system fonts). *Fira Sans* covers Cyrillic and Greek. Solway, Zilla Slab and Josefin are Latin only, which is fine for display but worth weighing for labels.
 4. License: open (OFL) preferred. A commercial face needs a web licence that allows self-hosting on GitHub Pages.
-5. Weight: at most two families (or one variable family), ≤ 150 kB of font files.
+5. Weight: ≤ 150 kB of font files on the map screen. Fira Sans and Fira Mono count as one family; Bricolage is loaded only on editorial pages.
 
 ### Decision: Option 3, Editorial + graphic logo
 
@@ -179,9 +184,11 @@ Chosen by the owner after round 2.
 | Token | Face | Weights | Fallback stack |
 |---|---|---|---|
 | `--logo` | Bricolage Grotesque | 800 (logo); 600–800 (editorial headings) | `"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif` |
-| `--display` | Zilla Slab | 600, 700, italic 600–700 | `"Zilla Slab", Georgia, "Noto Serif", serif` |
-| `--label`, `--ui` | Fira Sans | 400, 500, 600 | `"Fira Sans", system-ui, "Noto Sans", "Segoe UI", sans-serif` |
-| `--mono` | Fira Mono | 400, 500 | `"Fira Mono", ui-monospace, "SFMono-Regular", Menlo, monospace` |
+| `--display` | Zilla Slab | 700, italic 700 (map and app); 400 (editorial body text, editorial pages only) | `"Zilla Slab", Georgia, "Noto Serif", serif` |
+| `--label`, `--ui` | Fira Sans | 400, 600 | `"Fira Sans", system-ui, "Noto Sans", "Segoe UI", sans-serif` |
+| `--mono` | Fira Mono | 500 | `"Fira Mono", ui-monospace, "SFMono-Regular", Menlo, monospace` |
+
+The map screen loads five files (Zilla 700 and italic 700, Fira Sans 400 and 600, Fira Mono 500), about 130 kB subset. Level-2 group labels use Zilla 700 at the smaller size; there's no 600 weight.
 
 - **Branches** are tapered (filled shapes), as in the Option 3 mock.
 - **Licence:** all four faces are OFL. They are self-hosted as WOFF2 in `public/fonts/`, subset to Latin + Latin Extended (+ Cyrillic and Greek for Fira Sans).
@@ -206,6 +213,7 @@ Chosen by the owner after round 2.
   - `/` search
   - `?` map labels
   - `i` how this map is built
+  - `o` outline view
   - `+` `−` zoom, `0` fit
   - `Esc` closes whatever is open
   - Arrow keys move between nodes (M4)
@@ -252,4 +260,17 @@ Pages to read rather than to use: **About**, the project story, help ("How lense
 - no full-width hero images
 - no centered layouts for body text
 - no second accent color: branch colors belong to diagrams, `--accent` to links
+
+## 15. States
+
+Every state keeps the full-window canvas and the floating panels. Only the canvas content changes.
+
+| State | What the reader sees |
+|---|---|
+| **Start page** (`/`) | The map of "Mind map" in the reader's language, fitted to the window. The search field is focused and highlighted with a 2 px `--accent` ring and the placeholder "Search Wikipedia…". The map labels (§3) are shown, as on any first visit. |
+| **Loading** | The center pill appears at once with the title from the URL. Branches draw in as soon as the article is parsed. Leaves start with *pending* direction symbols (§5). If nothing has appeared after 600 ms, a small `LOADING` in mono capitals pulses under the center. |
+| **Not found** | The canvas shows a single muted, dashed center ring with the title, and a floating card: "This article doesn't exist on {lang}.wikipedia.org", with suggestions from search and the search field focused. |
+| **Network error** | The last good map stays visible and dimmed (50 % opacity). A floating card in the center: "Wikipedia didn't answer. [Try again]". |
+| **No links** | The center alone, with a card: "This article has no links to other articles in its text." For stubs, `See also` is switched on automatically if it has links. |
+| **Lens not available** (a "soon" lens clicked) | The help page "How lenses work", opened at that lens |
 
