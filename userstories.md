@@ -20,15 +20,17 @@ Goal: a reproducible dev environment, a deployable empty app, and certainty that
 
 ### TS-00 Dev container · S
 Set up the development environment as described in `architecture.md` §14. All later stories are done inside it.
-- [ ] `.devcontainer/devcontainer.json` based on `mcr.microsoft.com/devcontainers/typescript-node:22` (Node 22 LTS, npm, git)
-- [ ] Features: GitHub CLI and Claude Code (`ghcr.io/anthropics/devcontainer-features/claude-code`; check the current name and version before use)
-- [ ] VS Code extensions installed automatically: Claude Code, ESLint, Prettier, Vitest, Playwright, EditorConfig
-- [ ] `node_modules` lives in a named volume (fast on macOS). `~/.claude` lives in a named volume, so the Claude login and settings survive rebuilds.
-- [ ] `postCreateCommand` runs `npm ci` (once `package.json` exists) and `npx playwright install --with-deps chromium`
-- [ ] Ports forwarded: 5173 (dev server), 4173 (preview build), 9323 (Playwright report)
-- [ ] Format on save with Prettier, and ESLint fixes on save, in `.devcontainer` settings
-- [ ] Opening the repo in VS Code offers "Reopen in Container". After the build, `node -v` shows v22 and `claude --version` works in the container terminal.
-- [ ] The README says how to start (Docker Desktop or OrbStack on the host, then "Reopen in Container") and that nothing else needs installing on the host
+- [x] `.devcontainer/devcontainer.json` based on `mcr.microsoft.com/devcontainers/typescript-node:22` (Node 22 LTS, npm, git)
+- [x] Features: GitHub CLI and Claude Code (`ghcr.io/anthropics/devcontainer-features/claude-code`; check the current name and version before use)
+- [x] VS Code extensions installed automatically: Claude Code, ESLint, Prettier, Vitest, Playwright, EditorConfig
+- [x] `node_modules` lives in a named volume (fast on macOS). `~/.claude` lives in a named volume, so the Claude login and settings survive rebuilds.
+- [x] `postCreateCommand` runs `npm ci` (once `package.json` exists) and `npx playwright install --with-deps chromium`
+- [x] Ports forwarded: 5173 (dev server), 4173 (preview build), 9323 (Playwright report)
+- [x] Format on save with Prettier, and ESLint fixes on save, in `.devcontainer` settings
+- [x] Opening the repo in VS Code offers "Reopen in Container". After the build, `node -v` shows v22 and `claude --version` works in the container terminal.
+- [x] The README says how to start (Docker Desktop or OrbStack on the host, then "Reopen in Container") and that nothing else needs installing on the host
+
+> Note: Feature pinned as `ghcr.io/anthropics/devcontainer-features/claude-code:1.0` (1.0.5 on 2026-09-30). The Playwright install is guarded together with `npm ci` (in `.devcontainer/post-create.sh`), so it uses the project's pinned Playwright version once TS-02 adds it. `CLAUDE_CONFIG_DIR` points into the `~/.claude` volume so `.claude.json` persists too. Build verified with the Dev Containers CLI; the VS Code "Reopen in Container" prompt comes from the standard `.devcontainer/` location.
 
 > Order: TS-00 comes first. Create `devcontainer.json` with the `npm ci` step guarded (`[ -f package.json ] && npm ci || true`), so the container builds before TS-02 creates `package.json`.
 

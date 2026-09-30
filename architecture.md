@@ -235,6 +235,7 @@ All development happens in a **VS Code dev container**, so the host only needs D
 ```
 .devcontainer/
   devcontainer.json
+  post-create.sh      # chown volumes; npm ci + Playwright browsers once package.json exists
 ```
 
 | Setting | Value | Why |
