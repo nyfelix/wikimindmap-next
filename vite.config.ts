@@ -24,6 +24,10 @@ function spaFallback(): Plugin {
 export default defineConfig({
   base,
   plugins: [react(), spaFallback()],
+  // Listen on all addresses: VS Code forwards ports from the dev container via 127.0.0.1, and
+  // "localhost" alone makes Vite listen on [::1] only, so the page never loads.
+  server: { host: true },
+  preview: { host: true },
   test: {
     include: ["tests/unit/**/*.test.ts", "tests/unit/**/*.test.tsx"],
     environment: "happy-dom",
