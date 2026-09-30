@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Style Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Fira+Sans:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Bitter:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: the map fills the whole window; all chrome floats at the edges as small panels. */
+:root{
+  --bg:#f3f6f7; --paper:#ffffff; --ink:#15212b; --muted:#56656f; --line:#d6dee2;
+  --accent:#1f4fd1; --accent-soft:#e3eafc; --glass:rgb(255 255 255 / .86);
+  --b1:#0f8f84; --b2:#d9860b; --b3:#c9406a; --b4:#6d4fd0; --b5:#3f8f2f; --b6:#1f78b8;
+  --review:#15212b; --review-fg:#ffffff;
+  /* typography (set per direction by script) */
+  --display:"Zilla Slab", Georgia, serif; --label:"Fira Sans", system-ui, sans-serif; --ui:"Fira Sans", system-ui, sans-serif; --logo:var(--display);
+  --dvar:normal; --lvar:normal;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0f161c; --paper:#162029; --ink:#e6edf1; --muted:#98a8b3; --line:#2a3945;
+  --accent:#7ea2ff; --accent-soft:#1d2a47; --glass:rgb(22 32 41 / .88);
+  --b1:#3cc3b5; --b2:#f0a73a; --b3:#f06e95; --b4:#a58cff; --b5:#7cc862; --b6:#5aaee8;
+  --review:#e6edf1; --review-fg:#0f161c;
+  color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0f161c; --paper:#162029; --ink:#e6edf1; --muted:#98a8b3; --line:#2a3945;
+  --accent:#7ea2ff; --accent-soft:#1d2a47; --glass:rgb(22 32 41 / .88);
+  --b1:#3cc3b5; --b2:#f0a73a; --b3:#f06e95; --b4:#a58cff; --b5:#7cc862; --b6:#5aaee8;
+  --review:#e6edf1; --review-fg:#0f161c;
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-variation-settings:var(--lvar);overflow:hidden}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* ---------- map canvas ---------- */
+#stage{position:fixed;inset:0}
+#map{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#map.panning{cursor:grabbing}
+#map text{fill:var(--ink)}
+.t-group{font-family:var(--display);font-variation-settings:var(--dvar)}
+.t-sub{font-family:var(--display);font-variation-settings:var(--dvar)}
+.t-leaf{font-family:var(--label);font-variation-settings:var(--lvar)}
+.t-center{font-family:var(--display);font-variation-settings:var(--dvar)}
+.t-muted{fill:var(--muted)!important}
+#content{transition:opacity .28s ease}
+#content.out{opacity:0}
+.leaf,.rc,.fold,.centerNode{cursor:pointer}
+.leaf:hover .t-leaf{text-decoration:underline}
+.rc:hover circle{fill:var(--accent)} .rc:hover path{stroke:var(--paper)}
+.fold:hover circle{stroke-width:3}
+@media (prefers-reduced-motion:reduce){#content{transition:none}}
+
+/* ---------- floating chrome ---------- */
+.panel{position:fixed;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgb(0 0 0 / .08)}
+.tl{top:14px;left:14px;display:flex;align-items:center;gap:14px;padding:8px 10px 8px 14px}
+.logo{display:flex;align-items:center;gap:9px;white-space:nowrap}
+.logo svg{flex:none}
+.wordmark{font-family:var(--logo);font-variation-settings:var(--dvar);font-size:1.25rem;line-height:1}
+.search{display:flex;align-items:center;gap:6px;border-left:1px solid var(--line);padding-left:12px}
+.search input{border:0;background:transparent;outline:none;width:210px;font-family:var(--ui);font-size:.95rem;padding:6px 4px}
+.search input::placeholder{color:var(--muted)}
+.search kbd{font:600 .7rem var(--ui);color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+
+.tr{top:14px;right:14px;display:flex;align-items:center;gap:6px;padding:6px}
+.seg{display:flex;gap:2px;background:var(--bg);border-radius:10px;padding:3px}
+.seg a,.seg span{font:600 .85rem var(--ui);padding:7px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
+.seg span[aria-current]{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px rgb(0 0 0 / .12)}
+.seg a:hover{color:var(--ink)}
+.iconbtn{width:36px;height:36px;border-radius:10px;border:1px solid transparent;background:transparent;display:grid;place-items:center;cursor:pointer;font-weight:700}
+.iconbtn:hover{background:var(--bg)}
+.iconbtn[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
+
+.bl{bottom:14px;left:14px;padding:8px 14px;display:flex;gap:8px;align-items:center;max-width:calc(100% - 520px);flex-wrap:wrap;font-size:.88rem}
+.bl .lbl{font:600 .7rem var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.trail button{border:0;background:none;color:var(--accent);cursor:pointer;padding:2px 0;font-weight:600}
+.trail button[aria-current="true"]{color:var(--ink);cursor:default}
+.trail i{font-style:normal;color:var(--muted);margin:0 4px}
+
+.br{bottom:14px;right:14px;padding:8px 10px;display:flex;gap:14px;align-items:center;font-size:.85rem}
+.br label{display:flex;gap:6px;align-items:center;color:var(--muted)}
+.br input[type=range]{width:90px;accent-color:var(--accent)}
+.br input[type=checkbox]{accent-color:var(--accent)}
+.br output{min-width:1ch;color:var(--ink);font-variant-numeric:tabular-nums}
+.zoom{display:flex;gap:2px;border-left:1px solid var(--line);padding-left:10px}
+.zoom button{width:30px;height:30px;border-radius:8px;border:0;background:transparent;cursor:pointer;font-weight:700}
+.zoom button:hover{background:var(--bg)}
+.glyphs{display:flex;gap:12px;align-items:center;border-left:1px solid var(--line);padding-left:12px;color:var(--muted)}
+.glyphs span{display:flex;gap:5px;align-items:center}
+
+/* ---------- explain drawer ---------- */
+.drawer{top:70px;right:14px;bottom:70px;width:340px;padding:20px;overflow:auto;display:grid;gap:14px;align-content:start}
+.drawer h2{font-family:var(--display);font-variation-settings:var(--dvar);font-size:1.35rem;margin:0;line-height:1.15}
+.drawer p,.drawer li{font-size:.92rem;line-height:1.5;margin:0}
+.drawer ol{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.drawer .muted{color:var(--muted)}
+.drawer .src{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.drawer .x{position:absolute;top:10px;right:10px}
+.gl{display:grid;gap:8px}
+.gl div{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:center;font-size:.9rem}
+.linkbtn{justify-self:start;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:7px 14px;font-weight:600;cursor:pointer;font-size:.85rem}
+
+/* ---------- annotations ---------- */
+#anno{position:fixed;inset:0;pointer-events:none}
+#annoLines{position:absolute;inset:0;width:100%;height:100%}
+.callout{position:absolute;width:220px;background:var(--ink);color:var(--paper);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.4;box-shadow:0 6px 20px rgb(0 0 0 / .18)}
+.callout b{font-family:var(--display);font-variation-settings:var(--dvar);display:block;font-size:.92rem;margin-bottom:2px}
+.annoBar{position:fixed;left:50%;top:14px;transform:translateX(-50%);padding:8px 8px 8px 14px;display:flex;gap:10px;align-items:center;font-size:.85rem}
+.annoBar button{border:0;background:var(--ink);color:var(--paper);border-radius:999px;padding:6px 12px;font-weight:600;cursor:pointer}
+
+/* ---------- preview card ---------- */
+.card{width:300px;padding:16px;display:grid;gap:8px;z-index:5}
+.card h3{font-family:var(--display);font-variation-settings:var(--dvar);font-size:1.15rem;margin:0;padding-right:24px;line-height:1.2}
+.card .eyebrow{font:600 .7rem var(--ui);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.card p{margin:0;font-size:.9rem;line-height:1.45;color:var(--muted)}
+.card .dir{display:flex;gap:8px;align-items:center;font-size:.85rem}
+.card .row{display:flex;gap:8px;flex-wrap:wrap;padding-top:4px}
+.card .row button,.card .row a{font:600 .8rem var(--ui);padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;text-decoration:none}
+.card .row .primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.card .x,.drawer .x{border:0;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;position:absolute;top:8px;right:10px}
+
+/* ---------- design review switcher (not part of the product) ---------- */
+.review{position:fixed;left:50%;bottom:72px;transform:translateX(-50%);background:var(--review);color:var(--review-fg);border-radius:999px;padding:6px 6px 6px 16px;display:flex;align-items:center;gap:6px;box-shadow:0 8px 28px rgb(0 0 0 / .25);font:600 .8rem system-ui,sans-serif;z-index:10}
+.review .tag{opacity:.6;font-weight:500;margin-right:4px;letter-spacing:.06em;text-transform:uppercase;font-size:.68rem}
+.review button{border:0;background:transparent;color:inherit;border-radius:999px;padding:7px 12px;cursor:pointer;font:inherit;opacity:.75}
+.review button[aria-pressed="true"]{background:var(--review-fg);color:var(--review);opacity:1}
+.review .spec{border-left:1px solid color-mix(in srgb, var(--review-fg) 30%, transparent);border-radius:0 999px 999px 0;opacity:1}
+
+.specimen{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(860px,calc(100% - 32px));max-height:calc(100% - 120px);overflow:auto;padding:28px;display:grid;gap:22px;z-index:9;background:var(--paper)}
+.specimen .x{position:absolute;top:12px;right:14px;border:0;background:none;font-size:1.3rem;cursor:pointer;color:var(--muted)}
+.specimen .head{display:grid;gap:6px}
+.specimen .tagline{color:var(--muted);font-size:1rem;max-width:62ch}
+.sp-logo{display:flex;align-items:center;gap:16px;padding:22px;border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}
+.sp-logo .wordmark{font-size:2.6rem}
+.sp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.sp-grid > div{display:grid;gap:6px;align-content:start}
+.sp-k{font:600 .7rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sp-fonts{display:grid;gap:8px;font-size:.9rem}
+.sp-fonts div{display:grid;grid-template-columns:110px 1fr;gap:10px}
+.sp-fonts span:first-child{color:var(--muted)}
+.sp-note{font-size:.88rem;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <svg id="map" role="img" aria-label="Mind map"><g id="vp"><g id="content"></g></g></svg>
+</div>
+
+<!-- top left: logo + search -->
+<div class="panel tl">
+  <div class="logo" id="logo"></div>
+  <form class="search" id="searchForm">
+    <label for="q" style="position:absolute;left:-9999px">Search Wikipedia</label>
+    <input id="q" list="terms" placeholder="Search Wikipedia…" autocomplete="off">
+    <datalist id="terms"></datalist>
+    <kbd>/</kbd>
+  </form>
+</div>
+
+<!-- top right: lens switch + help -->
+<div class="panel tr">
+  <nav class="seg" aria-label="Lens">
+    <span aria-current="page">Chapters</span>
+    <a href="lens-kinds.html" title="Preview of the Kinds lens">Kinds</a>
+    <a href="lens-links.html" title="Preview of the Links in / out lens">Links</a>
+    <a href="lens-metro.html" title="Preview of the Metro lens">Metro</a>
+  </nav>
+  <button class="iconbtn" id="annoBtn" aria-pressed="true" title="Label the map (?)" aria-label="Label the map">?</button>
+  <button class="iconbtn" id="drawerBtn" aria-pressed="false" title="How this map is built (i)" aria-label="How this map is built">i</button>
+</div>
+
+<!-- bottom left: trail -->
+<div class="panel bl">
+  <span class="lbl">Trail</span>
+  <div class="trail" id="trail"></div>
+</div>
+
+<!-- bottom right: controls -->
+<div class="panel br">
+  <label for="density">Links <input id="density" type="range" min="2" max="8" value="4"><output id="densityOut">4</output></label>
+  <label for="hk"><input id="hk" type="checkbox"> See also</label>
+  <div class="glyphs" aria-label="Link direction symbols">
+    <span id="gOut"></span><span id="gBoth"></span>
+  </div>
+  <div class="zoom">
+    <button id="zIn" type="button" aria-label="Zoom in">+</button>
+    <button id="zOut" type="button" aria-label="Zoom out">−</button>
+    <button id="zFit" type="button" aria-label="Fit map to window">⤢</button>
+  </div>
+</div>
+
+<!-- explain drawer -->
+<aside class="panel drawer" id="drawer" hidden aria-label="How this map is built">
+  <button class="x" id="drawerX" aria-label="Close">×</button>
+  <p class="sp-k">Chapters lens</p>
+  <h2>How this map is built</h2>
+  <ol>
+    <li>The article is loaded from Wikipedia and read chapter by chapter.</li>
+    <li>Every chapter heading becomes a <b>branch</b>. Subchapters become thinner branches. Use − and + to fold them.</li>
+    <li>Every link in the text of a chapter becomes a <b>leaf</b>. Links from infoboxes, footnotes and navigation boxes are left out.</li>
+    <li>For each leaf, we check whether that article links back. The symbol shows the direction.</li>
+    <li>Tap a leaf to preview it. Tap ⊕ to make it the new center.</li>
+  </ol>
+  <div class="gl" id="glLegend"></div>
+  <p class="muted">“See also”, “References” and similar chapters are hidden. Turn them on with <b>See also</b> at the bottom.</p>
+  <button class="linkbtn" id="drawerAnno" type="button">Label the map</button>
+  <p class="src" id="src"></p>
+</aside>
+
+<!-- annotation overlay -->
+<div id="anno"><svg id="annoLines"></svg></div>
+<div class="panel annoBar" id="annoBar"><span>Labels explain the map.</span><button id="annoOff" type="button">Got it</button></div>
+
+<!-- preview card -->
+<div class="panel card" id="card" hidden>
+  <button class="x" id="cardX" aria-label="Close preview">×</button>
+  <span class="eyebrow" id="cardEy"></span>
+  <h3 id="cardT"></h3>
+  <div class="dir" id="cardDir"></div>
+  <p id="cardP"></p>
+  <div class="row" id="cardRow"></div>
+</div>
+
+<!-- specimen -->
+<div class="panel specimen" id="specimen" hidden role="dialog" aria-label="Type specimen">
+  <button class="x" id="specX" aria-label="Close specimen">×</button>
+  <div class="head">
+    <span class="sp-k" id="spKicker"></span>
+    <h2 class="t-center" id="spName" style="margin:0;font-size:2rem;line-height:1.1"></h2>
+    <p class="tagline" id="spTag"></p>
+  </div>
+  <div class="sp-logo" id="spLogo"></div>
+  <div class="sp-grid">
+    <div><span class="sp-k">Center · 26 px</span><span id="spCenter" style="font-family:var(--display);font-variation-settings:var(--dvar);font-size:26px">Albert Einstein</span></div>
+    <div><span class="sp-k">Chapter · 17 px</span><span id="spGroup" style="font-family:var(--display);font-variation-settings:var(--dvar);font-size:17px">Early life and education</span></div>
+    <div><span class="sp-k">Leaf · 14 px</span><span style="font-family:var(--label);font-variation-settings:var(--lvar);font-size:14px">Ulm · Kingdom of Württemberg · ETH Zürich · Special relativity · 1905</span></div>
+    <div><span class="sp-k">Leaf · 12 px (zoomed out)</span><span style="font-family:var(--label);font-variation-settings:var(--lvar);font-size:12px">Photoelectric effect · Mileva Marić · Institute for Advanced Study</span></div>
+  </div>
+  <div class="sp-fonts" id="spFonts"></div>
+  <p class="sp-note" id="spNote"></p>
+</div>
+
+<!-- design review switcher -->
+<div class="review" role="group" aria-label="Design review: style direction">
+  <span class="tag">Style</span>
+  <span id="dirBtns" style="display:flex;gap:2px"></span>
+  <button class="spec" id="specBtn" type="button">Specimen</button>
+</div>
+
+<script src="assets/sample-data.js"></script>
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  const $ = (id) => document.getElementById(id);
+  const { ARTICLES } = window.WMM;
+  const COLORS = ["--b1", "--b2", "--b3", "--b4", "--b5", "--b6"];
+
+  // ------------------------------------------------------------------ directions
+  const DIRS = {
+    editorial: {
+      name: "1 · Editorial Slab",
+      tagline: "Zilla Slab for everything with personality, Fira Sans for everything that has to be read small. Bookish but lively; the italic gives the logo its character.",
+      display: `"Zilla Slab", Georgia, serif`, label: `"Fira Sans", system-ui, sans-serif`, ui: `"Fira Sans", system-ui, sans-serif`, logo: `"Zilla Slab", Georgia, serif`,
+      dvar: "normal", lvar: "normal", gw: 700, sw: 600, cw: 700, upper: false, track: 0, organic: false,
+      mark: "line",
+      word: () => `<span style="font-weight:700">Wiki<i style="font-weight:700;color:var(--b1)">Mind</i>Map</span>`,
+      fonts: [["Display", "Zilla Slab 600–700 + italic (Typotheque for Mozilla, OFL)"], ["Labels & UI", "Fira Sans 400–600 (Spiekermann / Carrois for Mozilla, OFL)"], ["Scripts", "Zilla: Latin. Fira: Latin, Cyrillic, Greek"], ["Paid upgrade", "Tisa + Tisa Sans (Typotheque): same roots, more weights"]],
+      note: "The reference option. Zilla Slab is based on Typotheque’s Tisa, and Fira Sans on Spiekermann’s FF Meta, so both come from well-known type designers. Straight, round-capped branches suit its calm, editorial tone."
+    },
+    hybrid: {
+      name: "3 · Editorial + graphic logo",
+      tagline: "The map and interface are exactly Editorial Slab. Only the wordmark uses Bricolage Grotesque, a quirky poster grotesk, so the brand feels designed while the map stays calm.",
+      display: `"Zilla Slab", Georgia, serif`, label: `"Fira Sans", system-ui, sans-serif`, ui: `"Fira Sans", system-ui, sans-serif`, logo: `"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif`,
+      dvar: "normal", lvar: "normal", gw: 700, sw: 600, cw: 700, upper: false, track: 0, organic: true,
+      mark: "organic",
+      word: () => `<span style="font-weight:800;letter-spacing:-.035em">WikiMindMap</span>`,
+      fonts: [["Logo", "Bricolage Grotesque 800, tight spacing (OFL)"], ["Display", "Zilla Slab 600–700 (OFL)"], ["Labels & UI", "Fira Sans 400–600 (OFL)"], ["Scripts", "Labels: Latin, Cyrillic, Greek (Fira)"]],
+      note: "Three families, but Bricolage is only needed for the logo. It can be exported as an SVG outline, so the app doesn’t download that font at all. This mock also shows tapered branches, so you can compare them with the straight ones in option 1."
+    },
+    bitter: {
+      name: "5 · Screen Slab",
+      tagline: "Bitter, a sturdy slab drawn for screens, in heavy weights for the logo, center and chapters; Schibsted Grotesk, a newspaper grotesk, for labels and interface. More magazine than book.",
+      display: `"Bitter", Georgia, serif`, label: `"Schibsted Grotesk", system-ui, sans-serif`, ui: `"Schibsted Grotesk", system-ui, sans-serif`, logo: `"Bitter", Georgia, serif`,
+      dvar: "normal", lvar: "normal", gw: 800, sw: 700, cw: 800, upper: false, track: 0, organic: false,
+      mark: "line",
+      word: () => `<span style="font-weight:800">Wiki<span style="color:var(--b2)">Mind</span>Map</span>`,
+      fonts: [["Display", "Bitter 700–800 + italic (Huerta Tipográfica, OFL)"], ["Labels & UI", "Schibsted Grotesk 400–700 (OFL)"], ["Scripts", "Bitter: Latin, Cyrillic. Schibsted: Latin"]],
+      note: "The most robust at small sizes and when zoomed out, but also the least delicate. Schibsted Grotesk covers only Latin scripts, so labels in Russian, Greek or other scripts fall back to system fonts."
+    }
+  };
+  let dir = "editorial";
+
+  // ------------------------------------------------------------------ helpers
+  function el(tag, attrs, parent) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function onActivate(node, fn) {
+    node.addEventListener("click", (e) => { e.stopPropagation(); fn(e); });
+    node.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(e); } });
+  }
+  const linkOf = (a, t) => a.links.find((l) => l.t === t) || { t, dir: "out", v: 1000 };
+  const up = (s) => (DIRS[dir].upper ? s.toUpperCase() : s);
+
+  function markSVG(kind, size) {
+    const s = size || 30;
+    if (kind === "geometric") {
+      return `<svg width="${s}" height="${s}" viewBox="0 0 28 28" aria-hidden="true"><g stroke-width="1.6" fill="none"><path d="M14 14 L4 5" stroke="var(--b1)"/><path d="M14 14 L25 6" stroke="var(--b2)"/><path d="M14 14 L24 24" stroke="var(--b3)"/><path d="M14 14 L4 23" stroke="var(--b4)"/></g><g><circle cx="4" cy="5" r="2.4" fill="var(--b1)"/><circle cx="25" cy="6" r="2.4" fill="var(--b2)"/><circle cx="24" cy="24" r="2.4" fill="var(--b3)"/><circle cx="4" cy="23" r="2.4" fill="var(--b4)"/></g><rect x="10" y="10" width="8" height="8" fill="var(--ink)" transform="rotate(45 14 14)"/></svg>`;
+    }
+    if (kind === "line") {
+      return `<svg width="${s}" height="${s}" viewBox="0 0 28 28" aria-hidden="true"><g fill="none" stroke-width="2.6" stroke-linecap="round"><path d="M14 14 Q8 6 4 5" stroke="var(--b1)"/><path d="M14 14 Q22 7 25 6" stroke="var(--b2)"/><path d="M14 14 Q21 21 24 24" stroke="var(--b3)"/><path d="M14 14 Q6 20 4 24" stroke="var(--b4)"/></g><circle cx="14" cy="14" r="5" fill="var(--ink)"/></svg>`;
+    }
+    // organic: tapered filled strokes
+    const taper = (x1, y1, cx, cy, x2, y2, c) => {
+      const w = 2.6;
+      return `<path d="M${14 - w * 0.2} ${14 - w} Q${cx} ${cy} ${x2} ${y2} Q${cx + 1.5} ${cy + 1.5} ${14 + w * 0.2} ${14 + w} Z" fill="${c}"/>`;
+    };
+    return `<svg width="${s}" height="${s}" viewBox="0 0 28 28" aria-hidden="true">${taper(14, 14, 8, 6, 3, 4.5, "var(--b1)")}${taper(14, 14, 21, 6, 25.5, 5, "var(--b2)")}${taper(14, 14, 21, 21, 25, 24.5, "var(--b3)")}${taper(14, 14, 6, 20, 3, 24.5, "var(--b4)")}<circle cx="14" cy="14" r="5.2" fill="var(--ink)"/></svg>`;
+  }
+
+  // Direction glyph: out = solid dot with outward arrow; both = capsule with double arrow; in = ring with inward arrow.
+  function glyph(parent, x, y, side, d, color) {
+    const g = el("g", { transform: `translate(${x} ${y}) scale(${side} 1)` }, parent);
+    if (d === "both") {
+      el("rect", { x: -9, y: -6, width: 18, height: 12, rx: 6, fill: color }, g);
+      el("path", { d: "M-5 0H5M-2.6 -2.6L-5 0L-2.6 2.6M2.6 -2.6L5 0L2.6 2.6", stroke: "var(--paper)", "stroke-width": 1.5, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, g);
+      return 9;
+    }
+    if (d === "in") {
+      el("circle", { r: 6.5, fill: "var(--paper)", stroke: color, "stroke-width": 2 }, g);
+      el("path", { d: "M3 0H-3M-0.6 -2.4L-3 0L-0.6 2.4", stroke: color, "stroke-width": 1.5, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, g);
+      return 6.5;
+    }
+    el("circle", { r: 6.5, fill: color }, g);
+    el("path", { d: "M-3 0H3M0.6 -2.4L3 0L0.6 2.4", stroke: "var(--paper)", "stroke-width": 1.5, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, g);
+    return 6.5;
+  }
+  function glyphIcon(d) {
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("width", 22); svg.setAttribute("height", 16); svg.setAttribute("viewBox", "-11 -8 22 16"); svg.setAttribute("aria-hidden", "true");
+    glyph(svg, 0, 0, 1, d, "var(--b1)");
+    return svg;
+  }
+
+  // Branch: tapered filled shape for organic directions, stroked path otherwise.
+  function branch(parent, x0, y0, x1, y1, w0, w1, color) {
+    const mx = (x0 + x1) / 2;
+    if (DIRS[dir].organic && w0 > 2.5) {
+      const a = w0 / 2, b = w1 / 2;
+      el("path", {
+        d: `M${x0} ${y0 - a} C${mx} ${y0 - a}, ${mx} ${y1 - b}, ${x1} ${y1 - b} L${x1} ${y1 + b} C${mx} ${y1 + b}, ${mx} ${y0 + a}, ${x0} ${y0 + a} Z`,
+        fill: color
+      }, parent);
+    } else {
+      el("path", { d: `M${x0} ${y0} C${mx} ${y0}, ${mx} ${y1}, ${x1} ${y1}`, stroke: color, "stroke-width": Math.max(w1, (w0 + w1) / 2), fill: "none", "stroke-linecap": "round", opacity: w0 > 2.5 ? 1 : 0.8 }, parent);
+    }
+  }
+
+  // ------------------------------------------------------------------ state
+  const state = { trail: ["Mind map"], pos: 0, folded: new Set(), anno: true, view: { k: 1, tx: 0, ty: 0 }, fitNext: true };
+  const density = $("density"), hk = $("hk");
+
+  // ------------------------------------------------------------------ tree
+  function tree(term, a) {
+    const max = +density.value;
+    const leaves = (links, depth, color, from) => {
+      const uniq = [...new Set(links)];
+      const out = uniq.slice(0, max).map((t) => ({ type: "leaf", link: linkOf(a, t), depth, color, from }));
+      if (uniq.length > max) out.push({ type: "more", n: uniq.length - max, depth, color });
+      return out;
+    };
+    return a.sections.map((s, i) => ({ s, i })).filter(({ s }) => hk.checked || !s.housekeeping).map(({ s, i }, n) => {
+      const color = s.housekeeping ? "var(--muted)" : `var(${COLORS[n % COLORS.length]})`;
+      const key = `${term}|${i}`;
+      const count = s.subs ? s.subs.reduce((c, x) => c + x.links.length, 0) : s.links.length;
+      const sec = { type: "group", label: s.t, key, depth: 1, color, count, children: [] };
+      if (state.folded.has(key)) return sec;
+      sec.children = s.subs
+        ? s.subs.map((sub, j) => {
+            const k2 = `${key}|${j}`;
+            return { type: "sub", label: sub.t, key: k2, depth: 2, color, count: sub.links.length,
+              children: state.folded.has(k2) ? [] : leaves(sub.links, 3, color, `${s.t} › ${sub.t}`) };
+          })
+        : leaves(s.links, 2, color, s.t);
+      return sec;
+    });
+  }
+  const rows = (n) => (n.children && n.children.length ? n.children.reduce((c, k) => c + rows(k), 0) : 1);
+  function place(list) {
+    const total = list.reduce((c, n) => c + rows(n), 0);
+    const gap = 30;
+    let row = 0;
+    const walk = (n) => {
+      if (n.children && n.children.length) { const ys = n.children.map(walk); n.y = (ys[0] + ys[ys.length - 1]) / 2; }
+      else { n.y = (row - (total - 1) / 2) * gap; row++; }
+      return n.y;
+    };
+    list.forEach(walk);
+  }
+  const X = { 1: 170, 2: 320, 3: 460 };
+
+  // ------------------------------------------------------------------ render
+  const anno = {};
+  function render() {
+    const term = state.trail[state.pos];
+    const a = ARTICLES[term];
+    const root = $("content");
+    root.innerHTML = "";
+    for (const k in anno) delete anno[k];
+
+    const secs = tree(term, a);
+    const total = secs.reduce((c, n) => c + rows(n), 0);
+    const right = [], left = [];
+    let acc = 0;
+    secs.forEach((n) => { if (!right.length || acc + rows(n) / 2 <= total / 2) { right.push(n); acc += rows(n); } else left.push(n); });
+    left.reverse();
+    place(right); place(left);
+
+    const layer = { br: el("g", {}, root), fg: el("g", {}, root) };
+    const D = DIRS[dir];
+
+    const drawNode = (n, side, px, py) => {
+      const x = side * X[n.depth];
+      if (n.type === "group" || n.type === "sub") {
+        const w0 = n.depth === 1 ? 14 : 6, w1 = n.depth === 1 ? 5 : 2.5;
+        branch(layer.br, px + side * (n.depth === 1 ? 50 : 8), py, x, n.y, w0, w1, n.color);
+        const open = n.children.length > 0;
+        const lbl = el("text", {
+          x: x - side * 4, y: n.y - 12, "text-anchor": side > 0 ? "end" : "start",
+          class: n.depth === 1 ? "t-group" : "t-sub",
+          "font-size": n.depth === 1 ? 18 : 14.5, "font-weight": n.depth === 1 ? D.gw : D.sw,
+          "letter-spacing": D.track
+        }, layer.fg);
+        lbl.textContent = up(n.label);
+        const f = el("g", { class: "fold", tabindex: 0, role: "button", "aria-expanded": String(open), "aria-label": `${open ? "Fold" : "Unfold"} ${n.label}` }, layer.fg);
+        el("circle", { cx: x, cy: n.y, r: 8, fill: "var(--paper)", stroke: n.color, "stroke-width": 2 }, f);
+        el("path", { d: open ? `M${x - 3.5} ${n.y}h7` : `M${x - 3.5} ${n.y}h7M${x} ${n.y - 3.5}v7`, stroke: "var(--ink)", "stroke-width": 1.6, "stroke-linecap": "round" }, f);
+        if (!open) {
+          const m = el("text", { x: x + side * 14, y: n.y + 4.5, "text-anchor": side > 0 ? "start" : "end", "font-size": 12.5, class: "t-leaf t-muted" }, f);
+          m.textContent = `+${n.count} links`;
+        }
+        onActivate(f, () => { state.folded.has(n.key) ? state.folded.delete(n.key) : state.folded.add(n.key); render(); });
+        if (n.depth === 1 && side > 0 && !anno.group) { anno.group = f; anno.groupLabel = n.label; }
+        if (n.depth === 1 && !open && !anno.folded) anno.folded = f;
+        if (n.depth === 2 && side < 0 && !anno.sub) anno.sub = lbl;
+        n.children.forEach((c) => drawNode(c, side, x, n.y));
+      } else if (n.type === "leaf") {
+        branch(layer.br, px + side * 9, py, x - side * 8, n.y, 1.8, 1.8, n.color);
+        const lg = el("g", { class: "leaf", tabindex: 0, role: "button", "aria-label": `Preview ${n.link.t}` }, layer.fg);
+        const r = glyph(lg, x, n.y, side, n.link.dir === "in" ? "both" : n.link.dir, n.color);
+        const t = el("text", { x: x + side * (r + 7), y: n.y + 5, "text-anchor": side > 0 ? "start" : "end", "font-size": 14.5, class: "t-leaf", "font-weight": ARTICLES[n.link.t] ? 700 : 400 }, lg);
+        t.textContent = n.link.t;
+        onActivate(lg, () => openCard(n, lg));
+        const w = t.getComputedTextLength();
+        const cx = x + side * (r + 7 + w + 14);
+        const rc = el("g", { class: "rc", tabindex: 0, role: "button", "aria-label": `Make ${n.link.t} the center` }, layer.fg);
+        el("circle", { cx, cy: n.y, r: 9, fill: "var(--accent-soft)", stroke: "var(--accent)", "stroke-width": 1.2 }, rc);
+        el("path", { d: `M${cx} ${n.y - 5}v3M${cx} ${n.y + 2}v3M${cx - 5} ${n.y}h3M${cx + 2} ${n.y}h3`, stroke: "var(--accent)", "stroke-width": 1.6, "stroke-linecap": "round" }, rc);
+        onActivate(rc, () => recenter(n.link.t));
+        if (side > 0 && n.link.dir === "both" && !anno.glyph) anno.glyph = lg.firstChild;
+        if (side < 0 && !anno.rc) anno.rc = rc;
+      } else {
+        const m = el("text", { x: x + side * 2, y: n.y + 4.5, "text-anchor": side > 0 ? "start" : "end", "font-size": 12.5, class: "t-leaf t-muted" }, layer.fg);
+        m.textContent = `+${n.n} more`;
+      }
+    };
+    right.forEach((n) => drawNode(n, 1, 0, 0));
+    left.forEach((n) => drawNode(n, -1, 0, 0));
+
+    // center
+    const c = el("g", { class: "centerNode", tabindex: 0, role: "button", "aria-label": `About ${term}` }, layer.fg);
+    const ct = el("text", { x: 0, y: 8, "text-anchor": "middle", "font-size": 24, "font-weight": D.cw, class: "t-center", "letter-spacing": D.track }, c);
+    ct.style.fill = "var(--paper)";
+    ct.textContent = up(term);
+    const cw = ct.getComputedTextLength() + 52;
+    c.insertBefore(el("rect", { x: -cw / 2, y: -27, width: cw, height: 54, rx: 27, fill: "var(--ink)" }), ct);
+    onActivate(c, () => openCenterCard(term, c));
+    anno.center = c;
+
+    drawTrail();
+    $("src").textContent = `Source: en.wikipedia.org/wiki/${term.replace(/ /g, "_")} · sample data, chapters simplified`;
+    if (state.fitNext) { fit(); state.fitNext = false; } else applyView();
+    drawAnno();
+  }
+
+  // ------------------------------------------------------------------ view (pan / zoom)
+  const svg = $("map"), vp = $("vp");
+  function applyView() {
+    const { k, tx, ty } = state.view;
+    vp.setAttribute("transform", `translate(${innerWidth / 2 + tx} ${innerHeight / 2 + ty}) scale(${k})`);
+    drawAnno();
+  }
+  function fit() {
+    const b = $("content").getBBox();
+    const k = Math.min((innerWidth - 80) / b.width, (innerHeight - 170) / b.height, 1.25);
+    state.view = { k, tx: -(b.x + b.width / 2) * k, ty: -(b.y + b.height / 2) * k + 6 };
+    applyView();
+  }
+  function zoomAt(f, px = innerWidth / 2, py = innerHeight / 2) {
+    const v = state.view;
+    const nk = Math.max(0.3, Math.min(3, v.k * f));
+    const lx = (px - innerWidth / 2 - v.tx) / v.k, ly = (py - innerHeight / 2 - v.ty) / v.k;
+    state.view = { k: nk, tx: px - innerWidth / 2 - lx * nk, ty: py - innerHeight / 2 - ly * nk };
+    applyView();
+  }
+  svg.addEventListener("wheel", (e) => { e.preventDefault(); zoomAt(Math.exp(-e.deltaY * 0.0015), e.clientX, e.clientY); }, { passive: false });
+  let drag = null;
+  svg.addEventListener("pointerdown", (e) => {
+    if (e.target.closest(".leaf,.rc,.fold,.centerNode")) return;
+    drag = { x: e.clientX, y: e.clientY, tx: state.view.tx, ty: state.view.ty };
+    svg.setPointerCapture(e.pointerId); svg.classList.add("panning");
+  });
+  svg.addEventListener("pointermove", (e) => {
+    if (!drag) return;
+    state.view.tx = drag.tx + e.clientX - drag.x; state.view.ty = drag.ty + e.clientY - drag.y; applyView();
+  });
+  svg.addEventListener("pointerup", () => { drag = null; svg.classList.remove("panning"); });
+  svg.addEventListener("click", (e) => { if (!e.target.closest(".leaf,.rc,.fold,.centerNode")) closeCard(); });
+  $("zIn").onclick = () => zoomAt(1.25); $("zOut").onclick = () => zoomAt(0.8); $("zFit").onclick = fit;
+  addEventListener("resize", applyView);
+
+  // ------------------------------------------------------------------ annotations
+  const ANNO_TEXT = {
+    center: ["The article", "The Wikipedia article you’re exploring. Tap it for its summary."],
+    group: ["A chapter", "Each chapter heading becomes a branch. Tap − to fold it."],
+    sub: ["A subchapter", "Deeper levels get thinner branches and fold on their own."],
+    glyph: ["Link direction", "→ this article links there. ⇄ that article links back too."],
+    rc: ["Recenter", "Tap ⊕ to make this article the new center of the map."]
+  };
+  function drawAnno() {
+    const box = $("anno"), lines = $("annoLines");
+    box.querySelectorAll(".callout").forEach((n) => n.remove());
+    lines.innerHTML = "";
+    $("annoBar").hidden = !state.anno;
+    $("annoBtn").setAttribute("aria-pressed", String(state.anno));
+    if (!state.anno) return;
+    const cx = innerWidth / 2, cy = innerHeight / 2;
+    const placed = [];
+    ["center", "group", "sub", "glyph", "rc"].forEach((key) => {
+      const target = anno[key];
+      if (!target) return;
+      const r = target.getBoundingClientRect();
+      const px = r.left + r.width / 2, py = r.top + r.height / 2;
+      if (px < 0 || py < 0 || px > innerWidth || py > innerHeight) return;
+      const sx = key === "center" ? 0 : Math.sign(px - cx) || 1;
+      const sy = key === "center" ? 1 : Math.sign(py - cy) || -1;
+      let bx = key === "center" ? px - 110 : px + sx * 70 - (sx < 0 ? 220 : 0);
+      let by = key === "center" ? py + 70 : py + sy * 60 - (sy < 0 ? 64 : 0);
+      bx = Math.max(14, Math.min(innerWidth - 234, bx));
+      by = Math.max(86, Math.min(innerHeight - 190, by));
+      for (const p of placed) if (Math.abs(p.x - bx) < 230 && Math.abs(p.y - by) < 74) by = p.y + (sy > 0 ? 78 : -78);
+      placed.push({ x: bx, y: by });
+      const [t, d] = ANNO_TEXT[key];
+      const c = document.createElement("div");
+      c.className = "callout";
+      c.style.left = bx + "px"; c.style.top = by + "px";
+      c.innerHTML = `<b></b><span></span>`;
+      c.querySelector("b").textContent = key === "group" ? `${t}: ${anno.groupLabel}` : t;
+      c.querySelector("span").textContent = d;
+      box.appendChild(c);
+      const ax = Math.max(bx, Math.min(bx + 220, px)), ay = py < by ? by : by + c.offsetHeight;
+      el("path", { d: `M${px} ${py} L${ax} ${ay}`, stroke: "var(--ink)", "stroke-width": 1.4, fill: "none" }, lines);
+      el("circle", { cx: px, cy: py, r: 3.5, fill: "var(--ink)" }, lines);
+    });
+  }
+  const setAnno = (v) => { state.anno = v; drawAnno(); };
+  $("annoBtn").onclick = () => setAnno(!state.anno);
+  $("annoOff").onclick = () => setAnno(false);
+  $("drawerAnno").onclick = () => { setDrawer(false); setAnno(true); };
+
+  // ------------------------------------------------------------------ drawer
+  const setDrawer = (v) => { $("drawer").hidden = !v; $("drawerBtn").setAttribute("aria-pressed", String(v)); };
+  $("drawerBtn").onclick = () => setDrawer($("drawer").hidden);
+  $("drawerX").onclick = () => setDrawer(false);
+  const gl = $("glLegend");
+  [["out", "Links out: this article links to it."], ["both", "Both ways: that article links back."], ["in", "Links here only: appears in the Links in / out lens."]].forEach(([d, t]) => {
+    const row = document.createElement("div"); row.appendChild(glyphIcon(d));
+    const s = document.createElement("span"); s.textContent = t; row.appendChild(s); gl.appendChild(row);
+  });
+  $("gOut").append(glyphIcon("out"), document.createTextNode("out"));
+  $("gBoth").append(glyphIcon("both"), document.createTextNode("both ways"));
+
+  // ------------------------------------------------------------------ preview card
+  const DIRTEXT = { out: "This article links there", both: "Links go both ways", in: "That article links here" };
+  function placeCard(target) {
+    const card = $("card"), r = target.getBoundingClientRect();
+    card.hidden = false;
+    let x = r.right + 14, y = r.top - 20;
+    if (x + 300 > innerWidth - 14) x = r.left - 314;
+    x = Math.max(14, x); y = Math.max(76, Math.min(innerHeight - card.offsetHeight - 76, y));
+    card.style.left = x + "px"; card.style.top = y + "px";
+  }
+  function fillCard(eyebrow, title, d, text, canRecenter) {
+    $("cardEy").textContent = eyebrow; $("cardT").textContent = title; $("cardP").textContent = text;
+    const dd = $("cardDir"); dd.innerHTML = "";
+    if (d) { dd.appendChild(glyphIcon(d)); dd.appendChild(document.createTextNode(DIRTEXT[d])); }
+    const row = $("cardRow"); row.innerHTML = "";
+    if (canRecenter) { const b = document.createElement("button"); b.className = "primary"; b.textContent = "⊕ Make it the center"; b.onclick = () => recenter(title); row.appendChild(b); }
+    const a = document.createElement("a"); a.href = "https://en.wikipedia.org/wiki/" + encodeURIComponent(title.replace(/ /g, "_")); a.target = "_blank"; a.rel = "noopener"; a.textContent = "Open on Wikipedia ↗"; row.appendChild(a);
+  }
+  function openCard(n, target) {
+    const known = ARTICLES[n.link.t];
+    fillCard("In " + n.from, n.link.t, n.link.dir === "in" ? "both" : n.link.dir, known ? known.lead : "The Wikipedia summary and picture load here in the real app.", true);
+    placeCard(target);
+  }
+  function openCenterCard(term, target) { fillCard("Center article", term, null, ARTICLES[term].lead, false); placeCard(target); }
+  function closeCard() { $("card").hidden = true; }
+  $("cardX").onclick = closeCard;
+
+  // ------------------------------------------------------------------ navigation
+  function transition() {
+    const c = $("content");
+    c.classList.add("out");
+    setTimeout(() => { state.fitNext = true; render(); requestAnimationFrame(() => c.classList.remove("out")); setTimeout(() => c.classList.remove("out"), 40); }, 260);
+  }
+  function recenter(t) {
+    closeCard();
+    if (!ARTICLES[t]) { fillCard("Not in the sample", t, null, "This mock carries three sample articles: Mind map, Tony Buzan and Concept map.", false); $("card").hidden = false; return; }
+    state.trail = state.trail.slice(0, state.pos + 1); state.trail.push(t); state.pos++;
+    state.folded.clear(); transition();
+  }
+  function drawTrail() {
+    const tr = $("trail"); tr.className = "trail"; tr.innerHTML = "";
+    state.trail.forEach((t, i) => {
+      if (i) { const s = document.createElement("i"); s.textContent = "›"; tr.appendChild(s); }
+      const b = document.createElement("button"); b.type = "button"; b.textContent = t;
+      if (i === state.pos) b.setAttribute("aria-current", "true"); else b.onclick = () => { state.pos = i; closeCard(); transition(); };
+      tr.appendChild(b);
+    });
+  }
+  const dl = $("terms"); Object.keys(ARTICLES).forEach((k) => { const o = document.createElement("option"); o.value = k; dl.appendChild(o); });
+  $("searchForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const v = $("q").value.trim(); const hit = Object.keys(ARTICLES).find((k) => k.toLowerCase() === v.toLowerCase());
+    if (hit) { state.trail = [hit]; state.pos = 0; state.folded.clear(); $("q").value = ""; closeCard(); transition(); }
+  });
+  addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT") return;
+    if (e.key === "/") { e.preventDefault(); $("q").focus(); }
+    if (e.key === "?") setAnno(!state.anno);
+    if (e.key === "i") setDrawer($("drawer").hidden);
+    if (e.key === "Escape") { closeCard(); setDrawer(false); $("specimen").hidden = true; }
+  });
+  density.oninput = () => { $("densityOut").textContent = density.value; render(); };
+  hk.onchange = () => { state.fitNext = true; render(); };
+
+  // ------------------------------------------------------------------ direction switch
+  const btns = $("dirBtns");
+  Object.entries(DIRS).forEach(([id, d]) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = d.name; b.dataset.id = id;
+    b.onclick = () => setDir(id); btns.appendChild(b);
+  });
+  async function setDir(id) {
+    dir = id;
+    const D = DIRS[id], R = document.documentElement.style;
+    R.setProperty("--display", D.display); R.setProperty("--label", D.label); R.setProperty("--ui", D.ui);
+    R.setProperty("--dvar", D.dvar); R.setProperty("--lvar", D.lvar); R.setProperty("--logo", D.logo);
+    btns.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === id)));
+    const logo = `${markSVG(D.mark, 30)}<span class="wordmark">${D.word()}</span>`;
+    $("logo").innerHTML = logo;
+    $("spLogo").innerHTML = `${markSVG(D.mark, 64)}<span class="wordmark">${D.word()}</span>`;
+    $("spKicker").textContent = "Style direction";
+    $("spName").textContent = D.name; $("spTag").textContent = D.tagline; $("spNote").textContent = D.note;
+    $("spFonts").innerHTML = "";
+    D.fonts.forEach(([k, v]) => { const r = document.createElement("div"); r.innerHTML = "<span></span><span></span>"; r.children[0].textContent = k; r.children[1].textContent = v; $("spFonts").appendChild(r); });
+    $("spCenter").style.fontWeight = D.cw; $("spGroup").style.fontWeight = D.gw;
+    $("spCenter").style.letterSpacing = D.upper ? ".08em" : "0"; $("spGroup").style.letterSpacing = D.upper ? ".08em" : "0";
+    $("spCenter").textContent = up("Albert Einstein"); $("spGroup").textContent = up("Early life and education");
+    const fam = (s) => s.split(",")[0];
+    try {
+      await Promise.all([`${D.gw} 18px ${fam(D.display)}`, `400 14px ${fam(D.label)}`, `700 14px ${fam(D.label)}`, `800 20px ${fam(D.logo)}`].map((f) => document.fonts.load(f)));
+    } catch (e) { /* fall back to whatever is loaded */ }
+    state.fitNext = true;
+    render();
+  }
+  $("specBtn").onclick = () => { $("specimen").hidden = !$("specimen").hidden; };
+  $("specX").onclick = () => { $("specimen").hidden = true; };
+
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => setDir("editorial"));
+})();
+</script>
+</body>
+</html>

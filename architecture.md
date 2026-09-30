@@ -9,7 +9,7 @@ WikiMindMap 2027 is a **static single-page app**. The browser talks directly to 
 | Nothing to maintain (this is what ended the 2007 version) | Static hosting on GitHub Pages, no backend in the MVP |
 | Fast: a map within ~1 s from cache, ~2.5 s cold | One request for the article structure, batched follow-ups, local cache |
 | Lenses can be added one by one | Lens = pure function with a declared data need; shared layouts and renderer |
-| Works on phones, with keyboard and screen readers | SVG map plus an outline view generated from the same graph |
+| Desktop first, keyboard and screen readers; tablets work, phones are nice to have | Full-window SVG map with pan and zoom, plus an outline view generated from the same graph (see `styleguide.md`) |
 | Well-behaved Wikimedia client | Identifying header, batching, concurrency limit, caching |
 | Vibe-coding friendly | Mainstream stack (React, TypeScript), strict boundaries, tests on real fixtures |
 
@@ -18,8 +18,8 @@ WikiMindMap 2027 is a **static single-page app**. The browser talks directly to 
 ```mermaid
 flowchart LR
   U[Reader's browser<br/>WikiMindMap SPA] -->|static files| GH[GitHub Pages]
-  U -->|REST: page HTML, summary, search| WP[xx.wikipedia.org]
-  U -->|Action API: pageviews, linkshere, pageprops, redirects, siteinfo| WP
+  U -->|REST: page HTML, search| WP[xx.wikipedia.org]
+  U -->|Action API: summaries, pageviews, linkshere, pageprops, redirects, siteinfo| WP
   U -.->|M5: entity types| WD[wikidata.org]
   U -.->|later| CF[Cloudflare Worker<br/>Clickstream, path finder, AI]
 ```
@@ -50,10 +50,10 @@ sources ──► Article ──► Lens.build() ──► MapGraph ──► La
 
 | Lens | Milestone | Data needs | Layout |
 |---|---|---|---|
-| Chapters | M2–M4 (MVP) | `sections` | `mindmapTree` (two-sided tidy tree) |
-| Kinds | M5 | `sections`, `pageviews`, `kinds` | `mindmapTree` |
+| Chapters | M2–M4 (MVP) | `sections`, `linksBack` | `mindmapTree` (two-sided tidy tree) |
+| Kinds | M5 | `sections`, `linksBack`, `pageviews`, `kinds` | `mindmapTree` |
 | Links in / out | M6 | `sections`, `pageviews`, `linksHere` | `bipolar` |
-| Metro | M7 | `sections` | `metroLines` |
+| Metro | M7 | `sections`, `linksBack` | `metroLines` |
 
 ## 4. Data sources
 
@@ -63,10 +63,11 @@ Every URL below is built in `src/sources/`. The `{lang}` is the Wikipedia langua
 |---|---|---|
 | Article structure and links | `GET https://{lang}.wikipedia.org/w/rest.php/v1/page/{title}/html` | Parsoid HTML, one request. `<section data-mw-section-id>` gives the chapter tree; `a[rel="mw:WikiLink"]` gives the links; `typeof="mw:Transclusion"` marks content from templates. |
 | Search suggestions | `GET /w/rest.php/v1/search/title?q={q}&limit=8` | Title, short description, thumbnail |
-| Preview card | `GET /api/rest_v1/page/summary/{title}` | Lead extract and thumbnail. Check in M0 whether a core-REST equivalent exists; if so, use it. |
-| Redirects and normalization | `action=query&redirects=1&titles=A|B|…` | 50 titles per request. Used to deduplicate leaves and to recenter on the real article. |
+| Preview card | `action=query&prop=extracts|pageimages|description&exintro=1&explaintext=1&exsentences=3&piprop=thumbnail&pithumbsize=320&redirects=1&titles=…` | Short description, plain-text lead (up to 3 sentences) and thumbnail. Loaded when a card opens; batchable up to 20 titles (the `exintro` limit). Chosen in M0 over `/api/rest_v1/page/summary` (see §13). |
+| Redirects and normalization | `action=query&redirects=1&titles=A|B|…` | 50 titles per request. Only for link targets that Parsoid marks as redirects (`class="mw-redirect"`), to deduplicate leaves. Recentering on a redirect title needs no lookup: `rest.php` answers with a 307 to the target. |
+| Links back (direction symbols) | `action=query&prop=links&titles=A|B|…&pltitles={center}&pllimit=max` | 50 leaf titles per request. Returns, for each leaf, whether it links to the center. Follow `plcontinue`. Gives the *both ways* symbol. |
 | Namespaces | `action=query&meta=siteinfo&siprop=namespaces|namespacealiases` | Once per language, cached 7 days. Filters out `File:`, `Kategorie:` and so on. |
-| Page views (M5) | `action=query&prop=pageviews&titles=…&pvipdays=30` | 50 titles per request; sum the daily values |
+| Page views (M5) | `action=query&prop=pageviews&titles=…&pvipdays=30` | 50 titles per request; sum the daily values. Follow `pvipcontinue`: one response fills only part of a 50-title batch. |
 | Wikidata IDs (M5) | `action=query&prop=pageprops&ppprop=wikibase_item&titles=…` | 50 per request |
 | Entity types (M5) | `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=…&props=claims` | Read P31 (instance of). Map it to a kind with `kindMap.json`. |
 | Incoming links (M6) | `action=query&list=backlinks&blnamespace=0&blfilterredir=nonredirects&bltitle=…&bllimit=500` | Page through the results up to a cap of 2,000 and show "2,000+" beyond that |
@@ -168,7 +169,7 @@ scripts/
   record-fixture.ts     npm run fixtures -- en "Mind map"
   build-kind-map.ts     M5: builds lenses/kindMap.json from Wikidata SPARQL
 tests/
-  fixtures/{lang}/{Title}/   html.html, summary.json, siteinfo.json…
+  fixtures/{lang}/{Title}/   page.html, summary.json, redirects.json… (see datamodel.md §9)
   unit/                 parsoid, lenses, layouts
   e2e/                  Playwright specs
 concepts/               lens previews (reference only)
@@ -190,7 +191,10 @@ core ──► (nothing)
 - **Nodes** are real focusable elements (`role="button"`) with labels. The ⊕ recenter control is a separate button.
 - **Recenter animation:** nodes keep stable IDs (the target title). When the new map shares nodes with the old one, they move to their new place. Old nodes fade out and new ones fade in. Duration 450 ms, and none with `prefers-reduced-motion`.
 - **Outline view:** the same `MapGraph` rendered as nested `<ul>`. It's the default for screen readers, and a toggle for everyone else.
-- **Mobile (< 768 px):** the tree shows only its first level at first. Tapping a branch expands it, and the preview card becomes a bottom sheet.
+- **Canvas:** the SVG fills the window. Pan and zoom are a transform on one root group; fit-to-window runs after every new map. Floating panels, callouts and the preview card are HTML above the SVG (see `styleguide.md` §2–§3).
+- **Folding:** a shared fold toggle on every node with children, for every lens.
+- **Direction symbols:** a shared `DirectionGlyph` component (`styleguide.md` §5).
+- **Screen sizes:** desktop first (≥ 1024 px). Tablets work; phones are nice to have (`styleguide.md` §13).
 
 ## 10. Quality
 
@@ -218,15 +222,20 @@ core ──► (nothing)
 | Custom domain (wikimindmap.org) | DNS, then move hosting to Cloudflare Pages to get proper deep-link status codes |
 | Export (PNG, SVG, OPML, Markdown) | Frontend only, from `PositionedMap` and `MapGraph` |
 
-## 13. Open points to verify in M0 (spike)
+## 13. API findings from the M0 spike
 
-1. `rest.php/v1/page/{title}/html` returns Parsoid HTML with `<section>` wrappers and CORS headers for `en` and `de`.
-2. `Api-User-Agent` is accepted in CORS preflight on both `rest.php` and `api.php`.
-3. Which summary endpoint to use long-term (`/api/rest_v1/page/summary` vs. a core-REST equivalent).
-4. How Parsoid marks red links (links to missing pages) and redirects, and whether we need the `redirects` lookup for every leaf or only on recenter.
-5. `prop=pageviews` is available on all target language wikis.
+Checked on 2026-09-30 against `en`, `de` and `fr` (Mind map, Mindmap, Carte heuristique, World War II) with a throwaway script. CORS was checked by sending `Origin: https://nyfelix.github.io` and a preflight for `Api-User-Agent` from the container; a check from the deployed page follows in TS-03.
 
-Record the findings in this section and adjust the plan if needed.
+1. **Parsoid HTML and sections: confirmed.** `rest.php/v1/page/{title}/html` returns `200` with `Content-Type: text/html; charset=utf-8; profile="https://www.mediawiki.org/wiki/Specs/HTML/2.8.0"`, so the spec version we test against is **2.8.0**. Sections are real nested `<section data-mw-section-id="N">` elements (an `h3` section sits inside its `h2` section). The heading (`<h2 id="Background">`) is the first child of its section, with no wrapper. The revision is in the `ETag` (`W/"1374343935/…"`). No negative section IDs appeared, but the parser still handles them.
+2. **CORS with `Api-User-Agent`: confirmed.** `rest.php` answers the preflight with `204`, `Access-Control-Allow-Origin: *`, and lists `Api-User-Agent` in `Access-Control-Allow-Headers`. `api.php?origin=*` answers with `200`, `*` and `api-user-agent`. The 307 redirect response also carries `Access-Control-Allow-Origin: *`, so `fetch` can follow it.
+3. **Summary endpoint: use the Action API.** There is no core-REST equivalent (`rest.php/v1/page/{title}/bare` has no extract or thumbnail; `/description` and `/summary` return 404). `/api/rest_v1/page/summary` works and sends no deprecation header, but it is the legacy RESTBase layer, and it answered a short burst with HTTP 429 ("You are making too many requests"). `action=query&prop=extracts|pageimages|description` returns everything `Summary` needs, goes through the same `api.php` client as the other lookups, and can batch up to 20 titles.
+4. **Red links and redirects in Parsoid HTML:**
+   - A red link has `class="new"`, an `href` ending in `?action=edit&redlink=1`, and `typeof="mw:LocalizedAttrs"`. Strip the query from the `href` to get the target.
+   - A link to a redirect page has `class="mw-redirect"` and the redirect title as its `href`, not the target. So the `redirects` lookup is needed **only for links marked `mw-redirect`**, not for every leaf (Mind map: 38 of 233 links).
+   - Requesting a redirect title (`/page/Mindmap/html`) returns **307** with `Location: /w/rest.php/v1/page/Mind_map/html?redirect=no`. `fetch` follows it, and `response.url` gives the real title, so recentering and deep links need no extra lookup. With `?redirect=no`, the redirect page itself contains `<link rel="mw:PageProp/redirect" href="./Mind_map">`.
+   - A missing title returns **404** with JSON `{"errorKey":"rest-nonexistent-title",…}`.
+   - Links produced by templates can carry `typeof="mw:Transclusion"` on the `<a>` itself (de: `{{enS}}` → `Englische Sprache`), so `origin` must check the link element too, not only its ancestors. Hatnotes are `div.hatnote[role="note"]`. Link `href`s can carry a fragment (`./Western_Front_(World_War_II)#1939–1940:_Axis_victories`).
+5. **`prop=pageviews`: available on `en`, `de` and `fr`**, with 30 daily values per page. For a 50-title batch, the first response filled only 16 pages and returned `pvipcontinue`, so the client must follow continuation.
 
 ## 14. Development environment
 

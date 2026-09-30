@@ -59,6 +59,7 @@ interface LinkOccurrence {
   origin: LinkOrigin;
   template?: string;           // template name if origin !== "body"
   redLink: boolean;            // target page does not exist
+  redirect: boolean;           // target is a redirect page (class mw-redirect); resolve before use
 }
 
 type LinkOrigin =
@@ -73,7 +74,8 @@ type LinkOrigin =
 **Parsing rules** (`src/sources/parsoid.ts`):
 - Each `<section data-mw-section-id="N">` becomes a `Section`. The first `h2`–`h6` child gives `level`, `title` and `anchor`. Nested `<section>` elements become `children`.
 - Links are `a[rel="mw:WikiLink"]`. Skip links whose namespace isn't 0, and skip self-links (target = this article).
-- `origin` is decided by the nearest enclosing element with `typeof~="mw:Transclusion"` and its template name, via `data-mw`:
+- Red links have `class="new"` and an `href` like `./Mindnode?action=edit&redlink=1`; strip the query to get the target. Links to redirect pages have `class="mw-redirect"` (spike findings: `architecture.md` §13).
+- `origin` is decided by the nearest element with `typeof~="mw:Transclusion"`, starting with the link itself, and its template name, via `data-mw`:
   - navigation box: template name matches `/^Navbox|navbox/i`, or the element has class `navbox`
   - infobox: `/^Infobox/i`, or class `infobox`
   - hatnote: class `hatnote`
@@ -85,10 +87,11 @@ type LinkOrigin =
 ## 3. Enrichments (optional, loaded on demand)
 
 ```ts
-type DataNeed = "sections" | "summaries" | "pageviews" | "kinds" | "linksHere";
+type DataNeed = "sections" | "summaries" | "linksBack" | "pageviews" | "kinds" | "linksHere";
 
 interface Enrichments {
-  redirects: Map<Title, Title>;             // always loaded for leaf titles
+  redirects: Map<Title, Title>;             // loaded for leaf targets with redirect: true
+  linksBack?: Set<Title>;                   // leaf titles that link back to the center (M3)
   summaries?: Map<Title, Summary>;          // lazily, per preview card
   pageviews?: Map<Title, number>;           // views in the last 30 days
   kinds?: Map<Title, KindInfo>;             // M5
@@ -126,8 +129,16 @@ interface Lens<Options = LensOptions> {
   needs: DataNeed[];                            // the loader fetches exactly these
   layout: LayoutId;                             // "mindmapTree" | "bipolar" | "metroLines"
   defaults: Options;
+  explain: LensExplanation;                     // copy for callouts and the drawer (styleguide.md §3)
   build(article: Article, data: Enrichments, options: Options): MapGraph;
 }
+
+interface LensExplanation {
+  steps: string[];                              // "How this map is built", in order
+  hidden: string;                               // what is left out and why
+  callouts: Partial<Record<CalloutTarget, { title: string; text: string }>>;
+}
+type CalloutTarget = "center" | "group" | "subgroup" | "leafDirection" | "recenter" | "line" | "station";
 
 type LensId = "chapters" | "kinds" | "links" | "metro";
 type LayoutId = "mindmapTree" | "bipolar" | "metroLines";
@@ -142,6 +153,8 @@ interface LensOptions {
 
 **Rules for every lens**
 - `build` is pure and deterministic: the same input gives the same output, with no network or randomness.
+- Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded. Incoming-only links (`in`) come from `linksHere`.
+- Every node that has children can fold (`folded` is defined, `false` when open).
 - Leaves are deduplicated **within a group** (a link used twice in one chapter shows once). Across groups a leaf may repeat, and its node `id` includes the group so IDs stay unique.
 - When a group has more leaves than `density`, keep the first `density` by rank and add one `more` node with the count.
 - **Rank within a group:** Chapters ranks by reading order, then by occurrence count. Lenses with page views rank by views. Ties are broken by reading order.
@@ -167,10 +180,13 @@ interface MapNode {
   colorSlot?: number;          // 1–6 → --b1…--b6; undefined → muted
   weight?: number;             // 0–1, drives dot size (e.g. from pageviews)
   count?: number;              // "more" nodes and folded groups: hidden items
-  folded?: boolean;            // groups that can fold
+  folded?: boolean;            // set on every node that has children; true = folded
+  direction?: LinkDirection;   // leaves: shown as a symbol (styleguide.md §5)
   side?: "left" | "right" | "top";   // layout hint (bipolar, fixed kinds slots)
   meta?: Record<string, string | number>;  // shown in the preview card
 }
+
+type LinkDirection = "out" | "both" | "in" | "pending";
 
 interface MapEdge {
   from: string;
@@ -264,6 +280,7 @@ tests/fixtures/{lang}/{Title}/
   headers.json       response headers (Content-Type profile, revision)
   summary.json
   redirects.json     action=query&redirects for the article's link targets
+  linksback.json     links back to the center (M3)
   pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
 tests/fixtures/{lang}/siteinfo.json
 ```

@@ -2,6 +2,10 @@
 
 Visual previews for the WikiMindMap relaunch. These are throwaway prototypes for comparing ideas, not app code.
 
+## Style directions
+
+[style-directions.html](style-directions.html) is a full-window mock of the final app: the floating panels, map labels (`?`), the "How this map is built" drawer (`i`), fold toggles, direction symbols, pan and zoom. The dark switcher at the bottom compares four typography directions; "Specimen" shows the details and licences. The decision goes into `../styleguide.md`.
+
 ## Lens previews
 
 A *lens* decides how the links of an article are grouped into branches. The original WikiMindMap (2007) grouped them by the article's chapters. The previews show the original and three alternatives, all using the same interaction: tap a label for a preview, tap ⊕ to make that article the new center.
