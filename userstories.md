@@ -36,12 +36,6 @@ Goal: a reproducible dev environment, a deployable empty app, and certainty that
 
 Goal: any Wikipedia article can be turned into a reliable `Article`.
 
-### TS-05 Core types and title helpers · S
-- [ ] `src/core/types.ts` matches `datamodel.md` §1–§6
-- [ ] `titles.ts`: URL ↔ title, href → target + fragment, and namespace check using siteinfo
-- [ ] `housekeeping.ts` with the lists from `datamodel.md` §7
-- [ ] Unit tests: umlauts, parentheses, `#fragment`, `File:` / `Datei:` links, underscores
-
 ### TS-06 Parsoid parser · L
 - [ ] `parseParsoid(html, ref, siteinfo, domParser): Article` follows the rules in `datamodel.md` §2
 - [ ] Nested sections become `children` with correct `level`
@@ -377,3 +371,11 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Unit tests for the retry and concurrency logic, with a mocked `fetch`
 
 > Note: The client is `createHttpClient()` (injectable `fetch`, `sleep`, limits) plus a shared `http` instance; it returns `{ data, url, status, headers }`, where `url` is the final URL after the 307 from a redirect title. It also maps Action API `error` objects (HTTP 200) to `Unexpected`, or `RateLimited` for `ratelimited`/`maxlag`. A request waiting for a retry frees its slot. The recorder also takes `--starter`, and sends `User-Agent` as well (allowed in Node). The 12 MB of fixtures are marked `linguist-generated` in `.gitattributes`.
+
+### TS-05 Core types and title helpers · S · M1
+- [x] `src/core/types.ts` matches `datamodel.md` §1–§6
+- [x] `titles.ts`: URL ↔ title, href → target + fragment, and namespace check using siteinfo
+- [x] `housekeeping.ts` with the lists from `datamodel.md` §7
+- [x] Unit tests: umlauts, parentheses, `#fragment`, `File:` / `Datei:` links, underscores
+
+> Note: `types.ts` adds `Siteinfo` (normalized namespaces), `Article.source` (for TS-07) and `level: 1` for the lead; `datamodel.md` is updated. `sources/siteinfo.ts` (`parseSiteinfo`, `loadSiteinfo`) turns the API response into `Siteinfo`, so `titles.ts` stays pure. `titles.ts` is the single place for title ↔ path encoding; `http.ts` no longer has its own.

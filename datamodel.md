@@ -19,6 +19,12 @@ interface ArticleRef {
   lang: Lang;
   title: Title;
 }
+
+/** What the core needs from meta=siteinfo (normalized in sources/siteinfo.ts). */
+interface Siteinfo {
+  lang: Lang;
+  namespaces: Record<string, number>;  // every name, canonical name and alias, lower-case → namespace ID
+}
 ```
 
 **Title rules** (`src/core/titles.ts`):
@@ -37,13 +43,14 @@ interface Article {
   revisionId: number;
   fetchedAt: string;           // ISO timestamp
   parserSpecVersion?: string;  // from the Parsoid Content-Type profile
+  source: "parsoid" | "fallback"; // which parser built it (TS-07)
   lead: Section;               // section 0: text before the first heading
   sections: Section[];         // top-level chapters in reading order
 }
 
 interface Section {
   id: number;                  // data-mw-section-id; 0 = lead
-  level: number;               // 2 for "== x ==", 3 for "=== x ===", …
+  level: number;               // 2 for "== x ==", 3 for "=== x ===", …; 1 for the lead
   title: string;               // heading text, plain
   anchor: string;              // for links to "#History"
   housekeeping: boolean;       // "See also", "References", "Weblinks"… (see §6)

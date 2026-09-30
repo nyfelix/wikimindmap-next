@@ -11,13 +11,8 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { Window } from "happy-dom";
-import {
-  API_USER_AGENT,
-  actionUrl,
-  createHttpClient,
-  restUrl,
-  titleSegment,
-} from "../src/sources/http.ts";
+import { API_USER_AGENT, actionUrl, createHttpClient, restUrl } from "../src/sources/http.ts";
+import { titleToPath } from "../src/core/titles.ts";
 
 const STARTER: Record<string, string[]> = {
   en: [
@@ -67,7 +62,7 @@ function redirectLinkTitles(html: string): string[] {
 }
 
 async function recordArticle(lang: string, requested: string) {
-  const page = await http.getText(restUrl(lang, `page/${titleSegment(requested)}/html`));
+  const page = await http.getText(restUrl(lang, `page/${titleToPath(requested)}/html`));
   // A redirect title is answered with 307 to the target; store under the real title.
   const segment = new URL(page.url).pathname.match(/\/page\/([^/]+)\/html$/)?.[1];
   const title = segment ? decodeURIComponent(segment).replaceAll("_", " ") : requested;

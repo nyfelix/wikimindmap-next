@@ -6,7 +6,6 @@ import {
   createLimiter,
   HttpError,
   restUrl,
-  titleSegment,
 } from "../../src/sources/http.ts";
 
 type FetchArgs = [input: string | URL | Request, init?: RequestInit];
@@ -25,11 +24,8 @@ function deferred<T>() {
 }
 
 describe("URLs", () => {
-  it("encodes titles as path segments", () => {
-    expect(titleSegment("Python (programming language)")).toBe("Python_(programming_language)");
-    expect(titleSegment("Zürich")).toBe("Z%C3%BCrich");
-    expect(titleSegment("AC/DC")).toBe("AC%2FDC");
-    expect(restUrl("de", `page/${titleSegment("Zürich")}/html`)).toBe(
+  it("builds REST URLs", () => {
+    expect(restUrl("de", "page/Z%C3%BCrich/html")).toBe(
       "https://de.wikipedia.org/w/rest.php/v1/page/Z%C3%BCrich/html",
     );
   });

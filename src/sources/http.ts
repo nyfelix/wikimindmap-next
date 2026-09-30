@@ -57,11 +57,6 @@ export class Unexpected extends HttpError {
 
 // ── URLs ────────────────────────────────────────────────────────────────────
 
-/** Title as a URL path segment: spaces become `_`, the rest is percent-encoded (`/` too). */
-export function titleSegment(title: string): string {
-  return encodeURIComponent(title.replaceAll(" ", "_"));
-}
-
 /** `https://{lang}.wikipedia.org/w/rest.php/v1/{path}` */
 export function restUrl(lang: string, path: string): string {
   return `https://${lang}.wikipedia.org/w/rest.php/v1/${path}`;
