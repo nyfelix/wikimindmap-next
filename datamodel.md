@@ -82,13 +82,12 @@ type LinkOrigin =
 - Each `<section data-mw-section-id="N">` becomes a `Section`. The first `h2`–`h6` child gives `level`, `title` and `anchor`. Nested `<section>` elements become `children`.
 - Links are `a[rel="mw:WikiLink"]`. Skip links whose namespace isn't 0, and skip self-links (target = this article).
 - Red links have `class="new"` and an `href` like `./Mindnode?action=edit&redlink=1`; strip the query to get the target. Links to redirect pages have `class="mw-redirect"` (spike findings: `architecture.md` §13).
-- `origin` is decided by the nearest element with `typeof~="mw:Transclusion"`, starting with the link itself, and its template name, via `data-mw`:
-  - navigation box: template name matches `/^Navbox|navbox/i`, or the element has class `navbox`
-  - infobox: `/^Infobox/i`, or class `infobox`
-  - hatnote: class `hatnote`
-  - reference: inside `.mw-ref` or `.references`
-  - any other enclosing template: `template`
-  - no enclosing template: `body`
+- `origin` is decided by walking up from the link (the link itself included):
+  - the first **marker** wins: class `hatnote` (de also `vorlage-weiterleitungshinweis`) → `hatnote`; class `navbox` (de `navileiste`) → `navbox`; class `infobox` → `infobox`; inside `.mw-ref`, `.mw-references`, `.references`, `.mw-reference-text` or `typeof="mw:Extension/ref(erences)"` → `reference`. `template` is the name of the nearest template up to the marker, if any.
+  - without a marker, the nearest **template** decides. A template's output is a run of sibling elements that share `about="#mwtN"`; only the first carries `typeof~="mw:Transclusion"` and the name in `data-mw`. Name matches `/navbox/i` → `navbox`; `/^Infobox/i` → `infobox`; the link's target is written by the authors into the template's parameters (as `[[Target…]]`, or as a whole parameter value such as `{{annotated link|Concept map}}`) → `body`; otherwise → `template` (links the template adds itself, e.g. sidebars or `{{enS}}`).
+  - no marker and no template: `body`
+- Section headings are the first `h2`–`h6` child (or inside a `div.mw-heading` wrapper). Subsections of a housekeeping chapter are housekeeping too.
+- A link that repeats the previous one (same target, text and parent element) is skipped as a duplicate at the same position.
 - A negative `data-mw-section-id` (template-generated pseudo sections) is merged into its parent.
 
 ## 3. Enrichments (optional, loaded on demand)
