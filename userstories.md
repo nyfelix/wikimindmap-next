@@ -36,11 +36,6 @@ Goal: a reproducible dev environment, a deployable empty app, and certainty that
 
 Goal: any Wikipedia article can be turned into a reliable `Article`.
 
-### TS-08 Redirect resolution · S
-- [ ] `resolveRedirects(lang, titles)` works in batches of 50 and returns `Map<Title, Title>`. It is called only for link targets flagged `redirect`.
-- [ ] Leaves are deduplicated after resolution (`Mind-map` and `Mind map` become one)
-- [ ] Unit tests with a recorded `redirects.json`
-
 **Done when:** `loadArticle` returns a correct `Article` for all fixtures, and tests cover both parsers.
 
 ---
@@ -383,3 +378,10 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] A test compares both results for "Mind map": same sections, and ≥ 90 % overlap of body links
 
 > Note: Uses `prop=tocdata` (`prop=sections` is deprecated) and requests the sections by `oldid`, so all parts come from one revision. A section's `prop=links` includes its subsections, so each section keeps only the links not found below it. This route can't see redirects, so every link is `redirect: true` and goes through the lookup (TS-08). Links are alphabetical within a section, not in reading order. `loadArticle` falls back only on parser errors; HTTP errors such as `NotFound` pass through. Fallback fixtures exist for en Mind map and de Mindmap; the overlap of body links is 100 % for both.
+
+### TS-08 Redirect resolution · S · M1
+- [x] `resolveRedirects(lang, titles)` works in batches of 50 and returns `Map<Title, Title>`. It is called only for link targets flagged `redirect`.
+- [x] Leaves are deduplicated after resolution (`Mind-map` and `Mind map` become one)
+- [x] Unit tests with a recorded `redirects.json`
+
+> Note: Deduplication is `uniqueLinks(links, redirects, exclude?)` in `src/core/links.ts`, ready for the Chapters lens (M2). It merges links by resolved title in order of first occurrence (real case in the Mind map fixture: `Concept maps` → `Concept map`), and drops links that resolve to the center. `redirectTargets(article)` collects the flagged targets for the lookup. Redirects to a section resolve to the page; `tofragment` is dropped.
