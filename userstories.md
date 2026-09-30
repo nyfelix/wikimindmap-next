@@ -19,17 +19,6 @@ Work through the milestones in order. A milestone is done when every story in it
 
 Goal: a reproducible dev environment, a deployable empty app, and certainty that the Wikipedia APIs behave as `architecture.md` assumes.
 
-### TS-02 Project scaffold · S
-- [ ] Vite + React 19 + TypeScript (strict), Node 22, npm, all run inside the dev container
-- [ ] `.nvmrc` / `engines` set to Node 22, so CI and the container match
-- [ ] ESLint (typescript-eslint, react-hooks, `no-restricted-imports` for the layer rules in `architecture.md` §8) + Prettier
-- [ ] Vitest with happy-dom, and Playwright installed
-- [ ] Scripts: `dev`, `build`, `check`, `test`, `e2e`, `fixtures`
-- [ ] Folder structure from `architecture.md` §8 with placeholder `index.ts` files
-- [x] `.gitignore` (node_modules, dist, .DS_Store, test results)
-- [ ] `src/ui/styles/tokens.css` with the tokens from `concepts/assets/lens.css` (light + dark)
-- [ ] A top-level `README.md` with a short project description and the commands
-
 ### TS-03 CI and deploy to GitHub Pages · S
 - [ ] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
 - [ ] `BASE_PATH` is set for `/wikimindmap-next/`
@@ -94,9 +83,9 @@ A design decision made together with the owner, before any map is rendered.
 - [x] The owner picks a direction in `concepts/style-directions.html` (or a new candidate)
   > Note: Option 3, Editorial + graphic logo.
 - [x] `styleguide.md` §8 records the faces, weights, fallback stacks (including non-Latin scripts) and the licence
-- [ ] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`
+- [ ] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`, with the weights and budget from `styleguide.md` §8
 - [ ] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
-- [ ] `src/ui/styles/tokens.css` is updated with the chosen `--display`, `--label` and `--ui`
+- [x] `src/ui/styles/tokens.css` is updated with all five font tokens: `--logo`, `--display`, `--label`, `--ui`, `--mono`
 
 ### US-01 See an article as a mind map · L
 *As a curious reader, I want to see an article's chapters as branches and its links as leaves, so I get an overview at a glance.*
@@ -108,7 +97,7 @@ A design decision made together with the owner, before any map is rendered.
   - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
 - [ ] `ui/map/SvgMap.tsx` renders `PositionedMap` as specified in `styleguide.md` §4:
   - center pill
-  - level-1 branches, deeper branches and twigs (tapered or stroked, depending on the chosen style)
+  - level-1 branches and deeper branches as tapered shapes, twigs as thin strokes
   - fold toggles on every node that has children
   - a direction symbol on every leaf (§5; shown as *pending* until M3 loads the data)
   - leaf labels and ⊕
@@ -119,14 +108,14 @@ A design decision made together with the owner, before any map is rendered.
 *As a student, I want to fold chapters I'm not interested in, so long articles stay readable.*
 - [ ] Every node with children has a fold toggle (−/+) on its branch point, at every level. Clicking it or pressing Enter toggles it. A folded part shows `+N links`.
 - [ ] The fold toggle is a shared component in `ui/map/`, so every later lens gets folding for free
-- [ ] Folding re-runs the layout, and nodes move smoothly (≤ 450 ms, none with reduced motion)
+- [ ] Folding re-runs the layout, and nodes move smoothly (250 ms, none with reduced motion)
 - [ ] Folded IDs are written to the URL (`fold=`)
 
 ### US-03 Control how much is shown · S
 *As a reader, I want to choose how many links each part shows, so I can go from overview to detail.*
 - [ ] A density slider (2–8, default 4) and a "Show See also" toggle
-- [ ] Parts with more links show a `+N more` node
-- [ ] Both settings are written to the URL (`density=`, `hk=`)
+- [ ] Parts with more links show a `+N more` node. Clicking it shows **all** links of that one part; the other parts keep the density. The part then shows "Show fewer".
+- [ ] All settings are written to the URL (`density=`, `hk=`, `more=`)
 
 ### US-19 Use the whole screen for the map · M
 *As a reader, I want the map to fill my screen, so I can see as much of it as possible.*
@@ -152,7 +141,8 @@ Goal: the full 2007 loop with live data.
 - [ ] A search box with suggestions after 2 characters, debounced by 200 ms. Each suggestion shows its title and short description.
 - [ ] Arrow keys, Enter and Escape work. Choosing a suggestion navigates to `/{lang}/{Title}`.
 - [ ] Pressing Enter without choosing picks the first suggestion. With no results, the box shows "No article found for '…'".
-- [ ] The start page shows the search box, a featured-article link and a random-article link
+- [ ] `/` focuses the search field from anywhere
+- [ ] **Start page** (`/`): the full-window map of the article "Mind map" in the reader's language (en *Mind map*, de *Mindmap*, fr *Carte heuristique*; other languages via `langlinks` from en, falling back to en). The search field is focused and highlighted, and the map labels are shown (`styleguide.md` §15).
 
 ### US-05 Open any article by URL · M
 *As a teacher, I want to share a link that opens a specific map, so my class starts at the same place.*
@@ -161,10 +151,11 @@ Goal: the full 2007 loop with live data.
 - [ ] Unknown titles show "This article doesn't exist on {lang}.wikipedia.org", with a search box
 - [ ] Loading shows the center immediately and the branches as soon as they're parsed. There's no blank screen.
 - [ ] Network errors show a message with a retry button
+- [ ] Loading, not-found and error states look as specified in `styleguide.md` §15
 
 ### US-06 Preview a linked article · M
 *As a reader, I want a short preview of a leaf before I jump, so I know where I'm going.*
-- [ ] Clicking or pressing Enter on a leaf label opens the preview card. It shows the title, short description, the extract (1–3 sentences), a thumbnail if there is one, and which chapter the link is in.
+- [ ] Clicking or pressing Enter on a leaf label opens the preview card next to it (`styleguide.md` §4). It shows the title, short description, the extract (1–3 sentences), a 64 px thumbnail if there is one, and which chapter the link is in.
 - [ ] Buttons: "⊕ Make it the center" and "Open on Wikipedia ↗" (opens in a new tab)
 - [ ] Clicking the center pill shows the article's own summary
 - [ ] Summaries load when a card opens and are cached. Escape closes the card.
@@ -174,11 +165,11 @@ Goal: the full 2007 loop with live data.
 - [ ] Every leaf has a ⊕ button (a separate focusable control with `aria-label="Make {title} the center"`)
 - [ ] Recentering navigates to the new URL. The new map animates in, nodes present in both maps move, and the others fade. ≤ 450 ms; none with reduced motion.
 - [ ] The lens, density and hide/show settings are kept; folds are reset
-- [ ] Red links have no ⊕ and are shown muted
+- [ ] Red links (missing articles) look as in `styleguide.md` §4: muted label, dashed ring instead of a direction symbol, no ⊕
 
 ### US-08 See and use my trail · M
 *As a curious reader, I want to see the path I took and jump back, so I don't get lost.*
-- [ ] A trail above the map: `Mind map › Tony Buzan › Chess`, with the current step highlighted
+- [ ] A trail in the bottom-left panel: the `TRAIL` label in mono capitals, then `Mind map › Tony Buzan › Chess`, with the current step highlighted (`styleguide.md` §2)
 - [ ] Clicking a step goes back to it. Browser back and forward move along the trail.
 - [ ] Recentering from an earlier step cuts off the later steps
 - [ ] The trail survives a page reload (`sessionStorage`)
@@ -199,6 +190,7 @@ Goal: the full 2007 loop with live data.
 - [ ] TanStack Query with an IndexedDB persister, using the keys and lifetimes from `architecture.md` §6
 - [ ] Going back along the trail makes no network request (verified in an e2e test)
 - [ ] The app still works when IndexedDB is unavailable
+- [ ] Leaves whose map is already cached are shown in bold (`styleguide.md` §4)
 
 **Done when:** a reader can search, open a map, preview, recenter three times and go back, all with live data on the deployed site.
 
@@ -210,17 +202,23 @@ Goal: good enough to announce.
 
 ### US-09 Choose the Wikipedia language · S
 *As a German-speaking reader, I want maps from de.wikipedia.org.*
-- [ ] A language picker in the search box. The initial choice is the browser language if a wiki exists for it, otherwise `en`.
+- [ ] A language picker inside the search panel (`EN ▾` in mono capitals, `styleguide.md` §2). The initial choice is the browser language if a wiki exists for it, otherwise `en`.
 - [ ] Switching language on a map offers the same article in the other language, if it exists (using `langlinks`)
 - [ ] Housekeeping lists work for `en`, `de` and `fr`
 
 ### US-18 Understand how the map is built · M
 *As a first-time visitor, I want the map to explain itself, so I understand what branches, leaves and symbols mean without reading a manual.*
 - [ ] **Map labels:** 4–5 callouts pinned to real elements of the current map, with the copy from `styleguide.md` §3. Shown the first time a lens is opened; `?` toggles them; "Got it" hides them.
-- [ ] **Drawer "How this map is built"** (`i`): the construction steps, the symbol legend, what is hidden and why, and the source line (article URL and revision)
+- [ ] **Drawer "How this map is built"** (`i`): the construction steps, the symbol legend, what is hidden and why, the source line (article URL and revision), and a link to the help page "How lenses work"
 - [ ] Each lens provides its own explanation text through the lens registry (`datamodel.md` §4, `explain`)
 - [ ] Callouts reposition on pan, zoom and resize, and stay inside the window
 - [ ] Whether the labels were seen is remembered per lens (`localStorage`, wrapped in try/catch)
+
+### US-20 See the lenses that are coming · S
+*As a curious reader, I want to see that there are other ways to look at an article, so I come back when they arrive.*
+- [ ] The lens switch in the top-right panel shows Chapters (active) and Kinds, Links and Metro marked "soon" (`styleguide.md` §2)
+- [ ] "Soon" lenses can't be selected. Hover or focus shows a one-line description, and clicking one opens the help page "How lenses work" at that lens.
+- [ ] Each later milestone (M5–M7) turns one lens from "soon" into selectable, by registering it in the lens registry
 
 ### US-10 Use it on a tablet · S
 *As a reader on a tablet, I want the map to work with touch.*
@@ -232,16 +230,17 @@ Goal: good enough to announce.
 ### US-11 Read the map without seeing it · M
 *As a screen-reader user, I want the map as a structured list, so I can use the same features.*
 - [ ] `OutlineView` renders the same `MapGraph` as nested lists, with the same preview and recenter buttons
-- [ ] An "Outline / Map" toggle. Screen readers get the outline first (skip link).
+- [ ] An outline toggle: an icon button next to `?` and `i`, shortcut `o` (`styleguide.md` §2). Screen readers get the outline first (skip link).
 - [ ] The outline shows the direction of each link in words ("links both ways")
-- [ ] The whole flow works with keyboard only: search → map → preview → recenter → trail
+- [ ] The whole flow works with keyboard only: search → map → preview → recenter → trail. Arrow keys move between nodes on the map (along branches, and between siblings).
 - [ ] An axe-core check in Playwright shows no serious issues
 
 ### US-12 Know what this is · S
 *As a first-time visitor, I want to understand the idea and its history.*
 - [ ] An "About" page: the idea, the 2007 history, a link to the old repo and to Wikipedia, and a note on data sources and licenses (Wikipedia content is CC BY-SA)
 - [ ] Editorial pages (About, help) follow `styleguide.md` §14: grey background, reading column, Bricolage headings, Zilla Slab body, capital eyebrows and breadcrumbs
-- [ ] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article
+- [ ] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article, as a small line under the bottom-right controls (`styleguide.md` §2)
+- [ ] Clicking the logo opens a small menu: About, How lenses work, GitHub. Editorial pages link back to the map.
 
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
@@ -275,12 +274,12 @@ Preview: `concepts/lens-kinds.html`
 - [ ] Six fixed branches in fixed positions, the same as the preview. Empty branches are shown as dotted lines with "none linked".
 - [ ] Branches fold like in Chapters; leaves show direction symbols
 - [ ] Explanation copy (callouts and drawer) for this lens, following `styleguide.md` §3
-- [ ] Dot size is based on page views. Leaves are ranked by page views.
+- [ ] Leaves are ranked by page views. Direction symbols keep their fixed size; page views show as a thin bar behind the label (`styleguide.md` §5) and as a number in the preview card.
 - [ ] The preview card shows kind, "instance of" and views per month
 
 ### US-14 Switch lenses · S
 *As a reader, I want to switch between Chapters and Kinds on the same article.*
-- [ ] The lens switch shows the registered lenses, and switching keeps the center and the trail
+- [ ] Kinds changes from "soon" to selectable in the lens switch (see US-20). Switching keeps the center and the trail.
 - [ ] `lens=` is in the URL, and the trail records the lens used for each step
 
 ---
@@ -361,3 +360,16 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Findings are written into `architecture.md` §13 and the plan is adjusted if needed
 
 > Note: The script ran from the dev container (`Origin: https://nyfelix.github.io` plus a preflight) instead of a test page, since Pages is set up only in TS-03; TS-03 repeats the check from the live page. The summary endpoint is `action=query&prop=extracts|pageimages|description`, not `/api/rest_v1/page/summary`. Redirect lookups are needed only for links marked `mw-redirect`, and page views need `pvipcontinue`. The affected stories (TS-03, TS-06, TS-08, TS-14, US-05) are adjusted.
+
+### TS-02 Project scaffold · S · M0
+- [x] Vite + React 19 + TypeScript (strict), Node 22, npm, all run inside the dev container
+- [x] `.nvmrc` / `engines` set to Node 22, so CI and the container match
+- [x] ESLint (typescript-eslint, react-hooks, `no-restricted-imports` for the layer rules in `architecture.md` §8) + Prettier
+- [x] Vitest with happy-dom, and Playwright installed
+- [x] Scripts: `dev`, `build`, `check`, `test`, `e2e`, `fixtures`
+- [x] Folder structure from `architecture.md` §8 with placeholder `index.ts` files
+- [x] `.gitignore` (node_modules, dist, .DS_Store, test results)
+- [x] `src/ui/styles/tokens.css`: colors from `concepts/assets/lens.css` plus `--glass` (light + dark), font tokens from `styleguide.md` §8
+- [x] A top-level `README.md` with a short project description and the commands
+
+> Note: TypeScript is pinned to 6.0, because typescript-eslint 8 supports only `<6.1` (TypeScript 7 is out). Scripts in `scripts/` run directly with Node 22 type stripping, so imports keep their `.ts` extension (`allowImportingTsExtensions`, `erasableSyntaxOnly`) and no `tsx` is needed. ESLint also forbids `fetch` outside `src/sources/http.ts`, and DOM globals in `core`, `lenses` and `layouts`. `npm run check` includes `prettier --check`; Markdown documents and `concepts/` are excluded from Prettier. `tokens.css` already has the font stacks from `styleguide.md` §8.

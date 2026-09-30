@@ -1,0 +1,90 @@
+/*
+ * Design tokens, taken from concepts/assets/lens.css and concepts/style-directions.html.
+ * Fonts follow styleguide.md §8 (Option 3). Components use these properties only;
+ * never hard-code a color or a font family.
+ */
+:root {
+  --bg: #f3f6f7;
+  --paper: #ffffff;
+  --ink: #15212b;
+  --muted: #56656f;
+  --line: #d6dee2;
+  --accent: #1f4fd1;
+  --accent-soft: #e3eafc;
+  --glass: rgb(255 255 255 / 0.86);
+
+  /* Branch palette: one slot per first-level branch, in turn. */
+  --b1: #0f8f84;
+  --b2: #d9860b;
+  --b3: #c9406a;
+  --b4: #6d4fd0;
+  --b5: #3f8f2f;
+  --b6: #1f78b8;
+
+  --logo: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --display: "Zilla Slab", Georgia, "Noto Serif", serif;
+  --label: "Fira Sans", system-ui, "Noto Sans", "Segoe UI", sans-serif;
+  --ui: "Fira Sans", system-ui, "Noto Sans", "Segoe UI", sans-serif;
+  --mono: "Fira Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --r: 10px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f161c;
+    --paper: #162029;
+    --ink: #e6edf1;
+    --muted: #98a8b3;
+    --line: #2a3945;
+    --accent: #7ea2ff;
+    --accent-soft: #1d2a47;
+    --glass: rgb(22 32 41 / 0.88);
+    --b1: #3cc3b5;
+    --b2: #f0a73a;
+    --b3: #f06e95;
+    --b4: #a58cff;
+    --b5: #7cc862;
+    --b6: #5aaee8;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f161c;
+  --paper: #162029;
+  --ink: #e6edf1;
+  --muted: #98a8b3;
+  --line: #2a3945;
+  --accent: #7ea2ff;
+  --accent-soft: #1d2a47;
+  --glass: rgb(22 32 41 / 0.88);
+  --b1: #3cc3b5;
+  --b2: #f0a73a;
+  --b3: #f06e95;
+  --b4: #a58cff;
+  --b5: #7cc862;
+  --b6: #5aaee8;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--ui);
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

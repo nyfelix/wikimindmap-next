@@ -1,0 +1,9 @@
+# Hand-written documents and reference material keep their own formatting.
+*.md
+concepts/
+tests/fixtures/
+dist/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
