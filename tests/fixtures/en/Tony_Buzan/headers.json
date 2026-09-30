@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Tony_Buzan/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1372616674/d2d7ac8f-bc6d-11f1-9635-19d680f86328/view+lang:und\"",
+    "last-modified": "Wed, 30 Sep 2026 01:24:48 GMT"
+  }
+}

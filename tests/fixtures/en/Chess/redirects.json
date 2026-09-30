@@ -1,0 +1,1094 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Persia",
+          "to": "Iran"
+        },
+        {
+          "from": "Digital computer",
+          "to": "Computer",
+          "tofragment": "Digital computers"
+        },
+        {
+          "from": "Chess problems",
+          "to": "Chess problem"
+        },
+        {
+          "from": "Underpromotion",
+          "to": "Promotion (chess)",
+          "tofragment": "Underpromotion"
+        },
+        {
+          "from": "List of national chess championships",
+          "to": "Geography of chess"
+        },
+        {
+          "from": "Chatrang",
+          "to": "Shatranj"
+        },
+        {
+          "from": "Computer engineer",
+          "to": "Computer engineering",
+          "tofragment": "Profession: Computer engineer"
+        },
+        {
+          "from": "World Chess Champion",
+          "to": "World Chess Championship"
+        },
+        {
+          "from": "International Master",
+          "to": "FIDE titles",
+          "tofragment": "International Master"
+        },
+        {
+          "from": "Chess master",
+          "to": "Chess title"
+        },
+        {
+          "from": "Chess composition",
+          "to": "Chess problem"
+        },
+        {
+          "from": "Samuel Loyd",
+          "to": "Sam Loyd"
+        },
+        {
+          "from": "Computer scientists",
+          "to": "Computer science"
+        },
+        {
+          "from": "Bullet chess",
+          "to": "Fast chess",
+          "tofragment": "Bullet"
+        },
+        {
+          "from": "FIDE Master",
+          "to": "FIDE titles",
+          "tofragment": "FIDE Master (FM)"
+        },
+        {
+          "from": "Candidate Master",
+          "to": "FIDE titles",
+          "tofragment": "Candidate Master (CM)"
+        },
+        {
+          "from": "Sicilian Defense, Najdorf Variation",
+          "to": "Sicilian Defence, Najdorf Variation"
+        },
+        {
+          "from": "Rapid chess",
+          "to": "Fast chess",
+          "tofragment": "Rapid, rapid play or quick"
+        },
+        {
+          "from": "Retrograde analysis problems",
+          "to": "Retrograde analysis"
+        },
+        {
+          "from": "Blitz chess",
+          "to": "Fast chess",
+          "tofragment": "Blitz"
+        },
+        {
+          "from": "Sanskrit language",
+          "to": "Sanskrit"
+        },
+        {
+          "from": "Rook and pawn versus rook",
+          "to": "Rook and pawn versus rook endgame"
+        },
+        {
+          "from": "M-tel Masters",
+          "to": "M-Tel Masters"
+        },
+        {
+          "from": "IBM Deep Blue",
+          "to": "Deep Blue (chess computer)"
+        },
+        {
+          "from": "Sicilian Defense",
+          "to": "Sicilian Defence"
+        },
+        {
+          "from": "Melody Amber",
+          "to": "Amber chess tournament"
+        },
+        {
+          "from": "Category (chess tournament)",
+          "to": "Chess tournament",
+          "tofragment": "Tournament categories"
+        },
+        {
+          "from": "Sasanian Persia",
+          "to": "Sasanian Empire"
+        },
+        {
+          "from": "FIDE World Cup",
+          "to": "Chess World Cup"
+        },
+        {
+          "from": "Islamic conquest of Persia",
+          "to": "Muslim conquest of Persia"
+        },
+        {
+          "from": "Hiarcs",
+          "to": "HIARCS"
+        },
+        {
+          "from": "Lasker - Bauer, Amsterdam, 1889",
+          "to": "Lasker versus Bauer, Amsterdam, 1889"
+        },
+        {
+          "from": "Adjournment (chess)",
+          "to": "Adjournment (games)"
+        },
+        {
+          "from": "King and pawn endgame",
+          "to": "Chess endgame",
+          "tofragment": "King and pawn endings"
+        },
+        {
+          "from": "Linares chess tournament",
+          "to": "Linares International Chess Tournament"
+        },
+        {
+          "from": "Chess titles",
+          "to": "Chess title"
+        },
+        {
+          "from": "Google Play Store",
+          "to": "Google Play"
+        },
+        {
+          "from": "List of chess federations",
+          "to": "Geography of chess"
+        },
+        {
+          "from": "Shahnama",
+          "to": "Shahnameh"
+        },
+        {
+          "from": "Ashtāpada",
+          "to": "Ashtapada"
+        },
+        {
+          "from": "Maukhari",
+          "to": "Maukharis of Kannauj"
+        },
+        {
+          "from": "Fivefold repetition",
+          "to": "Threefold repetition",
+          "tofragment": "Fivefold repetition"
+        },
+        {
+          "from": "Seventy-five-move rule",
+          "to": "Fifty-move rule",
+          "tofragment": "Seventy-five-move rule"
+        },
+        {
+          "from": "Al-Adli ar-Rumi",
+          "to": "Al-Adli"
+        },
+        {
+          "from": "Śarvavarman",
+          "to": "Sharvavarman"
+        },
+        {
+          "from": "Ultrabullet",
+          "to": "Fast chess",
+          "tofragment": "Bullet"
+        },
+        {
+          "from": "Chess-playing machine",
+          "to": "Computer chess"
+        },
+        {
+          "from": "App Store (iOS/iPadOS)",
+          "to": "App Store (Apple)"
+        },
+        {
+          "from": "Muslim world",
+          "to": "Islamic world"
+        },
+        {
+          "from": "Chaturaṅga",
+          "to": "Chaturanga"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 5323,
+          "ns": 0,
+          "title": "Computer science"
+        },
+        {
+          "pageid": 14653,
+          "ns": 0,
+          "title": "Iran"
+        },
+        {
+          "pageid": 27698,
+          "ns": 0,
+          "title": "Sanskrit"
+        },
+        {
+          "pageid": 29222,
+          "ns": 0,
+          "title": "Sam Loyd"
+        },
+        {
+          "pageid": 49387,
+          "ns": 0,
+          "title": "Deep Blue (chess computer)"
+        },
+        {
+          "pageid": 50408,
+          "ns": 0,
+          "title": "Computer engineering"
+        },
+        {
+          "pageid": 68367,
+          "ns": 0,
+          "title": "Computer chess"
+        },
+        {
+          "pageid": 76267,
+          "ns": 0,
+          "title": "Shatranj"
+        },
+        {
+          "pageid": 141203,
+          "ns": 0,
+          "title": "Chess problem"
+        },
+        {
+          "pageid": 150131,
+          "ns": 0,
+          "title": "Chess endgame"
+        },
+        {
+          "pageid": 166667,
+          "ns": 0,
+          "title": "World Chess Championship"
+        },
+        {
+          "pageid": 191429,
+          "ns": 0,
+          "title": "Islamic world"
+        },
+        {
+          "pageid": 193608,
+          "ns": 0,
+          "title": "Shahnameh"
+        },
+        {
+          "pageid": 237797,
+          "ns": 0,
+          "title": "Chaturanga"
+        },
+        {
+          "pageid": 258926,
+          "ns": 0,
+          "title": "Fifty-move rule"
+        },
+        {
+          "pageid": 446582,
+          "ns": 0,
+          "title": "Linares International Chess Tournament"
+        },
+        {
+          "pageid": 497994,
+          "ns": 0,
+          "title": "Sicilian Defence"
+        },
+        {
+          "pageid": 529842,
+          "ns": 0,
+          "title": "HIARCS"
+        },
+        {
+          "pageid": 557112,
+          "ns": 0,
+          "title": "Threefold repetition"
+        },
+        {
+          "pageid": 604904,
+          "ns": 0,
+          "title": "Retrograde analysis"
+        },
+        {
+          "pageid": 844787,
+          "ns": 0,
+          "title": "Fast chess"
+        },
+        {
+          "pageid": 900084,
+          "ns": 0,
+          "title": "Lasker versus Bauer, Amsterdam, 1889"
+        },
+        {
+          "pageid": 906517,
+          "ns": 0,
+          "title": "Sicilian Defence, Najdorf Variation"
+        },
+        {
+          "pageid": 1275748,
+          "ns": 0,
+          "title": "Muslim conquest of Persia"
+        },
+        {
+          "pageid": 1752376,
+          "ns": 0,
+          "title": "Promotion (chess)"
+        },
+        {
+          "pageid": 3846650,
+          "ns": 0,
+          "title": "Rook and pawn versus rook endgame"
+        },
+        {
+          "pageid": 4458081,
+          "ns": 0,
+          "title": "Maukharis of Kannauj"
+        },
+        {
+          "pageid": 4613961,
+          "ns": 0,
+          "title": "M-Tel Masters"
+        },
+        {
+          "pageid": 5876413,
+          "ns": 0,
+          "title": "Sasanian Empire"
+        },
+        {
+          "pageid": 5941070,
+          "ns": 0,
+          "title": "Amber chess tournament"
+        },
+        {
+          "pageid": 7878457,
+          "ns": 0,
+          "title": "Computer"
+        },
+        {
+          "pageid": 14721436,
+          "ns": 0,
+          "title": "Geography of chess"
+        },
+        {
+          "pageid": 16179920,
+          "ns": 0,
+          "title": "App Store (Apple)"
+        },
+        {
+          "pageid": 17269063,
+          "ns": 0,
+          "title": "Chess World Cup"
+        },
+        {
+          "pageid": 18448306,
+          "ns": 0,
+          "title": "Chess title"
+        },
+        {
+          "pageid": 19117180,
+          "ns": 0,
+          "title": "Chess tournament"
+        },
+        {
+          "pageid": 24431518,
+          "ns": 0,
+          "title": "FIDE titles"
+        },
+        {
+          "pageid": 25318356,
+          "ns": 0,
+          "title": "Ashtapada"
+        },
+        {
+          "pageid": 27130927,
+          "ns": 0,
+          "title": "Adjournment (games)"
+        },
+        {
+          "pageid": 34986915,
+          "ns": 0,
+          "title": "Google Play"
+        },
+        {
+          "pageid": 62281295,
+          "ns": 0,
+          "title": "Al-Adli"
+        },
+        {
+          "pageid": 69324043,
+          "ns": 0,
+          "title": "Sharvavarman"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Henry Edward Bird",
+          "to": "Henry Bird (chess player)"
+        },
+        {
+          "from": "Decryption",
+          "to": "Encryption"
+        },
+        {
+          "from": "Knighted chess",
+          "to": "Capablanca chess"
+        },
+        {
+          "from": "Fairy piece",
+          "to": "Fairy chess piece"
+        },
+        {
+          "from": "Kenneth Whyld",
+          "to": "Ken Whyld"
+        },
+        {
+          "from": "Game-tree complexity",
+          "to": "Game complexity"
+        },
+        {
+          "from": "Coffee house",
+          "to": "Coffeehouse"
+        },
+        {
+          "from": "Perfect play",
+          "to": "Solved game",
+          "tofragment": "Perfect play"
+        },
+        {
+          "from": "De Moivre",
+          "to": "Abraham de Moivre"
+        },
+        {
+          "from": "Al Andalus",
+          "to": "Al-Andalus"
+        },
+        {
+          "from": "Vandermonde",
+          "to": "Alexandre-Théophile Vandermonde"
+        },
+        {
+          "from": "H.J.R. Murray",
+          "to": "H. J. R. Murray"
+        },
+        {
+          "from": "Tri-Dimensional Chess",
+          "to": "Three-dimensional chess"
+        },
+        {
+          "from": "Order of Preachers",
+          "to": "Dominican Order"
+        },
+        {
+          "from": "Federation (Star Trek)",
+          "to": "United Federation of Planets"
+        },
+        {
+          "from": "Wizard's Chess",
+          "to": "Fictional universe of Harry Potter",
+          "tofragment": "Wizard's Chess"
+        },
+        {
+          "from": "Brain imaging",
+          "to": "Neuroimaging"
+        },
+        {
+          "from": "Soviet Azerbaijan",
+          "to": "Azerbaijan Soviet Socialist Republic"
+        },
+        {
+          "from": "Chess clocks",
+          "to": "Chess clock"
+        },
+        {
+          "from": "Euler",
+          "to": "Leonhard Euler"
+        },
+        {
+          "from": "Chess engines",
+          "to": "Chess engine"
+        },
+        {
+          "from": "Chess server",
+          "to": "Online chess",
+          "tofragment": "Chess servers"
+        },
+        {
+          "from": "Chess cheating",
+          "to": "Cheating in chess"
+        },
+        {
+          "from": "Esport",
+          "to": "Esports"
+        },
+        {
+          "from": "Nicholas II of Russia",
+          "to": "Nicholas II"
+        },
+        {
+          "from": "David Hooper (chess player)",
+          "to": "David Vincent Hooper"
+        },
+        {
+          "from": "Fivethirtyeight",
+          "to": "FiveThirtyEight"
+        },
+        {
+          "from": "Latin Christianity",
+          "to": "Latin Church"
+        },
+        {
+          "from": "Larry Parr (editor)",
+          "to": "Larry Parr (chess player)"
+        },
+        {
+          "from": "Chess tactics",
+          "to": "Chess tactic"
+        },
+        {
+          "from": "Endgame tablebases",
+          "to": "Endgame tablebase"
+        },
+        {
+          "from": "Chess in the arts and literature",
+          "to": "Chess in the arts"
+        },
+        {
+          "from": "Sogdiana",
+          "to": "Sogdia"
+        },
+        {
+          "from": "Spanish people",
+          "to": "Spaniards"
+        },
+        {
+          "from": "Arabic language",
+          "to": "Arabic"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "ISSN (identifier)",
+          "to": "ISSN"
+        },
+        {
+          "from": "National Library of the Netherlands",
+          "to": "Royal Library of the Netherlands"
+        },
+        {
+          "from": "Morphy versus the Duke of Brunswick and Count Isouard",
+          "to": "Opera Game"
+        },
+        {
+          "from": "Shatranj Ke Khilari",
+          "to": "The Chess Players (film)"
+        },
+        {
+          "from": "Livestream",
+          "to": "Live streaming"
+        },
+        {
+          "from": "1984 World Chess Championship",
+          "to": "World Chess Championship 1984–1985"
+        },
+        {
+          "from": "1985 World Chess Championship",
+          "to": "World Chess Championship 1985"
+        },
+        {
+          "from": "S2CID (identifier)",
+          "to": "Semantic Scholar",
+          "tofragment": "S2CID"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "Hdl (identifier)",
+          "to": "Handle System"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Tables games",
+          "to": "Tables game"
+        },
+        {
+          "from": "Interzonal",
+          "to": "Interzonal chess tournaments"
+        },
+        {
+          "from": "Artificial neural network",
+          "to": "Neural network (machine learning)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 803,
+          "ns": 0,
+          "title": "Arabic"
+        },
+        {
+          "pageid": 8973,
+          "ns": 0,
+          "title": "Dominican Order"
+        },
+        {
+          "pageid": 10294,
+          "ns": 0,
+          "title": "Encryption"
+        },
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 17902,
+          "ns": 0,
+          "title": "Leonhard Euler"
+        },
+        {
+          "pageid": 21523,
+          "ns": 0,
+          "title": "Neural network (machine learning)"
+        },
+        {
+          "pageid": 47653,
+          "ns": 0,
+          "title": "Chess clock"
+        },
+        {
+          "pageid": 55312,
+          "ns": 0,
+          "title": "United Federation of Planets"
+        },
+        {
+          "pageid": 57327,
+          "ns": 0,
+          "title": "Abraham de Moivre"
+        },
+        {
+          "pageid": 63763,
+          "ns": 0,
+          "title": "Solved game"
+        },
+        {
+          "pageid": 80000,
+          "ns": 0,
+          "title": "Tables game"
+        },
+        {
+          "pageid": 86649,
+          "ns": 0,
+          "title": "H. J. R. Murray"
+        },
+        {
+          "pageid": 93965,
+          "ns": 0,
+          "title": "Sogdia"
+        },
+        {
+          "pageid": 113232,
+          "ns": 0,
+          "title": "Three-dimensional chess"
+        },
+        {
+          "pageid": 182531,
+          "ns": 0,
+          "title": "Henry Bird (chess player)"
+        },
+        {
+          "pageid": 234930,
+          "ns": 0,
+          "title": "ISSN"
+        },
+        {
+          "pageid": 250667,
+          "ns": 0,
+          "title": "Fairy chess piece"
+        },
+        {
+          "pageid": 266538,
+          "ns": 0,
+          "title": "Ken Whyld"
+        },
+        {
+          "pageid": 317419,
+          "ns": 0,
+          "title": "Game complexity"
+        },
+        {
+          "pageid": 347357,
+          "ns": 0,
+          "title": "Opera Game"
+        },
+        {
+          "pageid": 355643,
+          "ns": 0,
+          "title": "Al-Andalus"
+        },
+        {
+          "pageid": 370815,
+          "ns": 0,
+          "title": "Coffeehouse"
+        },
+        {
+          "pageid": 404448,
+          "ns": 0,
+          "title": "Azerbaijan Soviet Socialist Republic"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 457143,
+          "ns": 0,
+          "title": "Alexandre-Théophile Vandermonde"
+        },
+        {
+          "pageid": 527617,
+          "ns": 0,
+          "title": "Chess engine"
+        },
+        {
+          "pageid": 564204,
+          "ns": 0,
+          "title": "Esports"
+        },
+        {
+          "pageid": 701970,
+          "ns": 0,
+          "title": "Chess tactic"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 963152,
+          "ns": 0,
+          "title": "Spaniards"
+        },
+        {
+          "pageid": 2059097,
+          "ns": 0,
+          "title": "Royal Library of the Netherlands"
+        },
+        {
+          "pageid": 2228434,
+          "ns": 0,
+          "title": "Fictional universe of Harry Potter"
+        },
+        {
+          "pageid": 2630659,
+          "ns": 0,
+          "title": "Interzonal chess tournaments"
+        },
+        {
+          "pageid": 2658308,
+          "ns": 0,
+          "title": "Endgame tablebase"
+        },
+        {
+          "pageid": 3444843,
+          "ns": 0,
+          "title": "Larry Parr (chess player)"
+        },
+        {
+          "pageid": 3557219,
+          "ns": 0,
+          "title": "Neuroimaging"
+        },
+        {
+          "pageid": 7535429,
+          "ns": 0,
+          "title": "Chess in the arts"
+        },
+        {
+          "pageid": 8705124,
+          "ns": 0,
+          "title": "Cheating in chess"
+        },
+        {
+          "pageid": 11676685,
+          "ns": 0,
+          "title": "David Vincent Hooper"
+        },
+        {
+          "pageid": 15463060,
+          "ns": 0,
+          "title": "World Chess Championship 1984–1985"
+        },
+        {
+          "pageid": 17474983,
+          "ns": 0,
+          "title": "The Chess Players (film)"
+        },
+        {
+          "pageid": 18030657,
+          "ns": 0,
+          "title": "FiveThirtyEight"
+        },
+        {
+          "pageid": 18402391,
+          "ns": 0,
+          "title": "World Chess Championship 1985"
+        },
+        {
+          "pageid": 18996908,
+          "ns": 0,
+          "title": "Live streaming"
+        },
+        {
+          "pageid": 22048289,
+          "ns": 0,
+          "title": "Handle System"
+        },
+        {
+          "pageid": 30172853,
+          "ns": 0,
+          "title": "Nicholas II"
+        },
+        {
+          "pageid": 30869117,
+          "ns": 0,
+          "title": "Latin Church"
+        },
+        {
+          "pageid": 48455863,
+          "ns": 0,
+          "title": "Semantic Scholar"
+        },
+        {
+          "pageid": 66298076,
+          "ns": 0,
+          "title": "Online chess"
+        },
+        {
+          "pageid": 82955627,
+          "ns": 0,
+          "title": "Capablanca chess"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Internet chess server",
+          "to": "Online chess",
+          "tofragment": "Chess servers"
+        },
+        {
+          "from": "Hippogonal",
+          "to": "Fairy chess piece",
+          "tofragment": "hippogonal"
+        },
+        {
+          "from": "US Chess Federation",
+          "to": "United States Chess Federation"
+        },
+        {
+          "from": "Mouton de Gruyter",
+          "to": "De Gruyter Brill"
+        },
+        {
+          "from": "Kenneth Howard",
+          "to": "Kenneth Howard, 1st Earl of Effingham"
+        },
+        {
+          "from": "New in Chess",
+          "to": "New In Chess"
+        },
+        {
+          "from": "Owen's Defense",
+          "to": "Owen's Defence"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "Wikipedia:Media help",
+          "to": "Help:Media"
+        },
+        {
+          "from": "Larry Evans (chess grandmaster)",
+          "to": "Larry Evans (chess player)"
+        },
+        {
+          "from": "PMC (identifier)",
+          "to": "PubMed Central",
+          "tofragment": "PMCID"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "Chess.com Computer Chess Championship",
+          "to": "Chess.com",
+          "tofragment": "Chess.com Computer Chess Championship"
+        },
+        {
+          "from": "FIDE world rankings",
+          "to": "FIDE rankings"
+        },
+        {
+          "from": "Everyman Chess",
+          "to": "Popular Chess"
+        },
+        {
+          "from": "Tata Steel India Chess Tournament",
+          "to": "Tata Steel Chess India"
+        },
+        {
+          "from": "Capablanca Chess",
+          "to": "Capablanca chess"
+        },
+        {
+          "from": "Shamkir Chess",
+          "to": "Gashimov Memorial"
+        },
+        {
+          "from": "Asian Chess Championship",
+          "to": "Asian Individual Chess Championship"
+        },
+        {
+          "from": "Pan American Chess Championship",
+          "to": "American Continental Championship"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 250667,
+          "ns": 0,
+          "title": "Fairy chess piece"
+        },
+        {
+          "pageid": 255735,
+          "ns": 0,
+          "title": "United States Chess Federation"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 1047985,
+          "ns": 0,
+          "title": "Larry Evans (chess player)"
+        },
+        {
+          "pageid": 1482301,
+          "ns": 12,
+          "title": "Help:Media"
+        },
+        {
+          "pageid": 1655058,
+          "ns": 0,
+          "title": "New In Chess"
+        },
+        {
+          "pageid": 2125202,
+          "ns": 0,
+          "title": "Owen's Defence"
+        },
+        {
+          "pageid": 2775325,
+          "ns": 0,
+          "title": "PubMed Central"
+        },
+        {
+          "pageid": 8916248,
+          "ns": 0,
+          "title": "De Gruyter Brill"
+        },
+        {
+          "pageid": 13876896,
+          "ns": 0,
+          "title": "FIDE rankings"
+        },
+        {
+          "pageid": 13907039,
+          "ns": 0,
+          "title": "Asian Individual Chess Championship"
+        },
+        {
+          "pageid": 14061087,
+          "ns": 0,
+          "title": "American Continental Championship"
+        },
+        {
+          "pageid": 14130352,
+          "ns": 0,
+          "title": "Kenneth Howard, 1st Earl of Effingham"
+        },
+        {
+          "pageid": 15173653,
+          "ns": 0,
+          "title": "Popular Chess"
+        },
+        {
+          "pageid": 41224000,
+          "ns": 0,
+          "title": "Chess.com"
+        },
+        {
+          "pageid": 42575396,
+          "ns": 0,
+          "title": "Gashimov Memorial"
+        },
+        {
+          "pageid": 66298076,
+          "ns": 0,
+          "title": "Online chess"
+        },
+        {
+          "pageid": 66553345,
+          "ns": 0,
+          "title": "Tata Steel Chess India"
+        },
+        {
+          "pageid": 82955627,
+          "ns": 0,
+          "title": "Capablanca chess"
+        }
+      ]
+    }
+  }
+]

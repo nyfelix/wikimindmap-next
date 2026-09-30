@@ -1,0 +1,51 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Mind maps",
+          "to": "Mind map"
+        },
+        {
+          "from": "Irish Times",
+          "to": "The Irish Times"
+        },
+        {
+          "from": "Mind mapping",
+          "to": "Mind map"
+        },
+        {
+          "from": "Daily Telegraph",
+          "to": "The Daily Telegraph"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 19688,
+          "ns": 0,
+          "title": "Mind map"
+        },
+        {
+          "pageid": 147378,
+          "ns": 0,
+          "title": "The Irish Times"
+        },
+        {
+          "pageid": 23797577,
+          "ns": 0,
+          "title": "The Daily Telegraph"
+        }
+      ]
+    }
+  }
+]

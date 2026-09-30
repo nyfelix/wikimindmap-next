@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/World_War_II/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1377143094/baf532f7-bcf0-11f1-b2c9-c3da196ef6bc/view\"",
+    "last-modified": "Wed, 30 Sep 2026 17:02:10 GMT"
+  }
+}

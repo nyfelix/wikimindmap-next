@@ -1,0 +1,459 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Napoleonische Kriege",
+          "to": "Koalitionskriege"
+        },
+        {
+          "from": "Liste der Autobahnen in der Schweiz",
+          "to": "Liste der Autobahnen und Autostrassen in der Schweiz"
+        },
+        {
+          "from": "Reichsstadt",
+          "to": "Freie und Reichsstädte"
+        },
+        {
+          "from": "Täufertum",
+          "to": "Täufer"
+        },
+        {
+          "from": "Vertrauensintervall",
+          "to": "Konfidenzintervall"
+        },
+        {
+          "from": "Hauptbahnhof Zürich",
+          "to": "Zürich Hauptbahnhof"
+        },
+        {
+          "from": "Sursilvan",
+          "to": "Surselvische Sprache"
+        },
+        {
+          "from": "Sutsilvan",
+          "to": "Sutselvische Sprache"
+        },
+        {
+          "from": "Surmiran",
+          "to": "Surmeirische Sprache"
+        },
+        {
+          "from": "Glattbrugg",
+          "to": "Opfikon"
+        },
+        {
+          "from": "Waidberg",
+          "to": "Käferberg"
+        },
+        {
+          "from": "3+",
+          "to": "3 Plus TV"
+        },
+        {
+          "from": "Wittenberg",
+          "to": "Lutherstadt Wittenberg"
+        },
+        {
+          "from": "Agglomeration Zürich",
+          "to": "Metropolregion Zürich"
+        },
+        {
+          "from": "Zeit.de",
+          "to": "Die Zeit",
+          "tofragment": "Zeit.de"
+        },
+        {
+          "from": "Reformierte Kirche",
+          "to": "Reformierte Kirchen"
+        },
+        {
+          "from": "Vorlage:Wahldiagramm/Wartung/Neues Ergebnis nicht 100%",
+          "to": "Vorlage:Wahldiagramm/Wartung"
+        },
+        {
+          "from": "Vorlage:Wahldiagramm/Wartung/Altes Ergebnis nicht 100%",
+          "to": "Vorlage:Wahldiagramm/Wartung"
+        },
+        {
+          "from": "Tagesanzeiger.ch",
+          "to": "Tages-Anzeiger"
+        },
+        {
+          "from": "Wikipedia:WikiProjekt Ereignisse/Vergangenheit/fehlend",
+          "to": "Wikipedia:WikiProjekt Ereignisse/Vergangenheit"
+        },
+        {
+          "from": "X-Tra",
+          "to": "Limmathaus",
+          "tofragment": "Tra"
+        },
+        {
+          "from": "Lenin",
+          "to": "Wladimir Iljitsch Lenin"
+        },
+        {
+          "from": "Tonhalle-Orchester",
+          "to": "Tonhalle-Orchester Zürich"
+        },
+        {
+          "from": "Felix Stähelin",
+          "to": "Felix Staehelin"
+        },
+        {
+          "from": "Koptische Kirche",
+          "to": "Koptisch-orthodoxe Kirche"
+        },
+        {
+          "from": "National League B",
+          "to": "Swiss League"
+        },
+        {
+          "from": "National League A",
+          "to": "National League (Eishockey)"
+        },
+        {
+          "from": "Max-Frisch-Bad",
+          "to": "Freibad Letzigraben"
+        },
+        {
+          "from": "Google Inc.",
+          "to": "Google LLC"
+        },
+        {
+          "from": "IBM Zurich Research Laboratory",
+          "to": "IBM Research – Zurich"
+        },
+        {
+          "from": "Maag Music Hall",
+          "to": "Maag Halle"
+        },
+        {
+          "from": "Kunstmuseum Winterthur",
+          "to": "Kunst Museum Winterthur – Beim Stadthaus"
+        },
+        {
+          "from": "Planet 105",
+          "to": "GOAT Radio"
+        },
+        {
+          "from": "IAAF Diamond League",
+          "to": "Diamond League"
+        },
+        {
+          "from": "Theater am Neumarkt Zürich",
+          "to": "Theater Neumarkt Zürich"
+        },
+        {
+          "from": "Nationalliga A (Handball)",
+          "to": "Handball League"
+        },
+        {
+          "from": "Vorort (Geschichte)",
+          "to": "Vorort (Vorsitz)"
+        },
+        {
+          "from": "Grüne Partei der Schweiz",
+          "to": "Grüne Schweiz"
+        },
+        {
+          "from": "Hochhäuser in Zürich",
+          "to": "Liste der Hochhäuser in Zürich"
+        },
+        {
+          "from": "Gemäßigte Zone",
+          "to": "Gemäßigte Klimazone"
+        },
+        {
+          "from": "Autobahn 1 (Schweiz)",
+          "to": "Autobahn A1 (Schweiz)"
+        },
+        {
+          "from": "Autobahn 2 (Schweiz)",
+          "to": "Autobahn A2 (Schweiz)"
+        },
+        {
+          "from": "Autobahn 3 (Schweiz)",
+          "to": "Autobahn A3 (Schweiz)"
+        },
+        {
+          "from": "Autobahn 4 (Schweiz)",
+          "to": "Autobahn A4 (Schweiz)"
+        },
+        {
+          "from": "Langzeitgymnasium",
+          "to": "Kantonsschule",
+          "tofragment": "Voraussetzungen"
+        },
+        {
+          "from": "Regierungsrat des Kantons Zürich",
+          "to": "Regierungsrat (Zürich)"
+        },
+        {
+          "from": "Syro-Malankara Katholische Kirche",
+          "to": "Syro-malankarische Kirche"
+        },
+        {
+          "from": "EuroCity",
+          "to": "Eurocity"
+        },
+        {
+          "from": "Kreis 11 (Stadt Zürich)",
+          "to": "Kreis 11"
+        },
+        {
+          "from": "Kulturwirtschaft",
+          "to": "Kultur- und Kreativwirtschaft"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 12177,
+          "ns": 0,
+          "title": "Reformierte Kirchen"
+        },
+        {
+          "pageid": 15467,
+          "ns": 0,
+          "title": "Lutherstadt Wittenberg"
+        },
+        {
+          "pageid": 17368,
+          "ns": 0,
+          "title": "Wladimir Iljitsch Lenin"
+        },
+        {
+          "pageid": 24193,
+          "ns": 0,
+          "title": "Täufer"
+        },
+        {
+          "pageid": 24370,
+          "ns": 0,
+          "title": "Koptisch-orthodoxe Kirche"
+        },
+        {
+          "pageid": 24790,
+          "ns": 0,
+          "title": "Freie und Reichsstädte"
+        },
+        {
+          "pageid": 31823,
+          "ns": 0,
+          "title": "Die Zeit"
+        },
+        {
+          "pageid": 41510,
+          "ns": 0,
+          "title": "Tages-Anzeiger"
+        },
+        {
+          "pageid": 55371,
+          "ns": 0,
+          "title": "Eurocity"
+        },
+        {
+          "pageid": 69215,
+          "ns": 0,
+          "title": "Koalitionskriege"
+        },
+        {
+          "pageid": 74968,
+          "ns": 0,
+          "title": "Gemäßigte Klimazone"
+        },
+        {
+          "pageid": 152975,
+          "ns": 0,
+          "title": "Syro-malankarische Kirche"
+        },
+        {
+          "pageid": 159403,
+          "ns": 0,
+          "title": "Grüne Schweiz"
+        },
+        {
+          "pageid": 225297,
+          "ns": 0,
+          "title": "Konfidenzintervall"
+        },
+        {
+          "pageid": 279720,
+          "ns": 0,
+          "title": "National League (Eishockey)"
+        },
+        {
+          "pageid": 306615,
+          "ns": 0,
+          "title": "Autobahn A1 (Schweiz)"
+        },
+        {
+          "pageid": 306972,
+          "ns": 0,
+          "title": "Autobahn A2 (Schweiz)"
+        },
+        {
+          "pageid": 307074,
+          "ns": 0,
+          "title": "Autobahn A4 (Schweiz)"
+        },
+        {
+          "pageid": 310726,
+          "ns": 0,
+          "title": "Zürich Hauptbahnhof"
+        },
+        {
+          "pageid": 319472,
+          "ns": 0,
+          "title": "Autobahn A3 (Schweiz)"
+        },
+        {
+          "pageid": 355269,
+          "ns": 0,
+          "title": "Kantonsschule"
+        },
+        {
+          "pageid": 366970,
+          "ns": 0,
+          "title": "Surselvische Sprache"
+        },
+        {
+          "pageid": 366973,
+          "ns": 0,
+          "title": "Sutselvische Sprache"
+        },
+        {
+          "pageid": 366984,
+          "ns": 0,
+          "title": "Surmeirische Sprache"
+        },
+        {
+          "pageid": 392516,
+          "ns": 0,
+          "title": "Liste der Hochhäuser in Zürich"
+        },
+        {
+          "pageid": 435630,
+          "ns": 0,
+          "title": "Tonhalle-Orchester Zürich"
+        },
+        {
+          "pageid": 480394,
+          "ns": 0,
+          "title": "Google LLC"
+        },
+        {
+          "pageid": 509971,
+          "ns": 0,
+          "title": "Opfikon"
+        },
+        {
+          "pageid": 731929,
+          "ns": 0,
+          "title": "Swiss League"
+        },
+        {
+          "pageid": 965122,
+          "ns": 0,
+          "title": "Kreis 11"
+        },
+        {
+          "pageid": 1085347,
+          "ns": 0,
+          "title": "Vorort (Vorsitz)"
+        },
+        {
+          "pageid": 1328278,
+          "ns": 0,
+          "title": "Kultur- und Kreativwirtschaft"
+        },
+        {
+          "pageid": 1365002,
+          "ns": 0,
+          "title": "Theater Neumarkt Zürich"
+        },
+        {
+          "pageid": 1928486,
+          "ns": 0,
+          "title": "GOAT Radio"
+        },
+        {
+          "pageid": 2315657,
+          "ns": 0,
+          "title": "Kunst Museum Winterthur – Beim Stadthaus"
+        },
+        {
+          "pageid": 2588234,
+          "ns": 0,
+          "title": "3 Plus TV"
+        },
+        {
+          "pageid": 2645779,
+          "ns": 0,
+          "title": "Metropolregion Zürich"
+        },
+        {
+          "pageid": 2717146,
+          "ns": 0,
+          "title": "IBM Research – Zurich"
+        },
+        {
+          "pageid": 3439824,
+          "ns": 0,
+          "title": "Käferberg"
+        },
+        {
+          "pageid": 3543391,
+          "ns": 0,
+          "title": "Freibad Letzigraben"
+        },
+        {
+          "pageid": 4673043,
+          "ns": 0,
+          "title": "Limmathaus"
+        },
+        {
+          "pageid": 4890740,
+          "ns": 10,
+          "title": "Vorlage:Wahldiagramm/Wartung"
+        },
+        {
+          "pageid": 5896702,
+          "ns": 4,
+          "title": "Wikipedia:WikiProjekt Ereignisse/Vergangenheit"
+        },
+        {
+          "pageid": 6888477,
+          "ns": 0,
+          "title": "Diamond League"
+        },
+        {
+          "pageid": 6950701,
+          "ns": 0,
+          "title": "Felix Staehelin"
+        },
+        {
+          "pageid": 9402306,
+          "ns": 0,
+          "title": "Maag Halle"
+        },
+        {
+          "pageid": 10080175,
+          "ns": 0,
+          "title": "Handball League"
+        },
+        {
+          "pageid": 10564140,
+          "ns": 0,
+          "title": "Liste der Autobahnen und Autostrassen in der Schweiz"
+        },
+        {
+          "pageid": 12891094,
+          "ns": 0,
+          "title": "Regierungsrat (Zürich)"
+        }
+      ]
+    }
+  }
+]

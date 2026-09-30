@@ -1,0 +1,38 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Creative commons",
+          "to": "Creative Commons"
+        },
+        {
+          "from": "Architecture informatique",
+          "to": "Architecture (informatique)"
+        },
+        {
+          "from": "Mot clé (sciences de l'information et des bibliothèques)",
+          "to": "Mot clé"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 9700,
+          "ns": 0,
+          "title": "Architecture (informatique)"
+        },
+        {
+          "pageid": 39005,
+          "ns": 0,
+          "title": "Creative Commons"
+        },
+        {
+          "pageid": 321880,
+          "ns": 0,
+          "title": "Mot clé"
+        }
+      ]
+    }
+  }
+]

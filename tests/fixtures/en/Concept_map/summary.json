@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 698226,
+        "ns": 0,
+        "title": "Concept map",
+        "extract": "A concept map or conceptual diagram is a diagram that depicts suggested relationships between concepts. Concept maps may be used by instructional designers, engineers, technical writers, and others to organize and structure knowledge.\nA concept map typically represents ideas and information as boxes or circles, which it connects with labeled arrows, often in a downward-branching hierarchical structure but also in free-form maps.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Electricity_Concept_Map.gif/330px-Electricity_Concept_Map.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 200
+        },
+        "description": "Diagram showing relationships among concepts",
+        "descriptionsource": "local"
+      }
+    ]
+  }
+}

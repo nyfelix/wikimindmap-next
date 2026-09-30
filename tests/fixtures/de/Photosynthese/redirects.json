@@ -1,0 +1,735 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Dunkelreaktion",
+          "to": "Calvin-Zyklus"
+        },
+        {
+          "from": "Phosphat",
+          "to": "Phosphate"
+        },
+        {
+          "from": "Chloroplasten",
+          "to": "Chloroplast"
+        },
+        {
+          "from": "Oxidationsstufe",
+          "to": "Oxidationszahl"
+        },
+        {
+          "from": "Lactat",
+          "to": "Lactate"
+        },
+        {
+          "from": "Organik",
+          "to": "Organische Chemie"
+        },
+        {
+          "from": "Blattspreite",
+          "to": "Blatt (Pflanze)",
+          "tofragment": "Blattspreite"
+        },
+        {
+          "from": "NADPH",
+          "to": "Nicotinamidadenindinukleotidphosphat"
+        },
+        {
+          "from": "Oxygenium",
+          "to": "Sauerstoff"
+        },
+        {
+          "from": "Anorganik",
+          "to": "Anorganische Chemie"
+        },
+        {
+          "from": "Acetat",
+          "to": "Acetate"
+        },
+        {
+          "from": "Aerob",
+          "to": "Aerobie"
+        },
+        {
+          "from": "Baustoffwechsel",
+          "to": "Anabolismus"
+        },
+        {
+          "from": "Nitrit",
+          "to": "Nitrite"
+        },
+        {
+          "from": "Granum",
+          "to": "Korn"
+        },
+        {
+          "from": "Algen",
+          "to": "Alge"
+        },
+        {
+          "from": "Schwefelpurpurbakterien",
+          "to": "Purpurbakterien"
+        },
+        {
+          "from": "Chloroflexi",
+          "to": "Grüne Nichtschwefelbakterien"
+        },
+        {
+          "from": "Spaltöffnungen",
+          "to": "Stoma (Botanik)"
+        },
+        {
+          "from": "C3-Pflanzen",
+          "to": "C3-Pflanze"
+        },
+        {
+          "from": "Triplettzustand",
+          "to": "Multiplizität"
+        },
+        {
+          "from": "Photoautotrophie",
+          "to": "Autotrophie",
+          "tofragment": "Photoautotrophie"
+        },
+        {
+          "from": "Julius von Sachs",
+          "to": "Julius Sachs"
+        },
+        {
+          "from": "P680",
+          "to": "Photosystem"
+        },
+        {
+          "from": "Metallkomplex",
+          "to": "Komplexchemie"
+        },
+        {
+          "from": "Bakteriochlorophyll",
+          "to": "Chlorophylle",
+          "tofragment": "Bchl"
+        },
+        {
+          "from": "DNA",
+          "to": "Desoxyribonukleinsäure"
+        },
+        {
+          "from": "Ascorbat",
+          "to": "Ascorbate"
+        },
+        {
+          "from": "Chlorobiaceae",
+          "to": "Grüne Schwefelbakterien"
+        },
+        {
+          "from": "Laubmoos",
+          "to": "Laubmoose"
+        },
+        {
+          "from": "Heliobacteria",
+          "to": "Heliobacteriaceae"
+        },
+        {
+          "from": "Thylakoide",
+          "to": "Thylakoid"
+        },
+        {
+          "from": "Phycobilisomen",
+          "to": "Phycobilisom"
+        },
+        {
+          "from": "Butyrat",
+          "to": "Butyrate"
+        },
+        {
+          "from": "Reservestoffe",
+          "to": "Reservestoff"
+        },
+        {
+          "from": "Photoheterotrophie",
+          "to": "Heterotrophie"
+        },
+        {
+          "from": "Schwefelbakterien",
+          "to": "Schwefeloxidierende Bakterien"
+        },
+        {
+          "from": "Ferredoxin",
+          "to": "Ferredoxine"
+        },
+        {
+          "from": "Enzyme",
+          "to": "Enzym"
+        },
+        {
+          "from": "Zytoplasma",
+          "to": "Cytoplasma"
+        },
+        {
+          "from": "Pyruvat",
+          "to": "Pyruvate"
+        },
+        {
+          "from": "Schwarzer Raucher",
+          "to": "Raucher (Hydrothermie)"
+        },
+        {
+          "from": "Pflanzen",
+          "to": "Pflanze"
+        },
+        {
+          "from": "Proteinkinase",
+          "to": "Proteinkinasen"
+        },
+        {
+          "from": "Farbstoff",
+          "to": "Farbstoffe"
+        },
+        {
+          "from": "CpDNA",
+          "to": "Plastiden-DNA"
+        },
+        {
+          "from": "Chlorobium",
+          "to": "Grüne Schwefelbakterien",
+          "tofragment": "Chlorobium"
+        },
+        {
+          "from": "Photolyse des Wassers",
+          "to": "Hill-Reaktion"
+        },
+        {
+          "from": "Protonentranslokation",
+          "to": "Chemiosmotische Kopplung"
+        },
+        {
+          "from": "Chlorophyll",
+          "to": "Chlorophylle"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 1108,
+          "ns": 0,
+          "title": "Desoxyribonukleinsäure"
+        },
+        {
+          "pageid": 1375,
+          "ns": 0,
+          "title": "Enzym"
+        },
+        {
+          "pageid": 3789,
+          "ns": 0,
+          "title": "Organische Chemie"
+        },
+        {
+          "pageid": 4543,
+          "ns": 0,
+          "title": "Sauerstoff"
+        },
+        {
+          "pageid": 10305,
+          "ns": 0,
+          "title": "Chlorophylle"
+        },
+        {
+          "pageid": 11318,
+          "ns": 0,
+          "title": "Autotrophie"
+        },
+        {
+          "pageid": 11478,
+          "ns": 0,
+          "title": "Heterotrophie"
+        },
+        {
+          "pageid": 17601,
+          "ns": 0,
+          "title": "Korn"
+        },
+        {
+          "pageid": 18875,
+          "ns": 0,
+          "title": "Chloroplast"
+        },
+        {
+          "pageid": 19198,
+          "ns": 0,
+          "title": "Cytoplasma"
+        },
+        {
+          "pageid": 25891,
+          "ns": 0,
+          "title": "Oxidationszahl"
+        },
+        {
+          "pageid": 26395,
+          "ns": 0,
+          "title": "Calvin-Zyklus"
+        },
+        {
+          "pageid": 27231,
+          "ns": 0,
+          "title": "Blatt (Pflanze)"
+        },
+        {
+          "pageid": 33466,
+          "ns": 0,
+          "title": "Anabolismus"
+        },
+        {
+          "pageid": 35738,
+          "ns": 0,
+          "title": "Anorganische Chemie"
+        },
+        {
+          "pageid": 35912,
+          "ns": 0,
+          "title": "Komplexchemie"
+        },
+        {
+          "pageid": 38533,
+          "ns": 0,
+          "title": "Nitrite"
+        },
+        {
+          "pageid": 38827,
+          "ns": 0,
+          "title": "Farbstoffe"
+        },
+        {
+          "pageid": 40185,
+          "ns": 0,
+          "title": "Aerobie"
+        },
+        {
+          "pageid": 40867,
+          "ns": 0,
+          "title": "Pyruvate"
+        },
+        {
+          "pageid": 40998,
+          "ns": 0,
+          "title": "Acetate"
+        },
+        {
+          "pageid": 60501,
+          "ns": 0,
+          "title": "Lactate"
+        },
+        {
+          "pageid": 64093,
+          "ns": 0,
+          "title": "Stoma (Botanik)"
+        },
+        {
+          "pageid": 71220,
+          "ns": 0,
+          "title": "Hill-Reaktion"
+        },
+        {
+          "pageid": 93045,
+          "ns": 0,
+          "title": "Thylakoid"
+        },
+        {
+          "pageid": 108953,
+          "ns": 0,
+          "title": "Schwefeloxidierende Bakterien"
+        },
+        {
+          "pageid": 181597,
+          "ns": 0,
+          "title": "Phosphate"
+        },
+        {
+          "pageid": 196251,
+          "ns": 0,
+          "title": "Julius Sachs"
+        },
+        {
+          "pageid": 202570,
+          "ns": 0,
+          "title": "Photosystem"
+        },
+        {
+          "pageid": 227319,
+          "ns": 0,
+          "title": "Nicotinamidadenindinukleotidphosphat"
+        },
+        {
+          "pageid": 256507,
+          "ns": 0,
+          "title": "Raucher (Hydrothermie)"
+        },
+        {
+          "pageid": 265437,
+          "ns": 0,
+          "title": "Chemiosmotische Kopplung"
+        },
+        {
+          "pageid": 326150,
+          "ns": 0,
+          "title": "C3-Pflanze"
+        },
+        {
+          "pageid": 404488,
+          "ns": 0,
+          "title": "Proteinkinasen"
+        },
+        {
+          "pageid": 666659,
+          "ns": 0,
+          "title": "Purpurbakterien"
+        },
+        {
+          "pageid": 786414,
+          "ns": 0,
+          "title": "Alge"
+        },
+        {
+          "pageid": 787804,
+          "ns": 0,
+          "title": "Ferredoxine"
+        },
+        {
+          "pageid": 1066083,
+          "ns": 0,
+          "title": "Grüne Nichtschwefelbakterien"
+        },
+        {
+          "pageid": 1099441,
+          "ns": 0,
+          "title": "Multiplizität"
+        },
+        {
+          "pageid": 1180087,
+          "ns": 0,
+          "title": "Grüne Schwefelbakterien"
+        },
+        {
+          "pageid": 1256987,
+          "ns": 0,
+          "title": "Butyrate"
+        },
+        {
+          "pageid": 2578574,
+          "ns": 0,
+          "title": "Laubmoose"
+        },
+        {
+          "pageid": 2848233,
+          "ns": 0,
+          "title": "Heliobacteriaceae"
+        },
+        {
+          "pageid": 3109093,
+          "ns": 0,
+          "title": "Phycobilisom"
+        },
+        {
+          "pageid": 3794757,
+          "ns": 0,
+          "title": "Reservestoff"
+        },
+        {
+          "pageid": 10452237,
+          "ns": 0,
+          "title": "Pflanze"
+        },
+        {
+          "pageid": 10738998,
+          "ns": 0,
+          "title": "Plastiden-DNA"
+        },
+        {
+          "pageid": 12407593,
+          "ns": 0,
+          "title": "Ascorbate"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "UV-Licht",
+          "to": "Ultraviolettstrahlung"
+        },
+        {
+          "from": "Sulfat",
+          "to": "Sulfate"
+        },
+        {
+          "from": "Palisadenparenchym",
+          "to": "Parenchym",
+          "tofragment": "Palisadenparenchym"
+        },
+        {
+          "from": "UV-Strahlung",
+          "to": "Ultraviolettstrahlung"
+        },
+        {
+          "from": "Spaltöffnung",
+          "to": "Stoma (Botanik)"
+        },
+        {
+          "from": "Sonnenlicht",
+          "to": "Sonnenstrahlung"
+        },
+        {
+          "from": "Buche",
+          "to": "Rotbuche"
+        },
+        {
+          "from": "Stromatolithen",
+          "to": "Stromatolith"
+        },
+        {
+          "from": "Phylogenetisch",
+          "to": "Phylogenetik"
+        },
+        {
+          "from": "Hydrothermal",
+          "to": "Hydrothermale Lösung"
+        },
+        {
+          "from": "Fossilien",
+          "to": "Fossil"
+        },
+        {
+          "from": "Lithotroph",
+          "to": "Lithotrophie"
+        },
+        {
+          "from": "Sulfatreduktion",
+          "to": "Desulfurikation"
+        },
+        {
+          "from": "C4-Pflanzen",
+          "to": "C4-Pflanze"
+        },
+        {
+          "from": "Wasserstress",
+          "to": "Wassernutzungsindex"
+        },
+        {
+          "from": "Hans W. Heldt",
+          "to": "Hans-Walter Heldt"
+        },
+        {
+          "from": "Steran",
+          "to": "Sterane"
+        },
+        {
+          "from": "Tonschiefer",
+          "to": "Schiefer",
+          "tofragment": "Tonschiefer"
+        },
+        {
+          "from": "Kiefernartige",
+          "to": "Koniferen"
+        },
+        {
+          "from": "US Department of Energy",
+          "to": "Energieministerium der Vereinigten Staaten"
+        },
+        {
+          "from": "Heliobakterien",
+          "to": "Heliobacteriaceae"
+        },
+        {
+          "from": "Wissenschaft.de",
+          "to": "Bild der Wissenschaft"
+        },
+        {
+          "from": "Proc Natl Acad Sci U S A",
+          "to": "Proceedings of the National Academy of Sciences of the United States of America"
+        },
+        {
+          "from": "Proc Natl Acad Sci USA",
+          "to": "Proceedings of the National Academy of Sciences of the United States of America"
+        },
+        {
+          "from": "Annu Rev Plant Biol",
+          "to": "Annual Review of Plant Biology"
+        },
+        {
+          "from": "Arch Biochem Biophys",
+          "to": "Archives of Biochemistry and Biophysics"
+        },
+        {
+          "from": "FEBS Lett",
+          "to": "FEBS Letters"
+        },
+        {
+          "from": "Coord Chem Rev",
+          "to": "Coordination Chemistry Reviews"
+        },
+        {
+          "from": "Aerobe Atmung",
+          "to": "Zellatmung"
+        },
+        {
+          "from": "Vampirovibrionia",
+          "to": "Melainabacteria"
+        },
+        {
+          "from": "Gemäßigte Zone",
+          "to": "Gemäßigte Klimazone"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 3637,
+          "ns": 0,
+          "title": "Koniferen"
+        },
+        {
+          "pageid": 8736,
+          "ns": 0,
+          "title": "Rotbuche"
+        },
+        {
+          "pageid": 12851,
+          "ns": 0,
+          "title": "Ultraviolettstrahlung"
+        },
+        {
+          "pageid": 18196,
+          "ns": 0,
+          "title": "Sulfate"
+        },
+        {
+          "pageid": 32191,
+          "ns": 0,
+          "title": "Phylogenetik"
+        },
+        {
+          "pageid": 40296,
+          "ns": 0,
+          "title": "Zellatmung"
+        },
+        {
+          "pageid": 64093,
+          "ns": 0,
+          "title": "Stoma (Botanik)"
+        },
+        {
+          "pageid": 64514,
+          "ns": 0,
+          "title": "Schiefer"
+        },
+        {
+          "pageid": 74968,
+          "ns": 0,
+          "title": "Gemäßigte Klimazone"
+        },
+        {
+          "pageid": 274364,
+          "ns": 0,
+          "title": "C4-Pflanze"
+        },
+        {
+          "pageid": 277037,
+          "ns": 0,
+          "title": "Stromatolith"
+        },
+        {
+          "pageid": 281963,
+          "ns": 0,
+          "title": "Lithotrophie"
+        },
+        {
+          "pageid": 293802,
+          "ns": 0,
+          "title": "Sonnenstrahlung"
+        },
+        {
+          "pageid": 540101,
+          "ns": 0,
+          "title": "Desulfurikation"
+        },
+        {
+          "pageid": 558014,
+          "ns": 0,
+          "title": "Parenchym"
+        },
+        {
+          "pageid": 648954,
+          "ns": 0,
+          "title": "Bild der Wissenschaft"
+        },
+        {
+          "pageid": 684947,
+          "ns": 0,
+          "title": "Energieministerium der Vereinigten Staaten"
+        },
+        {
+          "pageid": 838374,
+          "ns": 0,
+          "title": "Hydrothermale Lösung"
+        },
+        {
+          "pageid": 886174,
+          "ns": 0,
+          "title": "Proceedings of the National Academy of Sciences of the United States of America"
+        },
+        {
+          "pageid": 1030651,
+          "ns": 0,
+          "title": "Sterane"
+        },
+        {
+          "pageid": 1046346,
+          "ns": 0,
+          "title": "Fossil"
+        },
+        {
+          "pageid": 2848233,
+          "ns": 0,
+          "title": "Heliobacteriaceae"
+        },
+        {
+          "pageid": 3498317,
+          "ns": 0,
+          "title": "Hans-Walter Heldt"
+        },
+        {
+          "pageid": 6845382,
+          "ns": 0,
+          "title": "Annual Review of Plant Biology"
+        },
+        {
+          "pageid": 7074495,
+          "ns": 0,
+          "title": "Archives of Biochemistry and Biophysics"
+        },
+        {
+          "pageid": 7092093,
+          "ns": 0,
+          "title": "FEBS Letters"
+        },
+        {
+          "pageid": 8501317,
+          "ns": 0,
+          "title": "Coordination Chemistry Reviews"
+        },
+        {
+          "pageid": 11951866,
+          "ns": 0,
+          "title": "Melainabacteria"
+        },
+        {
+          "pageid": 13486499,
+          "ns": 0,
+          "title": "Wassernutzungsindex"
+        }
+      ]
+    }
+  }
+]

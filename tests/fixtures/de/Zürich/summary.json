@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 11449,
+        "ns": 0,
+        "title": "Zürich",
+        "extract": "Zürich (zürichdeutsch Züri [ˈt͡sʏ̞rɪ, ˈt͡sʏrɪ, ˈt͡sy̞rɪ], französisch  [zyʁik], italienisch Zurigo [tsuˈriːɡo, dzu-], Rumantsch Grischun ) ist eine schweizerische Stadt, politische Gemeinde sowie Hauptort des gleichnamigen Kantons. Der Bezirk Zürich ist mit dem Stadtgebiet identisch.\nDie Stadt Zürich ist mit 440'935 Einwohnern (Stand 31.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Altstadt_Z%C3%BCrich_2015.jpg/330px-Altstadt_Z%C3%BCrich_2015.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 175
+        },
+        "description": "bevölkerungsreichste Stadt der Schweiz und Hauptort des Kantons Zürich",
+        "descriptionsource": "central"
+      }
+    ]
+  }
+}

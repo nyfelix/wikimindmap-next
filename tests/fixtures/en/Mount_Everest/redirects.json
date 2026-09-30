@@ -1,0 +1,1374 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Normal fault",
+          "to": "Fault (geology)",
+          "tofragment": "Dip-slip faults"
+        },
+        {
+          "from": "Qing China",
+          "to": "Qing dynasty"
+        },
+        {
+          "from": "Above sea level",
+          "to": "Height above mean sea level"
+        },
+        {
+          "from": "Emperor Kangxi",
+          "to": "Kangxi Emperor"
+        },
+        {
+          "from": "High altitude",
+          "to": "Altitude",
+          "tofragment": "High altitude and low pressure"
+        },
+        {
+          "from": "Eurasian Plate",
+          "to": "Eurasian plate"
+        },
+        {
+          "from": "Graywacke",
+          "to": "Greywacke"
+        },
+        {
+          "from": "Simplified characters",
+          "to": "Simplified Chinese characters"
+        },
+        {
+          "from": "Traditional characters",
+          "to": "Traditional Chinese characters"
+        },
+        {
+          "from": "Ostracods",
+          "to": "Ostracod"
+        },
+        {
+          "from": "Indian Plate",
+          "to": "Indian plate"
+        },
+        {
+          "from": "Geology of the Himalaya",
+          "to": "Geology of the Himalayas"
+        },
+        {
+          "from": "Sherpa (people)",
+          "to": "Sherpa people"
+        },
+        {
+          "from": "Light refraction",
+          "to": "Refraction"
+        },
+        {
+          "from": "Petrograph",
+          "to": "Rock art"
+        },
+        {
+          "from": "Geologic formation",
+          "to": "Geological formation"
+        },
+        {
+          "from": "Fixed ropes",
+          "to": "Fixed rope"
+        },
+        {
+          "from": "K-feldspar",
+          "to": "Potassium feldspar"
+        },
+        {
+          "from": "Maxim Chaya",
+          "to": "Maxime Chaya"
+        },
+        {
+          "from": "Standard Tibetan language",
+          "to": "Lhasa Tibetan"
+        },
+        {
+          "from": "Pavel Kalny",
+          "to": "Pavel Kalný"
+        },
+        {
+          "from": "Xenon gas",
+          "to": "Xenon"
+        },
+        {
+          "from": "Bottled oxygen (climbing)",
+          "to": "High-altitude breathing apparatus",
+          "tofragment": "Bottled oxygen"
+        },
+        {
+          "from": "Summit (topography)",
+          "to": "Summit"
+        },
+        {
+          "from": "1924 British Mount Everest Expedition",
+          "to": "1924 British Mount Everest expedition"
+        },
+        {
+          "from": "1952 Swiss Mount Everest Expedition",
+          "to": "1952 Swiss Mount Everest expedition"
+        },
+        {
+          "from": "Ultra prominent peak",
+          "to": "Ultra-prominent peak"
+        },
+        {
+          "from": "Yellow-billed chough",
+          "to": "Alpine chough"
+        },
+        {
+          "from": "Cartographic relief depiction",
+          "to": "Terrain cartography"
+        },
+        {
+          "from": "Yellow Band",
+          "to": "Mount Everest",
+          "tofragment": "Geology"
+        },
+        {
+          "from": "Juerg Marmet",
+          "to": "Jürg Marmet"
+        },
+        {
+          "from": "Edward Felix Norton",
+          "to": "Edward F. Norton"
+        },
+        {
+          "from": "Annapurna Massif",
+          "to": "Annapurna (mountain range)"
+        },
+        {
+          "from": "South Summit (Everest)",
+          "to": "South Summit"
+        },
+        {
+          "from": "Bottled oxygen",
+          "to": "High-altitude breathing apparatus",
+          "tofragment": "Bottled oxygen"
+        },
+        {
+          "from": "Tibetan language (standard)",
+          "to": "Lhasa Tibetan"
+        },
+        {
+          "from": "Everest Base Camp",
+          "to": "Everest base camps"
+        },
+        {
+          "from": "Tibetan alphabet",
+          "to": "Tibetan script"
+        },
+        {
+          "from": "Yuichiro Miura",
+          "to": "Yūichirō Miura"
+        },
+        {
+          "from": "Altitude acclimatisation",
+          "to": "Effects of high altitude on humans"
+        },
+        {
+          "from": "Pounds per square inch",
+          "to": "Pound per square inch"
+        },
+        {
+          "from": "Intercalation (geology)",
+          "to": "Interbedding"
+        },
+        {
+          "from": "Argillaceous minerals",
+          "to": "Clay mineral",
+          "tofragment": "Argillaceous rocks"
+        },
+        {
+          "from": "2008 Summer Olympics summit of Mt. Everest",
+          "to": "2008 Summer Olympics summit of Mount Everest"
+        },
+        {
+          "from": "Jean Baptiste Bourguignon d'Anville",
+          "to": "Jean-Baptiste Bourguignon d'Anville"
+        },
+        {
+          "from": "Great Couloir",
+          "to": "Norton Couloir"
+        },
+        {
+          "from": "Nawang Gombu",
+          "to": "Nawang Gombu Sherpa"
+        },
+        {
+          "from": "List of aftershocks of April 2015 Nepal earthquake",
+          "to": "List of aftershocks of the April 2015 Nepal earthquake"
+        },
+        {
+          "from": "Crampons",
+          "to": "Crampon"
+        },
+        {
+          "from": "Annexation of Tibet by the People's Republic of China",
+          "to": "1951 Chinese annexation of Tibet"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 25310,
+          "ns": 0,
+          "title": "Qing dynasty"
+        },
+        {
+          "pageid": 25948,
+          "ns": 0,
+          "title": "Refraction"
+        },
+        {
+          "pageid": 34139,
+          "ns": 0,
+          "title": "Xenon"
+        },
+        {
+          "pageid": 42179,
+          "ns": 0,
+          "title": "Mount Everest"
+        },
+        {
+          "pageid": 59211,
+          "ns": 0,
+          "title": "Altitude"
+        },
+        {
+          "pageid": 182787,
+          "ns": 0,
+          "title": "Fault (geology)"
+        },
+        {
+          "pageid": 195770,
+          "ns": 0,
+          "title": "Alpine chough"
+        },
+        {
+          "pageid": 224737,
+          "ns": 0,
+          "title": "Sherpa people"
+        },
+        {
+          "pageid": 243871,
+          "ns": 0,
+          "title": "Tibetan script"
+        },
+        {
+          "pageid": 256180,
+          "ns": 0,
+          "title": "Kangxi Emperor"
+        },
+        {
+          "pageid": 261949,
+          "ns": 0,
+          "title": "Simplified Chinese characters"
+        },
+        {
+          "pageid": 266210,
+          "ns": 0,
+          "title": "Traditional Chinese characters"
+        },
+        {
+          "pageid": 340651,
+          "ns": 0,
+          "title": "Eurasian plate"
+        },
+        {
+          "pageid": 357854,
+          "ns": 0,
+          "title": "Crampon"
+        },
+        {
+          "pageid": 509042,
+          "ns": 0,
+          "title": "Ostracod"
+        },
+        {
+          "pageid": 566356,
+          "ns": 0,
+          "title": "Potassium feldspar"
+        },
+        {
+          "pageid": 681871,
+          "ns": 0,
+          "title": "Yūichirō Miura"
+        },
+        {
+          "pageid": 751489,
+          "ns": 0,
+          "title": "Summit"
+        },
+        {
+          "pageid": 869944,
+          "ns": 0,
+          "title": "Geological formation"
+        },
+        {
+          "pageid": 928469,
+          "ns": 0,
+          "title": "Rock art"
+        },
+        {
+          "pageid": 1131927,
+          "ns": 0,
+          "title": "Greywacke"
+        },
+        {
+          "pageid": 1161453,
+          "ns": 0,
+          "title": "Clay mineral"
+        },
+        {
+          "pageid": 1336518,
+          "ns": 0,
+          "title": "Indian plate"
+        },
+        {
+          "pageid": 1561831,
+          "ns": 0,
+          "title": "Geology of the Himalayas"
+        },
+        {
+          "pageid": 2143750,
+          "ns": 0,
+          "title": "Fixed rope"
+        },
+        {
+          "pageid": 2400848,
+          "ns": 0,
+          "title": "Jean-Baptiste Bourguignon d'Anville"
+        },
+        {
+          "pageid": 5451939,
+          "ns": 0,
+          "title": "Lhasa Tibetan"
+        },
+        {
+          "pageid": 5668938,
+          "ns": 0,
+          "title": "Nawang Gombu Sherpa"
+        },
+        {
+          "pageid": 6976868,
+          "ns": 0,
+          "title": "Everest base camps"
+        },
+        {
+          "pageid": 7963618,
+          "ns": 0,
+          "title": "Terrain cartography"
+        },
+        {
+          "pageid": 9091093,
+          "ns": 0,
+          "title": "Effects of high altitude on humans"
+        },
+        {
+          "pageid": 11326227,
+          "ns": 0,
+          "title": "Edward F. Norton"
+        },
+        {
+          "pageid": 11700597,
+          "ns": 0,
+          "title": "Ultra-prominent peak"
+        },
+        {
+          "pageid": 14615536,
+          "ns": 0,
+          "title": "1951 Chinese annexation of Tibet"
+        },
+        {
+          "pageid": 14630200,
+          "ns": 0,
+          "title": "Maxime Chaya"
+        },
+        {
+          "pageid": 16637445,
+          "ns": 0,
+          "title": "Interbedding"
+        },
+        {
+          "pageid": 18078704,
+          "ns": 0,
+          "title": "2008 Summer Olympics summit of Mount Everest"
+        },
+        {
+          "pageid": 20562313,
+          "ns": 0,
+          "title": "1924 British Mount Everest expedition"
+        },
+        {
+          "pageid": 23396816,
+          "ns": 0,
+          "title": "Pound per square inch"
+        },
+        {
+          "pageid": 29008295,
+          "ns": 0,
+          "title": "Norton Couloir"
+        },
+        {
+          "pageid": 30637506,
+          "ns": 0,
+          "title": "1952 Swiss Mount Everest expedition"
+        },
+        {
+          "pageid": 35936033,
+          "ns": 0,
+          "title": "Pavel Kalný"
+        },
+        {
+          "pageid": 39020419,
+          "ns": 0,
+          "title": "Jürg Marmet"
+        },
+        {
+          "pageid": 46576802,
+          "ns": 0,
+          "title": "List of aftershocks of the April 2015 Nepal earthquake"
+        },
+        {
+          "pageid": 48085382,
+          "ns": 0,
+          "title": "South Summit"
+        },
+        {
+          "pageid": 69649687,
+          "ns": 0,
+          "title": "Annapurna (mountain range)"
+        },
+        {
+          "pageid": 71840293,
+          "ns": 0,
+          "title": "Height above mean sea level"
+        },
+        {
+          "pageid": 74361634,
+          "ns": 0,
+          "title": "High-altitude breathing apparatus"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Buddhist",
+          "to": "Buddhists"
+        },
+        {
+          "from": "New York Times",
+          "to": "The New York Times"
+        },
+        {
+          "from": "Washington Post",
+          "to": "The Washington Post"
+        },
+        {
+          "from": "Annapurna I",
+          "to": "Annapurna"
+        },
+        {
+          "from": "Paraglider",
+          "to": "Paragliding"
+        },
+        {
+          "from": "CBC/Radio-Canada",
+          "to": "Canadian Broadcasting Corporation"
+        },
+        {
+          "from": "Pir Panjal",
+          "to": "Pir Panjal Range"
+        },
+        {
+          "from": "Sandy Irvine",
+          "to": "Andrew Irvine (mountaineer)"
+        },
+        {
+          "from": "ABC Online",
+          "to": "Australian Broadcasting Corporation",
+          "tofragment": "Internet"
+        },
+        {
+          "from": "W.H. Murray",
+          "to": "W. H. Murray"
+        },
+        {
+          "from": "Mount Everest Committee",
+          "to": "Joint Himalayan Committee"
+        },
+        {
+          "from": "The Climb (2007 film)",
+          "to": "Screen Door"
+        },
+        {
+          "from": "National Public Radio",
+          "to": "NPR"
+        },
+        {
+          "from": "Bulletin of the British Arachnological Society",
+          "to": "British Arachnological Society"
+        },
+        {
+          "from": "Outside Online",
+          "to": "Outside (magazine)"
+        },
+        {
+          "from": "Encyclopædia Britannica Eleventh Edition",
+          "to": "Eleventh edition of the Encyclopædia Britannica"
+        },
+        {
+          "from": "National Geographic News",
+          "to": "National Geographic Society",
+          "tofragment": "Other publications"
+        },
+        {
+          "from": "Lhakpa La",
+          "to": "Lhagba La"
+        },
+        {
+          "from": "Eurocopter AS350",
+          "to": "Eurocopter AS350 Écureuil"
+        },
+        {
+          "from": "Timeline of climbing Mount Everest",
+          "to": "Timeline of Mount Everest expeditions"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "ISSN (identifier)",
+          "to": "ISSN"
+        },
+        {
+          "from": "National Geographic (magazine)",
+          "to": "National Geographic"
+        },
+        {
+          "from": "Kumaon region",
+          "to": "Kumaon division"
+        },
+        {
+          "from": "National Geographic Partners, LLC.",
+          "to": "National Geographic Partners"
+        },
+        {
+          "from": "Tibetan Himalayas",
+          "to": "Geology of Nepal",
+          "tofragment": "Tibetan-Tethys"
+        },
+        {
+          "from": "S2CID (identifier)",
+          "to": "Semantic Scholar",
+          "tofragment": "S2CID"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "PMC (identifier)",
+          "to": "PubMed Central",
+          "tofragment": "PMCID"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Bibcode (identifier)",
+          "to": "Bibcode"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "Mount Villingili",
+          "to": "Villingili (Addu Atoll)"
+        },
+        {
+          "from": "CNA (news channel)",
+          "to": "CNA (TV network)"
+        },
+        {
+          "from": "Khumbu Pasanglhamu",
+          "to": "Khumbu Pasanglhamu Rural Municipality"
+        },
+        {
+          "from": "List of media related to Mount Everest",
+          "to": "Mount Everest in popular culture"
+        },
+        {
+          "from": "Hot-air balloon",
+          "to": "Hot air balloon"
+        },
+        {
+          "from": "List of ski descents of Eight-Thousanders",
+          "to": "List of ski descents of eight-thousanders"
+        },
+        {
+          "from": "List of Mount Everest summiters by number of times to the summit",
+          "to": "List of Mount Everest summiteers by frequency"
+        },
+        {
+          "from": "South Summit (Mount Everest)",
+          "to": "South Summit"
+        },
+        {
+          "from": "The Tribune (Chandigarh)",
+          "to": "The Tribune (India)"
+        },
+        {
+          "from": "Alpomish",
+          "to": "Hisar Range",
+          "tofragment": "Geography"
+        },
+        {
+          "from": "Garhwal Range",
+          "to": "Garhwal Himalayas"
+        },
+        {
+          "from": "Kuwait high point",
+          "to": "Geography of Kuwait",
+          "tofragment": "Area boundaries"
+        },
+        {
+          "from": "List of Mount Everest summiters by frequency",
+          "to": "List of Mount Everest summiteers by frequency"
+        },
+        {
+          "from": "List of 20th-century summiters of Mount Everest",
+          "to": "List of 20th-century summiteers of Mount Everest"
+        },
+        {
+          "from": "Pagon Hill",
+          "to": "Bukit Pagon"
+        },
+        {
+          "from": "Yu Shan",
+          "to": "Yushan (mountain)"
+        },
+        {
+          "from": "Jabal Soudah",
+          "to": "Jabal as-Sūda"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 3079,
+          "ns": 0,
+          "title": "Australian Broadcasting Corporation"
+        },
+        {
+          "pageid": 4291,
+          "ns": 0,
+          "title": "Buddhists"
+        },
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 16686,
+          "ns": 0,
+          "title": "Geography of Kuwait"
+        },
+        {
+          "pageid": 21550,
+          "ns": 0,
+          "title": "National Geographic Society"
+        },
+        {
+          "pageid": 30680,
+          "ns": 0,
+          "title": "The New York Times"
+        },
+        {
+          "pageid": 38173,
+          "ns": 0,
+          "title": "Hot air balloon"
+        },
+        {
+          "pageid": 63501,
+          "ns": 0,
+          "title": "Paragliding"
+        },
+        {
+          "pageid": 66730,
+          "ns": 0,
+          "title": "Canadian Broadcasting Corporation"
+        },
+        {
+          "pageid": 72624,
+          "ns": 0,
+          "title": "Eleventh edition of the Encyclopædia Britannica"
+        },
+        {
+          "pageid": 100366,
+          "ns": 0,
+          "title": "Annapurna"
+        },
+        {
+          "pageid": 102226,
+          "ns": 0,
+          "title": "The Washington Post"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 229466,
+          "ns": 0,
+          "title": "National Geographic"
+        },
+        {
+          "pageid": 234930,
+          "ns": 0,
+          "title": "ISSN"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 651952,
+          "ns": 0,
+          "title": "W. H. Murray"
+        },
+        {
+          "pageid": 666600,
+          "ns": 0,
+          "title": "Andrew Irvine (mountaineer)"
+        },
+        {
+          "pageid": 795329,
+          "ns": 0,
+          "title": "Yushan (mountain)"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1013167,
+          "ns": 0,
+          "title": "Kumaon division"
+        },
+        {
+          "pageid": 1793453,
+          "ns": 0,
+          "title": "CNA (TV network)"
+        },
+        {
+          "pageid": 2412596,
+          "ns": 0,
+          "title": "The Tribune (India)"
+        },
+        {
+          "pageid": 2691322,
+          "ns": 0,
+          "title": "Eurocopter AS350 Écureuil"
+        },
+        {
+          "pageid": 2775325,
+          "ns": 0,
+          "title": "PubMed Central"
+        },
+        {
+          "pageid": 3017626,
+          "ns": 0,
+          "title": "Pir Panjal Range"
+        },
+        {
+          "pageid": 3916807,
+          "ns": 0,
+          "title": "Villingili (Addu Atoll)"
+        },
+        {
+          "pageid": 5208803,
+          "ns": 0,
+          "title": "Timeline of Mount Everest expeditions"
+        },
+        {
+          "pageid": 5878098,
+          "ns": 0,
+          "title": "Geology of Nepal"
+        },
+        {
+          "pageid": 14092434,
+          "ns": 0,
+          "title": "Bibcode"
+        },
+        {
+          "pageid": 15129083,
+          "ns": 0,
+          "title": "Screen Door"
+        },
+        {
+          "pageid": 15602770,
+          "ns": 0,
+          "title": "Outside (magazine)"
+        },
+        {
+          "pageid": 16991049,
+          "ns": 0,
+          "title": "Hisar Range"
+        },
+        {
+          "pageid": 17010744,
+          "ns": 0,
+          "title": "Joint Himalayan Committee"
+        },
+        {
+          "pageid": 19489704,
+          "ns": 0,
+          "title": "Bukit Pagon"
+        },
+        {
+          "pageid": 22634665,
+          "ns": 0,
+          "title": "Jabal as-Sūda"
+        },
+        {
+          "pageid": 29697232,
+          "ns": 0,
+          "title": "NPR"
+        },
+        {
+          "pageid": 30339529,
+          "ns": 0,
+          "title": "British Arachnological Society"
+        },
+        {
+          "pageid": 34003777,
+          "ns": 0,
+          "title": "Garhwal Himalayas"
+        },
+        {
+          "pageid": 38236631,
+          "ns": 0,
+          "title": "List of ski descents of eight-thousanders"
+        },
+        {
+          "pageid": 40561226,
+          "ns": 0,
+          "title": "Mount Everest in popular culture"
+        },
+        {
+          "pageid": 41713662,
+          "ns": 0,
+          "title": "List of 20th-century summiteers of Mount Everest"
+        },
+        {
+          "pageid": 43060259,
+          "ns": 0,
+          "title": "Lhagba La"
+        },
+        {
+          "pageid": 47033037,
+          "ns": 0,
+          "title": "List of Mount Everest summiteers by frequency"
+        },
+        {
+          "pageid": 47770167,
+          "ns": 0,
+          "title": "National Geographic Partners"
+        },
+        {
+          "pageid": 48085382,
+          "ns": 0,
+          "title": "South Summit"
+        },
+        {
+          "pageid": 48455863,
+          "ns": 0,
+          "title": "Semantic Scholar"
+        },
+        {
+          "pageid": 54497742,
+          "ns": 0,
+          "title": "Khumbu Pasanglhamu Rural Municipality"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Brahmaputra",
+          "to": "Brahmaputra River"
+        },
+        {
+          "from": "Khowa people",
+          "to": "Bugun"
+        },
+        {
+          "from": "Singpho people",
+          "to": "Jingpo people",
+          "tofragment": "Singpho people"
+        },
+        {
+          "from": "Gujjar",
+          "to": "Gurjars"
+        },
+        {
+          "from": "Kathmandu Airport",
+          "to": "Tribhuvan International Airport"
+        },
+        {
+          "from": "Ralam Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Namik Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Kalabaland Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Meola Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Sona Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Panchchuli Glacier",
+          "to": "Pithoragarh district"
+        },
+        {
+          "from": "Jaintia Hills",
+          "to": "Jaintia Hills Autonomous District Council"
+        },
+        {
+          "from": "Kanchenjunga",
+          "to": "Kangchenjunga"
+        },
+        {
+          "from": "Pandoh Lake",
+          "to": "Pandoh Dam"
+        },
+        {
+          "from": "Tsomgo Lake",
+          "to": "Lake Tsomgo"
+        },
+        {
+          "from": "Manali-Leh Highway",
+          "to": "Leh–Manali Highway"
+        },
+        {
+          "from": "Newar",
+          "to": "Newar people"
+        },
+        {
+          "from": "Kullu Airport",
+          "to": "Kullu–Manali Airport"
+        },
+        {
+          "from": "Spiti River",
+          "to": "Spiti"
+        },
+        {
+          "from": "Changla Pass",
+          "to": "Chang La"
+        },
+        {
+          "from": "Alchi Gompa",
+          "to": "Alchi Monastery"
+        },
+        {
+          "from": "Pannatal",
+          "to": "Nainital"
+        },
+        {
+          "from": "Arakan Yoma",
+          "to": "Arakan Mountains"
+        },
+        {
+          "from": "Magar people",
+          "to": "Magars"
+        },
+        {
+          "from": "Gurung",
+          "to": "Gurung people"
+        },
+        {
+          "from": "Kalka-Shimla Railway",
+          "to": "Kalka–Shimla Railway"
+        },
+        {
+          "from": "Arniko Highway",
+          "to": "Araniko Highway"
+        },
+        {
+          "from": "Jahnavi River",
+          "to": "Jadh Ganga"
+        },
+        {
+          "from": "Hindustan-Tibet Road",
+          "to": "National Highway 5 (India)"
+        },
+        {
+          "from": "Kirat",
+          "to": "Kirati peoples"
+        },
+        {
+          "from": "Dorje Lakpa",
+          "to": "Dorje Lhakpa"
+        },
+        {
+          "from": "Nyishi",
+          "to": "Nyishi people"
+        },
+        {
+          "from": "Homkund",
+          "to": "Roopkund"
+        },
+        {
+          "from": "East-West Highway",
+          "to": "East–West Highway"
+        },
+        {
+          "from": "Dhaulagiri I",
+          "to": "Dhaulagiri"
+        },
+        {
+          "from": "Pangong Lake",
+          "to": "Pangong Tso"
+        },
+        {
+          "from": "Leh Airport",
+          "to": "Kushok Bakula Rimpochee Airport"
+        },
+        {
+          "from": "Ladakhi people",
+          "to": "Ladakhis"
+        },
+        {
+          "from": "Dard people",
+          "to": "Dardic languages"
+        },
+        {
+          "from": "Bhullatal",
+          "to": "Lansdowne, India"
+        },
+        {
+          "from": "Dakshini Nanda Devi Glacier",
+          "to": "Nanda Devi"
+        },
+        {
+          "from": "Kora La",
+          "to": "Korala"
+        },
+        {
+          "from": "Paro Airport",
+          "to": "Paro International Airport"
+        },
+        {
+          "from": "Kolong River",
+          "to": "Kolong river"
+        },
+        {
+          "from": "Mount Yi",
+          "to": "Huangshan"
+        },
+        {
+          "from": "Pithoragarh Airport",
+          "to": "Naini–Saini Airport"
+        },
+        {
+          "from": "Galo tribe",
+          "to": "Galo People"
+        },
+        {
+          "from": "Tulian lake",
+          "to": "Tulian Lake"
+        },
+        {
+          "from": "Rukmani Kund",
+          "to": "Shree Rukmani Kund"
+        },
+        {
+          "from": "Kashmiri people",
+          "to": "Kashmiris"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 17073,
+          "ns": 0,
+          "title": "Kangchenjunga"
+        },
+        {
+          "pageid": 178709,
+          "ns": 0,
+          "title": "Nainital"
+        },
+        {
+          "pageid": 183522,
+          "ns": 0,
+          "title": "Brahmaputra River"
+        },
+        {
+          "pageid": 330833,
+          "ns": 0,
+          "title": "Jingpo people"
+        },
+        {
+          "pageid": 355595,
+          "ns": 0,
+          "title": "Dhaulagiri"
+        },
+        {
+          "pageid": 643654,
+          "ns": 0,
+          "title": "Nanda Devi"
+        },
+        {
+          "pageid": 694644,
+          "ns": 0,
+          "title": "Huangshan"
+        },
+        {
+          "pageid": 739987,
+          "ns": 0,
+          "title": "Dardic languages"
+        },
+        {
+          "pageid": 848662,
+          "ns": 0,
+          "title": "Magars"
+        },
+        {
+          "pageid": 994972,
+          "ns": 0,
+          "title": "Gurung people"
+        },
+        {
+          "pageid": 997963,
+          "ns": 0,
+          "title": "Newar people"
+        },
+        {
+          "pageid": 1070240,
+          "ns": 0,
+          "title": "Bugun"
+        },
+        {
+          "pageid": 1140295,
+          "ns": 0,
+          "title": "Nyishi people"
+        },
+        {
+          "pageid": 1533290,
+          "ns": 0,
+          "title": "Lake Tsomgo"
+        },
+        {
+          "pageid": 1632070,
+          "ns": 0,
+          "title": "Roopkund"
+        },
+        {
+          "pageid": 1901839,
+          "ns": 0,
+          "title": "Pangong Tso"
+        },
+        {
+          "pageid": 2517858,
+          "ns": 0,
+          "title": "Tribhuvan International Airport"
+        },
+        {
+          "pageid": 2666144,
+          "ns": 0,
+          "title": "Chang La"
+        },
+        {
+          "pageid": 2898955,
+          "ns": 0,
+          "title": "Pithoragarh district"
+        },
+        {
+          "pageid": 2955933,
+          "ns": 0,
+          "title": "Paro International Airport"
+        },
+        {
+          "pageid": 3297031,
+          "ns": 0,
+          "title": "Arakan Mountains"
+        },
+        {
+          "pageid": 3623218,
+          "ns": 0,
+          "title": "Lansdowne, India"
+        },
+        {
+          "pageid": 3930749,
+          "ns": 0,
+          "title": "Kashmiris"
+        },
+        {
+          "pageid": 4928607,
+          "ns": 0,
+          "title": "Kalka–Shimla Railway"
+        },
+        {
+          "pageid": 5464786,
+          "ns": 0,
+          "title": "East–West Highway"
+        },
+        {
+          "pageid": 6146164,
+          "ns": 0,
+          "title": "Kirati peoples"
+        },
+        {
+          "pageid": 8445764,
+          "ns": 0,
+          "title": "Spiti"
+        },
+        {
+          "pageid": 8969826,
+          "ns": 0,
+          "title": "Leh–Manali Highway"
+        },
+        {
+          "pageid": 9547443,
+          "ns": 0,
+          "title": "Kushok Bakula Rimpochee Airport"
+        },
+        {
+          "pageid": 9991601,
+          "ns": 0,
+          "title": "Galo People"
+        },
+        {
+          "pageid": 10906185,
+          "ns": 0,
+          "title": "Gurjars"
+        },
+        {
+          "pageid": 16789548,
+          "ns": 0,
+          "title": "Kullu–Manali Airport"
+        },
+        {
+          "pageid": 18160369,
+          "ns": 0,
+          "title": "Dorje Lhakpa"
+        },
+        {
+          "pageid": 18741753,
+          "ns": 0,
+          "title": "Jaintia Hills Autonomous District Council"
+        },
+        {
+          "pageid": 23649942,
+          "ns": 0,
+          "title": "Kolong river"
+        },
+        {
+          "pageid": 25336707,
+          "ns": 0,
+          "title": "Alchi Monastery"
+        },
+        {
+          "pageid": 26081569,
+          "ns": 0,
+          "title": "Araniko Highway"
+        },
+        {
+          "pageid": 33866483,
+          "ns": 0,
+          "title": "Pandoh Dam"
+        },
+        {
+          "pageid": 34182866,
+          "ns": 0,
+          "title": "Naini–Saini Airport"
+        },
+        {
+          "pageid": 35205239,
+          "ns": 0,
+          "title": "Tulian Lake"
+        },
+        {
+          "pageid": 39912803,
+          "ns": 0,
+          "title": "Jadh Ganga"
+        },
+        {
+          "pageid": 43443772,
+          "ns": 0,
+          "title": "Shree Rukmani Kund"
+        },
+        {
+          "pageid": 44396745,
+          "ns": 0,
+          "title": "National Highway 5 (India)"
+        },
+        {
+          "pageid": 53151969,
+          "ns": 0,
+          "title": "Korala"
+        },
+        {
+          "pageid": 65771176,
+          "ns": 0,
+          "title": "Ladakhis"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "United Nations geoscheme for Oceania",
+          "to": "United Nations geoscheme"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 5919477,
+          "ns": 0,
+          "title": "United Nations geoscheme"
+        }
+      ]
+    }
+  }
+]

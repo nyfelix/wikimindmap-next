@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 19688,
+        "ns": 0,
+        "title": "Mind map",
+        "extract": "A mind map is a  diagram used to visually organize information into a hierarchy, showing relationships among pieces of the whole. It is often based on a single concept, drawn as an image in the center of a blank page, to which associated representations of ideas such as images, words and parts of words are added. Major ideas are connected directly to the central concept, and other ideas branch out from those major ideas.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Cubital_Fossa2.png/330px-Cubital_Fossa2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 164
+        },
+        "description": "Diagram to visually organize information",
+        "descriptionsource": "local"
+      }
+    ]
+  }
+}

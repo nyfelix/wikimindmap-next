@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 839615,
+        "ns": 0,
+        "title": "Carte heuristique",
+        "extract": "Une carte heuristique, carte cognitive, carte des idées ou encore schéma heuristique est un schéma censé refléter le fonctionnement de la pensée, qui permet de représenter visuellement et de suivre le cheminement associatif de la pensée. Le terme anglais mind map est également parfois utilisé en français.\nCela permet de mettre en lumière les liens qui existent entre un concept ou une idée, et les informations qui leur sont associées.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Mindmap.gif/330px-Mindmap.gif?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 442
+        },
+        "description": "schéma supposé refléter le fonctionnement de la pensée",
+        "descriptionsource": "central"
+      }
+    ]
+  }
+}

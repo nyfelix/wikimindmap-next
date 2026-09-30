@@ -1,0 +1,189 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Concept lattice",
+          "to": "Formal concept analysis"
+        },
+        {
+          "from": "Mind maps",
+          "to": "Mind map"
+        },
+        {
+          "from": "Knowledge visualization",
+          "to": "Visualization (graphics)",
+          "tofragment": "Knowledge visualization"
+        },
+        {
+          "from": "Brain-storming",
+          "to": "Brainstorming"
+        },
+        {
+          "from": "Note taking",
+          "to": "Note-taking"
+        },
+        {
+          "from": "Instructional designer",
+          "to": "Instructional design"
+        },
+        {
+          "from": "Web app",
+          "to": "Web application"
+        },
+        {
+          "from": "Visual Mind",
+          "to": "List of concept- and mind-mapping software"
+        },
+        {
+          "from": "Visualization (graphic)",
+          "to": "Visualization (graphics)"
+        },
+        {
+          "from": "Institute for Human and Machine Cognition",
+          "to": "Florida Institute for Human and Machine Cognition"
+        },
+        {
+          "from": "Knowledge arena",
+          "to": "Concept map"
+        },
+        {
+          "from": "Constructivism (learning theory)",
+          "to": "Constructivism (philosophy of education)"
+        },
+        {
+          "from": "Desktop app",
+          "to": "Application software"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "CiteSeerX (identifier)",
+          "to": "CiteSeerX"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "Object-role modeling",
+          "to": "Object–role modeling"
+        },
+        {
+          "from": "Ontology (computer science)",
+          "to": "Ontology (information science)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 19688,
+          "ns": 0,
+          "title": "Mind map"
+        },
+        {
+          "pageid": 49681,
+          "ns": 0,
+          "title": "Ontology (information science)"
+        },
+        {
+          "pageid": 91820,
+          "ns": 0,
+          "title": "Instructional design"
+        },
+        {
+          "pageid": 158949,
+          "ns": 0,
+          "title": "CiteSeerX"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 288311,
+          "ns": 0,
+          "title": "Web application"
+        },
+        {
+          "pageid": 313845,
+          "ns": 0,
+          "title": "Formal concept analysis"
+        },
+        {
+          "pageid": 399081,
+          "ns": 0,
+          "title": "Brainstorming"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 454746,
+          "ns": 0,
+          "title": "Application software"
+        },
+        {
+          "pageid": 660850,
+          "ns": 0,
+          "title": "Visualization (graphics)"
+        },
+        {
+          "pageid": 698226,
+          "ns": 0,
+          "title": "Concept map"
+        },
+        {
+          "pageid": 827006,
+          "ns": 0,
+          "title": "Object–role modeling"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1040161,
+          "ns": 0,
+          "title": "Constructivism (philosophy of education)"
+        },
+        {
+          "pageid": 1699819,
+          "ns": 0,
+          "title": "Note-taking"
+        },
+        {
+          "pageid": 7597440,
+          "ns": 0,
+          "title": "List of concept- and mind-mapping software"
+        },
+        {
+          "pageid": 21313292,
+          "ns": 0,
+          "title": "Florida Institute for Human and Machine Cognition"
+        }
+      ]
+    }
+  }
+]

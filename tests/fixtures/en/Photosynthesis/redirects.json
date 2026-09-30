@@ -1,0 +1,1523 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Evolved",
+          "to": "Evolution"
+        },
+        {
+          "from": "Photons",
+          "to": "Photon"
+        },
+        {
+          "from": "Plasma membrane",
+          "to": "Cell membrane"
+        },
+        {
+          "from": "Chemiosmotic potential",
+          "to": "Electrochemical gradient"
+        },
+        {
+          "from": "Light-independent reactions",
+          "to": "Calvin cycle"
+        },
+        {
+          "from": "Amino acids",
+          "to": "Amino acid"
+        },
+        {
+          "from": "Oxidized",
+          "to": "Redox"
+        },
+        {
+          "from": "Reductant",
+          "to": "Reducing agent"
+        },
+        {
+          "from": "Byproduct",
+          "to": "By-product"
+        },
+        {
+          "from": "Absorption spectrum",
+          "to": "Absorption spectroscopy",
+          "tofragment": "Absorption spectrum"
+        },
+        {
+          "from": "Proton gradient",
+          "to": "Electrochemical gradient",
+          "tofragment": "Proton gradients"
+        },
+        {
+          "from": "Ribulose bisphosphate",
+          "to": "Ribulose 1,5-bisphosphate"
+        },
+        {
+          "from": "NADPH",
+          "to": "Nicotinamide adenine dinucleotide phosphate"
+        },
+        {
+          "from": "Light spectrum",
+          "to": "Electromagnetic spectrum"
+        },
+        {
+          "from": "Thylakoid membrane",
+          "to": "Thylakoid",
+          "tofragment": "Membrane"
+        },
+        {
+          "from": "Arid",
+          "to": "Aridity"
+        },
+        {
+          "from": "Evolutionary history of life",
+          "to": "History of life"
+        },
+        {
+          "from": "Electron transfer chain",
+          "to": "Electron transport chain"
+        },
+        {
+          "from": "Optical spectrum",
+          "to": "Visible spectrum"
+        },
+        {
+          "from": "Reaction center",
+          "to": "Photosynthetic reaction centre"
+        },
+        {
+          "from": "Accessory pigments",
+          "to": "Accessory pigment"
+        },
+        {
+          "from": "Five-carbon sugar",
+          "to": "Pentose"
+        },
+        {
+          "from": "Green plants",
+          "to": "Viridiplantae"
+        },
+        {
+          "from": "Biological energy",
+          "to": "Biological thermodynamics"
+        },
+        {
+          "from": "ATP synthesis",
+          "to": "ATP synthase"
+        },
+        {
+          "from": "Mesophyll tissue",
+          "to": "Leaf",
+          "tofragment": "Mesophyll"
+        },
+        {
+          "from": "Carbon skeleton",
+          "to": "Skeletal formula",
+          "tofragment": "The skeleton"
+        },
+        {
+          "from": "Antenna complex",
+          "to": "Light-harvesting complex"
+        },
+        {
+          "from": "Terawatts",
+          "to": "Watt",
+          "tofragment": "Terawatt"
+        },
+        {
+          "from": "Glycerate 3-phosphate",
+          "to": "3-Phosphoglyceric acid"
+        },
+        {
+          "from": "Calcium ion",
+          "to": "Calcium"
+        },
+        {
+          "from": "Diatoms",
+          "to": "Diatom"
+        },
+        {
+          "from": "Light-dependent reactions",
+          "to": "Photosystem"
+        },
+        {
+          "from": "Light-dependent reaction",
+          "to": "Photochemistry"
+        },
+        {
+          "from": "Light energy",
+          "to": "Radiant energy"
+        },
+        {
+          "from": "Earth's atmosphere",
+          "to": "Atmosphere of Earth"
+        },
+        {
+          "from": "Vesicle (biology)",
+          "to": "Vesicle (biology and chemistry)"
+        },
+        {
+          "from": "Complex life",
+          "to": "Multicellular organism"
+        },
+        {
+          "from": "Water molecules",
+          "to": "Properties of water"
+        },
+        {
+          "from": "Euxinic",
+          "to": "Euxinia"
+        },
+        {
+          "from": "Thylakoid space",
+          "to": "Thylakoid"
+        },
+        {
+          "from": "Metabolic reaction",
+          "to": "Metabolism"
+        },
+        {
+          "from": "Endothermic",
+          "to": "Endothermic process"
+        },
+        {
+          "from": "Biological reductant",
+          "to": "Redox",
+          "tofragment": "Redox reactions in biology"
+        },
+        {
+          "from": "Atmospheric oxygen",
+          "to": "Atmospheric chemistry"
+        },
+        {
+          "from": "Power consumption of human civilization",
+          "to": "World energy supply and consumption"
+        },
+        {
+          "from": "Oxygenation of the Earth",
+          "to": "Great Oxidation Event"
+        },
+        {
+          "from": "Photosynthetic organism",
+          "to": "Photoautotroph"
+        },
+        {
+          "from": "Carbon fixation",
+          "to": "Biological carbon fixation"
+        },
+        {
+          "from": "Hydron (chemistry)",
+          "to": "Hydron"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 1207,
+          "ns": 0,
+          "title": "Amino acid"
+        },
+        {
+          "pageid": 5668,
+          "ns": 0,
+          "title": "Calcium"
+        },
+        {
+          "pageid": 9236,
+          "ns": 0,
+          "title": "Evolution"
+        },
+        {
+          "pageid": 10134,
+          "ns": 0,
+          "title": "Electromagnetic spectrum"
+        },
+        {
+          "pageid": 10356,
+          "ns": 0,
+          "title": "Endothermic process"
+        },
+        {
+          "pageid": 20374,
+          "ns": 0,
+          "title": "Metabolism"
+        },
+        {
+          "pageid": 23535,
+          "ns": 0,
+          "title": "Photon"
+        },
+        {
+          "pageid": 23640,
+          "ns": 0,
+          "title": "Pentose"
+        },
+        {
+          "pageid": 32572,
+          "ns": 0,
+          "title": "Vesicle (biology and chemistry)"
+        },
+        {
+          "pageid": 41464,
+          "ns": 0,
+          "title": "Visible spectrum"
+        },
+        {
+          "pageid": 46374,
+          "ns": 0,
+          "title": "Diatom"
+        },
+        {
+          "pageid": 66313,
+          "ns": 0,
+          "title": "Redox"
+        },
+        {
+          "pageid": 92236,
+          "ns": 0,
+          "title": "Electron transport chain"
+        },
+        {
+          "pageid": 178220,
+          "ns": 0,
+          "title": "ATP synthase"
+        },
+        {
+          "pageid": 184881,
+          "ns": 0,
+          "title": "Reducing agent"
+        },
+        {
+          "pageid": 202898,
+          "ns": 0,
+          "title": "Atmosphere of Earth"
+        },
+        {
+          "pageid": 209455,
+          "ns": 0,
+          "title": "Thylakoid"
+        },
+        {
+          "pageid": 299472,
+          "ns": 0,
+          "title": "Multicellular organism"
+        },
+        {
+          "pageid": 363430,
+          "ns": 0,
+          "title": "Photochemistry"
+        },
+        {
+          "pageid": 364478,
+          "ns": 0,
+          "title": "Absorption spectroscopy"
+        },
+        {
+          "pageid": 477175,
+          "ns": 0,
+          "title": "Radiant energy"
+        },
+        {
+          "pageid": 547220,
+          "ns": 0,
+          "title": "Ribulose 1,5-bisphosphate"
+        },
+        {
+          "pageid": 560009,
+          "ns": 0,
+          "title": "Aridity"
+        },
+        {
+          "pageid": 625232,
+          "ns": 0,
+          "title": "Skeletal formula"
+        },
+        {
+          "pageid": 706999,
+          "ns": 0,
+          "title": "Atmospheric chemistry"
+        },
+        {
+          "pageid": 719534,
+          "ns": 0,
+          "title": "Biological carbon fixation"
+        },
+        {
+          "pageid": 726885,
+          "ns": 0,
+          "title": "By-product"
+        },
+        {
+          "pageid": 1036238,
+          "ns": 0,
+          "title": "Nicotinamide adenine dinucleotide phosphate"
+        },
+        {
+          "pageid": 1104705,
+          "ns": 0,
+          "title": "Calvin cycle"
+        },
+        {
+          "pageid": 1126109,
+          "ns": 0,
+          "title": "Photosystem"
+        },
+        {
+          "pageid": 1869857,
+          "ns": 0,
+          "title": "Accessory pigment"
+        },
+        {
+          "pageid": 2747470,
+          "ns": 0,
+          "title": "Biological thermodynamics"
+        },
+        {
+          "pageid": 2821615,
+          "ns": 0,
+          "title": "Electrochemical gradient"
+        },
+        {
+          "pageid": 3104166,
+          "ns": 0,
+          "title": "3-Phosphoglyceric acid"
+        },
+        {
+          "pageid": 3206350,
+          "ns": 0,
+          "title": "Viridiplantae"
+        },
+        {
+          "pageid": 3268926,
+          "ns": 0,
+          "title": "Great Oxidation Event"
+        },
+        {
+          "pageid": 3967032,
+          "ns": 0,
+          "title": "Photosynthetic reaction centre"
+        },
+        {
+          "pageid": 3967218,
+          "ns": 0,
+          "title": "Light-harvesting complex"
+        },
+        {
+          "pageid": 9206525,
+          "ns": 0,
+          "title": "Hydron"
+        },
+        {
+          "pageid": 12305127,
+          "ns": 0,
+          "title": "History of life"
+        },
+        {
+          "pageid": 18973622,
+          "ns": 0,
+          "title": "Leaf"
+        },
+        {
+          "pageid": 21347693,
+          "ns": 0,
+          "title": "Watt"
+        },
+        {
+          "pageid": 24027000,
+          "ns": 0,
+          "title": "Properties of water"
+        },
+        {
+          "pageid": 33051527,
+          "ns": 0,
+          "title": "Cell membrane"
+        },
+        {
+          "pageid": 53489192,
+          "ns": 0,
+          "title": "Euxinia"
+        },
+        {
+          "pageid": 67101254,
+          "ns": 0,
+          "title": "Photoautotroph"
+        },
+        {
+          "pageid": 67895571,
+          "ns": 0,
+          "title": "World energy supply and consumption"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Alveolata",
+          "to": "Alveolate"
+        },
+        {
+          "from": "Hominoid",
+          "to": "Ape"
+        },
+        {
+          "from": "Eukaryotic",
+          "to": "Eukaryote"
+        },
+        {
+          "from": "Stomata",
+          "to": "Stoma"
+        },
+        {
+          "from": "Mollusks",
+          "to": "Mollusca"
+        },
+        {
+          "from": "Pyruvate",
+          "to": "Pyruvic acid"
+        },
+        {
+          "from": "Light reactions",
+          "to": "Photochemistry"
+        },
+        {
+          "from": "Lipids",
+          "to": "Lipid"
+        },
+        {
+          "from": "Computer Systems",
+          "to": "Computer"
+        },
+        {
+          "from": "Barometric pressure",
+          "to": "Atmospheric pressure"
+        },
+        {
+          "from": "Oxaloacetate",
+          "to": "Oxaloacetic acid"
+        },
+        {
+          "from": "Calvin-Benson cycle",
+          "to": "Calvin cycle",
+          "tofragment": "Calvin Cycle"
+        },
+        {
+          "from": "Rubisco",
+          "to": "RuBisCO"
+        },
+        {
+          "from": "Timeline of the evolutionary history of life",
+          "to": "Timeline of life"
+        },
+        {
+          "from": "Reducing environment",
+          "to": "Reducing atmosphere"
+        },
+        {
+          "from": "Mesophyll",
+          "to": "Leaf",
+          "tofragment": "Mesophyll"
+        },
+        {
+          "from": "Photosynthetic reaction center",
+          "to": "Photosynthetic reaction centre"
+        },
+        {
+          "from": "CAM photosynthesis",
+          "to": "Crassulacean acid metabolism"
+        },
+        {
+          "from": "C3 plants",
+          "to": "C3 carbon fixation"
+        },
+        {
+          "from": "Dark reaction",
+          "to": "Calvin cycle"
+        },
+        {
+          "from": "Succulents",
+          "to": "Succulent plant"
+        },
+        {
+          "from": "Thylakoid membranes",
+          "to": "Thylakoid"
+        },
+        {
+          "from": "Malate",
+          "to": "Malic acid"
+        },
+        {
+          "from": "Xerophytes",
+          "to": "Xerophyte"
+        },
+        {
+          "from": "H2O",
+          "to": "Water"
+        },
+        {
+          "from": "Bundle sheath",
+          "to": "Vascular bundle"
+        },
+        {
+          "from": "Hydrocarbonate",
+          "to": "Bicarbonate"
+        },
+        {
+          "from": "CO2 assimilation",
+          "to": "Biological carbon fixation"
+        },
+        {
+          "from": "Cacti",
+          "to": "Cactus"
+        },
+        {
+          "from": "Gas-exchange system",
+          "to": "Gas exchange"
+        },
+        {
+          "from": "CO2",
+          "to": "Carbon dioxide"
+        },
+        {
+          "from": "Phosphoenolpyruvate",
+          "to": "Phosphoenolpyruvic acid"
+        },
+        {
+          "from": "3-phosphoglyceric acid",
+          "to": "3-Phosphoglyceric acid"
+        },
+        {
+          "from": "Oxygen catastrophe",
+          "to": "Great Oxidation Event"
+        },
+        {
+          "from": "CoRR Hypothesis",
+          "to": "CoRR hypothesis"
+        },
+        {
+          "from": "Photovoltaic module",
+          "to": "Photovoltaics"
+        },
+        {
+          "from": "Photochemical reactions",
+          "to": "Photochemistry"
+        },
+        {
+          "from": "Chromerida",
+          "to": "Chrompodellid"
+        },
+        {
+          "from": "C2 photosynthesis",
+          "to": "Photorespiration",
+          "tofragment": "C2"
+        },
+        {
+          "from": "Endosymbiotic theory",
+          "to": "Symbiogenesis"
+        },
+        {
+          "from": "Crop plants",
+          "to": "Crop"
+        },
+        {
+          "from": "Electric energy",
+          "to": "Electrical energy"
+        },
+        {
+          "from": "Energy transfer",
+          "to": "Energy",
+          "tofragment": "Energy transfer"
+        },
+        {
+          "from": "Translocation (botany)",
+          "to": "Phloem",
+          "tofragment": "Function"
+        },
+        {
+          "from": "Purple sulfur",
+          "to": "Purple sulfur bacteria"
+        },
+        {
+          "from": "Purple nonsulfur bacteria",
+          "to": "Purple bacteria"
+        },
+        {
+          "from": "Ochrophyta",
+          "to": "Ochrophyte"
+        },
+        {
+          "from": "Myr",
+          "to": "Million years ago"
+        },
+        {
+          "from": "Asgard (archaea)",
+          "to": "Asgard archaea"
+        },
+        {
+          "from": "Carbon dioxide in Earth's atmosphere",
+          "to": "Carbon dioxide in the atmosphere of Earth"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 3982,
+          "ns": 0,
+          "title": "Bicarbonate"
+        },
+        {
+          "pageid": 5906,
+          "ns": 0,
+          "title": "Carbon dioxide"
+        },
+        {
+          "pageid": 7819,
+          "ns": 0,
+          "title": "Cactus"
+        },
+        {
+          "pageid": 9649,
+          "ns": 0,
+          "title": "Energy"
+        },
+        {
+          "pageid": 10029,
+          "ns": 0,
+          "title": "Timeline of life"
+        },
+        {
+          "pageid": 17940,
+          "ns": 0,
+          "title": "Lipid"
+        },
+        {
+          "pageid": 33306,
+          "ns": 0,
+          "title": "Water"
+        },
+        {
+          "pageid": 47484,
+          "ns": 0,
+          "title": "Atmospheric pressure"
+        },
+        {
+          "pageid": 60426,
+          "ns": 0,
+          "title": "Symbiogenesis"
+        },
+        {
+          "pageid": 61899,
+          "ns": 0,
+          "title": "Phloem"
+        },
+        {
+          "pageid": 62297,
+          "ns": 0,
+          "title": "Alveolate"
+        },
+        {
+          "pageid": 81666,
+          "ns": 0,
+          "title": "Pyruvic acid"
+        },
+        {
+          "pageid": 85746,
+          "ns": 0,
+          "title": "Stoma"
+        },
+        {
+          "pageid": 209455,
+          "ns": 0,
+          "title": "Thylakoid"
+        },
+        {
+          "pageid": 229914,
+          "ns": 0,
+          "title": "Ape"
+        },
+        {
+          "pageid": 243074,
+          "ns": 0,
+          "title": "Malic acid"
+        },
+        {
+          "pageid": 318370,
+          "ns": 0,
+          "title": "RuBisCO"
+        },
+        {
+          "pageid": 335094,
+          "ns": 0,
+          "title": "Reducing atmosphere"
+        },
+        {
+          "pageid": 363092,
+          "ns": 0,
+          "title": "Million years ago"
+        },
+        {
+          "pageid": 363430,
+          "ns": 0,
+          "title": "Photochemistry"
+        },
+        {
+          "pageid": 379303,
+          "ns": 0,
+          "title": "Gas exchange"
+        },
+        {
+          "pageid": 428874,
+          "ns": 0,
+          "title": "Crassulacean acid metabolism"
+        },
+        {
+          "pageid": 492043,
+          "ns": 0,
+          "title": "Photorespiration"
+        },
+        {
+          "pageid": 573489,
+          "ns": 0,
+          "title": "C3 carbon fixation"
+        },
+        {
+          "pageid": 598987,
+          "ns": 0,
+          "title": "Purple sulfur bacteria"
+        },
+        {
+          "pageid": 652531,
+          "ns": 0,
+          "title": "Photovoltaics"
+        },
+        {
+          "pageid": 719534,
+          "ns": 0,
+          "title": "Biological carbon fixation"
+        },
+        {
+          "pageid": 1104705,
+          "ns": 0,
+          "title": "Calvin cycle"
+        },
+        {
+          "pageid": 1110600,
+          "ns": 0,
+          "title": "Oxaloacetic acid"
+        },
+        {
+          "pageid": 1343597,
+          "ns": 0,
+          "title": "Electrical energy"
+        },
+        {
+          "pageid": 1354861,
+          "ns": 0,
+          "title": "Purple bacteria"
+        },
+        {
+          "pageid": 2865295,
+          "ns": 0,
+          "title": "Phosphoenolpyruvic acid"
+        },
+        {
+          "pageid": 2956278,
+          "ns": 0,
+          "title": "Vascular bundle"
+        },
+        {
+          "pageid": 3104166,
+          "ns": 0,
+          "title": "3-Phosphoglyceric acid"
+        },
+        {
+          "pageid": 3268926,
+          "ns": 0,
+          "title": "Great Oxidation Event"
+        },
+        {
+          "pageid": 3967032,
+          "ns": 0,
+          "title": "Photosynthetic reaction centre"
+        },
+        {
+          "pageid": 7500259,
+          "ns": 0,
+          "title": "Crop"
+        },
+        {
+          "pageid": 7878457,
+          "ns": 0,
+          "title": "Computer"
+        },
+        {
+          "pageid": 11251601,
+          "ns": 0,
+          "title": "Carbon dioxide in the atmosphere of Earth"
+        },
+        {
+          "pageid": 18011589,
+          "ns": 0,
+          "title": "Ochrophyte"
+        },
+        {
+          "pageid": 18952479,
+          "ns": 0,
+          "title": "Xerophyte"
+        },
+        {
+          "pageid": 18952765,
+          "ns": 0,
+          "title": "Succulent plant"
+        },
+        {
+          "pageid": 18973622,
+          "ns": 0,
+          "title": "Leaf"
+        },
+        {
+          "pageid": 19773328,
+          "ns": 0,
+          "title": "Mollusca"
+        },
+        {
+          "pageid": 20134016,
+          "ns": 0,
+          "title": "CoRR hypothesis"
+        },
+        {
+          "pageid": 24536543,
+          "ns": 0,
+          "title": "Eukaryote"
+        },
+        {
+          "pageid": 56905818,
+          "ns": 0,
+          "title": "Asgard archaea"
+        },
+        {
+          "pageid": 76276578,
+          "ns": 0,
+          "title": "Chrompodellid"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Botanist",
+          "to": "Botany"
+        },
+        {
+          "from": "Anther",
+          "to": "Stamen",
+          "tofragment": "Morphology and terminology"
+        },
+        {
+          "from": "Carpel",
+          "to": "Gynoecium",
+          "tofragment": "Carpels"
+        },
+        {
+          "from": "Spermatophyte",
+          "to": "Seed plant"
+        },
+        {
+          "from": "Bulk movement",
+          "to": "Active transport",
+          "tofragment": "Forms of active transport"
+        },
+        {
+          "from": "Ascorbate",
+          "to": "Vitamin C"
+        },
+        {
+          "from": "Common ancestor",
+          "to": "Common descent"
+        },
+        {
+          "from": "Continental shelves",
+          "to": "Continental shelf"
+        },
+        {
+          "from": "Archaeobotany",
+          "to": "Paleoethnobotany"
+        },
+        {
+          "from": "Proterozoic Eon",
+          "to": "Proterozoic"
+        },
+        {
+          "from": "Kluwer Academic Publishers",
+          "to": "Springer Science+Business Media",
+          "tofragment": "History"
+        },
+        {
+          "from": "Glycan",
+          "to": "Carbohydrate",
+          "tofragment": "Terminology"
+        },
+        {
+          "from": "3-phosphoglycerate",
+          "to": "3-Phosphoglyceric acid"
+        },
+        {
+          "from": "Photochemical",
+          "to": "Photochemistry"
+        },
+        {
+          "from": "Current Opinion in Microbiology",
+          "to": "Current Opinion (Elsevier)"
+        },
+        {
+          "from": "Cornelis Van Niel",
+          "to": "C. B. van Niel"
+        },
+        {
+          "from": "Microsporangia",
+          "to": "Microsporangium"
+        },
+        {
+          "from": "Springer (publisher)",
+          "to": "Springer Science+Business Media"
+        },
+        {
+          "from": "Naturalist",
+          "to": "Natural history"
+        },
+        {
+          "from": "Bile pigment",
+          "to": "Bilin (biochemistry)"
+        },
+        {
+          "from": "Trends in Microbiology",
+          "to": "Trends (journals)"
+        },
+        {
+          "from": "Canadian Journal of Botany",
+          "to": "Botany (journal)"
+        },
+        {
+          "from": "Artificial pollination",
+          "to": "Hand-pollination"
+        },
+        {
+          "from": "Gabrielle Matthaei",
+          "to": "Gabrielle Howard"
+        },
+        {
+          "from": "McGraw-Hill",
+          "to": "McGraw Hill"
+        },
+        {
+          "from": "Integrated fluorometer",
+          "to": "Photosynthesis system"
+        },
+        {
+          "from": "Philosophical Transactions of the Royal Society of London, Series B",
+          "to": "Philosophical Transactions of the Royal Society B"
+        },
+        {
+          "from": "Transcription (genetics)",
+          "to": "Transcription (biology)"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "Nicolas-Théodore de Saussure",
+          "to": "Nicolas Théodore de Saussure"
+        },
+        {
+          "from": "Australian Journal of Plant Physiology",
+          "to": "Functional Plant Biology"
+        },
+        {
+          "from": "Primary producers",
+          "to": "Autotroph"
+        },
+        {
+          "from": "ArXiv (identifier)",
+          "to": "ArXiv"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "PMC (identifier)",
+          "to": "PubMed Central",
+          "tofragment": "PMCID"
+        },
+        {
+          "from": "Hdl (identifier)",
+          "to": "Handle System"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Bibcode (identifier)",
+          "to": "Bibcode"
+        },
+        {
+          "from": "BioRxiv (identifier)",
+          "to": "BioRxiv"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "OSTI (identifier)",
+          "to": "Office of Scientific and Technical Information"
+        },
+        {
+          "from": "Alpha-Ketoglutaric acid",
+          "to": "Α-Ketoglutaric acid"
+        },
+        {
+          "from": "David Alan Walker",
+          "to": "David A. Walker (scientist)"
+        },
+        {
+          "from": "Perseus Project",
+          "to": "Perseus Digital Library"
+        },
+        {
+          "from": "Green bacteria",
+          "to": "Chlorosome"
+        },
+        {
+          "from": "Fruit anatomy",
+          "to": "Fruit (plant structure)"
+        },
+        {
+          "from": "Online Etymology Dictionary",
+          "to": "Etymonline"
+        },
+        {
+          "from": "Botanical expeditions",
+          "to": "Botanical expedition"
+        },
+        {
+          "from": "Chemical substance",
+          "to": "Substance (chemistry)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 4183,
+          "ns": 0,
+          "title": "Botany"
+        },
+        {
+          "pageid": 5259,
+          "ns": 0,
+          "title": "Common descent"
+        },
+        {
+          "pageid": 5932,
+          "ns": 0,
+          "title": "Carbohydrate"
+        },
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 17322,
+          "ns": 0,
+          "title": "Α-Ketoglutaric acid"
+        },
+        {
+          "pageid": 32509,
+          "ns": 0,
+          "title": "Vitamin C"
+        },
+        {
+          "pageid": 38751,
+          "ns": 0,
+          "title": "ArXiv"
+        },
+        {
+          "pageid": 58134,
+          "ns": 0,
+          "title": "Proterozoic"
+        },
+        {
+          "pageid": 144602,
+          "ns": 0,
+          "title": "Active transport"
+        },
+        {
+          "pageid": 166380,
+          "ns": 0,
+          "title": "Natural history"
+        },
+        {
+          "pageid": 167544,
+          "ns": 0,
+          "title": "Transcription (biology)"
+        },
+        {
+          "pageid": 185832,
+          "ns": 0,
+          "title": "Perseus Digital Library"
+        },
+        {
+          "pageid": 193031,
+          "ns": 0,
+          "title": "Stamen"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 327940,
+          "ns": 0,
+          "title": "Paleoethnobotany"
+        },
+        {
+          "pageid": 363430,
+          "ns": 0,
+          "title": "Photochemistry"
+        },
+        {
+          "pageid": 416651,
+          "ns": 0,
+          "title": "Continental shelf"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1418949,
+          "ns": 0,
+          "title": "Springer Science+Business Media"
+        },
+        {
+          "pageid": 1524053,
+          "ns": 0,
+          "title": "Nicolas Théodore de Saussure"
+        },
+        {
+          "pageid": 1564700,
+          "ns": 0,
+          "title": "Etymonline"
+        },
+        {
+          "pageid": 1705633,
+          "ns": 0,
+          "title": "Office of Scientific and Technical Information"
+        },
+        {
+          "pageid": 1744867,
+          "ns": 0,
+          "title": "Trends (journals)"
+        },
+        {
+          "pageid": 1744975,
+          "ns": 0,
+          "title": "Current Opinion (Elsevier)"
+        },
+        {
+          "pageid": 1753623,
+          "ns": 0,
+          "title": "C. B. van Niel"
+        },
+        {
+          "pageid": 2394288,
+          "ns": 0,
+          "title": "Gynoecium"
+        },
+        {
+          "pageid": 2775325,
+          "ns": 0,
+          "title": "PubMed Central"
+        },
+        {
+          "pageid": 3104166,
+          "ns": 0,
+          "title": "3-Phosphoglyceric acid"
+        },
+        {
+          "pageid": 3430462,
+          "ns": 0,
+          "title": "Microsporangium"
+        },
+        {
+          "pageid": 3514423,
+          "ns": 0,
+          "title": "Hand-pollination"
+        },
+        {
+          "pageid": 4487041,
+          "ns": 0,
+          "title": "Chlorosome"
+        },
+        {
+          "pageid": 8176527,
+          "ns": 0,
+          "title": "Bilin (biochemistry)"
+        },
+        {
+          "pageid": 9722260,
+          "ns": 0,
+          "title": "Substance (chemistry)"
+        },
+        {
+          "pageid": 10618587,
+          "ns": 0,
+          "title": "Philosophical Transactions of the Royal Society B"
+        },
+        {
+          "pageid": 11531778,
+          "ns": 0,
+          "title": "Functional Plant Biology"
+        },
+        {
+          "pageid": 14092434,
+          "ns": 0,
+          "title": "Bibcode"
+        },
+        {
+          "pageid": 15881720,
+          "ns": 0,
+          "title": "Fruit (plant structure)"
+        },
+        {
+          "pageid": 22048289,
+          "ns": 0,
+          "title": "Handle System"
+        },
+        {
+          "pageid": 25086118,
+          "ns": 0,
+          "title": "Autotroph"
+        },
+        {
+          "pageid": 25164793,
+          "ns": 0,
+          "title": "Seed plant"
+        },
+        {
+          "pageid": 29747342,
+          "ns": 0,
+          "title": "Photosynthesis system"
+        },
+        {
+          "pageid": 30083275,
+          "ns": 0,
+          "title": "Botany (journal)"
+        },
+        {
+          "pageid": 32377808,
+          "ns": 0,
+          "title": "David A. Walker (scientist)"
+        },
+        {
+          "pageid": 38094055,
+          "ns": 0,
+          "title": "Gabrielle Howard"
+        },
+        {
+          "pageid": 40390498,
+          "ns": 0,
+          "title": "Botanical expedition"
+        },
+        {
+          "pageid": 40973603,
+          "ns": 0,
+          "title": "McGraw Hill"
+        },
+        {
+          "pageid": 48937425,
+          "ns": 0,
+          "title": "BioRxiv"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Cobalamin",
+          "to": "Vitamin B12"
+        },
+        {
+          "from": "Neurotransmitters",
+          "to": "Neurotransmitter"
+        },
+        {
+          "from": "Polyunsaturated fatty acid",
+          "to": "Polyunsaturated fat"
+        },
+        {
+          "from": "Restoration ecology",
+          "to": "Ecological restoration"
+        },
+        {
+          "from": "Vitamin B",
+          "to": "B vitamins"
+        },
+        {
+          "from": "Chemoorganotroph",
+          "to": "Primary nutritional groups"
+        },
+        {
+          "from": "Niche differentiation",
+          "to": "Ecological niche",
+          "tofragment": "Niche differentiation"
+        },
+        {
+          "from": "Ecological collapse",
+          "to": "Ecosystem collapse"
+        },
+        {
+          "from": "Methylerythritol phosphate",
+          "to": "Non-mevalonate pathway"
+        },
+        {
+          "from": "Amino acid metabolism",
+          "to": "Protein metabolism",
+          "tofragment": "Amino acid metabolism"
+        },
+        {
+          "from": "Biotic component",
+          "to": "Ecosystem",
+          "tofragment": "Definition"
+        },
+        {
+          "from": "Thyroid hormone",
+          "to": "Thyroid hormones"
+        },
+        {
+          "from": "Ecosystem based fisheries",
+          "to": "Fisheries management",
+          "tofragment": "Ecosystem based fisheries"
+        },
+        {
+          "from": "Glycerolipid",
+          "to": "Lipid",
+          "tofragment": "Glycerolipids"
+        },
+        {
+          "from": "Calciferol",
+          "to": "Vitamin D"
+        },
+        {
+          "from": "Chemoorganoheterotrophy",
+          "to": "Primary nutritional groups"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 9632,
+          "ns": 0,
+          "title": "Ecosystem"
+        },
+        {
+          "pageid": 17940,
+          "ns": 0,
+          "title": "Lipid"
+        },
+        {
+          "pageid": 21865,
+          "ns": 0,
+          "title": "Neurotransmitter"
+        },
+        {
+          "pageid": 67244,
+          "ns": 0,
+          "title": "Ecological niche"
+        },
+        {
+          "pageid": 97112,
+          "ns": 0,
+          "title": "Primary nutritional groups"
+        },
+        {
+          "pageid": 457926,
+          "ns": 0,
+          "title": "B vitamins"
+        },
+        {
+          "pageid": 494704,
+          "ns": 0,
+          "title": "Fisheries management"
+        },
+        {
+          "pageid": 1790574,
+          "ns": 0,
+          "title": "Ecological restoration"
+        },
+        {
+          "pageid": 3321981,
+          "ns": 0,
+          "title": "Polyunsaturated fat"
+        },
+        {
+          "pageid": 7663895,
+          "ns": 0,
+          "title": "Protein metabolism"
+        },
+        {
+          "pageid": 8399975,
+          "ns": 0,
+          "title": "Non-mevalonate pathway"
+        },
+        {
+          "pageid": 14538619,
+          "ns": 0,
+          "title": "Vitamin B12"
+        },
+        {
+          "pageid": 18455584,
+          "ns": 0,
+          "title": "Thyroid hormones"
+        },
+        {
+          "pageid": 24998247,
+          "ns": 0,
+          "title": "Vitamin D"
+        },
+        {
+          "pageid": 58458383,
+          "ns": 0,
+          "title": "Ecosystem collapse"
+        }
+      ]
+    }
+  }
+]

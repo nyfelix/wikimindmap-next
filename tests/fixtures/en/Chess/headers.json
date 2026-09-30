@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Chess/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1376110183/8ab48139-bc65-11f1-9fc2-d769b8944383/view+lang:und\"",
+    "last-modified": "Tue, 29 Sep 2026 19:24:05 GMT"
+  }
+}

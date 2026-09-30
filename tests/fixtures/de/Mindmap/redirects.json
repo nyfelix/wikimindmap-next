@@ -1,0 +1,56 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Plattformunabhängig",
+          "to": "Plattformunabhängigkeit"
+        },
+        {
+          "from": "Kognitiv",
+          "to": "Kognition"
+        },
+        {
+          "from": "Fuzzy Logic",
+          "to": "Fuzzylogik"
+        },
+        {
+          "from": "GPL",
+          "to": "GNU General Public License"
+        },
+        {
+          "from": "OpenMind",
+          "to": "MindView"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 1615,
+          "ns": 0,
+          "title": "Fuzzylogik"
+        },
+        {
+          "pageid": 2071,
+          "ns": 0,
+          "title": "GNU General Public License"
+        },
+        {
+          "pageid": 32655,
+          "ns": 0,
+          "title": "Plattformunabhängigkeit"
+        },
+        {
+          "pageid": 87637,
+          "ns": 0,
+          "title": "Kognition"
+        },
+        {
+          "pageid": 3606701,
+          "ns": 0,
+          "title": "MindView"
+        }
+      ]
+    }
+  }
+]

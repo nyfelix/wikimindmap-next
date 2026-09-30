@@ -1,0 +1,67 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Theoretische Physik",
+          "to": "Physik",
+          "tofragment": "Theoretische Physik"
+        },
+        {
+          "from": "Kovariante Ableitung",
+          "to": "Zusammenhang (Differentialgeometrie)",
+          "tofragment": "Zusammenhänge auf dem Tensorbündel"
+        },
+        {
+          "from": "Freon",
+          "to": "Halogenkohlenwasserstoffe"
+        },
+        {
+          "from": "Isarvorstadt",
+          "to": "Ludwigsvorstadt-Isarvorstadt"
+        },
+        {
+          "from": "Königlich-Preußische Akademie der Wissenschaften",
+          "to": "Preußische Akademie der Wissenschaften"
+        },
+        {
+          "from": "SWR2 Wissen",
+          "to": "Das Wissen"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 3862,
+          "ns": 0,
+          "title": "Physik"
+        },
+        {
+          "pageid": 123893,
+          "ns": 0,
+          "title": "Preußische Akademie der Wissenschaften"
+        },
+        {
+          "pageid": 565296,
+          "ns": 0,
+          "title": "Ludwigsvorstadt-Isarvorstadt"
+        },
+        {
+          "pageid": 591245,
+          "ns": 0,
+          "title": "Halogenkohlenwasserstoffe"
+        },
+        {
+          "pageid": 884556,
+          "ns": 0,
+          "title": "Zusammenhang (Differentialgeometrie)"
+        },
+        {
+          "pageid": 13903728,
+          "ns": 0,
+          "title": "Das Wissen"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Zurich/html?redirect=no",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1377483262/2480399c-bc6e-11f1-8266-ff503c8c949a/view+lang:und\"",
+    "last-modified": "Wed, 30 Sep 2026 01:27:04 GMT"
+  }
+}

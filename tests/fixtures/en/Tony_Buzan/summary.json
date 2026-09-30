@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 36770,
+        "ns": 0,
+        "title": "Tony Buzan",
+        "extract": "Anthony Peter Buzan (; 2 June 1942 – 13 April 2019) was an English author and educational consultant.\nBuzan popularised the idea of mental literacy, radiant thinking, and a technique called mind mapping, inspired by techniques used by Leonardo da Vinci, Albert Einstein, and Joseph D. Novak's \"concept mapping\" techniques.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Tonybuzan1.jpg/330px-Tonybuzan1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 478
+        },
+        "description": "English author and educational consultant (1942–2019)",
+        "descriptionsource": "local"
+      }
+    ]
+  }
+}

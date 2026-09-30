@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Mind_map/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1374343935/233410c9-bc38-11f1-9c6b-ad7ce4fbc9b3/view+lang:und\"",
+    "last-modified": "Tue, 29 Sep 2026 18:57:20 GMT"
+  }
+}

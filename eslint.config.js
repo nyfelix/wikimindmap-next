@@ -41,6 +41,17 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   {
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    rules: {
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    },
+  },
+  {
+    // Tests may assert on values they know are present.
+    files: ["tests/**/*.ts"],
+    rules: {
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-invalid-void-type": "off",
+    },
   },
   {
     files: ["src/ui/**/*.{ts,tsx}", "src/main.tsx"],

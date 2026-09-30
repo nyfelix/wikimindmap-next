@@ -28,13 +28,6 @@ Goal: a reproducible dev environment, a deployable empty app, and certainty that
 
 > Note: The workflow is `.github/workflows/deploy.yml`; it also runs `check` and `build` on pull requests, without deploying. `BASE_PATH` comes from the repository name. `404.html` is written by a small plugin in `vite.config.ts`. **Open:** the last two items need a push to GitHub and Settings → Pages → Source set to "GitHub Actions" (done by the owner).
 
-### TS-04 HTTP client and fixture recorder · M
-- [ ] `src/sources/http.ts`: adds `Api-User-Agent`, adds `origin=*` for `api.php`, allows at most 4 requests in flight, retries on 429/503 with backoff (1 s, 2 s, 4 s), and times out after 15 s
-- [ ] Typed errors: `NotFound`, `RateLimited`, `Network`, `Unexpected`
-- [ ] `npm run fixtures -- <lang> "<Title>"` stores the files from `datamodel.md` §9
-- [ ] The starter set of fixtures from `datamodel.md` §9 is recorded and committed
-- [ ] Unit tests for the retry and concurrency logic, with a mocked `fetch`
-
 **Done when:** the repo opens in the dev container with everything working, the empty app deploys from `main`, and the spike findings are recorded.
 
 ---
@@ -375,3 +368,12 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] A top-level `README.md` with a short project description and the commands
 
 > Note: TypeScript is pinned to 6.0, because typescript-eslint 8 supports only `<6.1` (TypeScript 7 is out). Scripts in `scripts/` run directly with Node 22 type stripping, so imports keep their `.ts` extension (`allowImportingTsExtensions`, `erasableSyntaxOnly`) and no `tsx` is needed. ESLint also forbids `fetch` outside `src/sources/http.ts`, and DOM globals in `core`, `lenses` and `layouts`. `npm run check` includes `prettier --check`; Markdown documents and `concepts/` are excluded from Prettier. `tokens.css` already has the font stacks from `styleguide.md` §8.
+
+### TS-04 HTTP client and fixture recorder · M · M0
+- [x] `src/sources/http.ts`: adds `Api-User-Agent`, adds `origin=*` for `api.php`, allows at most 4 requests in flight, retries on 429/503 with backoff (1 s, 2 s, 4 s), and times out after 15 s
+- [x] Typed errors: `NotFound`, `RateLimited`, `Network`, `Unexpected`
+- [x] `npm run fixtures -- <lang> "<Title>"` stores the files from `datamodel.md` §9
+- [x] The starter set of fixtures from `datamodel.md` §9 is recorded and committed
+- [x] Unit tests for the retry and concurrency logic, with a mocked `fetch`
+
+> Note: The client is `createHttpClient()` (injectable `fetch`, `sleep`, limits) plus a shared `http` instance; it returns `{ data, url, status, headers }`, where `url` is the final URL after the 307 from a redirect title. It also maps Action API `error` objects (HTTP 200) to `Unexpected`, or `RateLimited` for `ratelimited`/`maxlag`. A request waiting for a retry frees its slot. The recorder also takes `--starter`, and sends `User-Agent` as well (allowed in Node). The 12 MB of fixtures are marked `linguist-generated` in `.gitattributes`.

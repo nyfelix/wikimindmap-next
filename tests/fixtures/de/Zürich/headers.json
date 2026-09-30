@@ -1,0 +1,10 @@
+{
+  "url": "https://de.wikipedia.org/w/rest.php/v1/page/Z%C3%BCrich/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "de",
+    "etag": "W/\"270891130/13a2e57e-bcad-11f1-ab6c-010e57e8839a/view+lang:und\"",
+    "last-modified": "Tue, 29 Sep 2026 21:14:55 GMT"
+  }
+}

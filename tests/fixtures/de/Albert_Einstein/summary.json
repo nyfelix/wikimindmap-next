@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 1278360,
+        "ns": 0,
+        "title": "Albert Einstein",
+        "extract": "Albert Einstein (* 14. März 1879 in Ulm; † 18. April 1955 in Princeton, New Jersey) war ein theoretischer Physiker.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Albert_Einstein_1921_by_F_Schmutzer.jpg/330px-Albert_Einstein_1921_by_F_Schmutzer.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 420
+        },
+        "description": "theoretischer Physiker (1879–1955); Entwickler der Relativitätstheorie, Nobelpreis für Physik 1922",
+        "descriptionsource": "central"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1005 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Glue language",
+          "to": "Scripting language",
+          "tofragment": "Glue languages"
+        },
+        {
+          "from": "Dynamic typing",
+          "to": "Type system",
+          "tofragment": "DYNAMIC"
+        },
+        {
+          "from": "Static typing",
+          "to": "Type system",
+          "tofragment": "Static type checking"
+        },
+        {
+          "from": "Software developer",
+          "to": "Software development",
+          "tofragment": "Workers"
+        },
+        {
+          "from": "Dynamic language",
+          "to": "Dynamic programming language"
+        },
+        {
+          "from": "End-of-life product",
+          "to": "Product lifecycle",
+          "tofragment": "Phase 4: Service"
+        },
+        {
+          "from": "Backward-compatible",
+          "to": "Backward compatibility"
+        },
+        {
+          "from": "While loop",
+          "to": "Loop (statement)",
+          "tofragment": "Pre-test loop"
+        },
+        {
+          "from": "Curly bracket programming language",
+          "to": "List of programming languages by type",
+          "tofragment": "Curly bracket languages"
+        },
+        {
+          "from": "Just-in-time compiler",
+          "to": "Just-in-time compilation"
+        },
+        {
+          "from": "ScientificPython",
+          "to": "SciPy",
+          "tofragment": "Scientific Python versus ScientificPython"
+        },
+        {
+          "from": "BlueBream",
+          "to": "Zope",
+          "tofragment": "BlueBream"
+        },
+        {
+          "from": "If-then-else",
+          "to": "Conditional (computer programming)",
+          "tofragment": "conditional-statement"
+        },
+        {
+          "from": "Statically-typed",
+          "to": "Type system",
+          "tofragment": "STATIC"
+        },
+        {
+          "from": "Programming language implementation",
+          "to": "Programming language design and implementation",
+          "tofragment": "Implementation"
+        },
+        {
+          "from": "Guido Van Rossum",
+          "to": "Guido van Rossum"
+        },
+        {
+          "from": "Nevow",
+          "to": "Twisted (software)",
+          "tofragment": "Nevow"
+        },
+        {
+          "from": "Multi-paradigm",
+          "to": "Comparison of multi-paradigm programming languages"
+        },
+        {
+          "from": "Method (computing)",
+          "to": "Method (computer programming)"
+        },
+        {
+          "from": "ActivePython",
+          "to": "ActiveState"
+        },
+        {
+          "from": "Extensible",
+          "to": "Extensibility"
+        },
+        {
+          "from": "RPython",
+          "to": "PyPy",
+          "tofragment": "RPython"
+        },
+        {
+          "from": "Grok (web framework)",
+          "to": "Zope",
+          "tofragment": "Grok"
+        },
+        {
+          "from": "Break statement",
+          "to": "Control flow",
+          "tofragment": "early-exit"
+        },
+        {
+          "from": "There is more than one way to do it",
+          "to": "Perl"
+        },
+        {
+          "from": "Multi-paradigm programming language",
+          "to": "Comparison of multi-paradigm programming languages"
+        },
+        {
+          "from": "Code readability",
+          "to": "Computer programming",
+          "tofragment": "Readability of source code"
+        },
+        {
+          "from": "Pyramid (web framework)",
+          "to": "Pylons project",
+          "tofragment": "Pyramid"
+        },
+        {
+          "from": "Class (computer science)",
+          "to": "Class (programming)"
+        },
+        {
+          "from": "Pylons (web framework)",
+          "to": "Pylons project",
+          "tofragment": "Pylons Web Framework"
+        },
+        {
+          "from": "Foreach",
+          "to": "Loop (statement)",
+          "tofragment": "Iterator-based"
+        },
+        {
+          "from": "Strong and weak typing",
+          "to": "Type safety",
+          "tofragment": "Strong and weak typing"
+        },
+        {
+          "from": "First-class continuations",
+          "to": "Continuation",
+          "tofragment": "First-class continuations"
+        },
+        {
+          "from": "PyCon",
+          "to": "Python Conference"
+        },
+        {
+          "from": "Zope 2",
+          "to": "Zope",
+          "tofragment": "Zope 2"
+        },
+        {
+          "from": "PyGObject",
+          "to": "PyGTK",
+          "tofragment": "PyGObject"
+        },
+        {
+          "from": "Optional typing",
+          "to": "Type system",
+          "tofragment": "Optional type systems"
+        },
+        {
+          "from": "Eric Python IDE",
+          "to": "Eric (software)"
+        },
+        {
+          "from": "GDScript",
+          "to": "Godot (game engine)",
+          "tofragment": "GDScript"
+        },
+        {
+          "from": "Jupyter notebook",
+          "to": "Project Jupyter",
+          "tofragment": "Jupyter Notebook"
+        },
+        {
+          "from": "Apache Singa",
+          "to": "Apache SINGA"
+        },
+        {
+          "from": "Intel Distribution for Python",
+          "to": "Intel Parallel Studio"
+        },
+        {
+          "from": "Cross-platform",
+          "to": "Cross-platform software"
+        },
+        {
+          "from": "Manim",
+          "to": "3Blue1Brown",
+          "tofragment": "Manim"
+        },
+        {
+          "from": "PyMC3",
+          "to": "PyMC"
+        },
+        {
+          "from": "Spam (Monty Python)",
+          "to": "Spam (Monty Python sketch)"
+        },
+        {
+          "from": "Significant indentation",
+          "to": "Off-side rule"
+        },
+        {
+          "from": "Construct (python library)",
+          "to": "Construct (Python library)"
+        },
+        {
+          "from": "Backported",
+          "to": "Backporting"
+        },
+        {
+          "from": "Kaggle Notebooks",
+          "to": "Kaggle",
+          "tofragment": "Kaggle Notebooks"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 4459,
+          "ns": 0,
+          "title": "Backward compatibility"
+        },
+        {
+          "pageid": 5311,
+          "ns": 0,
+          "title": "Computer programming"
+        },
+        {
+          "pageid": 7392,
+          "ns": 0,
+          "title": "Class (programming)"
+        },
+        {
+          "pageid": 19160,
+          "ns": 0,
+          "title": "Spam (Monty Python sketch)"
+        },
+        {
+          "pageid": 23939,
+          "ns": 0,
+          "title": "Perl"
+        },
+        {
+          "pageid": 34472,
+          "ns": 0,
+          "title": "Zope"
+        },
+        {
+          "pageid": 45459,
+          "ns": 0,
+          "title": "Control flow"
+        },
+        {
+          "pageid": 81193,
+          "ns": 0,
+          "title": "Cross-platform software"
+        },
+        {
+          "pageid": 144144,
+          "ns": 0,
+          "title": "List of programming languages by type"
+        },
+        {
+          "pageid": 199701,
+          "ns": 0,
+          "title": "Type system"
+        },
+        {
+          "pageid": 220632,
+          "ns": 0,
+          "title": "Just-in-time compilation"
+        },
+        {
+          "pageid": 226402,
+          "ns": 0,
+          "title": "Guido van Rossum"
+        },
+        {
+          "pageid": 226843,
+          "ns": 0,
+          "title": "Comparison of multi-paradigm programming languages"
+        },
+        {
+          "pageid": 232817,
+          "ns": 0,
+          "title": "Method (computer programming)"
+        },
+        {
+          "pageid": 234079,
+          "ns": 0,
+          "title": "Dynamic programming language"
+        },
+        {
+          "pageid": 248932,
+          "ns": 0,
+          "title": "Software development"
+        },
+        {
+          "pageid": 263472,
+          "ns": 0,
+          "title": "SciPy"
+        },
+        {
+          "pageid": 462839,
+          "ns": 0,
+          "title": "Conditional (computer programming)"
+        },
+        {
+          "pageid": 505189,
+          "ns": 0,
+          "title": "Continuation"
+        },
+        {
+          "pageid": 597229,
+          "ns": 0,
+          "title": "Product lifecycle"
+        },
+        {
+          "pageid": 602650,
+          "ns": 0,
+          "title": "Type safety"
+        },
+        {
+          "pageid": 605595,
+          "ns": 0,
+          "title": "Off-side rule"
+        },
+        {
+          "pageid": 890353,
+          "ns": 0,
+          "title": "PyGTK"
+        },
+        {
+          "pageid": 946566,
+          "ns": 0,
+          "title": "Backporting"
+        },
+        {
+          "pageid": 1617522,
+          "ns": 0,
+          "title": "Extensibility"
+        },
+        {
+          "pageid": 1793652,
+          "ns": 0,
+          "title": "Twisted (software)"
+        },
+        {
+          "pageid": 1810666,
+          "ns": 0,
+          "title": "Eric (software)"
+        },
+        {
+          "pageid": 2564605,
+          "ns": 0,
+          "title": "PyPy"
+        },
+        {
+          "pageid": 8583006,
+          "ns": 0,
+          "title": "Construct (Python library)"
+        },
+        {
+          "pageid": 8918360,
+          "ns": 0,
+          "title": "ActiveState"
+        },
+        {
+          "pageid": 19963280,
+          "ns": 0,
+          "title": "Intel Parallel Studio"
+        },
+        {
+          "pageid": 21490336,
+          "ns": 0,
+          "title": "Scripting language"
+        },
+        {
+          "pageid": 31663650,
+          "ns": 0,
+          "title": "Kaggle"
+        },
+        {
+          "pageid": 36293816,
+          "ns": 0,
+          "title": "Python Conference"
+        },
+        {
+          "pageid": 36723720,
+          "ns": 0,
+          "title": "Pylons project"
+        },
+        {
+          "pageid": 42097999,
+          "ns": 0,
+          "title": "Godot (game engine)"
+        },
+        {
+          "pageid": 51545339,
+          "ns": 0,
+          "title": "Apache SINGA"
+        },
+        {
+          "pageid": 53242993,
+          "ns": 0,
+          "title": "PyMC"
+        },
+        {
+          "pageid": 57313979,
+          "ns": 0,
+          "title": "Project Jupyter"
+        },
+        {
+          "pageid": 58357050,
+          "ns": 0,
+          "title": "3Blue1Brown"
+        },
+        {
+          "pageid": 73181722,
+          "ns": 0,
+          "title": "Programming language design and implementation"
+        },
+        {
+          "pageid": 81865333,
+          "ns": 0,
+          "title": "Loop (statement)"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Interpreted language",
+          "to": "Interpreter (computing)"
+        },
+        {
+          "from": "Windows",
+          "to": "Microsoft Windows"
+        },
+        {
+          "from": "Ported",
+          "to": "Porting"
+        },
+        {
+          "from": "Data structures",
+          "to": "Data structure"
+        },
+        {
+          "from": "Floating-point number",
+          "to": "Floating-point arithmetic"
+        },
+        {
+          "from": "Wikipedia:Avoid weasel words",
+          "to": "Wikipedia:Manual of Style/Words to watch",
+          "tofragment": "Unsupported attributions"
+        },
+        {
+          "from": "Zero-based",
+          "to": "Zero-based numbering"
+        },
+        {
+          "from": "Dynamically typed",
+          "to": "Type system",
+          "tofragment": "Dynamic type checking and runtime type information"
+        },
+        {
+          "from": "Series 60",
+          "to": "S60 (software platform)"
+        },
+        {
+          "from": "Shallow copy",
+          "to": "Object copying",
+          "tofragment": "Shallow copy"
+        },
+        {
+          "from": "Double-precision",
+          "to": "Double-precision floating-point format"
+        },
+        {
+          "from": "Character string",
+          "to": "String (computer science)"
+        },
+        {
+          "from": "Strongly typed",
+          "to": "Type safety"
+        },
+        {
+          "from": "Boolean value",
+          "to": "Boolean algebra",
+          "tofragment": "Values"
+        },
+        {
+          "from": "BSD",
+          "to": "Berkeley Software Distribution"
+        },
+        {
+          "from": "Bug tracker",
+          "to": "Bug tracking system"
+        },
+        {
+          "from": "Scientific computing",
+          "to": "Computational science"
+        },
+        {
+          "from": "List (computer science)",
+          "to": "List (abstract data type)"
+        },
+        {
+          "from": "Beta release",
+          "to": "Software release life cycle",
+          "tofragment": "Beta"
+        },
+        {
+          "from": "Concatenated",
+          "to": "Concatenation"
+        },
+        {
+          "from": "List comprehensions",
+          "to": "List comprehension"
+        },
+        {
+          "from": "Unit test",
+          "to": "Unit testing"
+        },
+        {
+          "from": "Modulo operator",
+          "to": "Modulo"
+        },
+        {
+          "from": "Array index",
+          "to": "Array (data structure)",
+          "tofragment": "Element identifier and addressing formulas"
+        },
+        {
+          "from": "C89 (C version)",
+          "to": "ANSI C",
+          "tofragment": "C89"
+        },
+        {
+          "from": "Command line interpreter",
+          "to": "Command-line interface",
+          "tofragment": "Command-line interpreter"
+        },
+        {
+          "from": "PyS60",
+          "to": "Python for S60"
+        },
+        {
+          "from": "Single precision",
+          "to": "Single-precision floating-point format"
+        },
+        {
+          "from": "N900",
+          "to": "Nokia N900"
+        },
+        {
+          "from": "Embedded programming",
+          "to": "Embedded software"
+        },
+        {
+          "from": "Transpiler",
+          "to": "Source-to-source compiler"
+        },
+        {
+          "from": "ATmega",
+          "to": "AVR microcontrollers",
+          "tofragment": "Basic families"
+        },
+        {
+          "from": "Raw string",
+          "to": "String literal",
+          "tofragment": "Raw strings"
+        },
+        {
+          "from": "Immutable",
+          "to": "Immutable object"
+        },
+        {
+          "from": "Generator (computer science)",
+          "to": "Generator (computer programming)"
+        },
+        {
+          "from": "Lambda (programming)",
+          "to": "Anonymous function"
+        },
+        {
+          "from": "Set (computer science)",
+          "to": "Set (abstract data type)"
+        },
+        {
+          "from": "Transpile",
+          "to": "Source-to-source compiler"
+        },
+        {
+          "from": "Ellipsis (programming operator)",
+          "to": "Ellipsis (computer programming)"
+        },
+        {
+          "from": "Jupyter",
+          "to": "Project Jupyter"
+        },
+        {
+          "from": "Global Interpreter Lock",
+          "to": "Global interpreter lock"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "ISSN (identifier)",
+          "to": "ISSN"
+        },
+        {
+          "from": "Online IDE",
+          "to": "Online integrated development environment"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "Floor division",
+          "to": "Division (mathematics)",
+          "tofragment": "Of integers"
+        },
+        {
+          "from": "Solaris (operating system)",
+          "to": "Oracle Solaris"
+        },
+        {
+          "from": "?:",
+          "to": "Ternary conditional operator"
+        },
+        {
+          "from": "Self-hosting (web services)",
+          "to": "Self-hosting (network)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2052,
+          "ns": 0,
+          "title": "Array (data structure)"
+        },
+        {
+          "pageid": 3172,
+          "ns": 0,
+          "title": "ANSI C"
+        },
+        {
+          "pageid": 8519,
+          "ns": 0,
+          "title": "Data structure"
+        },
+        {
+          "pageid": 11376,
+          "ns": 0,
+          "title": "Floating-point arithmetic"
+        },
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 18890,
+          "ns": 0,
+          "title": "Microsoft Windows"
+        },
+        {
+          "pageid": 27701,
+          "ns": 0,
+          "title": "String (computer science)"
+        },
+        {
+          "pageid": 34541,
+          "ns": 0,
+          "title": "Zero-based numbering"
+        },
+        {
+          "pageid": 46145,
+          "ns": 0,
+          "title": "Oracle Solaris"
+        },
+        {
+          "pageid": 53696,
+          "ns": 0,
+          "title": "Division (mathematics)"
+        },
+        {
+          "pageid": 53734,
+          "ns": 0,
+          "title": "Double-precision floating-point format"
+        },
+        {
+          "pageid": 59868,
+          "ns": 0,
+          "title": "Interpreter (computing)"
+        },
+        {
+          "pageid": 64474,
+          "ns": 0,
+          "title": "Concatenation"
+        },
+        {
+          "pageid": 100290,
+          "ns": 0,
+          "title": "AVR microcontrollers"
+        },
+        {
+          "pageid": 197824,
+          "ns": 0,
+          "title": "Immutable object"
+        },
+        {
+          "pageid": 199701,
+          "ns": 0,
+          "title": "Type system"
+        },
+        {
+          "pageid": 199706,
+          "ns": 0,
+          "title": "String literal"
+        },
+        {
+          "pageid": 201127,
+          "ns": 0,
+          "title": "Set (abstract data type)"
+        },
+        {
+          "pageid": 208382,
+          "ns": 0,
+          "title": "List (abstract data type)"
+        },
+        {
+          "pageid": 214804,
+          "ns": 0,
+          "title": "Porting"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 220901,
+          "ns": 0,
+          "title": "Software release life cycle"
+        },
+        {
+          "pageid": 222828,
+          "ns": 0,
+          "title": "Unit testing"
+        },
+        {
+          "pageid": 230418,
+          "ns": 0,
+          "title": "Object copying"
+        },
+        {
+          "pageid": 234930,
+          "ns": 0,
+          "title": "ISSN"
+        },
+        {
+          "pageid": 275744,
+          "ns": 0,
+          "title": "List comprehension"
+        },
+        {
+          "pageid": 282340,
+          "ns": 0,
+          "title": "S60 (software platform)"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 572997,
+          "ns": 0,
+          "title": "Generator (computer programming)"
+        },
+        {
+          "pageid": 602650,
+          "ns": 0,
+          "title": "Type safety"
+        },
+        {
+          "pageid": 638447,
+          "ns": 0,
+          "title": "Embedded software"
+        },
+        {
+          "pageid": 667443,
+          "ns": 0,
+          "title": "Ternary conditional operator"
+        },
+        {
+          "pageid": 898290,
+          "ns": 0,
+          "title": "Bug tracking system"
+        },
+        {
+          "pageid": 1181008,
+          "ns": 0,
+          "title": "Computational science"
+        },
+        {
+          "pageid": 1352428,
+          "ns": 0,
+          "title": "Modulo"
+        },
+        {
+          "pageid": 4270426,
+          "ns": 0,
+          "title": "Source-to-source compiler"
+        },
+        {
+          "pageid": 7018181,
+          "ns": 0,
+          "title": "Anonymous function"
+        },
+        {
+          "pageid": 13338864,
+          "ns": 0,
+          "title": "Global interpreter lock"
+        },
+        {
+          "pageid": 18805500,
+          "ns": 0,
+          "title": "Python for S60"
+        },
+        {
+          "pageid": 18932622,
+          "ns": 0,
+          "title": "Berkeley Software Distribution"
+        },
+        {
+          "pageid": 23552864,
+          "ns": 0,
+          "title": "Single-precision floating-point format"
+        },
+        {
+          "pageid": 24061104,
+          "ns": 0,
+          "title": "Nokia N900"
+        },
+        {
+          "pageid": 27137897,
+          "ns": 4,
+          "title": "Wikipedia:Manual of Style/Words to watch"
+        },
+        {
+          "pageid": 28338635,
+          "ns": 0,
+          "title": "Command-line interface"
+        },
+        {
+          "pageid": 31498790,
+          "ns": 0,
+          "title": "Ellipsis (computer programming)"
+        },
+        {
+          "pageid": 54476844,
+          "ns": 0,
+          "title": "Boolean algebra"
+        },
+        {
+          "pageid": 56201820,
+          "ns": 0,
+          "title": "Self-hosting (network)"
+        },
+        {
+          "pageid": 57313979,
+          "ns": 0,
+          "title": "Project Jupyter"
+        },
+        {
+          "pageid": 60569062,
+          "ns": 0,
+          "title": "Online integrated development environment"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "List of integrated development environments for Python",
+          "to": "Comparison of integrated development environments",
+          "tofragment": "Python"
+        },
+        {
+          "from": "GraphPad Prism",
+          "to": "GraphPad Software",
+          "tofragment": "GraphPad Prism"
+        },
+        {
+          "from": "GraphPad InStat",
+          "to": "GraphPad Software",
+          "tofragment": "GraphPad InStat"
+        },
+        {
+          "from": "ArXiv (identifier)",
+          "to": "ArXiv"
+        },
+        {
+          "from": "LCCN (identifier)",
+          "to": "Library of Congress Control Number"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Bibcode (identifier)",
+          "to": "Bibcode"
+        },
+        {
+          "from": "OL (identifier)",
+          "to": "Open Library"
+        },
+        {
+          "from": "X-12-ARIMA",
+          "to": "X-13ARIMA-SEATS"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 38751,
+          "ns": 0,
+          "title": "ArXiv"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1491462,
+          "ns": 0,
+          "title": "Library of Congress Control Number"
+        },
+        {
+          "pageid": 1497050,
+          "ns": 0,
+          "title": "X-13ARIMA-SEATS"
+        },
+        {
+          "pageid": 3011287,
+          "ns": 0,
+          "title": "Open Library"
+        },
+        {
+          "pageid": 6444283,
+          "ns": 0,
+          "title": "Comparison of integrated development environments"
+        },
+        {
+          "pageid": 14092434,
+          "ns": 0,
+          "title": "Bibcode"
+        },
+        {
+          "pageid": 21572326,
+          "ns": 0,
+          "title": "GraphPad Software"
+        }
+      ]
+    }
+  }
+]

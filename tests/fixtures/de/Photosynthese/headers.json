@@ -1,0 +1,10 @@
+{
+  "url": "https://de.wikipedia.org/w/rest.php/v1/page/Photosynthese/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "de",
+    "etag": "W/\"268891481/8f2e69d2-bc68-11f1-9bf0-6de643fca81b/view+lang:und\"",
+    "last-modified": "Fri, 11 Sep 2026 14:30:47 GMT"
+  }
+}

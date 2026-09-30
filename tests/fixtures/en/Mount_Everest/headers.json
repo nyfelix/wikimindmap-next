@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Mount_Everest/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1376942985/65c0201f-bc65-11f1-a398-45b38a8fef0e/view+lang:und\"",
+    "last-modified": "Tue, 29 Sep 2026 19:24:07 GMT"
+  }
+}

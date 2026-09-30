@@ -1,0 +1,10 @@
+{
+  "url": "https://en.wikipedia.org/w/rest.php/v1/page/Albert_Einstein/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "en",
+    "etag": "W/\"1376862306/99587631-bc78-11f1-af56-212af4ce8c0b/view+lang:und\"",
+    "last-modified": "Wed, 30 Sep 2026 02:42:21 GMT"
+  }
+}

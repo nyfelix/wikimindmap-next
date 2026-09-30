@@ -1,0 +1,10 @@
+{
+  "url": "https://fr.wikipedia.org/w/rest.php/v1/page/Carte_heuristique/html",
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/HTML/2.8.0\"",
+    "content-language": "fr",
+    "etag": "W/\"239723501/8dad8d0b-bcfa-11f1-8e0e-6120164cbab9/view+lang:und\"",
+    "last-modified": "Wed, 30 Sep 2026 18:03:50 GMT"
+  }
+}

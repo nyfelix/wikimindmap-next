@@ -1,0 +1,225 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Concept lattice",
+          "to": "Formal concept analysis"
+        },
+        {
+          "from": "Knowledge visualization",
+          "to": "Visualization (graphics)",
+          "tofragment": "Knowledge visualization"
+        },
+        {
+          "from": "Porphyry of Tyros",
+          "to": "Porphyry of Tyre"
+        },
+        {
+          "from": "Concept maps",
+          "to": "Concept map"
+        },
+        {
+          "from": "Web app",
+          "to": "Web application"
+        },
+        {
+          "from": "UML diagram",
+          "to": "Unified Modeling Language"
+        },
+        {
+          "from": "Personal wiki",
+          "to": "List of wiki software",
+          "tofragment": "Personal wiki software"
+        },
+        {
+          "from": "Visual Mind",
+          "to": "List of concept- and mind-mapping software"
+        },
+        {
+          "from": "Social map",
+          "to": "Cognitive map"
+        },
+        {
+          "from": "Houghton Mifflin",
+          "to": "Houghton Mifflin Harcourt"
+        },
+        {
+          "from": "Graphical modeling language",
+          "to": "Modeling language",
+          "tofragment": "Graphical modeling languages"
+        },
+        {
+          "from": "Desktop app",
+          "to": "Application software"
+        },
+        {
+          "from": "Nodal organizational structure",
+          "to": "Cellular organizational structure"
+        },
+        {
+          "from": "Mental literacy",
+          "to": "Tony Buzan"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "Portal:Education",
+          "to": "Portal:Schools"
+        },
+        {
+          "from": "S2CID (identifier)",
+          "to": "Semantic Scholar",
+          "tofragment": "S2CID"
+        },
+        {
+          "from": "ArXiv (identifier)",
+          "to": "ArXiv"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "Hdl (identifier)",
+          "to": "Handle System"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 32169,
+          "ns": 0,
+          "title": "Unified Modeling Language"
+        },
+        {
+          "pageid": 36770,
+          "ns": 0,
+          "title": "Tony Buzan"
+        },
+        {
+          "pageid": 38751,
+          "ns": 0,
+          "title": "ArXiv"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 288311,
+          "ns": 0,
+          "title": "Web application"
+        },
+        {
+          "pageid": 313845,
+          "ns": 0,
+          "title": "Formal concept analysis"
+        },
+        {
+          "pageid": 346781,
+          "ns": 0,
+          "title": "Modeling language"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 454746,
+          "ns": 0,
+          "title": "Application software"
+        },
+        {
+          "pageid": 487926,
+          "ns": 0,
+          "title": "List of wiki software"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 660850,
+          "ns": 0,
+          "title": "Visualization (graphics)"
+        },
+        {
+          "pageid": 698226,
+          "ns": 0,
+          "title": "Concept map"
+        },
+        {
+          "pageid": 794399,
+          "ns": 0,
+          "title": "Porphyry of Tyre"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1003088,
+          "ns": 0,
+          "title": "Houghton Mifflin Harcourt"
+        },
+        {
+          "pageid": 1385766,
+          "ns": 0,
+          "title": "Cognitive map"
+        },
+        {
+          "pageid": 2493455,
+          "ns": 100,
+          "title": "Portal:Schools"
+        },
+        {
+          "pageid": 7597440,
+          "ns": 0,
+          "title": "List of concept- and mind-mapping software"
+        },
+        {
+          "pageid": 22048289,
+          "ns": 0,
+          "title": "Handle System"
+        },
+        {
+          "pageid": 47924634,
+          "ns": 0,
+          "title": "Cellular organizational structure"
+        },
+        {
+          "pageid": 48455863,
+          "ns": 0,
+          "title": "Semantic Scholar"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 34919,
+        "ns": 0,
+        "title": "Mindmap",
+        "extract": "Die (auch: das)  Mindmap (auch Mind-Map, englisch mind map; auch: Gedanken[land]karte, Gedächtnis[land]karte) beschreibt eine von Tony Buzan geprägte kognitive Technik, die man z. B. zum Erschließen und visuellen Darstellen eines Themengebietes, zum Planen oder für Mitschriften nutzen kann. Hierbei soll das Prinzip der Assoziation helfen, Gedanken frei zu entfalten und die Fähigkeit des Gehirns zur Kategorienbildung zu nutzen.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Pinwand-Mindmap.jpg/330px-Pinwand-Mindmap.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 383
+        },
+        "description": "gerichteter Graph mit Baumstruktur zur Darstellung von Information",
+        "descriptionsource": "central"
+      }
+    ]
+  }
+}

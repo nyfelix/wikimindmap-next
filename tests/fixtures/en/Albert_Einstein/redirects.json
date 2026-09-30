@@ -1,0 +1,1414 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Ceylon",
+          "to": "Sri Lanka"
+        },
+        {
+          "from": "Gravitation",
+          "to": "Gravity"
+        },
+        {
+          "from": "Austro-Hungarian Empire",
+          "to": "Austria-Hungary"
+        },
+        {
+          "from": "Caltech",
+          "to": "California Institute of Technology"
+        },
+        {
+          "from": "Charles University in Prague",
+          "to": "Charles University"
+        },
+        {
+          "from": "First World War",
+          "to": "World War I"
+        },
+        {
+          "from": "General theory of relativity",
+          "to": "General relativity"
+        },
+        {
+          "from": "Special theory of relativity",
+          "to": "Special relativity"
+        },
+        {
+          "from": "Lloyd George",
+          "to": "David Lloyd George"
+        },
+        {
+          "from": "Robert A. Millikan",
+          "to": "Robert Millikan"
+        },
+        {
+          "from": "Theoretical physicist",
+          "to": "Theoretical physics"
+        },
+        {
+          "from": "Viscount Haldane",
+          "to": "Richard Haldane, 1st Viscount Haldane"
+        },
+        {
+          "from": "Sir Herbert Samuel",
+          "to": "Herbert Samuel, 1st Viscount Samuel"
+        },
+        {
+          "from": "Hermann Einstein",
+          "to": "Einstein family",
+          "tofragment": "Hermann Einstein (Albert's father)"
+        },
+        {
+          "from": "Lieserl Einstein",
+          "to": "Einstein family",
+          "tofragment": "Lieserl Einstein"
+        },
+        {
+          "from": "Studentship",
+          "to": "Scholarship"
+        },
+        {
+          "from": "Planck spectrum",
+          "to": "Black body"
+        },
+        {
+          "from": "Pacifist",
+          "to": "Pacifism"
+        },
+        {
+          "from": "German citizenship",
+          "to": "German nationality law"
+        },
+        {
+          "from": "Sergei Konenkov",
+          "to": "Sergey Konenkov"
+        },
+        {
+          "from": "Emperor Yoshihito",
+          "to": "Emperor Taishō"
+        },
+        {
+          "from": "Charles-Ferdinand University",
+          "to": "Charles University",
+          "tofragment": "Charles-Ferdinand University (1622–1882)"
+        },
+        {
+          "from": "Eric Drummond",
+          "to": "Eric Drummond, 7th Earl of Perth"
+        },
+        {
+          "from": "United Jewish Appeal",
+          "to": "Jewish Federations of North America",
+          "tofragment": "United Jewish Appeal (1939–1999)"
+        },
+        {
+          "from": "Electrodynamics",
+          "to": "Electromagnetism"
+        },
+        {
+          "from": "S. N. Bose",
+          "to": "Satyendra Nath Bose"
+        },
+        {
+          "from": "Pauline Koch",
+          "to": "Einstein family",
+          "tofragment": "Pauline Einstein (Albert's mother)"
+        },
+        {
+          "from": "Kaiser Wilhelm Institute for Physics",
+          "to": "Kaiser Wilhelm Society"
+        },
+        {
+          "from": "Swiss Patent Office",
+          "to": "Swiss Federal Institute of Intellectual Property"
+        },
+        {
+          "from": "Elsa Löwenthal",
+          "to": "Elsa Einstein"
+        },
+        {
+          "from": "Precession of the perihelion of Mercury",
+          "to": "Tests of general relativity",
+          "tofragment": "Perihelion precession of Mercury"
+        },
+        {
+          "from": "Planck–Einstein relation",
+          "to": "Planck relation"
+        },
+        {
+          "from": "Annus Mirabilis papers",
+          "to": "Annus mirabilis papers"
+        },
+        {
+          "from": "Kaiser Wilhelm Institute",
+          "to": "Kaiser Wilhelm Society"
+        },
+        {
+          "from": "Academic Assistance Council",
+          "to": "Council for At-Risk Academics"
+        },
+        {
+          "from": "PhD",
+          "to": "Doctor of Philosophy"
+        },
+        {
+          "from": "EPR paradox",
+          "to": "Einstein–Podolsky–Rosen paradox"
+        },
+        {
+          "from": "Kant",
+          "to": "Immanuel Kant"
+        },
+        {
+          "from": "Frederick Lindemann",
+          "to": "Frederick Lindemann, 1st Viscount Cherwell"
+        },
+        {
+          "from": "Religious views of Albert Einstein",
+          "to": "Religious and philosophical views of Albert Einstein"
+        },
+        {
+          "from": "Equivalence of mass and energy",
+          "to": "Mass–energy equivalence"
+        },
+        {
+          "from": "Quantum physics",
+          "to": "Quantum mechanics"
+        },
+        {
+          "from": "Princeton",
+          "to": "Princeton University"
+        },
+        {
+          "from": "Fellowship",
+          "to": "Fellow"
+        },
+        {
+          "from": "List of Fellows of the Royal Society elected in 1921",
+          "to": "List of fellows of the Royal Society elected in 1921"
+        },
+        {
+          "from": "Canton of Aargau",
+          "to": "Aargau"
+        },
+        {
+          "from": "Max Talmud",
+          "to": "Max Talmey"
+        },
+        {
+          "from": "Pauline Einstein",
+          "to": "Einstein family",
+          "tofragment": "Pauline Einstein (Albert's mother)"
+        },
+        {
+          "from": "German nuclear weapons program",
+          "to": "German nuclear program during World War II"
+        },
+        {
+          "from": "Dahlem (Berlin)",
+          "to": "Dahlem, Berlin"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2467,
+          "ns": 0,
+          "title": "Aargau"
+        },
+        {
+          "pageid": 2983,
+          "ns": 0,
+          "title": "Austria-Hungary"
+        },
+        {
+          "pageid": 5786,
+          "ns": 0,
+          "title": "California Institute of Technology"
+        },
+        {
+          "pageid": 9532,
+          "ns": 0,
+          "title": "Electromagnetism"
+        },
+        {
+          "pageid": 10296,
+          "ns": 0,
+          "title": "Einstein–Podolsky–Rosen paradox"
+        },
+        {
+          "pageid": 12024,
+          "ns": 0,
+          "title": "General relativity"
+        },
+        {
+          "pageid": 14631,
+          "ns": 0,
+          "title": "Immanuel Kant"
+        },
+        {
+          "pageid": 23922,
+          "ns": 0,
+          "title": "Princeton University"
+        },
+        {
+          "pageid": 24956,
+          "ns": 0,
+          "title": "Pacifism"
+        },
+        {
+          "pageid": 25202,
+          "ns": 0,
+          "title": "Quantum mechanics"
+        },
+        {
+          "pageid": 26750,
+          "ns": 0,
+          "title": "Sri Lanka"
+        },
+        {
+          "pageid": 26962,
+          "ns": 0,
+          "title": "Special relativity"
+        },
+        {
+          "pageid": 38091,
+          "ns": 0,
+          "title": "Charles University"
+        },
+        {
+          "pageid": 38579,
+          "ns": 0,
+          "title": "Gravity"
+        },
+        {
+          "pageid": 44364,
+          "ns": 0,
+          "title": "Black body"
+        },
+        {
+          "pageid": 46836,
+          "ns": 0,
+          "title": "David Lloyd George"
+        },
+        {
+          "pageid": 49008,
+          "ns": 0,
+          "title": "Robert Millikan"
+        },
+        {
+          "pageid": 71777,
+          "ns": 0,
+          "title": "Satyendra Nath Bose"
+        },
+        {
+          "pageid": 180337,
+          "ns": 0,
+          "title": "Scholarship"
+        },
+        {
+          "pageid": 366699,
+          "ns": 0,
+          "title": "Richard Haldane, 1st Viscount Haldane"
+        },
+        {
+          "pageid": 381889,
+          "ns": 0,
+          "title": "Fellow"
+        },
+        {
+          "pageid": 422481,
+          "ns": 0,
+          "title": "Mass–energy equivalence"
+        },
+        {
+          "pageid": 518759,
+          "ns": 0,
+          "title": "Herbert Samuel, 1st Viscount Samuel"
+        },
+        {
+          "pageid": 769462,
+          "ns": 0,
+          "title": "Kaiser Wilhelm Society"
+        },
+        {
+          "pageid": 921111,
+          "ns": 0,
+          "title": "Frederick Lindemann, 1st Viscount Cherwell"
+        },
+        {
+          "pageid": 1300953,
+          "ns": 0,
+          "title": "Eric Drummond, 7th Earl of Perth"
+        },
+        {
+          "pageid": 1397318,
+          "ns": 0,
+          "title": "German nuclear program during World War II"
+        },
+        {
+          "pageid": 1784313,
+          "ns": 0,
+          "title": "Tests of general relativity"
+        },
+        {
+          "pageid": 2038941,
+          "ns": 0,
+          "title": "Annus mirabilis papers"
+        },
+        {
+          "pageid": 2882061,
+          "ns": 0,
+          "title": "Jewish Federations of North America"
+        },
+        {
+          "pageid": 3653402,
+          "ns": 0,
+          "title": "German nationality law"
+        },
+        {
+          "pageid": 4476295,
+          "ns": 0,
+          "title": "Sergey Konenkov"
+        },
+        {
+          "pageid": 4764461,
+          "ns": 0,
+          "title": "World War I"
+        },
+        {
+          "pageid": 8724535,
+          "ns": 0,
+          "title": "Elsa Einstein"
+        },
+        {
+          "pageid": 8744003,
+          "ns": 0,
+          "title": "Dahlem, Berlin"
+        },
+        {
+          "pageid": 9693869,
+          "ns": 0,
+          "title": "Council for At-Risk Academics"
+        },
+        {
+          "pageid": 17226911,
+          "ns": 0,
+          "title": "Swiss Federal Institute of Intellectual Property"
+        },
+        {
+          "pageid": 18742711,
+          "ns": 0,
+          "title": "Einstein family"
+        },
+        {
+          "pageid": 19594028,
+          "ns": 0,
+          "title": "Theoretical physics"
+        },
+        {
+          "pageid": 21031297,
+          "ns": 0,
+          "title": "Doctor of Philosophy"
+        },
+        {
+          "pageid": 23648993,
+          "ns": 0,
+          "title": "Emperor Taishō"
+        },
+        {
+          "pageid": 23797095,
+          "ns": 0,
+          "title": "Religious and philosophical views of Albert Einstein"
+        },
+        {
+          "pageid": 33155471,
+          "ns": 0,
+          "title": "Max Talmey"
+        },
+        {
+          "pageid": 41082128,
+          "ns": 0,
+          "title": "List of fellows of the Royal Society elected in 1921"
+        },
+        {
+          "pageid": 43346375,
+          "ns": 0,
+          "title": "Planck relation"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Lorentz invariance",
+          "to": "Lorentz scalar"
+        },
+        {
+          "from": "Photons",
+          "to": "Photon"
+        },
+        {
+          "from": "Statistical physics",
+          "to": "Statistical mechanics"
+        },
+        {
+          "from": "Nationalist",
+          "to": "Nationalism"
+        },
+        {
+          "from": "Gravitational lensing",
+          "to": "Gravitational lens"
+        },
+        {
+          "from": "Secular humanist",
+          "to": "Secular humanism"
+        },
+        {
+          "from": "Pantheistic",
+          "to": "Pantheism"
+        },
+        {
+          "from": "Black holes",
+          "to": "Black hole"
+        },
+        {
+          "from": "Nehru",
+          "to": "Jawaharlal Nehru"
+        },
+        {
+          "from": "Luminiferous ether",
+          "to": "Luminiferous aether"
+        },
+        {
+          "from": "Historically black college",
+          "to": "Historically black colleges and universities"
+        },
+        {
+          "from": "Schwarzschild black hole",
+          "to": "Schwarzschild metric"
+        },
+        {
+          "from": "Gauge symmetry",
+          "to": "Gauge theory"
+        },
+        {
+          "from": "Jewish people",
+          "to": "Jews"
+        },
+        {
+          "from": "Gauge invariance",
+          "to": "Gauge fixing"
+        },
+        {
+          "from": "Neutron stars",
+          "to": "Neutron star"
+        },
+        {
+          "from": "Theory of gravitation",
+          "to": "Gravity"
+        },
+        {
+          "from": "Geodesic equation",
+          "to": "Geodesic",
+          "tofragment": "Affine geodesics"
+        },
+        {
+          "from": "Bach",
+          "to": "Johann Sebastian Bach"
+        },
+        {
+          "from": "Rest energy",
+          "to": "Invariant mass",
+          "tofragment": "Rest energy"
+        },
+        {
+          "from": "Jewish religion",
+          "to": "Judaism"
+        },
+        {
+          "from": "Spinozism",
+          "to": "Baruch Spinoza",
+          "tofragment": "Philosophy"
+        },
+        {
+          "from": "Beethoven",
+          "to": "Ludwig van Beethoven"
+        },
+        {
+          "from": "Einstein's brain",
+          "to": "Brain of Albert Einstein"
+        },
+        {
+          "from": "Juilliard Quartet",
+          "to": "Juilliard String Quartet"
+        },
+        {
+          "from": "Capillary attraction",
+          "to": "Capillary action"
+        },
+        {
+          "from": "Hebrew",
+          "to": "Hebrew language"
+        },
+        {
+          "from": "German culture",
+          "to": "Culture of Germany"
+        },
+        {
+          "from": "Global government",
+          "to": "World government"
+        },
+        {
+          "from": "Mozart",
+          "to": "Wolfgang Amadeus Mozart"
+        },
+        {
+          "from": "Einstein–Szilárd letter",
+          "to": "Einstein–Szilard letter"
+        },
+        {
+          "from": "Menahem Ussishkin",
+          "to": "Menachem Ussishkin"
+        },
+        {
+          "from": "Translation invariance",
+          "to": "Translational symmetry"
+        },
+        {
+          "from": "Köchel catalog",
+          "to": "Köchel catalogue"
+        },
+        {
+          "from": "Arthur Stanley Eddington",
+          "to": "Arthur Eddington"
+        },
+        {
+          "from": "Ethical Culture",
+          "to": "Ethical movement"
+        },
+        {
+          "from": "Princeton Hospital",
+          "to": "Penn Medicine Princeton Medical Center"
+        },
+        {
+          "from": "Mozart violin sonatas",
+          "to": "List of sonatas by Wolfgang Amadeus Mozart",
+          "tofragment": "Violin"
+        },
+        {
+          "from": "NIST",
+          "to": "National Institute of Standards and Technology"
+        },
+        {
+          "from": "New York Society for Ethical Culture",
+          "to": "Ethical movement",
+          "tofragment": "In America"
+        },
+        {
+          "from": "Beethoven's violin sonatas (disambiguation)",
+          "to": "Beethoven's violin sonatas"
+        },
+        {
+          "from": "University of Colorado at Boulder",
+          "to": "University of Colorado Boulder"
+        },
+        {
+          "from": "German nuclear energy project",
+          "to": "German nuclear program during World War II"
+        },
+        {
+          "from": "Leó Szilárd",
+          "to": "Leo Szilard"
+        },
+        {
+          "from": "University of Berlin",
+          "to": "Humboldt University of Berlin"
+        },
+        {
+          "from": "PSR B1913+16",
+          "to": "Hulse–Taylor pulsar"
+        },
+        {
+          "from": "Einstein–Rosen bridges",
+          "to": "Wormhole",
+          "tofragment": "Einstein–Rosen bridges"
+        },
+        {
+          "from": "Belgian royal family",
+          "to": "Monarchy of Belgium",
+          "tofragment": "Royal family"
+        },
+        {
+          "from": "Atomic theory",
+          "to": "History of atomic theory"
+        },
+        {
+          "from": "Robert Andrews Millikan",
+          "to": "Robert Millikan"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2274,
+          "ns": 0,
+          "title": "Arthur Eddington"
+        },
+        {
+          "pageid": 2844,
+          "ns": 0,
+          "title": "History of atomic theory"
+        },
+        {
+          "pageid": 3408,
+          "ns": 0,
+          "title": "Baruch Spinoza"
+        },
+        {
+          "pageid": 4650,
+          "ns": 0,
+          "title": "Black hole"
+        },
+        {
+          "pageid": 13450,
+          "ns": 0,
+          "title": "Hebrew language"
+        },
+        {
+          "pageid": 15624,
+          "ns": 0,
+          "title": "Judaism"
+        },
+        {
+          "pageid": 16243,
+          "ns": 0,
+          "title": "Jawaharlal Nehru"
+        },
+        {
+          "pageid": 17914,
+          "ns": 0,
+          "title": "Ludwig van Beethoven"
+        },
+        {
+          "pageid": 18406,
+          "ns": 0,
+          "title": "Luminiferous aether"
+        },
+        {
+          "pageid": 21748,
+          "ns": 0,
+          "title": "Nationalism"
+        },
+        {
+          "pageid": 21869,
+          "ns": 0,
+          "title": "Neutron star"
+        },
+        {
+          "pageid": 21888,
+          "ns": 0,
+          "title": "National Institute of Standards and Technology"
+        },
+        {
+          "pageid": 23535,
+          "ns": 0,
+          "title": "Photon"
+        },
+        {
+          "pageid": 23590,
+          "ns": 0,
+          "title": "Pantheism"
+        },
+        {
+          "pageid": 28481,
+          "ns": 0,
+          "title": "Statistical mechanics"
+        },
+        {
+          "pageid": 29021,
+          "ns": 0,
+          "title": "Secular humanism"
+        },
+        {
+          "pageid": 33163,
+          "ns": 0,
+          "title": "Wolfgang Amadeus Mozart"
+        },
+        {
+          "pageid": 34043,
+          "ns": 0,
+          "title": "Wormhole"
+        },
+        {
+          "pageid": 38579,
+          "ns": 0,
+          "title": "Gravity"
+        },
+        {
+          "pageid": 48824,
+          "ns": 0,
+          "title": "Gravitational lens"
+        },
+        {
+          "pageid": 49008,
+          "ns": 0,
+          "title": "Robert Millikan"
+        },
+        {
+          "pageid": 56359,
+          "ns": 0,
+          "title": "Leo Szilard"
+        },
+        {
+          "pageid": 62276,
+          "ns": 0,
+          "title": "Monarchy of Belgium"
+        },
+        {
+          "pageid": 91096,
+          "ns": 0,
+          "title": "Geodesic"
+        },
+        {
+          "pageid": 99221,
+          "ns": 0,
+          "title": "World government"
+        },
+        {
+          "pageid": 162321,
+          "ns": 0,
+          "title": "Invariant mass"
+        },
+        {
+          "pageid": 219021,
+          "ns": 0,
+          "title": "Capillary action"
+        },
+        {
+          "pageid": 263866,
+          "ns": 0,
+          "title": "Juilliard String Quartet"
+        },
+        {
+          "pageid": 264606,
+          "ns": 0,
+          "title": "Schwarzschild metric"
+        },
+        {
+          "pageid": 289672,
+          "ns": 0,
+          "title": "University of Colorado Boulder"
+        },
+        {
+          "pageid": 308234,
+          "ns": 0,
+          "title": "Humboldt University of Berlin"
+        },
+        {
+          "pageid": 363831,
+          "ns": 0,
+          "title": "Historically black colleges and universities"
+        },
+        {
+          "pageid": 701100,
+          "ns": 0,
+          "title": "Translational symmetry"
+        },
+        {
+          "pageid": 1195868,
+          "ns": 0,
+          "title": "Culture of Germany"
+        },
+        {
+          "pageid": 1224330,
+          "ns": 0,
+          "title": "Köchel catalogue"
+        },
+        {
+          "pageid": 1397318,
+          "ns": 0,
+          "title": "German nuclear program during World War II"
+        },
+        {
+          "pageid": 1911511,
+          "ns": 0,
+          "title": "Lorentz scalar"
+        },
+        {
+          "pageid": 1923228,
+          "ns": 0,
+          "title": "Ethical movement"
+        },
+        {
+          "pageid": 2000736,
+          "ns": 0,
+          "title": "Gauge fixing"
+        },
+        {
+          "pageid": 2353934,
+          "ns": 0,
+          "title": "Hulse–Taylor pulsar"
+        },
+        {
+          "pageid": 2581668,
+          "ns": 0,
+          "title": "Menachem Ussishkin"
+        },
+        {
+          "pageid": 2988445,
+          "ns": 0,
+          "title": "Einstein–Szilard letter"
+        },
+        {
+          "pageid": 3627193,
+          "ns": 0,
+          "title": "Brain of Albert Einstein"
+        },
+        {
+          "pageid": 8939903,
+          "ns": 0,
+          "title": "Penn Medicine Princeton Medical Center"
+        },
+        {
+          "pageid": 9906294,
+          "ns": 0,
+          "title": "Johann Sebastian Bach"
+        },
+        {
+          "pageid": 23912155,
+          "ns": 0,
+          "title": "Gauge theory"
+        },
+        {
+          "pageid": 25955086,
+          "ns": 0,
+          "title": "Jews"
+        },
+        {
+          "pageid": 31334777,
+          "ns": 0,
+          "title": "List of sonatas by Wolfgang Amadeus Mozart"
+        },
+        {
+          "pageid": 38911765,
+          "ns": 0,
+          "title": "Beethoven's violin sonatas"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Charles Chaplin",
+          "to": "Charlie Chaplin"
+        },
+        {
+          "from": "Oxford University",
+          "to": "University of Oxford"
+        },
+        {
+          "from": "Strong nuclear force",
+          "to": "Strong interaction"
+        },
+        {
+          "from": "Quotations",
+          "to": "Quotation"
+        },
+        {
+          "from": "Bell inequality",
+          "to": "Bell's theorem"
+        },
+        {
+          "from": "Max Planck Institute",
+          "to": "Max Planck Society"
+        },
+        {
+          "from": "ETH",
+          "to": "ETH Zurich"
+        },
+        {
+          "from": "Conservation of angular momentum",
+          "to": "Angular momentum",
+          "tofragment": "Conservation of angular momentum"
+        },
+        {
+          "from": "Minkowski space",
+          "to": "Minkowski spacetime"
+        },
+        {
+          "from": "Universität Zürich",
+          "to": "University of Zurich"
+        },
+        {
+          "from": "Quantum information theory",
+          "to": "Quantum information science"
+        },
+        {
+          "from": "Frederick Alexander Lindemann",
+          "to": "Frederick Lindemann, 1st Viscount Cherwell"
+        },
+        {
+          "from": "Phys. Rev. Lett.",
+          "to": "Physical Review Letters"
+        },
+        {
+          "from": "Smithsonian Magazine",
+          "to": "Smithsonian (magazine)"
+        },
+        {
+          "from": "Right of publicity",
+          "to": "Personality rights"
+        },
+        {
+          "from": "Weak nuclear force",
+          "to": "Weak interaction"
+        },
+        {
+          "from": "Bohr-Sommerfeld quantization",
+          "to": "Old quantum theory"
+        },
+        {
+          "from": "Paul Karl Ludwig Drude",
+          "to": "Paul Drude"
+        },
+        {
+          "from": "Wavefunction",
+          "to": "Wave function"
+        },
+        {
+          "from": "Mass-energy equivalence",
+          "to": "Mass–energy equivalence"
+        },
+        {
+          "from": "Ferromagnetic materials",
+          "to": "Ferromagnetism",
+          "tofragment": "Ferromagnetic materials"
+        },
+        {
+          "from": "De Broglie waves",
+          "to": "Matter wave"
+        },
+        {
+          "from": "The Hebrew University of Jerusalem",
+          "to": "Hebrew University of Jerusalem"
+        },
+        {
+          "from": "Public Broadcasting Service",
+          "to": "PBS"
+        },
+        {
+          "from": "Angular momenta",
+          "to": "Angular momentum"
+        },
+        {
+          "from": "Thomas Martin Einstein",
+          "to": "Einstein family"
+        },
+        {
+          "from": "Baer's law",
+          "to": "Baer–Babinet law"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "ISSN (identifier)",
+          "to": "ISSN"
+        },
+        {
+          "from": "Bodleian Library Publishing",
+          "to": "Bodleian Libraries"
+        },
+        {
+          "from": "S2CID (identifier)",
+          "to": "Semantic Scholar",
+          "tofragment": "S2CID"
+        },
+        {
+          "from": "ArXiv (identifier)",
+          "to": "ArXiv"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "PMC (identifier)",
+          "to": "PubMed Central",
+          "tofragment": "PMCID"
+        },
+        {
+          "from": "Hdl (identifier)",
+          "to": "Handle System"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Bibcode (identifier)",
+          "to": "Bibcode"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "OSTI (identifier)",
+          "to": "Office of Scientific and Technical Information"
+        },
+        {
+          "from": "Minkowski diagram",
+          "to": "Spacetime diagram"
+        },
+        {
+          "from": "Subtle is the Lord: The Science and the Life of Albert Einstein",
+          "to": "Subtle Is the Lord"
+        },
+        {
+          "from": "Pierre Paul Émile Roux",
+          "to": "Émile Roux"
+        },
+        {
+          "from": "Branded Entertainment Network",
+          "to": "BENlabs"
+        },
+        {
+          "from": "Charles Thomson Rees Wilson",
+          "to": "C. T. R. Wilson"
+        },
+        {
+          "from": "Owen Willans Richardson",
+          "to": "Owen Richardson"
+        },
+        {
+          "from": "Edward Appleton",
+          "to": "Edward Victor Appleton"
+        },
+        {
+          "from": "Bernhard Caesar Einstein",
+          "to": "Bernhard Einstein"
+        },
+        {
+          "from": "Subtle is the Lord",
+          "to": "Subtle Is the Lord"
+        },
+        {
+          "from": "John Strutt, 3rd Baron Rayleigh",
+          "to": "John William Strutt, 3rd Baron Rayleigh"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2839,
+          "ns": 0,
+          "title": "Angular momentum"
+        },
+        {
+          "pageid": 5142,
+          "ns": 0,
+          "title": "Charlie Chaplin"
+        },
+        {
+          "pageid": 11807,
+          "ns": 0,
+          "title": "Ferromagnetism"
+        },
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 18381,
+          "ns": 0,
+          "title": "John William Strutt, 3rd Baron Rayleigh"
+        },
+        {
+          "pageid": 25199,
+          "ns": 0,
+          "title": "Quotation"
+        },
+        {
+          "pageid": 27984,
+          "ns": 0,
+          "title": "Strong interaction"
+        },
+        {
+          "pageid": 31797,
+          "ns": 0,
+          "title": "University of Oxford"
+        },
+        {
+          "pageid": 33629,
+          "ns": 0,
+          "title": "Weak interaction"
+        },
+        {
+          "pageid": 38751,
+          "ns": 0,
+          "title": "ArXiv"
+        },
+        {
+          "pageid": 56369,
+          "ns": 0,
+          "title": "Bell's theorem"
+        },
+        {
+          "pageid": 142608,
+          "ns": 0,
+          "title": "Smithsonian (magazine)"
+        },
+        {
+          "pageid": 145343,
+          "ns": 0,
+          "title": "Wave function"
+        },
+        {
+          "pageid": 210910,
+          "ns": 0,
+          "title": "ETH Zurich"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 225178,
+          "ns": 0,
+          "title": "Personality rights"
+        },
+        {
+          "pageid": 229104,
+          "ns": 0,
+          "title": "Matter wave"
+        },
+        {
+          "pageid": 229168,
+          "ns": 0,
+          "title": "Hebrew University of Jerusalem"
+        },
+        {
+          "pageid": 230488,
+          "ns": 0,
+          "title": "Minkowski spacetime"
+        },
+        {
+          "pageid": 234930,
+          "ns": 0,
+          "title": "ISSN"
+        },
+        {
+          "pageid": 314803,
+          "ns": 0,
+          "title": "University of Zurich"
+        },
+        {
+          "pageid": 396514,
+          "ns": 0,
+          "title": "Edward Victor Appleton"
+        },
+        {
+          "pageid": 422481,
+          "ns": 0,
+          "title": "Mass–energy equivalence"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 483624,
+          "ns": 0,
+          "title": "BENlabs"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 515769,
+          "ns": 0,
+          "title": "Owen Richardson"
+        },
+        {
+          "pageid": 577665,
+          "ns": 0,
+          "title": "C. T. R. Wilson"
+        },
+        {
+          "pageid": 614753,
+          "ns": 0,
+          "title": "Max Planck Society"
+        },
+        {
+          "pageid": 649723,
+          "ns": 0,
+          "title": "Physical Review Letters"
+        },
+        {
+          "pageid": 659094,
+          "ns": 0,
+          "title": "Quantum information science"
+        },
+        {
+          "pageid": 747090,
+          "ns": 0,
+          "title": "Émile Roux"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 921111,
+          "ns": 0,
+          "title": "Frederick Lindemann, 1st Viscount Cherwell"
+        },
+        {
+          "pageid": 1188104,
+          "ns": 0,
+          "title": "Old quantum theory"
+        },
+        {
+          "pageid": 1705633,
+          "ns": 0,
+          "title": "Office of Scientific and Technical Information"
+        },
+        {
+          "pageid": 1916867,
+          "ns": 0,
+          "title": "Paul Drude"
+        },
+        {
+          "pageid": 2775325,
+          "ns": 0,
+          "title": "PubMed Central"
+        },
+        {
+          "pageid": 4151146,
+          "ns": 0,
+          "title": "Bernhard Einstein"
+        },
+        {
+          "pageid": 11647860,
+          "ns": 0,
+          "title": "Spacetime diagram"
+        },
+        {
+          "pageid": 11705835,
+          "ns": 0,
+          "title": "Baer–Babinet law"
+        },
+        {
+          "pageid": 14092434,
+          "ns": 0,
+          "title": "Bibcode"
+        },
+        {
+          "pageid": 18742711,
+          "ns": 0,
+          "title": "Einstein family"
+        },
+        {
+          "pageid": 22048289,
+          "ns": 0,
+          "title": "Handle System"
+        },
+        {
+          "pageid": 26396167,
+          "ns": 0,
+          "title": "Bodleian Libraries"
+        },
+        {
+          "pageid": 29697498,
+          "ns": 0,
+          "title": "PBS"
+        },
+        {
+          "pageid": 48455863,
+          "ns": 0,
+          "title": "Semantic Scholar"
+        },
+        {
+          "pageid": 65780422,
+          "ns": 0,
+          "title": "Subtle Is the Lord"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Einstein cross",
+          "to": "Einstein Cross"
+        },
+        {
+          "from": "Einstein rings",
+          "to": "Einstein ring"
+        },
+        {
+          "from": "Weyl−Lewis−Papapetrou coordinates",
+          "to": "Weyl–Lewis–Papapetrou coordinates"
+        },
+        {
+          "from": "Hulse–Taylor binary",
+          "to": "Hulse–Taylor pulsar"
+        },
+        {
+          "from": "Igor Dmitriyevich Novikov",
+          "to": "Igor Novikov (astrophysicist)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 64491,
+          "ns": 0,
+          "title": "Igor Novikov (astrophysicist)"
+        },
+        {
+          "pageid": 598536,
+          "ns": 0,
+          "title": "Einstein ring"
+        },
+        {
+          "pageid": 1591653,
+          "ns": 0,
+          "title": "Einstein Cross"
+        },
+        {
+          "pageid": 2353934,
+          "ns": 0,
+          "title": "Hulse–Taylor pulsar"
+        },
+        {
+          "pageid": 40910086,
+          "ns": 0,
+          "title": "Weyl–Lewis–Papapetrou coordinates"
+        }
+      ]
+    }
+  }
+]

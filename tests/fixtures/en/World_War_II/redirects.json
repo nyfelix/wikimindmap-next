@@ -1,0 +1,1741 @@
+[
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "British Commonwealth",
+          "to": "Commonwealth of Nations"
+        },
+        {
+          "from": "Mussolini",
+          "to": "Benito Mussolini"
+        },
+        {
+          "from": "Nazi",
+          "to": "Nazism"
+        },
+        {
+          "from": "Totalitarian",
+          "to": "Totalitarianism"
+        },
+        {
+          "from": "Sino-Japanese War (1931-1945)",
+          "to": "Second Sino-Japanese War"
+        },
+        {
+          "from": "Stuka",
+          "to": "Junkers Ju 87"
+        },
+        {
+          "from": "Free French",
+          "to": "Free France"
+        },
+        {
+          "from": "Vichy Regime",
+          "to": "Vichy France"
+        },
+        {
+          "from": "Austro-Hungarian",
+          "to": "Austria-Hungary"
+        },
+        {
+          "from": "Spanish Republic",
+          "to": "Second Spanish Republic"
+        },
+        {
+          "from": "Polish corridor",
+          "to": "Polish Corridor"
+        },
+        {
+          "from": "V-J Day",
+          "to": "Victory over Japan Day"
+        },
+        {
+          "from": "Nanjing massacre",
+          "to": "Nanjing Massacre"
+        },
+        {
+          "from": "Irredentist",
+          "to": "Irredentism"
+        },
+        {
+          "from": "Carol II",
+          "to": "Carol II of Romania"
+        },
+        {
+          "from": "Chinese communists",
+          "to": "Chinese Communist Party"
+        },
+        {
+          "from": "Fall of France",
+          "to": "Battle of France"
+        },
+        {
+          "from": "Nation-states",
+          "to": "Nation state"
+        },
+        {
+          "from": "German invasion of Poland",
+          "to": "Invasion of Poland"
+        },
+        {
+          "from": "Oil fields",
+          "to": "Petroleum reservoir",
+          "tofragment": "Oil field"
+        },
+        {
+          "from": "Revanchist",
+          "to": "Revanchism"
+        },
+        {
+          "from": "Franco-Soviet pact",
+          "to": "Franco-Soviet Treaty of Mutual Assistance"
+        },
+        {
+          "from": "Counter-offensive",
+          "to": "Counterattack"
+        },
+        {
+          "from": "List of German-trained divisions of the National Revolutionary Army",
+          "to": "German-trained divisions of the National Revolutionary Army"
+        },
+        {
+          "from": "Kuomintang Army",
+          "to": "National Revolutionary Army"
+        },
+        {
+          "from": "CCP",
+          "to": "Chinese Communist Party"
+        },
+        {
+          "from": "Daladier",
+          "to": "Édouard Daladier"
+        },
+        {
+          "from": "Article x",
+          "to": "Covenant of the League of Nations"
+        },
+        {
+          "from": "Peking",
+          "to": "Beijing"
+        },
+        {
+          "from": "Baltic countries",
+          "to": "Baltic states"
+        },
+        {
+          "from": "Security Council",
+          "to": "United Nations Security Council"
+        },
+        {
+          "from": "Arsenal of democracy",
+          "to": "Arsenal of Democracy"
+        },
+        {
+          "from": "Neutrality Pact",
+          "to": "Soviet–Japanese Neutrality Pact"
+        },
+        {
+          "from": "List of World War II Battles",
+          "to": "List of World War II battles"
+        },
+        {
+          "from": "Hitler",
+          "to": "Adolf Hitler"
+        },
+        {
+          "from": "Taierzhuang",
+          "to": "Tai'erzhuang, Zaozhuang"
+        },
+        {
+          "from": "Militarism in Japan",
+          "to": "Japanese militarism"
+        },
+        {
+          "from": "Etymology of Ethiopia",
+          "to": "Ethiopia",
+          "tofragment": "Etymology"
+        },
+        {
+          "from": "Rome–Berlin Axis",
+          "to": "Axis powers"
+        },
+        {
+          "from": "Invaded Poland",
+          "to": "Invasion of Poland"
+        },
+        {
+          "from": "Global conflict",
+          "to": "World war"
+        },
+        {
+          "from": "Invaded the Soviet Union",
+          "to": "Operation Barbarossa"
+        },
+        {
+          "from": "Military globalisation",
+          "to": "Military globalization"
+        },
+        {
+          "from": "8 May 1945",
+          "to": "Victory in Europe Day"
+        },
+        {
+          "from": "Japan's invasion of Manchuria",
+          "to": "Japanese invasion of Manchuria"
+        },
+        {
+          "from": "United Kingdom declaration of war on Germany (1939)",
+          "to": "British declaration of war on Germany (1939)"
+        },
+        {
+          "from": "Statism in Shōwa Japan",
+          "to": "Kokkashugi"
+        },
+        {
+          "from": "Tsardom of Bulgaria (1908–1946)",
+          "to": "Kingdom of Bulgaria"
+        },
+        {
+          "from": "China–Germany relations (1912–1949)",
+          "to": "China–Germany relations (1913–1941)"
+        },
+        {
+          "from": "Pacification of Manchukuo",
+          "to": "Counterinsurgency in Manchuria"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2983,
+          "ns": 0,
+          "title": "Austria-Hungary"
+        },
+        {
+          "pageid": 7175,
+          "ns": 0,
+          "title": "Chinese Communist Party"
+        },
+        {
+          "pageid": 15226,
+          "ns": 0,
+          "title": "Irredentism"
+        },
+        {
+          "pageid": 16590,
+          "ns": 0,
+          "title": "Junkers Ju 87"
+        },
+        {
+          "pageid": 21627,
+          "ns": 0,
+          "title": "Nation state"
+        },
+        {
+          "pageid": 22618,
+          "ns": 0,
+          "title": "Operation Barbarossa"
+        },
+        {
+          "pageid": 24250,
+          "ns": 0,
+          "title": "Polish Corridor"
+        },
+        {
+          "pageid": 30439,
+          "ns": 0,
+          "title": "Totalitarianism"
+        },
+        {
+          "pageid": 31956,
+          "ns": 0,
+          "title": "United Nations Security Council"
+        },
+        {
+          "pageid": 37258,
+          "ns": 0,
+          "title": "Carol II of Romania"
+        },
+        {
+          "pageid": 43507,
+          "ns": 0,
+          "title": "Axis powers"
+        },
+        {
+          "pageid": 55066,
+          "ns": 0,
+          "title": "Nanjing Massacre"
+        },
+        {
+          "pageid": 69980,
+          "ns": 0,
+          "title": "Second Sino-Japanese War"
+        },
+        {
+          "pageid": 142735,
+          "ns": 0,
+          "title": "World war"
+        },
+        {
+          "pageid": 145516,
+          "ns": 0,
+          "title": "Free France"
+        },
+        {
+          "pageid": 187749,
+          "ns": 0,
+          "title": "Ethiopia"
+        },
+        {
+          "pageid": 188675,
+          "ns": 0,
+          "title": "Baltic states"
+        },
+        {
+          "pageid": 215257,
+          "ns": 0,
+          "title": "Victory in Europe Day"
+        },
+        {
+          "pageid": 228080,
+          "ns": 0,
+          "title": "Battle of France"
+        },
+        {
+          "pageid": 305300,
+          "ns": 0,
+          "title": "National Revolutionary Army"
+        },
+        {
+          "pageid": 309288,
+          "ns": 0,
+          "title": "Invasion of Poland"
+        },
+        {
+          "pageid": 365519,
+          "ns": 0,
+          "title": "Victory over Japan Day"
+        },
+        {
+          "pageid": 400253,
+          "ns": 0,
+          "title": "Édouard Daladier"
+        },
+        {
+          "pageid": 529430,
+          "ns": 0,
+          "title": "Soviet–Japanese Neutrality Pact"
+        },
+        {
+          "pageid": 551315,
+          "ns": 0,
+          "title": "Revanchism"
+        },
+        {
+          "pageid": 1159409,
+          "ns": 0,
+          "title": "Counterattack"
+        },
+        {
+          "pageid": 1952028,
+          "ns": 0,
+          "title": "Japanese militarism"
+        },
+        {
+          "pageid": 2055706,
+          "ns": 0,
+          "title": "Kokkashugi"
+        },
+        {
+          "pageid": 2731583,
+          "ns": 0,
+          "title": "Adolf Hitler"
+        },
+        {
+          "pageid": 2910801,
+          "ns": 0,
+          "title": "Petroleum reservoir"
+        },
+        {
+          "pageid": 3454962,
+          "ns": 0,
+          "title": "China–Germany relations (1913–1941)"
+        },
+        {
+          "pageid": 3470975,
+          "ns": 0,
+          "title": "German-trained divisions of the National Revolutionary Army"
+        },
+        {
+          "pageid": 3612475,
+          "ns": 0,
+          "title": "Kingdom of Bulgaria"
+        },
+        {
+          "pageid": 4010106,
+          "ns": 0,
+          "title": "Covenant of the League of Nations"
+        },
+        {
+          "pageid": 4701558,
+          "ns": 0,
+          "title": "Arsenal of Democracy"
+        },
+        {
+          "pageid": 5195347,
+          "ns": 0,
+          "title": "Second Spanish Republic"
+        },
+        {
+          "pageid": 7333723,
+          "ns": 0,
+          "title": "Japanese invasion of Manchuria"
+        },
+        {
+          "pageid": 7795926,
+          "ns": 0,
+          "title": "Counterinsurgency in Manchuria"
+        },
+        {
+          "pageid": 13556683,
+          "ns": 0,
+          "title": "Franco-Soviet Treaty of Mutual Assistance"
+        },
+        {
+          "pageid": 15862816,
+          "ns": 0,
+          "title": "List of World War II battles"
+        },
+        {
+          "pageid": 18603746,
+          "ns": 0,
+          "title": "Beijing"
+        },
+        {
+          "pageid": 19283178,
+          "ns": 0,
+          "title": "Benito Mussolini"
+        },
+        {
+          "pageid": 20599016,
+          "ns": 0,
+          "title": "Vichy France"
+        },
+        {
+          "pageid": 21175158,
+          "ns": 0,
+          "title": "Commonwealth of Nations"
+        },
+        {
+          "pageid": 22039047,
+          "ns": 0,
+          "title": "Tai'erzhuang, Zaozhuang"
+        },
+        {
+          "pageid": 31045316,
+          "ns": 0,
+          "title": "Nazism"
+        },
+        {
+          "pageid": 42682692,
+          "ns": 0,
+          "title": "British declaration of war on Germany (1939)"
+        },
+        {
+          "pageid": 48000422,
+          "ns": 0,
+          "title": "Military globalization"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Communist",
+          "to": "Communism"
+        },
+        {
+          "from": "SS",
+          "to": "Schutzstaffel"
+        },
+        {
+          "from": "Invasion of Normandy",
+          "to": "Operation Overlord"
+        },
+        {
+          "from": "Rhine River",
+          "to": "Rhine"
+        },
+        {
+          "from": "Area bombing",
+          "to": "Area bombardment"
+        },
+        {
+          "from": "Rangoon",
+          "to": "Yangon"
+        },
+        {
+          "from": "Decolonisation",
+          "to": "Decolonization"
+        },
+        {
+          "from": "Labour force",
+          "to": "Workforce"
+        },
+        {
+          "from": "Nazi medical experiments",
+          "to": "Nazi human experimentation"
+        },
+        {
+          "from": "Volga River",
+          "to": "Volga"
+        },
+        {
+          "from": "Great powers",
+          "to": "Great power"
+        },
+        {
+          "from": "Spheres of influence",
+          "to": "Sphere of influence"
+        },
+        {
+          "from": "Amphibious assault",
+          "to": "Amphibious warfare"
+        },
+        {
+          "from": "Creation of Israel",
+          "to": "History of Israel",
+          "tofragment": "British Mandate of Palestine (1920–1948)"
+        },
+        {
+          "from": "Aeronautical",
+          "to": "Aeronautics"
+        },
+        {
+          "from": "Nazi racial policy",
+          "to": "Racial policy of Nazi Germany"
+        },
+        {
+          "from": "Atomic bombing of Hiroshima and Nagasaki",
+          "to": "Atomic bombings of Hiroshima and Nagasaki"
+        },
+        {
+          "from": "Auschwitz",
+          "to": "Auschwitz concentration camp"
+        },
+        {
+          "from": "Trizone",
+          "to": "Bizone"
+        },
+        {
+          "from": "Italian partisans",
+          "to": "Italian resistance movement"
+        },
+        {
+          "from": "Operation Longcloth",
+          "to": "Chindits",
+          "tofragment": "Operation Longcloth"
+        },
+        {
+          "from": "Leningrad region",
+          "to": "Leningrad Oblast"
+        },
+        {
+          "from": "Volhynia massacres",
+          "to": "Massacres of Poles in Volhynia and Eastern Galicia"
+        },
+        {
+          "from": "D-Day",
+          "to": "Normandy landings"
+        },
+        {
+          "from": "Philippine Commonwealth",
+          "to": "Commonwealth of the Philippines"
+        },
+        {
+          "from": "Victims of the Holocaust",
+          "to": "Victims of Nazi Germany"
+        },
+        {
+          "from": "President of the Reich",
+          "to": "President of Germany (1919–1945)"
+        },
+        {
+          "from": "South Sakhalin",
+          "to": "Karafuto Prefecture"
+        },
+        {
+          "from": "Grand Admiral",
+          "to": "Grand admiral"
+        },
+        {
+          "from": "New Fourth Army incident",
+          "to": "New Fourth Army Incident"
+        },
+        {
+          "from": "Japanese expansion (1941–42)",
+          "to": "Pacific War",
+          "tofragment": "Japanese offensives, 1941–42"
+        },
+        {
+          "from": "Slavic peoples",
+          "to": "Slavs"
+        },
+        {
+          "from": "Holocaust",
+          "to": "The Holocaust"
+        },
+        {
+          "from": "Italian civil war",
+          "to": "Italian Civil War"
+        },
+        {
+          "from": "Sook Ching massacre",
+          "to": "Sook Ching"
+        },
+        {
+          "from": "Free French Forces",
+          "to": "French Liberation Army"
+        },
+        {
+          "from": "Hitler committed suicide",
+          "to": "Death of Adolf Hitler"
+        },
+        {
+          "from": "Chancellor of the Reich",
+          "to": "Chancellor of Germany",
+          "tofragment": "Nazi Germany (1933–1945)"
+        },
+        {
+          "from": "Anti-aircraft weaponry",
+          "to": "Anti-aircraft warfare"
+        },
+        {
+          "from": "Don River",
+          "to": "Don (river)"
+        },
+        {
+          "from": "Lvov–Sandomierz offensive",
+          "to": "Lvov-Sandomierz Offensive"
+        },
+        {
+          "from": "Nazi crimes against the Polish nation",
+          "to": "Nazi war crimes in occupied Poland during World War II"
+        },
+        {
+          "from": "United Nations General Assembly Resolution 2758",
+          "to": "United Nations General Assembly Resolution 2758 (XXVI)"
+        },
+        {
+          "from": "Japan surrendered",
+          "to": "Surrender of Japan"
+        },
+        {
+          "from": "Polish population transfers (1944–1946)",
+          "to": "Polish population transfers in 1944–1946"
+        },
+        {
+          "from": "United Kingdom declaration of war on Japan",
+          "to": "British declaration of war on Japan"
+        },
+        {
+          "from": "Black May (1943)",
+          "to": "Black May (World War II)"
+        },
+        {
+          "from": "Mid-20th century baby boom",
+          "to": "Mid-20th-century baby boom"
+        },
+        {
+          "from": "Soviet re-occupation of the Baltic states (1944)",
+          "to": "Soviet occupation of the Baltic states (1944)"
+        },
+        {
+          "from": "German occupation of Albania",
+          "to": "Kingdom of Albania (1943-1944)"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 2006,
+          "ns": 0,
+          "title": "Auschwitz concentration camp"
+        },
+        {
+          "pageid": 2082,
+          "ns": 0,
+          "title": "Aeronautics"
+        },
+        {
+          "pageid": 13808,
+          "ns": 0,
+          "title": "History of Israel"
+        },
+        {
+          "pageid": 25845,
+          "ns": 0,
+          "title": "Rhine"
+        },
+        {
+          "pageid": 27040,
+          "ns": 0,
+          "title": "Schutzstaffel"
+        },
+        {
+          "pageid": 29440,
+          "ns": 0,
+          "title": "Slavs"
+        },
+        {
+          "pageid": 57404,
+          "ns": 0,
+          "title": "Yangon"
+        },
+        {
+          "pageid": 63639,
+          "ns": 0,
+          "title": "Volga"
+        },
+        {
+          "pageid": 92945,
+          "ns": 0,
+          "title": "Don (river)"
+        },
+        {
+          "pageid": 145551,
+          "ns": 0,
+          "title": "Racial policy of Nazi Germany"
+        },
+        {
+          "pageid": 146640,
+          "ns": 0,
+          "title": "Anti-aircraft warfare"
+        },
+        {
+          "pageid": 160735,
+          "ns": 0,
+          "title": "Commonwealth of the Philippines"
+        },
+        {
+          "pageid": 240727,
+          "ns": 0,
+          "title": "Sphere of influence"
+        },
+        {
+          "pageid": 252854,
+          "ns": 0,
+          "title": "Normandy landings"
+        },
+        {
+          "pageid": 262874,
+          "ns": 0,
+          "title": "Chindits"
+        },
+        {
+          "pageid": 302084,
+          "ns": 0,
+          "title": "Decolonization"
+        },
+        {
+          "pageid": 342641,
+          "ns": 0,
+          "title": "Pacific War"
+        },
+        {
+          "pageid": 372836,
+          "ns": 0,
+          "title": "Great power"
+        },
+        {
+          "pageid": 407083,
+          "ns": 0,
+          "title": "President of Germany (1919–1945)"
+        },
+        {
+          "pageid": 464698,
+          "ns": 0,
+          "title": "Massacres of Poles in Volhynia and Eastern Galicia"
+        },
+        {
+          "pageid": 480845,
+          "ns": 0,
+          "title": "Leningrad Oblast"
+        },
+        {
+          "pageid": 512833,
+          "ns": 0,
+          "title": "Bizone"
+        },
+        {
+          "pageid": 640822,
+          "ns": 0,
+          "title": "United Nations General Assembly Resolution 2758 (XXVI)"
+        },
+        {
+          "pageid": 668981,
+          "ns": 0,
+          "title": "Grand admiral"
+        },
+        {
+          "pageid": 795034,
+          "ns": 0,
+          "title": "Amphibious warfare"
+        },
+        {
+          "pageid": 857255,
+          "ns": 0,
+          "title": "Workforce"
+        },
+        {
+          "pageid": 864716,
+          "ns": 0,
+          "title": "Sook Ching"
+        },
+        {
+          "pageid": 883438,
+          "ns": 0,
+          "title": "Italian resistance movement"
+        },
+        {
+          "pageid": 1033897,
+          "ns": 0,
+          "title": "Death of Adolf Hitler"
+        },
+        {
+          "pageid": 1040755,
+          "ns": 0,
+          "title": "Karafuto Prefecture"
+        },
+        {
+          "pageid": 1315408,
+          "ns": 0,
+          "title": "New Fourth Army Incident"
+        },
+        {
+          "pageid": 1469767,
+          "ns": 0,
+          "title": "Area bombardment"
+        },
+        {
+          "pageid": 2133933,
+          "ns": 0,
+          "title": "Lvov-Sandomierz Offensive"
+        },
+        {
+          "pageid": 2395137,
+          "ns": 0,
+          "title": "Surrender of Japan"
+        },
+        {
+          "pageid": 5451628,
+          "ns": 0,
+          "title": "Nazi war crimes in occupied Poland during World War II"
+        },
+        {
+          "pageid": 6426881,
+          "ns": 0,
+          "title": "Victims of Nazi Germany"
+        },
+        {
+          "pageid": 6723726,
+          "ns": 0,
+          "title": "Operation Overlord"
+        },
+        {
+          "pageid": 8210419,
+          "ns": 0,
+          "title": "Mid-20th-century baby boom"
+        },
+        {
+          "pageid": 9209651,
+          "ns": 0,
+          "title": "Communism"
+        },
+        {
+          "pageid": 9618287,
+          "ns": 0,
+          "title": "Black May (World War II)"
+        },
+        {
+          "pageid": 9870769,
+          "ns": 0,
+          "title": "Italian Civil War"
+        },
+        {
+          "pageid": 10396793,
+          "ns": 0,
+          "title": "The Holocaust"
+        },
+        {
+          "pageid": 10732235,
+          "ns": 0,
+          "title": "British declaration of war on Japan"
+        },
+        {
+          "pageid": 11778948,
+          "ns": 0,
+          "title": "Atomic bombings of Hiroshima and Nagasaki"
+        },
+        {
+          "pageid": 12829313,
+          "ns": 0,
+          "title": "Kingdom of Albania (1943-1944)"
+        },
+        {
+          "pageid": 13822446,
+          "ns": 0,
+          "title": "Polish population transfers in 1944–1946"
+        },
+        {
+          "pageid": 19359918,
+          "ns": 0,
+          "title": "Nazi human experimentation"
+        },
+        {
+          "pageid": 20890626,
+          "ns": 0,
+          "title": "Chancellor of Germany"
+        },
+        {
+          "pageid": 27232904,
+          "ns": 0,
+          "title": "Soviet occupation of the Baltic states (1944)"
+        },
+        {
+          "pageid": 63637549,
+          "ns": 0,
+          "title": "French Liberation Army"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Clarendon Press",
+          "to": "Oxford University Press",
+          "tofragment": "Clarendon Press"
+        },
+        {
+          "from": "Houghton Mifflin Company",
+          "to": "Houghton Mifflin Harcourt"
+        },
+        {
+          "from": "US Government Printing Office",
+          "to": "United States Government Publishing Office"
+        },
+        {
+          "from": "Romanian People's Republic",
+          "to": "Socialist Republic of Romania",
+          "tofragment": "Romanian People's Republic"
+        },
+        {
+          "from": "Fosse Ardeatine",
+          "to": "Ardeatine massacre"
+        },
+        {
+          "from": "Kent State University Press",
+          "to": "Kent State University",
+          "tofragment": "Kent State University Press"
+        },
+        {
+          "from": "Journal of Military History",
+          "to": "The Journal of Military History"
+        },
+        {
+          "from": "Conway Maritime Press",
+          "to": "Conway Publishing"
+        },
+        {
+          "from": "Naval Institute Press",
+          "to": "United States Naval Institute",
+          "tofragment": "Naval Institute Press"
+        },
+        {
+          "from": "Close combat",
+          "to": "Close-quarters battle"
+        },
+        {
+          "from": "Soviet Studies",
+          "to": "Europe-Asia Studies"
+        },
+        {
+          "from": "William B. Eerdmans",
+          "to": "William B. Eerdmans Publishing Company",
+          "tofragment": "William B. Eerdmans"
+        },
+        {
+          "from": "Trinity nuclear test",
+          "to": "Trinity (nuclear test)"
+        },
+        {
+          "from": "Praeger Publishers",
+          "to": "ABC-Clio",
+          "tofragment": "Praeger Publishing"
+        },
+        {
+          "from": "Lexington Books",
+          "to": "Bloomsbury Publishing",
+          "tofragment": "Acquisitions and imprints"
+        },
+        {
+          "from": "SIGINT",
+          "to": "Signals intelligence"
+        },
+        {
+          "from": "Hambledon Continuum",
+          "to": "Continuum International Publishing Group"
+        },
+        {
+          "from": "Blackwell Publishing",
+          "to": "Wiley-Blackwell",
+          "tofragment": "Blackwell Publishing history"
+        },
+        {
+          "from": "The Third Reich at War",
+          "to": "The Third Reich Trilogy",
+          "tofragment": "The Third Reich at War"
+        },
+        {
+          "from": "Lerner Publications",
+          "to": "Lerner Publishing Group"
+        },
+        {
+          "from": "HarperPress",
+          "to": "HarperCollins"
+        },
+        {
+          "from": "Pimlico (publishing imprint)",
+          "to": "Random House"
+        },
+        {
+          "from": "MBI Publishing Company",
+          "to": "The Quarto Group"
+        },
+        {
+          "from": "Cassell Military Paperbacks",
+          "to": "Orion Publishing Group"
+        },
+        {
+          "from": "Frank Cass Publishers",
+          "to": "Taylor & Francis"
+        },
+        {
+          "from": "Alamogordo Bombing and Gunnery Range",
+          "to": "White Sands Missile Range"
+        },
+        {
+          "from": "Keegan, John",
+          "to": "John Keegan"
+        },
+        {
+          "from": "Lawrence Kritzman",
+          "to": "Lawrence D. Kritzman"
+        },
+        {
+          "from": "International Security",
+          "to": "International Security (journal)"
+        },
+        {
+          "from": "ISBN (identifier)",
+          "to": "ISBN"
+        },
+        {
+          "from": "PMID (identifier)",
+          "to": "PubMed",
+          "tofragment": "PubMed identifier"
+        },
+        {
+          "from": "ISSN (identifier)",
+          "to": "ISSN"
+        },
+        {
+          "from": "John Wiley & Sons",
+          "to": "Wiley (publisher)"
+        },
+        {
+          "from": "S2CID (identifier)",
+          "to": "Semantic Scholar",
+          "tofragment": "S2CID"
+        },
+        {
+          "from": "Doi (identifier)",
+          "to": "Digital object identifier"
+        },
+        {
+          "from": "PMC (identifier)",
+          "to": "PubMed Central",
+          "tofragment": "PMCID"
+        },
+        {
+          "from": "LCCN (identifier)",
+          "to": "Library of Congress Control Number"
+        },
+        {
+          "from": "Hdl (identifier)",
+          "to": "Handle System"
+        },
+        {
+          "from": "OCLC (identifier)",
+          "to": "OCLC",
+          "tofragment": "Identifiers and linked data"
+        },
+        {
+          "from": "Bibcode (identifier)",
+          "to": "Bibcode"
+        },
+        {
+          "from": "ASIN (identifier)",
+          "to": "Amazon Standard Identification Number"
+        },
+        {
+          "from": "JSTOR (identifier)",
+          "to": "JSTOR",
+          "tofragment": "Content"
+        },
+        {
+          "from": "OL (identifier)",
+          "to": "Open Library"
+        },
+        {
+          "from": "Jane's Information Group",
+          "to": "Janes Information Services"
+        },
+        {
+          "from": "John K. Fairbank",
+          "to": "John King Fairbank"
+        },
+        {
+          "from": "UCL Press",
+          "to": "University College London",
+          "tofragment": "UCL Press"
+        },
+        {
+          "from": "David Glantz",
+          "to": "David M. Glantz"
+        },
+        {
+          "from": "Cornell Southeast Asia Program",
+          "to": "Cornell University Southeast Asia Program"
+        },
+        {
+          "from": "Mulberry harbour",
+          "to": "Mulberry harbours"
+        },
+        {
+          "from": "J. Bradford DeLong",
+          "to": "James Bradford DeLong"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 14919,
+          "ns": 0,
+          "title": "ISBN"
+        },
+        {
+          "pageid": 16986,
+          "ns": 0,
+          "title": "Kent State University"
+        },
+        {
+          "pageid": 29122,
+          "ns": 0,
+          "title": "Signals intelligence"
+        },
+        {
+          "pageid": 48518,
+          "ns": 0,
+          "title": "Oxford University Press"
+        },
+        {
+          "pageid": 52029,
+          "ns": 0,
+          "title": "University College London"
+        },
+        {
+          "pageid": 60033,
+          "ns": 0,
+          "title": "Trinity (nuclear test)"
+        },
+        {
+          "pageid": 71898,
+          "ns": 0,
+          "title": "Amazon Standard Identification Number"
+        },
+        {
+          "pageid": 182947,
+          "ns": 0,
+          "title": "Random House"
+        },
+        {
+          "pageid": 216262,
+          "ns": 0,
+          "title": "JSTOR"
+        },
+        {
+          "pageid": 234930,
+          "ns": 0,
+          "title": "ISSN"
+        },
+        {
+          "pageid": 253375,
+          "ns": 0,
+          "title": "HarperCollins"
+        },
+        {
+          "pageid": 288726,
+          "ns": 0,
+          "title": "United States Government Publishing Office"
+        },
+        {
+          "pageid": 297157,
+          "ns": 0,
+          "title": "Socialist Republic of Romania"
+        },
+        {
+          "pageid": 301060,
+          "ns": 0,
+          "title": "White Sands Missile Range"
+        },
+        {
+          "pageid": 355632,
+          "ns": 0,
+          "title": "John Keegan"
+        },
+        {
+          "pageid": 356000,
+          "ns": 0,
+          "title": "Close-quarters battle"
+        },
+        {
+          "pageid": 357909,
+          "ns": 0,
+          "title": "Mulberry harbours"
+        },
+        {
+          "pageid": 422994,
+          "ns": 0,
+          "title": "Digital object identifier"
+        },
+        {
+          "pageid": 503009,
+          "ns": 0,
+          "title": "PubMed"
+        },
+        {
+          "pageid": 537930,
+          "ns": 0,
+          "title": "Wiley (publisher)"
+        },
+        {
+          "pageid": 558559,
+          "ns": 0,
+          "title": "Taylor & Francis"
+        },
+        {
+          "pageid": 659753,
+          "ns": 0,
+          "title": "James Bradford DeLong"
+        },
+        {
+          "pageid": 709409,
+          "ns": 0,
+          "title": "Ardeatine massacre"
+        },
+        {
+          "pageid": 719489,
+          "ns": 0,
+          "title": "Bloomsbury Publishing"
+        },
+        {
+          "pageid": 883885,
+          "ns": 0,
+          "title": "OCLC"
+        },
+        {
+          "pageid": 1003088,
+          "ns": 0,
+          "title": "Houghton Mifflin Harcourt"
+        },
+        {
+          "pageid": 1092026,
+          "ns": 0,
+          "title": "Janes Information Services"
+        },
+        {
+          "pageid": 1203265,
+          "ns": 0,
+          "title": "United States Naval Institute"
+        },
+        {
+          "pageid": 1474234,
+          "ns": 0,
+          "title": "John King Fairbank"
+        },
+        {
+          "pageid": 1491462,
+          "ns": 0,
+          "title": "Library of Congress Control Number"
+        },
+        {
+          "pageid": 2326940,
+          "ns": 0,
+          "title": "Orion Publishing Group"
+        },
+        {
+          "pageid": 2775325,
+          "ns": 0,
+          "title": "PubMed Central"
+        },
+        {
+          "pageid": 3011287,
+          "ns": 0,
+          "title": "Open Library"
+        },
+        {
+          "pageid": 3414532,
+          "ns": 0,
+          "title": "David M. Glantz"
+        },
+        {
+          "pageid": 3549920,
+          "ns": 0,
+          "title": "International Security (journal)"
+        },
+        {
+          "pageid": 4694268,
+          "ns": 0,
+          "title": "Wiley-Blackwell"
+        },
+        {
+          "pageid": 7259208,
+          "ns": 0,
+          "title": "William B. Eerdmans Publishing Company"
+        },
+        {
+          "pageid": 8842846,
+          "ns": 0,
+          "title": "Continuum International Publishing Group"
+        },
+        {
+          "pageid": 9074870,
+          "ns": 0,
+          "title": "ABC-Clio"
+        },
+        {
+          "pageid": 10128567,
+          "ns": 0,
+          "title": "The Journal of Military History"
+        },
+        {
+          "pageid": 12004346,
+          "ns": 0,
+          "title": "Europe-Asia Studies"
+        },
+        {
+          "pageid": 13494970,
+          "ns": 0,
+          "title": "Lawrence D. Kritzman"
+        },
+        {
+          "pageid": 14092434,
+          "ns": 0,
+          "title": "Bibcode"
+        },
+        {
+          "pageid": 18539872,
+          "ns": 0,
+          "title": "Lerner Publishing Group"
+        },
+        {
+          "pageid": 22048289,
+          "ns": 0,
+          "title": "Handle System"
+        },
+        {
+          "pageid": 25125388,
+          "ns": 0,
+          "title": "The Third Reich Trilogy"
+        },
+        {
+          "pageid": 29203197,
+          "ns": 0,
+          "title": "Conway Publishing"
+        },
+        {
+          "pageid": 31219260,
+          "ns": 0,
+          "title": "Cornell University Southeast Asia Program"
+        },
+        {
+          "pageid": 33052865,
+          "ns": 0,
+          "title": "The Quarto Group"
+        },
+        {
+          "pageid": 48455863,
+          "ns": 0,
+          "title": "Semantic Scholar"
+        }
+      ]
+    }
+  },
+  {
+    "batchcomplete": true,
+    "query": {
+      "redirects": [
+        {
+          "from": "Department of the Army",
+          "to": "United States Department of the Army"
+        },
+        {
+          "from": "HMSO",
+          "to": "Office of Public Sector Information"
+        },
+        {
+          "from": "Modern period",
+          "to": "Modern era"
+        },
+        {
+          "from": "John Roberts (historian)",
+          "to": "J. M. Roberts"
+        },
+        {
+          "from": "Buddhist culture",
+          "to": "Culture of Buddhism"
+        },
+        {
+          "from": "Hindu culture",
+          "to": "Hinduism",
+          "tofragment": "Culture"
+        },
+        {
+          "from": "Italian Ethiopia",
+          "to": "Italian East Africa"
+        },
+        {
+          "from": "History of Asian art",
+          "to": "Asian art"
+        },
+        {
+          "from": "Rodopi (publisher)",
+          "to": "Brill Publishers",
+          "tofragment": "Rodopi"
+        },
+        {
+          "from": "Art of Asia",
+          "to": "Asian art"
+        },
+        {
+          "from": "European mythology",
+          "to": "List of mythologies",
+          "tofragment": "Europe"
+        },
+        {
+          "from": "Finnish paganism",
+          "to": "Baltic Finnic paganism"
+        },
+        {
+          "from": "Switzerland during the World Wars",
+          "to": "Switzerland during World War I and World War II"
+        },
+        {
+          "from": "Timothy D. Snyder",
+          "to": "Timothy Snyder"
+        },
+        {
+          "from": "Greenwood Press",
+          "to": "Greenwood Publishing Group"
+        },
+        {
+          "from": "Slovakia during World War II",
+          "to": "Slovak Republic (1939–1945)"
+        },
+        {
+          "from": "Asian mythology",
+          "to": "List of Asian mythologies"
+        },
+        {
+          "from": "David Reynolds (English historian)",
+          "to": "David Reynolds (historian)"
+        },
+        {
+          "from": "Azali Bábism",
+          "to": "Subh-i-Azal"
+        },
+        {
+          "from": "Timeline of World War II (1945–1991)",
+          "to": "Timeline of World War II (1945)"
+        },
+        {
+          "from": "Western dance (Europe and North America)",
+          "to": "Dance",
+          "tofragment": "Europe and North America"
+        },
+        {
+          "from": "Oriental Orthodoxy",
+          "to": "Oriental Orthodox Churches"
+        },
+        {
+          "from": "Persosphere",
+          "to": "Greater Iran"
+        },
+        {
+          "from": "Frankish mythology",
+          "to": "Frankish paganism"
+        },
+        {
+          "from": "Collectivism",
+          "to": "Social organization",
+          "tofragment": "Collectivism and individualism"
+        },
+        {
+          "from": "Easternization",
+          "to": "Post-Western era"
+        },
+        {
+          "from": "Steven Zaloga",
+          "to": "Steven J. Zaloga"
+        },
+        {
+          "from": "American Theater (World War II)",
+          "to": "American theater of World War II"
+        },
+        {
+          "from": "Wales in the World Wars",
+          "to": "Wales in the world wars"
+        },
+        {
+          "from": "Polish prisoners-of-war in the Soviet Union after 1939",
+          "to": "Polish prisoners of war in the Soviet Union after 1939"
+        },
+        {
+          "from": "Military history of Australia during World War II",
+          "to": "Australia in World War II"
+        },
+        {
+          "from": "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation",
+          "to": "BIMSTEC"
+        },
+        {
+          "from": "Italian protectorate of Albania (1939–1943)",
+          "to": "Kingdom of Albania in personal union with Italy"
+        },
+        {
+          "from": "United Kingdom home front during World War II",
+          "to": "British home front during World War II"
+        },
+        {
+          "from": "Leased Territory of Guangzhouwan",
+          "to": "Guangzhouwan"
+        },
+        {
+          "from": "Muslim world",
+          "to": "Islamic world"
+        },
+        {
+          "from": "Rowman & Littlefield",
+          "to": "Globe Pequot Publishing Group"
+        },
+        {
+          "from": "Invasion of the Kuril Islands",
+          "to": "Soviet invasion of the Kuril Islands"
+        }
+      ],
+      "pages": [
+        {
+          "pageid": 7885,
+          "ns": 0,
+          "title": "Dance"
+        },
+        {
+          "pageid": 13543,
+          "ns": 0,
+          "title": "Hinduism"
+        },
+        {
+          "pageid": 39597,
+          "ns": 0,
+          "title": "Italian East Africa"
+        },
+        {
+          "pageid": 191429,
+          "ns": 0,
+          "title": "Islamic world"
+        },
+        {
+          "pageid": 410474,
+          "ns": 0,
+          "title": "Office of Public Sector Information"
+        },
+        {
+          "pageid": 574608,
+          "ns": 0,
+          "title": "Culture of Buddhism"
+        },
+        {
+          "pageid": 705206,
+          "ns": 0,
+          "title": "Guangzhouwan"
+        },
+        {
+          "pageid": 798348,
+          "ns": 0,
+          "title": "United States Department of the Army"
+        },
+        {
+          "pageid": 805994,
+          "ns": 0,
+          "title": "Subh-i-Azal"
+        },
+        {
+          "pageid": 907241,
+          "ns": 0,
+          "title": "Soviet invasion of the Kuril Islands"
+        },
+        {
+          "pageid": 1120468,
+          "ns": 0,
+          "title": "Switzerland during World War I and World War II"
+        },
+        {
+          "pageid": 1152323,
+          "ns": 0,
+          "title": "Baltic Finnic paganism"
+        },
+        {
+          "pageid": 1586702,
+          "ns": 0,
+          "title": "Asian art"
+        },
+        {
+          "pageid": 2489628,
+          "ns": 0,
+          "title": "Slovak Republic (1939–1945)"
+        },
+        {
+          "pageid": 2728998,
+          "ns": 0,
+          "title": "American theater of World War II"
+        },
+        {
+          "pageid": 2811304,
+          "ns": 0,
+          "title": "J. M. Roberts"
+        },
+        {
+          "pageid": 3520872,
+          "ns": 0,
+          "title": "Steven J. Zaloga"
+        },
+        {
+          "pageid": 3978097,
+          "ns": 0,
+          "title": "Greater Iran"
+        },
+        {
+          "pageid": 4028762,
+          "ns": 0,
+          "title": "BIMSTEC"
+        },
+        {
+          "pageid": 4399619,
+          "ns": 0,
+          "title": "Modern era"
+        },
+        {
+          "pageid": 4578255,
+          "ns": 0,
+          "title": "Australia in World War II"
+        },
+        {
+          "pageid": 5100437,
+          "ns": 0,
+          "title": "Social organization"
+        },
+        {
+          "pageid": 5832465,
+          "ns": 0,
+          "title": "Timothy Snyder"
+        },
+        {
+          "pageid": 8751403,
+          "ns": 0,
+          "title": "List of mythologies"
+        },
+        {
+          "pageid": 10228433,
+          "ns": 0,
+          "title": "Globe Pequot Publishing Group"
+        },
+        {
+          "pageid": 10527071,
+          "ns": 0,
+          "title": "Polish prisoners of war in the Soviet Union after 1939"
+        },
+        {
+          "pageid": 10951079,
+          "ns": 0,
+          "title": "Kingdom of Albania in personal union with Italy"
+        },
+        {
+          "pageid": 11495940,
+          "ns": 0,
+          "title": "List of Asian mythologies"
+        },
+        {
+          "pageid": 11701576,
+          "ns": 0,
+          "title": "Frankish paganism"
+        },
+        {
+          "pageid": 15687863,
+          "ns": 0,
+          "title": "Greenwood Publishing Group"
+        },
+        {
+          "pageid": 16555042,
+          "ns": 0,
+          "title": "Timeline of World War II (1945)"
+        },
+        {
+          "pageid": 20274524,
+          "ns": 0,
+          "title": "David Reynolds (historian)"
+        },
+        {
+          "pageid": 21468377,
+          "ns": 0,
+          "title": "Oriental Orthodox Churches"
+        },
+        {
+          "pageid": 30874803,
+          "ns": 0,
+          "title": "Brill Publishers"
+        },
+        {
+          "pageid": 56774882,
+          "ns": 0,
+          "title": "British home front during World War II"
+        },
+        {
+          "pageid": 71502612,
+          "ns": 0,
+          "title": "Wales in the world wars"
+        },
+        {
+          "pageid": 75333056,
+          "ns": 0,
+          "title": "Post-Western era"
+        }
+      ]
+    }
+  }
+]

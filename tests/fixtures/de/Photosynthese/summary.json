@@ -1,0 +1,20 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 3327081,
+        "ns": 0,
+        "title": "Photosynthese",
+        "extract": "Die Photosynthese (altgriechisch φῶς phō̂s, deutsch ‚Licht‘ und σύνθεσις sýnthesis, deutsch ‚Zusammensetzung‘, auch Fotosynthese geschrieben) ist ein physiologischer Prozess zur Erzeugung energiereicher Biomoleküle aus energieärmeren Stoffen mit Hilfe von Lichtenergie. Sie wird von Pflanzen, Algen und manchen Bakterien betrieben. Bei diesem biochemischen Vorgang wird Lichtenergie mit Hilfe von lichtabsorbierenden Farbstoffen wie Chlorophyll in chemische Energie umgewandelt.",
+        "thumbnail": {
+          "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Plagiomnium_affine_laminazellen.jpeg/330px-Plagiomnium_affine_laminazellen.jpeg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+          "width": 320,
+          "height": 240
+        },
+        "description": "Erzeugen von energiereicheren Stoffen aus energieärmeren Stoffen mittels Lichtenergie",
+        "descriptionsource": "central"
+      }
+    ]
+  }
+}

@@ -277,15 +277,18 @@ The trail lives in `history.state` (so browser back and forward work) and is mir
 ## 9. Test fixtures
 
 ```
-tests/fixtures/{lang}/{Title}/
+tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en "Zürich" → Zurich)
   page.html          Parsoid HTML as returned by rest.php
-  headers.json       response headers (Content-Type profile, revision)
-  summary.json
-  redirects.json     action=query&redirects for the article's link targets
+  headers.json       { url, status, headers }: final URL, Content-Type profile, ETag (revision)
+  summary.json       action=query&prop=extracts|pageimages|description for the article
+  redirects.json     array of raw action=query&redirects responses, one per batch of 50,
+                     for the link targets marked mw-redirect
   linksback.json     links back to the center (M3)
   pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
-tests/fixtures/{lang}/siteinfo.json
+tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
 ```
+
+Record with `npm run fixtures -- <lang> "<Title>"`, or `npm run fixtures -- --starter` for the whole set below.
 
 Starter set, recorded in M0:
 - **en:** Mind map, Tony Buzan, Concept map, Zürich, Albert Einstein, Photosynthesis, World War II, Python (programming language), Chess, Mount Everest

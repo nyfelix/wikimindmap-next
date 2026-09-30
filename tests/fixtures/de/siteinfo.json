@@ -1,0 +1,481 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "general": {
+      "mainpage": "Wikipedia:Hauptseite",
+      "base": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "sitename": "Wikipedia",
+      "mainpageisdomainroot": false,
+      "logo": "//de.wikipedia.org/static/images/project-logos/dewiki.png",
+      "generator": "MediaWiki 1.47.0-wmf.21",
+      "phpversion": "8.3.33",
+      "phpsapi": "fpm-fcgi",
+      "dbtype": "mysql",
+      "dbversion": "10.11.16-MariaDB-log",
+      "imagewhitelistenabled": false,
+      "langconversion": true,
+      "linkconversion": true,
+      "titleconversion": true,
+      "linkprefixcharset": "",
+      "linkprefix": "",
+      "linktrail": "/^([äöüßa-z]+)(.*)$/sDu",
+      "legaltitlechars": " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+",
+      "invalidusernamechars": "@:>=",
+      "allunicodefixes": false,
+      "git-hash": "cd9a9ec60cf8bc91f3d996684a88b33968c1aaef",
+      "git-branch": "wmf/1.47.0-wmf.21",
+      "case": "first-letter",
+      "lang": "de",
+      "fallback": [
+        {
+          "code": "en"
+        }
+      ],
+      "rtl": false,
+      "fallback8bitEncoding": "windows-1252",
+      "readonly": false,
+      "writeapi": true,
+      "maxarticlesize": 2097152,
+      "timezone": "Europe/Berlin",
+      "timeoffset": 120,
+      "articlepath": "/wiki/$1",
+      "scriptpath": "/w",
+      "script": "/w/index.php",
+      "variantarticlepath": false,
+      "server": "//de.wikipedia.org",
+      "servername": "de.wikipedia.org",
+      "wikiid": "dewiki",
+      "time": "2026-09-30T18:12:18Z",
+      "misermode": true,
+      "uploadsenabled": true,
+      "maxuploadsize": 5368709120,
+      "minuploadchunksize": 1024,
+      "galleryoptions": {
+        "imagesPerRow": 0,
+        "imageWidth": 120,
+        "imageHeight": 120,
+        "captionLength": true,
+        "showBytes": true,
+        "mode": "traditional",
+        "showDimensions": true
+      },
+      "thumblimits": {
+        "0": 180,
+        "1": 250,
+        "2": 400
+      },
+      "imagelimits": {
+        "0": {
+          "width": 320,
+          "height": 240
+        },
+        "1": {
+          "width": 640,
+          "height": 480
+        },
+        "2": {
+          "width": 800,
+          "height": 600
+        },
+        "3": {
+          "width": 1024,
+          "height": 768
+        },
+        "4": {
+          "width": 1280,
+          "height": 1024
+        },
+        "5": {
+          "width": 2560,
+          "height": 2048
+        }
+      },
+      "favicon": "https://de.wikipedia.org/static/favicon/wikipedia.ico",
+      "centralidlookupprovider": "CentralAuth",
+      "allcentralidlookupproviders": [
+        "CentralAuth",
+        "local"
+      ],
+      "interwikimagic": true,
+      "magiclinks": {
+        "ISBN": true,
+        "PMID": true,
+        "RFC": true
+      },
+      "categorycollation": "uppercase",
+      "nofollowlinks": true,
+      "nofollownsexceptions": [],
+      "nofollowdomainexceptions": [
+        "mediawiki.org",
+        "wikibooks.org",
+        "wikimedia.com",
+        "wikimedia.org",
+        "wikinews.org",
+        "wikipedia.org",
+        "wikiquote.org",
+        "wikisource.org",
+        "wikiversity.org",
+        "wiktionary.org",
+        "wikivoyage.org",
+        "wikidata.org",
+        "wikifunctions.org",
+        "tools.wmflabs.org",
+        "toolforge.org",
+        "etherpad.wmflabs.org"
+      ],
+      "externallinktarget": false,
+      "wmf-config": {
+        "wmfMasterDatacenter": "eqiad",
+        "wmfEtcdLastModifiedIndex": 3922170
+      },
+      "citeresponsivereferences": false,
+      "max-page-id": 13991864,
+      "linter": {
+        "high": [
+          "deletable-table-tag",
+          "duplicate-ids",
+          "html5-misnesting",
+          "misc-tidy-replacement-issues",
+          "multiline-html-table-in-list",
+          "multiple-unclosed-formatting-tags",
+          "pwrap-bug-workaround",
+          "self-closed-tag",
+          "template-arg-in-extension-tag",
+          "tidy-font-bug",
+          "tidy-whitespace-bug",
+          "unclosed-quotes-in-heading"
+        ],
+        "medium": [
+          "bogus-image-options",
+          "fostered",
+          "misnested-tag",
+          "multi-colon-escape",
+          "wikilink-in-extlink"
+        ],
+        "low": [
+          "empty-heading",
+          "missing-end-tag",
+          "missing-end-tag-in-heading",
+          "night-mode-unaware-background-color",
+          "obsolete-tag",
+          "pre-expansion",
+          "stripped-tag"
+        ]
+      },
+      "mobileserver": "https://de.wikipedia.org",
+      "pageviewservice-supported-metrics": {
+        "pageviews": {
+          "pageviews": true,
+          "uniques": false
+        },
+        "siteviews": {
+          "pageviews": true,
+          "uniques": true
+        },
+        "mostviewed": {
+          "pageviews": true,
+          "uniques": false
+        }
+      },
+      "readinglists-config": {
+        "maxListsPerUser": 100,
+        "maxEntriesPerList": 5000,
+        "deletedRetentionDays": 30
+      }
+    },
+    "namespaces": {
+      "0": {
+        "id": 0,
+        "case": "first-letter",
+        "name": "",
+        "subpages": false,
+        "content": true,
+        "nonincludable": false
+      },
+      "1": {
+        "id": 1,
+        "case": "first-letter",
+        "name": "Diskussion",
+        "subpages": true,
+        "canonical": "Talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "2": {
+        "id": 2,
+        "case": "first-letter",
+        "name": "Benutzer",
+        "subpages": true,
+        "canonical": "User",
+        "content": false,
+        "nonincludable": false
+      },
+      "3": {
+        "id": 3,
+        "case": "first-letter",
+        "name": "Benutzer Diskussion",
+        "subpages": true,
+        "canonical": "User talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "4": {
+        "id": 4,
+        "case": "first-letter",
+        "name": "Wikipedia",
+        "subpages": true,
+        "canonical": "Project",
+        "content": false,
+        "nonincludable": false
+      },
+      "5": {
+        "id": 5,
+        "case": "first-letter",
+        "name": "Wikipedia Diskussion",
+        "subpages": true,
+        "canonical": "Project talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "6": {
+        "id": 6,
+        "case": "first-letter",
+        "name": "Datei",
+        "subpages": false,
+        "canonical": "File",
+        "content": false,
+        "nonincludable": false
+      },
+      "7": {
+        "id": 7,
+        "case": "first-letter",
+        "name": "Datei Diskussion",
+        "subpages": true,
+        "canonical": "File talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "8": {
+        "id": 8,
+        "case": "first-letter",
+        "name": "MediaWiki",
+        "subpages": false,
+        "canonical": "MediaWiki",
+        "content": false,
+        "nonincludable": false,
+        "namespaceprotection": "editinterface"
+      },
+      "9": {
+        "id": 9,
+        "case": "first-letter",
+        "name": "MediaWiki Diskussion",
+        "subpages": true,
+        "canonical": "MediaWiki talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "10": {
+        "id": 10,
+        "case": "first-letter",
+        "name": "Vorlage",
+        "subpages": true,
+        "canonical": "Template",
+        "content": false,
+        "nonincludable": false
+      },
+      "11": {
+        "id": 11,
+        "case": "first-letter",
+        "name": "Vorlage Diskussion",
+        "subpages": true,
+        "canonical": "Template talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "12": {
+        "id": 12,
+        "case": "first-letter",
+        "name": "Hilfe",
+        "subpages": true,
+        "canonical": "Help",
+        "content": false,
+        "nonincludable": false
+      },
+      "13": {
+        "id": 13,
+        "case": "first-letter",
+        "name": "Hilfe Diskussion",
+        "subpages": true,
+        "canonical": "Help talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "14": {
+        "id": 14,
+        "case": "first-letter",
+        "name": "Kategorie",
+        "subpages": true,
+        "canonical": "Category",
+        "content": false,
+        "nonincludable": false
+      },
+      "15": {
+        "id": 15,
+        "case": "first-letter",
+        "name": "Kategorie Diskussion",
+        "subpages": true,
+        "canonical": "Category talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "100": {
+        "id": 100,
+        "case": "first-letter",
+        "name": "Portal",
+        "subpages": true,
+        "canonical": "Portal",
+        "content": false,
+        "nonincludable": false
+      },
+      "101": {
+        "id": 101,
+        "case": "first-letter",
+        "name": "Portal Diskussion",
+        "subpages": true,
+        "canonical": "Portal Diskussion",
+        "content": false,
+        "nonincludable": false
+      },
+      "710": {
+        "id": 710,
+        "case": "first-letter",
+        "name": "TimedText",
+        "subpages": false,
+        "canonical": "TimedText",
+        "content": false,
+        "nonincludable": false
+      },
+      "711": {
+        "id": 711,
+        "case": "first-letter",
+        "name": "TimedText talk",
+        "subpages": false,
+        "canonical": "TimedText talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "828": {
+        "id": 828,
+        "case": "first-letter",
+        "name": "Modul",
+        "subpages": true,
+        "canonical": "Module",
+        "content": false,
+        "nonincludable": false
+      },
+      "829": {
+        "id": 829,
+        "case": "first-letter",
+        "name": "Modul Diskussion",
+        "subpages": true,
+        "canonical": "Module talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "1728": {
+        "id": 1728,
+        "case": "first-letter",
+        "name": "Veranstaltung",
+        "subpages": true,
+        "canonical": "Event",
+        "content": false,
+        "nonincludable": false
+      },
+      "1729": {
+        "id": 1729,
+        "case": "first-letter",
+        "name": "Veranstaltung Diskussion",
+        "subpages": true,
+        "canonical": "Event talk",
+        "content": false,
+        "nonincludable": false
+      },
+      "-2": {
+        "id": -2,
+        "case": "first-letter",
+        "name": "Medium",
+        "subpages": false,
+        "canonical": "Media",
+        "content": false,
+        "nonincludable": false
+      },
+      "-1": {
+        "id": -1,
+        "case": "first-letter",
+        "name": "Spezial",
+        "subpages": false,
+        "canonical": "Special",
+        "content": false,
+        "nonincludable": false
+      }
+    },
+    "namespacealiases": [
+      {
+        "id": 2,
+        "alias": "Benutzerin"
+      },
+      {
+        "id": 3,
+        "alias": "BD"
+      },
+      {
+        "id": 3,
+        "alias": "Benutzerin Diskussion"
+      },
+      {
+        "id": 4,
+        "alias": "WP"
+      },
+      {
+        "id": 5,
+        "alias": "WD"
+      },
+      {
+        "id": 5,
+        "alias": "Wikipedia talk"
+      },
+      {
+        "id": 6,
+        "alias": "Bild"
+      },
+      {
+        "id": 6,
+        "alias": "Image"
+      },
+      {
+        "id": 7,
+        "alias": "Bild Diskussion"
+      },
+      {
+        "id": 7,
+        "alias": "Image talk"
+      },
+      {
+        "id": 12,
+        "alias": "H"
+      },
+      {
+        "id": 13,
+        "alias": "HD"
+      },
+      {
+        "id": 100,
+        "alias": "P"
+      },
+      {
+        "id": 101,
+        "alias": "PD"
+      }
+    ]
+  }
+}
