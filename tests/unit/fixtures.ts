@@ -1,7 +1,10 @@
 /** Reads recorded API responses from tests/fixtures (datamodel.md §9). */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
-import type { ArticleRef, Siteinfo } from "../../src/core/types.ts";
+import { Window } from "happy-dom";
+import type { Article, ArticleRef, Siteinfo } from "../../src/core/types.ts";
+import { parseParsoid } from "../../src/sources/parsoid.ts";
+import { redirectPairs, type RedirectsResponse } from "../../src/sources/redirects.ts";
 import { parseSiteinfo, type SiteinfoResponse } from "../../src/sources/siteinfo.ts";
 
 export const FIXTURES = join(import.meta.dirname, "..", "fixtures");
@@ -49,4 +52,43 @@ export function siteinfo(lang: string): Siteinfo {
     siteinfoCache.set(lang, info);
   }
   return info;
+}
+
+const articleCache = new Map<string, Article>();
+
+/**
+ * The parsed Article of a fixture, parsed once per test file with its own happy-dom window
+ * (closed right away: happy-dom keeps documents alive otherwise).
+ */
+export function fixtureArticle(f: Fixture): Article {
+  let article = articleCache.get(f.dir);
+  if (!article) {
+    const window = new Window();
+    try {
+      article = parseParsoid(
+        readText(f, "page.html"),
+        f.ref,
+        siteinfo(f.ref.lang),
+        new window.DOMParser() as unknown as DOMParser,
+        { fetchedAt: "2026-09-30T00:00:00.000Z", warn: () => {} },
+      );
+    } finally {
+      void window.happyDOM.close();
+    }
+    articleCache.set(f.dir, article);
+  }
+  return article;
+}
+
+/** The recorded redirects of a fixture as the map the lenses take. */
+export function fixtureRedirects(f: Fixture): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const batch of readJson<RedirectsResponse[]>(f, "redirects.json")) {
+    const titles = [
+      ...(batch.query?.normalized ?? []).map((n) => n.from),
+      ...(batch.query?.redirects ?? []).map((r) => r.from),
+    ];
+    for (const [from, to] of redirectPairs(titles, batch)) map.set(from, to);
+  }
+  return map;
 }

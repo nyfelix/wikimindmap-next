@@ -210,6 +210,8 @@ export interface MapNode {
   count?: number;
   /** Set on every node that has children; true = folded. */
   folded?: boolean;
+  /** Leaves: the article doesn't exist (muted, no ⊕). */
+  redLink?: boolean;
   /** Leaves: shown as a symbol (styleguide.md §5). */
   direction?: LinkDirection;
   /** Layout hint (bipolar, fixed kinds slots). */

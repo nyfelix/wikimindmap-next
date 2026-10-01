@@ -188,6 +188,7 @@ interface MapNode {
   weight?: number;             // 0–1 relative page views; drives the bar behind the label (Kinds, Links). Symbol size stays fixed.
   count?: number;              // "more" nodes and folded groups: hidden items
   folded?: boolean;            // set on every node that has children; true = folded
+  redLink?: boolean;           // leaves: the article doesn't exist (muted, no ⊕)
   direction?: LinkDirection;   // leaves: shown as a symbol (styleguide.md §5)
   side?: "left" | "right" | "top";   // layout hint (bipolar, fixed kinds slots)
   meta?: Record<string, string | number>;  // shown in the preview card

@@ -55,9 +55,9 @@ A design decision made together with the owner, before any map is rendered.
 
 ### US-01 See an article as a mind map · L
 *As a curious reader, I want to see an article's chapters as branches and its links as leaves, so I get an overview at a glance.*
-- [ ] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
-- [ ] Only `body` and `hatnote` links are shown by default
-- [ ] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
+- [x] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
+- [x] Only `body` and `hatnote` links are shown by default
+- [x] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
 - [ ] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
   - chapters are split between the right and left side, clockwise from the top right, so both sides get a similar number of rows
   - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
@@ -91,7 +91,7 @@ A design decision made together with the owner, before any map is rendered.
 - [ ] Works from 1024 px up, and without layout breaks on tablets (768–1023 px)
 
 ### TS-09 Lens registry · S
-- [ ] `lenses/index.ts` exports `lenses: Record<LensId, Lens>` and `getLens(id)`
+- [x] `lenses/index.ts` exports `lenses: Record<LensId, Lens>` and `getLens(id)`
 - [ ] The UI only talks to lenses through this registry, so M5–M7 add a file and one line
 
 **Done when:** the typography and logo are decided, and every starter fixture renders as a readable, full-window Chapters map in `/dev/fixture/…`, in light and dark, with folding, pan and zoom.
