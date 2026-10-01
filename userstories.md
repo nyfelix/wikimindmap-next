@@ -63,57 +63,6 @@ A design decision made together with the owner, before any map is rendered.
 
 Goal: the full 2007 loop with live data.
 
-### US-04 Search for a term · M
-*As a reader, I want to type a term and pick from suggestions, so I land on the right article.*
-- [ ] A search box with suggestions after 2 characters, debounced by 200 ms. Each suggestion shows its title and short description.
-- [ ] Arrow keys, Enter and Escape work. Choosing a suggestion navigates to `/{lang}/{Title}`.
-- [ ] Pressing Enter without choosing picks the first suggestion. With no results, the box shows "No article found for '…'".
-- [ ] `/` focuses the search field from anywhere
-- [ ] **Start page** (`/`): the full-window map of the article "Mind map" in the reader's language (en *Mind map*, de *Mindmap*, fr *Carte heuristique*; other languages via `langlinks` from en, falling back to en). The search field is focused and highlighted, and the map labels are shown (`styleguide.md` §15).
-
-### US-05 Open any article by URL · M
-*As a teacher, I want to share a link that opens a specific map, so my class starts at the same place.*
-- [ ] `/{lang}/{Title}` loads the article live, applying the query parameters from `datamodel.md` §8
-- [ ] Redirect titles are replaced in the URL by the target title (`/en/Mindmap` becomes `/en/Mind_map`), taken from the final URL after `rest.php`'s 307 redirect
-- [ ] Unknown titles show "This article doesn't exist on {lang}.wikipedia.org", with a search box
-- [ ] Loading shows the center immediately and the branches as soon as they're parsed. There's no blank screen.
-- [ ] Network errors show a message with a retry button
-- [ ] Loading, not-found and error states look as specified in `styleguide.md` §15
-
-### US-06 Preview a linked article · M
-*As a reader, I want a short preview of a leaf before I jump, so I know where I'm going.*
-- [ ] Clicking or pressing Enter on a leaf label opens the preview card next to it (`styleguide.md` §4). It shows the title, short description, the extract (1–3 sentences), a 64 px thumbnail if there is one, and which chapter the link is in.
-- [ ] Buttons: "⊕ Make it the center" and "Open on Wikipedia ↗" (opens in a new tab)
-- [ ] Clicking the center pill shows the article's own summary
-- [ ] Summaries load when a card opens and are cached. Escape closes the card.
-
-### US-07 Recenter on a leaf · L
-*As a curious reader, I want to make any leaf the new center with one tap, so I can wander through Wikipedia.*
-- [ ] Every leaf has a ⊕ button (a separate focusable control with `aria-label="Make {title} the center"`)
-- [ ] Recentering navigates to the new URL. The new map animates in, nodes present in both maps move, and the others fade. ≤ 450 ms; none with reduced motion.
-- [ ] The lens, density and hide/show settings are kept; folds are reset
-- [ ] Red links (missing articles) look as in `styleguide.md` §4: muted label, dashed ring instead of a direction symbol, no ⊕
-
-### US-08 See and use my trail · M
-*As a curious reader, I want to see the path I took and jump back, so I don't get lost.*
-- [ ] A trail in the bottom-left panel: the `TRAIL` label in mono capitals, then `Mind map › Tony Buzan › Chess`, with the current step highlighted (`styleguide.md` §2)
-- [ ] Clicking a step goes back to it. Browser back and forward move along the trail.
-- [ ] Recentering from an earlier step cuts off the later steps
-- [ ] The trail survives a page reload (`sessionStorage`)
-
-### US-17 See the direction of every link · S
-*As a curious reader, I want to see at a glance whether a linked article also links back, so I can tell close relatives from passing mentions.*
-- [ ] Every leaf shows its direction symbol, as specified in `styleguide.md` §5: *out*, *both ways*, or *pending* while loading
-- [ ] Symbols differ in shape and fill, not only color, and are mirrored on the left side
-- [ ] The preview card states the direction in words
-- [ ] The symbol legend sits in the bottom-right controls and in the drawer
-
-### TS-10 Caching · S
-- [ ] TanStack Query with an IndexedDB persister, using the keys and lifetimes from `architecture.md` §6
-- [ ] Going back along the trail makes no network request (verified in an e2e test)
-- [ ] The app still works when IndexedDB is unavailable
-- [ ] Leaves whose map is already cached are shown in bold (`styleguide.md` §4)
-
 **Done when:** a reader can search, open a map, preview, recenter three times and go back, all with live data on the deployed site.
 
 ---
@@ -399,3 +348,68 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Unit tests with a recorded response; one test checks that continuation (`plcontinue`) is followed
 
 > Note: The check also counts links through the center's redirects (Mind map has 16, such as "Mind-map"): `pltitles` holds the center and up to 49 of them. `redirects=1` resolves leaf titles that are redirects, and results are mapped back to the asked title. `linksback.json` is recorded for every starter fixture (`npm run fixtures -- --linksback-only` re-checks it without re-fetching pages). The continuation test uses a synthetic response, since a live `plcontinue` is rare with `pltitles`. Caching comes with TS-10.
+
+### TS-10 Caching · S · M3
+- [x] TanStack Query with an IndexedDB persister, using the keys and lifetimes from `architecture.md` §6
+- [x] Going back along the trail makes no network request (verified in an e2e test)
+- [x] The app still works when IndexedDB is unavailable
+- [x] Leaves whose map is already cached are shown in bold (`styleguide.md` §4)
+
+> Note: One persister per lifetime (`experimental_createQueryPersister` on idb-keyval, structured clones, no JSON round trip). Query data is plain arrays, not Maps, so it persists. Article keys have no revision (see `architecture.md` §6). Links back are merged into one growing entry per article and persisted with `persistQueryByKey`. Without IndexedDB every storage call quietly does nothing; tested in a unit test and an e2e test.
+
+### US-05 Open any article by URL · M · M3
+*As a teacher, I want to share a link that opens a specific map, so my class starts at the same place.*
+- [x] `/{lang}/{Title}` loads the article live, applying the query parameters from `datamodel.md` §8
+- [x] Redirect titles are replaced in the URL by the target title (`/en/Mindmap` becomes `/en/Mind_map`), taken from the final URL after `rest.php`'s 307 redirect
+- [x] Unknown titles show "This article doesn't exist on {lang}.wikipedia.org", with a search box
+- [x] Loading shows the center immediately and the branches as soon as they're parsed. There's no blank screen.
+- [x] Network errors show a message with a retry button
+- [x] Loading, not-found and error states look as specified in `styleguide.md` §15
+
+> Note: The 307 from rest.php gives the real title; the URL is then replaced (history `replace`, trail step renamed). Branches appear once the redirects of flagged links are resolved (usually one more request), so leaves don't first show duplicates. `LOADING` appears only after 600 ms. After a network error the last good map stays, dimmed, under the error card. A stub without links in its text switches See also on by itself.
+
+### US-06 Preview a linked article · M · M3
+*As a reader, I want a short preview of a leaf before I jump, so I know where I'm going.*
+- [x] Clicking or pressing Enter on a leaf label opens the preview card next to it (`styleguide.md` §4). It shows the title, short description, the extract (1–3 sentences), a 64 px thumbnail if there is one, and which chapter the link is in.
+- [x] Buttons: "⊕ Make it the center" and "Open on Wikipedia ↗" (opens in a new tab)
+- [x] Clicking the center pill shows the article's own summary
+- [x] Summaries load when a card opens and are cached. Escape closes the card.
+
+> Note: Focus moves into the card and back to the node on close; a click on the empty canvas also closes it. Red links open a card saying the article doesn't exist yet.
+
+### US-07 Recenter on a leaf · L · M3
+*As a curious reader, I want to make any leaf the new center with one tap, so I can wander through Wikipedia.*
+- [x] Every leaf has a ⊕ button (a separate focusable control with `aria-label="Make {title} the center"`)
+- [x] Recentering navigates to the new URL. The new map animates in, nodes present in both maps move, and the others fade. ≤ 450 ms; none with reduced motion.
+- [x] The lens, density and hide/show settings are kept; folds are reset
+- [x] Red links (missing articles) look as in `styleguide.md` §4: muted label, dashed ring instead of a direction symbol, no ⊕
+
+> Note: While the next article loads, the map shows the new center alone: the clicked leaf glides into the middle and the rest fades, and the view glides to the new fit; branches fade in when the article arrives (instant from cache). Nodes are matched by ID, or by article for the center and leaves. The 95 % scale of the old map (`styleguide.md` §7) is left out: the moving nodes carry the transition.
+
+### US-08 See and use my trail · M · M3
+*As a curious reader, I want to see the path I took and jump back, so I don't get lost.*
+- [x] A trail in the bottom-left panel: the `TRAIL` label in mono capitals, then `Mind map › Tony Buzan › Chess`, with the current step highlighted (`styleguide.md` §2)
+- [x] Clicking a step goes back to it. Browser back and forward move along the trail.
+- [x] Recentering from an earlier step cuts off the later steps
+- [x] The trail survives a page reload (`sessionStorage`)
+
+> Note: Steps built in this tab are history entries, so clicking a step goes back through history; the saved trail keeps the steps ahead visible after going back.
+
+### US-17 See the direction of every link · S · M3
+*As a curious reader, I want to see at a glance whether a linked article also links back, so I can tell close relatives from passing mentions.*
+- [x] Every leaf shows its direction symbol, as specified in `styleguide.md` §5: *out*, *both ways*, or *pending* while loading
+- [x] Symbols differ in shape and fill, not only color, and are mirrored on the left side
+- [x] The preview card states the direction in words
+- [x] The symbol legend sits in the bottom-right controls and in the drawer
+
+> Note: The legend is in the bottom-right controls; the drawer comes with US-18 (M4). Links back also count links through the center's redirects (TS-16).
+
+### US-04 Search for a term · M · M3
+*As a reader, I want to type a term and pick from suggestions, so I land on the right article.*
+- [x] A search box with suggestions after 2 characters, debounced by 200 ms. Each suggestion shows its title and short description.
+- [x] Arrow keys, Enter and Escape work. Choosing a suggestion navigates to `/{lang}/{Title}`.
+- [x] Pressing Enter without choosing picks the first suggestion. With no results, the box shows "No article found for '…'".
+- [x] `/` focuses the search field from anywhere
+- [x] **Start page** (`/`): the full-window map of the article "Mind map" in the reader's language (en *Mind map*, de *Mindmap*, fr *Carte heuristique*; other languages via `langlinks` from en, falling back to en). The search field is focused and highlighted, and the map labels are shown (`styleguide.md` §15).
+
+> Note: The featured-article and random-article links sit in the search list when the field is empty and focused (the start page focuses it). fr.wikipedia has no featured article in the REST feed, so only "Random article" shows there. The language label `EN` is shown; the picker comes with US-09.

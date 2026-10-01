@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import type { Article, Enrichments, MapNode } from "../../core/types.ts";
+import type { MapGraph, MapNode } from "../../core/types.ts";
 import { getLayout } from "../../layouts/index.ts";
 import { getLens } from "../../lenses/index.ts";
 import type { MapState } from "../hooks/useMapState.ts";
@@ -12,27 +12,37 @@ import { useFontsReady } from "./useFontsReady.ts";
 import { useTween } from "./useTween.ts";
 import { useViewport } from "./useViewport.ts";
 
-/** Fold, unfold and "+N more": nodes glide to their new rows (styleguide.md §7). */
+/** styleguide.md §7: fold and "+N more" re-flow; recentering moves to a new map. */
 const REFLOW_MS = 250;
+const RECENTER_MS = 450;
 
 interface Props {
-  article: Article;
-  enrichments: Enrichments;
+  graph: MapGraph;
+  /** Identifies the map (article and lens); a new key is a new map, fitted to the window. */
+  mapKey: string;
   state: MapState;
   actions?: Pick<MapActions, "onCenter" | "onLeaf" | "onRecenter">;
   isBold?: (node: MapNode) => boolean;
-  /** Dims the map while a newer one is loading or after an error. */
+  /** Dims the map while it isn't the current one, e.g. after an error (styleguide.md §15). */
   dimmed?: boolean;
+  /** Closes cards when the empty canvas is clicked. */
+  onCanvasClick?: () => void;
+  /** Drawn on the map under the center, e.g. "LOADING". */
+  status?: string;
 }
 
-/** The full-window map: lens → layout → animation → SVG, with pan, zoom and the map controls. */
-export function MapView({ article, enrichments, state, actions, isBold, dimmed }: Props) {
-  const lens = getLens(state.lens);
-  const graph = useMemo(
-    () => lens.build(article, enrichments, state.options),
-    [lens, article, enrichments, state.options],
-  );
-
+/** The full-window map: layout → animation → SVG, with pan, zoom and the map controls. */
+export function MapView({
+  graph,
+  mapKey,
+  state,
+  actions,
+  isBold,
+  dimmed,
+  onCanvasClick,
+  status,
+}: Props) {
+  const lens = getLens(graph.lens);
   const fontsReady = useFontsReady();
   // A new measurer once the fonts are in, so widths come from the real fonts.
   const measure = useMemo(() => createMeasure(), [fontsReady]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -48,11 +58,11 @@ export function MapView({ article, enrichments, state, actions, isBold, dimmed }
   );
 
   const reduced = useReducedMotion();
-  const frame = useTween(map, REFLOW_MS, reduced);
+  const frame = useTween(map, { reflowMs: REFLOW_MS, newMapMs: RECENTER_MS, mapKey, reduced });
 
-  // A new article, lens or See also setting is a new map: fit it to the window.
-  const fitKey = `${article.ref.lang}:${article.ref.title}:${state.lens}:${state.options.showHousekeeping}:${fontsReady}`;
-  const { svg, view, fit, zoomBy } = useViewport(map.viewBox, fitKey);
+  // A new map or See also setting is fitted to the window (re-fitted once the fonts are in).
+  const fitKey = `${mapKey}:${state.options.showHousekeeping}:${fontsReady}:${map.nodes.length > 1}`;
+  const { svg, view, fit, zoomBy } = useViewport(map.viewBox, fitKey, reduced ? 0 : RECENTER_MS);
 
   return (
     <>
@@ -60,7 +70,10 @@ export function MapView({ article, enrichments, state, actions, isBold, dimmed }
         ref={svg}
         className={`${styles.canvas} ${dimmed ? styles.dimmed : ""}`}
         role="group"
-        aria-label={`Mind map of ${article.displayTitle}`}
+        aria-label={`Mind map of ${graph.center.label}`}
+        onClick={(e) => {
+          if (!(e.target as Element).closest("[data-interactive]")) onCanvasClick?.();
+        }}
       >
         <g transform={`translate(${view.tx} ${view.ty}) scale(${view.k})`}>
           <SvgMap
@@ -70,6 +83,11 @@ export function MapView({ article, enrichments, state, actions, isBold, dimmed }
             onFold={(node) => state.toggleFold(node.id)}
             onMore={(node) => state.toggleMore(node.parent ?? node.id)}
           />
+          {status && (
+            <text className={styles.status} x={0} y={56} textAnchor="middle">
+              {status}
+            </text>
+          )}
         </g>
       </svg>
       <MapControls

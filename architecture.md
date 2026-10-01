@@ -115,12 +115,17 @@ Not used, on purpose: no state library (URL + React state + Query are enough), n
 
 | Data | Key | Lifetime |
 |---|---|---|
-| Article (parsed) | `article:{lang}:{title}:{revision}` | 24 h |
+| Article (parsed) | `article:{lang}:{title}` (also under the real title after a redirect) | 24 h |
+| Redirects of an article's flagged links | `redirects:{lang}:{title}` | 24 h |
+| Redirects to an article (for links back) | `aliases:{lang}:{title}` | 7 days |
+| Links back to an article | `linksBack:{lang}:{title}`, growing as more leaves are checked | 24 h |
 | Summary | `summary:{lang}:{title}` | 24 h |
 | Siteinfo namespaces | `siteinfo:{lang}` | 7 days |
 | Pageviews | `pageviews:{lang}:{title}` | 24 h |
 | Kinds (Wikidata) | `kind:{qid}` | 7 days |
 | linksHere | `linksHere:{lang}:{title}` | 24 h |
+
+Keys and lifetimes live in `src/ui/data/queries.ts`; there is one persister per lifetime (`src/ui/data/cache.ts`). The article key has no revision, because the revision is only known after loading; a cached article is refreshed after 24 h.
 
 The cache is stored in IndexedDB and cleared when the cache schema version changes. If storage is unavailable (private mode), the app keeps working with an in-memory cache.
 

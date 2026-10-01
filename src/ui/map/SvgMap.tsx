@@ -103,14 +103,19 @@ function CenterView({ p, actions, ...rest }: ViewProps) {
       {...activate((el) => actions.onCenter?.(node, el))}
     >
       <rect
-        className={styles.centerPill}
+        className={node.redLink ? styles.centerMissing : styles.centerPill}
         x={p.x - width / 2}
         y={p.y - CENTER.height / 2}
         width={width}
         height={CENTER.height}
         rx={CENTER.height / 2}
       />
-      <text className={styles.centerText} x={p.x} y={p.y + 8} textAnchor="middle">
+      <text
+        className={node.redLink ? styles.centerMissingText : styles.centerText}
+        x={p.x}
+        y={p.y + 8}
+        textAnchor="middle"
+      >
         {p.text}
       </text>
       {p.text !== node.label && <title>{node.label}</title>}

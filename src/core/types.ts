@@ -97,6 +97,8 @@ export interface Enrichments {
   redirects: Map<Title, Title>;
   /** Leaf titles that link back to the center (M3). */
   linksBack?: Set<Title>;
+  /** Titles the links-back check has covered; leaves outside it stay "pending". */
+  linksChecked?: Set<Title>;
   /** Lazily, per preview card. */
   summaries?: Map<Title, Summary>;
   /** Views in the last 30 days. */
@@ -233,6 +235,22 @@ export interface GroupInfo {
   label: string;
   colorSlot?: number;
   count: number;
+}
+
+// ── §8 State that isn't in the URL ─────────────────────────────────────────
+
+export interface Trail {
+  /** In visit order. */
+  steps: TrailStep[];
+  /** Index into steps. */
+  current: number;
+}
+
+export interface TrailStep {
+  ref: ArticleRef;
+  /** Group label the reader came through, e.g. "History". */
+  via?: string;
+  lens: LensId;
 }
 
 // ── §6 Layout output ────────────────────────────────────────────────────────

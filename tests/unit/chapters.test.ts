@@ -104,6 +104,18 @@ describe("Chapters lens on Mind map", () => {
     const directions = known.nodes.filter((n) => n.kind === "leaf");
     expect(directions.find((n) => n.target === "Tony Buzan")?.direction).toBe("both");
     expect(directions.find((n) => n.target === "Radial tree")?.direction).toBe("out");
+    // Titles the check hasn't covered yet stay pending.
+    const partial = buildChapters(
+      fixtureArticle(mindMap),
+      {
+        redirects: fixtureRedirects(mindMap),
+        linksBack: new Set(),
+        linksChecked: new Set(["Tony Buzan"]),
+      },
+      chapters.defaults,
+    ).nodes.filter((n) => n.kind === "leaf");
+    expect(partial.find((n) => n.target === "Tony Buzan")?.direction).toBe("out");
+    expect(partial.find((n) => n.target === "Radial tree")?.direction).toBe("pending");
   });
 
   it("records the chapter of every leaf for the preview card", () => {

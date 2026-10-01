@@ -9,9 +9,14 @@ const INTERACTIVE = "[data-interactive]";
  * Pan (drag the empty canvas), zoom (wheel, pinch, + −) and fit (0, ⤢) for an SVG canvas.
  * The map is fitted again whenever `fitKey` changes (a new map), not on folds.
  */
-export function useViewport(box: PositionedMap["viewBox"], fitKey: string) {
+export function useViewport(box: PositionedMap["viewBox"], fitKey: string, glideMs = 0) {
   const svg = useRef<SVGSVGElement>(null);
   const [view, setView] = useState<View>({ k: 1, tx: 0, ty: 0 });
+  const current = useRef(view);
+  const fitted = useRef(false);
+  useEffect(() => {
+    current.current = view;
+  }, [view]);
   const boxRef = useRef(box);
   useEffect(() => {
     boxRef.current = box;
@@ -24,10 +29,34 @@ export function useViewport(box: PositionedMap["viewBox"], fitKey: string) {
     setView(fitView(boxRef.current, width, height));
   }, []);
 
-  // Fit every new map.
+  // Fit every new map; glide there from the previous view when recentering.
   useEffect(() => {
-    fit();
-  }, [fitKey, fit]);
+    const el = svg.current;
+    if (!el) return;
+    const { width, height } = el.getBoundingClientRect();
+    const target = fitView(boxRef.current, width, height);
+    const from = current.current;
+    // The first map appears in place; later ones glide there.
+    if (!fitted.current || glideMs <= 0) {
+      fitted.current = true;
+      setView(target);
+      return;
+    }
+    let raf = 0;
+    const start = performance.now();
+    const step = (now: number) => {
+      const t = Math.min(1, (now - start) / glideMs);
+      const e = t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+      setView({
+        k: from.k + (target.k - from.k) * e,
+        tx: from.tx + (target.tx - from.tx) * e,
+        ty: from.ty + (target.ty - from.ty) * e,
+      });
+      if (t < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [fitKey, glideMs]);
 
   const zoomBy = useCallback((factor: number) => {
     const el = svg.current;

@@ -120,8 +120,10 @@ export function buildChapters(article: Article, data: Enrichments, options: Lens
   const edges: MapEdge[] = [];
   const groups: GroupInfo[] = [];
 
-  const directionOf = (target: Title): LinkDirection =>
-    data.linksBack ? (data.linksBack.has(target) ? "both" : "out") : "pending";
+  const directionOf = (target: Title): LinkDirection => {
+    if (!data.linksBack || (data.linksChecked && !data.linksChecked.has(target))) return "pending";
+    return data.linksBack.has(target) ? "both" : "out";
+  };
 
   const emit = (
     group: Group,

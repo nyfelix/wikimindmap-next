@@ -17,6 +17,21 @@
   fill: var(--ink);
 }
 
+/* A missing article: a muted, dashed ring (styleguide.md §15). */
+.centerMissing {
+  fill: var(--bg);
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+.centerMissingText {
+  fill: var(--muted);
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .centerText {
   fill: var(--paper);
   font-family: var(--display);

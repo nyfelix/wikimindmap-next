@@ -89,10 +89,9 @@ export function frameAt(prev: PositionedMap, next: PositionedMap, t: number): Fr
       nodes.push({ p, opacity: k, leaving: false });
     }
   }
+  // Old nodes nothing moved on from fade out (also the old center after recentering).
   for (const p of prev.nodes) {
-    if (!kept.has(p.node.id) && !next.nodes.some((n) => n.node.id === p.node.id)) {
-      nodes.unshift({ p, opacity: 1 - k, leaving: true });
-    }
+    if (!kept.has(p.node.id)) nodes.unshift({ p, opacity: 1 - k, leaving: true });
   }
 
   const prevEdges = new Map(prev.edges.map((e) => [edgeKey(e), e]));

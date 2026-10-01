@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { titleFromPath, titleToPath } from "../../core/titles.ts";
 import type { Article, Enrichments } from "../../core/types.ts";
+import { getLens } from "../../lenses/index.ts";
 import { parseParsoid } from "../../sources/parsoid.ts";
 import { redirectPairs } from "../../sources/redirects.ts";
 import { parseSiteinfo } from "../../sources/siteinfo.ts";
@@ -50,13 +51,21 @@ export default function DevFixturePage() {
     };
   }, [lang, title]);
 
+  const graph = useMemo(
+    () =>
+      loaded && loaded !== "missing"
+        ? getLens(state.lens).build(loaded.article, loaded.enrichments, state.options)
+        : undefined,
+    [loaded, state.lens, state.options],
+  );
+
   return (
     <div className={styles.screen}>
-      {loaded && loaded !== "missing" && (
+      {graph && loaded && loaded !== "missing" && (
         <>
           <MapView
-            article={loaded.article}
-            enrichments={loaded.enrichments}
+            graph={graph}
+            mapKey={`${lang}:${title}`}
             state={state}
             actions={{
               // Recentering only works between recorded fixtures here.

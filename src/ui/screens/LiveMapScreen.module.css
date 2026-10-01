@@ -1,0 +1,10 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.home {
+  display: inline-flex;
+  border-radius: 8px;
+}

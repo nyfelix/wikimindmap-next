@@ -98,6 +98,7 @@ type DataNeed = "sections" | "summaries" | "linksBack" | "pageviews" | "kinds" |
 interface Enrichments {
   redirects: Map<Title, Title>;             // loaded for leaf targets with redirect: true
   linksBack?: Set<Title>;                   // leaf titles that link back to the center (M3)
+  linksChecked?: Set<Title>;                // titles the check has covered; other leaves stay "pending"
   summaries?: Map<Title, Summary>;          // lazily, per preview card
   pageviews?: Map<Title, number>;           // views in the last 30 days
   kinds?: Map<Title, KindInfo>;             // M5
@@ -160,7 +161,7 @@ interface LensOptions {
 
 **Rules for every lens**
 - `build` is pure and deterministic: the same input gives the same output, with no network or randomness.
-- Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded. Incoming-only links (`in`) come from `linksHere`.
+- Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded or doesn't cover the title yet (`linksChecked`). Incoming-only links (`in`) come from `linksHere`.
 - Every node that has children can fold (`folded` is defined, `false` when open).
 - Leaves are deduplicated **within a group** (a link used twice in one chapter shows once). Across groups a leaf may repeat, and its node `id` includes the group so IDs stay unique.
 - When a group has more leaves than `density`, keep the first `density` by rank and add one `more` node with the count. Groups listed in `expanded` show all their leaves.
