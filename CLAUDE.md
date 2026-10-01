@@ -93,5 +93,6 @@ npm run fixtures -- en "Mind map"   # record real API responses into tests/fixtu
 ## Status
 
 - Concept and lens previews: done (`concepts/`)
-- Current milestone: **M0 – Setup and spike** (see `userstories.md`)
+- M0, M1 and M3 are done; M2 is done except DS-01 (logo awaiting the owner's approval). Next: **M4 – MVP polish and relaunch** (see `userstories.md`)
+- Live at https://nyfelix.github.io/wikimindmap-next/ (deployed from `main` by GitHub Actions)
 - The host needs only Docker (Docker Desktop or OrbStack) and VS Code with the Dev Containers extension. Node lives in the container. TS-00 creates it.

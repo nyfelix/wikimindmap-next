@@ -19,15 +19,6 @@ Work through the milestones in order. A milestone is done when every story in it
 
 Goal: a reproducible dev environment, a deployable empty app, and certainty that the Wikipedia APIs behave as `architecture.md` assumes.
 
-### TS-03 CI and deploy to GitHub Pages · S
-- [x] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
-- [x] `BASE_PATH` is set for `/wikimindmap-next/`
-- [x] `404.html` is a copy of `index.html`, so deep links load the app
-- [ ] The placeholder page is live on `https://nyfelix.github.io/wikimindmap-next/`, and `/en/Mind_map` on it loads the app instead of GitHub's 404 page
-- [ ] From the live page, the browser console confirms a `rest.php` and an `api.php` request with `Api-User-Agent` pass CORS (repeats TS-01 from the real origin)
-
-> Note: The workflow is `.github/workflows/deploy.yml`; it also runs `check` and `build` on pull requests, without deploying. `BASE_PATH` comes from the repository name. `404.html` is written by a small plugin in `vite.config.ts`. **Open:** the last two items need a push to GitHub and Settings → Pages → Source set to "GitHub Actions" (done by the owner).
-
 **Done when:** the repo opens in the dev container with everything working, the empty app deploys from `main`, and the spike findings are recorded.
 
 ---
@@ -415,3 +406,12 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] **Start page** (`/`): the full-window map of the article "Mind map" in the reader's language (en *Mind map*, de *Mindmap*, fr *Carte heuristique*; other languages via `langlinks` from en, falling back to en). The search field is focused and highlighted, and the map labels are shown (`styleguide.md` §15).
 
 > Note: The featured-article and random-article links sit in the search list when the field is empty and focused (the start page focuses it). fr.wikipedia has no featured article in the REST feed, so only "Random article" shows there. The language label `EN` is shown; the picker comes with US-09.
+
+### TS-03 CI and deploy to GitHub Pages · S · M0
+- [x] A GitHub Action on push to `main`: `npm ci` → `npm run check` → `npm run build` → deploy with `actions/deploy-pages`
+- [x] `BASE_PATH` is set for `/wikimindmap-next/`
+- [x] `404.html` is a copy of `index.html`, so deep links load the app
+- [x] The placeholder page is live on `https://nyfelix.github.io/wikimindmap-next/`, and `/en/Mind_map` on it loads the app instead of GitHub's 404 page
+- [x] From the live page, the browser console confirms a `rest.php` and an `api.php` request with `Api-User-Agent` pass CORS (repeats TS-01 from the real origin)
+
+> Note: The workflow is `.github/workflows/deploy.yml`; it also runs `check` and `build` on pull requests, without deploying. `BASE_PATH` comes from the repository name. `404.html` is written by a small plugin in `vite.config.ts`. Pages was enabled by the owner on 2026-10-01; release confirmed by the owner. Checked from the live page: `/en/Mind_map` loads the app (with HTTP status 404, the accepted trade-off in `architecture.md` §7), and `rest.php` and `api.php` requests with `Api-User-Agent` pass CORS from `nyfelix.github.io`. CI also runs the e2e tests.
