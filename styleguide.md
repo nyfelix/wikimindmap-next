@@ -2,7 +2,7 @@
 
 How WikiMindMap looks and behaves on screen. `architecture.md` says how it's built, `datamodel.md` what the data looks like, and this file what the reader sees.
 
-**Status:** layout, map elements, direction symbols, color and typography are decided. Typography is **Option 3, Editorial + graphic logo** (§8). Editorial pages follow the first concept page (§14). **Still open:** the owner's review of the logo draft (§9, DS-01).
+**Status:** layout, map elements, direction symbols, color and typography are decided. Typography is **Option 3, Editorial + graphic logo** (§8). Editorial pages follow the first concept page (§14). The logo is drawn and approved (§9, DS-01).
 
 ## 1. Principles
 
@@ -202,7 +202,7 @@ The map screen loads five files (Zilla 700 and italic 700, Fira Sans 400 and 600
 - **Wordmark:** `WikiMindMap` (capital W, M, M), Bricolage Grotesque 800, letter-spacing −0.035 em, **entirely in `--ink`**: black in the light theme, near-white in the dark theme. There's no colored highlight; the color comes from the mark.
 - **Lockup:** mark left of the wordmark, gap = 0.3 × wordmark height, mark height = 1.15 × cap height of the wordmark (owner: the mark should hold its own next to the type), centred on the cap height. Also a stacked version (mark above) for square spaces.
 - **Favicon and app icon:** the mark alone, on `--paper` (light) or `--bg` dark.
-- **Drawn in DS-01** by `scripts/build-logo.ts`: the mark (the organic mark of the Option 3 preview: four branches, wide at the center and curving out to a point, in `--b1`–`--b4` clockwise from the top left, around an `--ink` center) and the wordmark converted to outlines. It writes `public/logo.svg`, `public/favicon.svg` and `src/ui/brand/logoArt.ts` (the app draws the logo inline, in the theme's colors). Checked at 16, 30 and 120 px in light and dark; awaiting the owner's review.
+- **Drawn in DS-01** by `scripts/build-logo.ts`: the mark (the organic mark of the Option 3 preview: four branches, wide at the center and curving out to a point, in `--b1`–`--b4` clockwise from the top left, around an `--ink` center) and the wordmark converted to outlines. It writes `public/logo.svg`, `public/favicon.svg` and `src/ui/brand/logoArt.ts` (the app draws the logo inline, in the theme's colors). Checked at 16, 30 and 120 px in light and dark; approved by the owner.
 
 ## 10. Controls and icons
 

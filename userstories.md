@@ -35,17 +35,6 @@ Goal: any Wikipedia article can be turned into a reliable `Article`.
 
 Goal: the 2007 map, drawn from a fixture, with no search yet. This is the core of the product.
 
-### DS-01 Choose typography and draw the logo · S
-A design decision made together with the owner, before any map is rendered.
-- [x] The owner picks a direction in `concepts/style-directions.html` (or a new candidate)
-  > Note: Option 3, Editorial + graphic logo.
-- [x] `styleguide.md` §8 records the faces, weights, fallback stacks (including non-Latin scripts) and the licence
-- [x] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`, with the weights and budget from `styleguide.md` §8
-  > Note: Bundled from the `@fontsource` packages instead of `public/fonts/`: still self-hosted WOFF2, already subset by `unicode-range`, ~128 kB for the five Latin files.
-- [x] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
-  > Note: Drawn by `scripts/build-logo.ts` (wordmark outlined from Bricolage Grotesque 800). A draft until the owner has reviewed it.
-- [x] `src/ui/styles/tokens.css` is updated with all five font tokens: `--logo`, `--display`, `--label`, `--ui`, `--mono`
-
 **Done when:** the typography and logo are decided, and every starter fixture renders as a readable, full-window Chapters map in `/dev/fixture/…`, in light and dark, with folding, pan and zoom.
 
 ---
@@ -415,3 +404,14 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] From the live page, the browser console confirms a `rest.php` and an `api.php` request with `Api-User-Agent` pass CORS (repeats TS-01 from the real origin)
 
 > Note: The workflow is `.github/workflows/deploy.yml`; it also runs `check` and `build` on pull requests, without deploying. `BASE_PATH` comes from the repository name. `404.html` is written by a small plugin in `vite.config.ts`. Pages was enabled by the owner on 2026-10-01; release confirmed by the owner. Checked from the live page: `/en/Mind_map` loads the app (with HTTP status 404, the accepted trade-off in `architecture.md` §7), and `rest.php` and `api.php` requests with `Api-User-Agent` pass CORS from `nyfelix.github.io`. CI also runs the e2e tests.
+
+### DS-01 Choose typography and draw the logo · S · M2
+A design decision made together with the owner, before any map is rendered.
+- [x] The owner picks a direction in `concepts/style-directions.html` (or a new candidate)
+  > Note: Option 3, Editorial + graphic logo.
+- [x] `styleguide.md` §8 records the faces, weights, fallback stacks (including non-Latin scripts) and the licence
+- [x] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`, with the weights and budget from `styleguide.md` §8
+  > Note: Bundled from the `@fontsource` packages instead of `public/fonts/`: still self-hosted WOFF2, already subset by `unicode-range`, ~128 kB for the five Latin files.
+- [x] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
+  > Note: Drawn by `scripts/build-logo.ts` (wordmark outlined from Bricolage Grotesque 800). After the owner's review: the organic mark of the Option 3 preview, at 1.15 × the cap height. Approved by the owner on 2026-10-01.
+- [x] `src/ui/styles/tokens.css` is updated with all five font tokens: `--logo`, `--display`, `--label`, `--ui`, `--mono`
