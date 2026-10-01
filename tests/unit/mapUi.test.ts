@@ -148,3 +148,40 @@ describe("viewport", () => {
     expect(zoomAt(v, 100, 0, 0).k).toBe(3);
   });
 });
+
+describe("arrow-key navigation", async () => {
+  const { neighbor } = await import("../../src/ui/map/navigation.ts");
+  const { mindmapTree } = await import("../../src/layouts/mindmapTree.ts");
+  const { buildChapters, chapters } = await import("../../src/lenses/chapters.ts");
+  const { fixture, fixtureArticle, fixtureRedirects } = await import("./fixtures.ts");
+  const f = fixture("en", "Mind map");
+  const map = mindmapTree(
+    buildChapters(fixtureArticle(f), { redirects: fixtureRedirects(f) }, chapters.defaults),
+    { width: 1440, height: 900 },
+  );
+  const at = (id: string) => map.nodes.find((p) => p.node.id === id)!;
+
+  it("goes from the center to the first branch on each side", () => {
+    expect(neighbor(map.nodes, "center", "ArrowRight")).toBe("0");
+    expect(at(neighbor(map.nodes, "center", "ArrowLeft")!).side).toBe(-1);
+  });
+
+  it("moves outward to the first child and back to the parent", () => {
+    const child = neighbor(map.nodes, "0", "ArrowRight")!;
+    expect(at(child).node.parent).toBe("0");
+    expect(neighbor(map.nodes, child, "ArrowLeft")).toBe("0");
+    expect(neighbor(map.nodes, "0", "ArrowLeft")).toBe("center");
+  });
+
+  it("mirrors left and right on the left side", () => {
+    const left = neighbor(map.nodes, "center", "ArrowLeft")!;
+    expect(at(neighbor(map.nodes, left, "ArrowLeft")!).node.parent).toBe(left);
+    expect(neighbor(map.nodes, left, "ArrowRight")).toBe("center");
+  });
+
+  it("moves between siblings with up and down", () => {
+    expect(neighbor(map.nodes, "0", "ArrowDown")).toBe("1");
+    expect(neighbor(map.nodes, "1", "ArrowUp")).toBe("0");
+    expect(neighbor(map.nodes, "0", "ArrowUp")).toBeUndefined();
+  });
+});

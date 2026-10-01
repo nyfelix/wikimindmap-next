@@ -19,6 +19,7 @@ import { StateCard } from "../panels/StateCard.tsx";
 import { TrailBar } from "../panels/TrailBar.tsx";
 import { Drawer } from "../panels/Drawer.tsx";
 import { TopRight } from "../panels/TopRight.tsx";
+import { OutlineView } from "../map/OutlineView.tsx";
 import { getLens } from "../../lenses/index.ts";
 import { useLabels } from "../hooks/useLabels.ts";
 import { SearchBox } from "../search/SearchBox.tsx";
@@ -188,8 +189,21 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
   const graph = showLast ? lastGood.graph : live.graph;
   const empty = live.status === "ready" && live.graph.groups.length === 0;
 
+  const openCard = (node: MapNode, anchor: Element) => setCard({ node, anchor });
+
   return (
     <div className={styles.screen}>
+      {/* Screen readers get the outline first (US-11). */}
+      <a
+        href="#outline"
+        className={styles.skip}
+        onClick={(e) => {
+          e.preventDefault();
+          setOutline(true);
+        }}
+      >
+        Show the map as an outline
+      </a>
       <MapView
         graph={graph}
         mapKey={showLast ? lastGood.key : mapKey}
@@ -220,6 +234,17 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         outline={outline}
         onOutline={() => setOutline((o) => !o)}
       />
+      {outline && live.status === "ready" && (
+        <OutlineView
+          graph={live.graph}
+          onCenter={openCard}
+          onLeaf={openCard}
+          onRecenter={recenter}
+          onFold={(node) => state.toggleFold(node.id)}
+          onMore={(node) => state.toggleMore(node.parent ?? node.id)}
+          onClose={() => setOutline(false)}
+        />
+      )}
       {drawer && (
         <Drawer
           lens={lens}

@@ -1,0 +1,165 @@
+.outline {
+  position: fixed;
+  z-index: 3;
+  top: 76px;
+  left: 14px;
+  bottom: 84px;
+  width: min(440px, calc(100% - 28px));
+  overflow: auto;
+  padding: 16px 18px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  outline: none;
+}
+
+.title:focus-visible {
+  outline: none;
+}
+
+.centerLink {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.tree,
+.tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tree ul {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+  margin-left: 9px;
+}
+
+.group {
+  margin-top: 6px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fold {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  background: var(--paper);
+  color: var(--ink);
+  font: 700 0.8rem/1 var(--ui);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.groupLabel {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+
+.subgroupLabel {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.count,
+.note {
+  font: 400 0.8rem var(--ui);
+  color: var(--muted);
+}
+
+.leaf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 3px 0;
+}
+
+.link,
+.more {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: 400 0.9rem var(--label);
+  color: var(--accent);
+  cursor: pointer;
+  text-align: left;
+}
+
+.link:hover,
+.more:hover {
+  text-decoration: underline;
+}
+
+.more {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.missing {
+  font: 400 0.9rem var(--label);
+  color: var(--muted);
+}
+
+.dir {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font: 400 0.78rem var(--ui);
+  color: var(--muted);
+}
+
+.recenter {
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.recenter:hover {
+  background: var(--accent);
+  color: var(--paper);
+}

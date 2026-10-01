@@ -8,3 +8,22 @@
   display: inline-flex;
   border-radius: 8px;
 }
+
+/* The skip link appears when focused (US-11). */
+.skip {
+  position: fixed;
+  z-index: 20;
+  top: 8px;
+  left: 50%;
+  translate: -50% -200%;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 0.85rem var(--ui);
+  text-decoration: none;
+}
+
+.skip:focus-visible {
+  translate: -50% 0;
+}

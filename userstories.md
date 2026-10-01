@@ -58,14 +58,6 @@ Goal: good enough to announce.
 - [ ] One Playwright test at 820 × 1180
 > Phones (< 768 px) are nice to have and not part of the MVP; see "Later".
 
-### US-11 Read the map without seeing it · M
-*As a screen-reader user, I want the map as a structured list, so I can use the same features.*
-- [ ] `OutlineView` renders the same `MapGraph` as nested lists, with the same preview and recenter buttons
-- [ ] An outline toggle: an icon button next to `?` and `i`, shortcut `o` (`styleguide.md` §2). Screen readers get the outline first (skip link).
-- [ ] The outline shows the direction of each link in words ("links both ways")
-- [ ] The whole flow works with keyboard only: search → map → preview → recenter → trail. Arrow keys move between nodes on the map (along branches, and between siblings).
-- [ ] An axe-core check in Playwright shows no serious issues
-
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
 - [ ] Initial JS is < 200 kB gzipped
@@ -423,3 +415,13 @@ A design decision made together with the owner, before any map is rendered.
 - [x] Housekeeping lists work for `en`, `de` and `fr`
 
 > Note: The picker lists every open Wikipedia from the site matrix (348 on 2026-10-01; owner decision), the 20 largest first, filterable by code, own name or English name. Switching on a map opens the langlinked article as a new trail step; without one, a card says so and search moves to that language. The start page uses the first browser language: en, de and fr have a known start article, others get "Mind map" through langlinks, and fall back to English if there is none.
+
+### US-11 Read the map without seeing it · M · M4
+*As a screen-reader user, I want the map as a structured list, so I can use the same features.*
+- [x] `OutlineView` renders the same `MapGraph` as nested lists, with the same preview and recenter buttons
+- [x] An outline toggle: an icon button next to `?` and `i`, shortcut `o` (`styleguide.md` §2). Screen readers get the outline first (skip link).
+- [x] The outline shows the direction of each link in words ("links both ways")
+- [x] The whole flow works with keyboard only: search → map → preview → recenter → trail. Arrow keys move between nodes on the map (along branches, and between siblings).
+- [x] An axe-core check in Playwright shows no serious issues
+
+> Note: The outline is a floating panel next to the map (the map stays, so cards and recentering work the same); a skip link at the start of the page opens it. Arrow keys follow the positioned nodes, so they work in every layout (`ui/map/navigation.ts`). The axe-core checks cover the map with labels, the outline, the drawer and the About page. While doing this, the preview card was fixed to take focus once it is placed.

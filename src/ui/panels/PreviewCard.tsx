@@ -41,13 +41,18 @@ export function PreviewCard({ lang, node, anchor, onClose, onRecenter }: Props) 
     setPosition({ left, top });
   }, [anchor, summary.status]);
 
-  // Focus moves into the card, and back to the node when it closes.
+  // Focus moves into the card once it is placed (hidden elements can't take focus), and back
+  // to the node when it closes.
+  const placed = position !== undefined;
   useEffect(() => {
-    card.current?.focus();
-    return () => {
+    if (placed) card.current?.focus();
+  }, [placed]);
+  useEffect(
+    () => () => {
       if (anchor instanceof SVGElement || anchor instanceof HTMLElement) anchor.focus();
-    };
-  }, [anchor]);
+    },
+    [anchor],
+  );
 
   const chapter = node.meta?.chapter;
   const href = `https://${lang}.wikipedia.org/wiki/${titleToPath(title)}`;
