@@ -47,12 +47,24 @@ export function PreviewCard({ lang, node, anchor, onClose, onRecenter }: Props) 
   useEffect(() => {
     if (placed) card.current?.focus();
   }, [placed]);
-  useEffect(
-    () => () => {
-      if (anchor instanceof SVGElement || anchor instanceof HTMLElement) anchor.focus();
-    },
-    [anchor],
-  );
+  // Recentering moves focus to the new center instead (LiveMapScreen).
+  const recentering = useRef(false);
+  useEffect(() => {
+    const el = card.current;
+    return () => {
+      if (recentering.current) return;
+      // Only if focus is still in the card: the reader may have moved on (e.g. to the trail).
+      const active = document.activeElement;
+      const inCard = active === document.body || (el !== null && el.contains(active));
+      if (
+        inCard &&
+        (anchor instanceof SVGElement || anchor instanceof HTMLElement) &&
+        anchor.isConnected
+      ) {
+        anchor.focus();
+      }
+    };
+  }, [anchor]);
 
   const chapter = node.meta?.chapter;
   const href = `https://${lang}.wikipedia.org/wiki/${titleToPath(title)}`;
@@ -118,7 +130,10 @@ export function PreviewCard({ lang, node, anchor, onClose, onRecenter }: Props) 
           <button
             type="button"
             className={`${cardStyles.button} ${cardStyles.primary}`}
-            onClick={() => onRecenter(node)}
+            onClick={() => {
+              recentering.current = true;
+              onRecenter(node);
+            }}
           >
             ⊕ Make it the center
           </button>

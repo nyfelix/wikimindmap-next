@@ -150,7 +150,7 @@ describe("viewport", () => {
 });
 
 describe("arrow-key navigation", async () => {
-  const { neighbor } = await import("../../src/ui/map/navigation.ts");
+  const { neighbor: next, navNode } = await import("../../src/ui/map/navigation.ts");
   const { mindmapTree } = await import("../../src/layouts/mindmapTree.ts");
   const { buildChapters, chapters } = await import("../../src/lenses/chapters.ts");
   const { fixture, fixtureArticle, fixtureRedirects } = await import("./fixtures.ts");
@@ -160,6 +160,9 @@ describe("arrow-key navigation", async () => {
     { width: 1440, height: 900 },
   );
   const at = (id: string) => map.nodes.find((p) => p.node.id === id)!;
+  const nodes = map.nodes.map(navNode);
+  const neighbor = (_: unknown, id: string, key: Parameters<typeof next>[2]) =>
+    next(nodes, id, key);
 
   it("goes from the center to the first branch on each side", () => {
     expect(neighbor(map.nodes, "center", "ArrowRight")).toBe("0");

@@ -94,9 +94,18 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
     [navigate, state.lens, location.search],
   );
 
+  // After recentering, focus moves to the new center once its map is there (US-07, US-11).
+  const focusCenter = useRef<string | undefined>(undefined);
+  useEffect(() => {
+    if (live.status !== "ready" || focusCenter.current !== real.title) return;
+    focusCenter.current = undefined;
+    document.querySelector<SVGElement>('[data-node="center"]')?.focus();
+  }, [live.status, real.title]);
+
   const recenter = useCallback(
     (node: MapNode) => {
       if (!node.target || node.redLink) return;
+      focusCenter.current = node.target;
       const ref = { lang: real.lang, title: node.target };
       const via =
         typeof node.meta?.chapter === "string" ? node.meta.chapter.split(" › ")[0] : undefined;

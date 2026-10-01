@@ -6,7 +6,7 @@ import type { MapState } from "../hooks/useMapState.ts";
 import { useReducedMotion } from "../hooks/useReducedMotion.ts";
 import { MapControls } from "../panels/MapControls.tsx";
 import { Callouts } from "./Callouts.tsx";
-import { neighbor, type Arrow } from "./navigation.ts";
+import { navNodesFrom, neighbor, type Arrow } from "./navigation.ts";
 import { createMeasure } from "./measure.ts";
 import styles from "./MapView.module.css";
 import { SvgMap, type MapActions } from "./SvgMap.tsx";
@@ -88,11 +88,13 @@ export function MapView({
           if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) return;
           const from = (e.target as Element).closest("[data-id]")?.getAttribute("data-id");
           if (!from) return;
-          const nodes = frame.nodes.filter((n) => !n.leaving).map((n) => n.p);
-          const to = neighbor(nodes, from, e.key as Arrow);
+          const to = neighbor(navNodesFrom(e.currentTarget), from, e.key as Arrow);
           if (!to) return;
           e.preventDefault();
-          const target = svg.current?.querySelector(`[data-id="${CSS.escape(to)}"]`);
+          // Not the copy that is fading out while the map re-flows.
+          const target = svg.current?.querySelector(
+            `[data-id="${CSS.escape(to)}"]:not([aria-hidden="true"])`,
+          );
           const focusable = target?.matches('[tabindex="0"]')
             ? target
             : target?.querySelector('[tabindex="0"]');

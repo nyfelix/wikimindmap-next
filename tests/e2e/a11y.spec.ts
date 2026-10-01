@@ -71,7 +71,8 @@ test.describe("accessibility (US-11)", () => {
     await page.keyboard.press("ArrowDown");
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(/Mind_map/);
-    await expect(page.getByRole("button", { name: "Fold Introduction" })).toBeVisible();
+    // Wait for the Mind map itself (Concept map has an "Introduction" too).
+    await expect(page.getByRole("button", { name: "Preview Popular psychology" })).toBeVisible();
 
     // Into the map: the center, then arrow keys along the branches.
     await page.getByRole("button", { name: "About Mind map" }).focus();
@@ -93,6 +94,9 @@ test.describe("accessibility (US-11)", () => {
     await expect(card.getByRole("button", { name: "⊕ Make it the center" })).toBeFocused();
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(/Tony_Buzan/);
+    // Focus lands on the new center.
+    await expect(page.getByRole("button", { name: "About Tony Buzan" })).toBeFocused();
+    await expect(page.getByRole("button", { name: "Fold Introduction" })).toBeVisible();
 
     // Back along the trail.
     await page

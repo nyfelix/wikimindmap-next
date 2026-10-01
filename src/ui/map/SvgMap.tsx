@@ -130,7 +130,14 @@ function GroupView({ p, actions, ...rest }: ViewProps) {
   const color = slotColor(node.colorSlot);
   const folded = node.folded === true;
   return (
-    <g data-node={node.kind} data-id={node.id} data-side={side} data-label={node.label} {...rest}>
+    <g
+      data-node={node.kind}
+      data-id={node.id}
+      data-parent={node.parent}
+      data-side={side}
+      data-label={node.label}
+      {...rest}
+    >
       <text
         className={p.depth === 1 ? styles.group : styles.subgroup}
         x={x - side * GROUP_LABEL.dx}
@@ -176,6 +183,7 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
     <g
       data-node="leaf"
       data-id={node.id}
+      data-parent={node.parent}
       data-side={side}
       data-direction={node.direction ?? "pending"}
       {...rest}
@@ -247,6 +255,8 @@ function MoreView({ p, actions, ...rest }: ViewProps) {
       data-interactive
       data-node="more"
       data-id={node.id}
+      data-parent={node.parent}
+      data-side={side}
       {...rest}
       {...activate(() => actions.onMore?.(node))}
     >
