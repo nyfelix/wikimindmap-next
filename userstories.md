@@ -101,11 +101,6 @@ Goal: the full 2007 loop with live data.
 - [ ] Recentering from an earlier step cuts off the later steps
 - [ ] The trail survives a page reload (`sessionStorage`)
 
-### TS-16 Links-back check · S
-- [ ] `sources/linksBack.ts`: for the leaf titles of a map, find out which ones link back to the center with `action=query&prop=links&titles=A|B|…&pltitles={center}&pllimit=max`, batched 50 titles per request (see `architecture.md` §4)
-- [ ] It returns a `Set<Title>` of the titles that link back, and is cached like the other enrichments
-- [ ] Unit tests with a recorded response; one test checks that continuation (`plcontinue`) is followed
-
 ### US-17 See the direction of every link · S
 *As a curious reader, I want to see at a glance whether a linked article also links back, so I can tell close relatives from passing mentions.*
 - [ ] Every leaf shows its direction symbol, as specified in `styleguide.md` §5: *out*, *both ways*, or *pending* while loading
@@ -397,3 +392,10 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Works from 1024 px up, and without layout breaks on tablets (768–1023 px)
 
 > Note: The logo, map controls and attribution panels are in place; search and trail come with US-04 and US-08, the lens switch with US-14. Fitting reserves room for the panels (`ui/map/viewport.ts`). The tablet layout was checked by screenshot at 820 × 1180; the Playwright test at that size comes with US-10.
+
+### TS-16 Links-back check · S · M3
+- [x] `sources/linksBack.ts`: for the leaf titles of a map, find out which ones link back to the center with `action=query&prop=links&titles=A|B|…&pltitles={center}&pllimit=max`, batched 50 titles per request (see `architecture.md` §4)
+- [x] It returns a `Set<Title>` of the titles that link back, and is cached like the other enrichments
+- [x] Unit tests with a recorded response; one test checks that continuation (`plcontinue`) is followed
+
+> Note: The check also counts links through the center's redirects (Mind map has 16, such as "Mind-map"): `pltitles` holds the center and up to 49 of them. `redirects=1` resolves leaf titles that are redirects, and results are mapped back to the asked title. `linksback.json` is recorded for every starter fixture (`npm run fixtures -- --linksback-only` re-checks it without re-fetching pages). The continuation test uses a synthetic response, since a live `plcontinue` is rare with `pltitles`. Caching comes with TS-10.

@@ -305,7 +305,8 @@ tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en
   redirects.json     array of raw action=query&redirects responses, one per batch of 50,
                      for the link targets marked mw-redirect
   fallback.json      (en Mind map, de Mindmap) { toc, links }: action=parse tocdata and links per section
-  linksback.json     links back to the center (M3)
+  linksback.json     { center, aliases, checked, back }: the center's redirects, every leaf title the
+                     Chapters lens can show (all links, See also on), and those that link back
   pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
 tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
 ```
