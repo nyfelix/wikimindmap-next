@@ -130,3 +130,9 @@
 .more:focus-visible .ring {
   stroke: var(--accent);
 }
+
+/* Invisible hit areas: 44 px on touch screens (US-10). */
+.hit {
+  fill: transparent;
+  stroke: none;
+}

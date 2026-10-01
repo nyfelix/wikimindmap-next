@@ -1,6 +1,7 @@
 import { FOLD_R } from "../../layouts/geometry.ts";
 import { activate } from "./activate.ts";
 import styles from "./SvgMap.module.css";
+import { useTouchHalf } from "./touch.ts";
 
 interface Props {
   x: number;
@@ -16,6 +17,7 @@ interface Props {
  * folded. Every lens uses it for every node that has children.
  */
 export function FoldToggle({ x, y, color, folded, label, onToggle }: Props) {
+  const touch = useTouchHalf();
   return (
     <g
       className={styles.fold}
@@ -26,6 +28,7 @@ export function FoldToggle({ x, y, color, folded, label, onToggle }: Props) {
       data-interactive
       {...activate(onToggle)}
     >
+      <circle className={styles.hit} cx={x} cy={y} r={touch ?? FOLD_R + 4} />
       <circle className={styles.ring} cx={x} cy={y} r={FOLD_R + 4} />
       <circle cx={x} cy={y} r={FOLD_R} fill="var(--paper)" stroke={color} strokeWidth={2} />
       <path

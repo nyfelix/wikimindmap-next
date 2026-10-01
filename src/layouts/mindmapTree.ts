@@ -117,7 +117,7 @@ export const mindmapTree: Layout = (
     );
     const isRow = (n: HierarchyNode<MapNode>) => n.data.kind === "leaf" || n.data.kind === "more";
     cluster<MapNode>()
-      .nodeSize([ROW, 1])
+      .nodeSize([options.row ?? ROW, 1])
       .separation((a, b) =>
         a.parent === b.parent && isRow(a) && isRow(b) ? 1 : BRANCH_SEPARATION,
       )(root);

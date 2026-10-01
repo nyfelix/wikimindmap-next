@@ -51,13 +51,6 @@ Goal: the full 2007 loop with live data.
 
 Goal: good enough to announce.
 
-### US-10 Use it on a tablet · S
-*As a reader on a tablet, I want the map to work with touch.*
-- [ ] 768–1023 px: panels shrink and the lens switch becomes a menu
-- [ ] Touch: drag to pan, pinch to zoom; tap targets ≥ 44 × 44 px
-- [ ] One Playwright test at 820 × 1180
-> Phones (< 768 px) are nice to have and not part of the MVP; see "Later".
-
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
 - [ ] Initial JS is < 200 kB gzipped
@@ -425,3 +418,12 @@ A design decision made together with the owner, before any map is rendered.
 - [x] An axe-core check in Playwright shows no serious issues
 
 > Note: The outline is a floating panel next to the map (the map stays, so cards and recentering work the same); a skip link at the start of the page opens it. Arrow keys follow the positioned nodes, so they work in every layout (`ui/map/navigation.ts`). The axe-core checks cover the map with labels, the outline, the drawer and the About page. While doing this, the preview card was fixed to take focus once it is placed.
+
+### US-10 Use it on a tablet · S · M4
+*As a reader on a tablet, I want the map to work with touch.*
+- [x] 768–1023 px: panels shrink and the lens switch becomes a menu
+- [x] Touch: drag to pan, pinch to zoom; tap targets ≥ 44 × 44 px
+- [x] One Playwright test at 820 × 1180
+> Phones (< 768 px) are nice to have and not part of the MVP; see "Later".
+
+> Note: On touch screens (`pointer: coarse`) leaf rows are 44 px apart (layout option `row`), and fold, ⊕ and leaf hit areas are divided by the zoom, so they stay 44 × 44 px on screen; zoomed far out they overlap, and the top one wins. The lens switch is a menu below 1024 px. Text autosizing is switched off, so labels are measured as drawn. Tested at 820 × 1180 with touch.

@@ -13,6 +13,8 @@ import { SvgMap, type MapActions } from "./SvgMap.tsx";
 import { useFontsReady } from "./useFontsReady.ts";
 import { useTween } from "./useTween.ts";
 import { useViewport } from "./useViewport.ts";
+import { COARSE, useMedia } from "../hooks/useMedia.ts";
+import { TouchContext } from "./touch.ts";
 
 /** styleguide.md §7: fold and "+N more" re-flow; recentering moves to a new map. */
 const REFLOW_MS = 250;
@@ -52,14 +54,16 @@ export function MapView({
   // A new measurer once the fonts are in, so widths come from the real fonts.
   const measure = useMemo(() => createMeasure(), [fontsReady]); // eslint-disable-line react-hooks/exhaustive-deps
   const layout = getLayout(lens.layout);
+  // Touch screens: rows 44 px apart, so every tap target can be 44 × 44 px (US-10).
+  const touch = useMedia(COARSE);
   const map = useMemo(
     () =>
       layout(
         graph,
         { width: window.innerWidth, height: window.innerHeight },
-        isBold ? { measure, bold: isBold } : { measure },
+        { measure, ...(isBold ? { bold: isBold } : {}), ...(touch ? { row: 44 } : {}) },
       ),
-    [layout, graph, measure, isBold],
+    [layout, graph, measure, isBold, touch],
   );
 
   const reduced = useReducedMotion();
@@ -96,13 +100,15 @@ export function MapView({
         }}
       >
         <g transform={`translate(${view.tx} ${view.ty}) scale(${view.k})`}>
-          <SvgMap
-            frame={frame}
-            {...actions}
-            {...(isBold ? { isBold } : {})}
-            onFold={(node) => state.toggleFold(node.id)}
-            onMore={(node) => state.toggleMore(node.parent ?? node.id)}
-          />
+          <TouchContext value={touch ? view.k : 0}>
+            <SvgMap
+              frame={frame}
+              {...actions}
+              {...(isBold ? { isBold } : {})}
+              onFold={(node) => state.toggleFold(node.id)}
+              onMore={(node) => state.toggleMore(node.parent ?? node.id)}
+            />
+          </TouchContext>
           {status && (
             <text className={styles.status} x={0} y={56} textAnchor="middle">
               {status}

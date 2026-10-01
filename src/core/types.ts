@@ -296,6 +296,8 @@ export interface LayoutOptions {
   measure?: MeasureText;
   /** Leaves drawn bold (a map for them is cached). */
   bold?: (node: MapNode) => boolean;
+  /** Distance between leaf rows; larger on touch screens, for 44 px tap targets. */
+  row?: number;
 }
 
 export type Layout = (

@@ -63,3 +63,15 @@
     display: none;
   }
 }
+
+@media (pointer: coarse) {
+  .zoom button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .label input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+  }
+}

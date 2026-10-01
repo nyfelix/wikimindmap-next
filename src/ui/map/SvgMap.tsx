@@ -15,6 +15,7 @@ import { FoldToggle } from "./FoldToggle.tsx";
 import { RecenterButton } from "./RecenterButton.tsx";
 import styles from "./SvgMap.module.css";
 import type { Frame, FrameNode } from "./tween.ts";
+import { useTouchHalf } from "./touch.ts";
 
 export interface MapActions {
   onCenter?: (node: MapNode, element: Element) => void;
@@ -169,6 +170,7 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
   const labelX = x + side * (half + LABEL_GAP);
   const recenterX = labelX + side * (p.textWidth + RECENTER_GAP);
   const bold = actions.isBold?.(node) ?? false;
+  const hit = useTouchHalf() ?? 11;
   const title = node.target ?? node.label;
   return (
     <g
@@ -186,6 +188,13 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
         data-interactive
         {...activate((el) => actions.onLeaf?.(node, el))}
       >
+        <rect
+          className={styles.hit}
+          x={Math.min(x - side * (half + 3), labelX + side * (p.textWidth + 4))}
+          y={y - hit}
+          width={half + 3 + LABEL_GAP + p.textWidth + 4}
+          height={2 * hit}
+        />
         <rect
           className={styles.ring}
           x={Math.min(x - side * (half + 3), labelX + side * (p.textWidth + 4))}

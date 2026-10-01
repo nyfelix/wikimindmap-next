@@ -246,6 +246,7 @@ type Layout = (
 interface LayoutOptions {
   measure?: (text: string, style: TextStyle) => number;  // real font metrics; layouts fall back to an estimate
   bold?: (node: MapNode) => boolean;                      // leaves with a cached map are drawn bold
+  row?: number;                                           // leaf row distance (44 on touch screens)
 }
 type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count";
 ```
