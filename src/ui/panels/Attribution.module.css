@@ -1,0 +1,18 @@
+.attribution {
+  position: fixed;
+  z-index: 2;
+  right: 16px;
+  bottom: 8px;
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.attribution:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}

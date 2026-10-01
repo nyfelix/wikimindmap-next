@@ -1,0 +1,68 @@
+/* Floating panels (styleguide.md §2): translucent paper, blur, 14 px from the window edge. */
+.panel {
+  position: fixed;
+  z-index: 2;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.08);
+}
+
+.topLeft {
+  top: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 10px 8px 14px;
+}
+
+.topRight {
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+}
+
+.bottomLeft {
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  max-width: calc(100% - 560px);
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+}
+
+.bottomRight {
+  bottom: 30px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+
+/* Small tracked capitals (styleguide.md §8). */
+.caps {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 1023px) {
+  .bottomLeft {
+    max-width: calc(100% - 28px);
+    bottom: 76px;
+  }
+}

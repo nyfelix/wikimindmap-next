@@ -2,7 +2,7 @@
 
 How WikiMindMap looks and behaves on screen. `architecture.md` says how it's built, `datamodel.md` what the data looks like, and this file what the reader sees.
 
-**Status:** layout, map elements, direction symbols, color and typography are decided. Typography is **Option 3, Editorial + graphic logo** (§8). Editorial pages follow the first concept page (§14). **Still open:** the final drawing of the logo (§9, DS-01).
+**Status:** layout, map elements, direction symbols, color and typography are decided. Typography is **Option 3, Editorial + graphic logo** (§8). Editorial pages follow the first concept page (§14). **Still open:** the owner's review of the logo draft (§9, DS-01).
 
 ## 1. Principles
 
@@ -191,7 +191,7 @@ Chosen by the owner after round 2.
 The map screen loads five files (Zilla 700 and italic 700, Fira Sans 400 and 600, Fira Mono 500), about 130 kB subset. Level-2 group labels use Zilla 700 at the smaller size; there's no 600 weight.
 
 - **Branches** are tapered (filled shapes), as in the Option 3 mock.
-- **Licence:** all four faces are OFL. They are self-hosted as WOFF2 in `public/fonts/`, subset to Latin + Latin Extended (+ Cyrillic and Greek for Fira Sans).
+- **Licence:** all four faces are OFL. They are self-hosted as WOFF2, bundled by Vite from the `@fontsource` packages (imported in `src/main.tsx`). Each face is split into subsets by `unicode-range` (Latin, Latin Extended, and Cyrillic and Greek for Fira Sans), so a page downloads only the subsets its text uses: about 128 kB for Latin.
 - **Loading:** the app loads Zilla Slab, Fira Sans and Fira Mono. The wordmark is an SVG outline, so Bricolage is only loaded on editorial pages.
 - **Non-Latin labels:** Fira Sans covers Cyrillic and Greek. Arabic, Hebrew, Devanagari and CJK use the system fonts in the fallback stack.
 - **Paid upgrade later (optional):** Tisa + Tisa Sans (Typotheque) could replace Zilla Slab + Fira Sans without changing the character.
@@ -202,7 +202,7 @@ The map screen loads five files (Zilla 700 and italic 700, Fira Sans 400 and 600
 - **Wordmark:** `WikiMindMap` (capital W, M, M), Bricolage Grotesque 800, letter-spacing −0.035 em, **entirely in `--ink`**: black in the light theme, near-white in the dark theme. There's no colored highlight; the color comes from the mark.
 - **Lockup:** mark left of the wordmark, gap = 0.3 × wordmark height, mark height = 1.2 × x-height of the wordmark. Also a stacked version (mark above) for square spaces.
 - **Favicon and app icon:** the mark alone, on `--paper` (light) or `--bg` dark.
-- **To do in DS-01:** draw the final mark and wordmark as outlines, check them at 16 px (favicon), 30 px (app header) and 120 px (About page), and export them as SVG to `public/logo.svg` and `public/favicon.svg`.
+- **Drawn in DS-01** by `scripts/build-logo.ts`: the mark (four tapered branches clockwise from the top right in `--b1`–`--b4`, each ending in a dot, around an `--ink` center) and the wordmark converted to outlines. It writes `public/logo.svg`, `public/favicon.svg` and `src/ui/brand/logoArt.ts` (the app draws the logo inline, in the theme's colors). Checked at 16, 30 and 120 px in light and dark; awaiting the owner's review.
 
 ## 10. Controls and icons
 

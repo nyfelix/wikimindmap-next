@@ -1,9 +1,7 @@
 /** Reads recorded API responses from tests/fixtures (datamodel.md §9). */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
-import { Window } from "happy-dom";
 import type { Article, ArticleRef, Siteinfo } from "../../src/core/types.ts";
-import { parseParsoid } from "../../src/sources/parsoid.ts";
 import { redirectPairs, type RedirectsResponse } from "../../src/sources/redirects.ts";
 import { parseSiteinfo, type SiteinfoResponse } from "../../src/sources/siteinfo.ts";
 
@@ -56,25 +54,18 @@ export function siteinfo(lang: string): Siteinfo {
 
 const articleCache = new Map<string, Article>();
 
-/**
- * The parsed Article of a fixture, parsed once per test file with its own happy-dom window
- * (closed right away: happy-dom keeps documents alive otherwise).
- */
+/** Where globalSetup.ts caches the parsed Article of a fixture. */
+export function articleCachePath(f: Fixture): string {
+  const name = `${f.ref.lang}-${f.ref.title.replaceAll(" ", "_")}.json`;
+  return join(FIXTURES, "..", "..", "node_modules", ".cache", "wmm-articles", name);
+}
+
+/** The parsed Article of a fixture, from the cache that globalSetup.ts fills before the tests. */
 export function fixtureArticle(f: Fixture): Article {
   let article = articleCache.get(f.dir);
   if (!article) {
-    const window = new Window();
-    try {
-      article = parseParsoid(
-        readText(f, "page.html"),
-        f.ref,
-        siteinfo(f.ref.lang),
-        new window.DOMParser() as unknown as DOMParser,
-        { fetchedAt: "2026-09-30T00:00:00.000Z", warn: () => {} },
-      );
-    } finally {
-      void window.happyDOM.close();
-    }
+    article = (JSON.parse(readFileSync(articleCachePath(f), "utf8")) as { article: Article })
+      .article;
     articleCache.set(f.dir, article);
   }
   return article;

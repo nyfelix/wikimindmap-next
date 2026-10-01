@@ -1,0 +1,117 @@
+/* Map elements (styleguide.md §4). Colors and fonts only through tokens. */
+
+.edges {
+  pointer-events: none;
+}
+
+.center,
+.leaf,
+.fold,
+.recenter,
+.more {
+  cursor: pointer;
+  outline: none;
+}
+
+.centerPill {
+  fill: var(--ink);
+}
+
+.centerText {
+  fill: var(--paper);
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.group,
+.subgroup {
+  fill: var(--ink);
+  font-family: var(--display);
+  font-weight: 700;
+}
+
+/* A halo in the canvas color keeps labels legible where they cross a branch. */
+.group,
+.subgroup,
+.leafText,
+.count {
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.group {
+  font-size: 18px;
+}
+
+.subgroup {
+  font-size: 14.5px;
+}
+
+.leafText {
+  fill: var(--ink);
+  font-family: var(--label);
+  font-size: 14.5px;
+  font-weight: 400;
+}
+
+.leafText.bold {
+  font-weight: 600;
+}
+
+.muted,
+.count {
+  fill: var(--muted);
+}
+
+.count {
+  font-family: var(--label);
+  font-size: 12.5px;
+}
+
+.leaf:hover .leafText,
+.more:hover .count {
+  text-decoration: underline;
+}
+
+.fold:hover circle:nth-of-type(2) {
+  stroke-width: 3;
+}
+
+.recenterDisc {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+}
+
+.recenterCross {
+  stroke: var(--accent);
+}
+
+.recenter:hover .recenterDisc {
+  fill: var(--accent);
+}
+
+.recenter:hover .recenterCross {
+  stroke: var(--paper);
+}
+
+/* Focus ring: SVG elements don't draw outlines reliably, so each control has its own ring. */
+.ring {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 2;
+}
+
+.center:focus-visible .centerPill {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+.leaf:focus-visible .ring,
+.fold:focus-visible .ring,
+.recenter:focus-visible .ring,
+.more:focus-visible .ring {
+  stroke: var(--accent);
+}

@@ -49,50 +49,11 @@ A design decision made together with the owner, before any map is rendered.
 - [x] The owner picks a direction in `concepts/style-directions.html` (or a new candidate)
   > Note: Option 3, Editorial + graphic logo.
 - [x] `styleguide.md` §8 records the faces, weights, fallback stacks (including non-Latin scripts) and the licence
-- [ ] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`, with the weights and budget from `styleguide.md` §8
-- [ ] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
+- [x] The chosen fonts (all OFL) are subset and self-hosted as WOFF2 in `public/fonts/`, with the weights and budget from `styleguide.md` §8
+  > Note: Bundled from the `@fontsource` packages instead of `public/fonts/`: still self-hosted WOFF2, already subset by `unicode-range`, ~128 kB for the five Latin files.
+- [x] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
+  > Note: Drawn by `scripts/build-logo.ts` (wordmark outlined from Bricolage Grotesque 800). A draft until the owner has reviewed it.
 - [x] `src/ui/styles/tokens.css` is updated with all five font tokens: `--logo`, `--display`, `--label`, `--ui`, `--mono`
-
-### US-01 See an article as a mind map · L
-*As a curious reader, I want to see an article's chapters as branches and its links as leaves, so I get an overview at a glance.*
-- [x] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
-- [x] Only `body` and `hatnote` links are shown by default
-- [x] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
-- [x] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
-  - chapters are split between the right and left side, clockwise from the top right, so both sides get a similar number of rows
-  - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
-- [ ] `ui/map/SvgMap.tsx` renders `PositionedMap` as specified in `styleguide.md` §4:
-  - center pill
-  - level-1 branches and deeper branches as tapered shapes, twigs as thin strokes
-  - fold toggles on every node that has children
-  - a direction symbol on every leaf (§5; shown as *pending* until M3 loads the data)
-  - leaf labels and ⊕
-  - same look as `concepts/style-directions.html`
-- [ ] A dev-only route `/dev/fixture/:lang/:title` renders any fixture
-
-### US-02 Fold and unfold parts · M
-*As a student, I want to fold chapters I'm not interested in, so long articles stay readable.*
-- [ ] Every node with children has a fold toggle (−/+) on its branch point, at every level. Clicking it or pressing Enter toggles it. A folded part shows `+N links`.
-- [ ] The fold toggle is a shared component in `ui/map/`, so every later lens gets folding for free
-- [ ] Folding re-runs the layout, and nodes move smoothly (250 ms, none with reduced motion)
-- [ ] Folded IDs are written to the URL (`fold=`)
-
-### US-03 Control how much is shown · S
-*As a reader, I want to choose how many links each part shows, so I can go from overview to detail.*
-- [ ] A density slider (2–8, default 4) and a "Show See also" toggle
-- [ ] Parts with more links show a `+N more` node. Clicking it shows **all** links of that one part; the other parts keep the density. The part then shows "Show fewer".
-- [ ] All settings are written to the URL (`density=`, `hk=`, `more=`)
-
-### US-19 Use the whole screen for the map · M
-*As a reader, I want the map to fill my screen, so I can see as much of it as possible.*
-- [ ] The map canvas fills the window. Logo and search, lens switch, trail and map controls float as panels at the edges (`styleguide.md` §2).
-- [ ] Drag the empty canvas to pan. Wheel, trackpad pinch and `+` `−` zoom around the pointer. `⤢` and `0` fit the map.
-- [ ] Every new map is fitted to the window automatically, leaving room for the panels
-- [ ] Works from 1024 px up, and without layout breaks on tablets (768–1023 px)
-
-### TS-09 Lens registry · S
-- [x] `lenses/index.ts` exports `lenses: Record<LensId, Lens>` and `getLens(id)`
-- [ ] The UI only talks to lenses through this registry, so M5–M7 add a file and one line
 
 **Done when:** the typography and logo are decided, and every starter fixture renders as a readable, full-window Chapters map in `/dev/fixture/…`, in light and dark, with folding, pan and zoom.
 
@@ -385,3 +346,54 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] Unit tests with a recorded `redirects.json`
 
 > Note: Deduplication is `uniqueLinks(links, redirects, exclude?)` in `src/core/links.ts`, ready for the Chapters lens (M2). It merges links by resolved title in order of first occurrence (real case in the Mind map fixture: `Concept maps` → `Concept map`), and drops links that resolve to the center. `redirectTargets(article)` collects the flagged targets for the lookup. Redirects to a section resolve to the page; `tofragment` is dropped.
+
+### TS-09 Lens registry · S · M2
+- [x] `lenses/index.ts` exports `lenses: Record<LensId, Lens>` and `getLens(id)`
+- [x] The UI only talks to lenses through this registry, so M5–M7 add a file and one line
+
+> Note: `lenses` is a `Partial<Record<LensId, Lens>>`, because Kinds, Links and Metro aren't built yet; `getLens()` falls back to Chapters, and `LENS_ORDER` lists all four for the lens switch. A matching `layouts/index.ts` registry gives `getLayout()`.
+
+### US-01 See an article as a mind map · L · M2
+*As a curious reader, I want to see an article's chapters as branches and its links as leaves, so I get an overview at a glance.*
+- [x] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
+- [x] Only `body` and `hatnote` links are shown by default
+- [x] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
+- [x] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
+  - chapters are split between the right and left side, clockwise from the top right, so both sides get a similar number of rows
+  - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
+- [x] `ui/map/SvgMap.tsx` renders `PositionedMap` as specified in `styleguide.md` §4:
+  - center pill
+  - level-1 branches and deeper branches as tapered shapes, twigs as thin strokes
+  - fold toggles on every node that has children
+  - a direction symbol on every leaf (§5; shown as *pending* until M3 loads the data)
+  - leaf labels and ⊕
+  - same look as `concepts/style-directions.html`
+- [x] A dev-only route `/dev/fixture/:lang/:title` renders any fixture
+
+> Note: The lead becomes the first branch, "Introduction" (owner decision); leaves keep reading order. The layout uses `cluster()` from d3-hierarchy instead of `tree()`, because tree compaction lets leaves at different depths share a row and overlap. Column widths follow the widest group label, and labels over 40 characters (52 for leaves) are shortened with "…". Labels get a halo in `--bg` where they cross a branch. Text is measured in the real fonts (canvas `measureText`). ⊕ is drawn wherever recentering is wired up; on the dev route it opens another fixture.
+
+### US-02 Fold and unfold parts · M · M2
+*As a student, I want to fold chapters I'm not interested in, so long articles stay readable.*
+- [x] Every node with children has a fold toggle (−/+) on its branch point, at every level. Clicking it or pressing Enter toggles it. A folded part shows `+N links`.
+- [x] The fold toggle is a shared component in `ui/map/`, so every later lens gets folding for free
+- [x] Folding re-runs the layout, and nodes move smoothly (250 ms, none with reduced motion)
+- [x] Folded IDs are written to the URL (`fold=`)
+
+> Note: Fold and "+N more" re-flow in 250 ms (`styleguide.md` §7), using a layout-agnostic tween in `ui/map/tween.ts`: nodes are matched by ID and paths interpolated number by number.
+
+### US-03 Control how much is shown · S · M2
+*As a reader, I want to choose how many links each part shows, so I can go from overview to detail.*
+- [x] A density slider (2–8, default 4) and a "Show See also" toggle
+- [x] Parts with more links show a `+N more` node. Clicking it shows **all** links of that one part; the other parts keep the density. The part then shows "Show fewer".
+- [x] All settings are written to the URL (`density=`, `hk=`, `more=`)
+
+> Note: "+N more" shows all links of that one group and turns into "Show fewer" (`more=` in the URL, `styleguide.md` §4). Map settings replace the history entry instead of adding one; history is for the trail.
+
+### US-19 Use the whole screen for the map · M · M2
+*As a reader, I want the map to fill my screen, so I can see as much of it as possible.*
+- [x] The map canvas fills the window. Logo and search, lens switch, trail and map controls float as panels at the edges (`styleguide.md` §2).
+- [x] Drag the empty canvas to pan. Wheel, trackpad pinch and `+` `−` zoom around the pointer. `⤢` and `0` fit the map.
+- [x] Every new map is fitted to the window automatically, leaving room for the panels
+- [x] Works from 1024 px up, and without layout breaks on tablets (768–1023 px)
+
+> Note: The logo, map controls and attribution panels are in place; search and trail come with US-04 and US-08, the lens switch with US-14. Fitting reserves room for the panels (`ui/map/viewport.ts`). The tablet layout was checked by screenshot at 820 × 1180; the Playwright test at that size comes with US-10.

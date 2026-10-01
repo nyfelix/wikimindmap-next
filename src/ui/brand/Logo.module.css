@@ -1,0 +1,7 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  line-height: 0;
+}

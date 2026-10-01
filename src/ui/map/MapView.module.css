@@ -1,0 +1,26 @@
+.canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--bg);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transition: opacity 150ms ease;
+}
+
+.canvas[data-panning] {
+  cursor: grabbing;
+}
+
+.dimmed {
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    transition: none;
+  }
+}
