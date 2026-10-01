@@ -54,6 +54,13 @@ const PAGE_REDIRECTS: Record<string, Record<string, string>> = {
   en: { Mindmap: "Mind map", "Mind-map": "Mind map", Zürich: "Zurich" },
 };
 
+/** Langlinks between recorded articles. */
+const LANGLINKS: Record<string, Record<string, string>> = {
+  "en:Mind map": { de: "Mindmap", fr: "Carte heuristique" },
+  "de:Mindmap": { en: "Mind map", fr: "Carte heuristique" },
+  "en:Albert Einstein": { de: "Albert Einstein" },
+};
+
 export interface MockOptions {
   /** Titles whose page request fails with a network error. */
   failing?: string[];
@@ -65,7 +72,9 @@ export interface MockLog {
 
 export async function mockWikipedia(page: Page, options: MockOptions = {}): Promise<MockLog> {
   const log: MockLog = { requests: [] };
-  await page.route(/^https:\/\/[a-z-]+\.wikipedia\.org\//, (route) => handle(route, log, options));
+  await page.route(/^https:\/\/([a-z-]+\.wikipedia|meta\.wikimedia)\.org\//, (route) =>
+    handle(route, log, options),
+  );
   return log;
 }
 
@@ -133,6 +142,20 @@ async function handle(route: Route, log: MockLog, options: MockOptions) {
   const titles = (p.get("titles") ?? "").split("|").filter(Boolean);
 
   if (p.get("meta") === "siteinfo") return reply(json(join(FIXTURES, lang, "siteinfo.json")));
+
+  if (p.get("action") === "sitematrix") return reply(json(join(FIXTURES, "sitematrix.json")));
+
+  if (p.get("prop") === "langlinks") {
+    const title = titles[0] ?? "";
+    const target = LANGLINKS[`${lang}:${title}`]?.[p.get("lllang") ?? ""];
+    return reply({
+      query: {
+        pages: [
+          { title, ...(target ? { langlinks: [{ lang: p.get("lllang"), title: target }] } : {}) },
+        ],
+      },
+    });
+  }
 
   if (p.get("list") === "random") return reply({ query: { random: [{ title: "Concept map" }] } });
 

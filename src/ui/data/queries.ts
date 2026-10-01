@@ -9,6 +9,7 @@ import { centerRedirects } from "../../sources/linksBack.ts";
 import { resolveRedirects } from "../../sources/redirects.ts";
 import { loadSiteinfo } from "../../sources/siteinfo.ts";
 import { loadSummary } from "../../sources/summary.ts";
+import { langlink, loadWikipedias, type Wikipedia } from "../../sources/languages.ts";
 import { persisters, queryClient, WEEK } from "./cache.ts";
 
 export const keys = {
@@ -18,7 +19,29 @@ export const keys = {
   aliases: (lang: Lang, title: Title) => ["aliases", lang, title] as const,
   linksBack: (lang: Lang, title: Title) => ["linksBack", lang, title] as const,
   summary: (lang: Lang, title: Title) => ["summary", lang, title] as const,
+  wikipedias: () => ["wikipedias"] as const,
+  langlink: (lang: Lang, title: Title, target: Lang) => ["langlink", lang, title, target] as const,
 };
+
+/** Every open Wikipedia (US-09). */
+export const wikipediasQuery = () =>
+  queryOptions<Wikipedia[]>({
+    queryKey: keys.wikipedias(),
+    queryFn: () => loadWikipedias(),
+    staleTime: WEEK,
+    gcTime: WEEK,
+    persister: persisters.week.persisterFn,
+  });
+
+/** The same article in another language; null when there is none. */
+export const langlinkQuery = (lang: Lang, title: Title, target: Lang) =>
+  queryOptions<Title | null>({
+    queryKey: keys.langlink(lang, title, target),
+    queryFn: async () => (await langlink(lang, title, target)) ?? null,
+    staleTime: WEEK,
+    gcTime: WEEK,
+    persister: persisters.week.persisterFn,
+  });
 
 export const siteinfoQuery = (lang: Lang) =>
   queryOptions<Siteinfo>({

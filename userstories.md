@@ -51,12 +51,6 @@ Goal: the full 2007 loop with live data.
 
 Goal: good enough to announce.
 
-### US-09 Choose the Wikipedia language · S
-*As a German-speaking reader, I want maps from de.wikipedia.org.*
-- [ ] A language picker inside the search panel (`EN ▾` in mono capitals, `styleguide.md` §2). The initial choice is the browser language if a wiki exists for it, otherwise `en`.
-- [ ] Switching language on a map offers the same article in the other language, if it exists (using `langlinks`)
-- [ ] Housekeeping lists work for `en`, `de` and `fr`
-
 ### US-10 Use it on a tablet · S
 *As a reader on a tablet, I want the map to work with touch.*
 - [ ] 768–1023 px: panels shrink and the lens switch becomes a menu
@@ -421,3 +415,11 @@ A design decision made together with the owner, before any map is rendered.
 - [x] Nothing in the app suggests it's an official Wikipedia service: no Wikipedia or Wikimedia logos, and "Wikipedia" never appears in the product name, logo or domain
 
 > Note: The About copy was drafted from the original repository's README (PHP, the adapted FreeMind Flash browser by Juan Pedro de Andres, GPL) and is waiting for the owner's review. Editorial pages are separate chunks that load Bricolage Grotesque 700/800 and Zilla Slab 400 themselves.
+
+### US-09 Choose the Wikipedia language · S · M4
+*As a German-speaking reader, I want maps from de.wikipedia.org.*
+- [x] A language picker inside the search panel (`EN ▾` in mono capitals, `styleguide.md` §2). The initial choice is the browser language if a wiki exists for it, otherwise `en`.
+- [x] Switching language on a map offers the same article in the other language, if it exists (using `langlinks`)
+- [x] Housekeeping lists work for `en`, `de` and `fr`
+
+> Note: The picker lists every open Wikipedia from the site matrix (348 on 2026-10-01; owner decision), the 20 largest first, filterable by code, own name or English name. Switching on a map opens the langlinked article as a new trail step; without one, a card says so and search moves to that language. The start page uses the first browser language: en, de and fr have a known start article, others get "Mind map" through langlinks, and fall back to English if there is none.

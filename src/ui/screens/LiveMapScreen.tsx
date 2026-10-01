@@ -3,7 +3,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { titleToPath } from "../../core/titles.ts";
 import { mapPath } from "./paths.ts";
-import type { ArticleRef, MapNode, Trail } from "../../core/types.ts";
+import type { ArticleRef, Lang, MapNode, Trail } from "../../core/types.ts";
+import { langlinkQuery } from "../data/queries.ts";
 import { LogoMenu } from "../brand/LogoMenu.tsx";
 import { useLiveMap } from "../data/useLiveMap.ts";
 import { useMapState } from "../hooks/useMapState.ts";
@@ -45,6 +46,9 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
   const [card, setCard] = useState<{ node: MapNode; anchor: Element }>();
   const [drawer, setDrawer] = useState(false);
   const [outline, setOutline] = useState(false);
+  // After choosing a language the article isn't in, search happens there (US-09).
+  const [searchLang, setSearchLang] = useState<Lang>();
+  const [missingIn, setMissingIn] = useState<Lang>();
   const labels = useLabels(state.lens);
   const lens = getLens(state.lens);
 
@@ -112,11 +116,30 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
 
   const pick = useCallback(
     (title: string) => {
-      const ref = { lang: real.lang, title };
+      const ref = { lang: searchLang ?? real.lang, title };
+      setMissingIn(undefined);
       goTo(ref, extendTrail(trail, ref, state.lens));
     },
-    [goTo, real.lang, trail, state.lens],
+    [goTo, searchLang, real.lang, trail, state.lens],
   );
+
+  // Another language: the same article there, if it exists (langlinks).
+  const switchLang = (target: Lang) => {
+    setMissingIn(undefined);
+    void queryClient
+      .fetchQuery(langlinkQuery(real.lang, real.title, target))
+      .catch(() => null)
+      .then((title) => {
+        if (title) {
+          const ref = { lang: target, title };
+          goTo(ref, extendTrail(trail, ref, state.lens));
+        } else {
+          setSearchLang(target);
+          setMissingIn(target);
+          search.current?.focus();
+        }
+      });
+  };
 
   // Keyboard: / focuses search, Esc closes the card.
   useEffect(() => {
@@ -212,8 +235,9 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
       <div className={`${panel.panel} ${panel.topLeft}`}>
         <LogoMenu />
         <SearchBox
-          lang={real.lang}
+          lang={searchLang ?? real.lang}
           onPick={pick}
+          onLang={switchLang}
           inputRef={search}
           highlight={isStart}
           autoFocus={isStart || live.status === "notFound"}
@@ -236,6 +260,14 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         />
       )}
 
+      {missingIn && (
+        <StateCard eyebrow="Other language">
+          <p className={cardStyles.text}>
+            “{real.title}” has no article on {missingIn}.wikipedia.org. Search there instead: the
+            search field above now looks in {missingIn.toUpperCase()}.
+          </p>
+        </StateCard>
+      )}
       {live.status === "notFound" && (
         <StateCard eyebrow="Not found">
           <p className={cardStyles.text}>

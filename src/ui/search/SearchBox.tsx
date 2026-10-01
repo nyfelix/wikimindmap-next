@@ -5,11 +5,14 @@ import { featuredArticle, randomArticle } from "../../sources/discover.ts";
 import { searchTitles, type Suggestion } from "../../sources/search.ts";
 import { HOUR } from "../data/cache.ts";
 import styles from "./SearchBox.module.css";
+import { LanguagePicker } from "./LanguagePicker.tsx";
 import { useDebounced } from "./useDebounced.ts";
 
 interface Props {
   lang: Lang;
   onPick: (title: Title) => void;
+  /** Shows the language picker; called with the chosen Wikipedia. */
+  onLang?: (lang: Lang) => void;
   inputRef?: RefObject<HTMLInputElement | null>;
   initialQuery?: string;
   /** The start page highlights the field (styleguide.md §15). */
@@ -30,6 +33,7 @@ interface Option {
 export function SearchBox({
   lang,
   onPick,
+  onLang,
   inputRef,
   initialQuery = "",
   highlight,
@@ -123,9 +127,11 @@ export function SearchBox({
         }
       }}
     >
-      <span className={styles.lang} aria-label={`Wikipedia language: ${lang}`}>
-        {lang}
-      </span>
+      {onLang ? (
+        <LanguagePicker lang={lang} onChange={onLang} />
+      ) : (
+        <span className={styles.lang}>{lang}</span>
+      )}
       <input
         ref={input}
         className={styles.input}

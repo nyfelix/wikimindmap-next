@@ -5,6 +5,7 @@
  *   npm run fixtures -- --starter          the whole starter set
  *   npm run fixtures -- en "Mind map" --fallback   also the action=parse fallback responses
  *   npm run fixtures -- --linksback-only   re-checks linksback.json for the recorded pages
+ *   npm run fixtures -- --languages        records sitematrix.json (all Wikipedias, US-09)
  *
  * Writes, per article: page.html, headers.json, summary.json, redirects.json, linksback.json,
  * and per language: siteinfo.json. With --fallback also fallback.json (TS-07). Enrichments for later milestones
@@ -176,6 +177,24 @@ async function recordArticle(lang: string, requested: string, fallback: boolean)
   );
 }
 
+/** The site matrix: every Wikipedia language, for the language picker. */
+async function recordLanguages() {
+  const { data } = await http.getJson(
+    actionUrl(
+      "meta",
+      {
+        action: "sitematrix",
+        smtype: "language",
+        smlangprop: "code|name|localname|site",
+        smsiteprop: "url|code",
+      },
+      "meta.wikimedia.org",
+    ),
+  );
+  await writeJson(join(ROOT, "sitematrix.json"), data);
+  console.log("sitematrix.json");
+}
+
 /** Re-records linksback.json from the stored page.html and redirects.json of every fixture. */
 async function relinkAll() {
   const langs = (await readdir(ROOT, { withFileTypes: true })).filter((d) => d.isDirectory());
@@ -202,6 +221,7 @@ async function relinkAll() {
 async function main() {
   const all = process.argv.slice(2);
   if (all[0] === "--linksback-only") return relinkAll();
+  if (all[0] === "--languages") return recordLanguages();
   const fallback = all.includes("--fallback");
   const [first, second, ...rest] = all.filter((a) => a !== "--fallback");
   const jobs: [string, string][] =

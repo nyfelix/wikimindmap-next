@@ -49,3 +49,29 @@ describe("cache storage", () => {
     await expect(storage.removeItem("x")).resolves.toBeUndefined();
   });
 });
+
+describe("languages", () => {
+  it("lists every open Wikipedia from the site matrix, by subdomain", async () => {
+    const { parseSitematrix } = await import("../../src/sources/languages.ts");
+    const { readFileSync } = await import("node:fs");
+    const { join } = await import("node:path");
+    const raw = JSON.parse(
+      readFileSync(join(import.meta.dirname, "..", "fixtures", "sitematrix.json"), "utf8"),
+    );
+    const wikis = parseSitematrix(raw);
+    expect(wikis.length).toBeGreaterThan(300);
+    expect(wikis.find((w) => w.lang === "de")).toEqual({
+      lang: "de",
+      name: "Deutsch",
+      englishName: "German",
+    });
+    // Closed wikis are left out (Afar).
+    expect(wikis.some((w) => w.lang === "aa")).toBe(false);
+  });
+
+  it("takes the first browser language", async () => {
+    const { browserLang } = await import("../../src/ui/screens/start.ts");
+    expect(browserLang(["de-CH", "en"])).toBe("de");
+    expect(browserLang([])).toBe("en");
+  });
+});

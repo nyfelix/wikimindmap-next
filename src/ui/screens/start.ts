@@ -5,11 +5,11 @@ export const START_TITLES: Record<string, string> = {
   fr: "Carte heuristique",
 };
 
-/** The reader's language if we know its start article, else English (full picker: US-09). */
-export function preferredLang(languages: readonly string[] = navigator.languages): string {
+/** The reader's first browser language (its primary subtag), or English. */
+export function browserLang(languages: readonly string[] = navigator.languages): string {
   for (const tag of languages) {
     const lang = tag.toLowerCase().split("-")[0];
-    if (lang && START_TITLES[lang]) return lang;
+    if (lang && /^[a-z]{2,3}$/.test(lang)) return lang;
   }
   return "en";
 }

@@ -62,9 +62,16 @@ export function restUrl(lang: string, path: string): string {
   return `https://${lang}.wikipedia.org/w/rest.php/v1/${path}`;
 }
 
-/** Action API URL with `format=json&formatversion=2`. `origin=*` is added by the client. */
-export function actionUrl(lang: string, params: Record<string, string | number>): string {
-  const url = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+/**
+ * Action API URL with `format=json&formatversion=2`. `origin=*` is added by the client.
+ * `host` defaults to the Wikipedia of `lang`; Wikimedia-wide lookups use meta.wikimedia.org.
+ */
+export function actionUrl(
+  lang: string,
+  params: Record<string, string | number>,
+  host = `${lang}.wikipedia.org`,
+): string {
+  const url = new URL(`https://${host}/w/api.php`);
   url.searchParams.set("action", "query");
   for (const [key, value] of Object.entries(params)) url.searchParams.set(key, String(value));
   url.searchParams.set("format", "json");

@@ -310,6 +310,7 @@ tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en
                      Chapters lens can show (all links, See also on), and those that link back
   pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
 tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
+tests/fixtures/sitematrix.json       action=sitematrix on meta.wikimedia.org: every Wikipedia (US-09)
 ```
 
 Record with `npm run fixtures -- <lang> "<Title>"` (add `--fallback` for `fallback.json`), or `npm run fixtures -- --starter` for the whole set below.
