@@ -223,7 +223,11 @@ interface PositionedNode {
   node: MapNode;
   x: number;
   y: number;
-  labelSide: "left" | "right" | "above" | "center";
+  labelSide: "left" | "right" | "above" | "center";  // the direction the label runs
+  side: 1 | -1;                // right or left half of the map (arrows are mirrored)
+  depth: number;               // 0 = center, 1 = first-level group, …
+  text: string;                // the label as drawn; long labels are shortened with "…"
+  textWidth: number;           // measured width of text
 }
 
 interface PositionedEdge {
@@ -232,7 +236,17 @@ interface PositionedEdge {
   width: number;               // stroke width
 }
 
-type Layout = (graph: MapGraph, viewport: { width: number; height: number }) => PositionedMap;
+type Layout = (
+  graph: MapGraph,
+  viewport: { width: number; height: number },
+  options?: LayoutOptions,
+) => PositionedMap;
+
+interface LayoutOptions {
+  measure?: (text: string, style: TextStyle) => number;  // real font metrics; layouts fall back to an estimate
+  bold?: (node: MapNode) => boolean;                      // leaves with a cached map are drawn bold
+}
+type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count";
 ```
 
 ## 7. Housekeeping sections

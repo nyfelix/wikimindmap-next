@@ -247,7 +247,16 @@ export interface PositionedNode {
   node: MapNode;
   x: number;
   y: number;
+  /** The direction the label runs from the node point. */
   labelSide: "left" | "right" | "above" | "center";
+  /** 1 on the right half of the map, -1 on the left (arrows are mirrored). */
+  side: 1 | -1;
+  /** 0 for the center, 1 for first-level groups, … */
+  depth: number;
+  /** The label as drawn: long labels are shortened with "…". */
+  text: string;
+  /** Measured width of `text`. */
+  textWidth: number;
 }
 
 export interface PositionedEdge {
@@ -258,7 +267,21 @@ export interface PositionedEdge {
   width: number;
 }
 
+/** The text styles on the map; fonts per style come from the CSS tokens. */
+export type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count";
+
+/** Measures the rendered width of a text in a style. */
+export type MeasureText = (text: string, style: TextStyle) => number;
+
+export interface LayoutOptions {
+  /** Measures text in the real fonts; layouts fall back to an estimate. */
+  measure?: MeasureText;
+  /** Leaves drawn bold (a map for them is cached). */
+  bold?: (node: MapNode) => boolean;
+}
+
 export type Layout = (
   graph: MapGraph,
   viewport: { width: number; height: number },
+  options?: LayoutOptions,
 ) => PositionedMap;

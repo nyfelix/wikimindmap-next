@@ -58,7 +58,7 @@ A design decision made together with the owner, before any map is rendered.
 - [x] `lenses/chapters.ts`: chapters become `group` nodes, subchapters `subgroup` nodes, and links `leaf` nodes, following the rules in `datamodel.md` §4
 - [x] Only `body` and `hatnote` links are shown by default
 - [x] Each chapter gets a color slot 1–6 in turn. Housekeeping chapters are muted and hidden by default.
-- [ ] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
+- [x] `layouts/mindmapTree.ts` uses `d3-hierarchy` `tree()`:
   - chapters are split between the right and left side, clockwise from the top right, so both sides get a similar number of rows
   - no labels overlap for any starter fixture at density 4 (checked by a unit test that compares label bounding boxes)
 - [ ] `ui/map/SvgMap.tsx` renders `PositionedMap` as specified in `styleguide.md` §4:
