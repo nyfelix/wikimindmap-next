@@ -41,3 +41,15 @@ npm run fixtures -- en "Mind map"   # record real API responses into tests/fixtu
 - [`datamodel.md`](datamodel.md): TypeScript types
 - [`userstories.md`](userstories.md): milestones and stories (the plan)
 - [`concepts/`](concepts/): clickable previews of the lenses
+
+## License
+
+The code is released under the [MIT License](LICENSE).
+
+Some parts come with their own licences:
+
+- **Map content** (titles, summaries, images) comes from the wiki being mapped and keeps that wiki's licence. For Wikipedia that's [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The app shows the attribution on every map.
+- **Test fixtures** in `tests/fixtures/` are recorded Wikipedia pages and API responses, under CC BY-SA 4.0, from the articles named in their folder paths.
+- **Fonts** (Bricolage Grotesque, Zilla Slab, Fira Sans, Fira Mono) are under the [SIL Open Font License 1.1](https://openfontlicense.org/), installed through Fontsource.
+
+If you fork WikiMindMap and run it publicly, please use your own name and logo, so your version isn't mistaken for this one.

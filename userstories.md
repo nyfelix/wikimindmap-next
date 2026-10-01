@@ -53,8 +53,9 @@ Goal: good enough to announce.
 
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
-- [ ] Initial JS is < 200 kB gzipped
-- [ ] Errors are caught by an error boundary with a friendly message; no blank screens
+- [x] Initial JS is < 200 kB gzipped
+- [x] Errors are caught by an error boundary with a friendly message; no blank screens
+> Note: Initial JS is 123 kB gzipped; editorial pages and their fonts are separate chunks. Lighthouse can't run in the dev container (both Chromium builds lose the connection to it), so the score is still open: it will be measured with PageSpeed Insights on the deployed site. Measured with Playwright under Lighthouse's mobile conditions (4× CPU, slow 4G): FCP 1.1 s, LCP 2.8 s, TBT ≤ 57 ms, CLS 0.02 on `/` and `/en/Mind_map`; LCP waits for Wikipedia's article over the throttled network.
 
 ### TS-12 Release · S
 - [ ] Version `1.0.0` is tagged, with a changelog in `README.md`

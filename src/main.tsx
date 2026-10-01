@@ -11,6 +11,7 @@ import "@fontsource/fira-sans/600.css";
 import "@fontsource/fira-mono/500.css";
 import { App } from "./ui/App.tsx";
 import { queryClient } from "./ui/data/cache.ts";
+import { ErrorBoundary } from "./ui/ErrorBoundary.tsx";
 import "./ui/styles/tokens.css";
 
 const root = document.getElementById("root");
@@ -18,10 +19,12 @@ if (!root) throw new Error("#root is missing from index.html");
 
 createRoot(root).render(
   <StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-        <App />
-      </BrowserRouter>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <App />
+        </BrowserRouter>
+      </QueryClientProvider>
+    </ErrorBoundary>
   </StrictMode>,
 );
