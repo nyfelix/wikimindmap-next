@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from "react";
 import { useSearchParams } from "react-router";
-import type { LensOptions } from "../../core/types.ts";
+import type { LensId, LensOptions } from "../../core/types.ts";
+import { getLens } from "../../lenses/index.ts";
 import { readMapParams, toggle, writeMapParams, type MapParams } from "./mapParams.ts";
 
 /**
@@ -39,6 +40,28 @@ export function useMapState() {
     setHousekeeping: useCallback(
       (showHousekeeping: boolean) => update(() => ({ showHousekeeping })),
       [update],
+    ),
+    /** Switches lens on the same article; folds are per lens, so they are reset (US-14). */
+    setLens: useCallback(
+      (lens: LensId) => {
+        setParams(
+          (current) => {
+            const now = readMapParams(current);
+            const next: MapParams = {
+              lens,
+              options: {
+                ...getLens(lens).defaults,
+                showHousekeeping: now.options.showHousekeeping,
+                folded: [],
+                expanded: [],
+              },
+            };
+            return writeMapParams(current, next);
+          },
+          { replace: true },
+        );
+      },
+      [setParams],
     ),
   };
 }

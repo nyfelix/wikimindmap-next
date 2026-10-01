@@ -1,0 +1,87 @@
+.lenses {
+  display: flex;
+  gap: 2px;
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.lens {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: 600 0.85rem var(--ui);
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lens[aria-current] {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
+  cursor: default;
+}
+
+.lens:hover:not([aria-current]) {
+  color: var(--ink);
+}
+
+.soon {
+  cursor: help;
+}
+
+.soonTag {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* One-line description on hover and focus. */
+.soon[data-tip]:hover::after,
+.soon[data-tip]:focus-visible::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: max-content;
+  max-width: 260px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 400 0.8rem var(--ui);
+  white-space: normal;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font: 700 0.95rem var(--ui);
+  color: var(--ink);
+}
+
+.icon:hover {
+  background: var(--bg);
+}
+
+.icon[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--paper);
+}

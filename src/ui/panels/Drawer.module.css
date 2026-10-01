@@ -1,0 +1,103 @@
+.drawer {
+  position: fixed;
+  z-index: 4;
+  top: 70px;
+  right: 14px;
+  bottom: 84px;
+  width: 340px;
+  max-width: calc(100% - 28px);
+  padding: 20px;
+  overflow: auto;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  animation: rise 150ms ease-out;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer {
+    animation: none;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+/* Focus moves here when the drawer opens; the heading itself isn't a control. */
+.title:focus,
+.title:focus-visible {
+  outline: none;
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 8px;
+  font: 400 0.92rem/1.5 var(--ui);
+  color: var(--ink);
+}
+
+.legend {
+  display: grid;
+  gap: 8px;
+}
+
+.legend div {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 8px;
+  align-items: center;
+  font: 400 0.9rem var(--ui);
+  color: var(--ink);
+}
+
+.muted {
+  margin: 0;
+  font: 400 0.9rem/1.5 var(--ui);
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.link {
+  font: 600 0.85rem var(--ui);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.source {
+  margin: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.source a {
+  color: var(--accent);
+}

@@ -46,6 +46,10 @@ test.describe("live map (mocked Wikipedia)", () => {
     await page.getByRole("button", { name: "Make Albert Einstein the center" }).first().click();
     await expect(page).toHaveURL(/\/en\/Albert_Einstein$/);
     await expect(page.getByRole("button", { name: "About Albert Einstein" })).toBeVisible();
+    // The center shows at once; wait until the article itself has loaded.
+    await expect(page.getByRole("button", { name: "Fold Introduction" })).toBeVisible();
+    // …and its links back have been checked: no leaf is pending any more.
+    await expect(page.locator('[data-node="leaf"][data-direction="pending"]')).toHaveCount(0);
 
     const requests = log.requests.length;
     await page.goBack();

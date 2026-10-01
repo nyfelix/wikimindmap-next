@@ -99,6 +99,7 @@ function CenterView({ p, actions, ...rest }: ViewProps) {
       aria-label={`About ${node.label}`}
       data-interactive
       data-node="center"
+      data-id="center"
       {...rest}
       {...activate((el) => actions.onCenter?.(node, el))}
     >
@@ -128,7 +129,7 @@ function GroupView({ p, actions, ...rest }: ViewProps) {
   const color = slotColor(node.colorSlot);
   const folded = node.folded === true;
   return (
-    <g data-node={node.kind} {...rest}>
+    <g data-node={node.kind} data-id={node.id} data-side={side} data-label={node.label} {...rest}>
       <text
         className={p.depth === 1 ? styles.group : styles.subgroup}
         x={x - side * GROUP_LABEL.dx}
@@ -170,7 +171,13 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
   const bold = actions.isBold?.(node) ?? false;
   const title = node.target ?? node.label;
   return (
-    <g data-node="leaf" {...rest}>
+    <g
+      data-node="leaf"
+      data-id={node.id}
+      data-side={side}
+      data-direction={node.direction ?? "pending"}
+      {...rest}
+    >
       <g
         className={styles.leaf}
         role="button"
@@ -187,14 +194,16 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
           height={22}
           rx={6}
         />
-        <DirectionGlyph
-          direction={node.direction ?? "pending"}
-          color={slotColor(node.colorSlot)}
-          side={side}
-          x={x}
-          y={y}
-          {...(node.redLink ? { redLink: true } : {})}
-        />
+        <g data-glyph>
+          <DirectionGlyph
+            direction={node.direction ?? "pending"}
+            color={slotColor(node.colorSlot)}
+            side={side}
+            x={x}
+            y={y}
+            {...(node.redLink ? { redLink: true } : {})}
+          />
+        </g>
         <text
           className={`${styles.leafText} ${node.redLink ? styles.muted : ""} ${bold ? styles.bold : ""}`}
           x={labelX}
@@ -228,6 +237,7 @@ function MoreView({ p, actions, ...rest }: ViewProps) {
       aria-label={label}
       data-interactive
       data-node="more"
+      data-id={node.id}
       {...rest}
       {...activate(() => actions.onMore?.(node))}
     >

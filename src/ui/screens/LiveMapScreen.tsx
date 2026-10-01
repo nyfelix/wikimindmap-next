@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router";
 import { titleToPath } from "../../core/titles.ts";
 import { mapPath } from "./paths.ts";
 import type { ArticleRef, MapNode, Trail } from "../../core/types.ts";
-import { Logo } from "../brand/Logo.tsx";
+import { LogoMenu } from "../brand/LogoMenu.tsx";
 import { useLiveMap } from "../data/useLiveMap.ts";
 import { useMapState } from "../hooks/useMapState.ts";
 import { extendTrail, renameCurrent } from "../hooks/trail.ts";
@@ -16,6 +16,10 @@ import panel from "../panels/Panel.module.css";
 import { PreviewCard } from "../panels/PreviewCard.tsx";
 import { StateCard } from "../panels/StateCard.tsx";
 import { TrailBar } from "../panels/TrailBar.tsx";
+import { Drawer } from "../panels/Drawer.tsx";
+import { TopRight } from "../panels/TopRight.tsx";
+import { getLens } from "../../lenses/index.ts";
+import { useLabels } from "../hooks/useLabels.ts";
 import { SearchBox } from "../search/SearchBox.tsx";
 import styles from "./LiveMapScreen.module.css";
 
@@ -39,6 +43,10 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
   const queryClient = useQueryClient();
   const search = useRef<HTMLInputElement>(null);
   const [card, setCard] = useState<{ node: MapNode; anchor: Element }>();
+  const [drawer, setDrawer] = useState(false);
+  const [outline, setOutline] = useState(false);
+  const labels = useLabels(state.lens);
+  const lens = getLens(state.lens);
 
   const mapKey = `${real.lang}:${real.title}:${state.lens}`;
 
@@ -120,11 +128,20 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         search.current?.focus();
       } else if (e.key === "Escape") {
         setCard(undefined);
+        setDrawer(false);
+      } else if (typing || e.metaKey || e.ctrlKey || e.altKey) {
+        return;
+      } else if (e.key === "?") {
+        labels.toggle();
+      } else if (e.key === "i") {
+        setDrawer((d) => !d);
+      } else if (e.key === "o") {
+        setOutline((o) => !o);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [labels]);
 
   // Leaves whose article is already cached are drawn bold (styleguide.md §4).
   const cached = useMemo(
@@ -165,16 +182,35 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
           onRecenter: recenter,
         }}
         {...(live.status === "loading" && slow === mapKey ? { status: "Loading" } : {})}
+        {...(labels.visible && live.status === "ready" && !empty
+          ? { labels: { explain: lens.explain, onDone: labels.hide } }
+          : {})}
       />
 
+      <TopRight
+        lens={state.lens}
+        onLens={state.setLens}
+        labels={labels.visible}
+        onLabels={labels.toggle}
+        drawer={drawer}
+        onDrawer={() => setDrawer((d) => !d)}
+        outline={outline}
+        onOutline={() => setOutline((o) => !o)}
+      />
+      {drawer && (
+        <Drawer
+          lens={lens}
+          {...(live.article ? { article: live.article } : {})}
+          onClose={() => setDrawer(false)}
+          onLabels={() => {
+            setDrawer(false);
+            labels.show();
+          }}
+        />
+      )}
+
       <div className={`${panel.panel} ${panel.topLeft}`}>
-        <a
-          className={styles.home}
-          href={import.meta.env.BASE_URL}
-          aria-label="WikiMindMap, start page"
-        >
-          <Logo height={20} />
-        </a>
+        <LogoMenu />
         <SearchBox
           lang={real.lang}
           onPick={pick}

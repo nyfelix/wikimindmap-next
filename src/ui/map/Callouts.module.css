@@ -1,0 +1,81 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+}
+
+.line {
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  fill: none;
+}
+
+.dot {
+  fill: var(--ink);
+}
+
+.callout {
+  position: absolute;
+  width: 220px;
+  min-height: 64px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 10px;
+  padding: 9px 12px;
+  font: 400 0.82rem/1.4 var(--ui);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.18);
+}
+
+.callout b {
+  display: block;
+  margin-bottom: 2px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.bar {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 8px 8px 14px;
+  font: 400 0.85rem var(--ui);
+  color: var(--ink);
+}
+
+.done {
+  border: 0;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font: 600 0.85rem var(--ui);
+  cursor: pointer;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .bar {
+    top: auto;
+    bottom: 140px;
+  }
+}

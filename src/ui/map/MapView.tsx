@@ -1,10 +1,11 @@
 import { useMemo } from "react";
-import type { MapGraph, MapNode } from "../../core/types.ts";
+import type { LensExplanation, MapGraph, MapNode } from "../../core/types.ts";
 import { getLayout } from "../../layouts/index.ts";
 import { getLens } from "../../lenses/index.ts";
 import type { MapState } from "../hooks/useMapState.ts";
 import { useReducedMotion } from "../hooks/useReducedMotion.ts";
 import { MapControls } from "../panels/MapControls.tsx";
+import { Callouts } from "./Callouts.tsx";
 import { createMeasure } from "./measure.ts";
 import styles from "./MapView.module.css";
 import { SvgMap, type MapActions } from "./SvgMap.tsx";
@@ -29,6 +30,8 @@ interface Props {
   onCanvasClick?: () => void;
   /** Drawn on the map under the center, e.g. "LOADING". */
   status?: string;
+  /** Map labels (US-18): shown when given. */
+  labels?: { explain: LensExplanation; onDone: () => void };
 }
 
 /** The full-window map: layout → animation → SVG, with pan, zoom and the map controls. */
@@ -41,6 +44,7 @@ export function MapView({
   dimmed,
   onCanvasClick,
   status,
+  labels,
 }: Props) {
   const lens = getLens(graph.lens);
   const fontsReady = useFontsReady();
@@ -90,6 +94,14 @@ export function MapView({
           )}
         </g>
       </svg>
+      {labels && (
+        <Callouts
+          svg={svg}
+          explain={labels.explain}
+          version={[view, frame]}
+          onDone={labels.onDone}
+        />
+      )}
       <MapControls
         density={state.options.density}
         onDensity={state.setDensity}

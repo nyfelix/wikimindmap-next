@@ -57,20 +57,6 @@ Goal: good enough to announce.
 - [ ] Switching language on a map offers the same article in the other language, if it exists (using `langlinks`)
 - [ ] Housekeeping lists work for `en`, `de` and `fr`
 
-### US-18 Understand how the map is built · M
-*As a first-time visitor, I want the map to explain itself, so I understand what branches, leaves and symbols mean without reading a manual.*
-- [ ] **Map labels:** 4–5 callouts pinned to real elements of the current map, with the copy from `styleguide.md` §3. Shown the first time a lens is opened; `?` toggles them; "Got it" hides them.
-- [ ] **Drawer "How this map is built"** (`i`): the construction steps, the symbol legend, what is hidden and why, the source line (article URL and revision), and a link to the help page "How lenses work"
-- [ ] Each lens provides its own explanation text through the lens registry (`datamodel.md` §4, `explain`)
-- [ ] Callouts reposition on pan, zoom and resize, and stay inside the window
-- [ ] Whether the labels were seen is remembered per lens (`localStorage`, wrapped in try/catch)
-
-### US-20 See the lenses that are coming · S
-*As a curious reader, I want to see that there are other ways to look at an article, so I come back when they arrive.*
-- [ ] The lens switch in the top-right panel shows Chapters (active) and Kinds, Links and Metro marked "soon" (`styleguide.md` §2)
-- [ ] "Soon" lenses can't be selected. Hover or focus shows a one-line description, and clicking one opens the help page "How lenses work" at that lens.
-- [ ] Each later milestone (M5–M7) turns one lens from "soon" into selectable, by registering it in the lens registry
-
 ### US-10 Use it on a tablet · S
 *As a reader on a tablet, I want the map to work with touch.*
 - [ ] 768–1023 px: panels shrink and the lens switch becomes a menu
@@ -85,15 +71,6 @@ Goal: good enough to announce.
 - [ ] The outline shows the direction of each link in words ("links both ways")
 - [ ] The whole flow works with keyboard only: search → map → preview → recenter → trail. Arrow keys move between nodes on the map (along branches, and between siblings).
 - [ ] An axe-core check in Playwright shows no serious issues
-
-### US-12 Know what this is · S
-*As a first-time visitor, I want to understand the idea and its history.*
-- [ ] An "About" page: the idea, the 2007 history, a link to the old repo and to Wikipedia, and a note on data sources and licenses (Wikipedia content is CC BY-SA)
-- [ ] Editorial pages (About, help) follow `styleguide.md` §14: grey background, reading column, Bricolage headings, Zilla Slab body, capital eyebrows and breadcrumbs
-- [ ] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article, as a small line under the bottom-right controls (`styleguide.md` §2)
-- [ ] Clicking the logo opens a small menu: About, How lenses work, GitHub. Editorial pages link back to the map.
-- [ ] The About page and the README state: "WikiMindMap is an independent project and is not affiliated with or endorsed by the Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation."
-- [ ] Nothing in the app suggests it's an official Wikipedia service: no Wikipedia or Wikimedia logos, and "Wikipedia" never appears in the product name, logo or domain
 
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
@@ -415,3 +392,32 @@ A design decision made together with the owner, before any map is rendered.
 - [x] The logo mark and wordmark are drawn to match (`styleguide.md` §9) and exported as `public/logo.svg` and `public/favicon.svg`
   > Note: Drawn by `scripts/build-logo.ts` (wordmark outlined from Bricolage Grotesque 800). After the owner's review: the organic mark of the Option 3 preview, at 1.15 × the cap height. Approved by the owner on 2026-10-01.
 - [x] `src/ui/styles/tokens.css` is updated with all five font tokens: `--logo`, `--display`, `--label`, `--ui`, `--mono`
+
+### US-18 Understand how the map is built · M · M4
+*As a first-time visitor, I want the map to explain itself, so I understand what branches, leaves and symbols mean without reading a manual.*
+- [x] **Map labels:** 4–5 callouts pinned to real elements of the current map, with the copy from `styleguide.md` §3. Shown the first time a lens is opened; `?` toggles them; "Got it" hides them.
+- [x] **Drawer "How this map is built"** (`i`): the construction steps, the symbol legend, what is hidden and why, the source line (article URL and revision), and a link to the help page "How lenses work"
+- [x] Each lens provides its own explanation text through the lens registry (`datamodel.md` §4, `explain`)
+- [x] Callouts reposition on pan, zoom and resize, and stay inside the window
+- [x] Whether the labels were seen is remembered per lens (`localStorage`, wrapped in try/catch)
+
+> Note: Callouts are placed by a pure function (`ui/map/callouts.ts`) next to the first matching element on the map, and follow every pan, zoom, resize and animation frame. A copy for screen readers sits next to them. The drawer's source line links the exact revision.
+
+### US-20 See the lenses that are coming · S · M4
+*As a curious reader, I want to see that there are other ways to look at an article, so I come back when they arrive.*
+- [x] The lens switch in the top-right panel shows Chapters (active) and Kinds, Links and Metro marked "soon" (`styleguide.md` §2)
+- [x] "Soon" lenses can't be selected. Hover or focus shows a one-line description, and clicking one opens the help page "How lenses work" at that lens.
+- [x] Each later milestone (M5–M7) turns one lens from "soon" into selectable, by registering it in the lens registry
+
+> Note: "Soon" lenses are links to `/help/lenses#{lens}`, with the description as a tooltip on hover and focus. A lens becomes selectable as soon as it is registered in `lenses/index.ts`; switching lenses keeps the center and the trail and resets folds (`setLens`).
+
+### US-12 Know what this is · S · M4
+*As a first-time visitor, I want to understand the idea and its history.*
+- [x] An "About" page: the idea, the 2007 history, a link to the old repo and to Wikipedia, and a note on data sources and licenses (Wikipedia content is CC BY-SA)
+- [x] Editorial pages (About, help) follow `styleguide.md` §14: grey background, reading column, Bricolage headings, Zilla Slab body, capital eyebrows and breadcrumbs
+- [x] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article, as a small line under the bottom-right controls (`styleguide.md` §2)
+- [x] Clicking the logo opens a small menu: About, How lenses work, GitHub. Editorial pages link back to the map.
+- [x] The About page and the README state: "WikiMindMap is an independent project and is not affiliated with or endorsed by the Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation."
+- [x] Nothing in the app suggests it's an official Wikipedia service: no Wikipedia or Wikimedia logos, and "Wikipedia" never appears in the product name, logo or domain
+
+> Note: The About copy was drafted from the original repository's README (PHP, the adapted FreeMind Flash browser by Juan Pedro de Andres, GPL) and is waiting for the owner's review. Editorial pages are separate chunks that load Bricolage Grotesque 700/800 and Zilla Slab 400 themselves.
