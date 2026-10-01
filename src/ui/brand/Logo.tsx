@@ -1,7 +1,7 @@
 import { MARK, WORDMARK } from "./logoArt.ts";
 import styles from "./Logo.module.css";
 
-/** The mark: four tapered branches around a dark center (styleguide.md §9). */
+/** The mark: four organic branches around a dark center (styleguide.md §9). */
 export function LogoMark({ size = 30 }: { size?: number }) {
   return (
     <svg
@@ -12,10 +12,7 @@ export function LogoMark({ size = 30 }: { size?: number }) {
       focusable="false"
     >
       {MARK.branches.map((b) => (
-        <g key={b.color} fill={`var(--${b.color})`}>
-          <path d={b.d} />
-          <circle cx={b.dot.cx} cy={b.dot.cy} r={b.dot.r} />
-        </g>
+        <path key={b.color} d={b.d} fill={`var(--${b.color})`} />
       ))}
       <circle cx={MARK.center.cx} cy={MARK.center.cy} r={MARK.center.r} fill="var(--ink)" />
     </svg>
@@ -28,7 +25,7 @@ export function Logo({ height = 20 }: { height?: number }) {
   const scale = height / box.height;
   return (
     <span className={styles.logo} role="img" aria-label="WikiMindMap">
-      <LogoMark size={Math.round(1.2 * WORDMARK.xHeight * scale * 1.15)} />
+      <LogoMark size={Math.round(WORDMARK.markToCaps * WORDMARK.capHeight * scale)} />
       <svg
         width={Math.round(box.width * scale)}
         height={height}

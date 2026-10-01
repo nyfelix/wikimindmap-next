@@ -18,6 +18,8 @@ const FONT =
 const WORD = "WikiMindMap";
 const SIZE = 100;
 const TRACKING = -0.035;
+/** Mark height relative to the wordmark's cap height. */
+const MARK_TO_CAPS = 1.15;
 
 // Light and dark values of the tokens used (src/ui/styles/tokens.css).
 const LIGHT = {
@@ -104,54 +106,39 @@ async function wordmark() {
     box: { x: x1, y: y1, width: x2 - x1, height: y2 - y1 },
     baseline,
     xHeight: font.tables.os2.sxHeight * scale,
+    capHeight: font.tables.os2.sCapHeight * scale,
   };
 }
 
 /**
- * The mark: four tapered branches clockwise from the top right in --b1…--b4, like the map's
- * first-level branches, each ending in a dot, around a dark center. Drawn on a 28 × 28 grid.
+ * The mark, as in the Option 3 preview (concepts/style-directions.html): four organic branches,
+ * wide at the center and curving out to a point, in --b1…--b4 clockwise from the top left,
+ * around a dark center. Drawn on a 28 × 28 grid.
  */
 function mark() {
   const c = 14;
-  const taper = (sx: number, sy: number) => {
-    const x0 = c + sx * 2;
-    const x1 = c + sx * 10.2;
-    const y1 = c + sy * 7.6;
-    const mx = (x0 + x1) / 2;
-    const a = 2.6;
-    const b = 1.05;
-    return (
-      `M${f(x0)} ${f(c - a)}C${f(mx)} ${f(c - a)} ${f(mx)} ${f(y1 - b)} ${f(x1)} ${f(y1 - b)}` +
-      `L${f(x1)} ${f(y1 + b)}C${f(mx)} ${f(y1 + b)} ${f(mx)} ${f(c + a)} ${f(x0)} ${f(c + a)}Z`
-    );
-  };
-  const ends = [
-    [1, -1],
-    [1, 1],
-    [-1, 1],
-    [-1, -1],
-  ] as const;
+  const w = 2.6;
+  // From the center (wide) through a control point to the tip, and back on a slightly offset curve.
+  const branch = (cx: number, cy: number, x: number, y: number) =>
+    `M${f(c - w * 0.2)} ${f(c - w)}Q${f(cx)} ${f(cy)} ${f(x)} ${f(y)}` +
+    `Q${f(cx + 1.5)} ${f(cy + 1.5)} ${f(c + w * 0.2)} ${f(c + w)}Z`;
   return {
     size: 28,
-    branches: ends.map(([sx, sy], i) => ({
-      color: `b${i + 1}` as const,
-      d: taper(sx, sy),
-      dot: { cx: c + sx * 11.2, cy: c + sy * 7.6, r: 2.3 },
-    })),
-    center: { cx: c, cy: c, r: 5.4 },
+    branches: [
+      { color: "b1" as const, d: branch(8, 6, 3, 4.5) },
+      { color: "b2" as const, d: branch(21, 6, 25.5, 5) },
+      { color: "b3" as const, d: branch(21, 21, 25, 24.5) },
+      { color: "b4" as const, d: branch(6, 20, 3, 24.5) },
+    ],
+    center: { cx: c, cy: c, r: 5.2 },
   };
 }
 
 /** The mark's shapes; each is painted with the class of its token (see themeStyle). */
 function markSvg(m: ReturnType<typeof mark>): string {
   return (
-    m.branches
-      .map(
-        (b) =>
-          `<path class="${b.color}" d="${b.d}"/>` +
-          `<circle class="${b.color}" cx="${f(b.dot.cx)}" cy="${f(b.dot.cy)}" r="${b.dot.r}"/>`,
-      )
-      .join("") + `<circle class="ink" cx="${m.center.cx}" cy="${m.center.cy}" r="${m.center.r}"/>`
+    m.branches.map((b) => `<path class="${b.color}" d="${b.d}"/>`).join("") +
+    `<circle class="ink" cx="${m.center.cx}" cy="${m.center.cy}" r="${m.center.r}"/>`
   );
 }
 
@@ -163,12 +150,12 @@ async function main() {
   const word = await wordmark();
   const m = mark();
 
-  // Lockup (styleguide.md §9): mark height = 1.2 × x-height, gap = 0.3 × wordmark height,
-  // the mark centred on the x-height band.
-  const markHeight = 1.2 * word.xHeight;
+  // Lockup (styleguide.md §9): mark height = 1.15 × cap height, gap = 0.3 × wordmark height,
+  // the mark centred on the cap-height band.
+  const markHeight = MARK_TO_CAPS * word.capHeight;
   const gap = 0.3 * word.box.height;
   const scale = markHeight / m.size;
-  const markY = word.baseline - word.xHeight / 2 - markHeight / 2;
+  const markY = word.baseline - word.capHeight / 2 - markHeight / 2;
   const top = Math.min(word.box.y, markY);
   const bottom = Math.max(word.box.y + word.box.height, markY + markHeight);
   const wordX = markHeight + gap - word.box.x;
@@ -193,7 +180,14 @@ async function main() {
     `export const MARK = ${JSON.stringify(m, null, 2)} as const;\n\n` +
     `/** The outlined wordmark (Bricolage Grotesque 800, ${TRACKING} em), drawn in --ink. */\n` +
     `export const WORDMARK = ${JSON.stringify(
-      { d: word.d, box: word.box, baseline: word.baseline, xHeight: word.xHeight },
+      {
+        d: word.d,
+        box: word.box,
+        baseline: word.baseline,
+        xHeight: word.xHeight,
+        capHeight: word.capHeight,
+        markToCaps: MARK_TO_CAPS,
+      },
       (_k, v: unknown) => (typeof v === "number" ? Math.round(v * 100) / 100 : v),
       2,
     )} as const;\n`;

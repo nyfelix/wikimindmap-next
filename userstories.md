@@ -112,6 +112,8 @@ Goal: good enough to announce.
 - [ ] Editorial pages (About, help) follow `styleguide.md` §14: grey background, reading column, Bricolage headings, Zilla Slab body, capital eyebrows and breadcrumbs
 - [ ] Each map shows the attribution "Content from Wikipedia, CC BY-SA" with a link to the article, as a small line under the bottom-right controls (`styleguide.md` §2)
 - [ ] Clicking the logo opens a small menu: About, How lenses work, GitHub. Editorial pages link back to the map.
+- [ ] The About page and the README state: "WikiMindMap is an independent project and is not affiliated with or endorsed by the Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation."
+- [ ] Nothing in the app suggests it's an official Wikipedia service: no Wikipedia or Wikimedia logos, and "Wikipedia" never appears in the product name, logo or domain
 
 ### TS-11 Performance and error budget · S
 - [ ] The Lighthouse performance score is ≥ 90 on the start page and on `/en/Mind_map`
