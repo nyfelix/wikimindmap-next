@@ -69,11 +69,6 @@ Goal: good enough to announce.
 
 Preview: `concepts/lens-kinds.html`
 
-### TS-13 Kind mapping table · M
-- [ ] `scripts/build-kind-map.ts` queries Wikidata SPARQL for the ~1,000 most common P31 classes of articles and walks their P279 superclasses to one of the six kinds. It writes `lenses/kindMap.json` (QID → kind).
-- [ ] Rules from the preview: humans and fictional characters → people; organizations → orgs; creative works and software → works; events → events; geographic features → places; anything else → concepts
-- [ ] The table is checked in and regenerated manually (documented in `README.md`)
-
 ### TS-14 Page views and Wikidata sources · M
 - [ ] `sources/pageviews.ts` (batches of 50, 30-day sum, follows `pvipcontinue`) and `sources/wikidata.ts` (pageprops → `wbgetentities` P31 → `kindMap`)
 - [ ] The loader fetches them only when the active lens declares `pageviews` or `kinds` in `needs`
@@ -428,3 +423,10 @@ A design decision made together with the owner, before any map is rendered.
 > Phones (< 768 px) are nice to have and not part of the MVP; see "Later".
 
 > Note: On touch screens (`pointer: coarse`) leaf rows are 44 px apart (layout option `row`), and fold, ⊕ and leaf hit areas are divided by the zoom, so they stay 44 × 44 px on screen; zoomed far out they overlap, and the top one wins. The lens switch is a menu below 1024 px. Text autosizing is switched off, so labels are measured as drawn. Tested at 820 × 1180 with touch.
+
+### TS-13 Kind mapping table · M · M5
+- [x] `scripts/build-kind-map.ts` queries Wikidata SPARQL for the ~1,000 most common P31 classes of articles and walks their P279 superclasses to one of the six kinds. It writes `lenses/kindMap.json` (QID → kind).
+- [x] Rules from the preview: humans and fictional characters → people; organizations → orgs; creative works and software → works; events → events; geographic features → places; anything else → concepts
+- [x] The table is checked in and regenerated manually (documented in `README.md`)
+
+> Note: The ~1,000 classes are sampled from the P31 values of every link in the recorded starter articles (the classes real maps meet), plus seeds, instead of a Wikidata-wide count, which times out on the query service. The table stores `[kind, English label]`; the label is the "instance of" in the preview card. Event roots are specific (historical event, conflict, battle, election, festival…): the broad "occurrence" pulled in currency, hobby and contract. When a class reaches several roots, precedence is people, places, orgs, works, events. Result: people 6, places 262, orgs 170, works 89, events 62, concepts 411.
