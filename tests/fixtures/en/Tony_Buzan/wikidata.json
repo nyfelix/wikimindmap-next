@@ -1,0 +1,613 @@
+{
+  "titles": [
+    "Albert Einstein",
+    "BBC",
+    "Barry Buzan",
+    "Concept map",
+    "Creativity",
+    "Joseph D. Novak",
+    "Kitsilano Secondary School",
+    "Leonardo da Vinci",
+    "London Borough of Enfield",
+    "Memory",
+    "Mensa International",
+    "Middlesex",
+    "Mind Body Spirit Festival",
+    "Mind Sports Olympiad",
+    "Mind map",
+    "Mnemonic",
+    "Palmers Green",
+    "Popular psychology",
+    "Simon Fraser Student Society",
+    "Simon Fraser University",
+    "Speed reading",
+    "Spiritual intelligence",
+    "University of British Columbia",
+    "World Memory Championships"
+  ],
+  "pageprops": [
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "pageid": 736,
+            "ns": 0,
+            "title": "Albert Einstein",
+            "pageprops": {
+              "wikibase_item": "Q937"
+            }
+          },
+          {
+            "pageid": 18079,
+            "ns": 0,
+            "title": "Leonardo da Vinci",
+            "pageprops": {
+              "wikibase_item": "Q762"
+            }
+          },
+          {
+            "pageid": 19688,
+            "ns": 0,
+            "title": "Mind map",
+            "pageprops": {
+              "wikibase_item": "Q192833"
+            }
+          },
+          {
+            "pageid": 28525,
+            "ns": 0,
+            "title": "Simon Fraser University",
+            "pageprops": {
+              "wikibase_item": "Q201603"
+            }
+          },
+          {
+            "pageid": 40411,
+            "ns": 0,
+            "title": "Mnemonic",
+            "pageprops": {
+              "wikibase_item": "Q191062"
+            }
+          },
+          {
+            "pageid": 94214,
+            "ns": 0,
+            "title": "Palmers Green",
+            "pageprops": {
+              "wikibase_item": "Q2887044"
+            }
+          },
+          {
+            "pageid": 94318,
+            "ns": 0,
+            "title": "London Borough of Enfield",
+            "pageprops": {
+              "wikibase_item": "Q210531"
+            }
+          },
+          {
+            "pageid": 142910,
+            "ns": 0,
+            "title": "Creativity",
+            "pageprops": {
+              "wikibase_item": "Q170658"
+            }
+          },
+          {
+            "pageid": 147635,
+            "ns": 0,
+            "title": "Middlesex",
+            "pageprops": {
+              "wikibase_item": "Q19186"
+            }
+          },
+          {
+            "pageid": 149969,
+            "ns": 0,
+            "title": "Popular psychology",
+            "pageprops": {
+              "wikibase_item": "Q1874033"
+            }
+          },
+          {
+            "pageid": 153502,
+            "ns": 0,
+            "title": "Mensa International",
+            "pageprops": {
+              "wikibase_item": "Q184194"
+            }
+          },
+          {
+            "pageid": 173411,
+            "ns": 0,
+            "title": "University of British Columbia",
+            "pageprops": {
+              "wikibase_item": "Q391028"
+            }
+          },
+          {
+            "pageid": 378914,
+            "ns": 0,
+            "title": "Speed reading",
+            "pageprops": {
+              "wikibase_item": "Q746106"
+            }
+          },
+          {
+            "pageid": 698226,
+            "ns": 0,
+            "title": "Concept map",
+            "pageprops": {
+              "wikibase_item": "Q830115"
+            }
+          },
+          {
+            "pageid": 1420109,
+            "ns": 0,
+            "title": "Simon Fraser Student Society",
+            "pageprops": {
+              "wikibase_item": "Q7518798"
+            }
+          },
+          {
+            "pageid": 3173879,
+            "ns": 0,
+            "title": "Barry Buzan",
+            "pageprops": {
+              "wikibase_item": "Q2634998"
+            }
+          },
+          {
+            "pageid": 3284294,
+            "ns": 0,
+            "title": "Spiritual intelligence",
+            "pageprops": {
+              "wikibase_item": "Q4259840"
+            }
+          },
+          {
+            "pageid": 3368423,
+            "ns": 0,
+            "title": "Mind Body Spirit Festival",
+            "pageprops": {
+              "wikibase_item": "Q6863445"
+            }
+          },
+          {
+            "pageid": 4190621,
+            "ns": 0,
+            "title": "Kitsilano Secondary School",
+            "pageprops": {
+              "wikibase_item": "Q11277451"
+            }
+          },
+          {
+            "pageid": 8163924,
+            "ns": 0,
+            "title": "World Memory Championships",
+            "pageprops": {
+              "wikibase_item": "Q1453601"
+            }
+          },
+          {
+            "pageid": 18649220,
+            "ns": 0,
+            "title": "Joseph D. Novak",
+            "pageprops": {
+              "wikibase_item": "Q2261908"
+            }
+          },
+          {
+            "pageid": 19344654,
+            "ns": 0,
+            "title": "BBC",
+            "pageprops": {
+              "wikibase_item": "Q9531"
+            }
+          },
+          {
+            "pageid": 23454982,
+            "ns": 0,
+            "title": "Mind Sports Olympiad",
+            "pageprops": {
+              "wikibase_item": "Q14489467"
+            }
+          },
+          {
+            "pageid": 31217535,
+            "ns": 0,
+            "title": "Memory",
+            "pageprops": {
+              "wikibase_item": "Q492"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sparql": [
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q492"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q781413"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q762"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q937"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q9531"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1126006"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q9531"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q141255352"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q180673"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1138494"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2560047"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19953632"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21272231"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q170658"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q483247"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q170658"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q125161275"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q184194"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1194093"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q184194"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1514395"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q184194"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15911314"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q191062"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2695280"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q201603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708676"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q201603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2385804"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q201603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q62078547"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q201603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108402759"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q210531"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q211690"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q210531"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7897276"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q391028"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708676"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q391028"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q45400320"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q391028"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q62078547"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q391028"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108402759"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q746106"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1347367"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1453601"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1079023"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1453601"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q18608583"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2261908"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2634998"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2887044"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3957"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2887044"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2755753"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q6863445"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q132241"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7518798"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q877998"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11277451"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q9826"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q14489467"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q18608583"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

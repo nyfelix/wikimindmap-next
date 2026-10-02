@@ -107,6 +107,26 @@ export function PreviewCard({ lang, node, anchor, onClose, onRecenter }: Props) 
           {DIRECTION_TEXT[node.direction]}
         </div>
       )}
+      {(node.meta?.kind !== undefined || node.meta?.views !== undefined) && (
+        <dl className={cardStyles.facts}>
+          {node.meta.kind !== undefined && (
+            <div>
+              <dt>Kind</dt>
+              <dd>
+                {node.meta.kind}
+                {node.meta.instanceOf ? ` · ${node.meta.instanceOf}` : ""}
+              </dd>
+            </div>
+          )}
+          {typeof node.meta.views === "number" && (
+            <div>
+              <dt>Views per month</dt>
+              {/* The reader's locale: 1,240 or 1’240 (styleguide.md §11). */}
+              <dd>{node.meta.views.toLocaleString()}</dd>
+            </div>
+          )}
+        </dl>
+      )}
       {node.redLink ? (
         <p className={cardStyles.text}>This article doesn’t exist yet on Wikipedia.</p>
       ) : summary.isPending ? (

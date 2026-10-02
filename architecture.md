@@ -69,9 +69,9 @@ Every URL below is built in `src/sources/`. The `{lang}` is the Wikipedia langua
 | Wikipedia languages (US-09) | `https://meta.wikimedia.org/w/api.php?action=sitematrix&smtype=language` | Every open Wikipedia; the language is the subdomain of the site URL. Cached 7 days. |
 | Same article in another language | `action=query&prop=langlinks&titles={title}&lllang={lang}` | Switching language on a map; the start page in languages other than en/de/fr |
 | Namespaces | `action=query&meta=siteinfo&siprop=namespaces|namespacealiases` | Once per language, cached 7 days. Filters out `File:`, `Kategorie:` and so on. |
-| Page views (M5) | `action=query&prop=pageviews&titles=…&pvipdays=30` | 50 titles per request; sum the daily values. Follow `pvipcontinue`: one response fills only part of a 50-title batch. |
+| Page views (M5) | `action=query&prop=pageviews&titles=…&pvipdays=30&redirects=1` | 50 titles per request, **one batch at a time** (parallel requests get HTTP 429, found in TS-14); sum the daily values. Follow `pvipcontinue`: one response fills only part of a 50-title batch. |
 | Wikidata IDs (M5) | `action=query&prop=pageprops&ppprop=wikibase_item&titles=…` | 50 per request |
-| Entity types (M5) | `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=…&props=claims` | Read P31 (instance of). Map it to a kind with `kindMap.json`. |
+| Entity types (M5) | `https://query.wikidata.org/sparql?format=json&query=SELECT ?item ?class WHERE { VALUES ?item { wd:Q… } ?item wdt:P31 ?class }` | P31 (instance of) only, 50 items per query, one query at a time; CORS allows `Api-User-Agent`. Map each class to a kind with `lenses/kindMap.json`. Owner decision in M5: `wbgetentities&props=claims` returns every statement (~4 MB per 50 items). |
 | Incoming links (M6) | `action=query&list=backlinks&blnamespace=0&blfilterredir=nonredirects&bltitle=…&bllimit=500` | Page through the results up to a cap of 2,000 and show "2,000+" beyond that |
 
 ### Why Parsoid HTML, not wikitext or the rendered page
@@ -123,8 +123,8 @@ Not used, on purpose: no state library (URL + React state + Query are enough), n
 | Links back to an article | `linksBack:{lang}:{title}`, growing as more leaves are checked | 24 h |
 | Summary | `summary:{lang}:{title}` | 24 h |
 | Siteinfo namespaces | `siteinfo:{lang}` | 7 days |
-| Pageviews | `pageviews:{lang}:{title}` | 24 h |
-| Kinds (Wikidata) | `kind:{qid}` | 7 days |
+| Page views of an article's links | `pageviews:{lang}:{title}` | 24 h |
+| Kinds of an article's links (Wikidata) | `kinds:{lang}:{title}` | 7 days |
 | linksHere | `linksHere:{lang}:{title}` | 24 h |
 
 Keys and lifetimes live in `src/ui/data/queries.ts`; there is one persister per lifetime (`src/ui/data/cache.ts`). The article key has no revision, because the revision is only known after loading; a cached article is refreshed after 24 h.

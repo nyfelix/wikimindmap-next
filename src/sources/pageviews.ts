@@ -49,27 +49,25 @@ export async function fetchPageviews(
   const unique = [...new Set([...titles].map(normalizeTitle))].filter(Boolean);
   const batches: Title[][] = [];
   for (let i = 0; i < unique.length; i += BATCH_SIZE) batches.push(unique.slice(i, i + BATCH_SIZE));
-  const responses = await Promise.all(
-    batches.map(async (batch) => {
-      const pages: PageviewsResponse[] = [];
-      let cont: Record<string, string> = {};
-      do {
-        const { data } = await client.getJson<PageviewsResponse>(
-          actionUrl(lang, {
-            prop: "pageviews",
-            pvipdays: 30,
-            redirects: 1,
-            titles: batch.join("|"),
-            ...cont,
-          }),
-        );
-        pages.push(data);
-        cont = data.continue ?? {};
-      } while (Object.keys(cont).length > 0);
-      return pages;
-    }),
-  );
-  return { titles: unique, responses: responses.flat() };
+  // One batch at a time: the page view API answers parallel requests with HTTP 429.
+  const responses: PageviewsResponse[] = [];
+  for (const batch of batches) {
+    let cont: Record<string, string> = {};
+    do {
+      const { data } = await client.getJson<PageviewsResponse>(
+        actionUrl(lang, {
+          prop: "pageviews",
+          pvipdays: 30,
+          redirects: 1,
+          titles: batch.join("|"),
+          ...cont,
+        }),
+      );
+      responses.push(data);
+      cont = data.continue ?? {};
+    } while (Object.keys(cont).length > 0);
+  }
+  return { titles: unique, responses };
 }
 
 export async function loadPageviews(

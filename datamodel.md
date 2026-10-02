@@ -190,6 +190,7 @@ interface MapNode {
   count?: number;              // "more" nodes and folded groups: hidden items
   folded?: boolean;            // set on every node that has children; true = folded
   redLink?: boolean;           // leaves: the article doesn't exist (muted, no ⊕)
+  empty?: boolean;             // a fixed branch with nothing in it (Kinds): dotted, "none linked"
   direction?: LinkDirection;   // leaves: shown as a symbol (styleguide.md §5)
   side?: "left" | "right" | "top";   // layout hint (bipolar, fixed kinds slots)
   meta?: Record<string, string | number>;  // shown in the preview card
@@ -309,7 +310,9 @@ tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en
   fallback.json      (en Mind map, de Mindmap) { toc, links }: action=parse tocdata and links per section
   linksback.json     { center, aliases, checked, back }: the center's redirects, every leaf title the
                      Chapters lens can show (all links, See also on), and those that link back
-  pageviews.json     (M5)  wikidata.json (M5)  linkshere.json (M6)
+  pageviews.json     { titles, responses }: raw prop=pageviews responses for every checked leaf (M5)
+  wikidata.json      { titles, pageprops, sparql }: QIDs and P31 per checked leaf (M5)
+  linkshere.json     (M6)
 tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
 tests/fixtures/sitematrix.json       action=sitematrix on meta.wikimedia.org: every Wikipedia (US-09)
 ```

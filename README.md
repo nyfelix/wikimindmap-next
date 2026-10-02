@@ -74,6 +74,7 @@ The relaunch of wikimindmap.org (2007).
 - **Recenter:** ⊕ makes any leaf the new center; the leaf glides into the middle while the old map fades. A trail shows the path taken, with browser back and forward.
 - **Link directions:** every leaf shows whether that article links back (out, both ways), checked live and counting links through redirects.
 - **Live from Wikipedia:** search with suggestions, every Wikipedia language, preview cards with summary and picture, and missing articles and network errors handled with a message.
-- **Explained:** map labels on the first visit, "How this map is built", an About page and a lens help page. Kinds, Links and Metro are shown as coming lenses.
+- **Kinds lens:** the same links sorted by what they are, according to Wikidata: people, organizations, works, concepts, events and places, as six fixed branches, the most read first.
+- **Explained:** map labels on the first visit, "How this map is built", an About page and a lens help page. Links and Metro are shown as coming lenses.
 - **For everyone:** full keyboard use, an outline view for screen readers, light and dark, tablets with touch.
 - **Fast and private:** no server and no tracking; maps are cached in the browser, so going back is instant.

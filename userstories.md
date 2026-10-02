@@ -69,24 +69,6 @@ Goal: good enough to announce.
 
 Preview: `concepts/lens-kinds.html`
 
-### TS-14 Page views and Wikidata sources · M
-- [ ] `sources/pageviews.ts` (batches of 50, 30-day sum, follows `pvipcontinue`) and `sources/wikidata.ts` (pageprops → `wbgetentities` P31 → `kindMap`)
-- [ ] The loader fetches them only when the active lens declares `pageviews` or `kinds` in `needs`
-- [ ] Fixtures are recorded for the starter set
-
-### US-13 See links grouped by kind · M
-*As a curious reader, I want to see people, places, works and so on as fixed branches, so every map reads the same way.*
-- [ ] Six fixed branches in fixed positions, the same as the preview. Empty branches are shown as dotted lines with "none linked".
-- [ ] Branches fold like in Chapters; leaves show direction symbols
-- [ ] Explanation copy (callouts and drawer) for this lens, following `styleguide.md` §3
-- [ ] Leaves are ranked by page views. Direction symbols keep their fixed size; page views show as a thin bar behind the label (`styleguide.md` §5) and as a number in the preview card.
-- [ ] The preview card shows kind, "instance of" and views per month
-
-### US-14 Switch lenses · S
-*As a reader, I want to switch between Chapters and Kinds on the same article.*
-- [ ] Kinds changes from "soon" to selectable in the lens switch (see US-20). Switching keeps the center and the trail.
-- [ ] `lens=` is in the URL, and the trail records the lens used for each step
-
 ---
 
 ## M6 – Links in / out lens
@@ -430,3 +412,27 @@ A design decision made together with the owner, before any map is rendered.
 - [x] The table is checked in and regenerated manually (documented in `README.md`)
 
 > Note: The ~1,000 classes are sampled from the P31 values of every link in the recorded starter articles (the classes real maps meet), plus seeds, instead of a Wikidata-wide count, which times out on the query service. The table stores `[kind, English label]`; the label is the "instance of" in the preview card. Event roots are specific (historical event, conflict, battle, election, festival…): the broad "occurrence" pulled in currency, hobby and contract. When a class reaches several roots, precedence is people, places, orgs, works, events. Result: people 6, places 262, orgs 170, works 89, events 62, concepts 411.
+
+### TS-14 Page views and Wikidata sources · M · M5
+- [x] `sources/pageviews.ts` (batches of 50, 30-day sum, follows `pvipcontinue`) and `sources/wikidata.ts` (pageprops → `wbgetentities` P31 → `kindMap`)
+- [x] The loader fetches them only when the active lens declares `pageviews` or `kinds` in `needs`
+- [x] Fixtures are recorded for the starter set
+
+> Note: Wikidata classes come from the query service (P31 only, owner decision), not `wbgetentities`. Page views and SPARQL go one batch at a time: Wikipedia answered parallel page-view requests with HTTP 429 while recording. Both are loaded for every link of the article (owner decision) and cached per article: page views 24 h, kinds 7 days. Fixtures: `npm run fixtures -- --kinds-only` (resumable, retries).
+
+### US-13 See links grouped by kind · M · M5
+*As a curious reader, I want to see people, places, works and so on as fixed branches, so every map reads the same way.*
+- [x] Six fixed branches in fixed positions, the same as the preview. Empty branches are shown as dotted lines with "none linked".
+- [x] Branches fold like in Chapters; leaves show direction symbols
+- [x] Explanation copy (callouts and drawer) for this lens, following `styleguide.md` §3
+- [x] Leaves are ranked by page views. Direction symbols keep their fixed size; page views show as a thin bar behind the label (`styleguide.md` §5) and as a number in the preview card.
+- [x] The preview card shows kind, "instance of" and views per month
+
+> Note: Fixed places as in the preview: People, Organizations and Places on the left; Concepts, Works and Events on the right (layout `side` hints). Leaves are deduplicated across the whole article, since branches are kinds, not chapters; red links have no Wikidata item and are left out. Default density 5, as in the preview. A few classes are corrected by hand in `scripts/build-kind-map.ts` (movements, degrees). Unknown classes go to Concepts.
+
+### US-14 Switch lenses · S · M5
+*As a reader, I want to switch between Chapters and Kinds on the same article.*
+- [x] Kinds changes from "soon" to selectable in the lens switch (see US-20). Switching keeps the center and the trail.
+- [x] `lens=` is in the URL, and the trail records the lens used for each step
+
+> Note: Switching lenses replaces the URL (no new trail step) and resets folds, which are per lens. Each lens shows its map labels the first time it is opened.

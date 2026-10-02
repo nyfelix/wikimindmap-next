@@ -34,11 +34,26 @@ interface Props extends MapActions {
 /** Draws one frame of a PositionedMap (styleguide.md §4). */
 export function SvgMap({ frame, ...actions }: Props) {
   const color = new Map(frame.nodes.map((f) => [f.p.node.id, slotColor(f.p.node.colorSlot)]));
+  const empty = new Set(frame.nodes.filter((f) => f.p.node.empty).map((f) => f.p.node.id));
   return (
     <>
       <g className={styles.edges}>
         {frame.edges.map(({ e, key, opacity }) => {
           const stroke = color.get(e.edge.to) ?? "var(--muted)";
+          if (empty.has(e.edge.to)) {
+            return (
+              <path
+                key={key}
+                d={e.path}
+                fill="none"
+                stroke={stroke}
+                strokeWidth={e.width}
+                strokeLinecap="round"
+                strokeDasharray="2 9"
+                opacity={0.6 * opacity}
+              />
+            );
+          }
           return e.edge.style === "twig" ? (
             <path
               key={key}
@@ -139,7 +154,7 @@ function GroupView({ p, actions, ...rest }: ViewProps) {
       {...rest}
     >
       <text
-        className={p.depth === 1 ? styles.group : styles.subgroup}
+        className={`${p.depth === 1 ? styles.group : styles.subgroup} ${node.empty ? styles.mutedLabel : ""}`}
         x={x - side * GROUP_LABEL.dx}
         y={y - GROUP_LABEL.dy}
         textAnchor={side > 0 ? "end" : "start"}
@@ -157,7 +172,7 @@ function GroupView({ p, actions, ...rest }: ViewProps) {
           onToggle={() => actions.onFold?.(node)}
         />
       )}
-      {folded && (
+      {(folded || node.empty) && (
         <text
           className={styles.count}
           x={x + side * COUNT_DX}
@@ -221,6 +236,18 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
             {...(node.redLink ? { redLink: true } : {})}
           />
         </g>
+        {node.weight !== undefined && node.weight > 0 && (
+          // Page views (Kinds, Links): a thin bar behind the label, as long as the label at most.
+          <rect
+            className={styles.weight}
+            x={side > 0 ? labelX : labelX - p.textWidth * node.weight}
+            y={y + 6}
+            width={p.textWidth * node.weight}
+            height={3}
+            rx={1.5}
+            fill={slotColor(node.colorSlot)}
+          />
+        )}
         <text
           className={`${styles.leafText} ${node.redLink ? styles.muted : ""} ${bold ? styles.bold : ""}`}
           x={labelX}

@@ -4,6 +4,9 @@ import { join } from "node:path";
 import type { Article, ArticleRef, Siteinfo } from "../../src/core/types.ts";
 import { redirectPairs, type RedirectsResponse } from "../../src/sources/redirects.ts";
 import { parseSiteinfo, type SiteinfoResponse } from "../../src/sources/siteinfo.ts";
+import { KIND_MAP } from "../../src/lenses/kindMap.ts";
+import { sumPageviews, type PageviewsResponse } from "../../src/sources/pageviews.ts";
+import { kindsFrom } from "../../src/sources/wikidata.ts";
 
 export const FIXTURES = join(import.meta.dirname, "..", "fixtures");
 
@@ -82,4 +85,15 @@ export function fixtureRedirects(f: Fixture): Map<string, string> {
     for (const [from, to] of redirectPairs(titles, batch)) map.set(from, to);
   }
   return map;
+}
+
+/** The recorded kinds of a fixture's links (wikidata.json, TS-14). */
+export function fixtureKinds(f: Fixture) {
+  return kindsFrom(readJson<Parameters<typeof kindsFrom>[0]>(f, "wikidata.json"), KIND_MAP);
+}
+
+/** The recorded page views of a fixture's links (pageviews.json, TS-14). */
+export function fixturePageviews(f: Fixture) {
+  const raw = readJson<{ titles: string[]; responses: PageviewsResponse[] }>(f, "pageviews.json");
+  return sumPageviews(raw.titles, raw.responses);
 }

@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useMemo, useRef } from "react";
-import { redirectTargets } from "../../core/links.ts";
+import { articleLinks, redirectTargets } from "../../core/links.ts";
 import type {
   Article,
   ArticleRef,
@@ -18,7 +18,9 @@ import {
   aliasesQuery,
   articleQuery,
   keys,
+  kindsQuery,
   linksBackQuery,
+  pageviewsQuery,
   redirectsQuery,
   type LinksBackData,
 } from "./queries.ts";
@@ -55,9 +57,10 @@ export function centerOnly(lens: LensId, ref: ArticleRef, missing = false): MapG
 function build(lens: Lens, article: Article, data: Enrichments, options: LensOptions) {
   const graph = lens.build(article, data, options);
   // A stub without links in its text: show See also, if that has links (styleguide.md §15).
-  if (graph.groups.length === 0 && !options.showHousekeeping) {
+  if (graph.groups.every((g) => g.count === 0) && !options.showHousekeeping) {
     const withSeeAlso = lens.build(article, data, { ...options, showHousekeeping: true });
-    if (withSeeAlso.groups.length > 0) return { graph: withSeeAlso, autoSeeAlso: true };
+    if (withSeeAlso.groups.some((g) => g.count > 0))
+      return { graph: withSeeAlso, autoSeeAlso: true };
   }
   return { graph, autoSeeAlso: false };
 }
@@ -81,18 +84,39 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
   const aliasesQ = useQuery({ ...aliasesQuery(real), enabled: ready && wantsLinks });
   const linksQ = useQuery({ ...linksBackQuery(real), enabled: ready && wantsLinks });
 
+  // Page views and kinds: only for lenses that need them (architecture.md §3), for every link
+  // of the article, so the lens can group and rank them all (owner decision).
+  const wantsViews = lens.needs.includes("pageviews");
+  const wantsKinds = lens.needs.includes("kinds");
+  const allTargets = useMemo(
+    () =>
+      article && ready && (wantsViews || wantsKinds)
+        ? articleLinks(
+            article,
+            redirects,
+            (l) => !l.redLink && (l.origin === "body" || l.origin === "hatnote"),
+          ).map((l) => l.target)
+        : [],
+    [article, ready, redirects, wantsViews, wantsKinds],
+  );
+  const viewsQ = useQuery({ ...pageviewsQuery(real, allTargets), enabled: ready && wantsViews });
+  const kindsQ = useQuery({ ...kindsQuery(real, allTargets), enabled: ready && wantsKinds });
+  const enriched = (!wantsViews || viewsQ.isSuccess) && (!wantsKinds || kindsQ.isSuccess);
+
   const enrichments = useMemo(() => {
     const data: Enrichments = { redirects };
     if (linksQ.data) {
       data.linksBack = new Set(linksQ.data.back);
       data.linksChecked = new Set(linksQ.data.checked);
     }
+    if (viewsQ.data) data.pageviews = new Map(viewsQ.data);
+    if (kindsQ.data) data.kinds = new Map(kindsQ.data);
     return data;
-  }, [redirects, linksQ.data]);
+  }, [redirects, linksQ.data, viewsQ.data, kindsQ.data]);
 
   const built = useMemo(
-    () => (article && ready ? build(lens, article, enrichments, options) : undefined),
-    [lens, article, ready, enrichments, options],
+    () => (article && ready && enriched ? build(lens, article, enrichments, options) : undefined),
+    [lens, article, ready, enriched, enrichments, options],
   );
 
   // Check the visible leaves that haven't been checked yet.
@@ -132,7 +156,7 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
   }, [wantsLinks, linksQ.data, aliasesQ.data, visible, real.lang, real.title]);
 
   const notFound = articleQ.error instanceof HttpError && articleQ.error.kind === "NotFound";
-  const failed = articleQ.isError || redirectsQ.isError;
+  const failed = articleQ.isError || redirectsQ.isError || viewsQ.isError || kindsQ.isError;
   const status: LiveStatus = notFound ? "notFound" : failed ? "error" : built ? "ready" : "loading";
   const result: LiveMap = {
     status,
@@ -141,9 +165,12 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
     retry: () => {
       void articleQ.refetch();
       if (redirectsQ.isError) void redirectsQ.refetch();
+      if (viewsQ.isError) void viewsQ.refetch();
+      if (kindsQ.isError) void kindsQ.refetch();
     },
   };
   if (article) result.article = article;
-  if (articleQ.error ?? redirectsQ.error) result.error = articleQ.error ?? redirectsQ.error;
+  const error = articleQ.error ?? redirectsQ.error ?? viewsQ.error ?? kindsQ.error;
+  if (error) result.error = error;
   return result;
 }

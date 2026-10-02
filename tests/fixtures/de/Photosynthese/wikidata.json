@@ -1,0 +1,6117 @@
+{
+  "titles": [
+    "3-Hydroxypropionatzyklus",
+    "ATP-Citrat-Lyase",
+    "ATP-Synthase",
+    "Absorptionsspektrum",
+    "Acetate",
+    "Adenosintriphosphat",
+    "Aerobie",
+    "Alge",
+    "Algenreaktor",
+    "Alkohole",
+    "Anabolismus",
+    "Anaplerotische Reaktionen",
+    "Angeregter Zustand",
+    "Annual Review of Plant Biology",
+    "Anorganische Chemie",
+    "Antike",
+    "Aristoteles",
+    "Ascorbat-Peroxidase",
+    "Ascorbate",
+    "Ascorbinsäure",
+    "Assimilation (Biologie)",
+    "Atmung",
+    "Atmungskette",
+    "Autotrophie",
+    "Bakterien",
+    "Batterie (Elektrotechnik)",
+    "Beleuchtungsstärke",
+    "Bessel Kok (Biochemiker)",
+    "Bild der Wissenschaft",
+    "Biochemie",
+    "Biofilm",
+    "Biogen",
+    "Biogeochemie",
+    "Biomarker",
+    "Biomasse",
+    "Biotrockenmasse",
+    "Birgit Piechulla",
+    "Blatt (Pflanze)",
+    "Blei",
+    "Braunkohle",
+    "Brom",
+    "Butyrate",
+    "C3-Pflanze",
+    "C4-Pflanze",
+    "CO-Monohydrogenase",
+    "CO2-Abscheidung und -Speicherung",
+    "CO2-Kompensationspunkt",
+    "Calcium",
+    "Calvin-Zyklus",
+    "Carotine",
+    "Carotinoide",
+    "Chemiosmotische Kopplung",
+    "Chemische Energie",
+    "Chemotrophie",
+    "Chinone",
+    "Chlor",
+    "Chlorophylle",
+    "Chloroplast",
+    "Chlorosom",
+    "Chromatiaceae",
+    "Chromatium",
+    "Chromophor",
+    "Cornelis Bernardus van Niel",
+    "Crassulaceen-Säurestoffwechsel",
+    "Cyanobakterien",
+    "Cytochrom c",
+    "Cytochrom c6",
+    "Cytochrom-b6f-Komplex",
+    "Cytochrom-c-Reduktase",
+    "Cytochrome",
+    "Cytoplasma",
+    "Cytoskelett",
+    "Delokalisierung",
+    "Denaturierung (Biochemie)",
+    "Desoxyribonukleinsäure",
+    "Desulfurikation",
+    "Diatoxanthin",
+    "Dinoflagellaten",
+    "Disproportionierung",
+    "Doppelbindung",
+    "Dünger",
+    "Echte Brunnenkresse",
+    "Ectothiorhodospira",
+    "Effektivität",
+    "Eisen",
+    "Eisen-Schwefel-Cluster",
+    "Eiszeitalter",
+    "Elektromagnetische Welle",
+    "Elektron",
+    "Elektronenakzeptor",
+    "Elektronendonator",
+    "Elektronentransportkette",
+    "Emerson-Effekt",
+    "Energieniveau",
+    "Energiestoffwechsel",
+    "Engelmannscher Bakterienversuch",
+    "Enzym",
+    "Erdatmosphäre",
+    "Erdöl",
+    "Essigsäure",
+    "Ethanol",
+    "Eukaryoten",
+    "Exziton",
+    "Farbstoffe",
+    "Ferredoxin-NADP-Reduktase",
+    "Ferredoxine",
+    "Flechte",
+    "Fossil",
+    "Frederick Blackman",
+    "Freie-Elektronen-Laser",
+    "Förster-Resonanzenergietransfer",
+    "Gabrielle Matthaei",
+    "Gemäßigte Klimazone",
+    "Geologie",
+    "Gewächshaus",
+    "Gibbs-Energie",
+    "Glucose",
+    "Glutathion",
+    "Glutathion-Reduktase",
+    "Glycerinaldehyd-3-phosphat",
+    "Große Sauerstoffkatastrophe",
+    "Grätzel-Zelle",
+    "Grüne Nichtschwefelbakterien",
+    "Grüne Schwefelbakterien",
+    "Grünlücke",
+    "Hans-Walter Heldt",
+    "Hektar",
+    "Heliobacteriaceae",
+    "Heterotrophie",
+    "Hill-Reaktion",
+    "Horizontaler Gentransfer",
+    "Humustheorie",
+    "Hydrosphäre",
+    "Hydrothermale Lösung",
+    "Hydroxidion",
+    "Isotop",
+    "Jacobus Henricus van ’t Hoff",
+    "Jahrmilliarde",
+    "Jan Ingenhousz",
+    "John S. Rieske",
+    "Joule",
+    "Julius Sachs",
+    "Justus von Liebig",
+    "Kartesisches Koordinatensystem",
+    "Katalase",
+    "Kerogen",
+    "Kinetik (Chemie)",
+    "Klima",
+    "Kohlenhydrate",
+    "Kohlenstoff",
+    "Kohlenstoffdioxid",
+    "Kohlenstoffdioxid-Assimilation",
+    "Komplexchemie",
+    "Kompostierung",
+    "Koniferen",
+    "Konjugation (Chemie)",
+    "Korn",
+    "Kulturpflanze",
+    "Kupfer",
+    "Künstliche Photosynthese",
+    "Lactate",
+    "Laubmoose",
+    "Laubwald",
+    "Licht",
+    "Lichtabsorption",
+    "Lichtkompensationspunkt",
+    "Lichtsammelkomplex",
+    "Lichtsättigungspunkt",
+    "Lipide",
+    "Lithotrophie",
+    "Luftfeuchtigkeit",
+    "Mangan",
+    "Marcello Malpighi",
+    "Margulisbacteria",
+    "Meer",
+    "Melainabacteria",
+    "Menachinon",
+    "Milchsäure",
+    "Minimumgesetz",
+    "Mol",
+    "Molekulare Evolution",
+    "Molybdän",
+    "Multiplizität",
+    "Nature",
+    "Nickel",
+    "Nicotinamidadenindinukleotidphosphat",
+    "Nitrite",
+    "Norbert Pfennig",
+    "Oedogonium",
+    "Organische Chemie",
+    "Organische Solarzelle",
+    "Ostpazifischer Rücken",
+    "Oxidation",
+    "Oxidationszahl",
+    "Ozon",
+    "Ozonschicht",
+    "Parenchym",
+    "Peter D. Mitchell",
+    "Pflanze",
+    "Pflanzengesellschaft",
+    "Phosphate",
+    "Phosphorylierung",
+    "Photochemie",
+    "Photodestruktion",
+    "Photolyse",
+    "Photorespiration",
+    "Photosynthese (Spiel)",
+    "Photosynthetisch aktive Strahlung",
+    "Photosynthetisches Reaktionszentrum",
+    "Photosystem",
+    "Photosystem I",
+    "Photosystem II",
+    "Phototrophie",
+    "Phycobiline",
+    "Phycobilisom",
+    "Phyllochinon",
+    "Phylogenetik",
+    "Physiologie",
+    "Phäophytine",
+    "Pierre Joliot",
+    "Pigment (Biologie)",
+    "Plagiomnium affine",
+    "Plastid",
+    "Plastiden-DNA",
+    "Plastochinon",
+    "Plastocyanin",
+    "Plastoribosom",
+    "Primärproduktion",
+    "Prisma (Optik)",
+    "Proteinkinasen",
+    "Protisten",
+    "Protocyanobakterien",
+    "Protonengradient",
+    "Protonenpumpe",
+    "Purpurbakterien",
+    "Pyrit",
+    "Pyruvate",
+    "Q-Zyklus",
+    "Quant",
+    "Quantenausbeute",
+    "RGT-Regel",
+    "Raucher (Hydrothermie)",
+    "Reaktive Sauerstoffspezies",
+    "Redoxpotential",
+    "Redoxreaktion",
+    "Reduktion (Chemie)",
+    "Reduktionsmittel",
+    "Reduktionsäquivalent",
+    "Reduktiver Citratzyklus",
+    "Reservestoff",
+    "Rezent",
+    "Rhenium",
+    "Rhodobacter",
+    "Rhodopseudomonas viridis",
+    "Rhodospirillum",
+    "Ribosom",
+    "Ribulose-1,5-bisphosphat",
+    "Rieske-Protein",
+    "Robert Hill (Naturforscher)",
+    "Rotbuche",
+    "RuBisCO",
+    "Röntgenstrahlung",
+    "Sauerklee",
+    "Sauerstoff",
+    "Schattenblatt",
+    "Schattenpflanze",
+    "Schiefer",
+    "Schwarzer Körper",
+    "Schwefel",
+    "Schwefelfreie Purpurbakterien",
+    "Schwefeloxidierende Bakterien",
+    "Schwefelwasserstoff",
+    "Scinexx",
+    "Sedimente und Sedimentgesteine",
+    "Sericytochromatia",
+    "Sonnenblatt",
+    "Sonnenenergie",
+    "Sonnenpflanze",
+    "Sonnenstand",
+    "Sonnenstrahlung",
+    "Spektrallinie",
+    "Steinkohle",
+    "Sterane",
+    "Stoma (Botanik)",
+    "Strahlungsenergie",
+    "Stratosphäre",
+    "Stromatolith",
+    "Strontium",
+    "Stärke",
+    "Sulfate",
+    "Superoxiddismutase",
+    "Synechococcus",
+    "Synechocystis",
+    "Säuren",
+    "Süßwasser",
+    "Terpene",
+    "Thiosulfate",
+    "Thorium",
+    "Thylakoid",
+    "Triosen",
+    "Trockenstress",
+    "Tropischer Regenwald",
+    "Tyrosin",
+    "Ultraviolettstrahlung",
+    "Uran",
+    "Verdunstung",
+    "Vergleichende Biochemie",
+    "Wachstum (Biologie)",
+    "Wasser",
+    "Wassernutzungsindex",
+    "Wasserstoff",
+    "Wasserstoffperoxid",
+    "Wellenlänge",
+    "Wirkungsgrad",
+    "Xanthophylle",
+    "Xanthophyllzyklus",
+    "Zeaxanthin",
+    "Zellatmung",
+    "Äpfelsäure",
+    "Ökosystem"
+  ],
+  "pageprops": [
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "CO-Monohydrogenase",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Biotrockenmasse",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Bessel Kok (Biochemiker)",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Ascorbat-Peroxidase",
+            "missing": true
+          },
+          {
+            "pageid": 88,
+            "ns": 0,
+            "title": "Alkohole",
+            "pageprops": {
+              "wikibase_item": "Q156"
+            }
+          },
+          {
+            "pageid": 108,
+            "ns": 0,
+            "title": "Antike",
+            "pageprops": {
+              "wikibase_item": "Q486761"
+            }
+          },
+          {
+            "pageid": 140,
+            "ns": 0,
+            "title": "Aristoteles",
+            "pageprops": {
+              "wikibase_item": "Q868"
+            }
+          },
+          {
+            "pageid": 295,
+            "ns": 0,
+            "title": "Ascorbinsäure",
+            "pageprops": {
+              "wikibase_item": "Q193598"
+            }
+          },
+          {
+            "pageid": 492,
+            "ns": 0,
+            "title": "Blei",
+            "pageprops": {
+              "wikibase_item": "Q708"
+            }
+          },
+          {
+            "pageid": 493,
+            "ns": 0,
+            "title": "Brom",
+            "pageprops": {
+              "wikibase_item": "Q879"
+            }
+          },
+          {
+            "pageid": 560,
+            "ns": 0,
+            "title": "Biochemie",
+            "pageprops": {
+              "wikibase_item": "Q7094"
+            }
+          },
+          {
+            "pageid": 623,
+            "ns": 0,
+            "title": "Batterie (Elektrotechnik)",
+            "pageprops": {
+              "wikibase_item": "Q267298"
+            }
+          },
+          {
+            "pageid": 802,
+            "ns": 0,
+            "title": "Calcium",
+            "pageprops": {
+              "wikibase_item": "Q706"
+            }
+          },
+          {
+            "pageid": 898,
+            "ns": 0,
+            "title": "Carotine",
+            "pageprops": {
+              "wikibase_item": "Q190156"
+            }
+          },
+          {
+            "pageid": 8207,
+            "ns": 0,
+            "title": "Bakterien",
+            "pageprops": {
+              "wikibase_item": "Q10876"
+            }
+          },
+          {
+            "pageid": 11318,
+            "ns": 0,
+            "title": "Autotrophie",
+            "pageprops": {
+              "wikibase_item": "Q84953550"
+            }
+          },
+          {
+            "pageid": 11739,
+            "ns": 0,
+            "title": "Atmung",
+            "pageprops": {
+              "wikibase_item": "Q472287"
+            }
+          },
+          {
+            "pageid": 12106,
+            "ns": 0,
+            "title": "Adenosintriphosphat",
+            "pageprops": {
+              "wikibase_item": "Q80863"
+            }
+          },
+          {
+            "pageid": 18919,
+            "ns": 0,
+            "title": "Beleuchtungsstärke",
+            "pageprops": {
+              "wikibase_item": "Q194411"
+            }
+          },
+          {
+            "pageid": 23962,
+            "ns": 0,
+            "title": "Biogen",
+            "pageprops": {
+              "wikibase_item": "Q289472"
+            }
+          },
+          {
+            "pageid": 26395,
+            "ns": 0,
+            "title": "Calvin-Zyklus",
+            "pageprops": {
+              "wikibase_item": "Q220389"
+            }
+          },
+          {
+            "pageid": 27231,
+            "ns": 0,
+            "title": "Blatt (Pflanze)",
+            "pageprops": {
+              "wikibase_item": "Q33971"
+            }
+          },
+          {
+            "pageid": 33466,
+            "ns": 0,
+            "title": "Anabolismus",
+            "pageprops": {
+              "wikibase_item": "Q184681"
+            }
+          },
+          {
+            "pageid": 35208,
+            "ns": 0,
+            "title": "Atmungskette",
+            "pageprops": {
+              "wikibase_item": "Q909199"
+            }
+          },
+          {
+            "pageid": 35738,
+            "ns": 0,
+            "title": "Anorganische Chemie",
+            "pageprops": {
+              "wikibase_item": "Q11165"
+            }
+          },
+          {
+            "pageid": 38399,
+            "ns": 0,
+            "title": "Braunkohle",
+            "pageprops": {
+              "wikibase_item": "Q156267"
+            }
+          },
+          {
+            "pageid": 40185,
+            "ns": 0,
+            "title": "Aerobie",
+            "pageprops": {
+              "wikibase_item": "Q193124"
+            }
+          },
+          {
+            "pageid": 40998,
+            "ns": 0,
+            "title": "Acetate",
+            "pageprops": {
+              "wikibase_item": "Q212527"
+            }
+          },
+          {
+            "pageid": 68103,
+            "ns": 0,
+            "title": "Biomasse",
+            "pageprops": {
+              "wikibase_item": "Q18537"
+            }
+          },
+          {
+            "pageid": 159818,
+            "ns": 0,
+            "title": "Absorptionsspektrum",
+            "pageprops": {
+              "wikibase_item": "Q865545"
+            }
+          },
+          {
+            "pageid": 202922,
+            "ns": 0,
+            "title": "Angeregter Zustand",
+            "pageprops": {
+              "wikibase_item": "Q215328"
+            }
+          },
+          {
+            "pageid": 221698,
+            "ns": 0,
+            "title": "CO2-Abscheidung und -Speicherung",
+            "pageprops": {
+              "wikibase_item": "Q41491"
+            }
+          },
+          {
+            "pageid": 264415,
+            "ns": 0,
+            "title": "Assimilation (Biologie)",
+            "pageprops": {
+              "wikibase_item": "Q741773"
+            }
+          },
+          {
+            "pageid": 271643,
+            "ns": 0,
+            "title": "Anaplerotische Reaktionen",
+            "pageprops": {
+              "wikibase_item": "Q486104"
+            }
+          },
+          {
+            "pageid": 274364,
+            "ns": 0,
+            "title": "C4-Pflanze",
+            "pageprops": {
+              "wikibase_item": "Q29044031"
+            }
+          },
+          {
+            "pageid": 326150,
+            "ns": 0,
+            "title": "C3-Pflanze",
+            "pageprops": {
+              "wikibase_item": "Q115340277"
+            }
+          },
+          {
+            "pageid": 393008,
+            "ns": 0,
+            "title": "Biofilm",
+            "pageprops": {
+              "wikibase_item": "Q467410"
+            }
+          },
+          {
+            "pageid": 480740,
+            "ns": 0,
+            "title": "ATP-Synthase",
+            "pageprops": {
+              "wikibase_item": "Q22327117"
+            }
+          },
+          {
+            "pageid": 612670,
+            "ns": 0,
+            "title": "Biomarker",
+            "pageprops": {
+              "wikibase_item": "Q864574"
+            }
+          },
+          {
+            "pageid": 648954,
+            "ns": 0,
+            "title": "Bild der Wissenschaft",
+            "pageprops": {
+              "wikibase_item": "Q860558"
+            }
+          },
+          {
+            "pageid": 786414,
+            "ns": 0,
+            "title": "Alge",
+            "pageprops": {
+              "wikibase_item": "Q37868"
+            }
+          },
+          {
+            "pageid": 890800,
+            "ns": 0,
+            "title": "Biogeochemie",
+            "pageprops": {
+              "wikibase_item": "Q864379"
+            }
+          },
+          {
+            "pageid": 1256987,
+            "ns": 0,
+            "title": "Butyrate",
+            "pageprops": {
+              "wikibase_item": "Q1018145"
+            }
+          },
+          {
+            "pageid": 4033522,
+            "ns": 0,
+            "title": "3-Hydroxypropionatzyklus",
+            "pageprops": {
+              "wikibase_item": "Q22283600"
+            }
+          },
+          {
+            "pageid": 4365462,
+            "ns": 0,
+            "title": "ATP-Citrat-Lyase",
+            "pageprops": {
+              "wikibase_item": "Q3602265"
+            }
+          },
+          {
+            "pageid": 4567723,
+            "ns": 0,
+            "title": "Algenreaktor",
+            "pageprops": {
+              "wikibase_item": "Q902412"
+            }
+          },
+          {
+            "pageid": 6845382,
+            "ns": 0,
+            "title": "Annual Review of Plant Biology",
+            "pageprops": {
+              "wikibase_item": "Q567367"
+            }
+          },
+          {
+            "pageid": 8437216,
+            "ns": 0,
+            "title": "CO2-Kompensationspunkt",
+            "pageprops": {
+              "wikibase_item": "Q18411005"
+            }
+          },
+          {
+            "pageid": 12407593,
+            "ns": 0,
+            "title": "Ascorbate",
+            "pageprops": {
+              "wikibase_item": "Q2613674"
+            }
+          },
+          {
+            "pageid": 13010716,
+            "ns": 0,
+            "title": "Birgit Piechulla",
+            "pageprops": {
+              "wikibase_item": "Q21255744"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "Ectothiorhodospira",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Diatoxanthin",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Chromatium",
+            "missing": true
+          },
+          {
+            "pageid": 806,
+            "ns": 0,
+            "title": "Chlor",
+            "pageprops": {
+              "wikibase_item": "Q688"
+            }
+          },
+          {
+            "pageid": 920,
+            "ns": 0,
+            "title": "Chemische Energie",
+            "pageprops": {
+              "wikibase_item": "Q582668"
+            }
+          },
+          {
+            "pageid": 1108,
+            "ns": 0,
+            "title": "Desoxyribonukleinsäure",
+            "pageprops": {
+              "wikibase_item": "Q7430"
+            }
+          },
+          {
+            "pageid": 1249,
+            "ns": 0,
+            "title": "Eisen",
+            "pageprops": {
+              "wikibase_item": "Q677"
+            }
+          },
+          {
+            "pageid": 1253,
+            "ns": 0,
+            "title": "Elektron",
+            "pageprops": {
+              "wikibase_item": "Q2225"
+            }
+          },
+          {
+            "pageid": 1375,
+            "ns": 0,
+            "title": "Enzym",
+            "pageprops": {
+              "wikibase_item": "Q8047"
+            }
+          },
+          {
+            "pageid": 1459,
+            "ns": 0,
+            "title": "Elektromagnetische Welle",
+            "pageprops": {
+              "wikibase_item": "Q11386"
+            }
+          },
+          {
+            "pageid": 10305,
+            "ns": 0,
+            "title": "Chlorophylle",
+            "pageprops": {
+              "wikibase_item": "Q43177"
+            }
+          },
+          {
+            "pageid": 18875,
+            "ns": 0,
+            "title": "Chloroplast",
+            "pageprops": {
+              "wikibase_item": "Q47263"
+            }
+          },
+          {
+            "pageid": 19198,
+            "ns": 0,
+            "title": "Cytoplasma",
+            "pageprops": {
+              "wikibase_item": "Q79899"
+            }
+          },
+          {
+            "pageid": 22614,
+            "ns": 0,
+            "title": "Cyanobakterien",
+            "pageprops": {
+              "wikibase_item": "Q25577567"
+            }
+          },
+          {
+            "pageid": 28756,
+            "ns": 0,
+            "title": "Erdatmosphäre",
+            "pageprops": {
+              "wikibase_item": "Q3230"
+            }
+          },
+          {
+            "pageid": 30929,
+            "ns": 0,
+            "title": "Effektivität",
+            "pageprops": {
+              "wikibase_item": "Q1296024"
+            }
+          },
+          {
+            "pageid": 30955,
+            "ns": 0,
+            "title": "Dünger",
+            "pageprops": {
+              "wikibase_item": "Q83323"
+            }
+          },
+          {
+            "pageid": 41798,
+            "ns": 0,
+            "title": "Essigsäure",
+            "pageprops": {
+              "wikibase_item": "Q47512"
+            }
+          },
+          {
+            "pageid": 41835,
+            "ns": 0,
+            "title": "Energieniveau",
+            "pageprops": {
+              "wikibase_item": "Q669532"
+            }
+          },
+          {
+            "pageid": 44894,
+            "ns": 0,
+            "title": "Denaturierung (Biochemie)",
+            "pageprops": {
+              "wikibase_item": "Q273186"
+            }
+          },
+          {
+            "pageid": 46440,
+            "ns": 0,
+            "title": "Doppelbindung",
+            "pageprops": {
+              "wikibase_item": "Q258652"
+            }
+          },
+          {
+            "pageid": 54051,
+            "ns": 0,
+            "title": "Erdöl",
+            "pageprops": {
+              "wikibase_item": "Q22656"
+            }
+          },
+          {
+            "pageid": 77668,
+            "ns": 0,
+            "title": "Cytochrome",
+            "pageprops": {
+              "wikibase_item": "Q408068"
+            }
+          },
+          {
+            "pageid": 82157,
+            "ns": 0,
+            "title": "Carotinoide",
+            "pageprops": {
+              "wikibase_item": "Q191907"
+            }
+          },
+          {
+            "pageid": 108788,
+            "ns": 0,
+            "title": "Elektronenakzeptor",
+            "pageprops": {
+              "wikibase_item": "Q1231592"
+            }
+          },
+          {
+            "pageid": 108791,
+            "ns": 0,
+            "title": "Elektronendonator",
+            "pageprops": {
+              "wikibase_item": "Q911571"
+            }
+          },
+          {
+            "pageid": 117125,
+            "ns": 0,
+            "title": "Disproportionierung",
+            "pageprops": {
+              "wikibase_item": "Q664231"
+            }
+          },
+          {
+            "pageid": 143357,
+            "ns": 0,
+            "title": "Delokalisierung",
+            "pageprops": {
+              "wikibase_item": "Q899089"
+            }
+          },
+          {
+            "pageid": 175237,
+            "ns": 0,
+            "title": "Cytochrom c",
+            "pageprops": {
+              "wikibase_item": "Q408223"
+            }
+          },
+          {
+            "pageid": 184550,
+            "ns": 0,
+            "title": "Dinoflagellaten",
+            "pageprops": {
+              "wikibase_item": "Q120490"
+            }
+          },
+          {
+            "pageid": 208471,
+            "ns": 0,
+            "title": "Chromophor",
+            "pageprops": {
+              "wikibase_item": "Q533543"
+            }
+          },
+          {
+            "pageid": 230131,
+            "ns": 0,
+            "title": "Chemotrophie",
+            "pageprops": {
+              "wikibase_item": "Q747472"
+            }
+          },
+          {
+            "pageid": 244563,
+            "ns": 0,
+            "title": "Cytoskelett",
+            "pageprops": {
+              "wikibase_item": "Q154626"
+            }
+          },
+          {
+            "pageid": 265437,
+            "ns": 0,
+            "title": "Chemiosmotische Kopplung",
+            "pageprops": {
+              "wikibase_item": "Q910130"
+            }
+          },
+          {
+            "pageid": 274624,
+            "ns": 0,
+            "title": "Crassulaceen-Säurestoffwechsel",
+            "pageprops": {
+              "wikibase_item": "Q858313"
+            }
+          },
+          {
+            "pageid": 339997,
+            "ns": 0,
+            "title": "Chinone",
+            "pageprops": {
+              "wikibase_item": "Q412382"
+            }
+          },
+          {
+            "pageid": 342734,
+            "ns": 0,
+            "title": "Echte Brunnenkresse",
+            "pageprops": {
+              "wikibase_item": "Q150452"
+            }
+          },
+          {
+            "pageid": 531548,
+            "ns": 0,
+            "title": "Energiestoffwechsel",
+            "pageprops": {
+              "wikibase_item": "Q1341406"
+            }
+          },
+          {
+            "pageid": 540101,
+            "ns": 0,
+            "title": "Desulfurikation",
+            "pageprops": {
+              "wikibase_item": "Q648314"
+            }
+          },
+          {
+            "pageid": 689823,
+            "ns": 0,
+            "title": "Eiszeitalter",
+            "pageprops": {
+              "wikibase_item": "Q49367"
+            }
+          },
+          {
+            "pageid": 1065460,
+            "ns": 0,
+            "title": "Emerson-Effekt",
+            "pageprops": {
+              "wikibase_item": "Q908395"
+            }
+          },
+          {
+            "pageid": 1307723,
+            "ns": 0,
+            "title": "Engelmannscher Bakterienversuch",
+            "pageprops": {
+              "wikibase_item": "Q1342134"
+            }
+          },
+          {
+            "pageid": 1467559,
+            "ns": 0,
+            "title": "Chromatiaceae",
+            "pageprops": {
+              "wikibase_item": "Q590356"
+            }
+          },
+          {
+            "pageid": 1569038,
+            "ns": 0,
+            "title": "Chlorosom",
+            "pageprops": {
+              "wikibase_item": "Q890481"
+            }
+          },
+          {
+            "pageid": 1601817,
+            "ns": 0,
+            "title": "Cytochrom-c-Reduktase",
+            "pageprops": {
+              "wikibase_item": "Q412832"
+            }
+          },
+          {
+            "pageid": 1893180,
+            "ns": 0,
+            "title": "Elektronentransportkette",
+            "pageprops": {
+              "wikibase_item": "Q211016"
+            }
+          },
+          {
+            "pageid": 3691807,
+            "ns": 0,
+            "title": "Cornelis Bernardus van Niel",
+            "pageprops": {
+              "wikibase_item": "Q122308"
+            }
+          },
+          {
+            "pageid": 3801846,
+            "ns": 0,
+            "title": "Eisen-Schwefel-Cluster",
+            "pageprops": {
+              "wikibase_item": "Q312085"
+            }
+          },
+          {
+            "pageid": 4835912,
+            "ns": 0,
+            "title": "Cytochrom c6",
+            "pageprops": {
+              "wikibase_item": "Q24775051"
+            }
+          },
+          {
+            "pageid": 4870589,
+            "ns": 0,
+            "title": "Cytochrom-b6f-Komplex",
+            "pageprops": {
+              "wikibase_item": "Q22330043"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "John S. Rieske",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Ferredoxin-NADP-Reduktase",
+            "missing": true
+          },
+          {
+            "pageid": 1896,
+            "ns": 0,
+            "title": "Geologie",
+            "pageprops": {
+              "wikibase_item": "Q1069"
+            }
+          },
+          {
+            "pageid": 2140,
+            "ns": 0,
+            "title": "Hektar",
+            "pageprops": {
+              "wikibase_item": "Q35852"
+            }
+          },
+          {
+            "pageid": 2407,
+            "ns": 0,
+            "title": "Isotop",
+            "pageprops": {
+              "wikibase_item": "Q25276"
+            }
+          },
+          {
+            "pageid": 2480,
+            "ns": 0,
+            "title": "Joule",
+            "pageprops": {
+              "wikibase_item": "Q25269"
+            }
+          },
+          {
+            "pageid": 2549,
+            "ns": 0,
+            "title": "Justus von Liebig",
+            "pageprops": {
+              "wikibase_item": "Q16571"
+            }
+          },
+          {
+            "pageid": 2630,
+            "ns": 0,
+            "title": "Kohlenstoff",
+            "pageprops": {
+              "wikibase_item": "Q623"
+            }
+          },
+          {
+            "pageid": 2837,
+            "ns": 0,
+            "title": "Kohlenhydrate",
+            "pageprops": {
+              "wikibase_item": "Q11358"
+            }
+          },
+          {
+            "pageid": 5226,
+            "ns": 0,
+            "title": "Glucose",
+            "pageprops": {
+              "wikibase_item": "Q37525"
+            }
+          },
+          {
+            "pageid": 8010,
+            "ns": 0,
+            "title": "Ethanol",
+            "pageprops": {
+              "wikibase_item": "Q153"
+            }
+          },
+          {
+            "pageid": 8505,
+            "ns": 0,
+            "title": "Klima",
+            "pageprops": {
+              "wikibase_item": "Q7937"
+            }
+          },
+          {
+            "pageid": 11199,
+            "ns": 0,
+            "title": "Eukaryoten",
+            "pageprops": {
+              "wikibase_item": "Q19088"
+            }
+          },
+          {
+            "pageid": 11478,
+            "ns": 0,
+            "title": "Heterotrophie",
+            "pageprops": {
+              "wikibase_item": "Q5747897"
+            }
+          },
+          {
+            "pageid": 18135,
+            "ns": 0,
+            "title": "Kinetik (Chemie)",
+            "pageprops": {
+              "wikibase_item": "Q209082"
+            }
+          },
+          {
+            "pageid": 36370,
+            "ns": 0,
+            "title": "Grätzel-Zelle",
+            "pageprops": {
+              "wikibase_item": "Q81121"
+            }
+          },
+          {
+            "pageid": 37334,
+            "ns": 0,
+            "title": "Kartesisches Koordinatensystem",
+            "pageprops": {
+              "wikibase_item": "Q62912"
+            }
+          },
+          {
+            "pageid": 38827,
+            "ns": 0,
+            "title": "Farbstoffe",
+            "pageprops": {
+              "wikibase_item": "Q189720"
+            }
+          },
+          {
+            "pageid": 71220,
+            "ns": 0,
+            "title": "Hill-Reaktion",
+            "pageprops": {
+              "wikibase_item": "Q1618643"
+            }
+          },
+          {
+            "pageid": 74968,
+            "ns": 0,
+            "title": "Gemäßigte Klimazone",
+            "pageprops": {
+              "wikibase_item": "Q167466"
+            }
+          },
+          {
+            "pageid": 86335,
+            "ns": 0,
+            "title": "Gibbs-Energie",
+            "pageprops": {
+              "wikibase_item": "Q334631"
+            }
+          },
+          {
+            "pageid": 94351,
+            "ns": 0,
+            "title": "Katalase",
+            "pageprops": {
+              "wikibase_item": "Q12824566"
+            }
+          },
+          {
+            "pageid": 100065,
+            "ns": 0,
+            "title": "Hydrosphäre",
+            "pageprops": {
+              "wikibase_item": "Q83169"
+            }
+          },
+          {
+            "pageid": 141302,
+            "ns": 0,
+            "title": "Gewächshaus",
+            "pageprops": {
+              "wikibase_item": "Q165044"
+            }
+          },
+          {
+            "pageid": 196251,
+            "ns": 0,
+            "title": "Julius Sachs",
+            "pageprops": {
+              "wikibase_item": "Q61650"
+            }
+          },
+          {
+            "pageid": 198660,
+            "ns": 0,
+            "title": "Hydroxidion",
+            "pageprops": {
+              "wikibase_item": "Q199877"
+            }
+          },
+          {
+            "pageid": 254234,
+            "ns": 0,
+            "title": "Horizontaler Gentransfer",
+            "pageprops": {
+              "wikibase_item": "Q83185"
+            }
+          },
+          {
+            "pageid": 261515,
+            "ns": 0,
+            "title": "Exziton",
+            "pageprops": {
+              "wikibase_item": "Q858289"
+            }
+          },
+          {
+            "pageid": 372733,
+            "ns": 0,
+            "title": "Freie-Elektronen-Laser",
+            "pageprops": {
+              "wikibase_item": "Q586386"
+            }
+          },
+          {
+            "pageid": 446046,
+            "ns": 0,
+            "title": "Kerogen",
+            "pageprops": {
+              "wikibase_item": "Q938398"
+            }
+          },
+          {
+            "pageid": 458459,
+            "ns": 0,
+            "title": "Jacobus Henricus van ’t Hoff",
+            "pageprops": {
+              "wikibase_item": "Q102822"
+            }
+          },
+          {
+            "pageid": 506155,
+            "ns": 0,
+            "title": "Förster-Resonanzenergietransfer",
+            "pageprops": {
+              "wikibase_item": "Q367473"
+            }
+          },
+          {
+            "pageid": 666314,
+            "ns": 0,
+            "title": "Flechte",
+            "pageprops": {
+              "wikibase_item": "Q43142"
+            }
+          },
+          {
+            "pageid": 676404,
+            "ns": 0,
+            "title": "Jan Ingenhousz",
+            "pageprops": {
+              "wikibase_item": "Q434131"
+            }
+          },
+          {
+            "pageid": 706374,
+            "ns": 0,
+            "title": "Glutathion",
+            "pageprops": {
+              "wikibase_item": "Q116907"
+            }
+          },
+          {
+            "pageid": 787804,
+            "ns": 0,
+            "title": "Ferredoxine",
+            "pageprops": {
+              "wikibase_item": "Q415215"
+            }
+          },
+          {
+            "pageid": 838374,
+            "ns": 0,
+            "title": "Hydrothermale Lösung",
+            "pageprops": {
+              "wikibase_item": "Q1036221"
+            }
+          },
+          {
+            "pageid": 1046346,
+            "ns": 0,
+            "title": "Fossil",
+            "pageprops": {
+              "wikibase_item": "Q40614"
+            }
+          },
+          {
+            "pageid": 1066083,
+            "ns": 0,
+            "title": "Grüne Nichtschwefelbakterien",
+            "pageprops": {
+              "wikibase_item": "Q21442539"
+            }
+          },
+          {
+            "pageid": 1180087,
+            "ns": 0,
+            "title": "Grüne Schwefelbakterien",
+            "pageprops": {
+              "wikibase_item": "Q866342"
+            }
+          },
+          {
+            "pageid": 2848233,
+            "ns": 0,
+            "title": "Heliobacteriaceae",
+            "pageprops": {
+              "wikibase_item": "Q137965"
+            }
+          },
+          {
+            "pageid": 3184551,
+            "ns": 0,
+            "title": "Frederick Blackman",
+            "pageprops": {
+              "wikibase_item": "Q359040"
+            }
+          },
+          {
+            "pageid": 3184559,
+            "ns": 0,
+            "title": "Gabrielle Matthaei",
+            "pageprops": {
+              "wikibase_item": "Q1490676"
+            }
+          },
+          {
+            "pageid": 3498317,
+            "ns": 0,
+            "title": "Hans-Walter Heldt",
+            "pageprops": {
+              "wikibase_item": "Q1578283"
+            }
+          },
+          {
+            "pageid": 3998966,
+            "ns": 0,
+            "title": "Grünlücke",
+            "pageprops": {
+              "wikibase_item": "Q1552302"
+            }
+          },
+          {
+            "pageid": 6877555,
+            "ns": 0,
+            "title": "Große Sauerstoffkatastrophe",
+            "pageprops": {
+              "wikibase_item": "Q837561"
+            }
+          },
+          {
+            "pageid": 6946130,
+            "ns": 0,
+            "title": "Jahrmilliarde",
+            "pageprops": {
+              "wikibase_item": "Q524410"
+            }
+          },
+          {
+            "pageid": 7123562,
+            "ns": 0,
+            "title": "Glutathion-Reduktase",
+            "pageprops": {
+              "wikibase_item": "Q420930"
+            }
+          },
+          {
+            "pageid": 8398050,
+            "ns": 0,
+            "title": "Glycerinaldehyd-3-phosphat",
+            "pageprops": {
+              "wikibase_item": "Q794810"
+            }
+          },
+          {
+            "pageid": 9243071,
+            "ns": 0,
+            "title": "Humustheorie",
+            "pageprops": {
+              "wikibase_item": "Q22911485"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "Margulisbacteria",
+            "missing": true
+          },
+          {
+            "pageid": 2885,
+            "ns": 0,
+            "title": "Kulturpflanze",
+            "pageprops": {
+              "wikibase_item": "Q1362373"
+            }
+          },
+          {
+            "pageid": 3171,
+            "ns": 0,
+            "title": "Mol",
+            "pageprops": {
+              "wikibase_item": "Q41509"
+            }
+          },
+          {
+            "pageid": 3174,
+            "ns": 0,
+            "title": "Mangan",
+            "pageprops": {
+              "wikibase_item": "Q731"
+            }
+          },
+          {
+            "pageid": 3175,
+            "ns": 0,
+            "title": "Molybdän",
+            "pageprops": {
+              "wikibase_item": "Q1053"
+            }
+          },
+          {
+            "pageid": 3522,
+            "ns": 0,
+            "title": "Nickel",
+            "pageprops": {
+              "wikibase_item": "Q744"
+            }
+          },
+          {
+            "pageid": 3637,
+            "ns": 0,
+            "title": "Koniferen",
+            "pageprops": {
+              "wikibase_item": "Q1000370"
+            }
+          },
+          {
+            "pageid": 3717,
+            "ns": 0,
+            "title": "Ozonschicht",
+            "pageprops": {
+              "wikibase_item": "Q79995"
+            }
+          },
+          {
+            "pageid": 3722,
+            "ns": 0,
+            "title": "Ozon",
+            "pageprops": {
+              "wikibase_item": "Q36933"
+            }
+          },
+          {
+            "pageid": 3766,
+            "ns": 0,
+            "title": "Oxidation",
+            "pageprops": {
+              "wikibase_item": "Q1786087"
+            }
+          },
+          {
+            "pageid": 3789,
+            "ns": 0,
+            "title": "Organische Chemie",
+            "pageprops": {
+              "wikibase_item": "Q11351"
+            }
+          },
+          {
+            "pageid": 8608,
+            "ns": 0,
+            "title": "Meer",
+            "pageprops": {
+              "wikibase_item": "Q165"
+            }
+          },
+          {
+            "pageid": 8894,
+            "ns": 0,
+            "title": "Luftfeuchtigkeit",
+            "pageprops": {
+              "wikibase_item": "Q180600"
+            }
+          },
+          {
+            "pageid": 13299,
+            "ns": 0,
+            "title": "Licht",
+            "pageprops": {
+              "wikibase_item": "Q9128"
+            }
+          },
+          {
+            "pageid": 17601,
+            "ns": 0,
+            "title": "Korn",
+            "pageprops": {
+              "wikibase_item": "Q227153"
+            }
+          },
+          {
+            "pageid": 22960,
+            "ns": 0,
+            "title": "Milchsäure",
+            "pageprops": {
+              "wikibase_item": "Q161249"
+            }
+          },
+          {
+            "pageid": 25891,
+            "ns": 0,
+            "title": "Oxidationszahl",
+            "pageprops": {
+              "wikibase_item": "Q484152"
+            }
+          },
+          {
+            "pageid": 35912,
+            "ns": 0,
+            "title": "Komplexchemie",
+            "pageprops": {
+              "wikibase_item": "Q3674740"
+            }
+          },
+          {
+            "pageid": 38533,
+            "ns": 0,
+            "title": "Nitrite",
+            "pageprops": {
+              "wikibase_item": "Q72157355"
+            }
+          },
+          {
+            "pageid": 38850,
+            "ns": 0,
+            "title": "Kompostierung",
+            "pageprops": {
+              "wikibase_item": "Q13222335"
+            }
+          },
+          {
+            "pageid": 58381,
+            "ns": 0,
+            "title": "Marcello Malpighi",
+            "pageprops": {
+              "wikibase_item": "Q232583"
+            }
+          },
+          {
+            "pageid": 60501,
+            "ns": 0,
+            "title": "Lactate",
+            "pageprops": {
+              "wikibase_item": "Q349735"
+            }
+          },
+          {
+            "pageid": 83220,
+            "ns": 0,
+            "title": "Minimumgesetz",
+            "pageprops": {
+              "wikibase_item": "Q428265"
+            }
+          },
+          {
+            "pageid": 85020,
+            "ns": 0,
+            "title": "Laubwald",
+            "pageprops": {
+              "wikibase_item": "Q1211122"
+            }
+          },
+          {
+            "pageid": 113691,
+            "ns": 0,
+            "title": "Pflanzengesellschaft",
+            "pageprops": {
+              "wikibase_item": "Q1418712"
+            }
+          },
+          {
+            "pageid": 159848,
+            "ns": 0,
+            "title": "Nature",
+            "pageprops": {
+              "wikibase_item": "Q180445"
+            }
+          },
+          {
+            "pageid": 186317,
+            "ns": 0,
+            "title": "Menachinon",
+            "pageprops": {
+              "wikibase_item": "Q7936967"
+            }
+          },
+          {
+            "pageid": 202572,
+            "ns": 0,
+            "title": "Lichtsammelkomplex",
+            "pageprops": {
+              "wikibase_item": "Q355270"
+            }
+          },
+          {
+            "pageid": 227319,
+            "ns": 0,
+            "title": "Nicotinamidadenindinukleotidphosphat",
+            "pageprops": {
+              "wikibase_item": "Q28747"
+            }
+          },
+          {
+            "pageid": 278047,
+            "ns": 0,
+            "title": "Kohlenstoffdioxid-Assimilation",
+            "pageprops": {
+              "wikibase_item": "Q901921"
+            }
+          },
+          {
+            "pageid": 281963,
+            "ns": 0,
+            "title": "Lithotrophie",
+            "pageprops": {
+              "wikibase_item": "Q901900"
+            }
+          },
+          {
+            "pageid": 410274,
+            "ns": 0,
+            "title": "Peter D. Mitchell",
+            "pageprops": {
+              "wikibase_item": "Q207992"
+            }
+          },
+          {
+            "pageid": 558014,
+            "ns": 0,
+            "title": "Parenchym",
+            "pageprops": {
+              "wikibase_item": "Q270524"
+            }
+          },
+          {
+            "pageid": 734477,
+            "ns": 0,
+            "title": "Kohlenstoffdioxid",
+            "pageprops": {
+              "wikibase_item": "Q1997"
+            }
+          },
+          {
+            "pageid": 999262,
+            "ns": 0,
+            "title": "Konjugation (Chemie)",
+            "pageprops": {
+              "wikibase_item": "Q898370"
+            }
+          },
+          {
+            "pageid": 1012004,
+            "ns": 0,
+            "title": "Lichtkompensationspunkt",
+            "pageprops": {
+              "wikibase_item": "Q846380"
+            }
+          },
+          {
+            "pageid": 1099441,
+            "ns": 0,
+            "title": "Multiplizität",
+            "pageprops": {
+              "wikibase_item": "Q902301"
+            }
+          },
+          {
+            "pageid": 1582904,
+            "ns": 0,
+            "title": "Lichtsättigungspunkt",
+            "pageprops": {
+              "wikibase_item": "Q1823527"
+            }
+          },
+          {
+            "pageid": 1876160,
+            "ns": 0,
+            "title": "Organische Solarzelle",
+            "pageprops": {
+              "wikibase_item": "Q1472888"
+            }
+          },
+          {
+            "pageid": 1946632,
+            "ns": 0,
+            "title": "Lichtabsorption",
+            "pageprops": {
+              "wikibase_item": "Q905921"
+            }
+          },
+          {
+            "pageid": 2220701,
+            "ns": 0,
+            "title": "Ostpazifischer Rücken",
+            "pageprops": {
+              "wikibase_item": "Q604529"
+            }
+          },
+          {
+            "pageid": 2368600,
+            "ns": 0,
+            "title": "Lipide",
+            "pageprops": {
+              "wikibase_item": "Q11367"
+            }
+          },
+          {
+            "pageid": 2578574,
+            "ns": 0,
+            "title": "Laubmoose",
+            "pageprops": {
+              "wikibase_item": "Q25347"
+            }
+          },
+          {
+            "pageid": 2732682,
+            "ns": 0,
+            "title": "Kupfer",
+            "pageprops": {
+              "wikibase_item": "Q753"
+            }
+          },
+          {
+            "pageid": 3312790,
+            "ns": 0,
+            "title": "Molekulare Evolution",
+            "pageprops": {
+              "wikibase_item": "Q856529"
+            }
+          },
+          {
+            "pageid": 3327692,
+            "ns": 0,
+            "title": "Norbert Pfennig",
+            "pageprops": {
+              "wikibase_item": "Q105257"
+            }
+          },
+          {
+            "pageid": 4475790,
+            "ns": 0,
+            "title": "Oedogonium",
+            "pageprops": {
+              "wikibase_item": "Q290016"
+            }
+          },
+          {
+            "pageid": 8945750,
+            "ns": 0,
+            "title": "Künstliche Photosynthese",
+            "pageprops": {
+              "wikibase_item": "Q654623"
+            }
+          },
+          {
+            "pageid": 10452237,
+            "ns": 0,
+            "title": "Pflanze",
+            "pageprops": {
+              "wikibase_item": "Q756"
+            }
+          },
+          {
+            "pageid": 11951866,
+            "ns": 0,
+            "title": "Melainabacteria",
+            "pageprops": {
+              "wikibase_item": "Q20721206"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "Protocyanobakterien",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Plastoribosom",
+            "missing": true
+          },
+          {
+            "pageid": 4350,
+            "ns": 0,
+            "title": "Reduktion (Chemie)",
+            "pageprops": {
+              "wikibase_item": "Q912546"
+            }
+          },
+          {
+            "pageid": 4351,
+            "ns": 0,
+            "title": "Redoxreaktion",
+            "pageprops": {
+              "wikibase_item": "Q82682"
+            }
+          },
+          {
+            "pageid": 11736,
+            "ns": 0,
+            "title": "Physiologie",
+            "pageprops": {
+              "wikibase_item": "Q521"
+            }
+          },
+          {
+            "pageid": 12062,
+            "ns": 0,
+            "title": "Protisten",
+            "pageprops": {
+              "wikibase_item": "Q10892"
+            }
+          },
+          {
+            "pageid": 16066,
+            "ns": 0,
+            "title": "Prisma (Optik)",
+            "pageprops": {
+              "wikibase_item": "Q165896"
+            }
+          },
+          {
+            "pageid": 26734,
+            "ns": 0,
+            "title": "Primärproduktion",
+            "pageprops": {
+              "wikibase_item": "Q515905"
+            }
+          },
+          {
+            "pageid": 28868,
+            "ns": 0,
+            "title": "Pyrit",
+            "pageprops": {
+              "wikibase_item": "Q50769"
+            }
+          },
+          {
+            "pageid": 30924,
+            "ns": 0,
+            "title": "Quant",
+            "pageprops": {
+              "wikibase_item": "Q46344"
+            }
+          },
+          {
+            "pageid": 32191,
+            "ns": 0,
+            "title": "Phylogenetik",
+            "pageprops": {
+              "wikibase_item": "Q171184"
+            }
+          },
+          {
+            "pageid": 38938,
+            "ns": 0,
+            "title": "RGT-Regel",
+            "pageprops": {
+              "wikibase_item": "Q28088158"
+            }
+          },
+          {
+            "pageid": 40867,
+            "ns": 0,
+            "title": "Pyruvate",
+            "pageprops": {
+              "wikibase_item": "Q1309939"
+            }
+          },
+          {
+            "pageid": 41238,
+            "ns": 0,
+            "title": "Plastid",
+            "pageprops": {
+              "wikibase_item": "Q165963"
+            }
+          },
+          {
+            "pageid": 42624,
+            "ns": 0,
+            "title": "Reduktionsmittel",
+            "pageprops": {
+              "wikibase_item": "Q216830"
+            }
+          },
+          {
+            "pageid": 59234,
+            "ns": 0,
+            "title": "Q-Zyklus",
+            "pageprops": {
+              "wikibase_item": "Q337603"
+            }
+          },
+          {
+            "pageid": 94778,
+            "ns": 0,
+            "title": "Redoxpotential",
+            "pageprops": {
+              "wikibase_item": "Q186487"
+            }
+          },
+          {
+            "pageid": 119940,
+            "ns": 0,
+            "title": "Photorespiration",
+            "pageprops": {
+              "wikibase_item": "Q842275"
+            }
+          },
+          {
+            "pageid": 181597,
+            "ns": 0,
+            "title": "Phosphate",
+            "pageprops": {
+              "wikibase_item": "Q46220103"
+            }
+          },
+          {
+            "pageid": 185785,
+            "ns": 0,
+            "title": "Phyllochinon",
+            "pageprops": {
+              "wikibase_item": "Q186093"
+            }
+          },
+          {
+            "pageid": 202570,
+            "ns": 0,
+            "title": "Photosystem",
+            "pageprops": {
+              "wikibase_item": "Q22327806"
+            }
+          },
+          {
+            "pageid": 207005,
+            "ns": 0,
+            "title": "Reduktionsäquivalent",
+            "pageprops": {
+              "wikibase_item": "Q907408"
+            }
+          },
+          {
+            "pageid": 229963,
+            "ns": 0,
+            "title": "Phototrophie",
+            "pageprops": {
+              "wikibase_item": "Q335183"
+            }
+          },
+          {
+            "pageid": 242276,
+            "ns": 0,
+            "title": "Phosphorylierung",
+            "pageprops": {
+              "wikibase_item": "Q242736"
+            }
+          },
+          {
+            "pageid": 256507,
+            "ns": 0,
+            "title": "Raucher (Hydrothermie)",
+            "pageprops": {
+              "wikibase_item": "Q1335848"
+            }
+          },
+          {
+            "pageid": 277622,
+            "ns": 0,
+            "title": "Photolyse",
+            "pageprops": {
+              "wikibase_item": "Q16814"
+            }
+          },
+          {
+            "pageid": 404488,
+            "ns": 0,
+            "title": "Proteinkinasen",
+            "pageprops": {
+              "wikibase_item": "Q58321"
+            }
+          },
+          {
+            "pageid": 438100,
+            "ns": 0,
+            "title": "Plastochinon",
+            "pageprops": {
+              "wikibase_item": "Q133594"
+            }
+          },
+          {
+            "pageid": 469693,
+            "ns": 0,
+            "title": "Photochemie",
+            "pageprops": {
+              "wikibase_item": "Q188651"
+            }
+          },
+          {
+            "pageid": 559097,
+            "ns": 0,
+            "title": "Reaktive Sauerstoffspezies",
+            "pageprops": {
+              "wikibase_item": "Q424361"
+            }
+          },
+          {
+            "pageid": 666659,
+            "ns": 0,
+            "title": "Purpurbakterien",
+            "pageprops": {
+              "wikibase_item": "Q1335274"
+            }
+          },
+          {
+            "pageid": 671974,
+            "ns": 0,
+            "title": "Quantenausbeute",
+            "pageprops": {
+              "wikibase_item": "Q2856048"
+            }
+          },
+          {
+            "pageid": 905157,
+            "ns": 0,
+            "title": "Photosynthetisch aktive Strahlung",
+            "pageprops": {
+              "wikibase_item": "Q900892"
+            }
+          },
+          {
+            "pageid": 987456,
+            "ns": 0,
+            "title": "Protonengradient",
+            "pageprops": {
+              "wikibase_item": "Q2113721"
+            }
+          },
+          {
+            "pageid": 1590403,
+            "ns": 0,
+            "title": "Protonenpumpe",
+            "pageprops": {
+              "wikibase_item": "Q412272"
+            }
+          },
+          {
+            "pageid": 1763879,
+            "ns": 0,
+            "title": "Phycobiline",
+            "pageprops": {
+              "wikibase_item": "Q412631"
+            }
+          },
+          {
+            "pageid": 1859532,
+            "ns": 0,
+            "title": "Photosynthetisches Reaktionszentrum",
+            "pageprops": {
+              "wikibase_item": "Q418676"
+            }
+          },
+          {
+            "pageid": 1933083,
+            "ns": 0,
+            "title": "Plagiomnium affine",
+            "pageprops": {
+              "wikibase_item": "Q146224"
+            }
+          },
+          {
+            "pageid": 2205269,
+            "ns": 0,
+            "title": "Photodestruktion",
+            "pageprops": {
+              "wikibase_item": "Q2088854"
+            }
+          },
+          {
+            "pageid": 3109093,
+            "ns": 0,
+            "title": "Phycobilisom",
+            "pageprops": {
+              "wikibase_item": "Q22327713"
+            }
+          },
+          {
+            "pageid": 3794757,
+            "ns": 0,
+            "title": "Reservestoff",
+            "pageprops": {
+              "wikibase_item": "Q2145617"
+            }
+          },
+          {
+            "pageid": 4026099,
+            "ns": 0,
+            "title": "Reduktiver Citratzyklus",
+            "pageprops": {
+              "wikibase_item": "Q22283601"
+            }
+          },
+          {
+            "pageid": 4581585,
+            "ns": 0,
+            "title": "Pigment (Biologie)",
+            "pageprops": {
+              "wikibase_item": "Q910979"
+            }
+          },
+          {
+            "pageid": 4734050,
+            "ns": 0,
+            "title": "Phäophytine",
+            "pageprops": {
+              "wikibase_item": "Q115237"
+            }
+          },
+          {
+            "pageid": 4830330,
+            "ns": 0,
+            "title": "Plastocyanin",
+            "pageprops": {
+              "wikibase_item": "Q24722801"
+            }
+          },
+          {
+            "pageid": 6280547,
+            "ns": 0,
+            "title": "Photosystem II",
+            "pageprops": {
+              "wikibase_item": "Q22327014"
+            }
+          },
+          {
+            "pageid": 6342457,
+            "ns": 0,
+            "title": "Pierre Joliot",
+            "pageprops": {
+              "wikibase_item": "Q899355"
+            }
+          },
+          {
+            "pageid": 8775709,
+            "ns": 0,
+            "title": "Photosystem I",
+            "pageprops": {
+              "wikibase_item": "Q4339518"
+            }
+          },
+          {
+            "pageid": 10468114,
+            "ns": 0,
+            "title": "Photosynthese (Spiel)",
+            "pageprops": {
+              "wikibase_item": "Q56493292"
+            }
+          },
+          {
+            "pageid": 10738998,
+            "ns": 0,
+            "title": "Plastiden-DNA",
+            "pageprops": {
+              "wikibase_item": "Q3182853"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "Sericytochromatia",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Schwefelfreie Purpurbakterien",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Rieske-Protein",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Rhodospirillum",
+            "missing": true
+          },
+          {
+            "ns": 0,
+            "title": "Rhodopseudomonas viridis",
+            "missing": true
+          },
+          {
+            "pageid": 4227,
+            "ns": 0,
+            "title": "Rhenium",
+            "pageprops": {
+              "wikibase_item": "Q737"
+            }
+          },
+          {
+            "pageid": 4293,
+            "ns": 0,
+            "title": "Ribosom",
+            "pageprops": {
+              "wikibase_item": "Q42244"
+            }
+          },
+          {
+            "pageid": 4541,
+            "ns": 0,
+            "title": "Strontium",
+            "pageprops": {
+              "wikibase_item": "Q938"
+            }
+          },
+          {
+            "pageid": 4543,
+            "ns": 0,
+            "title": "Sauerstoff",
+            "pageprops": {
+              "wikibase_item": "Q629"
+            }
+          },
+          {
+            "pageid": 4547,
+            "ns": 0,
+            "title": "Schwefel",
+            "pageprops": {
+              "wikibase_item": "Q682"
+            }
+          },
+          {
+            "pageid": 4868,
+            "ns": 0,
+            "title": "Schwefelwasserstoff",
+            "pageprops": {
+              "wikibase_item": "Q170591"
+            }
+          },
+          {
+            "pageid": 4905,
+            "ns": 0,
+            "title": "Sonnenenergie",
+            "pageprops": {
+              "wikibase_item": "Q40015"
+            }
+          },
+          {
+            "pageid": 5048,
+            "ns": 0,
+            "title": "Thorium",
+            "pageprops": {
+              "wikibase_item": "Q1115"
+            }
+          },
+          {
+            "pageid": 8736,
+            "ns": 0,
+            "title": "Rotbuche",
+            "pageprops": {
+              "wikibase_item": "Q146149"
+            }
+          },
+          {
+            "pageid": 10614,
+            "ns": 0,
+            "title": "Spektrallinie",
+            "pageprops": {
+              "wikibase_item": "Q212111"
+            }
+          },
+          {
+            "pageid": 11526,
+            "ns": 0,
+            "title": "Sedimente und Sedimentgesteine",
+            "pageprops": {
+              "wikibase_item": "Q82480"
+            }
+          },
+          {
+            "pageid": 14693,
+            "ns": 0,
+            "title": "Säuren",
+            "pageprops": {
+              "wikibase_item": "Q11158"
+            }
+          },
+          {
+            "pageid": 14985,
+            "ns": 0,
+            "title": "Stratosphäre",
+            "pageprops": {
+              "wikibase_item": "Q108376"
+            }
+          },
+          {
+            "pageid": 15805,
+            "ns": 0,
+            "title": "Röntgenstrahlung",
+            "pageprops": {
+              "wikibase_item": "Q34777"
+            }
+          },
+          {
+            "pageid": 16082,
+            "ns": 0,
+            "title": "Stärke",
+            "pageprops": {
+              "wikibase_item": "Q41534"
+            }
+          },
+          {
+            "pageid": 18196,
+            "ns": 0,
+            "title": "Sulfate",
+            "pageprops": {
+              "wikibase_item": "Q25997675"
+            }
+          },
+          {
+            "pageid": 24101,
+            "ns": 0,
+            "title": "Schwarzer Körper",
+            "pageprops": {
+              "wikibase_item": "Q161424"
+            }
+          },
+          {
+            "pageid": 31516,
+            "ns": 0,
+            "title": "RuBisCO",
+            "pageprops": {
+              "wikibase_item": "Q422516"
+            }
+          },
+          {
+            "pageid": 31849,
+            "ns": 0,
+            "title": "Süßwasser",
+            "pageprops": {
+              "wikibase_item": "Q102192"
+            }
+          },
+          {
+            "pageid": 38400,
+            "ns": 0,
+            "title": "Steinkohle",
+            "pageprops": {
+              "wikibase_item": "Q732607"
+            }
+          },
+          {
+            "pageid": 64093,
+            "ns": 0,
+            "title": "Stoma (Botanik)",
+            "pageprops": {
+              "wikibase_item": "Q216635"
+            }
+          },
+          {
+            "pageid": 64514,
+            "ns": 0,
+            "title": "Schiefer",
+            "pageprops": {
+              "wikibase_item": "Q9394813"
+            }
+          },
+          {
+            "pageid": 71213,
+            "ns": 0,
+            "title": "Robert Hill (Naturforscher)",
+            "pageprops": {
+              "wikibase_item": "Q385803"
+            }
+          },
+          {
+            "pageid": 78035,
+            "ns": 0,
+            "title": "Terpene",
+            "pageprops": {
+              "wikibase_item": "Q212364"
+            }
+          },
+          {
+            "pageid": 93045,
+            "ns": 0,
+            "title": "Thylakoid",
+            "pageprops": {
+              "wikibase_item": "Q337889"
+            }
+          },
+          {
+            "pageid": 108953,
+            "ns": 0,
+            "title": "Schwefeloxidierende Bakterien",
+            "pageprops": {
+              "wikibase_item": "Q31270581"
+            }
+          },
+          {
+            "pageid": 160116,
+            "ns": 0,
+            "title": "Strahlungsenergie",
+            "pageprops": {
+              "wikibase_item": "Q10932713"
+            }
+          },
+          {
+            "pageid": 162173,
+            "ns": 0,
+            "title": "Sauerklee",
+            "pageprops": {
+              "wikibase_item": "Q157378"
+            }
+          },
+          {
+            "pageid": 277037,
+            "ns": 0,
+            "title": "Stromatolith",
+            "pageprops": {
+              "wikibase_item": "Q176739"
+            }
+          },
+          {
+            "pageid": 293802,
+            "ns": 0,
+            "title": "Sonnenstrahlung",
+            "pageprops": {
+              "wikibase_item": "Q17996169"
+            }
+          },
+          {
+            "pageid": 343897,
+            "ns": 0,
+            "title": "Sonnenstand",
+            "pageprops": {
+              "wikibase_item": "Q11362765"
+            }
+          },
+          {
+            "pageid": 406259,
+            "ns": 0,
+            "title": "Rezent",
+            "pageprops": {
+              "wikibase_item": "Q310891"
+            }
+          },
+          {
+            "pageid": 444839,
+            "ns": 0,
+            "title": "Schattenpflanze",
+            "pageprops": {
+              "wikibase_item": "Q4447755"
+            }
+          },
+          {
+            "pageid": 471034,
+            "ns": 0,
+            "title": "Sonnenblatt",
+            "pageprops": {
+              "wikibase_item": "Q1004821"
+            }
+          },
+          {
+            "pageid": 482373,
+            "ns": 0,
+            "title": "Ribulose-1,5-bisphosphat",
+            "pageprops": {
+              "wikibase_item": "Q418860"
+            }
+          },
+          {
+            "pageid": 683015,
+            "ns": 0,
+            "title": "Schattenblatt",
+            "pageprops": {
+              "wikibase_item": "Q585875"
+            }
+          },
+          {
+            "pageid": 978640,
+            "ns": 0,
+            "title": "Superoxiddismutase",
+            "pageprops": {
+              "wikibase_item": "Q410776"
+            }
+          },
+          {
+            "pageid": 1030651,
+            "ns": 0,
+            "title": "Sterane",
+            "pageprops": {
+              "wikibase_item": "Q418830"
+            }
+          },
+          {
+            "pageid": 1175758,
+            "ns": 0,
+            "title": "Thiosulfate",
+            "pageprops": {
+              "wikibase_item": "Q410739"
+            }
+          },
+          {
+            "pageid": 1281463,
+            "ns": 0,
+            "title": "Triosen",
+            "pageprops": {
+              "wikibase_item": "Q408699"
+            }
+          },
+          {
+            "pageid": 1433797,
+            "ns": 0,
+            "title": "Sonnenpflanze",
+            "pageprops": {
+              "wikibase_item": "Q2301991"
+            }
+          },
+          {
+            "pageid": 6782896,
+            "ns": 0,
+            "title": "Synechococcus",
+            "pageprops": {
+              "wikibase_item": "Q150962"
+            }
+          },
+          {
+            "pageid": 7451524,
+            "ns": 0,
+            "title": "Scinexx",
+            "pageprops": {
+              "wikibase_item": "Q2260273"
+            }
+          },
+          {
+            "pageid": 11780027,
+            "ns": 0,
+            "title": "Synechocystis",
+            "pageprops": {
+              "wikibase_item": "Q7662346"
+            }
+          },
+          {
+            "pageid": 13325396,
+            "ns": 0,
+            "title": "Rhodobacter",
+            "pageprops": {
+              "wikibase_item": "Q3016950"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "ns": 0,
+            "title": "Vergleichende Biochemie",
+            "missing": true
+          },
+          {
+            "pageid": 5547,
+            "ns": 0,
+            "title": "Wasserstoff",
+            "pageprops": {
+              "wikibase_item": "Q556"
+            }
+          },
+          {
+            "pageid": 5623,
+            "ns": 0,
+            "title": "Wasser",
+            "pageprops": {
+              "wikibase_item": "Q283"
+            }
+          },
+          {
+            "pageid": 5641,
+            "ns": 0,
+            "title": "Wirkungsgrad",
+            "pageprops": {
+              "wikibase_item": "Q192704"
+            }
+          },
+          {
+            "pageid": 10738,
+            "ns": 0,
+            "title": "Wellenlänge",
+            "pageprops": {
+              "wikibase_item": "Q41364"
+            }
+          },
+          {
+            "pageid": 12851,
+            "ns": 0,
+            "title": "Ultraviolettstrahlung",
+            "pageprops": {
+              "wikibase_item": "Q11391"
+            }
+          },
+          {
+            "pageid": 13292,
+            "ns": 0,
+            "title": "Ökosystem",
+            "pageprops": {
+              "wikibase_item": "Q37813"
+            }
+          },
+          {
+            "pageid": 20298,
+            "ns": 0,
+            "title": "Tropischer Regenwald",
+            "pageprops": {
+              "wikibase_item": "Q199403"
+            }
+          },
+          {
+            "pageid": 40296,
+            "ns": 0,
+            "title": "Zellatmung",
+            "pageprops": {
+              "wikibase_item": "Q912751"
+            }
+          },
+          {
+            "pageid": 44277,
+            "ns": 0,
+            "title": "Äpfelsäure",
+            "pageprops": {
+              "wikibase_item": "Q190143"
+            }
+          },
+          {
+            "pageid": 53772,
+            "ns": 0,
+            "title": "Wasserstoffperoxid",
+            "pageprops": {
+              "wikibase_item": "Q171877"
+            }
+          },
+          {
+            "pageid": 72715,
+            "ns": 0,
+            "title": "Tyrosin",
+            "pageprops": {
+              "wikibase_item": "Q188017"
+            }
+          },
+          {
+            "pageid": 73051,
+            "ns": 0,
+            "title": "Verdunstung",
+            "pageprops": {
+              "wikibase_item": "Q132814"
+            }
+          },
+          {
+            "pageid": 133221,
+            "ns": 0,
+            "title": "Xanthophylle",
+            "pageprops": {
+              "wikibase_item": "Q216208"
+            }
+          },
+          {
+            "pageid": 1229039,
+            "ns": 0,
+            "title": "Trockenstress",
+            "pageprops": {
+              "wikibase_item": "Q489777"
+            }
+          },
+          {
+            "pageid": 1371931,
+            "ns": 0,
+            "title": "Zeaxanthin",
+            "pageprops": {
+              "wikibase_item": "Q169337"
+            }
+          },
+          {
+            "pageid": 1582238,
+            "ns": 0,
+            "title": "Xanthophyllzyklus",
+            "pageprops": {
+              "wikibase_item": "Q908372"
+            }
+          },
+          {
+            "pageid": 2481872,
+            "ns": 0,
+            "title": "Uran",
+            "pageprops": {
+              "wikibase_item": "Q1098"
+            }
+          },
+          {
+            "pageid": 7360848,
+            "ns": 0,
+            "title": "Wachstum (Biologie)",
+            "pageprops": {
+              "wikibase_item": "Q1342838"
+            }
+          },
+          {
+            "pageid": 13486499,
+            "ns": 0,
+            "title": "Wassernutzungsindex",
+            "pageprops": {
+              "wikibase_item": "Q134439836"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sparql": [
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q156"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q706"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q706"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q706"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11777618"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1929547"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2512777"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q708"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q106192073"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q868"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q879"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q879"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7094"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1665984"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7094"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7094"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7094"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28598684"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q10876"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11165"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11165"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q18537"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q98119401"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q33971"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q20011319"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q37868"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q55983715"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41491"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q898653"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q80863"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q190156"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q191907"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q193598"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15711994"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q212527"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q215328"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q669532"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q220389"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2692606"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q267298"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q12492106"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q289472"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q17339814"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q289472"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q104007623"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q289472"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q112826905"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q467410"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21871294"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q472287"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q14864472"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q486761"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1292119"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q486761"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11514315"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q567367"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5633421"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q582668"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3935690"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q747472"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q902805"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q860558"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41298"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q864379"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q909199"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q910130"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11150157"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1018145"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2613674"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3602265"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q18411005"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1924249"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21255744"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22283600"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327117"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327117"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67101749"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327117"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q78155096"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q153"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q677"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q688"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q688"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q35456"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q688"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2225"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22675015"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3230"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q241284"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3230"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2627400"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3230"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19704068"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7430"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q8047"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q84467700"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q19088"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22656"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q169336"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22656"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q317088"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22656"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2424752"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22656"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7049495"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q43177"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q55640599"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47263"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47512"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q79899"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q120490"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q122308"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q150452"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q154626"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q189720"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q100434640"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q211016"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q273186"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q33059434"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q312085"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q72070508"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q408068"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q84467700"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q408223"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q8054"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q412382"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q412832"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q412832"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67101749"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q415215"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q533543"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q141501962"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q590356"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q858289"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1047683"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q858313"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q890481"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q355270"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q899089"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4897819"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q908395"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q483247"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1342134"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q46857"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22330043"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22330043"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22330043"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q78155096"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24775051"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q417841"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24775051"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25577567"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q623"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q623"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2313842"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q753"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q753"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1929547"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q753"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2512777"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1069"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1047113"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1069"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2267705"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1069"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2465832"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1069"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1997"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q289382"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1997"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7937"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q43619"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7937"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q115949945"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11358"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11358"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q136908428"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16571"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25269"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q208469"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25269"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2916980"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25269"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q68618328"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25276"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24017414"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q35852"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1371562"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q35852"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3268848"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q35852"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q106839753"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q37525"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15711994"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q37525"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q136192523"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q61650"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q83169"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q241284"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q83169"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2627400"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q83185"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q102822"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q116907"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q137965"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q199877"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q209082"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q227153"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4167410"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q334631"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q9357058"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q359040"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q367473"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q26879200"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q420930"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q8054"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q434131"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q524410"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1790144"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q524410"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4005761"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q794810"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q59199015"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q837561"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4914809"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q866342"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q866342"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q502895"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q901921"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1000370"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1490676"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1578283"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3674740"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4671286"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3674740"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q12824566"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21442539"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22911485"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3239681"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q731"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q744"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q756"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1053"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1053"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21073023"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q9128"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q124326543"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11351"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4671286"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11351"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11351"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11367"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q74892521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16814"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q137796968"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25347"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28747"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q55640599"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q36933"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q428653"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q36933"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2512777"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q36933"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41509"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q223662"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41509"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q51980494"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41509"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q68618328"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41509"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q82047057"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q79995"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q29653271"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q105257"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q161249"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q59199015"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q180445"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q737498"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q180445"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5633421"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q188651"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11790203"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q207992"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q232583"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q242736"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q137796968"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q270524"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q112826905"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q290016"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q349735"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q355270"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q418676"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q428265"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q105210"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q484152"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q764285"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q484152"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q17540792"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q604529"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q46831"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q604529"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q104698"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q842275"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q846380"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1924249"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q856529"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q900892"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41364"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q901900"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q902805"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1211122"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2083910"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1211122"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4457942"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1823527"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1924249"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2088854"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7936967"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q55640599"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q20721206"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q857968"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q20721206"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1040689"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327806"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q46220103"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56493292"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q131436"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q72157355"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q521"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q185698"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q521"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4671286"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q521"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q521"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28598684"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q629"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q629"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q737"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q10892"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2612572"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q10892"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q58051350"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q10892"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q110533142"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q34777"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q12969754"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q42244"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q46344"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q33104303"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q50769"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q12089225"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q58321"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q8054"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q58321"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q115237"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56256173"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q133594"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q146149"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q146224"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q157378"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q165963"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q171184"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2465832"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q186093"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q216830"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4897819"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q216830"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56256173"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q216830"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q100434640"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q335183"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q902805"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q337603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q137796968"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q385803"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q412272"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q68461428"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q412631"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q17339814"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q418860"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q422516"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q424361"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q424361"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56256173"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q899355"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q912546"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2281940"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1309939"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q213580"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1335274"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q55983715"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2145617"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56256173"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3016950"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4339518"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4339518"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22283601"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327014"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327014"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q78155096"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327713"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q22327713"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q78155096"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24722801"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q417841"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24722801"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28088158"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11345"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28088158"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q214070"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q283"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q556"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q556"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2313842"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q682"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q682"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1929547"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q938"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q938"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1098"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1098"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1098"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3658631"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1115"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11344"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1115"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1130479"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11158"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56256173"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q40015"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3935690"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41364"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24034552"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41364"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q33104303"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41534"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q416796"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41534"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q902638"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41534"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q951964"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41534"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25403900"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41534"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q119896085"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q82480"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11871901"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108376"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q29653271"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q132814"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q185357"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q132814"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4366377"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q150962"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q161424"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q193946"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q169337"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q170591"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q171877"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q188017"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q212364"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q216208"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q216635"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q20011319"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q337889"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5058355"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q408699"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q410739"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q410776"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q67015883"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q418830"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q113145171"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q908372"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q912751"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1342838"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2260273"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q21606686"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2301991"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4530267"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4447755"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4530267"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7662346"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q16521"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q10932713"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3935690"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25997675"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q47154513"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q134439836"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1738991"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q37813"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q96116695"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q190143"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q59199015"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

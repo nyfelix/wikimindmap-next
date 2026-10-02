@@ -4,10 +4,12 @@
  */
 import type { Lens, LensId } from "../core/types.ts";
 import { chapters } from "./chapters.ts";
+import { kinds } from "./kinds.ts";
 
 /** Lenses that are built. The others show as "soon" in the lens switch. */
 export const lenses: Partial<Record<LensId, Lens>> = {
   chapters,
+  kinds,
 };
 
 /** Every lens in the order of the lens switch, with a one-line description for "soon" ones. */

@@ -123,3 +123,31 @@
   cursor: pointer;
   padding: 2px 4px;
 }
+
+.facts {
+  margin: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.facts div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+}
+
+.facts dt {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  align-self: center;
+}
+
+.facts dd {
+  margin: 0;
+  font: 400 0.85rem var(--ui);
+  color: var(--ink);
+}

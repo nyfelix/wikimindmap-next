@@ -61,6 +61,63 @@ const LANGLINKS: Record<string, Record<string, string>> = {
   "en:Albert Einstein": { de: "Albert Einstein" },
 };
 
+interface WikidataFile {
+  pageprops: { query?: { pages?: { title: string; pageprops?: { wikibase_item?: string } }[] } }[];
+  sparql: { results: { bindings: { item: { value: string }; class: { value: string } }[] } }[];
+}
+
+let wikidataCache:
+  { qids: Map<string, Map<string, string>>; classes: Map<string, string[]> } | undefined;
+
+/** Title → QID per language, and QID → P31 classes, from every recorded wikidata.json. */
+function wikidata() {
+  if (wikidataCache) return wikidataCache;
+  const qids = new Map<string, Map<string, string>>();
+  const classes = new Map<string, string[]>();
+  const id = (uri: string) => uri.slice(uri.lastIndexOf("/") + 1);
+  for (const lang of readdirSync(FIXTURES).filter((d) => !d.includes("."))) {
+    const byTitle = new Map<string, string>();
+    for (const title of titlesOf(lang)) {
+      const path = join(dirOf(lang, title), "wikidata.json");
+      if (!existsSync(path)) continue;
+      const file = json(path) as WikidataFile;
+      for (const r of file.pageprops)
+        for (const page of r.query?.pages ?? [])
+          if (page.pageprops?.wikibase_item) byTitle.set(page.title, page.pageprops.wikibase_item);
+      for (const r of file.sparql)
+        for (const b of r.results.bindings) {
+          const list = classes.get(id(b.item.value)) ?? [];
+          if (!list.includes(id(b.class.value))) list.push(id(b.class.value));
+          classes.set(id(b.item.value), list);
+        }
+    }
+    qids.set(lang, byTitle);
+  }
+  wikidataCache = { qids, classes };
+  return wikidataCache;
+}
+
+/** Title → 30-day views per language, from every recorded pageviews.json. */
+function pageviewsOf(lang: string): Map<string, number> {
+  const views = new Map<string, number>();
+  for (const title of titlesOf(lang)) {
+    const path = join(dirOf(lang, title), "pageviews.json");
+    if (!existsSync(path)) continue;
+    const file = json(path) as {
+      responses: {
+        query?: { pages?: { title: string; pageviews?: Record<string, number | null> }[] };
+      }[];
+    };
+    for (const r of file.responses)
+      for (const page of r.query?.pages ?? []) {
+        if (!page.pageviews) continue;
+        const sum = Object.values(page.pageviews).reduce<number>((a, v) => a + (v ?? 0), 0);
+        views.set(page.title, (views.get(page.title) ?? 0) + sum);
+      }
+  }
+  return views;
+}
+
 export interface MockOptions {
   /** Titles whose page request fails with a network error. */
   failing?: string[];
@@ -72,8 +129,9 @@ export interface MockLog {
 
 export async function mockWikipedia(page: Page, options: MockOptions = {}): Promise<MockLog> {
   const log: MockLog = { requests: [] };
-  await page.route(/^https:\/\/([a-z-]+\.wikipedia|meta\.wikimedia)\.org\//, (route) =>
-    handle(route, log, options),
+  await page.route(
+    /^https:\/\/([a-z-]+\.wikipedia|meta\.wikimedia|query\.wikidata)\.org\//,
+    (route) => handle(route, log, options),
   );
   return log;
 }
@@ -137,11 +195,53 @@ async function handle(route: Route, log: MockLog, options: MockOptions) {
     return reply({ tfa: { titles: { normalized: "Chess" } } });
   }
 
+  // Wikidata query service: P31 per item, from the recorded wikidata.json files.
+  if (url.hostname === "query.wikidata.org") {
+    const items = [...(url.searchParams.get("query") ?? "").matchAll(/wd:(Q\d+)/g)].map(
+      (m) => m[1] ?? "",
+    );
+    const classes = wikidata().classes;
+    return reply({
+      results: {
+        bindings: items.flatMap((q) =>
+          (classes.get(q) ?? []).map((c) => ({
+            item: { value: `http://www.wikidata.org/entity/${q}` },
+            class: { value: `http://www.wikidata.org/entity/${c}` },
+          })),
+        ),
+      },
+    });
+  }
+
   if (url.pathname !== "/w/api.php") return reply({ error: "unmocked" }, 404);
   const p = url.searchParams;
   const titles = (p.get("titles") ?? "").split("|").filter(Boolean);
 
   if (p.get("meta") === "siteinfo") return reply(json(join(FIXTURES, lang, "siteinfo.json")));
+
+  if (p.get("prop") === "pageviews") {
+    const views = pageviewsOf(lang);
+    return reply({
+      query: {
+        pages: titles.map((title) => {
+          const v = views.get(title);
+          return v === undefined ? { title } : { title, pageviews: { "2026-09-01": v } };
+        }),
+      },
+    });
+  }
+
+  if (p.get("prop") === "pageprops") {
+    const qids = wikidata().qids.get(lang) ?? new Map<string, string>();
+    return reply({
+      query: {
+        pages: titles.map((title) => {
+          const q = qids.get(title);
+          return q ? { title, pageprops: { wikibase_item: q } } : { title };
+        }),
+      },
+    });
+  }
 
   if (p.get("action") === "sitematrix") return reply(json(join(FIXTURES, "sitematrix.json")));
 

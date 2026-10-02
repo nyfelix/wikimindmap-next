@@ -10,6 +10,10 @@ import { resolveRedirects } from "../../sources/redirects.ts";
 import { loadSiteinfo } from "../../sources/siteinfo.ts";
 import { loadSummary } from "../../sources/summary.ts";
 import { langlink, loadWikipedias, type Wikipedia } from "../../sources/languages.ts";
+import { loadPageviews } from "../../sources/pageviews.ts";
+import { fetchWikidata, kindsFrom } from "../../sources/wikidata.ts";
+import { KIND_MAP } from "../../lenses/kindMap.ts";
+import type { KindInfo } from "../../core/types.ts";
 import { persisters, queryClient, WEEK } from "./cache.ts";
 
 export const keys = {
@@ -20,6 +24,8 @@ export const keys = {
   linksBack: (lang: Lang, title: Title) => ["linksBack", lang, title] as const,
   summary: (lang: Lang, title: Title) => ["summary", lang, title] as const,
   wikipedias: () => ["wikipedias"] as const,
+  pageviews: (lang: Lang, title: Title) => ["pageviews", lang, title] as const,
+  kinds: (lang: Lang, title: Title) => ["kinds", lang, title] as const,
   langlink: (lang: Lang, title: Title, target: Lang) => ["langlink", lang, title, target] as const,
 };
 
@@ -105,4 +111,22 @@ export const summaryQuery = (lang: Lang, title: Title) =>
     queryKey: keys.summary(lang, title),
     queryFn: () => loadSummary(lang, title),
     persister: persisters.day.persisterFn,
+  });
+
+/** Views in the last 30 days of every link of an article (TS-14), as [title, views] pairs. */
+export const pageviewsQuery = (ref: ArticleRef, titles: Title[]) =>
+  queryOptions<[Title, number][]>({
+    queryKey: keys.pageviews(ref.lang, ref.title),
+    queryFn: async () => [...(await loadPageviews(ref.lang, titles))],
+    persister: persisters.day.persisterFn,
+  });
+
+/** The kind of every link of an article (TS-14), as [title, info] pairs. */
+export const kindsQuery = (ref: ArticleRef, titles: Title[]) =>
+  queryOptions<[Title, KindInfo][]>({
+    queryKey: keys.kinds(ref.lang, ref.title),
+    queryFn: async () => [...kindsFrom(await fetchWikidata(ref.lang, titles), KIND_MAP)],
+    staleTime: WEEK,
+    gcTime: WEEK,
+    persister: persisters.week.persisterFn,
   });

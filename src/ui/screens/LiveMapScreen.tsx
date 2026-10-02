@@ -196,7 +196,7 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
   );
 
   const graph = showLast ? lastGood.graph : live.graph;
-  const empty = live.status === "ready" && live.graph.groups.length === 0;
+  const empty = live.status === "ready" && live.graph.groups.every((g) => g.count === 0);
 
   const openCard = (node: MapNode, anchor: Element) => setCard({ node, anchor });
 

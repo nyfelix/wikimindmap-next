@@ -120,6 +120,9 @@ export interface Summary {
 
 export type Kind = "people" | "orgs" | "works" | "concepts" | "events" | "places";
 
+/** Wikidata class (QID) → [kind, English label] (lenses/kindMap.json, TS-13). */
+export type KindMap = Record<string, [Kind, string]>;
+
 export interface KindInfo {
   /** "Q5". */
   qid?: string;
@@ -214,6 +217,8 @@ export interface MapNode {
   folded?: boolean;
   /** Leaves: the article doesn't exist (muted, no ⊕). */
   redLink?: boolean;
+  /** A fixed branch with nothing in it (Kinds): drawn dotted, "none linked". */
+  empty?: boolean;
   /** Leaves: shown as a symbol (styleguide.md §5). */
   direction?: LinkDirection;
   /** Layout hint (bipolar, fixed kinds slots). */

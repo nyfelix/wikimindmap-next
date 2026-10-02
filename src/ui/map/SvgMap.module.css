@@ -136,3 +136,12 @@
   fill: transparent;
   stroke: none;
 }
+
+.mutedLabel {
+  fill: var(--muted);
+}
+
+/* Page views: the group color at 25 % opacity (styleguide.md §5). */
+.weight {
+  opacity: 0.25;
+}

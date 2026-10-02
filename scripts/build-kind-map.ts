@@ -2,6 +2,7 @@
  * Builds src/lenses/kindMap.json (TS-13): Wikidata class (QID) → [kind, English label].
  *
  *   node scripts/build-kind-map.ts
+ *   node scripts/build-kind-map.ts --overrides-only   applies OVERRIDES to the existing table
  *
  * 1. Takes the P31 classes of every link in the recorded starter articles (tests/fixtures),
  *    the classes real maps meet, plus a few seeds, and keeps the ~1,000 most common.
@@ -12,14 +13,13 @@
  */
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import type { Kind } from "../src/core/types.ts";
+import type { Kind, KindMap } from "../src/core/types.ts";
 import { API_USER_AGENT, createHttpClient } from "../src/sources/http.ts";
 import {
   classesFrom,
   fetchWikidata,
   KIND_PRECEDENCE,
   SPARQL_URL,
-  type KindMap,
 } from "../src/sources/wikidata.ts";
 
 const ROOT = join(import.meta.dirname, "..");
@@ -48,6 +48,16 @@ const ROOTS: Record<Exclude<Kind, "concepts">, string[]> = {
     "Q2761147", // meeting
     "Q3839081", // disaster
   ],
+};
+
+/**
+ * Hand-made corrections where Wikidata's superclasses mislead (the preview's "weak spots"):
+ * movements climb up to "organization", degrees up to "work".
+ */
+const OVERRIDES: Record<string, Kind> = {
+  Q49773: "concepts", // social movement
+  Q2738074: "concepts", // political movement
+  Q189533: "concepts", // academic degree
 };
 
 /** Common classes the sample may miss. */
@@ -143,15 +153,15 @@ async function classify(classes: string[]): Promise<KindMap> {
 
 const qid = (uri: string) => uri.slice(uri.lastIndexOf("/") + 1);
 
-async function main() {
-  const counts = await sampleClasses();
-  for (const s of SEEDS) counts.set(s, (counts.get(s) ?? 0) + 1_000_000);
-  const top = [...counts.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, LIMIT)
-    .map(([c]) => c);
-  console.log(`${counts.size} classes seen, keeping ${top.length}`);
-  const map = await classify(top);
+function applyOverrides(map: KindMap): KindMap {
+  for (const [qid, kind] of Object.entries(OVERRIDES)) {
+    const entry = map[qid];
+    if (entry) entry[0] = kind;
+  }
+  return map;
+}
+
+async function write(map: KindMap) {
   const sorted = Object.fromEntries(
     Object.entries(map).sort(([a], [b]) => Number(a.slice(1)) - Number(b.slice(1))),
   );
@@ -159,6 +169,20 @@ async function main() {
   const tally: Record<string, number> = {};
   for (const [kind] of Object.values(map)) tally[kind] = (tally[kind] ?? 0) + 1;
   console.log("kinds:", tally);
+}
+
+async function main() {
+  if (process.argv.includes("--overrides-only")) {
+    return write(applyOverrides(JSON.parse(await readFile(OUT, "utf8")) as KindMap));
+  }
+  const counts = await sampleClasses();
+  for (const s of SEEDS) counts.set(s, (counts.get(s) ?? 0) + 1_000_000);
+  const top = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, LIMIT)
+    .map(([c]) => c);
+  console.log(`${counts.size} classes seen, keeping ${top.length}`);
+  await write(applyOverrides(await classify(top)));
 }
 
 await main();

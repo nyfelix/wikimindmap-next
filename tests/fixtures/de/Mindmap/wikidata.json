@@ -1,0 +1,694 @@
+{
+  "titles": [
+    "3D",
+    "Abspaltung (Softwareentwicklung)",
+    "Assoziation (Psychologie)",
+    "Assoziogramm",
+    "Baumdiagramm",
+    "Begriff",
+    "Brainstorming",
+    "Concept-Map",
+    "Docear",
+    "FreeMind",
+    "Freeplane",
+    "Freie Software",
+    "Freie Strukturierung",
+    "Fuzzylogik",
+    "GNU General Public License",
+    "Hasse-Diagramm",
+    "IMapping",
+    "Informetrie",
+    "Kategorisierung (Kognitionswissenschaft)",
+    "Kognition",
+    "Kognitive Karte",
+    "MindManager",
+    "MindView",
+    "Ontologie (Informatik)",
+    "Pinnwandmoderation",
+    "Plattformunabhängigkeit",
+    "Psychologe",
+    "Semantik",
+    "Taxonomie",
+    "Tony Buzan",
+    "Wissensbilanz",
+    "Wissensmanagement",
+    "XMind"
+  ],
+  "pageprops": [
+    {
+      "batchcomplete": true,
+      "query": {
+        "pages": [
+          {
+            "pageid": 473,
+            "ns": 0,
+            "title": "Brainstorming",
+            "pageprops": {
+              "wikibase_item": "Q191183"
+            }
+          },
+          {
+            "pageid": 1615,
+            "ns": 0,
+            "title": "Fuzzylogik",
+            "pageprops": {
+              "wikibase_item": "Q224821"
+            }
+          },
+          {
+            "pageid": 2071,
+            "ns": 0,
+            "title": "GNU General Public License",
+            "pageprops": {
+              "wikibase_item": "Q7603"
+            }
+          },
+          {
+            "pageid": 3849,
+            "ns": 0,
+            "title": "Psychologe",
+            "pageprops": {
+              "wikibase_item": "Q212980"
+            }
+          },
+          {
+            "pageid": 4719,
+            "ns": 0,
+            "title": "Semantik",
+            "pageprops": {
+              "wikibase_item": "Q39645"
+            }
+          },
+          {
+            "pageid": 5156,
+            "ns": 0,
+            "title": "Taxonomie",
+            "pageprops": {
+              "wikibase_item": "Q7211"
+            }
+          },
+          {
+            "pageid": 11461,
+            "ns": 0,
+            "title": "Ontologie (Informatik)",
+            "pageprops": {
+              "wikibase_item": "Q324254"
+            }
+          },
+          {
+            "pageid": 14511,
+            "ns": 0,
+            "title": "Freie Software",
+            "pageprops": {
+              "wikibase_item": "Q341"
+            }
+          },
+          {
+            "pageid": 19930,
+            "ns": 0,
+            "title": "Kognitive Karte",
+            "pageprops": {
+              "wikibase_item": "Q1778434"
+            }
+          },
+          {
+            "pageid": 32655,
+            "ns": 0,
+            "title": "Plattformunabhängigkeit",
+            "pageprops": {
+              "wikibase_item": "Q174666"
+            }
+          },
+          {
+            "pageid": 87637,
+            "ns": 0,
+            "title": "Kognition",
+            "pageprops": {
+              "wikibase_item": "Q2200417"
+            }
+          },
+          {
+            "pageid": 100301,
+            "ns": 0,
+            "title": "3D",
+            "pageprops": {
+              "wikibase_item": "Q34929"
+            }
+          },
+          {
+            "pageid": 215713,
+            "ns": 0,
+            "title": "Informetrie",
+            "pageprops": {
+              "wikibase_item": "Q355654"
+            }
+          },
+          {
+            "pageid": 357314,
+            "ns": 0,
+            "title": "Concept-Map",
+            "pageprops": {
+              "wikibase_item": "Q830115"
+            }
+          },
+          {
+            "pageid": 429887,
+            "ns": 0,
+            "title": "Hasse-Diagramm",
+            "pageprops": {
+              "wikibase_item": "Q901446"
+            }
+          },
+          {
+            "pageid": 740746,
+            "ns": 0,
+            "title": "Tony Buzan",
+            "pageprops": {
+              "wikibase_item": "Q324925"
+            }
+          },
+          {
+            "pageid": 740789,
+            "ns": 0,
+            "title": "Assoziation (Psychologie)",
+            "pageprops": {
+              "wikibase_item": "Q744778"
+            }
+          },
+          {
+            "pageid": 744347,
+            "ns": 0,
+            "title": "Baumdiagramm",
+            "pageprops": {
+              "wikibase_item": "Q2067937"
+            }
+          },
+          {
+            "pageid": 770363,
+            "ns": 0,
+            "title": "Wissensbilanz",
+            "pageprops": {
+              "wikibase_item": "Q6423356"
+            }
+          },
+          {
+            "pageid": 793335,
+            "ns": 0,
+            "title": "Abspaltung (Softwareentwicklung)",
+            "pageprops": {
+              "wikibase_item": "Q332903"
+            }
+          },
+          {
+            "pageid": 797459,
+            "ns": 0,
+            "title": "FreeMind",
+            "pageprops": {
+              "wikibase_item": "Q1331559"
+            }
+          },
+          {
+            "pageid": 819818,
+            "ns": 0,
+            "title": "Kategorisierung (Kognitionswissenschaft)",
+            "pageprops": {
+              "wikibase_item": "Q912550"
+            }
+          },
+          {
+            "pageid": 1035936,
+            "ns": 0,
+            "title": "Pinnwandmoderation",
+            "pageprops": {
+              "wikibase_item": "Q56296622"
+            }
+          },
+          {
+            "pageid": 1159097,
+            "ns": 0,
+            "title": "MindManager",
+            "pageprops": {
+              "wikibase_item": "Q1397499"
+            }
+          },
+          {
+            "pageid": 2602054,
+            "ns": 0,
+            "title": "Wissensmanagement",
+            "pageprops": {
+              "wikibase_item": "Q192060"
+            }
+          },
+          {
+            "pageid": 3606701,
+            "ns": 0,
+            "title": "MindView",
+            "pageprops": {
+              "wikibase_item": "Q1356308"
+            }
+          },
+          {
+            "pageid": 4868745,
+            "ns": 0,
+            "title": "Assoziogramm",
+            "pageprops": {
+              "wikibase_item": "Q745146"
+            }
+          },
+          {
+            "pageid": 5295804,
+            "ns": 0,
+            "title": "Begriff",
+            "pageprops": {
+              "wikibase_item": "Q151885"
+            }
+          },
+          {
+            "pageid": 7278003,
+            "ns": 0,
+            "title": "XMind",
+            "pageprops": {
+              "wikibase_item": "Q1780782"
+            }
+          },
+          {
+            "pageid": 7926458,
+            "ns": 0,
+            "title": "Docear",
+            "pageprops": {
+              "wikibase_item": "Q15138769"
+            }
+          },
+          {
+            "pageid": 8390473,
+            "ns": 0,
+            "title": "Freeplane",
+            "pageprops": {
+              "wikibase_item": "Q3028675"
+            }
+          },
+          {
+            "pageid": 8439374,
+            "ns": 0,
+            "title": "IMapping",
+            "pageprops": {
+              "wikibase_item": "Q18412557"
+            }
+          },
+          {
+            "pageid": 11922496,
+            "ns": 0,
+            "title": "Freie Strukturierung",
+            "pageprops": {
+              "wikibase_item": "Q108555841"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sparql": [
+    {
+      "head": {
+        "vars": [
+          "item",
+          "class"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q341"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q17155032"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7603"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5975031"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q39645"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q4671286"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q39645"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q66745531"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q39645"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q135892289"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q151885"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q23958852"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q174666"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q241317"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q191183"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q131744452"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q192060"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q96247293"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q212980"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q28640"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q212980"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108300140"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q324254"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2267705"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q324925"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q5"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q332903"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q17155032"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q332903"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108586636"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q332903"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q116505632"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q901446"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q24034552"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q912550"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1799072"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1331559"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q167035"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1356308"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7397"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1397499"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7397"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1397499"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3307487"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1778434"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q41362222"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1780782"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q7247856"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2067937"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q111972893"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2200417"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1047113"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2200417"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2267705"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2200417"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2996394"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2200417"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q11862829"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2200417"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q116505632"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3028675"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q341"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15138769"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q341"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15138769"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1403556"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q15138769"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q3307487"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q18412557"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q2695280"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q56296622"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1969448"
+            }
+          },
+          {
+            "item": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q108555841"
+            },
+            "class": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q1969448"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
  * (owner decision: wbgetentities returns every statement, ~4 MB per 50 items).
  */
 import { normalizeTitle } from "../core/titles.ts";
-import type { Kind, KindInfo, Lang, Title } from "../core/types.ts";
+import type { Kind, KindInfo, KindMap, Lang, Title } from "../core/types.ts";
 import { actionUrl, http, type HttpClient } from "./http.ts";
 
 export const BATCH_SIZE = 50;
@@ -91,24 +91,17 @@ export async function fetchWikidata(
     ),
   );
   const qids = qidsFrom(asked, pageprops);
-  const sparql = await Promise.all(
-    batchesOf([...new Set(qids.values())]).map(
-      async (batch) =>
-        (
-          await client.getJson<SparqlResponse>(
-            `${SPARQL_URL}?format=json&query=${encodeURIComponent(p31Query(batch))}`,
-          )
-        ).data,
-    ),
-  );
+  // One query at a time: the query service limits parallel requests per client.
+  const sparql: SparqlResponse[] = [];
+  for (const batch of batchesOf([...new Set(qids.values())])) {
+    const url = `${SPARQL_URL}?format=json&query=${encodeURIComponent(p31Query(batch))}`;
+    sparql.push((await client.getJson<SparqlResponse>(url)).data);
+  }
   return { titles: asked, pageprops, sparql };
 }
 
 /** When an item has several known classes, the first kind in this order wins. */
 export const KIND_PRECEDENCE: Kind[] = ["people", "places", "orgs", "works", "events", "concepts"];
-
-/** A class → kind table (lenses/kindMap.json): [kind, English label]. */
-export type KindMap = Record<string, [Kind, string]>;
 
 /** The kind of each title: the first P31 class found in the kind map, else "concepts". */
 export function kindsFrom(

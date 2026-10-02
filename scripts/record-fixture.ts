@@ -6,6 +6,7 @@
  *   npm run fixtures -- en "Mind map" --fallback   also the action=parse fallback responses
  *   npm run fixtures -- --linksback-only   re-checks linksback.json for the recorded pages
  *   npm run fixtures -- --languages        records sitematrix.json (all Wikipedias, US-09)
+ *   npm run fixtures -- --kinds-only       records pageviews.json and wikidata.json (M5)
  *
  * Writes, per article: page.html, headers.json, summary.json, redirects.json, linksback.json,
  * and per language: siteinfo.json. With --fallback also fallback.json (TS-07). Enrichments for later milestones
@@ -17,6 +18,8 @@ import { Window } from "happy-dom";
 import { pageHtmlUrl, titleFromPageUrl } from "../src/sources/article.ts";
 import { API_USER_AGENT, actionUrl, createHttpClient } from "../src/sources/http.ts";
 import { loadFallback } from "../src/sources/parseFallback.ts";
+import { fetchPageviews } from "../src/sources/pageviews.ts";
+import { fetchWikidata } from "../src/sources/wikidata.ts";
 import { parseParsoid } from "../src/sources/parsoid.ts";
 import { centerRedirects, linksBack } from "../src/sources/linksBack.ts";
 import { redirectPairs, type RedirectsResponse } from "../src/sources/redirects.ts";
@@ -177,6 +180,46 @@ async function recordArticle(lang: string, requested: string, fallback: boolean)
   );
 }
 
+/**
+ * Page views and Wikidata classes for every leaf the lenses can show (the titles checked in
+ * linksback.json), as raw responses (TS-14).
+ */
+async function recordKindsAll() {
+  const langs = (await readdir(ROOT, { withFileTypes: true })).filter((d) => d.isDirectory());
+  for (const { name: lang } of langs) {
+    for (const entry of await readdir(join(ROOT, lang), { withFileTypes: true })) {
+      if (!entry.isDirectory()) continue;
+      const dir = join(ROOT, lang, entry.name);
+      // Resumable: a fixture with both files is done.
+      const done = await Promise.all(
+        ["pageviews.json", "wikidata.json"].map((f) =>
+          readFile(join(dir, f)).then(
+            () => true,
+            () => false,
+          ),
+        ),
+      );
+      if (done.every(Boolean)) continue;
+      const { checked } = JSON.parse(await readFile(join(dir, "linksback.json"), "utf8")) as {
+        checked: string[];
+      };
+      // Large articles meet rate limits: wait and try again, up to three times.
+      for (let attempt = 1; ; attempt++) {
+        try {
+          await writeJson(join(dir, "pageviews.json"), await fetchPageviews(lang, checked, http));
+          await writeJson(join(dir, "wikidata.json"), await fetchWikidata(lang, checked, http));
+          break;
+        } catch (error) {
+          if (attempt === 3) throw error;
+          console.log(`${lang}:${entry.name}  attempt ${attempt} failed, waiting 30 s`);
+          await new Promise((done) => setTimeout(done, 30_000));
+        }
+      }
+      console.log(`${lang}:${entry.name}  ${checked.length} titles`);
+    }
+  }
+}
+
 /** The site matrix: every Wikipedia language, for the language picker. */
 async function recordLanguages() {
   const { data } = await http.getJson(
@@ -222,6 +265,7 @@ async function main() {
   const all = process.argv.slice(2);
   if (all[0] === "--linksback-only") return relinkAll();
   if (all[0] === "--languages") return recordLanguages();
+  if (all[0] === "--kinds-only") return recordKindsAll();
   const fallback = all.includes("--fallback");
   const [first, second, ...rest] = all.filter((a) => a !== "--fallback");
   const jobs: [string, string][] =

@@ -76,16 +76,21 @@ export const mindmapTree: Layout = (
   const total = top.reduce((sum, n) => sum + rows(n), 0);
   const right: MapNode[] = [];
   const left: MapNode[] = [];
-  let acc = 0;
-  for (const node of top) {
-    if (left.length === 0 && (right.length === 0 || acc + rows(node) / 2 <= total / 2)) {
-      right.push(node);
-      acc += rows(node);
-    } else {
-      left.push(node);
+  if (top.some((n) => n.side === "left" || n.side === "right")) {
+    // Fixed places (Kinds): each side top to bottom in the given order.
+    for (const node of top) (node.side === "left" ? left : right).push(node);
+  } else {
+    let acc = 0;
+    for (const node of top) {
+      if (left.length === 0 && (right.length === 0 || acc + rows(node) / 2 <= total / 2)) {
+        right.push(node);
+        acc += rows(node);
+      } else {
+        left.push(node);
+      }
     }
+    left.reverse();
   }
-  left.reverse();
 
   const centerText = shorten(graph.center.label, MAX_CHARS.group);
   const centerTextWidth = measure(centerText, "center");
@@ -190,6 +195,8 @@ function positionEdge(
   if (to.node.kind === "more") x1 -= side * 2;
   const [w0, w1] =
     edge.style === "trunk" ? WIDTH.trunk : edge.style === "branch" ? WIDTH.branch : WIDTH.twig;
+  // An empty fixed branch (Kinds) is drawn as a dotted line, so it is a plain curve.
+  if (to.node.empty) return { edge, path: curve(x0, y0, x1, to.y), width: 3 };
   const path = edge.style === "twig" ? curve(x0, y0, x1, to.y) : taper(x0, y0, x1, to.y, w0, w1);
   return { edge, path, width: w0 };
 }
@@ -212,8 +219,9 @@ function curve(x0: number, y0: number, x1: number, y1: number): string {
 
 const f = (n: number) => String(Math.round(n * 10) / 10);
 
-/** The text next to a folded group. */
+/** The text next to a folded group, or an empty fixed branch. */
 export function foldedLabel(node: MapNode): string {
+  if (node.empty) return "none linked";
   const n = node.count ?? 0;
   return `+${n} ${n === 1 ? "link" : "links"}`;
 }
@@ -257,7 +265,7 @@ export function nodeBoxes(p: PositionedNode): Box[] {
         y - GROUP_LABEL.dy + box.below,
       );
       add(x - FOLD_R, x + FOLD_R, y - FOLD_R, y + FOLD_R);
-      if (node.folded) {
+      if (node.folded || node.empty) {
         const count = textBox("count");
         const start = x + side * COUNT_DX;
         const width = estimateText(foldedLabel(node), "count");

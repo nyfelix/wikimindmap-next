@@ -48,3 +48,36 @@ export function uniqueLinks(
   }
   return [...byTarget.values()];
 }
+
+export interface ArticleLink extends UniqueLink {
+  /** The chapter of the first occurrence, e.g. "Research › Effectiveness"; the lead is "". */
+  chapter: string;
+}
+
+/**
+ * Every distinct link of an article (after redirects, without the article itself), with the
+ * chapter it first appears in. For lenses that group links across chapters (Kinds).
+ */
+export function articleLinks(
+  article: Article,
+  redirects: Map<Title, Title>,
+  include: (link: LinkOccurrence, section: Section) => boolean,
+): ArticleLink[] {
+  const chapterOf = new Map<LinkOccurrence, string>();
+  const all: LinkOccurrence[] = [];
+  const visit = (section: Section, path: string) => {
+    for (const link of section.links) {
+      if (!include(link, section)) continue;
+      all.push(link);
+      chapterOf.set(link, path);
+    }
+    for (const child of section.children)
+      visit(child, path ? `${path} › ${child.title}` : child.title);
+  };
+  visit(article.lead, "");
+  for (const section of article.sections) visit(section, section.title);
+  return uniqueLinks(all, redirects, article.ref.title).map((u) => ({
+    ...u,
+    chapter: chapterOf.get(u.occurrences[0] as LinkOccurrence) ?? "",
+  }));
+}
