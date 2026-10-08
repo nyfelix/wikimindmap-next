@@ -8,6 +8,7 @@ export default function AboutPage() {
     <EditorialLayout title="About" crumb="About">
       <header className={styles.section}>
         <h1>Wikipedia, as a map</h1>
+        <p className={styles.caps}>A project by Felix Nyffenegger</p>
         <p className={styles.lede}>
           Type a term, and its Wikipedia article becomes the center of a mind map. The article’s
           chapters become branches and its links become leaves. Tap ⊕ on any leaf to make it the new

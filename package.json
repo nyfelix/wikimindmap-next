@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "description": "WikiMindMap 2027: browse Wikipedia as a mind map",
+  "author": "Felix Nyffenegger",
   "engines": {
     "node": ">=22 <23"
   },

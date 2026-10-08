@@ -4,6 +4,8 @@ The relaunch of [wikimindmap.org](https://github.com/nyfelix/wikimindmap) (2007)
 
 Live at https://wikimindmap.net/
 
+A project by Felix Nyffenegger, who created the original WikiMindMap in 2007.
+
 WikiMindMap is an independent project and is not affiliated with or endorsed by the Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation. Map content comes from Wikipedia under CC BY-SA.
 
 ## Getting started
