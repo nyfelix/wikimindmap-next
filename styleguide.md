@@ -36,7 +36,7 @@ How WikiMindMap looks and behaves on screen. `architecture.md` says how it's bui
 | Top right | Lens switch, `?` (label the map), `i` (how this map is built), `≡` (outline view, `o`) | Segmented control. The active lens is raised. Lenses that aren't built yet are shown with a small `SOON` in mono capitals, in `--muted`. They can't be selected: hover shows a one-line description, and a click opens the help page at that lens. |
 | Bottom left | Trail | Chapter-style breadcrumb. Clicking a step goes back to it. |
 | Bottom right | Map controls: density, See also, zoom | Only the controls the active lens uses. No symbol legend here: it looked like filters (owner); the symbols are explained by the "Link direction" map label (`?`) and the drawer. |
-| Under bottom right | Attribution | `CONTENT FROM WIKIPEDIA · CC BY-SA` in mono capitals, `--muted`, linking to the article. Always visible. |
+| Under bottom right | Author and attribution | `A PROJECT BY FELIX NYFFENEGGER · CONTENT FROM WIKIPEDIA · CC BY-SA` in mono capitals, `--muted`. The author links to About, the attribution to the article. Always visible. |
 | Right drawer | "How this map is built" (`i`) or the outline (`≡`, `o`) | 340–400 px, floats above the map, closed by default. Both open on the right, below their buttons, and replace each other. The outline is the same map as an indented list, for screen readers and for scanning a large map as text. |
 | Preview card | Next to the node that was clicked | 300 px. Stays inside the window. Closes with `Esc` or a click on the canvas. A thumbnail, if there is one, sits top right at 64 × 64 px with an 8 px radius. |
 
