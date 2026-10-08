@@ -2,7 +2,7 @@
 
 The relaunch of [wikimindmap.org](https://github.com/nyfelix/wikimindmap) (2007). Type a term, the Wikipedia article becomes the center of a mind map, and its links become branches. Tap ⊕ on a node to make it the new center and browse the encyclopedia as a map.
 
-Live at https://nyfelix.github.io/wikimindmap-next/
+Live at https://wikimindmap.net/
 
 WikiMindMap is an independent project and is not affiliated with or endorsed by the Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation. Map content comes from Wikipedia under CC BY-SA.
 

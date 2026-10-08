@@ -59,7 +59,8 @@ Goal: good enough to announce.
 
 ### TS-12 Release · S
 - [ ] Version `1.0.0` is tagged, with a changelog in `README.md`
-- [ ] If a custom domain is chosen, DNS is set up and `BASE_PATH` switched to `/`
+- [x] If a custom domain is chosen, DNS is set up and `BASE_PATH` switched to `/`
+  > Note: wikimindmap.net, set up by the owner on 2026-10-08 (`CNAME`, DNS to GitHub Pages, `BASE_PATH=/` in the workflow).
 
 **Done when:** the MVP is live and announced. 🎉
 

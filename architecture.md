@@ -136,7 +136,7 @@ The cache is stored in IndexedDB and cleared when the cache schema version chang
 - **URLs:** `/{lang}/{Title}` with an optional query string, for example `/en/Mind_map?lens=chapters&density=4`. `/` is the start page: the map of "Mind map" in the reader's language (see `datamodel.md` §8).
 - **Deep links:** GitHub Pages has no rewrites. The build therefore copies `index.html` to `404.html`, so deep links load the app, which reads the path.
   - *Trade-off:* the first response for a deep link has HTTP status 404. Browsers don't care, but link-preview bots may. Accepted for the MVP. A custom domain on Cloudflare fixes it later.
-- **Base path:** `vite.config.ts` reads `BASE_PATH`. It is `/wikimindmap-next/` on `github.io`, and `/` once a custom domain is set.
+- **Base path:** `vite.config.ts` reads `BASE_PATH`. The site runs on the custom domain **wikimindmap.net** (GitHub Pages, `CNAME` in the repository root), so the workflow builds with `BASE_PATH=/`. On a plain `github.io` project page it would be `/wikimindmap-next/`.
 - **Deploy:** push to `main`, then the GitHub Action runs `check`, `build` and deploys to Pages.
 
 ## 8. Module layout
