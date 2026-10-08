@@ -40,6 +40,12 @@ export default function AboutPage() {
           browser, reads Wikipedia’s structured article format, and adds lenses: different ways to
           group an article’s links.
         </p>
+        <p>
+          The relaunch is a single-page web app written in TypeScript and React, with a custom mind
+          map renderer. It uses the public Wikimedia APIs to read articles and images, and it runs
+          entirely in your browser without a server of its own. This relaunch was purely built by
+          AI.
+        </p>
         <div className={styles.cards}>
           <div className={styles.card}>
             <p className={styles.caps}>2007</p>
