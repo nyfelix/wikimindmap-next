@@ -1,0 +1,6250 @@
+{
+  "center": "Mindmap",
+  "responses": [
+    {
+      "query": {
+        "pages": [
+          {
+            "title": "Hypertext",
+            "ns": 0,
+            "length": 27144
+          },
+          {
+            "title": "Semantisches Netz",
+            "ns": 0,
+            "length": 12832
+          },
+          {
+            "title": "Kognitive Karte",
+            "ns": 0,
+            "length": 9967
+          },
+          {
+            "title": "Theoretische Informatik",
+            "ns": 0,
+            "length": 18806
+          },
+          {
+            "title": "Lernende Organisation",
+            "ns": 0,
+            "length": 14947
+          },
+          {
+            "title": "Elaboration (Psychologie)",
+            "ns": 0,
+            "length": 4236
+          },
+          {
+            "title": "Zeitmanagement",
+            "ns": 0,
+            "length": 29864
+          },
+          {
+            "title": "Spickzettel",
+            "ns": 0,
+            "length": 6603
+          },
+          {
+            "title": "Gliederung",
+            "ns": 0,
+            "length": 12158
+          },
+          {
+            "title": "Lerntheorie",
+            "ns": 0,
+            "length": 15364
+          },
+          {
+            "title": "Liste der Unterrichtsmethoden",
+            "ns": 0,
+            "length": 9517
+          },
+          {
+            "title": "Recherche",
+            "ns": 0,
+            "length": 19379
+          },
+          {
+            "title": "Begriffssystem",
+            "ns": 0,
+            "length": 11000
+          },
+          {
+            "title": "Projektmanagement-Software",
+            "ns": 0,
+            "length": 9780
+          },
+          {
+            "title": "Erörterung",
+            "ns": 0,
+            "length": 15075
+          },
+          {
+            "title": "Kreatives Schreiben",
+            "ns": 0,
+            "length": 33324
+          },
+          {
+            "title": "FCM",
+            "ns": 0,
+            "length": 1628
+          },
+          {
+            "title": "Sekundärforschung",
+            "ns": 0,
+            "length": 5033
+          },
+          {
+            "title": "Concept-Map",
+            "ns": 0,
+            "length": 12272
+          },
+          {
+            "title": "Corel Corporation",
+            "ns": 0,
+            "length": 12487
+          },
+          {
+            "title": "Problemlösen",
+            "ns": 0,
+            "length": 48181
+          },
+          {
+            "title": "Mind Mapping",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Mindmapping",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Mind-Mapping",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "OpenDocument",
+            "ns": 0,
+            "length": 69676
+          },
+          {
+            "title": "Funkkolleg",
+            "ns": 0,
+            "length": 45305
+          },
+          {
+            "title": "Kreativitätstechniken",
+            "ns": 0,
+            "length": 12161
+          },
+          {
+            "title": "Semantische Nähe",
+            "ns": 0,
+            "length": 2343
+          },
+          {
+            "title": "Cluster (Kreatives Schreiben)",
+            "ns": 0,
+            "length": 2542
+          },
+          {
+            "title": "Tony Buzan",
+            "ns": 0,
+            "length": 10315
+          },
+          {
+            "title": "WikkaWiki",
+            "ns": 0,
+            "length": 3122
+          },
+          {
+            "title": "Liste von Wiki-Software",
+            "ns": 0,
+            "length": 31976
+          },
+          {
+            "title": "Lernstrategie",
+            "ns": 0,
+            "length": 22306
+          },
+          {
+            "title": "FreeMind",
+            "ns": 0,
+            "length": 5332
+          },
+          {
+            "title": "Kategorisierung (Kognitionswissenschaft)",
+            "ns": 0,
+            "length": 38187
+          },
+          {
+            "title": "Graphviz",
+            "ns": 0,
+            "length": 11664
+          },
+          {
+            "title": "Mapping",
+            "ns": 0,
+            "length": 2410
+          },
+          {
+            "title": "Verkaufsgespräch",
+            "ns": 0,
+            "length": 44771
+          },
+          {
+            "title": "Wissenslandkarte",
+            "ns": 0,
+            "length": 7538
+          },
+          {
+            "title": "Rapid E-Learning",
+            "ns": 0,
+            "length": 11145
+          },
+          {
+            "title": "Flipchart",
+            "ns": 0,
+            "length": 4423
+          },
+          {
+            "title": "Ontologie-Editor",
+            "ns": 0,
+            "length": 3565
+          },
+          {
+            "title": "Pinnwandmoderation",
+            "ns": 0,
+            "length": 14996
+          },
+          {
+            "title": "Advance Organizer",
+            "ns": 0,
+            "length": 23712
+          },
+          {
+            "title": "Produktlinienanalyse",
+            "ns": 0,
+            "length": 1784
+          },
+          {
+            "title": "MindManager",
+            "ns": 0,
+            "length": 9002
+          },
+          {
+            "title": "Kollaboratives Schreiben",
+            "ns": 0,
+            "length": 17802
+          },
+          {
+            "title": "Visualisierungsprogramm",
+            "ns": 0,
+            "length": 4675
+          },
+          {
+            "title": "Drogenkriminalität",
+            "ns": 0,
+            "length": 98553
+          },
+          {
+            "title": "Selbstgesteuertes Lernen",
+            "ns": 0,
+            "length": 34849
+          },
+          {
+            "title": "Mind",
+            "ns": 0,
+            "length": 615
+          },
+          {
+            "title": "MindMap",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Mentales Training",
+            "ns": 0,
+            "length": 16747
+          },
+          {
+            "title": "Bewusstmachung (Fremdsprachenunterricht)",
+            "ns": 0,
+            "length": 20864
+          },
+          {
+            "title": "SQ3R-Methode",
+            "ns": 0,
+            "length": 13166
+          },
+          {
+            "title": "Merlin (Software)",
+            "ns": 0,
+            "length": 8797
+          },
+          {
+            "title": "Schreibprozess",
+            "ns": 0,
+            "length": 27716
+          },
+          {
+            "title": "Gedankenkarte",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Das Netz (2004)",
+            "ns": 0,
+            "length": 6995
+          },
+          {
+            "title": "Knowledge-Café",
+            "ns": 0,
+            "length": 10271
+          },
+          {
+            "title": "Wissensmanagement",
+            "ns": 0,
+            "length": 37964
+          },
+          {
+            "title": "Wissenszirkel",
+            "ns": 0,
+            "length": 13942
+          },
+          {
+            "title": "Persönliches Wissensmanagement",
+            "ns": 0,
+            "length": 16282
+          },
+          {
+            "title": "Lehrtechnik",
+            "ns": 0,
+            "length": 2880
+          },
+          {
+            "title": "Fuzzy Cognitive Map",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "InLoox",
+            "ns": 0,
+            "length": 7219
+          },
+          {
+            "title": "MindView",
+            "ns": 0,
+            "length": 2389
+          },
+          {
+            "title": "Gedächtniskarte",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Mappeur",
+            "ns": 0,
+            "length": 1651
+          },
+          {
+            "title": "Assoziogramm",
+            "ns": 0,
+            "length": 2208
+          },
+          {
+            "title": "Mind Map",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Gedankenlandkarte",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Gedächtnislandkarte",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Instruktionsdesign",
+            "ns": 0,
+            "length": 32555
+          },
+          {
+            "title": "YEd",
+            "ns": 0,
+            "length": 4937
+          },
+          {
+            "title": "SciPlore MindMapping",
+            "ns": 0,
+            "length": 2904
+          },
+          {
+            "title": "Gymnasium am Steinwald",
+            "ns": 0,
+            "length": 14917
+          },
+          {
+            "title": "Mogens Kirckhoff",
+            "ns": 0,
+            "length": 1013
+          },
+          {
+            "title": "Ursache-Wirkungs-Modellierung",
+            "ns": 0,
+            "length": 2085
+          },
+          {
+            "title": "Sketchnotes",
+            "ns": 0,
+            "length": 7123
+          },
+          {
+            "title": "XMind",
+            "ns": 0,
+            "length": 6151
+          },
+          {
+            "title": "Docear",
+            "ns": 0,
+            "length": 5931
+          },
+          {
+            "title": "Freeplane",
+            "ns": 0,
+            "length": 6246
+          },
+          {
+            "title": "IMapping",
+            "ns": 0,
+            "length": 8123
+          },
+          {
+            "title": "Wissensstafette",
+            "ns": 0,
+            "length": 3269
+          },
+          {
+            "title": "Nextcloud",
+            "ns": 0,
+            "length": 43346
+          },
+          {
+            "title": "Lernvideo",
+            "ns": 0,
+            "length": 8745
+          },
+          {
+            "title": "QAnon",
+            "ns": 0,
+            "length": 137783
+          },
+          {
+            "title": "Zenkit",
+            "ns": 0,
+            "length": 6347
+          },
+          {
+            "title": "Forder-Förder-Projekt",
+            "ns": 0,
+            "length": 16951
+          },
+          {
+            "title": "Mind-Map",
+            "ns": 0,
+            "redirect": true,
+            "length": 26
+          },
+          {
+            "title": "Freie Strukturierung",
+            "ns": 0,
+            "length": 1607
+          },
+          {
+            "title": "Diagrams.net",
+            "ns": 0,
+            "length": 9350
+          },
+          {
+            "title": "Google Zeichnungen",
+            "ns": 0,
+            "length": 5672
+          },
+          {
+            "title": "PlantUML",
+            "ns": 0,
+            "length": 5790
+          },
+          {
+            "title": "Schreibintensive Lehre",
+            "ns": 0,
+            "length": 25116
+          },
+          {
+            "title": "Fokussprint",
+            "ns": 0,
+            "length": 4343
+          },
+          {
+            "title": "ConceptDraw OFFICE",
+            "ns": 0,
+            "length": 7847
+          },
+          {
+            "title": "ConceptDraw MINDMAP",
+            "ns": 0,
+            "length": 6440
+          },
+          {
+            "title": "Dual-Coding-Theorie",
+            "ns": 0,
+            "length": 7513
+          }
+        ]
+      }
+    }
+  ],
+  "more": false,
+  "pageviews": {
+    "titles": [
+      "QAnon",
+      "Drogenkriminalität",
+      "OpenDocument",
+      "Problemlösen",
+      "Funkkolleg",
+      "Verkaufsgespräch",
+      "Nextcloud",
+      "Kategorisierung (Kognitionswissenschaft)",
+      "Wissensmanagement",
+      "Selbstgesteuertes Lernen",
+      "Kreatives Schreiben",
+      "Instruktionsdesign",
+      "Liste von Wiki-Software",
+      "Zeitmanagement",
+      "Schreibprozess",
+      "Hypertext",
+      "Schreibintensive Lehre",
+      "Advance Organizer",
+      "Lernstrategie",
+      "Bewusstmachung (Fremdsprachenunterricht)",
+      "Recherche",
+      "Theoretische Informatik",
+      "Kollaboratives Schreiben",
+      "Forder-Förder-Projekt",
+      "Mentales Training",
+      "Persönliches Wissensmanagement",
+      "Lerntheorie",
+      "Erörterung",
+      "Pinnwandmoderation",
+      "Lernende Organisation",
+      "Gymnasium am Steinwald",
+      "Wissenszirkel",
+      "SQ3R-Methode",
+      "Semantisches Netz",
+      "Corel Corporation",
+      "Concept-Map",
+      "Kreativitätstechniken",
+      "Gliederung",
+      "Graphviz",
+      "Rapid E-Learning",
+      "Begriffssystem",
+      "Tony Buzan",
+      "Knowledge-Café",
+      "Kognitive Karte",
+      "Projektmanagement-Software",
+      "Liste der Unterrichtsmethoden",
+      "Diagrams.net",
+      "MindManager",
+      "Merlin (Software)",
+      "Lernvideo",
+      "IMapping",
+      "ConceptDraw OFFICE",
+      "Wissenslandkarte",
+      "Dual-Coding-Theorie",
+      "InLoox",
+      "Sketchnotes",
+      "Das Netz (2004)",
+      "Spickzettel",
+      "ConceptDraw MINDMAP",
+      "Zenkit",
+      "Freeplane",
+      "XMind",
+      "Docear",
+      "PlantUML",
+      "Google Zeichnungen",
+      "FreeMind",
+      "Sekundärforschung",
+      "YEd",
+      "Visualisierungsprogramm",
+      "Flipchart",
+      "Fokussprint",
+      "Elaboration (Psychologie)",
+      "Ontologie-Editor",
+      "Wissensstafette",
+      "WikkaWiki",
+      "SciPlore MindMapping",
+      "Lehrtechnik",
+      "Cluster (Kreatives Schreiben)",
+      "Mapping",
+      "MindView",
+      "Semantische Nähe",
+      "Assoziogramm",
+      "Ursache-Wirkungs-Modellierung",
+      "Produktlinienanalyse",
+      "Mappeur",
+      "FCM",
+      "Freie Strukturierung",
+      "Mogens Kirckhoff",
+      "Mind"
+    ],
+    "responses": [
+      {
+        "continue": {
+          "pvipcontinue": "Erörterung",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext"
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz"
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte"
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik"
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation"
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement"
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung"
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie"
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden"
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche"
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 3,
+                "2026-09-10": null,
+                "2026-09-11": 2,
+                "2026-09-12": 7,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 3,
+                "2026-09-16": 1,
+                "2026-09-17": 4,
+                "2026-09-18": 7,
+                "2026-09-19": 6,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 2,
+                "2026-09-23": 0,
+                "2026-09-24": 1,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": 5,
+                "2026-09-30": 3,
+                "2026-10-01": 1,
+                "2026-10-02": 0,
+                "2026-10-03": 1,
+                "2026-10-04": 5,
+                "2026-10-05": 3,
+                "2026-10-06": 3,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software"
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung"
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben"
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map",
+              "pageviews": {
+                "2026-09-08": 55,
+                "2026-09-09": 51,
+                "2026-09-10": 59,
+                "2026-09-11": 34,
+                "2026-09-12": 26,
+                "2026-09-13": 44,
+                "2026-09-14": 77,
+                "2026-09-15": 88,
+                "2026-09-16": 65,
+                "2026-09-17": 60,
+                "2026-09-18": 40,
+                "2026-09-19": 22,
+                "2026-09-20": 39,
+                "2026-09-21": 63,
+                "2026-09-22": 57,
+                "2026-09-23": 57,
+                "2026-09-24": 70,
+                "2026-09-25": 48,
+                "2026-09-26": 32,
+                "2026-09-27": 49,
+                "2026-09-28": 77,
+                "2026-09-29": 74,
+                "2026-09-30": 49,
+                "2026-10-01": 56,
+                "2026-10-02": 41,
+                "2026-10-03": 17,
+                "2026-10-04": 22,
+                "2026-10-05": 48,
+                "2026-10-06": 48,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 6,
+                "2026-09-10": 9,
+                "2026-09-11": 8,
+                "2026-09-12": 2,
+                "2026-09-13": 7,
+                "2026-09-14": 11,
+                "2026-09-15": 16,
+                "2026-09-16": 13,
+                "2026-09-17": 8,
+                "2026-09-18": 8,
+                "2026-09-19": 13,
+                "2026-09-20": 10,
+                "2026-09-21": 11,
+                "2026-09-22": 12,
+                "2026-09-23": 9,
+                "2026-09-24": 11,
+                "2026-09-25": 9,
+                "2026-09-26": 4,
+                "2026-09-27": 6,
+                "2026-09-28": 13,
+                "2026-09-29": 8,
+                "2026-09-30": 7,
+                "2026-10-01": 9,
+                "2026-10-02": 18,
+                "2026-10-03": 5,
+                "2026-10-04": 5,
+                "2026-10-05": 11,
+                "2026-10-06": 9,
+                "2026-10-07": 17
+              }
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen"
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument"
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg"
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken"
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan"
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software"
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie"
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)"
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz"
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch"
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning"
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation"
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 14,
+                "2026-09-10": 5,
+                "2026-09-11": 9,
+                "2026-09-12": 7,
+                "2026-09-13": 4,
+                "2026-09-14": 6,
+                "2026-09-15": 8,
+                "2026-09-16": 22,
+                "2026-09-17": 10,
+                "2026-09-18": 8,
+                "2026-09-19": 8,
+                "2026-09-20": 6,
+                "2026-09-21": 21,
+                "2026-09-22": 9,
+                "2026-09-23": 16,
+                "2026-09-24": 13,
+                "2026-09-25": 5,
+                "2026-09-26": 6,
+                "2026-09-27": 3,
+                "2026-09-28": 14,
+                "2026-09-29": 10,
+                "2026-09-30": 12,
+                "2026-10-01": 10,
+                "2026-10-02": 5,
+                "2026-10-03": 5,
+                "2026-10-04": 10,
+                "2026-10-05": 10,
+                "2026-10-06": 8,
+                "2026-10-07": 6
+              }
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager"
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben"
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität",
+              "pageviews": {
+                "2026-09-08": 8,
+                "2026-09-09": 6,
+                "2026-09-10": 3,
+                "2026-09-11": 12,
+                "2026-09-12": 11,
+                "2026-09-13": 5,
+                "2026-09-14": 12,
+                "2026-09-15": 13,
+                "2026-09-16": 7,
+                "2026-09-17": 7,
+                "2026-09-18": 18,
+                "2026-09-19": 13,
+                "2026-09-20": 3,
+                "2026-09-21": 6,
+                "2026-09-22": 8,
+                "2026-09-23": 6,
+                "2026-09-24": 9,
+                "2026-09-25": 3,
+                "2026-09-26": 0,
+                "2026-09-27": 4,
+                "2026-09-28": 3,
+                "2026-09-29": 8,
+                "2026-09-30": 17,
+                "2026-10-01": 10,
+                "2026-10-02": 7,
+                "2026-10-03": 3,
+                "2026-10-04": 6,
+                "2026-10-05": 9,
+                "2026-10-06": 12,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen"
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training"
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 1,
+                "2026-09-10": 2,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": 0,
+                "2026-09-15": 2,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 0,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": 1,
+                "2026-09-29": null,
+                "2026-09-30": 0,
+                "2026-10-01": 2,
+                "2026-10-02": null,
+                "2026-10-03": 1,
+                "2026-10-04": 2,
+                "2026-10-05": 0,
+                "2026-10-06": 1,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode"
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)"
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess"
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café"
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement"
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel"
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement"
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign"
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald"
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud"
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo"
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon"
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt"
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net",
+              "pageviews": {
+                "2026-09-08": 25,
+                "2026-09-09": 33,
+                "2026-09-10": 21,
+                "2026-09-11": 18,
+                "2026-09-12": 9,
+                "2026-09-13": 13,
+                "2026-09-14": 25,
+                "2026-09-15": 26,
+                "2026-09-16": 27,
+                "2026-09-17": 39,
+                "2026-09-18": 26,
+                "2026-09-19": 6,
+                "2026-09-20": 12,
+                "2026-09-21": 28,
+                "2026-09-22": 40,
+                "2026-09-23": 25,
+                "2026-09-24": 31,
+                "2026-09-25": 32,
+                "2026-09-26": 10,
+                "2026-09-27": 12,
+                "2026-09-28": 33,
+                "2026-09-29": 24,
+                "2026-09-30": 22,
+                "2026-10-01": 26,
+                "2026-10-02": 13,
+                "2026-10-03": 13,
+                "2026-10-04": 13,
+                "2026-10-05": 25,
+                "2026-10-06": 30,
+                "2026-10-07": 18
+              }
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Gymnasium_am_Steinwald",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext"
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz"
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte"
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik"
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation"
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement"
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung",
+              "pageviews": {
+                "2026-09-08": 13,
+                "2026-09-09": 21,
+                "2026-09-10": 15,
+                "2026-09-11": 19,
+                "2026-09-12": 15,
+                "2026-09-13": 20,
+                "2026-09-14": 18,
+                "2026-09-15": 14,
+                "2026-09-16": 15,
+                "2026-09-17": 22,
+                "2026-09-18": 28,
+                "2026-09-19": 6,
+                "2026-09-20": 16,
+                "2026-09-21": 20,
+                "2026-09-22": 20,
+                "2026-09-23": 16,
+                "2026-09-24": 18,
+                "2026-09-25": 15,
+                "2026-09-26": 8,
+                "2026-09-27": 13,
+                "2026-09-28": 25,
+                "2026-09-29": 23,
+                "2026-09-30": 19,
+                "2026-10-01": 22,
+                "2026-10-02": 14,
+                "2026-10-03": 7,
+                "2026-10-04": 14,
+                "2026-10-05": 15,
+                "2026-10-06": 15,
+                "2026-10-07": 18
+              }
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie"
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden"
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche"
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem"
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software"
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung",
+              "pageviews": {
+                "2026-09-08": 20,
+                "2026-09-09": 32,
+                "2026-09-10": 35,
+                "2026-09-11": 27,
+                "2026-09-12": 15,
+                "2026-09-13": 21,
+                "2026-09-14": 54,
+                "2026-09-15": 52,
+                "2026-09-16": 29,
+                "2026-09-17": 42,
+                "2026-09-18": 30,
+                "2026-09-19": 18,
+                "2026-09-20": 27,
+                "2026-09-21": 35,
+                "2026-09-22": 29,
+                "2026-09-23": 37,
+                "2026-09-24": 28,
+                "2026-09-25": 25,
+                "2026-09-26": 14,
+                "2026-09-27": 34,
+                "2026-09-28": 35,
+                "2026-09-29": 36,
+                "2026-09-30": 31,
+                "2026-10-01": 26,
+                "2026-10-02": 18,
+                "2026-10-03": 10,
+                "2026-10-04": 25,
+                "2026-10-05": 22,
+                "2026-10-06": 23,
+                "2026-10-07": 25
+              }
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben"
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map"
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation"
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen"
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument"
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 5,
+                "2026-09-10": 7,
+                "2026-09-11": 3,
+                "2026-09-12": 3,
+                "2026-09-13": 4,
+                "2026-09-14": 3,
+                "2026-09-15": 3,
+                "2026-09-16": 9,
+                "2026-09-17": 6,
+                "2026-09-18": 9,
+                "2026-09-19": 2,
+                "2026-09-20": 2,
+                "2026-09-21": 3,
+                "2026-09-22": 3,
+                "2026-09-23": 8,
+                "2026-09-24": 5,
+                "2026-09-25": 5,
+                "2026-09-26": 4,
+                "2026-09-27": 5,
+                "2026-09-28": 4,
+                "2026-09-29": 11,
+                "2026-09-30": 4,
+                "2026-10-01": 5,
+                "2026-10-02": 2,
+                "2026-10-03": 3,
+                "2026-10-04": 1,
+                "2026-10-05": 4,
+                "2026-10-06": 6,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken"
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan"
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software"
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie"
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)"
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 15,
+                "2026-09-10": 13,
+                "2026-09-11": 7,
+                "2026-09-12": 1,
+                "2026-09-13": 4,
+                "2026-09-14": 7,
+                "2026-09-15": 11,
+                "2026-09-16": 13,
+                "2026-09-17": 8,
+                "2026-09-18": 11,
+                "2026-09-19": 6,
+                "2026-09-20": 2,
+                "2026-09-21": 4,
+                "2026-09-22": 10,
+                "2026-09-23": 12,
+                "2026-09-24": 9,
+                "2026-09-25": 3,
+                "2026-09-26": 1,
+                "2026-09-27": null,
+                "2026-09-28": 5,
+                "2026-09-29": 10,
+                "2026-09-30": 5,
+                "2026-10-01": 14,
+                "2026-10-02": 5,
+                "2026-10-03": 5,
+                "2026-10-04": 10,
+                "2026-10-05": 5,
+                "2026-10-06": 3,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch"
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning"
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation"
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer"
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager"
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben"
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität"
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen"
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training"
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)"
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode"
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)"
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess"
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café"
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement"
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel"
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement"
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign"
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald"
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud"
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo"
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon"
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 29,
+                "2026-09-10": 11,
+                "2026-09-11": 3,
+                "2026-09-12": 1,
+                "2026-09-13": null,
+                "2026-09-14": 2,
+                "2026-09-15": 1,
+                "2026-09-16": 0,
+                "2026-09-17": 2,
+                "2026-09-18": 1,
+                "2026-09-19": 0,
+                "2026-09-20": 0,
+                "2026-09-21": 2,
+                "2026-09-22": 2,
+                "2026-09-23": 2,
+                "2026-09-24": 2,
+                "2026-09-25": 2,
+                "2026-09-26": 2,
+                "2026-09-27": 4,
+                "2026-09-28": 0,
+                "2026-09-29": 3,
+                "2026-09-30": 1,
+                "2026-10-01": 1,
+                "2026-10-02": 2,
+                "2026-10-03": 0,
+                "2026-10-04": 8,
+                "2026-10-05": 8,
+                "2026-10-06": 3,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net"
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Kreativitätstechniken",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext",
+              "pageviews": {
+                "2026-09-08": 30,
+                "2026-09-09": 31,
+                "2026-09-10": 23,
+                "2026-09-11": 26,
+                "2026-09-12": 18,
+                "2026-09-13": 13,
+                "2026-09-14": 27,
+                "2026-09-15": 35,
+                "2026-09-16": 26,
+                "2026-09-17": 30,
+                "2026-09-18": 30,
+                "2026-09-19": 20,
+                "2026-09-20": 18,
+                "2026-09-21": 30,
+                "2026-09-22": 52,
+                "2026-09-23": 34,
+                "2026-09-24": 27,
+                "2026-09-25": 37,
+                "2026-09-26": 24,
+                "2026-09-27": 11,
+                "2026-09-28": 30,
+                "2026-09-29": 20,
+                "2026-09-30": 24,
+                "2026-10-01": 21,
+                "2026-10-02": 21,
+                "2026-10-03": 18,
+                "2026-10-04": 16,
+                "2026-10-05": 98,
+                "2026-10-06": 24,
+                "2026-10-07": 26
+              }
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz"
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte",
+              "pageviews": {
+                "2026-09-08": 7,
+                "2026-09-09": 5,
+                "2026-09-10": 8,
+                "2026-09-11": 4,
+                "2026-09-12": 3,
+                "2026-09-13": 6,
+                "2026-09-14": 2,
+                "2026-09-15": 12,
+                "2026-09-16": 5,
+                "2026-09-17": 9,
+                "2026-09-18": 10,
+                "2026-09-19": 7,
+                "2026-09-20": 7,
+                "2026-09-21": 7,
+                "2026-09-22": 1,
+                "2026-09-23": 2,
+                "2026-09-24": 5,
+                "2026-09-25": 0,
+                "2026-09-26": 2,
+                "2026-09-27": 8,
+                "2026-09-28": 11,
+                "2026-09-29": 4,
+                "2026-09-30": 5,
+                "2026-10-01": 8,
+                "2026-10-02": 2,
+                "2026-10-03": 4,
+                "2026-10-04": 7,
+                "2026-10-05": 10,
+                "2026-10-06": 2,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik"
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation"
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement"
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung"
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie"
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden"
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche"
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem"
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software"
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung"
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben",
+              "pageviews": {
+                "2026-09-08": 17,
+                "2026-09-09": 14,
+                "2026-09-10": 20,
+                "2026-09-11": 12,
+                "2026-09-12": 10,
+                "2026-09-13": 20,
+                "2026-09-14": 10,
+                "2026-09-15": 15,
+                "2026-09-16": 25,
+                "2026-09-17": 16,
+                "2026-09-18": 18,
+                "2026-09-19": 22,
+                "2026-09-20": 33,
+                "2026-09-21": 18,
+                "2026-09-22": 28,
+                "2026-09-23": 23,
+                "2026-09-24": 11,
+                "2026-09-25": 10,
+                "2026-09-26": 17,
+                "2026-09-27": 27,
+                "2026-09-28": 10,
+                "2026-09-29": 16,
+                "2026-09-30": 15,
+                "2026-10-01": 18,
+                "2026-10-02": 16,
+                "2026-10-03": 21,
+                "2026-10-04": 16,
+                "2026-10-05": 15,
+                "2026-10-06": 22,
+                "2026-10-07": 18
+              }
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map"
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation"
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen"
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument"
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg"
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken"
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan"
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software"
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie"
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)",
+              "pageviews": {
+                "2026-09-08": 7,
+                "2026-09-09": 13,
+                "2026-09-10": 13,
+                "2026-09-11": 12,
+                "2026-09-12": 16,
+                "2026-09-13": 18,
+                "2026-09-14": 21,
+                "2026-09-15": 13,
+                "2026-09-16": 12,
+                "2026-09-17": 15,
+                "2026-09-18": 20,
+                "2026-09-19": 14,
+                "2026-09-20": 16,
+                "2026-09-21": 6,
+                "2026-09-22": 8,
+                "2026-09-23": 7,
+                "2026-09-24": 8,
+                "2026-09-25": 4,
+                "2026-09-26": 2,
+                "2026-09-27": 5,
+                "2026-09-28": 7,
+                "2026-09-29": 14,
+                "2026-09-30": 10,
+                "2026-10-01": 3,
+                "2026-10-02": 11,
+                "2026-10-03": 6,
+                "2026-10-04": 10,
+                "2026-10-05": 6,
+                "2026-10-06": 7,
+                "2026-10-07": 7
+              }
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz"
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch"
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning"
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation"
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer"
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager"
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 11,
+                "2026-09-10": 8,
+                "2026-09-11": 11,
+                "2026-09-12": 16,
+                "2026-09-13": 7,
+                "2026-09-14": 13,
+                "2026-09-15": 7,
+                "2026-09-16": 6,
+                "2026-09-17": 12,
+                "2026-09-18": 16,
+                "2026-09-19": 8,
+                "2026-09-20": 6,
+                "2026-09-21": 6,
+                "2026-09-22": 16,
+                "2026-09-23": 13,
+                "2026-09-24": 11,
+                "2026-09-25": 8,
+                "2026-09-26": 8,
+                "2026-09-27": 10,
+                "2026-09-28": 5,
+                "2026-09-29": 9,
+                "2026-09-30": 14,
+                "2026-10-01": 9,
+                "2026-10-02": 14,
+                "2026-10-03": 8,
+                "2026-10-04": 5,
+                "2026-10-05": 9,
+                "2026-10-06": 14,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität"
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen"
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training"
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)"
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode"
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)"
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess"
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 3,
+                "2026-09-10": 5,
+                "2026-09-11": 3,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 2,
+                "2026-09-15": 3,
+                "2026-09-16": 2,
+                "2026-09-17": 2,
+                "2026-09-18": 5,
+                "2026-09-19": 4,
+                "2026-09-20": 1,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 1,
+                "2026-09-24": 4,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 2,
+                "2026-09-29": 1,
+                "2026-09-30": 1,
+                "2026-10-01": 3,
+                "2026-10-02": 2,
+                "2026-10-03": 0,
+                "2026-10-04": 1,
+                "2026-10-05": 0,
+                "2026-10-06": 3,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement"
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel"
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement"
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 6,
+                "2026-09-10": 11,
+                "2026-09-11": 6,
+                "2026-09-12": 2,
+                "2026-09-13": 3,
+                "2026-09-14": 7,
+                "2026-09-15": 7,
+                "2026-09-16": 3,
+                "2026-09-17": 5,
+                "2026-09-18": 11,
+                "2026-09-19": 3,
+                "2026-09-20": 6,
+                "2026-09-21": 4,
+                "2026-09-22": 3,
+                "2026-09-23": 6,
+                "2026-09-24": 4,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": 2,
+                "2026-09-28": 4,
+                "2026-09-29": 1,
+                "2026-09-30": 3,
+                "2026-10-01": 3,
+                "2026-10-02": 3,
+                "2026-10-03": 7,
+                "2026-10-04": 3,
+                "2026-10-05": 3,
+                "2026-10-06": 7,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald",
+              "pageviews": {
+                "2026-09-08": 3,
+                "2026-09-09": 2,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": 0,
+                "2026-09-13": 1,
+                "2026-09-14": 5,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 2,
+                "2026-09-19": 1,
+                "2026-09-20": 2,
+                "2026-09-21": 9,
+                "2026-09-22": 3,
+                "2026-09-23": 5,
+                "2026-09-24": 6,
+                "2026-09-25": 1,
+                "2026-09-26": 2,
+                "2026-09-27": null,
+                "2026-09-28": 2,
+                "2026-09-29": null,
+                "2026-09-30": 3,
+                "2026-10-01": 8,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": 4,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud"
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo"
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon"
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt"
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net"
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Persönliches_Wissensmanagement",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext"
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz"
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte"
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik"
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation",
+              "pageviews": {
+                "2026-09-08": 7,
+                "2026-09-09": 18,
+                "2026-09-10": 12,
+                "2026-09-11": 8,
+                "2026-09-12": 8,
+                "2026-09-13": 9,
+                "2026-09-14": 13,
+                "2026-09-15": 10,
+                "2026-09-16": 13,
+                "2026-09-17": 9,
+                "2026-09-18": 17,
+                "2026-09-19": 11,
+                "2026-09-20": 5,
+                "2026-09-21": 14,
+                "2026-09-22": 5,
+                "2026-09-23": 9,
+                "2026-09-24": 20,
+                "2026-09-25": 6,
+                "2026-09-26": 11,
+                "2026-09-27": 9,
+                "2026-09-28": 16,
+                "2026-09-29": 9,
+                "2026-09-30": 10,
+                "2026-10-01": 15,
+                "2026-10-02": 6,
+                "2026-10-03": 7,
+                "2026-10-04": 5,
+                "2026-10-05": 5,
+                "2026-10-06": 13,
+                "2026-10-07": 14
+              }
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement"
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung"
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie",
+              "pageviews": {
+                "2026-09-08": 17,
+                "2026-09-09": 27,
+                "2026-09-10": 15,
+                "2026-09-11": 10,
+                "2026-09-12": 9,
+                "2026-09-13": 18,
+                "2026-09-14": 13,
+                "2026-09-15": 23,
+                "2026-09-16": 28,
+                "2026-09-17": 24,
+                "2026-09-18": 20,
+                "2026-09-19": 13,
+                "2026-09-20": 15,
+                "2026-09-21": 15,
+                "2026-09-22": 26,
+                "2026-09-23": 20,
+                "2026-09-24": 18,
+                "2026-09-25": 20,
+                "2026-09-26": 20,
+                "2026-09-27": 15,
+                "2026-09-28": 23,
+                "2026-09-29": 20,
+                "2026-09-30": 23,
+                "2026-10-01": 21,
+                "2026-10-02": 18,
+                "2026-10-03": 17,
+                "2026-10-04": 9,
+                "2026-10-05": 39,
+                "2026-10-06": 17,
+                "2026-10-07": 31
+              }
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 15,
+                "2026-09-10": 7,
+                "2026-09-11": 21,
+                "2026-09-12": 15,
+                "2026-09-13": 22,
+                "2026-09-14": 36,
+                "2026-09-15": 46,
+                "2026-09-16": 38,
+                "2026-09-17": 59,
+                "2026-09-18": 20,
+                "2026-09-19": 30,
+                "2026-09-20": 27,
+                "2026-09-21": 47,
+                "2026-09-22": 40,
+                "2026-09-23": 42,
+                "2026-09-24": 59,
+                "2026-09-25": 35,
+                "2026-09-26": 14,
+                "2026-09-27": 27,
+                "2026-09-28": 27,
+                "2026-09-29": 36,
+                "2026-09-30": 26,
+                "2026-10-01": 94,
+                "2026-10-02": 29,
+                "2026-10-03": 26,
+                "2026-10-04": 13,
+                "2026-10-05": 40,
+                "2026-10-06": 39,
+                "2026-10-07": 37
+              }
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche"
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem"
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software"
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung"
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben"
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map"
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation"
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen"
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument",
+              "pageviews": {
+                "2026-09-08": 78,
+                "2026-09-09": 62,
+                "2026-09-10": 44,
+                "2026-09-11": 37,
+                "2026-09-12": 20,
+                "2026-09-13": 27,
+                "2026-09-14": 45,
+                "2026-09-15": 46,
+                "2026-09-16": 32,
+                "2026-09-17": 57,
+                "2026-09-18": 81,
+                "2026-09-19": 38,
+                "2026-09-20": 37,
+                "2026-09-21": 41,
+                "2026-09-22": 39,
+                "2026-09-23": 34,
+                "2026-09-24": 49,
+                "2026-09-25": 60,
+                "2026-09-26": 27,
+                "2026-09-27": 36,
+                "2026-09-28": 35,
+                "2026-09-29": 40,
+                "2026-09-30": 43,
+                "2026-10-01": 41,
+                "2026-10-02": 48,
+                "2026-10-03": 23,
+                "2026-10-04": 28,
+                "2026-10-05": 42,
+                "2026-10-06": 31,
+                "2026-10-07": 48
+              }
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg"
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken",
+              "pageviews": {
+                "2026-09-08": 19,
+                "2026-09-09": 18,
+                "2026-09-10": 25,
+                "2026-09-11": 26,
+                "2026-09-12": 28,
+                "2026-09-13": 28,
+                "2026-09-14": 27,
+                "2026-09-15": 27,
+                "2026-09-16": 31,
+                "2026-09-17": 29,
+                "2026-09-18": 28,
+                "2026-09-19": 20,
+                "2026-09-20": 18,
+                "2026-09-21": 17,
+                "2026-09-22": 36,
+                "2026-09-23": 33,
+                "2026-09-24": 21,
+                "2026-09-25": 26,
+                "2026-09-26": 20,
+                "2026-09-27": 17,
+                "2026-09-28": 25,
+                "2026-09-29": 20,
+                "2026-09-30": 17,
+                "2026-10-01": 24,
+                "2026-10-02": 21,
+                "2026-10-03": 7,
+                "2026-10-04": 24,
+                "2026-10-05": 21,
+                "2026-10-06": 39,
+                "2026-10-07": 23
+              }
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan"
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software",
+              "pageviews": {
+                "2026-09-08": 29,
+                "2026-09-09": 20,
+                "2026-09-10": 27,
+                "2026-09-11": 13,
+                "2026-09-12": 23,
+                "2026-09-13": 10,
+                "2026-09-14": 13,
+                "2026-09-15": 24,
+                "2026-09-16": 21,
+                "2026-09-17": 29,
+                "2026-09-18": 30,
+                "2026-09-19": 14,
+                "2026-09-20": 9,
+                "2026-09-21": 14,
+                "2026-09-22": 18,
+                "2026-09-23": 25,
+                "2026-09-24": 17,
+                "2026-09-25": 17,
+                "2026-09-26": 20,
+                "2026-09-27": 13,
+                "2026-09-28": 13,
+                "2026-09-29": 17,
+                "2026-09-30": 11,
+                "2026-10-01": 25,
+                "2026-10-02": 13,
+                "2026-10-03": 13,
+                "2026-10-04": 19,
+                "2026-10-05": 19,
+                "2026-10-06": 19,
+                "2026-10-07": 21
+              }
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 10,
+                "2026-09-10": 5,
+                "2026-09-11": 8,
+                "2026-09-12": 1,
+                "2026-09-13": 3,
+                "2026-09-14": 10,
+                "2026-09-15": 15,
+                "2026-09-16": 5,
+                "2026-09-17": 5,
+                "2026-09-18": 10,
+                "2026-09-19": 7,
+                "2026-09-20": 8,
+                "2026-09-21": 10,
+                "2026-09-22": 9,
+                "2026-09-23": 11,
+                "2026-09-24": 12,
+                "2026-09-25": 5,
+                "2026-09-26": 6,
+                "2026-09-27": 6,
+                "2026-09-28": 10,
+                "2026-09-29": 3,
+                "2026-09-30": 5,
+                "2026-10-01": 6,
+                "2026-10-02": 3,
+                "2026-10-03": 6,
+                "2026-10-04": 9,
+                "2026-10-05": 9,
+                "2026-10-06": 9,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)"
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz"
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch"
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning"
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation"
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer"
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 14,
+                "2026-09-10": 12,
+                "2026-09-11": 10,
+                "2026-09-12": 5,
+                "2026-09-13": 2,
+                "2026-09-14": 7,
+                "2026-09-15": 8,
+                "2026-09-16": 9,
+                "2026-09-17": 13,
+                "2026-09-18": 12,
+                "2026-09-19": 4,
+                "2026-09-20": 2,
+                "2026-09-21": 4,
+                "2026-09-22": 10,
+                "2026-09-23": 11,
+                "2026-09-24": 12,
+                "2026-09-25": 11,
+                "2026-09-26": 0,
+                "2026-09-27": 4,
+                "2026-09-28": 27,
+                "2026-09-29": 13,
+                "2026-09-30": 3,
+                "2026-10-01": 11,
+                "2026-10-02": 2,
+                "2026-10-03": 2,
+                "2026-10-04": 3,
+                "2026-10-05": 8,
+                "2026-10-06": 7,
+                "2026-10-07": 7
+              }
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben"
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität"
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen"
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training",
+              "pageviews": {
+                "2026-09-08": 19,
+                "2026-09-09": 23,
+                "2026-09-10": 36,
+                "2026-09-11": 20,
+                "2026-09-12": 31,
+                "2026-09-13": 17,
+                "2026-09-14": 29,
+                "2026-09-15": 18,
+                "2026-09-16": 19,
+                "2026-09-17": 23,
+                "2026-09-18": 16,
+                "2026-09-19": 19,
+                "2026-09-20": 14,
+                "2026-09-21": 25,
+                "2026-09-22": 30,
+                "2026-09-23": 31,
+                "2026-09-24": 27,
+                "2026-09-25": 18,
+                "2026-09-26": 17,
+                "2026-09-27": 10,
+                "2026-09-28": 23,
+                "2026-09-29": 23,
+                "2026-09-30": 11,
+                "2026-10-01": 21,
+                "2026-10-02": 10,
+                "2026-10-03": 7,
+                "2026-10-04": 15,
+                "2026-10-05": 22,
+                "2026-10-06": 33,
+                "2026-10-07": 24
+              }
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)"
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode"
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 8,
+                "2026-09-10": 2,
+                "2026-09-11": 2,
+                "2026-09-12": 0,
+                "2026-09-13": 4,
+                "2026-09-14": 5,
+                "2026-09-15": 6,
+                "2026-09-16": 5,
+                "2026-09-17": 5,
+                "2026-09-18": 2,
+                "2026-09-19": 2,
+                "2026-09-20": 1,
+                "2026-09-21": 1,
+                "2026-09-22": 6,
+                "2026-09-23": 1,
+                "2026-09-24": 3,
+                "2026-09-25": 0,
+                "2026-09-26": null,
+                "2026-09-27": 0,
+                "2026-09-28": 10,
+                "2026-09-29": 5,
+                "2026-09-30": 0,
+                "2026-10-01": 2,
+                "2026-10-02": 4,
+                "2026-10-03": 0,
+                "2026-10-04": 2,
+                "2026-10-05": 3,
+                "2026-10-06": 4,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess"
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café"
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement"
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel"
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement"
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign"
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald"
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud",
+              "pageviews": {
+                "2026-09-08": 223,
+                "2026-09-09": 229,
+                "2026-09-10": 170,
+                "2026-09-11": 178,
+                "2026-09-12": 122,
+                "2026-09-13": 193,
+                "2026-09-14": 190,
+                "2026-09-15": 203,
+                "2026-09-16": 263,
+                "2026-09-17": 432,
+                "2026-09-18": 313,
+                "2026-09-19": 179,
+                "2026-09-20": 198,
+                "2026-09-21": 197,
+                "2026-09-22": 198,
+                "2026-09-23": 213,
+                "2026-09-24": 228,
+                "2026-09-25": 172,
+                "2026-09-26": 135,
+                "2026-09-27": 134,
+                "2026-09-28": 173,
+                "2026-09-29": 187,
+                "2026-09-30": 235,
+                "2026-10-01": 223,
+                "2026-10-02": 179,
+                "2026-10-03": 160,
+                "2026-10-04": 165,
+                "2026-10-05": 202,
+                "2026-10-06": 197,
+                "2026-10-07": 231
+              }
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 0,
+                "2026-09-10": 0,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 1,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 2,
+                "2026-09-20": 1,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 1,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": 2,
+                "2026-09-30": 1,
+                "2026-10-01": 3,
+                "2026-10-02": null,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 3,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon"
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt"
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net"
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Verkaufsgespräch",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext"
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz",
+              "pageviews": {
+                "2026-09-08": 9,
+                "2026-09-09": 7,
+                "2026-09-10": 6,
+                "2026-09-11": 16,
+                "2026-09-12": 9,
+                "2026-09-13": 10,
+                "2026-09-14": 12,
+                "2026-09-15": 17,
+                "2026-09-16": 9,
+                "2026-09-17": 12,
+                "2026-09-18": 13,
+                "2026-09-19": 14,
+                "2026-09-20": 15,
+                "2026-09-21": 6,
+                "2026-09-22": 11,
+                "2026-09-23": 12,
+                "2026-09-24": 8,
+                "2026-09-25": 11,
+                "2026-09-26": 8,
+                "2026-09-27": 6,
+                "2026-09-28": 7,
+                "2026-09-29": 14,
+                "2026-09-30": 10,
+                "2026-10-01": 9,
+                "2026-10-02": 12,
+                "2026-10-03": 5,
+                "2026-10-04": 4,
+                "2026-10-05": 6,
+                "2026-10-06": 8,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte"
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik",
+              "pageviews": {
+                "2026-09-08": 48,
+                "2026-09-09": 77,
+                "2026-09-10": 65,
+                "2026-09-11": 42,
+                "2026-09-12": 22,
+                "2026-09-13": 20,
+                "2026-09-14": 51,
+                "2026-09-15": 61,
+                "2026-09-16": 46,
+                "2026-09-17": 38,
+                "2026-09-18": 41,
+                "2026-09-19": 27,
+                "2026-09-20": 15,
+                "2026-09-21": 45,
+                "2026-09-22": 14,
+                "2026-09-23": 29,
+                "2026-09-24": 25,
+                "2026-09-25": 17,
+                "2026-09-26": 20,
+                "2026-09-27": 17,
+                "2026-09-28": 33,
+                "2026-09-29": 38,
+                "2026-09-30": 55,
+                "2026-10-01": 43,
+                "2026-10-02": 17,
+                "2026-10-03": 14,
+                "2026-10-04": 23,
+                "2026-10-05": 28,
+                "2026-10-06": 27,
+                "2026-10-07": 44
+              }
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation"
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement"
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung"
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie"
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden"
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche",
+              "pageviews": {
+                "2026-09-08": 63,
+                "2026-09-09": 30,
+                "2026-09-10": 32,
+                "2026-09-11": 31,
+                "2026-09-12": 15,
+                "2026-09-13": 18,
+                "2026-09-14": 31,
+                "2026-09-15": 50,
+                "2026-09-16": 36,
+                "2026-09-17": 36,
+                "2026-09-18": 43,
+                "2026-09-19": 22,
+                "2026-09-20": 28,
+                "2026-09-21": 39,
+                "2026-09-22": 30,
+                "2026-09-23": 31,
+                "2026-09-24": 46,
+                "2026-09-25": 37,
+                "2026-09-26": 17,
+                "2026-09-27": 25,
+                "2026-09-28": 33,
+                "2026-09-29": 345,
+                "2026-09-30": 3949,
+                "2026-10-01": 2632,
+                "2026-10-02": 1397,
+                "2026-10-03": 965,
+                "2026-10-04": 607,
+                "2026-10-05": 534,
+                "2026-10-06": 522,
+                "2026-10-07": 562
+              }
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem"
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 15,
+                "2026-09-10": 7,
+                "2026-09-11": 5,
+                "2026-09-12": 9,
+                "2026-09-13": 1,
+                "2026-09-14": 1,
+                "2026-09-15": 6,
+                "2026-09-16": 10,
+                "2026-09-17": 4,
+                "2026-09-18": 6,
+                "2026-09-19": 9,
+                "2026-09-20": 5,
+                "2026-09-21": 8,
+                "2026-09-22": 9,
+                "2026-09-23": 3,
+                "2026-09-24": 8,
+                "2026-09-25": 1,
+                "2026-09-26": 3,
+                "2026-09-27": 6,
+                "2026-09-28": 5,
+                "2026-09-29": 6,
+                "2026-09-30": 4,
+                "2026-10-01": 5,
+                "2026-10-02": 9,
+                "2026-10-03": 3,
+                "2026-10-04": 4,
+                "2026-10-05": 6,
+                "2026-10-06": 11,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung"
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben"
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map"
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation"
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen",
+              "pageviews": {
+                "2026-09-08": 24,
+                "2026-09-09": 25,
+                "2026-09-10": 22,
+                "2026-09-11": 30,
+                "2026-09-12": 23,
+                "2026-09-13": 35,
+                "2026-09-14": 47,
+                "2026-09-15": 22,
+                "2026-09-16": 18,
+                "2026-09-17": 24,
+                "2026-09-18": 36,
+                "2026-09-19": 26,
+                "2026-09-20": 26,
+                "2026-09-21": 21,
+                "2026-09-22": 22,
+                "2026-09-23": 27,
+                "2026-09-24": 16,
+                "2026-09-25": 16,
+                "2026-09-26": 46,
+                "2026-09-27": 54,
+                "2026-09-28": 65,
+                "2026-09-29": 65,
+                "2026-09-30": 43,
+                "2026-10-01": 48,
+                "2026-10-02": 46,
+                "2026-10-03": 114,
+                "2026-10-04": 34,
+                "2026-10-05": 30,
+                "2026-10-06": 45,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument"
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg"
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken"
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan",
+              "pageviews": {
+                "2026-09-08": 9,
+                "2026-09-09": 10,
+                "2026-09-10": 6,
+                "2026-09-11": 6,
+                "2026-09-12": 6,
+                "2026-09-13": 4,
+                "2026-09-14": 8,
+                "2026-09-15": 8,
+                "2026-09-16": 16,
+                "2026-09-17": 5,
+                "2026-09-18": 14,
+                "2026-09-19": 2,
+                "2026-09-20": 4,
+                "2026-09-21": 4,
+                "2026-09-22": 9,
+                "2026-09-23": 7,
+                "2026-09-24": 9,
+                "2026-09-25": 9,
+                "2026-09-26": 5,
+                "2026-09-27": 6,
+                "2026-09-28": 9,
+                "2026-09-29": 9,
+                "2026-09-30": 7,
+                "2026-10-01": 7,
+                "2026-10-02": 4,
+                "2026-10-03": 4,
+                "2026-10-04": 2,
+                "2026-10-05": 7,
+                "2026-10-06": 5,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software"
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie"
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)"
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz"
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch"
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 2,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": 3,
+                "2026-09-13": 0,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 2,
+                "2026-09-19": 2,
+                "2026-09-20": 1,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 1,
+                "2026-09-24": 1,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 5,
+                "2026-09-10": 5,
+                "2026-09-11": 36,
+                "2026-09-12": 2,
+                "2026-09-13": 4,
+                "2026-09-14": 8,
+                "2026-09-15": 9,
+                "2026-09-16": 4,
+                "2026-09-17": 3,
+                "2026-09-18": 10,
+                "2026-09-19": 4,
+                "2026-09-20": 6,
+                "2026-09-21": 4,
+                "2026-09-22": 3,
+                "2026-09-23": 8,
+                "2026-09-24": 5,
+                "2026-09-25": 3,
+                "2026-09-26": 37,
+                "2026-09-27": 2,
+                "2026-09-28": 8,
+                "2026-09-29": 28,
+                "2026-09-30": 2,
+                "2026-10-01": 5,
+                "2026-10-02": 4,
+                "2026-10-03": 5,
+                "2026-10-04": 3,
+                "2026-10-05": 3,
+                "2026-10-06": 6,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer"
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager"
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben"
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität"
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen",
+              "pageviews": {
+                "2026-09-08": 13,
+                "2026-09-09": 18,
+                "2026-09-10": 9,
+                "2026-09-11": 7,
+                "2026-09-12": 7,
+                "2026-09-13": 6,
+                "2026-09-14": 8,
+                "2026-09-15": 8,
+                "2026-09-16": 13,
+                "2026-09-17": 7,
+                "2026-09-18": 19,
+                "2026-09-19": 7,
+                "2026-09-20": 20,
+                "2026-09-21": 8,
+                "2026-09-22": 17,
+                "2026-09-23": 13,
+                "2026-09-24": 10,
+                "2026-09-25": 8,
+                "2026-09-26": 8,
+                "2026-09-27": 11,
+                "2026-09-28": 9,
+                "2026-09-29": 21,
+                "2026-09-30": 7,
+                "2026-10-01": 5,
+                "2026-10-02": 4,
+                "2026-10-03": 10,
+                "2026-10-04": 8,
+                "2026-10-05": 4,
+                "2026-10-06": 8,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training"
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)"
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode",
+              "pageviews": {
+                "2026-09-08": 15,
+                "2026-09-09": 35,
+                "2026-09-10": 18,
+                "2026-09-11": 21,
+                "2026-09-12": 17,
+                "2026-09-13": 9,
+                "2026-09-14": 28,
+                "2026-09-15": 29,
+                "2026-09-16": 13,
+                "2026-09-17": 41,
+                "2026-09-18": 22,
+                "2026-09-19": 15,
+                "2026-09-20": 26,
+                "2026-09-21": 21,
+                "2026-09-22": 30,
+                "2026-09-23": 32,
+                "2026-09-24": 27,
+                "2026-09-25": 14,
+                "2026-09-26": 15,
+                "2026-09-27": 13,
+                "2026-09-28": 20,
+                "2026-09-29": 12,
+                "2026-09-30": 26,
+                "2026-10-01": 23,
+                "2026-10-02": 24,
+                "2026-10-03": 15,
+                "2026-10-04": 16,
+                "2026-10-05": 20,
+                "2026-10-06": 25,
+                "2026-10-07": 27
+              }
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)"
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 5,
+                "2026-09-10": 5,
+                "2026-09-11": 1,
+                "2026-09-12": 3,
+                "2026-09-13": 1,
+                "2026-09-14": 9,
+                "2026-09-15": 7,
+                "2026-09-16": 3,
+                "2026-09-17": 2,
+                "2026-09-18": 4,
+                "2026-09-19": 4,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": 4,
+                "2026-09-23": 3,
+                "2026-09-24": 2,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": 8,
+                "2026-09-28": 0,
+                "2026-09-29": 6,
+                "2026-09-30": 6,
+                "2026-10-01": 4,
+                "2026-10-02": 1,
+                "2026-10-03": 4,
+                "2026-10-04": 1,
+                "2026-10-05": 6,
+                "2026-10-06": 4,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café"
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement"
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel"
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 11,
+                "2026-09-10": 11,
+                "2026-09-11": 12,
+                "2026-09-12": 6,
+                "2026-09-13": 12,
+                "2026-09-14": 13,
+                "2026-09-15": 10,
+                "2026-09-16": 11,
+                "2026-09-17": 9,
+                "2026-09-18": 12,
+                "2026-09-19": 7,
+                "2026-09-20": 4,
+                "2026-09-21": 13,
+                "2026-09-22": 8,
+                "2026-09-23": 7,
+                "2026-09-24": 3,
+                "2026-09-25": 2,
+                "2026-09-26": 4,
+                "2026-09-27": 14,
+                "2026-09-28": 11,
+                "2026-09-29": 9,
+                "2026-09-30": 7,
+                "2026-10-01": 4,
+                "2026-10-02": 5,
+                "2026-10-03": 3,
+                "2026-10-04": 6,
+                "2026-10-05": 6,
+                "2026-10-06": 4,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign"
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald"
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud"
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo"
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon",
+              "pageviews": {
+                "2026-09-08": 301,
+                "2026-09-09": 262,
+                "2026-09-10": 365,
+                "2026-09-11": 351,
+                "2026-09-12": 341,
+                "2026-09-13": 316,
+                "2026-09-14": 344,
+                "2026-09-15": 243,
+                "2026-09-16": 327,
+                "2026-09-17": 271,
+                "2026-09-18": 265,
+                "2026-09-19": 235,
+                "2026-09-20": 281,
+                "2026-09-21": 239,
+                "2026-09-22": 250,
+                "2026-09-23": 228,
+                "2026-09-24": 259,
+                "2026-09-25": 224,
+                "2026-09-26": 261,
+                "2026-09-27": 347,
+                "2026-09-28": 303,
+                "2026-09-29": 343,
+                "2026-09-30": 282,
+                "2026-10-01": 282,
+                "2026-10-02": 272,
+                "2026-10-03": 264,
+                "2026-10-04": 226,
+                "2026-10-05": 273,
+                "2026-10-06": 279,
+                "2026-10-07": 296
+              }
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt"
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net"
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 1,
+                "2026-09-10": 3,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": null,
+                "2026-09-18": null,
+                "2026-09-19": 0,
+                "2026-09-20": 1,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": 3,
+                "2026-09-24": 0,
+                "2026-09-25": null,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": null,
+                "2026-09-29": null,
+                "2026-09-30": null,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": null,
+                "2026-10-06": null,
+                "2026-10-07": 0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "batchcomplete": true,
+        "query": {
+          "pages": [
+            {
+              "pageid": 2151,
+              "ns": 0,
+              "title": "Hypertext"
+            },
+            {
+              "pageid": 12134,
+              "ns": 0,
+              "title": "Semantisches Netz"
+            },
+            {
+              "pageid": 19930,
+              "ns": 0,
+              "title": "Kognitive Karte"
+            },
+            {
+              "pageid": 42594,
+              "ns": 0,
+              "title": "Theoretische Informatik"
+            },
+            {
+              "pageid": 73277,
+              "ns": 0,
+              "title": "Lernende Organisation"
+            },
+            {
+              "pageid": 79713,
+              "ns": 0,
+              "title": "Zeitmanagement",
+              "pageviews": {
+                "2026-09-08": 38,
+                "2026-09-09": 44,
+                "2026-09-10": 54,
+                "2026-09-11": 37,
+                "2026-09-12": 44,
+                "2026-09-13": 48,
+                "2026-09-14": 46,
+                "2026-09-15": 33,
+                "2026-09-16": 27,
+                "2026-09-17": 32,
+                "2026-09-18": 38,
+                "2026-09-19": 29,
+                "2026-09-20": 20,
+                "2026-09-21": 26,
+                "2026-09-22": 23,
+                "2026-09-23": 32,
+                "2026-09-24": 33,
+                "2026-09-25": 28,
+                "2026-09-26": 25,
+                "2026-09-27": 33,
+                "2026-09-28": 29,
+                "2026-09-29": 34,
+                "2026-09-30": 41,
+                "2026-10-01": 34,
+                "2026-10-02": 20,
+                "2026-10-03": 24,
+                "2026-10-04": 20,
+                "2026-10-05": 37,
+                "2026-10-06": 36,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 126931,
+              "ns": 0,
+              "title": "Gliederung"
+            },
+            {
+              "pageid": 133402,
+              "ns": 0,
+              "title": "Lerntheorie"
+            },
+            {
+              "pageid": 169719,
+              "ns": 0,
+              "title": "Liste der Unterrichtsmethoden"
+            },
+            {
+              "pageid": 175978,
+              "ns": 0,
+              "title": "Recherche"
+            },
+            {
+              "pageid": 187275,
+              "ns": 0,
+              "title": "Begriffssystem"
+            },
+            {
+              "pageid": 192544,
+              "ns": 0,
+              "title": "Projektmanagement-Software"
+            },
+            {
+              "pageid": 214010,
+              "ns": 0,
+              "title": "Erörterung"
+            },
+            {
+              "pageid": 314501,
+              "ns": 0,
+              "title": "Kreatives Schreiben"
+            },
+            {
+              "pageid": 357314,
+              "ns": 0,
+              "title": "Concept-Map"
+            },
+            {
+              "pageid": 365570,
+              "ns": 0,
+              "title": "Corel Corporation"
+            },
+            {
+              "pageid": 383922,
+              "ns": 0,
+              "title": "Problemlösen"
+            },
+            {
+              "pageid": 458370,
+              "ns": 0,
+              "title": "OpenDocument"
+            },
+            {
+              "pageid": 468453,
+              "ns": 0,
+              "title": "Funkkolleg"
+            },
+            {
+              "pageid": 505376,
+              "ns": 0,
+              "title": "Kreativitätstechniken"
+            },
+            {
+              "pageid": 740746,
+              "ns": 0,
+              "title": "Tony Buzan"
+            },
+            {
+              "pageid": 767871,
+              "ns": 0,
+              "title": "Liste von Wiki-Software"
+            },
+            {
+              "pageid": 774959,
+              "ns": 0,
+              "title": "Lernstrategie"
+            },
+            {
+              "pageid": 819818,
+              "ns": 0,
+              "title": "Kategorisierung (Kognitionswissenschaft)"
+            },
+            {
+              "pageid": 828317,
+              "ns": 0,
+              "title": "Graphviz"
+            },
+            {
+              "pageid": 855467,
+              "ns": 0,
+              "title": "Verkaufsgespräch",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 22,
+                "2026-09-10": 6,
+                "2026-09-11": 9,
+                "2026-09-12": 1,
+                "2026-09-13": 6,
+                "2026-09-14": 6,
+                "2026-09-15": 12,
+                "2026-09-16": 3,
+                "2026-09-17": 10,
+                "2026-09-18": 22,
+                "2026-09-19": 10,
+                "2026-09-20": 7,
+                "2026-09-21": 22,
+                "2026-09-22": 8,
+                "2026-09-23": 1,
+                "2026-09-24": 6,
+                "2026-09-25": 17,
+                "2026-09-26": 9,
+                "2026-09-27": 11,
+                "2026-09-28": 9,
+                "2026-09-29": 4,
+                "2026-09-30": 12,
+                "2026-10-01": 7,
+                "2026-10-02": 9,
+                "2026-10-03": 2,
+                "2026-10-04": 7,
+                "2026-10-05": 10,
+                "2026-10-06": 8,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 942743,
+              "ns": 0,
+              "title": "Rapid E-Learning"
+            },
+            {
+              "pageid": 1035936,
+              "ns": 0,
+              "title": "Pinnwandmoderation"
+            },
+            {
+              "pageid": 1089498,
+              "ns": 0,
+              "title": "Advance Organizer"
+            },
+            {
+              "pageid": 1159097,
+              "ns": 0,
+              "title": "MindManager"
+            },
+            {
+              "pageid": 1238583,
+              "ns": 0,
+              "title": "Kollaboratives Schreiben"
+            },
+            {
+              "pageid": 1570087,
+              "ns": 0,
+              "title": "Drogenkriminalität"
+            },
+            {
+              "pageid": 1572592,
+              "ns": 0,
+              "title": "Selbstgesteuertes Lernen"
+            },
+            {
+              "pageid": 1624951,
+              "ns": 0,
+              "title": "Mentales Training"
+            },
+            {
+              "pageid": 2317804,
+              "ns": 0,
+              "title": "Bewusstmachung (Fremdsprachenunterricht)"
+            },
+            {
+              "pageid": 2330264,
+              "ns": 0,
+              "title": "SQ3R-Methode"
+            },
+            {
+              "pageid": 2349995,
+              "ns": 0,
+              "title": "Merlin (Software)"
+            },
+            {
+              "pageid": 2465461,
+              "ns": 0,
+              "title": "Schreibprozess"
+            },
+            {
+              "pageid": 2527734,
+              "ns": 0,
+              "title": "Knowledge-Café"
+            },
+            {
+              "pageid": 2602054,
+              "ns": 0,
+              "title": "Wissensmanagement",
+              "pageviews": {
+                "2026-09-08": 22,
+                "2026-09-09": 30,
+                "2026-09-10": 40,
+                "2026-09-11": 15,
+                "2026-09-12": 17,
+                "2026-09-13": 18,
+                "2026-09-14": 24,
+                "2026-09-15": 38,
+                "2026-09-16": 25,
+                "2026-09-17": 32,
+                "2026-09-18": 38,
+                "2026-09-19": 31,
+                "2026-09-20": 15,
+                "2026-09-21": 34,
+                "2026-09-22": 26,
+                "2026-09-23": 23,
+                "2026-09-24": 26,
+                "2026-09-25": 35,
+                "2026-09-26": 20,
+                "2026-09-27": 17,
+                "2026-09-28": 32,
+                "2026-09-29": 23,
+                "2026-09-30": 26,
+                "2026-10-01": 31,
+                "2026-10-02": 21,
+                "2026-10-03": 15,
+                "2026-10-04": 23,
+                "2026-10-05": 26,
+                "2026-10-06": 37,
+                "2026-10-07": 44
+              }
+            },
+            {
+              "pageid": 2725847,
+              "ns": 0,
+              "title": "Wissenszirkel",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 0,
+                "2026-09-10": null,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": null,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": null,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": null,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": null,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": null,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": null,
+                "2026-10-03": null,
+                "2026-10-04": 1,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 2879784,
+              "ns": 0,
+              "title": "Persönliches Wissensmanagement"
+            },
+            {
+              "pageid": 5454278,
+              "ns": 0,
+              "title": "Instruktionsdesign"
+            },
+            {
+              "pageid": 6692356,
+              "ns": 0,
+              "title": "Gymnasium am Steinwald"
+            },
+            {
+              "pageid": 9476035,
+              "ns": 0,
+              "title": "Nextcloud"
+            },
+            {
+              "pageid": 10238875,
+              "ns": 0,
+              "title": "Lernvideo"
+            },
+            {
+              "pageid": 10429750,
+              "ns": 0,
+              "title": "QAnon"
+            },
+            {
+              "pageid": 10557337,
+              "ns": 0,
+              "title": "Forder-Förder-Projekt"
+            },
+            {
+              "pageid": 11957934,
+              "ns": 0,
+              "title": "Diagrams.net"
+            },
+            {
+              "pageid": 12720118,
+              "ns": 0,
+              "title": "Schreibintensive Lehre"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "FCM",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 7,
+                "2026-09-10": 3,
+                "2026-09-11": 6,
+                "2026-09-12": 5,
+                "2026-09-13": 6,
+                "2026-09-14": 5,
+                "2026-09-15": 7,
+                "2026-09-16": 13,
+                "2026-09-17": 3,
+                "2026-09-18": 6,
+                "2026-09-19": 3,
+                "2026-09-20": 3,
+                "2026-09-21": 4,
+                "2026-09-22": 0,
+                "2026-09-23": 4,
+                "2026-09-24": 10,
+                "2026-09-25": 10,
+                "2026-09-26": 2,
+                "2026-09-27": 4,
+                "2026-09-28": 5,
+                "2026-09-29": 10,
+                "2026-09-30": 9,
+                "2026-10-01": 9,
+                "2026-10-02": 7,
+                "2026-10-03": 3,
+                "2026-10-04": 5,
+                "2026-10-05": 5,
+                "2026-10-06": 8,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel"
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM"
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung"
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe"
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 13,
+                "2026-09-10": 6,
+                "2026-09-11": 7,
+                "2026-09-12": 0,
+                "2026-09-13": 12,
+                "2026-09-14": 16,
+                "2026-09-15": 4,
+                "2026-09-16": 9,
+                "2026-09-17": 12,
+                "2026-09-18": 4,
+                "2026-09-19": 4,
+                "2026-09-20": 9,
+                "2026-09-21": 4,
+                "2026-09-22": 10,
+                "2026-09-23": 7,
+                "2026-09-24": 6,
+                "2026-09-25": 4,
+                "2026-09-26": 2,
+                "2026-09-27": 3,
+                "2026-09-28": 7,
+                "2026-09-29": 7,
+                "2026-09-30": 16,
+                "2026-10-01": 17,
+                "2026-10-02": 2,
+                "2026-10-03": 4,
+                "2026-10-04": 6,
+                "2026-10-05": 32,
+                "2026-10-06": 21,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki"
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind"
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping"
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte"
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart"
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor"
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse"
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm"
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind"
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 6,
+                "2026-09-10": 4,
+                "2026-09-11": 3,
+                "2026-09-12": 10,
+                "2026-09-13": 8,
+                "2026-09-14": 8,
+                "2026-09-15": 7,
+                "2026-09-16": 6,
+                "2026-09-17": 5,
+                "2026-09-18": 5,
+                "2026-09-19": 8,
+                "2026-09-20": 7,
+                "2026-09-21": 4,
+                "2026-09-22": 5,
+                "2026-09-23": 4,
+                "2026-09-24": 22,
+                "2026-09-25": 34,
+                "2026-09-26": 47,
+                "2026-09-27": 46,
+                "2026-09-28": 44,
+                "2026-09-29": 30,
+                "2026-09-30": 33,
+                "2026-10-01": 17,
+                "2026-10-02": 26,
+                "2026-10-03": 27,
+                "2026-10-04": 26,
+                "2026-10-05": 21,
+                "2026-10-06": 17,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik"
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox"
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView"
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur"
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 5,
+                "2026-09-10": 2,
+                "2026-09-11": 3,
+                "2026-09-12": 3,
+                "2026-09-13": 3,
+                "2026-09-14": 4,
+                "2026-09-15": 2,
+                "2026-09-16": 6,
+                "2026-09-17": 4,
+                "2026-09-18": 2,
+                "2026-09-19": 0,
+                "2026-09-20": 3,
+                "2026-09-21": 7,
+                "2026-09-22": 2,
+                "2026-09-23": null,
+                "2026-09-24": 0,
+                "2026-09-25": 2,
+                "2026-09-26": 5,
+                "2026-09-27": 2,
+                "2026-09-28": 2,
+                "2026-09-29": 1,
+                "2026-09-30": 3,
+                "2026-10-01": 5,
+                "2026-10-02": 1,
+                "2026-10-03": 1,
+                "2026-10-04": 4,
+                "2026-10-05": 3,
+                "2026-10-06": 4,
+                "2026-10-07": 7
+              }
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd"
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping"
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff"
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung"
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes"
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 1,
+                "2026-09-10": 3,
+                "2026-09-11": 3,
+                "2026-09-12": 4,
+                "2026-09-13": 6,
+                "2026-09-14": 3,
+                "2026-09-15": 2,
+                "2026-09-16": 1,
+                "2026-09-17": 2,
+                "2026-09-18": 4,
+                "2026-09-19": 2,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": 0,
+                "2026-09-23": 1,
+                "2026-09-24": 2,
+                "2026-09-25": 3,
+                "2026-09-26": 4,
+                "2026-09-27": null,
+                "2026-09-28": 2,
+                "2026-09-29": 0,
+                "2026-09-30": 4,
+                "2026-10-01": 1,
+                "2026-10-02": 2,
+                "2026-10-03": 1,
+                "2026-10-04": 2,
+                "2026-10-05": 4,
+                "2026-10-06": 2,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping"
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette"
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit"
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung"
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen"
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML"
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint"
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": null,
+                "2026-09-10": null,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": null,
+                "2026-09-15": null,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 0,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": null,
+                "2026-09-24": 0,
+                "2026-09-25": 1,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": null,
+                "2026-09-29": 1,
+                "2026-09-30": null,
+                "2026-10-01": null,
+                "2026-10-02": null,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": null,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": null,
+                "2026-09-10": null,
+                "2026-09-11": null,
+                "2026-09-12": null,
+                "2026-09-13": null,
+                "2026-09-14": 0,
+                "2026-09-15": null,
+                "2026-09-16": null,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 0,
+                "2026-09-20": null,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 0,
+                "2026-09-25": null,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": null,
+                "2026-09-29": 0,
+                "2026-09-30": 1,
+                "2026-10-01": null,
+                "2026-10-02": null,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 14,
+                "2026-09-10": 21,
+                "2026-09-11": 21,
+                "2026-09-12": 5,
+                "2026-09-13": 2,
+                "2026-09-14": 4,
+                "2026-09-15": 4,
+                "2026-09-16": 4,
+                "2026-09-17": 9,
+                "2026-09-18": 6,
+                "2026-09-19": 0,
+                "2026-09-20": 3,
+                "2026-09-21": 3,
+                "2026-09-22": 8,
+                "2026-09-23": 3,
+                "2026-09-24": 4,
+                "2026-09-25": 6,
+                "2026-09-26": 1,
+                "2026-09-27": 2,
+                "2026-09-28": 8,
+                "2026-09-29": 9,
+                "2026-09-30": 3,
+                "2026-10-01": 1,
+                "2026-10-02": 3,
+                "2026-10-03": 3,
+                "2026-10-04": 2,
+                "2026-10-05": 2,
+                "2026-10-06": 2,
+                "2026-10-07": 2
+              }
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Mind",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)"
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel"
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 0,
+                "2026-09-10": 1,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 3,
+                "2026-09-18": 3,
+                "2026-09-19": 4,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": null,
+                "2026-09-23": 3,
+                "2026-09-24": null,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 3,
+                "2026-09-30": 1,
+                "2026-10-01": 0,
+                "2026-10-02": 1,
+                "2026-10-03": null,
+                "2026-10-04": 2,
+                "2026-10-05": 4,
+                "2026-10-06": 2,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung"
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe"
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)"
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki"
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind",
+              "pageviews": {
+                "2026-09-08": 7,
+                "2026-09-09": 4,
+                "2026-09-10": 10,
+                "2026-09-11": 11,
+                "2026-09-12": 5,
+                "2026-09-13": 7,
+                "2026-09-14": 11,
+                "2026-09-15": 8,
+                "2026-09-16": 16,
+                "2026-09-17": 14,
+                "2026-09-18": 17,
+                "2026-09-19": 5,
+                "2026-09-20": 5,
+                "2026-09-21": 13,
+                "2026-09-22": 9,
+                "2026-09-23": 12,
+                "2026-09-24": 6,
+                "2026-09-25": 6,
+                "2026-09-26": 3,
+                "2026-09-27": 4,
+                "2026-09-28": 19,
+                "2026-09-29": 11,
+                "2026-09-30": 12,
+                "2026-10-01": 14,
+                "2026-10-02": 6,
+                "2026-10-03": 3,
+                "2026-10-04": 5,
+                "2026-10-05": 6,
+                "2026-10-06": 10,
+                "2026-10-07": 13
+              }
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping",
+              "pageviews": {
+                "2026-09-08": 3,
+                "2026-09-09": 3,
+                "2026-09-10": 4,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 2,
+                "2026-09-14": 6,
+                "2026-09-15": 6,
+                "2026-09-16": 10,
+                "2026-09-17": 7,
+                "2026-09-18": 6,
+                "2026-09-19": 5,
+                "2026-09-20": 1,
+                "2026-09-21": 3,
+                "2026-09-22": 8,
+                "2026-09-23": 5,
+                "2026-09-24": 5,
+                "2026-09-25": 3,
+                "2026-09-26": 2,
+                "2026-09-27": 1,
+                "2026-09-28": 15,
+                "2026-09-29": 9,
+                "2026-09-30": 13,
+                "2026-10-01": 5,
+                "2026-10-02": 2,
+                "2026-10-03": 2,
+                "2026-10-04": 3,
+                "2026-10-05": 7,
+                "2026-10-06": 4,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte"
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart",
+              "pageviews": {
+                "2026-09-08": 19,
+                "2026-09-09": 25,
+                "2026-09-10": 20,
+                "2026-09-11": 19,
+                "2026-09-12": 11,
+                "2026-09-13": 13,
+                "2026-09-14": 32,
+                "2026-09-15": 26,
+                "2026-09-16": 20,
+                "2026-09-17": 18,
+                "2026-09-18": 22,
+                "2026-09-19": 8,
+                "2026-09-20": 7,
+                "2026-09-21": 28,
+                "2026-09-22": 25,
+                "2026-09-23": 21,
+                "2026-09-24": 21,
+                "2026-09-25": 12,
+                "2026-09-26": 13,
+                "2026-09-27": 23,
+                "2026-09-28": 28,
+                "2026-09-29": 23,
+                "2026-09-30": 30,
+                "2026-10-01": 23,
+                "2026-10-02": 13,
+                "2026-10-03": 11,
+                "2026-10-04": 16,
+                "2026-10-05": 37,
+                "2026-10-06": 30,
+                "2026-10-07": 29
+              }
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor"
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse"
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm"
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind"
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)"
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 0,
+                "2026-09-10": null,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": null,
+                "2026-09-15": 1,
+                "2026-09-16": null,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 0,
+                "2026-09-20": null,
+                "2026-09-21": 0,
+                "2026-09-22": null,
+                "2026-09-23": 0,
+                "2026-09-24": null,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 1,
+                "2026-09-30": null,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 1,
+                "2026-09-10": 2,
+                "2026-09-11": 3,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 2,
+                "2026-09-17": 1,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 2,
+                "2026-09-23": 5,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 1,
+                "2026-09-27": 2,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 1,
+                "2026-10-01": 1,
+                "2026-10-02": 0,
+                "2026-10-03": null,
+                "2026-10-04": 1,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView"
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": null,
+                "2026-09-10": 1,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 1,
+                "2026-09-14": 0,
+                "2026-09-15": 1,
+                "2026-09-16": null,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 0,
+                "2026-09-20": null,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 1,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": 0,
+                "2026-09-29": 0,
+                "2026-09-30": 0,
+                "2026-10-01": null,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm"
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd"
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping"
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff"
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung"
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes"
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear"
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane",
+              "pageviews": {
+                "2026-09-08": 8,
+                "2026-09-09": 9,
+                "2026-09-10": 14,
+                "2026-09-11": 19,
+                "2026-09-12": 5,
+                "2026-09-13": 11,
+                "2026-09-14": 19,
+                "2026-09-15": 8,
+                "2026-09-16": 5,
+                "2026-09-17": 17,
+                "2026-09-18": 7,
+                "2026-09-19": 2,
+                "2026-09-20": 8,
+                "2026-09-21": 8,
+                "2026-09-22": 10,
+                "2026-09-23": 10,
+                "2026-09-24": 6,
+                "2026-09-25": 11,
+                "2026-09-26": 2,
+                "2026-09-27": 6,
+                "2026-09-28": 16,
+                "2026-09-29": 10,
+                "2026-09-30": 12,
+                "2026-10-01": 10,
+                "2026-10-02": 12,
+                "2026-10-03": 6,
+                "2026-10-04": 2,
+                "2026-10-05": 16,
+                "2026-10-06": 6,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping",
+              "pageviews": {
+                "2026-09-08": 3,
+                "2026-09-09": 2,
+                "2026-09-10": 3,
+                "2026-09-11": 1,
+                "2026-09-12": 3,
+                "2026-09-13": 5,
+                "2026-09-14": 0,
+                "2026-09-15": 3,
+                "2026-09-16": 2,
+                "2026-09-17": 0,
+                "2026-09-18": 2,
+                "2026-09-19": 3,
+                "2026-09-20": 5,
+                "2026-09-21": 4,
+                "2026-09-22": 1,
+                "2026-09-23": 1,
+                "2026-09-24": 5,
+                "2026-09-25": 4,
+                "2026-09-26": 4,
+                "2026-09-27": 5,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 3,
+                "2026-10-01": 1,
+                "2026-10-02": 5,
+                "2026-10-03": 2,
+                "2026-10-04": 4,
+                "2026-10-05": 2,
+                "2026-10-06": 2,
+                "2026-10-07": 3
+              }
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette"
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit"
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 0,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 0,
+                "2026-09-14": 1,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": null,
+                "2026-09-20": null,
+                "2026-09-21": 0,
+                "2026-09-22": null,
+                "2026-09-23": null,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": null,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": null,
+                "2026-10-02": null,
+                "2026-10-03": null,
+                "2026-10-04": 0,
+                "2026-10-05": null,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": null,
+                "2026-09-10": null,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": 4,
+                "2026-09-14": 0,
+                "2026-09-15": 1,
+                "2026-09-16": 2,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 2,
+                "2026-09-20": 0,
+                "2026-09-21": 3,
+                "2026-09-22": 4,
+                "2026-09-23": 1,
+                "2026-09-24": null,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": 4,
+                "2026-09-29": 2,
+                "2026-09-30": 0,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 4,
+                "2026-10-04": 2,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML"
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 2,
+                "2026-09-10": null,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": 1,
+                "2026-09-15": null,
+                "2026-09-16": null,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": null,
+                "2026-09-20": null,
+                "2026-09-21": 1,
+                "2026-09-22": null,
+                "2026-09-23": 2,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 3,
+                "2026-09-27": 0,
+                "2026-09-28": null,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": null,
+                "2026-10-03": null,
+                "2026-10-04": 0,
+                "2026-10-05": null,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE"
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP"
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "SciPlore_MindMapping",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)"
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel"
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM"
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung"
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe"
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)"
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki"
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind"
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping"
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte"
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart"
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 5,
+                "2026-09-10": 6,
+                "2026-09-11": 5,
+                "2026-09-12": 2,
+                "2026-09-13": 2,
+                "2026-09-14": 2,
+                "2026-09-15": 9,
+                "2026-09-16": 7,
+                "2026-09-17": 2,
+                "2026-09-18": 11,
+                "2026-09-19": 4,
+                "2026-09-20": 0,
+                "2026-09-21": 3,
+                "2026-09-22": 1,
+                "2026-09-23": 5,
+                "2026-09-24": 2,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 3,
+                "2026-09-29": 2,
+                "2026-09-30": 2,
+                "2026-10-01": 4,
+                "2026-10-02": 0,
+                "2026-10-03": 2,
+                "2026-10-04": 1,
+                "2026-10-05": 6,
+                "2026-10-06": 2,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": null,
+                "2026-09-10": 0,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 3,
+                "2026-09-14": 0,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": null,
+                "2026-09-22": 1,
+                "2026-09-23": null,
+                "2026-09-24": 0,
+                "2026-09-25": null,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 1,
+                "2026-09-30": 1,
+                "2026-10-01": 0,
+                "2026-10-02": null,
+                "2026-10-03": null,
+                "2026-10-04": 1,
+                "2026-10-05": 0,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm"
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 0,
+                "2026-09-10": 4,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 3,
+                "2026-09-19": 2,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 5,
+                "2026-09-23": 3,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 2,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 2,
+                "2026-10-07": 3
+              }
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)"
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik"
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox"
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 2,
+                "2026-09-10": 1,
+                "2026-09-11": 0,
+                "2026-09-12": 1,
+                "2026-09-13": 0,
+                "2026-09-14": 1,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 1,
+                "2026-09-18": 1,
+                "2026-09-19": 0,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 2,
+                "2026-09-23": 4,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 3,
+                "2026-09-30": 0,
+                "2026-10-01": null,
+                "2026-10-02": null,
+                "2026-10-03": 0,
+                "2026-10-04": 1,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur"
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm"
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd"
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping"
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": null,
+                "2026-09-10": null,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": null,
+                "2026-09-15": 1,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": null,
+                "2026-09-23": null,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": null,
+                "2026-09-27": null,
+                "2026-09-28": null,
+                "2026-09-29": null,
+                "2026-09-30": null,
+                "2026-10-01": 1,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": null,
+                "2026-10-06": 1,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung"
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes"
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear"
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping"
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette"
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit"
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung"
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen"
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML",
+              "pageviews": {
+                "2026-09-08": 32,
+                "2026-09-09": 28,
+                "2026-09-10": 23,
+                "2026-09-11": 14,
+                "2026-09-12": 11,
+                "2026-09-13": 11,
+                "2026-09-14": 26,
+                "2026-09-15": 17,
+                "2026-09-16": 24,
+                "2026-09-17": 21,
+                "2026-09-18": 17,
+                "2026-09-19": 12,
+                "2026-09-20": 3,
+                "2026-09-21": 15,
+                "2026-09-22": 16,
+                "2026-09-23": 16,
+                "2026-09-24": 17,
+                "2026-09-25": 17,
+                "2026-09-26": 3,
+                "2026-09-27": 5,
+                "2026-09-28": 29,
+                "2026-09-29": 29,
+                "2026-09-30": 21,
+                "2026-10-01": 13,
+                "2026-10-02": 20,
+                "2026-10-03": 9,
+                "2026-10-04": 8,
+                "2026-10-05": 15,
+                "2026-10-06": 21,
+                "2026-10-07": 17
+              }
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint"
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE"
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP"
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Ursache-Wirkungs-Modellierung",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)"
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 9,
+                "2026-09-10": 2,
+                "2026-09-11": 3,
+                "2026-09-12": 5,
+                "2026-09-13": 4,
+                "2026-09-14": 11,
+                "2026-09-15": 7,
+                "2026-09-16": 10,
+                "2026-09-17": 10,
+                "2026-09-18": 10,
+                "2026-09-19": 4,
+                "2026-09-20": 2,
+                "2026-09-21": 4,
+                "2026-09-22": 3,
+                "2026-09-23": 9,
+                "2026-09-24": 6,
+                "2026-09-25": 3,
+                "2026-09-26": 5,
+                "2026-09-27": 2,
+                "2026-09-28": 10,
+                "2026-09-29": 8,
+                "2026-09-30": 14,
+                "2026-10-01": 7,
+                "2026-10-02": 3,
+                "2026-10-03": 2,
+                "2026-10-04": 2,
+                "2026-10-05": 3,
+                "2026-10-06": 10,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM"
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 1,
+                "2026-09-10": 2,
+                "2026-09-11": 0,
+                "2026-09-12": 2,
+                "2026-09-13": 2,
+                "2026-09-14": 3,
+                "2026-09-15": 3,
+                "2026-09-16": 6,
+                "2026-09-17": 4,
+                "2026-09-18": 5,
+                "2026-09-19": 1,
+                "2026-09-20": 4,
+                "2026-09-21": 5,
+                "2026-09-22": 2,
+                "2026-09-23": 2,
+                "2026-09-24": 4,
+                "2026-09-25": 0,
+                "2026-09-26": 4,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": 6,
+                "2026-09-30": 2,
+                "2026-10-01": 8,
+                "2026-10-02": 2,
+                "2026-10-03": 2,
+                "2026-10-04": 3,
+                "2026-10-05": 2,
+                "2026-10-06": 7,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 0,
+                "2026-09-10": null,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 2,
+                "2026-09-18": null,
+                "2026-09-19": 2,
+                "2026-09-20": 1,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 2,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": 1,
+                "2026-09-27": 2,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 0,
+                "2026-10-01": null,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 1,
+                "2026-10-05": 2,
+                "2026-10-06": 1,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)"
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki"
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind"
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping"
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte"
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart"
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor"
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse"
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm"
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind"
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)"
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik"
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox"
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView"
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur"
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm"
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd"
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 0,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": 0,
+                "2026-09-13": 1,
+                "2026-09-14": 2,
+                "2026-09-15": 2,
+                "2026-09-16": null,
+                "2026-09-17": 1,
+                "2026-09-18": 3,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 1,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 2,
+                "2026-09-29": 0,
+                "2026-09-30": 0,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff"
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung"
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 8,
+                "2026-09-10": 15,
+                "2026-09-11": 10,
+                "2026-09-12": 11,
+                "2026-09-13": 18,
+                "2026-09-14": 28,
+                "2026-09-15": 18,
+                "2026-09-16": 15,
+                "2026-09-17": 19,
+                "2026-09-18": 20,
+                "2026-09-19": 11,
+                "2026-09-20": 7,
+                "2026-09-21": 24,
+                "2026-09-22": 27,
+                "2026-09-23": 19,
+                "2026-09-24": 18,
+                "2026-09-25": 15,
+                "2026-09-26": 11,
+                "2026-09-27": 10,
+                "2026-09-28": 17,
+                "2026-09-29": 21,
+                "2026-09-30": 15,
+                "2026-10-01": 15,
+                "2026-10-02": 16,
+                "2026-10-03": 7,
+                "2026-10-04": 10,
+                "2026-10-05": 17,
+                "2026-10-06": 16,
+                "2026-10-07": 14
+              }
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear"
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping"
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette"
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit"
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung"
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen"
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML"
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint"
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE"
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP"
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Zenkit",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)"
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel"
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM"
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung"
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe"
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)"
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 2,
+                "2026-09-10": 4,
+                "2026-09-11": 2,
+                "2026-09-12": 4,
+                "2026-09-13": 0,
+                "2026-09-14": 6,
+                "2026-09-15": null,
+                "2026-09-16": 5,
+                "2026-09-17": 4,
+                "2026-09-18": 6,
+                "2026-09-19": 1,
+                "2026-09-20": 9,
+                "2026-09-21": 10,
+                "2026-09-22": 2,
+                "2026-09-23": 0,
+                "2026-09-24": 6,
+                "2026-09-25": 6,
+                "2026-09-26": 14,
+                "2026-09-27": 6,
+                "2026-09-28": 23,
+                "2026-09-29": 10,
+                "2026-09-30": 4,
+                "2026-10-01": 16,
+                "2026-10-02": 12,
+                "2026-10-03": 10,
+                "2026-10-04": 11,
+                "2026-10-05": 36,
+                "2026-10-06": 3,
+                "2026-10-07": 18
+              }
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind"
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping"
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 5,
+                "2026-09-10": 4,
+                "2026-09-11": 4,
+                "2026-09-12": 0,
+                "2026-09-13": 2,
+                "2026-09-14": 6,
+                "2026-09-15": 2,
+                "2026-09-16": 10,
+                "2026-09-17": 5,
+                "2026-09-18": 11,
+                "2026-09-19": 3,
+                "2026-09-20": 1,
+                "2026-09-21": 3,
+                "2026-09-22": 4,
+                "2026-09-23": 3,
+                "2026-09-24": 3,
+                "2026-09-25": 3,
+                "2026-09-26": 3,
+                "2026-09-27": 3,
+                "2026-09-28": 4,
+                "2026-09-29": 4,
+                "2026-09-30": 3,
+                "2026-10-01": 12,
+                "2026-10-02": 5,
+                "2026-10-03": 4,
+                "2026-10-04": 4,
+                "2026-10-05": 2,
+                "2026-10-06": 6,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart"
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor"
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse"
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 3,
+                "2026-09-10": 7,
+                "2026-09-11": 1,
+                "2026-09-12": 3,
+                "2026-09-13": 12,
+                "2026-09-14": 1,
+                "2026-09-15": 4,
+                "2026-09-16": 1,
+                "2026-09-17": 3,
+                "2026-09-18": 3,
+                "2026-09-19": 1,
+                "2026-09-20": 6,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 1,
+                "2026-09-24": 2,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": 1,
+                "2026-09-29": 1,
+                "2026-09-30": 3,
+                "2026-10-01": 1,
+                "2026-10-02": 0,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 6,
+                "2026-10-06": 2,
+                "2026-10-07": 13
+              }
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind"
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)"
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik"
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox"
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView"
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur"
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm"
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 10,
+                "2026-09-10": 6,
+                "2026-09-11": 4,
+                "2026-09-12": 0,
+                "2026-09-13": 4,
+                "2026-09-14": 10,
+                "2026-09-15": 8,
+                "2026-09-16": 5,
+                "2026-09-17": 5,
+                "2026-09-18": 4,
+                "2026-09-19": 4,
+                "2026-09-20": 5,
+                "2026-09-21": 6,
+                "2026-09-22": 11,
+                "2026-09-23": 8,
+                "2026-09-24": 10,
+                "2026-09-25": 10,
+                "2026-09-26": 2,
+                "2026-09-27": 3,
+                "2026-09-28": 8,
+                "2026-09-29": 9,
+                "2026-09-30": 4,
+                "2026-10-01": 3,
+                "2026-10-02": 5,
+                "2026-10-03": 6,
+                "2026-10-04": 2,
+                "2026-10-05": 7,
+                "2026-10-06": 6,
+                "2026-10-07": 7
+              }
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping"
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff"
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": null,
+                "2026-09-10": 1,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": 1,
+                "2026-09-14": 3,
+                "2026-09-15": 2,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 1,
+                "2026-09-20": null,
+                "2026-09-21": 1,
+                "2026-09-22": 1,
+                "2026-09-23": null,
+                "2026-09-24": 1,
+                "2026-09-25": 2,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": null,
+                "2026-10-02": 0,
+                "2026-10-03": 2,
+                "2026-10-04": 1,
+                "2026-10-05": null,
+                "2026-10-06": 1,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes"
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 11,
+                "2026-09-10": 8,
+                "2026-09-11": 9,
+                "2026-09-12": 2,
+                "2026-09-13": 5,
+                "2026-09-14": 11,
+                "2026-09-15": 5,
+                "2026-09-16": 3,
+                "2026-09-17": 9,
+                "2026-09-18": 9,
+                "2026-09-19": 2,
+                "2026-09-20": 3,
+                "2026-09-21": 8,
+                "2026-09-22": 7,
+                "2026-09-23": 4,
+                "2026-09-24": 9,
+                "2026-09-25": 17,
+                "2026-09-26": 2,
+                "2026-09-27": 2,
+                "2026-09-28": 6,
+                "2026-09-29": 6,
+                "2026-09-30": 6,
+                "2026-10-01": 6,
+                "2026-10-02": 7,
+                "2026-10-03": 1,
+                "2026-10-04": 4,
+                "2026-10-05": 11,
+                "2026-10-06": 9,
+                "2026-10-07": 6
+              }
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear"
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping"
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": null,
+                "2026-09-10": 6,
+                "2026-09-11": 3,
+                "2026-09-12": null,
+                "2026-09-13": null,
+                "2026-09-14": 2,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 3,
+                "2026-09-18": 1,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 1,
+                "2026-09-22": 3,
+                "2026-09-23": 1,
+                "2026-09-24": 2,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 1,
+                "2026-10-01": 4,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit"
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung"
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen"
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML"
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint"
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE"
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP"
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie"
+            }
+          ]
+        }
+      },
+      {
+        "batchcomplete": true,
+        "query": {
+          "pages": [
+            {
+              "pageid": 74729,
+              "ns": 0,
+              "title": "Elaboration (Psychologie)"
+            },
+            {
+              "pageid": 99755,
+              "ns": 0,
+              "title": "Spickzettel"
+            },
+            {
+              "pageid": 334978,
+              "ns": 0,
+              "title": "FCM"
+            },
+            {
+              "pageid": 350022,
+              "ns": 0,
+              "title": "Sekundärforschung"
+            },
+            {
+              "pageid": 550309,
+              "ns": 0,
+              "title": "Semantische Nähe"
+            },
+            {
+              "pageid": 681304,
+              "ns": 0,
+              "title": "Cluster (Kreatives Schreiben)"
+            },
+            {
+              "pageid": 741232,
+              "ns": 0,
+              "title": "WikkaWiki"
+            },
+            {
+              "pageid": 797459,
+              "ns": 0,
+              "title": "FreeMind"
+            },
+            {
+              "pageid": 829070,
+              "ns": 0,
+              "title": "Mapping"
+            },
+            {
+              "pageid": 886040,
+              "ns": 0,
+              "title": "Wissenslandkarte"
+            },
+            {
+              "pageid": 944382,
+              "ns": 0,
+              "title": "Flipchart"
+            },
+            {
+              "pageid": 960212,
+              "ns": 0,
+              "title": "Ontologie-Editor"
+            },
+            {
+              "pageid": 1116948,
+              "ns": 0,
+              "title": "Produktlinienanalyse"
+            },
+            {
+              "pageid": 1415412,
+              "ns": 0,
+              "title": "Visualisierungsprogramm"
+            },
+            {
+              "pageid": 1617623,
+              "ns": 0,
+              "title": "Mind"
+            },
+            {
+              "pageid": 2505742,
+              "ns": 0,
+              "title": "Das Netz (2004)"
+            },
+            {
+              "pageid": 3039513,
+              "ns": 0,
+              "title": "Lehrtechnik"
+            },
+            {
+              "pageid": 3305175,
+              "ns": 0,
+              "title": "InLoox"
+            },
+            {
+              "pageid": 3606701,
+              "ns": 0,
+              "title": "MindView"
+            },
+            {
+              "pageid": 4504511,
+              "ns": 0,
+              "title": "Mappeur"
+            },
+            {
+              "pageid": 4868745,
+              "ns": 0,
+              "title": "Assoziogramm"
+            },
+            {
+              "pageid": 5565311,
+              "ns": 0,
+              "title": "YEd"
+            },
+            {
+              "pageid": 5786377,
+              "ns": 0,
+              "title": "SciPlore MindMapping"
+            },
+            {
+              "pageid": 6746355,
+              "ns": 0,
+              "title": "Mogens Kirckhoff"
+            },
+            {
+              "pageid": 6813987,
+              "ns": 0,
+              "title": "Ursache-Wirkungs-Modellierung"
+            },
+            {
+              "pageid": 7177107,
+              "ns": 0,
+              "title": "Sketchnotes"
+            },
+            {
+              "pageid": 7278003,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 7926458,
+              "ns": 0,
+              "title": "Docear"
+            },
+            {
+              "pageid": 8390473,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 8439374,
+              "ns": 0,
+              "title": "IMapping"
+            },
+            {
+              "pageid": 8930604,
+              "ns": 0,
+              "title": "Wissensstafette"
+            },
+            {
+              "pageid": 10473501,
+              "ns": 0,
+              "title": "Zenkit",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 3,
+                "2026-09-10": 2,
+                "2026-09-11": 7,
+                "2026-09-12": 3,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 5,
+                "2026-09-16": 3,
+                "2026-09-17": 3,
+                "2026-09-18": 1,
+                "2026-09-19": 2,
+                "2026-09-20": 4,
+                "2026-09-21": 5,
+                "2026-09-22": 2,
+                "2026-09-23": 6,
+                "2026-09-24": 3,
+                "2026-09-25": 2,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 2,
+                "2026-09-29": 6,
+                "2026-09-30": 2,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 4,
+                "2026-10-05": 6,
+                "2026-10-06": 6,
+                "2026-10-07": 3
+              }
+            },
+            {
+              "pageid": 11922496,
+              "ns": 0,
+              "title": "Freie Strukturierung"
+            },
+            {
+              "pageid": 11964807,
+              "ns": 0,
+              "title": "Google Zeichnungen"
+            },
+            {
+              "pageid": 12258341,
+              "ns": 0,
+              "title": "PlantUML"
+            },
+            {
+              "pageid": 12721359,
+              "ns": 0,
+              "title": "Fokussprint"
+            },
+            {
+              "pageid": 13268469,
+              "ns": 0,
+              "title": "ConceptDraw OFFICE"
+            },
+            {
+              "pageid": 13272591,
+              "ns": 0,
+              "title": "ConceptDraw MINDMAP"
+            },
+            {
+              "pageid": 13723947,
+              "ns": 0,
+              "title": "Dual-Coding-Theorie"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

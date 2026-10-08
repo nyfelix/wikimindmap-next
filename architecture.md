@@ -72,7 +72,7 @@ Every URL below is built in `src/sources/`. The `{lang}` is the Wikipedia langua
 | Page views (M5) | `action=query&prop=pageviews&titles=…&pvipdays=30&redirects=1` | 50 titles per request, **one batch at a time** (parallel requests get HTTP 429, found in TS-14); sum the daily values. Follow `pvipcontinue`: one response fills only part of a 50-title batch. |
 | Wikidata IDs (M5) | `action=query&prop=pageprops&ppprop=wikibase_item&titles=…` | 50 per request |
 | Entity types (M5) | `https://query.wikidata.org/sparql?format=json&query=SELECT ?item ?class WHERE { VALUES ?item { wd:Q… } ?item wdt:P31 ?class }` | P31 (instance of) only, 50 items per query, one query at a time; CORS allows `Api-User-Agent`. Map each class to a kind with `lenses/kindMap.json`. Owner decision in M5: `wbgetentities&props=claims` returns every statement (~4 MB per 50 items). |
-| Incoming links (M6) | `action=query&list=backlinks&blnamespace=0&blfilterredir=nonredirects&bltitle=…&bllimit=500` | Page through the results up to a cap of 2,000 and show "2,000+" beyond that |
+| Incoming links (M6) | `action=query&generator=backlinks&gbltitle=…&gblnamespace=0&gblfilterredir=nonredirects&gblredirect=1&gbllimit=500&prop=info` | Page through the results up to a cap of 2,000 and show "2,000+" beyond that. `gblredirect=1` adds pages that link through a redirect (Mind map: ~60 of ~500); the redirect pages themselves are dropped, and pages listed twice are merged. `prop=info` gives each page's length, which ranks the list (found in TS-15): page views for 2,000 titles would take 100+ requests and get HTTP 429, so only the 100 longest get page views. |
 
 ### Why Parsoid HTML, not wikitext or the rendered page
 

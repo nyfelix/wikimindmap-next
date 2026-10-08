@@ -7,10 +7,11 @@
  *   npm run fixtures -- --linksback-only   re-checks linksback.json for the recorded pages
  *   npm run fixtures -- --languages        records sitematrix.json (all Wikipedias, US-09)
  *   npm run fixtures -- --kinds-only       records pageviews.json and wikidata.json (M5)
+ *   npm run fixtures -- --linkshere-only   records linkshere.json (M6)
  *
  * Writes, per article: page.html, headers.json, summary.json, redirects.json, linksback.json,
  * and per language: siteinfo.json. With --fallback also fallback.json (TS-07). Enrichments for later milestones
- * (linksback, pageviews, wikidata, linkshere) are added by their stories.
+ * (linksback, pageviews, wikidata, linkshere) are recorded with the flags above.
  */
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -19,6 +20,12 @@ import { pageHtmlUrl, titleFromPageUrl } from "../src/sources/article.ts";
 import { API_USER_AGENT, actionUrl, createHttpClient } from "../src/sources/http.ts";
 import { loadFallback } from "../src/sources/parseFallback.ts";
 import { fetchPageviews } from "../src/sources/pageviews.ts";
+import {
+  CANDIDATES,
+  fetchLinksHere,
+  parseLinksHere,
+  type BacklinksPages,
+} from "../src/sources/linksHere.ts";
 import { fetchWikidata } from "../src/sources/wikidata.ts";
 import { parseParsoid } from "../src/sources/parsoid.ts";
 import { centerRedirects, linksBack } from "../src/sources/linksBack.ts";
@@ -220,6 +227,59 @@ async function recordKindsAll() {
   }
 }
 
+/** Keeps only the fields parseLinksHere reads: prop=info has a dozen more per page. */
+function slimBacklinks(pages: BacklinksPages): BacklinksPages {
+  return {
+    ...pages,
+    responses: pages.responses.map((r) => ({
+      ...(r.continue ? { continue: r.continue } : {}),
+      query: {
+        pages: (r.query?.pages ?? []).map(({ title, ns, redirect, length }) => ({
+          title,
+          ...(ns !== undefined ? { ns } : {}),
+          ...(redirect ? { redirect } : {}),
+          ...(length !== undefined ? { length } : {}),
+        })),
+      },
+    })),
+  };
+}
+
+/**
+ * Incoming links (TS-15) as raw responses, and the raw page views of the longest CANDIDATES
+ * linking articles, which the Links lens ranks by views.
+ */
+async function recordLinksHereAll() {
+  const langs = (await readdir(ROOT, { withFileTypes: true })).filter((d) => d.isDirectory());
+  for (const { name: lang } of langs) {
+    for (const entry of await readdir(join(ROOT, lang), { withFileTypes: true })) {
+      if (!entry.isDirectory()) continue;
+      const dir = join(ROOT, lang, entry.name);
+      // Resumable: a fixture with the file is done.
+      const done = await readFile(join(dir, "linkshere.json")).then(
+        () => true,
+        () => false,
+      );
+      if (done) continue;
+      const title = entry.name.replaceAll("_", " ");
+      for (let attempt = 1; ; attempt++) {
+        try {
+          const pages = await fetchLinksHere(lang, title, http);
+          const here = parseLinksHere(pages);
+          const pageviews = await fetchPageviews(lang, here.titles.slice(0, CANDIDATES), http);
+          await writeJson(join(dir, "linkshere.json"), { ...slimBacklinks(pages), pageviews });
+          console.log(`${lang}:${title}  ${here.total}${here.capped ? "+" : ""} link here`);
+          break;
+        } catch (error) {
+          if (attempt === 3) throw error;
+          console.log(`${lang}:${title}  attempt ${attempt} failed, waiting 30 s`);
+          await new Promise((wait) => setTimeout(wait, 30_000));
+        }
+      }
+    }
+  }
+}
+
 /** The site matrix: every Wikipedia language, for the language picker. */
 async function recordLanguages() {
   const { data } = await http.getJson(
@@ -266,6 +326,7 @@ async function main() {
   if (all[0] === "--linksback-only") return relinkAll();
   if (all[0] === "--languages") return recordLanguages();
   if (all[0] === "--kinds-only") return recordKindsAll();
+  if (all[0] === "--linkshere-only") return recordLinksHereAll();
   const fallback = all.includes("--fallback");
   const [first, second, ...rest] = all.filter((a) => a !== "--fallback");
   const jobs: [string, string][] =

@@ -76,10 +76,6 @@ Preview: `concepts/lens-kinds.html`
 
 Preview: `concepts/lens-links.html`
 
-### TS-15 Incoming links source · S
-- [ ] `sources/linksHere.ts` uses `list=backlinks` in namespace 0 without redirects, pages up to a cap of 2,000, and reports `total` and `capped`
-- [ ] Links coming only from navigation boxes are excluded where they can be detected (optional, noted if not feasible)
-
 ### US-15 See where a topic comes from and leads to · M
 *As a student, I want to see which articles point to this one and which it points to, so I understand its context.*
 - [ ] `layouts/bipolar.ts`: incoming links on the left, outgoing on the right, both-way links as pills in a band on top, with arrows showing direction
@@ -437,3 +433,9 @@ A design decision made together with the owner, before any map is rendered.
 - [x] `lens=` is in the URL, and the trail records the lens used for each step
 
 > Note: Switching lenses replaces the URL (no new trail step) and resets folds, which are per lens. Each lens shows its map labels the first time it is opened.
+
+### TS-15 Incoming links source · S · M6
+- [x] `sources/linksHere.ts` uses `list=backlinks` in namespace 0 without redirects, pages up to a cap of 2,000, and reports `total` and `capped`
+- [x] Links coming only from navigation boxes are excluded where they can be detected (optional, noted if not feasible)
+
+> Note: It uses `generator=backlinks` with `gblredirect=1` and `prop=info`: pages linking through a redirect ("Mind-map") count too, redirect pages are dropped and duplicates merged, and each page's length comes free. Page views for 2,000 titles would take 100+ requests and got HTTP 429 in the spike, so the list is ordered longest first and only the 100 longest get page views (owner decision). Navigation-box-only links aren't excluded: telling them apart would mean loading every linking page; not feasible. Fixtures: `npm run fixtures -- --linkshere-only` (only the fields the parser reads are kept).

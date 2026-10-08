@@ -133,7 +133,7 @@ export interface KindInfo {
 }
 
 export interface LinksHere {
-  /** Articles linking here (namespace 0, no redirects). */
+  /** Articles linking here (namespace 0, no redirect pages, also through a redirect), longest first. */
   titles: Title[];
   /** Counted up to the cap. */
   total: number;

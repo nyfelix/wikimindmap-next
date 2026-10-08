@@ -121,7 +121,7 @@ interface KindInfo {
 }
 
 interface LinksHere {
-  titles: Title[];             // articles linking here (namespace 0, no redirects)
+  titles: Title[];             // articles linking here (namespace 0, no redirect pages, also through a redirect), longest first
   total: number;               // counted up to the cap
   capped: boolean;             // true → show "2,000+"
 }
@@ -312,12 +312,14 @@ tests/fixtures/{lang}/{Title}/     {Title} with underscores, after redirects (en
                      Chapters lens can show (all links, See also on), and those that link back
   pageviews.json     { titles, responses }: raw prop=pageviews responses for every checked leaf (M5)
   wikidata.json      { titles, pageprops, sparql }: QIDs and P31 per checked leaf (M5)
-  linkshere.json     (M6)
+  linkshere.json     { center, responses, more, pageviews }: raw generator=backlinks responses (only
+                     title, ns, redirect, length kept), whether pages remained past the cap, and the
+                     raw page views of the 100 longest linking articles (M6)
 tests/fixtures/{lang}/siteinfo.json   meta=siteinfo: general, namespaces, namespacealiases
 tests/fixtures/sitematrix.json       action=sitematrix on meta.wikimedia.org: every Wikipedia (US-09)
 ```
 
-Record with `npm run fixtures -- <lang> "<Title>"` (add `--fallback` for `fallback.json`), or `npm run fixtures -- --starter` for the whole set below.
+Record with `npm run fixtures -- <lang> "<Title>"` (add `--fallback` for `fallback.json`), or `npm run fixtures -- --starter` for the whole set below. `--kinds-only` and `--linkshere-only` add the enrichments of M5 and M6 to every recorded article.
 
 Starter set, recorded in M0:
 - **en:** Mind map, Tony Buzan, Concept map, Zürich, Albert Einstein, Photosynthesis, World War II, Python (programming language), Chess, Mount Everest

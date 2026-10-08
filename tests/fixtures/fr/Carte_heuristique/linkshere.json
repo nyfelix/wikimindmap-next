@@ -1,0 +1,6007 @@
+{
+  "center": "Carte heuristique",
+  "responses": [
+    {
+      "query": {
+        "pages": [
+          {
+            "title": "Hypertext Transfer Protocol",
+            "ns": 0,
+            "length": 25721
+          },
+          {
+            "title": "Liste de logiciels libres",
+            "ns": 0,
+            "length": 50517
+          },
+          {
+            "title": "Logiciel libre",
+            "ns": 0,
+            "length": 94842
+          },
+          {
+            "title": "Frise chronologique",
+            "ns": 0,
+            "length": 12515
+          },
+          {
+            "title": "Uniform Resource Locator",
+            "ns": 0,
+            "length": 26933
+          },
+          {
+            "title": "Uniform Resource Identifier",
+            "ns": 0,
+            "length": 8890
+          },
+          {
+            "title": "Unicode",
+            "ns": 0,
+            "length": 181841
+          },
+          {
+            "title": "Extensible Markup Language",
+            "ns": 0,
+            "length": 72664
+          },
+          {
+            "title": "World Wide Web",
+            "ns": 0,
+            "length": 71876
+          },
+          {
+            "title": "Intelligence collective",
+            "ns": 0,
+            "length": 53092
+          },
+          {
+            "title": "Réseau",
+            "ns": 0,
+            "length": 16777
+          },
+          {
+            "title": "Représentation des connaissances",
+            "ns": 0,
+            "length": 6338
+          },
+          {
+            "title": "XML Schema",
+            "ns": 0,
+            "length": 11150
+          },
+          {
+            "title": "Infographie",
+            "ns": 0,
+            "length": 20466
+          },
+          {
+            "title": "Habitat (écologie)",
+            "ns": 0,
+            "length": 51000
+          },
+          {
+            "title": "Management de la créativité",
+            "ns": 0,
+            "length": 14640
+          },
+          {
+            "title": "Gestion des connaissances",
+            "ns": 0,
+            "length": 79427
+          },
+          {
+            "title": "Apprentissage automatique",
+            "ns": 0,
+            "length": 110186
+          },
+          {
+            "title": "Mnémotechnique",
+            "ns": 0,
+            "length": 28887
+          },
+          {
+            "title": "Systématique",
+            "ns": 0,
+            "length": 9215
+          },
+          {
+            "title": "Anneau principal",
+            "ns": 0,
+            "length": 21018
+          },
+          {
+            "title": "Diagramme de causes et effets",
+            "ns": 0,
+            "length": 4189
+          },
+          {
+            "title": "Liste d'extensions de fichiers",
+            "ns": 0,
+            "length": 71029
+          },
+          {
+            "title": "Open Database Connectivity",
+            "ns": 0,
+            "length": 9896
+          },
+          {
+            "title": "Diagramme",
+            "ns": 0,
+            "length": 9844
+          },
+          {
+            "title": "Ontologie (informatique)",
+            "ns": 0,
+            "length": 30150
+          },
+          {
+            "title": "Heuristique (homonymie)",
+            "ns": 0,
+            "length": 2370
+          },
+          {
+            "title": "Appel d'offres",
+            "ns": 0,
+            "length": 21432
+          },
+          {
+            "title": "Resource Description Framework",
+            "ns": 0,
+            "length": 21568
+          },
+          {
+            "title": "Web sémantique",
+            "ns": 0,
+            "length": 59235
+          },
+          {
+            "title": "Framasoft",
+            "ns": 0,
+            "length": 48791
+          },
+          {
+            "title": "Analogie",
+            "ns": 0,
+            "length": 19071
+          },
+          {
+            "title": "Mind mapping",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Mindmapping",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Mind map",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Mindmap",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Veille technologique",
+            "ns": 0,
+            "length": 17457
+          },
+          {
+            "title": "Hippocampe (cerveau)",
+            "ns": 0,
+            "length": 66482
+          },
+          {
+            "title": "Carte",
+            "ns": 0,
+            "length": 9814
+          },
+          {
+            "title": "Taxonomie",
+            "ns": 0,
+            "length": 57697
+          },
+          {
+            "title": "Web Ontology Language",
+            "ns": 0,
+            "length": 13857
+          },
+          {
+            "title": "Wikimedia Commons",
+            "ns": 0,
+            "length": 24311
+          },
+          {
+            "title": "Internationalized Resource Identifier",
+            "ns": 0,
+            "length": 2328
+          },
+          {
+            "title": "FOAF",
+            "ns": 0,
+            "length": 2808
+          },
+          {
+            "title": "Apple Bonjour",
+            "ns": 0,
+            "length": 3741
+          },
+          {
+            "title": "Littératie",
+            "ns": 0,
+            "length": 57148
+          },
+          {
+            "title": "Créativité",
+            "ns": 0,
+            "length": 95927
+          },
+          {
+            "title": "Gestion mentale",
+            "ns": 0,
+            "length": 9646
+          },
+          {
+            "title": "Tableau blanc interactif",
+            "ns": 0,
+            "length": 30732
+          },
+          {
+            "title": "Agent intelligent",
+            "ns": 0,
+            "length": 22418
+          },
+          {
+            "title": "Getting Things Done",
+            "ns": 0,
+            "length": 3801
+          },
+          {
+            "title": "Résolution de problème",
+            "ns": 0,
+            "length": 8358
+          },
+          {
+            "title": "Web 2.0",
+            "ns": 0,
+            "length": 42664
+          },
+          {
+            "title": "Microformat",
+            "ns": 0,
+            "length": 16901
+          },
+          {
+            "title": "Folksonomie",
+            "ns": 0,
+            "length": 8517
+          },
+          {
+            "title": "Dublin Core",
+            "ns": 0,
+            "length": 19138
+          },
+          {
+            "title": "Application composite",
+            "ns": 0,
+            "length": 9925
+          },
+          {
+            "title": "Réseau sémantique",
+            "ns": 0,
+            "length": 10418
+          },
+          {
+            "title": "Graphe conceptuel",
+            "ns": 0,
+            "length": 5718
+          },
+          {
+            "title": "Ingénierie pédagogique",
+            "ns": 0,
+            "length": 17130
+          },
+          {
+            "title": "Plateforme de travail collaboratif",
+            "ns": 0,
+            "length": 10078
+          },
+          {
+            "title": "Système de politique positive",
+            "ns": 0,
+            "length": 2029
+          },
+          {
+            "title": "Apprentissage",
+            "ns": 0,
+            "length": 40154
+          },
+          {
+            "title": "Carte des idées",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Schéma conceptuel",
+            "ns": 0,
+            "length": 10169
+          },
+          {
+            "title": "Arbre des causes",
+            "ns": 0,
+            "length": 15399
+          },
+          {
+            "title": "Tony Buzan",
+            "ns": 0,
+            "length": 6106
+          },
+          {
+            "title": "Base de connaissance",
+            "ns": 0,
+            "length": 3324
+          },
+          {
+            "title": "FreeMind",
+            "ns": 0,
+            "length": 3235
+          },
+          {
+            "title": "Référence (programmation)",
+            "ns": 0,
+            "length": 3284
+          },
+          {
+            "title": "Wiki sémantique",
+            "ns": 0,
+            "length": 2522
+          },
+          {
+            "title": "Manta (genre)",
+            "ns": 0,
+            "length": 60383
+          },
+          {
+            "title": "PLF",
+            "ns": 0,
+            "length": 1209
+          },
+          {
+            "title": "Prise de notes",
+            "ns": 0,
+            "length": 4110
+          },
+          {
+            "title": "RDF Schema",
+            "ns": 0,
+            "length": 6145
+          },
+          {
+            "title": "SPARQL",
+            "ns": 0,
+            "length": 11375
+          },
+          {
+            "title": "PlanFacile",
+            "ns": 0,
+            "length": 7842
+          },
+          {
+            "title": "Lecture rapide",
+            "ns": 0,
+            "length": 17882
+          },
+          {
+            "title": "Liste des services en ligne de Google",
+            "ns": 0,
+            "length": 20877
+          },
+          {
+            "title": "Cas d'utilisation",
+            "ns": 0,
+            "length": 34143
+          },
+          {
+            "title": "Liste de logiciels KDE",
+            "ns": 0,
+            "length": 7392
+          },
+          {
+            "title": "Gilles Balmet",
+            "ns": 0,
+            "length": 17330
+          },
+          {
+            "title": "Logigramme",
+            "ns": 0,
+            "length": 3763
+          },
+          {
+            "title": "Schéma de classification",
+            "ns": 0,
+            "length": 3616
+          },
+          {
+            "title": "Carte mentale",
+            "ns": 0,
+            "length": 9266
+          },
+          {
+            "title": "RDFa",
+            "ns": 0,
+            "length": 5877
+          },
+          {
+            "title": "Logiciel graphique",
+            "ns": 0,
+            "length": 4029
+          },
+          {
+            "title": "Éditeur d'image vectorielle",
+            "ns": 0,
+            "length": 4364
+          },
+          {
+            "title": "Cartographie sémantique",
+            "ns": 0,
+            "length": 1097
+          },
+          {
+            "title": "HTML5",
+            "ns": 0,
+            "length": 25501
+          },
+          {
+            "title": "Clé de détermination",
+            "ns": 0,
+            "length": 9758
+          },
+          {
+            "title": "Gleaning Resource Descriptions from Dialects of Languages",
+            "ns": 0,
+            "length": 1891
+          },
+          {
+            "title": "Carte Heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Text Encoding Initiative",
+            "ns": 0,
+            "length": 37295
+          },
+          {
+            "title": "Semantic Web Rule Language",
+            "ns": 0,
+            "length": 4355
+          },
+          {
+            "title": "Arbres heuristiques",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Arbre heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 30
+          },
+          {
+            "title": "Idéateur (informatique)",
+            "ns": 0,
+            "length": 7139
+          },
+          {
+            "title": "MindManager",
+            "ns": 0,
+            "length": 1916
+          },
+          {
+            "title": "DBpedia",
+            "ns": 0,
+            "length": 17171
+          },
+          {
+            "title": "Arbre de connaissances",
+            "ns": 0,
+            "length": 15096
+          },
+          {
+            "title": "Dessin assisté par ordinateur",
+            "ns": 0,
+            "length": 5556
+          },
+          {
+            "title": "StarUML",
+            "ns": 0,
+            "length": 10171
+          },
+          {
+            "title": "Freeplane",
+            "ns": 0,
+            "length": 8044
+          },
+          {
+            "title": "Dendrogramme",
+            "ns": 0,
+            "length": 2851
+          },
+          {
+            "title": "Stratégie nationale pour la biodiversité (France)",
+            "ns": 0,
+            "length": 72045
+          },
+          {
+            "title": "Cartographie heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 33
+          },
+          {
+            "title": "Graphe heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 33
+          },
+          {
+            "title": "TouchGraph",
+            "ns": 0,
+            "length": 5346
+          },
+          {
+            "title": "Arborescences heuristiques",
+            "ns": 0,
+            "redirect": true,
+            "length": 33
+          },
+          {
+            "title": "Extraction de connaissances",
+            "ns": 0,
+            "length": 3091
+          },
+          {
+            "title": "Webinaire",
+            "ns": 0,
+            "length": 4146
+          },
+          {
+            "title": "Arborescence heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 34
+          },
+          {
+            "title": "Cartes heuristiques",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "KartOO",
+            "ns": 0,
+            "length": 4751
+          },
+          {
+            "title": "Microdonnée",
+            "ns": 0,
+            "length": 6785
+          },
+          {
+            "title": "Schéma heuristique",
+            "ns": 0,
+            "redirect": true,
+            "length": 31
+          },
+          {
+            "title": "Recherche sémantique",
+            "ns": 0,
+            "length": 3684
+          },
+          {
+            "title": "Données ouvertes",
+            "ns": 0,
+            "length": 57228
+          },
+          {
+            "title": "Web des données",
+            "ns": 0,
+            "length": 8220
+          },
+          {
+            "title": "Simple Knowledge Organization System",
+            "ns": 0,
+            "length": 22683
+          },
+          {
+            "title": "Notation3",
+            "ns": 0,
+            "length": 3299
+          },
+          {
+            "title": "Turtle (syntaxe)",
+            "ns": 0,
+            "length": 1660
+          },
+          {
+            "title": "Rule Interchange Format",
+            "ns": 0,
+            "length": 6861
+          },
+          {
+            "title": "Triplestore",
+            "ns": 0,
+            "length": 8096
+          },
+          {
+            "title": "Semantic Web Stack",
+            "ns": 0,
+            "length": 4753
+          },
+          {
+            "title": "Données ouvertes en France",
+            "ns": 0,
+            "length": 26595
+          },
+          {
+            "title": "Cartographie d'information",
+            "ns": 0,
+            "length": 6776
+          },
+          {
+            "title": "Calligra Suite",
+            "ns": 0,
+            "length": 2871
+          },
+          {
+            "title": "Lucidchart",
+            "ns": 0,
+            "length": 3065
+          },
+          {
+            "title": "Schema.org",
+            "ns": 0,
+            "length": 5120
+          },
+          {
+            "title": "Graphe Global Géant",
+            "ns": 0,
+            "length": 4808
+          },
+          {
+            "title": "Profil générique sémantique",
+            "ns": 0,
+            "length": 2404
+          },
+          {
+            "title": "Cellule de lieu",
+            "ns": 0,
+            "length": 52070
+          },
+          {
+            "title": "Mémoire spatiale",
+            "ns": 0,
+            "length": 7324
+          },
+          {
+            "title": "Représentation graphique",
+            "ns": 0,
+            "length": 10636
+          },
+          {
+            "title": "Rizzoma",
+            "ns": 0,
+            "length": 8530
+          },
+          {
+            "title": "Heuristique (mathématiques)",
+            "ns": 0,
+            "length": 9292
+          },
+          {
+            "title": "Carte cognitive",
+            "ns": 0,
+            "redirect": true,
+            "length": 34
+          },
+          {
+            "title": "Zéro déchet",
+            "ns": 0,
+            "length": 34772
+          },
+          {
+            "title": "Linked open data",
+            "ns": 0,
+            "length": 12244
+          },
+          {
+            "title": "Métaclasse (web sémantique)",
+            "ns": 0,
+            "length": 12440
+          },
+          {
+            "title": "Intelligence du cheval",
+            "ns": 0,
+            "length": 169284
+          },
+          {
+            "title": "Objet exceptionnel",
+            "ns": 0,
+            "length": 17577
+          },
+          {
+            "title": "RDFa Lite",
+            "ns": 0,
+            "length": 1811
+          },
+          {
+            "title": "Hypertext Transfer Protocol/2",
+            "ns": 0,
+            "length": 33170
+          },
+          {
+            "title": "Google Drawings",
+            "ns": 0,
+            "length": 4817
+          },
+          {
+            "title": "Fair data",
+            "ns": 0,
+            "length": 24596
+          },
+          {
+            "title": "Eider (base de données)",
+            "ns": 0,
+            "length": 2944
+          },
+          {
+            "title": "Docear",
+            "ns": 0,
+            "length": 5436
+          },
+          {
+            "title": "JSON-LD",
+            "ns": 0,
+            "length": 13810
+          },
+          {
+            "title": "Socle interministériel des logiciels libres",
+            "ns": 0,
+            "length": 16500
+          },
+          {
+            "title": "Solid (projet de web décentralisé)",
+            "ns": 0,
+            "length": 13410
+          },
+          {
+            "title": "Internet Resource Locator",
+            "ns": 0,
+            "length": 2087
+          },
+          {
+            "title": "Contract Net Protocol",
+            "ns": 0,
+            "length": 10282
+          },
+          {
+            "title": "Mindomo",
+            "ns": 0,
+            "length": 5843
+          },
+          {
+            "title": "RDF/XML",
+            "ns": 0,
+            "length": 1698
+          },
+          {
+            "title": "Webmention",
+            "ns": 0,
+            "length": 3104
+          },
+          {
+            "title": "Organigramme (schéma logique)",
+            "ns": 0,
+            "length": 2388
+          },
+          {
+            "title": "Intégration de chemin",
+            "ns": 0,
+            "length": 14843
+          },
+          {
+            "title": "Samer Peerachai",
+            "ns": 0,
+            "length": 2655
+          },
+          {
+            "title": "Une tête bien faite",
+            "ns": 0,
+            "length": 3505
+          },
+          {
+            "title": "NGSI-LD",
+            "ns": 0,
+            "length": 23144
+          },
+          {
+            "title": "N-Triplets",
+            "ns": 0,
+            "length": 8175
+          },
+          {
+            "title": "Langage TriG.",
+            "ns": 0,
+            "length": 2458
+          },
+          {
+            "title": "XMind",
+            "ns": 0,
+            "length": 8193
+          },
+          {
+            "title": "PlantUML",
+            "ns": 0,
+            "length": 5738
+          },
+          {
+            "title": "Logiciel d'étude",
+            "ns": 0,
+            "length": 9262
+          },
+          {
+            "title": "Espace conceptuel",
+            "ns": 0,
+            "length": 28818
+          },
+          {
+            "title": "Intelligence artificielle agentique",
+            "ns": 0,
+            "length": 101555
+          },
+          {
+            "title": "Dossier argumenté de sûreté",
+            "ns": 0,
+            "length": 60039
+          },
+          {
+            "title": "Notation de structuration des objectifs",
+            "ns": 0,
+            "length": 7780
+          }
+        ]
+      }
+    }
+  ],
+  "more": false,
+  "pageviews": {
+    "titles": [
+      "Unicode",
+      "Intelligence du cheval",
+      "Apprentissage automatique",
+      "Intelligence artificielle agentique",
+      "Créativité",
+      "Logiciel libre",
+      "Gestion des connaissances",
+      "Extensible Markup Language",
+      "Stratégie nationale pour la biodiversité (France)",
+      "World Wide Web",
+      "Liste d'extensions de fichiers",
+      "Hippocampe (cerveau)",
+      "Manta (genre)",
+      "Dossier argumenté de sûreté",
+      "Web sémantique",
+      "Taxonomie",
+      "Données ouvertes",
+      "Littératie",
+      "Intelligence collective",
+      "Cellule de lieu",
+      "Habitat (écologie)",
+      "Liste de logiciels libres",
+      "Framasoft",
+      "Web 2.0",
+      "Apprentissage",
+      "Text Encoding Initiative",
+      "Zéro déchet",
+      "Cas d'utilisation",
+      "Hypertext Transfer Protocol/2",
+      "Tableau blanc interactif",
+      "Ontologie (informatique)",
+      "Mnémotechnique",
+      "Espace conceptuel",
+      "Uniform Resource Locator",
+      "Données ouvertes en France",
+      "Hypertext Transfer Protocol",
+      "HTML5",
+      "Fair data",
+      "Wikimedia Commons",
+      "NGSI-LD",
+      "Simple Knowledge Organization System",
+      "Agent intelligent",
+      "Resource Description Framework",
+      "Appel d'offres",
+      "Anneau principal",
+      "Liste des services en ligne de Google",
+      "Infographie",
+      "Dublin Core",
+      "Analogie",
+      "Lecture rapide",
+      "Objet exceptionnel",
+      "Veille technologique",
+      "Gilles Balmet",
+      "DBpedia",
+      "Ingénierie pédagogique",
+      "Microformat",
+      "Réseau",
+      "Socle interministériel des logiciels libres",
+      "Arbre des causes",
+      "Arbre de connaissances",
+      "Intégration de chemin",
+      "Management de la créativité",
+      "Web Ontology Language",
+      "JSON-LD",
+      "Solid (projet de web décentralisé)",
+      "Frise chronologique",
+      "Métaclasse (web sémantique)",
+      "Linked open data",
+      "SPARQL",
+      "XML Schema",
+      "Représentation graphique",
+      "Réseau sémantique",
+      "Contract Net Protocol",
+      "StarUML",
+      "Schéma conceptuel",
+      "Plateforme de travail collaboratif",
+      "Application composite",
+      "Open Database Connectivity",
+      "Diagramme",
+      "Carte",
+      "Clé de détermination",
+      "Gestion mentale",
+      "Heuristique (mathématiques)",
+      "Carte mentale",
+      "Logiciel d'étude",
+      "Systématique",
+      "Uniform Resource Identifier",
+      "Rizzoma",
+      "Folksonomie",
+      "Résolution de problème",
+      "Web des données",
+      "XMind",
+      "N-Triplets",
+      "Triplestore",
+      "Freeplane",
+      "PlanFacile",
+      "Notation de structuration des objectifs",
+      "Liste de logiciels KDE",
+      "Mémoire spatiale",
+      "Idéateur (informatique)"
+    ],
+    "responses": [
+      {
+        "continue": {
+          "pvipcontinue": "Liste_de_logiciels_libres",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 1385,
+              "ns": 0,
+              "title": "Hypertext Transfer Protocol",
+              "pageviews": {
+                "2026-09-08": 88,
+                "2026-09-09": 74,
+                "2026-09-10": 87,
+                "2026-09-11": 110,
+                "2026-09-12": 48,
+                "2026-09-13": 38,
+                "2026-09-14": 116,
+                "2026-09-15": 87,
+                "2026-09-16": 84,
+                "2026-09-17": 77,
+                "2026-09-18": 91,
+                "2026-09-19": 57,
+                "2026-09-20": 49,
+                "2026-09-21": 144,
+                "2026-09-22": 107,
+                "2026-09-23": 101,
+                "2026-09-24": 80,
+                "2026-09-25": 60,
+                "2026-09-26": 57,
+                "2026-09-27": 57,
+                "2026-09-28": 95,
+                "2026-09-29": 78,
+                "2026-09-30": 90,
+                "2026-10-01": 66,
+                "2026-10-02": 72,
+                "2026-10-03": 54,
+                "2026-10-04": 50,
+                "2026-10-05": 85,
+                "2026-10-06": 64,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 1783,
+              "ns": 0,
+              "title": "Liste de logiciels libres"
+            },
+            {
+              "pageid": 1789,
+              "ns": 0,
+              "title": "Logiciel libre"
+            },
+            {
+              "pageid": 3100,
+              "ns": 0,
+              "title": "Uniform Resource Locator"
+            },
+            {
+              "pageid": 3106,
+              "ns": 0,
+              "title": "Unicode"
+            },
+            {
+              "pageid": 3332,
+              "ns": 0,
+              "title": "Extensible Markup Language",
+              "pageviews": {
+                "2026-09-08": 54,
+                "2026-09-09": 39,
+                "2026-09-10": 59,
+                "2026-09-11": 58,
+                "2026-09-12": 32,
+                "2026-09-13": 31,
+                "2026-09-14": 57,
+                "2026-09-15": 66,
+                "2026-09-16": 70,
+                "2026-09-17": 59,
+                "2026-09-18": 50,
+                "2026-09-19": 41,
+                "2026-09-20": 32,
+                "2026-09-21": 68,
+                "2026-09-22": 62,
+                "2026-09-23": 68,
+                "2026-09-24": 75,
+                "2026-09-25": 47,
+                "2026-09-26": 37,
+                "2026-09-27": 31,
+                "2026-09-28": 59,
+                "2026-09-29": 55,
+                "2026-09-30": 56,
+                "2026-10-01": 49,
+                "2026-10-02": 43,
+                "2026-10-03": 26,
+                "2026-10-04": 29,
+                "2026-10-05": 55,
+                "2026-10-06": 44,
+                "2026-10-07": 48
+              }
+            },
+            {
+              "pageid": 4768,
+              "ns": 0,
+              "title": "World Wide Web"
+            },
+            {
+              "pageid": 8248,
+              "ns": 0,
+              "title": "Intelligence collective",
+              "pageviews": {
+                "2026-09-08": 23,
+                "2026-09-09": 15,
+                "2026-09-10": 22,
+                "2026-09-11": 16,
+                "2026-09-12": 17,
+                "2026-09-13": 20,
+                "2026-09-14": 27,
+                "2026-09-15": 23,
+                "2026-09-16": 32,
+                "2026-09-17": 23,
+                "2026-09-18": 26,
+                "2026-09-19": 10,
+                "2026-09-20": 17,
+                "2026-09-21": 34,
+                "2026-09-22": 25,
+                "2026-09-23": 24,
+                "2026-09-24": 22,
+                "2026-09-25": 13,
+                "2026-09-26": 16,
+                "2026-09-27": 13,
+                "2026-09-28": 25,
+                "2026-09-29": 18,
+                "2026-09-30": 24,
+                "2026-10-01": 30,
+                "2026-10-02": 19,
+                "2026-10-03": 14,
+                "2026-10-04": 8,
+                "2026-10-05": 19,
+                "2026-10-06": 19,
+                "2026-10-07": 26
+              }
+            },
+            {
+              "pageid": 26758,
+              "ns": 0,
+              "title": "Infographie",
+              "pageviews": {
+                "2026-09-08": 60,
+                "2026-09-09": 54,
+                "2026-09-10": 56,
+                "2026-09-11": 44,
+                "2026-09-12": 51,
+                "2026-09-13": 63,
+                "2026-09-14": 65,
+                "2026-09-15": 64,
+                "2026-09-16": 69,
+                "2026-09-17": 49,
+                "2026-09-18": 64,
+                "2026-09-19": 43,
+                "2026-09-20": 55,
+                "2026-09-21": 74,
+                "2026-09-22": 85,
+                "2026-09-23": 69,
+                "2026-09-24": 61,
+                "2026-09-25": 54,
+                "2026-09-26": 39,
+                "2026-09-27": 52,
+                "2026-09-28": 49,
+                "2026-09-29": 62,
+                "2026-09-30": 55,
+                "2026-10-01": 43,
+                "2026-10-02": 46,
+                "2026-10-03": 33,
+                "2026-10-04": 44,
+                "2026-10-05": 64,
+                "2026-10-06": 56,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 28547,
+              "ns": 0,
+              "title": "Habitat (écologie)",
+              "pageviews": {
+                "2026-09-08": 19,
+                "2026-09-09": 19,
+                "2026-09-10": 25,
+                "2026-09-11": 20,
+                "2026-09-12": 18,
+                "2026-09-13": 20,
+                "2026-09-14": 25,
+                "2026-09-15": 17,
+                "2026-09-16": 20,
+                "2026-09-17": 21,
+                "2026-09-18": 13,
+                "2026-09-19": 19,
+                "2026-09-20": 19,
+                "2026-09-21": 33,
+                "2026-09-22": 34,
+                "2026-09-23": 35,
+                "2026-09-24": 19,
+                "2026-09-25": 18,
+                "2026-09-26": 13,
+                "2026-09-27": 21,
+                "2026-09-28": 25,
+                "2026-09-29": 35,
+                "2026-09-30": 15,
+                "2026-10-01": 6,
+                "2026-10-02": 12,
+                "2026-10-03": 9,
+                "2026-10-04": 9,
+                "2026-10-05": 13,
+                "2026-10-06": 13,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 29417,
+              "ns": 0,
+              "title": "Gestion des connaissances",
+              "pageviews": {
+                "2026-09-08": 14,
+                "2026-09-09": 16,
+                "2026-09-10": 17,
+                "2026-09-11": 11,
+                "2026-09-12": 11,
+                "2026-09-13": 13,
+                "2026-09-14": 18,
+                "2026-09-15": 9,
+                "2026-09-16": 24,
+                "2026-09-17": 18,
+                "2026-09-18": 10,
+                "2026-09-19": 10,
+                "2026-09-20": 18,
+                "2026-09-21": 28,
+                "2026-09-22": 19,
+                "2026-09-23": 23,
+                "2026-09-24": 22,
+                "2026-09-25": 19,
+                "2026-09-26": 14,
+                "2026-09-27": 14,
+                "2026-09-28": 17,
+                "2026-09-29": 24,
+                "2026-09-30": 15,
+                "2026-10-01": 18,
+                "2026-10-02": 14,
+                "2026-10-03": 5,
+                "2026-10-04": 8,
+                "2026-10-05": 21,
+                "2026-10-06": 11,
+                "2026-10-07": 17
+              }
+            },
+            {
+              "pageid": 31947,
+              "ns": 0,
+              "title": "Apprentissage automatique",
+              "pageviews": {
+                "2026-09-08": 184,
+                "2026-09-09": 166,
+                "2026-09-10": 182,
+                "2026-09-11": 139,
+                "2026-09-12": 112,
+                "2026-09-13": 123,
+                "2026-09-14": 179,
+                "2026-09-15": 151,
+                "2026-09-16": 159,
+                "2026-09-17": 153,
+                "2026-09-18": 128,
+                "2026-09-19": 93,
+                "2026-09-20": 98,
+                "2026-09-21": 137,
+                "2026-09-22": 182,
+                "2026-09-23": 182,
+                "2026-09-24": 163,
+                "2026-09-25": 153,
+                "2026-09-26": 100,
+                "2026-09-27": 98,
+                "2026-09-28": 183,
+                "2026-09-29": 163,
+                "2026-09-30": 119,
+                "2026-10-01": 153,
+                "2026-10-02": 187,
+                "2026-10-03": 118,
+                "2026-10-04": 98,
+                "2026-10-05": 107,
+                "2026-10-06": 135,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 32874,
+              "ns": 0,
+              "title": "Mnémotechnique"
+            },
+            {
+              "pageid": 40272,
+              "ns": 0,
+              "title": "Anneau principal",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 11,
+                "2026-09-10": 21,
+                "2026-09-11": 12,
+                "2026-09-12": 8,
+                "2026-09-13": 13,
+                "2026-09-14": 20,
+                "2026-09-15": 7,
+                "2026-09-16": 8,
+                "2026-09-17": 11,
+                "2026-09-18": 12,
+                "2026-09-19": 7,
+                "2026-09-20": 11,
+                "2026-09-21": 15,
+                "2026-09-22": 16,
+                "2026-09-23": 14,
+                "2026-09-24": 15,
+                "2026-09-25": 16,
+                "2026-09-26": 8,
+                "2026-09-27": 14,
+                "2026-09-28": 10,
+                "2026-09-29": 15,
+                "2026-09-30": 19,
+                "2026-10-01": 7,
+                "2026-10-02": 19,
+                "2026-10-03": 2,
+                "2026-10-04": 9,
+                "2026-10-05": 9,
+                "2026-10-06": 9,
+                "2026-10-07": 21
+              }
+            },
+            {
+              "pageid": 45590,
+              "ns": 0,
+              "title": "Liste d'extensions de fichiers",
+              "pageviews": {
+                "2026-09-08": 30,
+                "2026-09-09": 33,
+                "2026-09-10": 57,
+                "2026-09-11": 25,
+                "2026-09-12": 31,
+                "2026-09-13": 19,
+                "2026-09-14": 25,
+                "2026-09-15": 49,
+                "2026-09-16": 55,
+                "2026-09-17": 49,
+                "2026-09-18": 27,
+                "2026-09-19": 27,
+                "2026-09-20": 19,
+                "2026-09-21": 52,
+                "2026-09-22": 106,
+                "2026-09-23": 79,
+                "2026-09-24": 92,
+                "2026-09-25": 40,
+                "2026-09-26": 19,
+                "2026-09-27": 26,
+                "2026-09-28": 29,
+                "2026-09-29": 23,
+                "2026-09-30": 50,
+                "2026-10-01": 39,
+                "2026-10-02": 40,
+                "2026-10-03": 24,
+                "2026-10-04": 11,
+                "2026-10-05": 40,
+                "2026-10-06": 27,
+                "2026-10-07": 41
+              }
+            },
+            {
+              "pageid": 72707,
+              "ns": 0,
+              "title": "Ontologie (informatique)"
+            },
+            {
+              "pageid": 104616,
+              "ns": 0,
+              "title": "Appel d'offres",
+              "pageviews": {
+                "2026-09-08": 22,
+                "2026-09-09": 24,
+                "2026-09-10": 24,
+                "2026-09-11": 22,
+                "2026-09-12": 11,
+                "2026-09-13": 12,
+                "2026-09-14": 21,
+                "2026-09-15": 8,
+                "2026-09-16": 19,
+                "2026-09-17": 23,
+                "2026-09-18": 23,
+                "2026-09-19": 5,
+                "2026-09-20": 14,
+                "2026-09-21": 18,
+                "2026-09-22": 27,
+                "2026-09-23": 22,
+                "2026-09-24": 25,
+                "2026-09-25": 15,
+                "2026-09-26": 19,
+                "2026-09-27": 8,
+                "2026-09-28": 16,
+                "2026-09-29": 21,
+                "2026-09-30": 14,
+                "2026-10-01": 21,
+                "2026-10-02": 18,
+                "2026-10-03": 11,
+                "2026-10-04": 7,
+                "2026-10-05": 22,
+                "2026-10-06": 11,
+                "2026-10-07": 20
+              }
+            },
+            {
+              "pageid": 105296,
+              "ns": 0,
+              "title": "Resource Description Framework"
+            },
+            {
+              "pageid": 108140,
+              "ns": 0,
+              "title": "Web sémantique"
+            },
+            {
+              "pageid": 113082,
+              "ns": 0,
+              "title": "Framasoft",
+              "pageviews": {
+                "2026-09-08": 33,
+                "2026-09-09": 40,
+                "2026-09-10": 43,
+                "2026-09-11": 41,
+                "2026-09-12": 34,
+                "2026-09-13": 34,
+                "2026-09-14": 53,
+                "2026-09-15": 38,
+                "2026-09-16": 55,
+                "2026-09-17": 47,
+                "2026-09-18": 26,
+                "2026-09-19": 22,
+                "2026-09-20": 23,
+                "2026-09-21": 46,
+                "2026-09-22": 28,
+                "2026-09-23": 46,
+                "2026-09-24": 46,
+                "2026-09-25": 39,
+                "2026-09-26": 24,
+                "2026-09-27": 13,
+                "2026-09-28": 43,
+                "2026-09-29": 52,
+                "2026-09-30": 36,
+                "2026-10-01": 27,
+                "2026-10-02": 31,
+                "2026-10-03": 21,
+                "2026-10-04": 34,
+                "2026-10-05": 35,
+                "2026-10-06": 25,
+                "2026-10-07": 37
+              }
+            },
+            {
+              "pageid": 115811,
+              "ns": 0,
+              "title": "Analogie",
+              "pageviews": {
+                "2026-09-08": 41,
+                "2026-09-09": 46,
+                "2026-09-10": 39,
+                "2026-09-11": 33,
+                "2026-09-12": 39,
+                "2026-09-13": 43,
+                "2026-09-14": 37,
+                "2026-09-15": 29,
+                "2026-09-16": 43,
+                "2026-09-17": 38,
+                "2026-09-18": 52,
+                "2026-09-19": 35,
+                "2026-09-20": 31,
+                "2026-09-21": 38,
+                "2026-09-22": 35,
+                "2026-09-23": 43,
+                "2026-09-24": 31,
+                "2026-09-25": 58,
+                "2026-09-26": 41,
+                "2026-09-27": 32,
+                "2026-09-28": 36,
+                "2026-09-29": 41,
+                "2026-09-30": 38,
+                "2026-10-01": 41,
+                "2026-10-02": 31,
+                "2026-10-03": 34,
+                "2026-10-04": 29,
+                "2026-10-05": 33,
+                "2026-10-06": 36,
+                "2026-10-07": 49
+              }
+            },
+            {
+              "pageid": 125032,
+              "ns": 0,
+              "title": "Hippocampe (cerveau)",
+              "pageviews": {
+                "2026-09-08": 94,
+                "2026-09-09": 121,
+                "2026-09-10": 105,
+                "2026-09-11": 105,
+                "2026-09-12": 106,
+                "2026-09-13": 109,
+                "2026-09-14": 83,
+                "2026-09-15": 111,
+                "2026-09-16": 111,
+                "2026-09-17": 96,
+                "2026-09-18": 88,
+                "2026-09-19": 80,
+                "2026-09-20": 102,
+                "2026-09-21": 116,
+                "2026-09-22": 136,
+                "2026-09-23": 162,
+                "2026-09-24": 142,
+                "2026-09-25": 120,
+                "2026-09-26": 126,
+                "2026-09-27": 132,
+                "2026-09-28": 130,
+                "2026-09-29": 126,
+                "2026-09-30": 133,
+                "2026-10-01": 134,
+                "2026-10-02": 104,
+                "2026-10-03": 105,
+                "2026-10-04": 128,
+                "2026-10-05": 139,
+                "2026-10-06": 134,
+                "2026-10-07": 108
+              }
+            },
+            {
+              "pageid": 129866,
+              "ns": 0,
+              "title": "Taxonomie"
+            },
+            {
+              "pageid": 139359,
+              "ns": 0,
+              "title": "Wikimedia Commons"
+            },
+            {
+              "pageid": 202415,
+              "ns": 0,
+              "title": "Littératie"
+            },
+            {
+              "pageid": 212286,
+              "ns": 0,
+              "title": "Créativité",
+              "pageviews": {
+                "2026-09-08": 39,
+                "2026-09-09": 40,
+                "2026-09-10": 41,
+                "2026-09-11": 36,
+                "2026-09-12": 46,
+                "2026-09-13": 27,
+                "2026-09-14": 33,
+                "2026-09-15": 48,
+                "2026-09-16": 24,
+                "2026-09-17": 37,
+                "2026-09-18": 27,
+                "2026-09-19": 22,
+                "2026-09-20": 29,
+                "2026-09-21": 56,
+                "2026-09-22": 42,
+                "2026-09-23": 46,
+                "2026-09-24": 31,
+                "2026-09-25": 30,
+                "2026-09-26": 27,
+                "2026-09-27": 41,
+                "2026-09-28": 22,
+                "2026-09-29": 26,
+                "2026-09-30": 31,
+                "2026-10-01": 35,
+                "2026-10-02": 26,
+                "2026-10-03": 25,
+                "2026-10-04": 22,
+                "2026-10-05": 33,
+                "2026-10-06": 32,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 248272,
+              "ns": 0,
+              "title": "Tableau blanc interactif"
+            },
+            {
+              "pageid": 322072,
+              "ns": 0,
+              "title": "Agent intelligent",
+              "pageviews": {
+                "2026-09-08": 37,
+                "2026-09-09": 45,
+                "2026-09-10": 53,
+                "2026-09-11": 38,
+                "2026-09-12": 56,
+                "2026-09-13": 82,
+                "2026-09-14": 68,
+                "2026-09-15": 65,
+                "2026-09-16": 77,
+                "2026-09-17": 55,
+                "2026-09-18": 55,
+                "2026-09-19": 34,
+                "2026-09-20": 39,
+                "2026-09-21": 34,
+                "2026-09-22": 47,
+                "2026-09-23": 39,
+                "2026-09-24": 87,
+                "2026-09-25": 47,
+                "2026-09-26": 44,
+                "2026-09-27": 25,
+                "2026-09-28": 51,
+                "2026-09-29": 51,
+                "2026-09-30": 42,
+                "2026-10-01": 46,
+                "2026-10-02": 33,
+                "2026-10-03": 28,
+                "2026-10-04": 20,
+                "2026-10-05": 36,
+                "2026-10-06": 48,
+                "2026-10-07": 28
+              }
+            },
+            {
+              "pageid": 399112,
+              "ns": 0,
+              "title": "Web 2.0"
+            },
+            {
+              "pageid": 424421,
+              "ns": 0,
+              "title": "Dublin Core",
+              "pageviews": {
+                "2026-09-08": 16,
+                "2026-09-09": 20,
+                "2026-09-10": 26,
+                "2026-09-11": 18,
+                "2026-09-12": 7,
+                "2026-09-13": 7,
+                "2026-09-14": 13,
+                "2026-09-15": 12,
+                "2026-09-16": 16,
+                "2026-09-17": 15,
+                "2026-09-18": 14,
+                "2026-09-19": 11,
+                "2026-09-20": 9,
+                "2026-09-21": 11,
+                "2026-09-22": 12,
+                "2026-09-23": 26,
+                "2026-09-24": 12,
+                "2026-09-25": 12,
+                "2026-09-26": 13,
+                "2026-09-27": 12,
+                "2026-09-28": 17,
+                "2026-09-29": 17,
+                "2026-09-30": 10,
+                "2026-10-01": 11,
+                "2026-10-02": 8,
+                "2026-10-03": 6,
+                "2026-10-04": 3,
+                "2026-10-05": 14,
+                "2026-10-06": 18,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 714685,
+              "ns": 0,
+              "title": "Apprentissage",
+              "pageviews": {
+                "2026-09-08": 36,
+                "2026-09-09": 48,
+                "2026-09-10": 41,
+                "2026-09-11": 55,
+                "2026-09-12": 30,
+                "2026-09-13": 19,
+                "2026-09-14": 43,
+                "2026-09-15": 50,
+                "2026-09-16": 30,
+                "2026-09-17": 40,
+                "2026-09-18": 46,
+                "2026-09-19": 28,
+                "2026-09-20": 22,
+                "2026-09-21": 39,
+                "2026-09-22": 62,
+                "2026-09-23": 34,
+                "2026-09-24": 48,
+                "2026-09-25": 36,
+                "2026-09-26": 34,
+                "2026-09-27": 23,
+                "2026-09-28": 50,
+                "2026-09-29": 58,
+                "2026-09-30": 32,
+                "2026-10-01": 27,
+                "2026-10-02": 46,
+                "2026-10-03": 28,
+                "2026-10-04": 22,
+                "2026-10-05": 27,
+                "2026-10-06": 37,
+                "2026-10-07": 39
+              }
+            },
+            {
+              "pageid": 1078641,
+              "ns": 0,
+              "title": "Manta (genre)"
+            },
+            {
+              "pageid": 1270862,
+              "ns": 0,
+              "title": "Lecture rapide",
+              "pageviews": {
+                "2026-09-08": 12,
+                "2026-09-09": 7,
+                "2026-09-10": 19,
+                "2026-09-11": 11,
+                "2026-09-12": 10,
+                "2026-09-13": 5,
+                "2026-09-14": 7,
+                "2026-09-15": 9,
+                "2026-09-16": 7,
+                "2026-09-17": 8,
+                "2026-09-18": 11,
+                "2026-09-19": 7,
+                "2026-09-20": 3,
+                "2026-09-21": 9,
+                "2026-09-22": 15,
+                "2026-09-23": 7,
+                "2026-09-24": 25,
+                "2026-09-25": 11,
+                "2026-09-26": 4,
+                "2026-09-27": 3,
+                "2026-09-28": 21,
+                "2026-09-29": 14,
+                "2026-09-30": 24,
+                "2026-10-01": 15,
+                "2026-10-02": 16,
+                "2026-10-03": 4,
+                "2026-10-04": 12,
+                "2026-10-05": 15,
+                "2026-10-06": 17,
+                "2026-10-07": 15
+              }
+            },
+            {
+              "pageid": 1311370,
+              "ns": 0,
+              "title": "Liste des services en ligne de Google"
+            },
+            {
+              "pageid": 1352382,
+              "ns": 0,
+              "title": "Cas d'utilisation",
+              "pageviews": {
+                "2026-09-08": 18,
+                "2026-09-09": 15,
+                "2026-09-10": 20,
+                "2026-09-11": 3,
+                "2026-09-12": 3,
+                "2026-09-13": 7,
+                "2026-09-14": 14,
+                "2026-09-15": 17,
+                "2026-09-16": 24,
+                "2026-09-17": 21,
+                "2026-09-18": 15,
+                "2026-09-19": 5,
+                "2026-09-20": 3,
+                "2026-09-21": 17,
+                "2026-09-22": 17,
+                "2026-09-23": 18,
+                "2026-09-24": 11,
+                "2026-09-25": 17,
+                "2026-09-26": 4,
+                "2026-09-27": 9,
+                "2026-09-28": 21,
+                "2026-09-29": 17,
+                "2026-09-30": 10,
+                "2026-10-01": 12,
+                "2026-10-02": 13,
+                "2026-10-03": 7,
+                "2026-10-04": 5,
+                "2026-10-05": 10,
+                "2026-10-06": 16,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 1817024,
+              "ns": 0,
+              "title": "HTML5",
+              "pageviews": {
+                "2026-09-08": 36,
+                "2026-09-09": 32,
+                "2026-09-10": 32,
+                "2026-09-11": 45,
+                "2026-09-12": 26,
+                "2026-09-13": 43,
+                "2026-09-14": 58,
+                "2026-09-15": 67,
+                "2026-09-16": 39,
+                "2026-09-17": 30,
+                "2026-09-18": 31,
+                "2026-09-19": 28,
+                "2026-09-20": 25,
+                "2026-09-21": 52,
+                "2026-09-22": 59,
+                "2026-09-23": 48,
+                "2026-09-24": 36,
+                "2026-09-25": 35,
+                "2026-09-26": 55,
+                "2026-09-27": 34,
+                "2026-09-28": 61,
+                "2026-09-29": 74,
+                "2026-09-30": 66,
+                "2026-10-01": 42,
+                "2026-10-02": 44,
+                "2026-10-03": 29,
+                "2026-10-04": 33,
+                "2026-10-05": 39,
+                "2026-10-06": 22,
+                "2026-10-07": 39
+              }
+            },
+            {
+              "pageid": 2247300,
+              "ns": 0,
+              "title": "Text Encoding Initiative"
+            },
+            {
+              "pageid": 3920946,
+              "ns": 0,
+              "title": "Stratégie nationale pour la biodiversité (France)"
+            },
+            {
+              "pageid": 5477826,
+              "ns": 0,
+              "title": "Données ouvertes",
+              "pageviews": {
+                "2026-09-08": 13,
+                "2026-09-09": 27,
+                "2026-09-10": 24,
+                "2026-09-11": 69,
+                "2026-09-12": 23,
+                "2026-09-13": 25,
+                "2026-09-14": 47,
+                "2026-09-15": 80,
+                "2026-09-16": 62,
+                "2026-09-17": 44,
+                "2026-09-18": 100,
+                "2026-09-19": 36,
+                "2026-09-20": 37,
+                "2026-09-21": 50,
+                "2026-09-22": 32,
+                "2026-09-23": 60,
+                "2026-09-24": 28,
+                "2026-09-25": 25,
+                "2026-09-26": 9,
+                "2026-09-27": 14,
+                "2026-09-28": 28,
+                "2026-09-29": 40,
+                "2026-09-30": 15,
+                "2026-10-01": 21,
+                "2026-10-02": 16,
+                "2026-10-03": 8,
+                "2026-10-04": 12,
+                "2026-10-05": 23,
+                "2026-10-06": 18,
+                "2026-10-07": 38
+              }
+            },
+            {
+              "pageid": 5515920,
+              "ns": 0,
+              "title": "Simple Knowledge Organization System"
+            },
+            {
+              "pageid": 5936601,
+              "ns": 0,
+              "title": "Données ouvertes en France",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 0,
+                "2026-09-10": 1,
+                "2026-09-11": 1,
+                "2026-09-12": 2,
+                "2026-09-13": 3,
+                "2026-09-14": 4,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 1,
+                "2026-09-18": 2,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 3,
+                "2026-09-22": 1,
+                "2026-09-23": 3,
+                "2026-09-24": 5,
+                "2026-09-25": 4,
+                "2026-09-26": 3,
+                "2026-09-27": 0,
+                "2026-09-28": 2,
+                "2026-09-29": 2,
+                "2026-09-30": null,
+                "2026-10-01": 2,
+                "2026-10-02": 2,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 3,
+                "2026-10-06": 3,
+                "2026-10-07": 3
+              }
+            },
+            {
+              "pageid": 6468172,
+              "ns": 0,
+              "title": "Cellule de lieu",
+              "pageviews": {
+                "2026-09-08": 9,
+                "2026-09-09": 7,
+                "2026-09-10": 7,
+                "2026-09-11": 11,
+                "2026-09-12": 8,
+                "2026-09-13": 5,
+                "2026-09-14": 1,
+                "2026-09-15": 5,
+                "2026-09-16": 1,
+                "2026-09-17": 2,
+                "2026-09-18": 0,
+                "2026-09-19": 2,
+                "2026-09-20": 9,
+                "2026-09-21": 0,
+                "2026-09-22": 4,
+                "2026-09-23": 0,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 3,
+                "2026-09-27": 1,
+                "2026-09-28": 5,
+                "2026-09-29": 2,
+                "2026-09-30": 3,
+                "2026-10-01": 2,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": 4,
+                "2026-10-05": 2,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 7977817,
+              "ns": 0,
+              "title": "Zéro déchet"
+            },
+            {
+              "pageid": 9162225,
+              "ns": 0,
+              "title": "Intelligence du cheval",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 8,
+                "2026-09-10": 8,
+                "2026-09-11": 12,
+                "2026-09-12": 12,
+                "2026-09-13": 12,
+                "2026-09-14": 10,
+                "2026-09-15": 15,
+                "2026-09-16": 9,
+                "2026-09-17": 17,
+                "2026-09-18": 11,
+                "2026-09-19": 10,
+                "2026-09-20": 7,
+                "2026-09-21": 14,
+                "2026-09-22": 25,
+                "2026-09-23": 18,
+                "2026-09-24": 9,
+                "2026-09-25": 7,
+                "2026-09-26": 16,
+                "2026-09-27": 8,
+                "2026-09-28": 18,
+                "2026-09-29": 1,
+                "2026-09-30": 9,
+                "2026-10-01": 0,
+                "2026-10-02": 4,
+                "2026-10-03": 5,
+                "2026-10-04": 9,
+                "2026-10-05": 9,
+                "2026-10-06": 2,
+                "2026-10-07": 6
+              }
+            },
+            {
+              "pageid": 10329884,
+              "ns": 0,
+              "title": "Hypertext Transfer Protocol/2",
+              "pageviews": {
+                "2026-09-08": 8,
+                "2026-09-09": 10,
+                "2026-09-10": 6,
+                "2026-09-11": 5,
+                "2026-09-12": 4,
+                "2026-09-13": 9,
+                "2026-09-14": 1,
+                "2026-09-15": 11,
+                "2026-09-16": 6,
+                "2026-09-17": 9,
+                "2026-09-18": 6,
+                "2026-09-19": 3,
+                "2026-09-20": 2,
+                "2026-09-21": 10,
+                "2026-09-22": 6,
+                "2026-09-23": 16,
+                "2026-09-24": 8,
+                "2026-09-25": 9,
+                "2026-09-26": 9,
+                "2026-09-27": 2,
+                "2026-09-28": 6,
+                "2026-09-29": 12,
+                "2026-09-30": 10,
+                "2026-10-01": 8,
+                "2026-10-02": 4,
+                "2026-10-03": 6,
+                "2026-10-04": 7,
+                "2026-10-05": 6,
+                "2026-10-06": 7,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 10863786,
+              "ns": 0,
+              "title": "Fair data",
+              "pageviews": {
+                "2026-09-08": 16,
+                "2026-09-09": 18,
+                "2026-09-10": 18,
+                "2026-09-11": 17,
+                "2026-09-12": 4,
+                "2026-09-13": 8,
+                "2026-09-14": 9,
+                "2026-09-15": 12,
+                "2026-09-16": 18,
+                "2026-09-17": 13,
+                "2026-09-18": 13,
+                "2026-09-19": 2,
+                "2026-09-20": 2,
+                "2026-09-21": 20,
+                "2026-09-22": 24,
+                "2026-09-23": 20,
+                "2026-09-24": 14,
+                "2026-09-25": 14,
+                "2026-09-26": 2,
+                "2026-09-27": 9,
+                "2026-09-28": 15,
+                "2026-09-29": 6,
+                "2026-09-30": 13,
+                "2026-10-01": 20,
+                "2026-10-02": 14,
+                "2026-10-03": 5,
+                "2026-10-04": 3,
+                "2026-10-05": 10,
+                "2026-10-06": 11,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 14000380,
+              "ns": 0,
+              "title": "NGSI-LD"
+            },
+            {
+              "pageid": 17143305,
+              "ns": 0,
+              "title": "Espace conceptuel",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 0,
+                "2026-09-10": 1,
+                "2026-09-11": 0,
+                "2026-09-12": 1,
+                "2026-09-13": 2,
+                "2026-09-14": 0,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 1,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": 0,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 2,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": null,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 17325460,
+              "ns": 0,
+              "title": "Intelligence artificielle agentique",
+              "pageviews": {
+                "2026-09-08": 91,
+                "2026-09-09": 112,
+                "2026-09-10": 134,
+                "2026-09-11": 80,
+                "2026-09-12": 74,
+                "2026-09-13": 132,
+                "2026-09-14": 145,
+                "2026-09-15": 142,
+                "2026-09-16": 143,
+                "2026-09-17": 138,
+                "2026-09-18": 78,
+                "2026-09-19": 67,
+                "2026-09-20": 75,
+                "2026-09-21": 90,
+                "2026-09-22": 93,
+                "2026-09-23": 97,
+                "2026-09-24": 107,
+                "2026-09-25": 69,
+                "2026-09-26": 106,
+                "2026-09-27": 81,
+                "2026-09-28": 81,
+                "2026-09-29": 96,
+                "2026-09-30": 87,
+                "2026-10-01": 70,
+                "2026-10-02": 72,
+                "2026-10-03": 46,
+                "2026-10-04": 59,
+                "2026-10-05": 98,
+                "2026-10-06": 86,
+                "2026-10-07": 72
+              }
+            },
+            {
+              "pageid": 17371500,
+              "ns": 0,
+              "title": "Dossier argumenté de sûreté",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 11,
+                "2026-09-10": 7,
+                "2026-09-11": 7,
+                "2026-09-12": 7,
+                "2026-09-13": 5,
+                "2026-09-14": 11,
+                "2026-09-15": 1,
+                "2026-09-16": 4,
+                "2026-09-17": 1,
+                "2026-09-18": 2,
+                "2026-09-19": 0,
+                "2026-09-20": 1,
+                "2026-09-21": 3,
+                "2026-09-22": 6,
+                "2026-09-23": 2,
+                "2026-09-24": 0,
+                "2026-09-25": 2,
+                "2026-09-26": 1,
+                "2026-09-27": 2,
+                "2026-09-28": 2,
+                "2026-09-29": 3,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": 5,
+                "2026-10-03": 0,
+                "2026-10-04": 1,
+                "2026-10-05": 0,
+                "2026-10-06": 2,
+                "2026-10-07": 3
+              }
+            }
+          ]
+        }
+      },
+      {
+        "batchcomplete": true,
+        "query": {
+          "pages": [
+            {
+              "pageid": 1385,
+              "ns": 0,
+              "title": "Hypertext Transfer Protocol"
+            },
+            {
+              "pageid": 1783,
+              "ns": 0,
+              "title": "Liste de logiciels libres",
+              "pageviews": {
+                "2026-09-08": 18,
+                "2026-09-09": 18,
+                "2026-09-10": 19,
+                "2026-09-11": 13,
+                "2026-09-12": 11,
+                "2026-09-13": 17,
+                "2026-09-14": 18,
+                "2026-09-15": 25,
+                "2026-09-16": 27,
+                "2026-09-17": 43,
+                "2026-09-18": 20,
+                "2026-09-19": 15,
+                "2026-09-20": 21,
+                "2026-09-21": 26,
+                "2026-09-22": 33,
+                "2026-09-23": 21,
+                "2026-09-24": 22,
+                "2026-09-25": 22,
+                "2026-09-26": 22,
+                "2026-09-27": 19,
+                "2026-09-28": 30,
+                "2026-09-29": 23,
+                "2026-09-30": 20,
+                "2026-10-01": 20,
+                "2026-10-02": 27,
+                "2026-10-03": 14,
+                "2026-10-04": 28,
+                "2026-10-05": 19,
+                "2026-10-06": 19,
+                "2026-10-07": 20
+              }
+            },
+            {
+              "pageid": 1789,
+              "ns": 0,
+              "title": "Logiciel libre",
+              "pageviews": {
+                "2026-09-08": 113,
+                "2026-09-09": 166,
+                "2026-09-10": 102,
+                "2026-09-11": 125,
+                "2026-09-12": 79,
+                "2026-09-13": 84,
+                "2026-09-14": 121,
+                "2026-09-15": 123,
+                "2026-09-16": 114,
+                "2026-09-17": 116,
+                "2026-09-18": 97,
+                "2026-09-19": 85,
+                "2026-09-20": 77,
+                "2026-09-21": 129,
+                "2026-09-22": 160,
+                "2026-09-23": 134,
+                "2026-09-24": 147,
+                "2026-09-25": 157,
+                "2026-09-26": 93,
+                "2026-09-27": 108,
+                "2026-09-28": 169,
+                "2026-09-29": 167,
+                "2026-09-30": 163,
+                "2026-10-01": 119,
+                "2026-10-02": 120,
+                "2026-10-03": 84,
+                "2026-10-04": 83,
+                "2026-10-05": 106,
+                "2026-10-06": 135,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 3100,
+              "ns": 0,
+              "title": "Uniform Resource Locator",
+              "pageviews": {
+                "2026-09-08": 111,
+                "2026-09-09": 121,
+                "2026-09-10": 101,
+                "2026-09-11": 135,
+                "2026-09-12": 64,
+                "2026-09-13": 73,
+                "2026-09-14": 149,
+                "2026-09-15": 124,
+                "2026-09-16": 95,
+                "2026-09-17": 147,
+                "2026-09-18": 70,
+                "2026-09-19": 74,
+                "2026-09-20": 75,
+                "2026-09-21": 125,
+                "2026-09-22": 101,
+                "2026-09-23": 97,
+                "2026-09-24": 118,
+                "2026-09-25": 86,
+                "2026-09-26": 75,
+                "2026-09-27": 52,
+                "2026-09-28": 125,
+                "2026-09-29": 99,
+                "2026-09-30": 105,
+                "2026-10-01": 97,
+                "2026-10-02": 94,
+                "2026-10-03": 77,
+                "2026-10-04": 80,
+                "2026-10-05": 86,
+                "2026-10-06": 101,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 3106,
+              "ns": 0,
+              "title": "Unicode",
+              "pageviews": {
+                "2026-09-08": 115,
+                "2026-09-09": 85,
+                "2026-09-10": 92,
+                "2026-09-11": 79,
+                "2026-09-12": 48,
+                "2026-09-13": 64,
+                "2026-09-14": 98,
+                "2026-09-15": 110,
+                "2026-09-16": 121,
+                "2026-09-17": 96,
+                "2026-09-18": 109,
+                "2026-09-19": 50,
+                "2026-09-20": 65,
+                "2026-09-21": 103,
+                "2026-09-22": 127,
+                "2026-09-23": 133,
+                "2026-09-24": 103,
+                "2026-09-25": 101,
+                "2026-09-26": 70,
+                "2026-09-27": 80,
+                "2026-09-28": 116,
+                "2026-09-29": 117,
+                "2026-09-30": 108,
+                "2026-10-01": 96,
+                "2026-10-02": 106,
+                "2026-10-03": 79,
+                "2026-10-04": 55,
+                "2026-10-05": 82,
+                "2026-10-06": 81,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 3332,
+              "ns": 0,
+              "title": "Extensible Markup Language"
+            },
+            {
+              "pageid": 4768,
+              "ns": 0,
+              "title": "World Wide Web",
+              "pageviews": {
+                "2026-09-08": 563,
+                "2026-09-09": 500,
+                "2026-09-10": 525,
+                "2026-09-11": 565,
+                "2026-09-12": 455,
+                "2026-09-13": 358,
+                "2026-09-14": 620,
+                "2026-09-15": 532,
+                "2026-09-16": 573,
+                "2026-09-17": 648,
+                "2026-09-18": 618,
+                "2026-09-19": 352,
+                "2026-09-20": 381,
+                "2026-09-21": 570,
+                "2026-09-22": 589,
+                "2026-09-23": 497,
+                "2026-09-24": 537,
+                "2026-09-25": 570,
+                "2026-09-26": 301,
+                "2026-09-27": 360,
+                "2026-09-28": 453,
+                "2026-09-29": 427,
+                "2026-09-30": 431,
+                "2026-10-01": 488,
+                "2026-10-02": 414,
+                "2026-10-03": 287,
+                "2026-10-04": 280,
+                "2026-10-05": 425,
+                "2026-10-06": 483,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 8248,
+              "ns": 0,
+              "title": "Intelligence collective"
+            },
+            {
+              "pageid": 26758,
+              "ns": 0,
+              "title": "Infographie"
+            },
+            {
+              "pageid": 28547,
+              "ns": 0,
+              "title": "Habitat (écologie)"
+            },
+            {
+              "pageid": 29417,
+              "ns": 0,
+              "title": "Gestion des connaissances"
+            },
+            {
+              "pageid": 31947,
+              "ns": 0,
+              "title": "Apprentissage automatique"
+            },
+            {
+              "pageid": 32874,
+              "ns": 0,
+              "title": "Mnémotechnique",
+              "pageviews": {
+                "2026-09-08": 52,
+                "2026-09-09": 46,
+                "2026-09-10": 57,
+                "2026-09-11": 48,
+                "2026-09-12": 34,
+                "2026-09-13": 62,
+                "2026-09-14": 75,
+                "2026-09-15": 48,
+                "2026-09-16": 50,
+                "2026-09-17": 66,
+                "2026-09-18": 42,
+                "2026-09-19": 44,
+                "2026-09-20": 39,
+                "2026-09-21": 41,
+                "2026-09-22": 54,
+                "2026-09-23": 53,
+                "2026-09-24": 42,
+                "2026-09-25": 55,
+                "2026-09-26": 28,
+                "2026-09-27": 38,
+                "2026-09-28": 43,
+                "2026-09-29": 51,
+                "2026-09-30": 50,
+                "2026-10-01": 43,
+                "2026-10-02": 41,
+                "2026-10-03": 30,
+                "2026-10-04": 33,
+                "2026-10-05": 44,
+                "2026-10-06": 54,
+                "2026-10-07": 45
+              }
+            },
+            {
+              "pageid": 40272,
+              "ns": 0,
+              "title": "Anneau principal"
+            },
+            {
+              "pageid": 45590,
+              "ns": 0,
+              "title": "Liste d'extensions de fichiers"
+            },
+            {
+              "pageid": 72707,
+              "ns": 0,
+              "title": "Ontologie (informatique)",
+              "pageviews": {
+                "2026-09-08": 36,
+                "2026-09-09": 53,
+                "2026-09-10": 40,
+                "2026-09-11": 35,
+                "2026-09-12": 22,
+                "2026-09-13": 33,
+                "2026-09-14": 48,
+                "2026-09-15": 58,
+                "2026-09-16": 61,
+                "2026-09-17": 46,
+                "2026-09-18": 66,
+                "2026-09-19": 23,
+                "2026-09-20": 25,
+                "2026-09-21": 48,
+                "2026-09-22": 62,
+                "2026-09-23": 64,
+                "2026-09-24": 67,
+                "2026-09-25": 50,
+                "2026-09-26": 22,
+                "2026-09-27": 17,
+                "2026-09-28": 45,
+                "2026-09-29": 48,
+                "2026-09-30": 59,
+                "2026-10-01": 70,
+                "2026-10-02": 56,
+                "2026-10-03": 31,
+                "2026-10-04": 21,
+                "2026-10-05": 60,
+                "2026-10-06": 68,
+                "2026-10-07": 50
+              }
+            },
+            {
+              "pageid": 104616,
+              "ns": 0,
+              "title": "Appel d'offres"
+            },
+            {
+              "pageid": 105296,
+              "ns": 0,
+              "title": "Resource Description Framework",
+              "pageviews": {
+                "2026-09-08": 27,
+                "2026-09-09": 29,
+                "2026-09-10": 27,
+                "2026-09-11": 22,
+                "2026-09-12": 5,
+                "2026-09-13": 15,
+                "2026-09-14": 24,
+                "2026-09-15": 23,
+                "2026-09-16": 30,
+                "2026-09-17": 19,
+                "2026-09-18": 27,
+                "2026-09-19": 10,
+                "2026-09-20": 14,
+                "2026-09-21": 29,
+                "2026-09-22": 39,
+                "2026-09-23": 32,
+                "2026-09-24": 18,
+                "2026-09-25": 21,
+                "2026-09-26": 9,
+                "2026-09-27": 6,
+                "2026-09-28": 22,
+                "2026-09-29": 37,
+                "2026-09-30": 24,
+                "2026-10-01": 16,
+                "2026-10-02": 14,
+                "2026-10-03": 8,
+                "2026-10-04": 16,
+                "2026-10-05": 18,
+                "2026-10-06": 26,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 108140,
+              "ns": 0,
+              "title": "Web sémantique",
+              "pageviews": {
+                "2026-09-08": 20,
+                "2026-09-09": 20,
+                "2026-09-10": 24,
+                "2026-09-11": 26,
+                "2026-09-12": 23,
+                "2026-09-13": 28,
+                "2026-09-14": 38,
+                "2026-09-15": 31,
+                "2026-09-16": 28,
+                "2026-09-17": 27,
+                "2026-09-18": 33,
+                "2026-09-19": 17,
+                "2026-09-20": 22,
+                "2026-09-21": 45,
+                "2026-09-22": 44,
+                "2026-09-23": 25,
+                "2026-09-24": 31,
+                "2026-09-25": 26,
+                "2026-09-26": 9,
+                "2026-09-27": 18,
+                "2026-09-28": 31,
+                "2026-09-29": 23,
+                "2026-09-30": 32,
+                "2026-10-01": 22,
+                "2026-10-02": 36,
+                "2026-10-03": 10,
+                "2026-10-04": 19,
+                "2026-10-05": 17,
+                "2026-10-06": 25,
+                "2026-10-07": 19
+              }
+            },
+            {
+              "pageid": 113082,
+              "ns": 0,
+              "title": "Framasoft"
+            },
+            {
+              "pageid": 115811,
+              "ns": 0,
+              "title": "Analogie"
+            },
+            {
+              "pageid": 125032,
+              "ns": 0,
+              "title": "Hippocampe (cerveau)"
+            },
+            {
+              "pageid": 129866,
+              "ns": 0,
+              "title": "Taxonomie",
+              "pageviews": {
+                "2026-09-08": 142,
+                "2026-09-09": 132,
+                "2026-09-10": 130,
+                "2026-09-11": 112,
+                "2026-09-12": 101,
+                "2026-09-13": 115,
+                "2026-09-14": 126,
+                "2026-09-15": 134,
+                "2026-09-16": 134,
+                "2026-09-17": 151,
+                "2026-09-18": 97,
+                "2026-09-19": 79,
+                "2026-09-20": 107,
+                "2026-09-21": 132,
+                "2026-09-22": 132,
+                "2026-09-23": 144,
+                "2026-09-24": 127,
+                "2026-09-25": 122,
+                "2026-09-26": 102,
+                "2026-09-27": 88,
+                "2026-09-28": 154,
+                "2026-09-29": 133,
+                "2026-09-30": 134,
+                "2026-10-01": 139,
+                "2026-10-02": 105,
+                "2026-10-03": 77,
+                "2026-10-04": 108,
+                "2026-10-05": 114,
+                "2026-10-06": 127,
+                "2026-10-07": 142
+              }
+            },
+            {
+              "pageid": 139359,
+              "ns": 0,
+              "title": "Wikimedia Commons",
+              "pageviews": {
+                "2026-09-08": 60,
+                "2026-09-09": 46,
+                "2026-09-10": 41,
+                "2026-09-11": 45,
+                "2026-09-12": 42,
+                "2026-09-13": 43,
+                "2026-09-14": 38,
+                "2026-09-15": 51,
+                "2026-09-16": 76,
+                "2026-09-17": 54,
+                "2026-09-18": 69,
+                "2026-09-19": 82,
+                "2026-09-20": 66,
+                "2026-09-21": 79,
+                "2026-09-22": 79,
+                "2026-09-23": 75,
+                "2026-09-24": 84,
+                "2026-09-25": 79,
+                "2026-09-26": 100,
+                "2026-09-27": 70,
+                "2026-09-28": 69,
+                "2026-09-29": 73,
+                "2026-09-30": 76,
+                "2026-10-01": 78,
+                "2026-10-02": 48,
+                "2026-10-03": 44,
+                "2026-10-04": 46,
+                "2026-10-05": 53,
+                "2026-10-06": 57,
+                "2026-10-07": 52
+              }
+            },
+            {
+              "pageid": 202415,
+              "ns": 0,
+              "title": "Littératie",
+              "pageviews": {
+                "2026-09-08": 75,
+                "2026-09-09": 63,
+                "2026-09-10": 78,
+                "2026-09-11": 88,
+                "2026-09-12": 40,
+                "2026-09-13": 44,
+                "2026-09-14": 72,
+                "2026-09-15": 57,
+                "2026-09-16": 50,
+                "2026-09-17": 56,
+                "2026-09-18": 54,
+                "2026-09-19": 28,
+                "2026-09-20": 29,
+                "2026-09-21": 51,
+                "2026-09-22": 72,
+                "2026-09-23": 48,
+                "2026-09-24": 54,
+                "2026-09-25": 36,
+                "2026-09-26": 20,
+                "2026-09-27": 23,
+                "2026-09-28": 47,
+                "2026-09-29": 43,
+                "2026-09-30": 51,
+                "2026-10-01": 28,
+                "2026-10-02": 30,
+                "2026-10-03": 28,
+                "2026-10-04": 29,
+                "2026-10-05": 48,
+                "2026-10-06": 44,
+                "2026-10-07": 52
+              }
+            },
+            {
+              "pageid": 212286,
+              "ns": 0,
+              "title": "Créativité"
+            },
+            {
+              "pageid": 248272,
+              "ns": 0,
+              "title": "Tableau blanc interactif",
+              "pageviews": {
+                "2026-09-08": 18,
+                "2026-09-09": 10,
+                "2026-09-10": 7,
+                "2026-09-11": 10,
+                "2026-09-12": 9,
+                "2026-09-13": 8,
+                "2026-09-14": 22,
+                "2026-09-15": 16,
+                "2026-09-16": 11,
+                "2026-09-17": 17,
+                "2026-09-18": 12,
+                "2026-09-19": 9,
+                "2026-09-20": 9,
+                "2026-09-21": 11,
+                "2026-09-22": 23,
+                "2026-09-23": 13,
+                "2026-09-24": 17,
+                "2026-09-25": 9,
+                "2026-09-26": 11,
+                "2026-09-27": 5,
+                "2026-09-28": 20,
+                "2026-09-29": 12,
+                "2026-09-30": 6,
+                "2026-10-01": 11,
+                "2026-10-02": 20,
+                "2026-10-03": 7,
+                "2026-10-04": 8,
+                "2026-10-05": 12,
+                "2026-10-06": 5,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 322072,
+              "ns": 0,
+              "title": "Agent intelligent"
+            },
+            {
+              "pageid": 399112,
+              "ns": 0,
+              "title": "Web 2.0",
+              "pageviews": {
+                "2026-09-08": 33,
+                "2026-09-09": 23,
+                "2026-09-10": 22,
+                "2026-09-11": 34,
+                "2026-09-12": 17,
+                "2026-09-13": 19,
+                "2026-09-14": 26,
+                "2026-09-15": 36,
+                "2026-09-16": 28,
+                "2026-09-17": 42,
+                "2026-09-18": 36,
+                "2026-09-19": 30,
+                "2026-09-20": 28,
+                "2026-09-21": 24,
+                "2026-09-22": 46,
+                "2026-09-23": 34,
+                "2026-09-24": 44,
+                "2026-09-25": 32,
+                "2026-09-26": 25,
+                "2026-09-27": 23,
+                "2026-09-28": 18,
+                "2026-09-29": 36,
+                "2026-09-30": 34,
+                "2026-10-01": 32,
+                "2026-10-02": 33,
+                "2026-10-03": 28,
+                "2026-10-04": 14,
+                "2026-10-05": 29,
+                "2026-10-06": 30,
+                "2026-10-07": 18
+              }
+            },
+            {
+              "pageid": 424421,
+              "ns": 0,
+              "title": "Dublin Core"
+            },
+            {
+              "pageid": 714685,
+              "ns": 0,
+              "title": "Apprentissage"
+            },
+            {
+              "pageid": 1078641,
+              "ns": 0,
+              "title": "Manta (genre)",
+              "pageviews": {
+                "2026-09-08": 60,
+                "2026-09-09": 66,
+                "2026-09-10": 50,
+                "2026-09-11": 93,
+                "2026-09-12": 95,
+                "2026-09-13": 141,
+                "2026-09-14": 137,
+                "2026-09-15": 92,
+                "2026-09-16": 64,
+                "2026-09-17": 67,
+                "2026-09-18": 64,
+                "2026-09-19": 104,
+                "2026-09-20": 91,
+                "2026-09-21": 84,
+                "2026-09-22": 94,
+                "2026-09-23": 93,
+                "2026-09-24": 71,
+                "2026-09-25": 80,
+                "2026-09-26": 83,
+                "2026-09-27": 91,
+                "2026-09-28": 82,
+                "2026-09-29": 80,
+                "2026-09-30": 60,
+                "2026-10-01": 76,
+                "2026-10-02": 73,
+                "2026-10-03": 75,
+                "2026-10-04": 91,
+                "2026-10-05": 47,
+                "2026-10-06": 43,
+                "2026-10-07": 53
+              }
+            },
+            {
+              "pageid": 1270862,
+              "ns": 0,
+              "title": "Lecture rapide"
+            },
+            {
+              "pageid": 1311370,
+              "ns": 0,
+              "title": "Liste des services en ligne de Google",
+              "pageviews": {
+                "2026-09-08": 21,
+                "2026-09-09": 12,
+                "2026-09-10": 21,
+                "2026-09-11": 19,
+                "2026-09-12": 11,
+                "2026-09-13": 12,
+                "2026-09-14": 21,
+                "2026-09-15": 15,
+                "2026-09-16": 21,
+                "2026-09-17": 12,
+                "2026-09-18": 12,
+                "2026-09-19": 10,
+                "2026-09-20": 5,
+                "2026-09-21": 13,
+                "2026-09-22": 16,
+                "2026-09-23": 12,
+                "2026-09-24": 16,
+                "2026-09-25": 15,
+                "2026-09-26": 16,
+                "2026-09-27": 12,
+                "2026-09-28": 13,
+                "2026-09-29": 15,
+                "2026-09-30": 17,
+                "2026-10-01": 15,
+                "2026-10-02": 8,
+                "2026-10-03": 3,
+                "2026-10-04": 12,
+                "2026-10-05": 12,
+                "2026-10-06": 7,
+                "2026-10-07": 19
+              }
+            },
+            {
+              "pageid": 1352382,
+              "ns": 0,
+              "title": "Cas d'utilisation"
+            },
+            {
+              "pageid": 1817024,
+              "ns": 0,
+              "title": "HTML5"
+            },
+            {
+              "pageid": 2247300,
+              "ns": 0,
+              "title": "Text Encoding Initiative",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 24,
+                "2026-09-10": 16,
+                "2026-09-11": 7,
+                "2026-09-12": 2,
+                "2026-09-13": 6,
+                "2026-09-14": 14,
+                "2026-09-15": 10,
+                "2026-09-16": 3,
+                "2026-09-17": 9,
+                "2026-09-18": 10,
+                "2026-09-19": 7,
+                "2026-09-20": 5,
+                "2026-09-21": 9,
+                "2026-09-22": 7,
+                "2026-09-23": 11,
+                "2026-09-24": 11,
+                "2026-09-25": 7,
+                "2026-09-26": 5,
+                "2026-09-27": 11,
+                "2026-09-28": 4,
+                "2026-09-29": 10,
+                "2026-09-30": 19,
+                "2026-10-01": 7,
+                "2026-10-02": 7,
+                "2026-10-03": 3,
+                "2026-10-04": 6,
+                "2026-10-05": 10,
+                "2026-10-06": 10,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 3920946,
+              "ns": 0,
+              "title": "Stratégie nationale pour la biodiversité (France)",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 3,
+                "2026-09-10": 0,
+                "2026-09-11": 4,
+                "2026-09-12": 2,
+                "2026-09-13": 4,
+                "2026-09-14": 11,
+                "2026-09-15": 3,
+                "2026-09-16": 5,
+                "2026-09-17": 4,
+                "2026-09-18": 2,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 6,
+                "2026-09-22": 4,
+                "2026-09-23": 4,
+                "2026-09-24": 5,
+                "2026-09-25": 5,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": 0,
+                "2026-09-29": 2,
+                "2026-09-30": 4,
+                "2026-10-01": 1,
+                "2026-10-02": 3,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 4,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 5477826,
+              "ns": 0,
+              "title": "Données ouvertes"
+            },
+            {
+              "pageid": 5515920,
+              "ns": 0,
+              "title": "Simple Knowledge Organization System",
+              "pageviews": {
+                "2026-09-08": 9,
+                "2026-09-09": 2,
+                "2026-09-10": 8,
+                "2026-09-11": 5,
+                "2026-09-12": 4,
+                "2026-09-13": 4,
+                "2026-09-14": 3,
+                "2026-09-15": 4,
+                "2026-09-16": 2,
+                "2026-09-17": 2,
+                "2026-09-18": 6,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 3,
+                "2026-09-22": 5,
+                "2026-09-23": 4,
+                "2026-09-24": 7,
+                "2026-09-25": 2,
+                "2026-09-26": 6,
+                "2026-09-27": 3,
+                "2026-09-28": 5,
+                "2026-09-29": 7,
+                "2026-09-30": 3,
+                "2026-10-01": 1,
+                "2026-10-02": 6,
+                "2026-10-03": 2,
+                "2026-10-04": 3,
+                "2026-10-05": 7,
+                "2026-10-06": 4,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 5936601,
+              "ns": 0,
+              "title": "Données ouvertes en France"
+            },
+            {
+              "pageid": 6468172,
+              "ns": 0,
+              "title": "Cellule de lieu"
+            },
+            {
+              "pageid": 7977817,
+              "ns": 0,
+              "title": "Zéro déchet",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 10,
+                "2026-09-10": 14,
+                "2026-09-11": 13,
+                "2026-09-12": 11,
+                "2026-09-13": 14,
+                "2026-09-14": 12,
+                "2026-09-15": 15,
+                "2026-09-16": 13,
+                "2026-09-17": 15,
+                "2026-09-18": 12,
+                "2026-09-19": 11,
+                "2026-09-20": 17,
+                "2026-09-21": 19,
+                "2026-09-22": 18,
+                "2026-09-23": 10,
+                "2026-09-24": 13,
+                "2026-09-25": 4,
+                "2026-09-26": 5,
+                "2026-09-27": 5,
+                "2026-09-28": 6,
+                "2026-09-29": 14,
+                "2026-09-30": 13,
+                "2026-10-01": 6,
+                "2026-10-02": 5,
+                "2026-10-03": 5,
+                "2026-10-04": 3,
+                "2026-10-05": 7,
+                "2026-10-06": 9,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 9162225,
+              "ns": 0,
+              "title": "Intelligence du cheval"
+            },
+            {
+              "pageid": 10329884,
+              "ns": 0,
+              "title": "Hypertext Transfer Protocol/2"
+            },
+            {
+              "pageid": 10863786,
+              "ns": 0,
+              "title": "Fair data"
+            },
+            {
+              "pageid": 14000380,
+              "ns": 0,
+              "title": "NGSI-LD",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 0,
+                "2026-09-10": 1,
+                "2026-09-11": 1,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": 1,
+                "2026-09-15": 3,
+                "2026-09-16": 1,
+                "2026-09-17": 2,
+                "2026-09-18": 1,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": 4,
+                "2026-09-23": 4,
+                "2026-09-24": 0,
+                "2026-09-25": 1,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 1,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 2,
+                "2026-10-05": 2,
+                "2026-10-06": 0,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 17143305,
+              "ns": 0,
+              "title": "Espace conceptuel"
+            },
+            {
+              "pageid": 17325460,
+              "ns": 0,
+              "title": "Intelligence artificielle agentique"
+            },
+            {
+              "pageid": 17371500,
+              "ns": 0,
+              "title": "Dossier argumenté de sûreté"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Logiciel_d'étude",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 1875,
+              "ns": 0,
+              "title": "Frise chronologique",
+              "pageviews": {
+                "2026-09-08": 53,
+                "2026-09-09": 55,
+                "2026-09-10": 53,
+                "2026-09-11": 39,
+                "2026-09-12": 37,
+                "2026-09-13": 46,
+                "2026-09-14": 57,
+                "2026-09-15": 52,
+                "2026-09-16": 75,
+                "2026-09-17": 60,
+                "2026-09-18": 21,
+                "2026-09-19": 24,
+                "2026-09-20": 53,
+                "2026-09-21": 46,
+                "2026-09-22": 47,
+                "2026-09-23": 47,
+                "2026-09-24": 47,
+                "2026-09-25": 35,
+                "2026-09-26": 33,
+                "2026-09-27": 62,
+                "2026-09-28": 44,
+                "2026-09-29": 76,
+                "2026-09-30": 42,
+                "2026-10-01": 51,
+                "2026-10-02": 23,
+                "2026-10-03": 33,
+                "2026-10-04": 37,
+                "2026-10-05": 40,
+                "2026-10-06": 30,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 3101,
+              "ns": 0,
+              "title": "Uniform Resource Identifier"
+            },
+            {
+              "pageid": 10377,
+              "ns": 0,
+              "title": "Réseau"
+            },
+            {
+              "pageid": 22624,
+              "ns": 0,
+              "title": "XML Schema"
+            },
+            {
+              "pageid": 28587,
+              "ns": 0,
+              "title": "Management de la créativité"
+            },
+            {
+              "pageid": 33531,
+              "ns": 0,
+              "title": "Systématique"
+            },
+            {
+              "pageid": 71525,
+              "ns": 0,
+              "title": "Open Database Connectivity"
+            },
+            {
+              "pageid": 72412,
+              "ns": 0,
+              "title": "Diagramme",
+              "pageviews": {
+                "2026-09-08": 18,
+                "2026-09-09": 28,
+                "2026-09-10": 23,
+                "2026-09-11": 13,
+                "2026-09-12": 16,
+                "2026-09-13": 10,
+                "2026-09-14": 25,
+                "2026-09-15": 30,
+                "2026-09-16": 32,
+                "2026-09-17": 29,
+                "2026-09-18": 21,
+                "2026-09-19": 17,
+                "2026-09-20": 19,
+                "2026-09-21": 25,
+                "2026-09-22": 42,
+                "2026-09-23": 24,
+                "2026-09-24": 38,
+                "2026-09-25": 25,
+                "2026-09-26": 20,
+                "2026-09-27": 24,
+                "2026-09-28": 48,
+                "2026-09-29": 25,
+                "2026-09-30": 45,
+                "2026-10-01": 17,
+                "2026-10-02": 23,
+                "2026-10-03": 12,
+                "2026-10-04": 20,
+                "2026-10-05": 46,
+                "2026-10-06": 25,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 119834,
+              "ns": 0,
+              "title": "Veille technologique"
+            },
+            {
+              "pageid": 126611,
+              "ns": 0,
+              "title": "Carte",
+              "pageviews": {
+                "2026-09-08": 17,
+                "2026-09-09": 11,
+                "2026-09-10": 12,
+                "2026-09-11": 6,
+                "2026-09-12": 9,
+                "2026-09-13": 7,
+                "2026-09-14": 8,
+                "2026-09-15": 9,
+                "2026-09-16": 14,
+                "2026-09-17": 16,
+                "2026-09-18": 10,
+                "2026-09-19": 2,
+                "2026-09-20": 13,
+                "2026-09-21": 22,
+                "2026-09-22": 10,
+                "2026-09-23": 20,
+                "2026-09-24": 9,
+                "2026-09-25": 11,
+                "2026-09-26": 12,
+                "2026-09-27": 11,
+                "2026-09-28": 10,
+                "2026-09-29": 12,
+                "2026-09-30": 11,
+                "2026-10-01": 15,
+                "2026-10-02": 14,
+                "2026-10-03": 14,
+                "2026-10-04": 9,
+                "2026-10-05": 4,
+                "2026-10-06": 14,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 137941,
+              "ns": 0,
+              "title": "Web Ontology Language"
+            },
+            {
+              "pageid": 244752,
+              "ns": 0,
+              "title": "Gestion mentale",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 4,
+                "2026-09-10": 1,
+                "2026-09-11": 5,
+                "2026-09-12": 0,
+                "2026-09-13": 5,
+                "2026-09-14": 3,
+                "2026-09-15": 1,
+                "2026-09-16": 4,
+                "2026-09-17": 9,
+                "2026-09-18": 2,
+                "2026-09-19": 4,
+                "2026-09-20": 3,
+                "2026-09-21": 4,
+                "2026-09-22": 6,
+                "2026-09-23": 5,
+                "2026-09-24": 3,
+                "2026-09-25": 3,
+                "2026-09-26": 3,
+                "2026-09-27": 2,
+                "2026-09-28": 2,
+                "2026-09-29": 8,
+                "2026-09-30": 8,
+                "2026-10-01": 2,
+                "2026-10-02": 8,
+                "2026-10-03": 4,
+                "2026-10-04": 2,
+                "2026-10-05": 6,
+                "2026-10-06": 5,
+                "2026-10-07": 3
+              }
+            },
+            {
+              "pageid": 356506,
+              "ns": 0,
+              "title": "Résolution de problème"
+            },
+            {
+              "pageid": 404420,
+              "ns": 0,
+              "title": "Microformat"
+            },
+            {
+              "pageid": 415136,
+              "ns": 0,
+              "title": "Folksonomie",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 4,
+                "2026-09-10": 3,
+                "2026-09-11": 0,
+                "2026-09-12": 2,
+                "2026-09-13": 0,
+                "2026-09-14": 2,
+                "2026-09-15": 5,
+                "2026-09-16": 7,
+                "2026-09-17": 13,
+                "2026-09-18": 5,
+                "2026-09-19": 4,
+                "2026-09-20": 6,
+                "2026-09-21": 9,
+                "2026-09-22": 5,
+                "2026-09-23": 4,
+                "2026-09-24": 8,
+                "2026-09-25": 3,
+                "2026-09-26": 2,
+                "2026-09-27": 3,
+                "2026-09-28": 12,
+                "2026-09-29": 6,
+                "2026-09-30": 7,
+                "2026-10-01": 1,
+                "2026-10-02": 2,
+                "2026-10-03": 1,
+                "2026-10-04": 1,
+                "2026-10-05": 2,
+                "2026-10-06": 7,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 457886,
+              "ns": 0,
+              "title": "Application composite",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 2,
+                "2026-09-10": 4,
+                "2026-09-11": 2,
+                "2026-09-12": 2,
+                "2026-09-13": 3,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 4,
+                "2026-09-17": 2,
+                "2026-09-18": 2,
+                "2026-09-19": 4,
+                "2026-09-20": 3,
+                "2026-09-21": 1,
+                "2026-09-22": 5,
+                "2026-09-23": 5,
+                "2026-09-24": 2,
+                "2026-09-25": 3,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": 3,
+                "2026-09-29": 4,
+                "2026-09-30": 2,
+                "2026-10-01": 3,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 5,
+                "2026-10-05": 0,
+                "2026-10-06": 2,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 601095,
+              "ns": 0,
+              "title": "Réseau sémantique"
+            },
+            {
+              "pageid": 622304,
+              "ns": 0,
+              "title": "Ingénierie pédagogique",
+              "pageviews": {
+                "2026-09-08": 16,
+                "2026-09-09": 15,
+                "2026-09-10": 25,
+                "2026-09-11": 17,
+                "2026-09-12": 7,
+                "2026-09-13": 10,
+                "2026-09-14": 9,
+                "2026-09-15": 14,
+                "2026-09-16": 23,
+                "2026-09-17": 14,
+                "2026-09-18": 18,
+                "2026-09-19": 14,
+                "2026-09-20": 21,
+                "2026-09-21": 22,
+                "2026-09-22": 30,
+                "2026-09-23": 17,
+                "2026-09-24": 7,
+                "2026-09-25": 13,
+                "2026-09-26": 3,
+                "2026-09-27": 3,
+                "2026-09-28": 9,
+                "2026-09-29": 9,
+                "2026-09-30": 9,
+                "2026-10-01": 13,
+                "2026-10-02": 11,
+                "2026-10-03": 2,
+                "2026-10-04": 7,
+                "2026-10-05": 10,
+                "2026-10-06": 5,
+                "2026-10-07": 10
+              }
+            },
+            {
+              "pageid": 635266,
+              "ns": 0,
+              "title": "Plateforme de travail collaboratif"
+            },
+            {
+              "pageid": 841411,
+              "ns": 0,
+              "title": "Schéma conceptuel"
+            },
+            {
+              "pageid": 865482,
+              "ns": 0,
+              "title": "Arbre des causes",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 20,
+                "2026-09-10": 7,
+                "2026-09-11": 3,
+                "2026-09-12": 2,
+                "2026-09-13": 11,
+                "2026-09-14": 18,
+                "2026-09-15": 19,
+                "2026-09-16": 19,
+                "2026-09-17": 15,
+                "2026-09-18": 12,
+                "2026-09-19": 6,
+                "2026-09-20": 2,
+                "2026-09-21": 15,
+                "2026-09-22": 20,
+                "2026-09-23": 17,
+                "2026-09-24": 16,
+                "2026-09-25": 12,
+                "2026-09-26": 8,
+                "2026-09-27": 5,
+                "2026-09-28": 9,
+                "2026-09-29": 10,
+                "2026-09-30": 10,
+                "2026-10-01": 12,
+                "2026-10-02": 4,
+                "2026-10-03": 2,
+                "2026-10-04": 7,
+                "2026-10-05": 6,
+                "2026-10-06": 19,
+                "2026-10-07": 6
+              }
+            },
+            {
+              "pageid": 1139431,
+              "ns": 0,
+              "title": "SPARQL"
+            },
+            {
+              "pageid": 1181814,
+              "ns": 0,
+              "title": "PlanFacile"
+            },
+            {
+              "pageid": 1386112,
+              "ns": 0,
+              "title": "Liste de logiciels KDE",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 0,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 3,
+                "2026-09-16": 2,
+                "2026-09-17": 0,
+                "2026-09-18": 2,
+                "2026-09-19": 0,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": 2,
+                "2026-09-23": 3,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 1,
+                "2026-09-28": 0,
+                "2026-09-29": 2,
+                "2026-09-30": 0,
+                "2026-10-01": 1,
+                "2026-10-02": 6,
+                "2026-10-03": 2,
+                "2026-10-04": 1,
+                "2026-10-05": 3,
+                "2026-10-06": 2,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 1404296,
+              "ns": 0,
+              "title": "Gilles Balmet",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 0,
+                "2026-09-10": 0,
+                "2026-09-11": 2,
+                "2026-09-12": 1,
+                "2026-09-13": 0,
+                "2026-09-14": null,
+                "2026-09-15": 1,
+                "2026-09-16": 0,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 0,
+                "2026-09-20": 2,
+                "2026-09-21": 1,
+                "2026-09-22": 2,
+                "2026-09-23": 1,
+                "2026-09-24": 3,
+                "2026-09-25": 1,
+                "2026-09-26": null,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": 0,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 2,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 1610526,
+              "ns": 0,
+              "title": "Carte mentale",
+              "pageviews": {
+                "2026-09-08": 14,
+                "2026-09-09": 14,
+                "2026-09-10": 14,
+                "2026-09-11": 9,
+                "2026-09-12": 9,
+                "2026-09-13": 11,
+                "2026-09-14": 10,
+                "2026-09-15": 7,
+                "2026-09-16": 24,
+                "2026-09-17": 21,
+                "2026-09-18": 13,
+                "2026-09-19": 9,
+                "2026-09-20": 6,
+                "2026-09-21": 7,
+                "2026-09-22": 12,
+                "2026-09-23": 15,
+                "2026-09-24": 13,
+                "2026-09-25": 8,
+                "2026-09-26": 18,
+                "2026-09-27": 14,
+                "2026-09-28": 9,
+                "2026-09-29": 14,
+                "2026-09-30": 14,
+                "2026-10-01": 14,
+                "2026-10-02": 8,
+                "2026-10-03": 5,
+                "2026-10-04": 9,
+                "2026-10-05": 13,
+                "2026-10-06": 16,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 1933494,
+              "ns": 0,
+              "title": "Clé de détermination",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 11,
+                "2026-09-10": 11,
+                "2026-09-11": 15,
+                "2026-09-12": 10,
+                "2026-09-13": 12,
+                "2026-09-14": 15,
+                "2026-09-15": 9,
+                "2026-09-16": 15,
+                "2026-09-17": 18,
+                "2026-09-18": 10,
+                "2026-09-19": 19,
+                "2026-09-20": 16,
+                "2026-09-21": 13,
+                "2026-09-22": 16,
+                "2026-09-23": 22,
+                "2026-09-24": 13,
+                "2026-09-25": 12,
+                "2026-09-26": 14,
+                "2026-09-27": 13,
+                "2026-09-28": 10,
+                "2026-09-29": 17,
+                "2026-09-30": 18,
+                "2026-10-01": 16,
+                "2026-10-02": 8,
+                "2026-10-03": 14,
+                "2026-10-04": 26,
+                "2026-10-05": 18,
+                "2026-10-06": 15,
+                "2026-10-07": 16
+              }
+            },
+            {
+              "pageid": 2663765,
+              "ns": 0,
+              "title": "Idéateur (informatique)",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 2,
+                "2026-09-10": 1,
+                "2026-09-11": 4,
+                "2026-09-12": 3,
+                "2026-09-13": 0,
+                "2026-09-14": 3,
+                "2026-09-15": 4,
+                "2026-09-16": 1,
+                "2026-09-17": 3,
+                "2026-09-18": 2,
+                "2026-09-19": 4,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 5,
+                "2026-09-23": 4,
+                "2026-09-24": 3,
+                "2026-09-25": 2,
+                "2026-09-26": 4,
+                "2026-09-27": 2,
+                "2026-09-28": 1,
+                "2026-09-29": 4,
+                "2026-09-30": 5,
+                "2026-10-01": 3,
+                "2026-10-02": 0,
+                "2026-10-03": null,
+                "2026-10-04": 2,
+                "2026-10-05": 3,
+                "2026-10-06": 1,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 3026067,
+              "ns": 0,
+              "title": "DBpedia",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 5,
+                "2026-09-10": 2,
+                "2026-09-11": 2,
+                "2026-09-12": 4,
+                "2026-09-13": 3,
+                "2026-09-14": 8,
+                "2026-09-15": 3,
+                "2026-09-16": 6,
+                "2026-09-17": 4,
+                "2026-09-18": 6,
+                "2026-09-19": 3,
+                "2026-09-20": 4,
+                "2026-09-21": 8,
+                "2026-09-22": 4,
+                "2026-09-23": 9,
+                "2026-09-24": 4,
+                "2026-09-25": 6,
+                "2026-09-26": 1,
+                "2026-09-27": 7,
+                "2026-09-28": 4,
+                "2026-09-29": 5,
+                "2026-09-30": 3,
+                "2026-10-01": 7,
+                "2026-10-02": 6,
+                "2026-10-03": 3,
+                "2026-10-04": 0,
+                "2026-10-05": 2,
+                "2026-10-06": 3,
+                "2026-10-07": 7
+              }
+            },
+            {
+              "pageid": 3377737,
+              "ns": 0,
+              "title": "Arbre de connaissances",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 2,
+                "2026-09-10": 2,
+                "2026-09-11": 2,
+                "2026-09-12": 1,
+                "2026-09-13": 2,
+                "2026-09-14": 4,
+                "2026-09-15": 3,
+                "2026-09-16": 1,
+                "2026-09-17": 2,
+                "2026-09-18": 2,
+                "2026-09-19": 0,
+                "2026-09-20": 3,
+                "2026-09-21": 4,
+                "2026-09-22": 6,
+                "2026-09-23": 6,
+                "2026-09-24": 3,
+                "2026-09-25": 2,
+                "2026-09-26": 1,
+                "2026-09-27": 3,
+                "2026-09-28": 4,
+                "2026-09-29": 2,
+                "2026-09-30": null,
+                "2026-10-01": 2,
+                "2026-10-02": 0,
+                "2026-10-03": 3,
+                "2026-10-04": 4,
+                "2026-10-05": 2,
+                "2026-10-06": 5,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 3799938,
+              "ns": 0,
+              "title": "StarUML"
+            },
+            {
+              "pageid": 3857019,
+              "ns": 0,
+              "title": "Freeplane",
+              "pageviews": {
+                "2026-09-08": 8,
+                "2026-09-09": 12,
+                "2026-09-10": 7,
+                "2026-09-11": 9,
+                "2026-09-12": 4,
+                "2026-09-13": 7,
+                "2026-09-14": 10,
+                "2026-09-15": 5,
+                "2026-09-16": 3,
+                "2026-09-17": 11,
+                "2026-09-18": 13,
+                "2026-09-19": 3,
+                "2026-09-20": 3,
+                "2026-09-21": 9,
+                "2026-09-22": 9,
+                "2026-09-23": 6,
+                "2026-09-24": 10,
+                "2026-09-25": 8,
+                "2026-09-26": 1,
+                "2026-09-27": 7,
+                "2026-09-28": 18,
+                "2026-09-29": 9,
+                "2026-09-30": 12,
+                "2026-10-01": 4,
+                "2026-10-02": 11,
+                "2026-10-03": 2,
+                "2026-10-04": 6,
+                "2026-10-05": 10,
+                "2026-10-06": 15,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 5479601,
+              "ns": 0,
+              "title": "Web des données"
+            },
+            {
+              "pageid": 5853585,
+              "ns": 0,
+              "title": "Triplestore"
+            },
+            {
+              "pageid": 6874866,
+              "ns": 0,
+              "title": "Mémoire spatiale"
+            },
+            {
+              "pageid": 7000489,
+              "ns": 0,
+              "title": "Représentation graphique"
+            },
+            {
+              "pageid": 7039888,
+              "ns": 0,
+              "title": "Rizzoma"
+            },
+            {
+              "pageid": 7098421,
+              "ns": 0,
+              "title": "Heuristique (mathématiques)",
+              "pageviews": {
+                "2026-09-08": 20,
+                "2026-09-09": 22,
+                "2026-09-10": 12,
+                "2026-09-11": 18,
+                "2026-09-12": 22,
+                "2026-09-13": 11,
+                "2026-09-14": 31,
+                "2026-09-15": 10,
+                "2026-09-16": 30,
+                "2026-09-17": 21,
+                "2026-09-18": 15,
+                "2026-09-19": 11,
+                "2026-09-20": 14,
+                "2026-09-21": 22,
+                "2026-09-22": 23,
+                "2026-09-23": 21,
+                "2026-09-24": 22,
+                "2026-09-25": 23,
+                "2026-09-26": 17,
+                "2026-09-27": 14,
+                "2026-09-28": 22,
+                "2026-09-29": 16,
+                "2026-09-30": 21,
+                "2026-10-01": 13,
+                "2026-10-02": 16,
+                "2026-10-03": 8,
+                "2026-10-04": 12,
+                "2026-10-05": 16,
+                "2026-10-06": 12,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 8628091,
+              "ns": 0,
+              "title": "Linked open data",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 0,
+                "2026-09-10": 3,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 1,
+                "2026-09-14": 2,
+                "2026-09-15": 2,
+                "2026-09-16": 3,
+                "2026-09-17": 4,
+                "2026-09-18": 5,
+                "2026-09-19": 1,
+                "2026-09-20": 1,
+                "2026-09-21": 6,
+                "2026-09-22": 7,
+                "2026-09-23": 4,
+                "2026-09-24": 4,
+                "2026-09-25": 4,
+                "2026-09-26": 2,
+                "2026-09-27": 6,
+                "2026-09-28": 4,
+                "2026-09-29": 3,
+                "2026-09-30": 1,
+                "2026-10-01": 4,
+                "2026-10-02": 5,
+                "2026-10-03": 0,
+                "2026-10-04": 4,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 9059245,
+              "ns": 0,
+              "title": "Métaclasse (web sémantique)"
+            },
+            {
+              "pageid": 9341168,
+              "ns": 0,
+              "title": "Objet exceptionnel"
+            },
+            {
+              "pageid": 11402527,
+              "ns": 0,
+              "title": "JSON-LD",
+              "pageviews": {
+                "2026-09-08": 16,
+                "2026-09-09": 16,
+                "2026-09-10": 9,
+                "2026-09-11": 4,
+                "2026-09-12": 3,
+                "2026-09-13": 4,
+                "2026-09-14": 16,
+                "2026-09-15": 8,
+                "2026-09-16": 3,
+                "2026-09-17": 4,
+                "2026-09-18": 11,
+                "2026-09-19": 9,
+                "2026-09-20": 2,
+                "2026-09-21": 6,
+                "2026-09-22": 12,
+                "2026-09-23": 10,
+                "2026-09-24": 4,
+                "2026-09-25": 3,
+                "2026-09-26": 7,
+                "2026-09-27": 5,
+                "2026-09-28": 5,
+                "2026-09-29": 7,
+                "2026-09-30": 10,
+                "2026-10-01": 7,
+                "2026-10-02": 17,
+                "2026-10-03": 6,
+                "2026-10-04": 5,
+                "2026-10-05": 10,
+                "2026-10-06": 3,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 11937970,
+              "ns": 0,
+              "title": "Socle interministériel des logiciels libres"
+            },
+            {
+              "pageid": 12075618,
+              "ns": 0,
+              "title": "Solid (projet de web décentralisé)"
+            },
+            {
+              "pageid": 12483490,
+              "ns": 0,
+              "title": "Contract Net Protocol",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 1,
+                "2026-09-10": 0,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": 2,
+                "2026-09-14": 1,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": null,
+                "2026-09-18": 0,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 1,
+                "2026-09-22": 0,
+                "2026-09-23": 2,
+                "2026-09-24": 0,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 0,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": 2
+              }
+            },
+            {
+              "pageid": 12943757,
+              "ns": 0,
+              "title": "Intégration de chemin",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 1,
+                "2026-09-10": 0,
+                "2026-09-11": 1,
+                "2026-09-12": null,
+                "2026-09-13": null,
+                "2026-09-14": 2,
+                "2026-09-15": 0,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 3,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 2,
+                "2026-09-23": 1,
+                "2026-09-24": 1,
+                "2026-09-25": 0,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 2,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 2,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 15119967,
+              "ns": 0,
+              "title": "N-Triplets"
+            },
+            {
+              "pageid": 15221231,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 16745931,
+              "ns": 0,
+              "title": "Logiciel d'étude"
+            },
+            {
+              "pageid": 17374851,
+              "ns": 0,
+              "title": "Notation de structuration des objectifs"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Notation_de_structuration_des_objectifs",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 1875,
+              "ns": 0,
+              "title": "Frise chronologique"
+            },
+            {
+              "pageid": 3101,
+              "ns": 0,
+              "title": "Uniform Resource Identifier"
+            },
+            {
+              "pageid": 10377,
+              "ns": 0,
+              "title": "Réseau"
+            },
+            {
+              "pageid": 22624,
+              "ns": 0,
+              "title": "XML Schema"
+            },
+            {
+              "pageid": 28587,
+              "ns": 0,
+              "title": "Management de la créativité",
+              "pageviews": {
+                "2026-09-08": 3,
+                "2026-09-09": 3,
+                "2026-09-10": 1,
+                "2026-09-11": 3,
+                "2026-09-12": 3,
+                "2026-09-13": 3,
+                "2026-09-14": 3,
+                "2026-09-15": 1,
+                "2026-09-16": 4,
+                "2026-09-17": 3,
+                "2026-09-18": 0,
+                "2026-09-19": 0,
+                "2026-09-20": 1,
+                "2026-09-21": 5,
+                "2026-09-22": 10,
+                "2026-09-23": 5,
+                "2026-09-24": 2,
+                "2026-09-25": 1,
+                "2026-09-26": 2,
+                "2026-09-27": 0,
+                "2026-09-28": 2,
+                "2026-09-29": 4,
+                "2026-09-30": 2,
+                "2026-10-01": 3,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 33531,
+              "ns": 0,
+              "title": "Systématique"
+            },
+            {
+              "pageid": 71525,
+              "ns": 0,
+              "title": "Open Database Connectivity"
+            },
+            {
+              "pageid": 72412,
+              "ns": 0,
+              "title": "Diagramme"
+            },
+            {
+              "pageid": 119834,
+              "ns": 0,
+              "title": "Veille technologique"
+            },
+            {
+              "pageid": 126611,
+              "ns": 0,
+              "title": "Carte"
+            },
+            {
+              "pageid": 137941,
+              "ns": 0,
+              "title": "Web Ontology Language"
+            },
+            {
+              "pageid": 244752,
+              "ns": 0,
+              "title": "Gestion mentale"
+            },
+            {
+              "pageid": 356506,
+              "ns": 0,
+              "title": "Résolution de problème"
+            },
+            {
+              "pageid": 404420,
+              "ns": 0,
+              "title": "Microformat",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 0,
+                "2026-09-10": 3,
+                "2026-09-11": 3,
+                "2026-09-12": 3,
+                "2026-09-13": 2,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": 1,
+                "2026-09-18": 1,
+                "2026-09-19": 2,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 8,
+                "2026-09-24": 1,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 3,
+                "2026-09-30": 1,
+                "2026-10-01": 4,
+                "2026-10-02": 2,
+                "2026-10-03": 1,
+                "2026-10-04": 2,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 415136,
+              "ns": 0,
+              "title": "Folksonomie"
+            },
+            {
+              "pageid": 457886,
+              "ns": 0,
+              "title": "Application composite"
+            },
+            {
+              "pageid": 601095,
+              "ns": 0,
+              "title": "Réseau sémantique"
+            },
+            {
+              "pageid": 622304,
+              "ns": 0,
+              "title": "Ingénierie pédagogique"
+            },
+            {
+              "pageid": 635266,
+              "ns": 0,
+              "title": "Plateforme de travail collaboratif"
+            },
+            {
+              "pageid": 841411,
+              "ns": 0,
+              "title": "Schéma conceptuel"
+            },
+            {
+              "pageid": 865482,
+              "ns": 0,
+              "title": "Arbre des causes"
+            },
+            {
+              "pageid": 1139431,
+              "ns": 0,
+              "title": "SPARQL"
+            },
+            {
+              "pageid": 1181814,
+              "ns": 0,
+              "title": "PlanFacile"
+            },
+            {
+              "pageid": 1386112,
+              "ns": 0,
+              "title": "Liste de logiciels KDE"
+            },
+            {
+              "pageid": 1404296,
+              "ns": 0,
+              "title": "Gilles Balmet"
+            },
+            {
+              "pageid": 1610526,
+              "ns": 0,
+              "title": "Carte mentale"
+            },
+            {
+              "pageid": 1933494,
+              "ns": 0,
+              "title": "Clé de détermination"
+            },
+            {
+              "pageid": 2663765,
+              "ns": 0,
+              "title": "Idéateur (informatique)"
+            },
+            {
+              "pageid": 3026067,
+              "ns": 0,
+              "title": "DBpedia"
+            },
+            {
+              "pageid": 3377737,
+              "ns": 0,
+              "title": "Arbre de connaissances"
+            },
+            {
+              "pageid": 3799938,
+              "ns": 0,
+              "title": "StarUML"
+            },
+            {
+              "pageid": 3857019,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 5479601,
+              "ns": 0,
+              "title": "Web des données"
+            },
+            {
+              "pageid": 5853585,
+              "ns": 0,
+              "title": "Triplestore"
+            },
+            {
+              "pageid": 6874866,
+              "ns": 0,
+              "title": "Mémoire spatiale",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 2,
+                "2026-09-10": 3,
+                "2026-09-11": 5,
+                "2026-09-12": 2,
+                "2026-09-13": 4,
+                "2026-09-14": 1,
+                "2026-09-15": 2,
+                "2026-09-16": 2,
+                "2026-09-17": 5,
+                "2026-09-18": 2,
+                "2026-09-19": 2,
+                "2026-09-20": 2,
+                "2026-09-21": 7,
+                "2026-09-22": 4,
+                "2026-09-23": 1,
+                "2026-09-24": 6,
+                "2026-09-25": 1,
+                "2026-09-26": 6,
+                "2026-09-27": 3,
+                "2026-09-28": 2,
+                "2026-09-29": 5,
+                "2026-09-30": 3,
+                "2026-10-01": 2,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 3,
+                "2026-10-06": 3,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 7000489,
+              "ns": 0,
+              "title": "Représentation graphique"
+            },
+            {
+              "pageid": 7039888,
+              "ns": 0,
+              "title": "Rizzoma"
+            },
+            {
+              "pageid": 7098421,
+              "ns": 0,
+              "title": "Heuristique (mathématiques)"
+            },
+            {
+              "pageid": 8628091,
+              "ns": 0,
+              "title": "Linked open data"
+            },
+            {
+              "pageid": 9059245,
+              "ns": 0,
+              "title": "Métaclasse (web sémantique)",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 1,
+                "2026-09-10": 0,
+                "2026-09-11": 2,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 0,
+                "2026-09-15": 1,
+                "2026-09-16": 2,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 0,
+                "2026-09-20": 1,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 1,
+                "2026-09-24": 1,
+                "2026-09-25": 0,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": null,
+                "2026-09-30": 1,
+                "2026-10-01": 2,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 2,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 9341168,
+              "ns": 0,
+              "title": "Objet exceptionnel"
+            },
+            {
+              "pageid": 11402527,
+              "ns": 0,
+              "title": "JSON-LD"
+            },
+            {
+              "pageid": 11937970,
+              "ns": 0,
+              "title": "Socle interministériel des logiciels libres"
+            },
+            {
+              "pageid": 12075618,
+              "ns": 0,
+              "title": "Solid (projet de web décentralisé)"
+            },
+            {
+              "pageid": 12483490,
+              "ns": 0,
+              "title": "Contract Net Protocol"
+            },
+            {
+              "pageid": 12943757,
+              "ns": 0,
+              "title": "Intégration de chemin"
+            },
+            {
+              "pageid": 15119967,
+              "ns": 0,
+              "title": "N-Triplets",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 1,
+                "2026-09-10": 0,
+                "2026-09-11": 2,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 1,
+                "2026-09-15": 2,
+                "2026-09-16": 0,
+                "2026-09-17": 1,
+                "2026-09-18": 2,
+                "2026-09-19": 1,
+                "2026-09-20": 0,
+                "2026-09-21": 1,
+                "2026-09-22": 1,
+                "2026-09-23": 2,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": 2,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": null,
+                "2026-09-30": 1,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 1,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 15221231,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 16745931,
+              "ns": 0,
+              "title": "Logiciel d'étude",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": null,
+                "2026-09-10": 0,
+                "2026-09-11": null,
+                "2026-09-12": 0,
+                "2026-09-13": null,
+                "2026-09-14": null,
+                "2026-09-15": 1,
+                "2026-09-16": null,
+                "2026-09-17": 0,
+                "2026-09-18": null,
+                "2026-09-19": 0,
+                "2026-09-20": null,
+                "2026-09-21": null,
+                "2026-09-22": null,
+                "2026-09-23": 1,
+                "2026-09-24": null,
+                "2026-09-25": 1,
+                "2026-09-26": 0,
+                "2026-09-27": null,
+                "2026-09-28": 1,
+                "2026-09-29": 0,
+                "2026-09-30": null,
+                "2026-10-01": 2,
+                "2026-10-02": null,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": null,
+                "2026-10-06": null,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 17374851,
+              "ns": 0,
+              "title": "Notation de structuration des objectifs"
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "Socle_interministériel_des_logiciels_libres",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 1875,
+              "ns": 0,
+              "title": "Frise chronologique"
+            },
+            {
+              "pageid": 3101,
+              "ns": 0,
+              "title": "Uniform Resource Identifier"
+            },
+            {
+              "pageid": 10377,
+              "ns": 0,
+              "title": "Réseau",
+              "pageviews": {
+                "2026-09-08": 94,
+                "2026-09-09": 65,
+                "2026-09-10": 73,
+                "2026-09-11": 115,
+                "2026-09-12": 41,
+                "2026-09-13": 38,
+                "2026-09-14": 85,
+                "2026-09-15": 71,
+                "2026-09-16": 62,
+                "2026-09-17": 97,
+                "2026-09-18": 64,
+                "2026-09-19": 71,
+                "2026-09-20": 45,
+                "2026-09-21": 109,
+                "2026-09-22": 88,
+                "2026-09-23": 91,
+                "2026-09-24": 74,
+                "2026-09-25": 93,
+                "2026-09-26": 35,
+                "2026-09-27": 40,
+                "2026-09-28": 76,
+                "2026-09-29": 88,
+                "2026-09-30": 71,
+                "2026-10-01": 78,
+                "2026-10-02": 44,
+                "2026-10-03": 38,
+                "2026-10-04": 29,
+                "2026-10-05": 50,
+                "2026-10-06": 55,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 22624,
+              "ns": 0,
+              "title": "XML Schema"
+            },
+            {
+              "pageid": 28587,
+              "ns": 0,
+              "title": "Management de la créativité"
+            },
+            {
+              "pageid": 33531,
+              "ns": 0,
+              "title": "Systématique"
+            },
+            {
+              "pageid": 71525,
+              "ns": 0,
+              "title": "Open Database Connectivity",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 7,
+                "2026-09-10": 7,
+                "2026-09-11": 5,
+                "2026-09-12": 5,
+                "2026-09-13": 4,
+                "2026-09-14": 5,
+                "2026-09-15": 5,
+                "2026-09-16": 2,
+                "2026-09-17": 4,
+                "2026-09-18": 1,
+                "2026-09-19": 8,
+                "2026-09-20": 3,
+                "2026-09-21": 4,
+                "2026-09-22": 8,
+                "2026-09-23": 7,
+                "2026-09-24": 5,
+                "2026-09-25": 5,
+                "2026-09-26": 4,
+                "2026-09-27": 3,
+                "2026-09-28": 17,
+                "2026-09-29": 11,
+                "2026-09-30": 7,
+                "2026-10-01": 5,
+                "2026-10-02": 4,
+                "2026-10-03": 1,
+                "2026-10-04": 5,
+                "2026-10-05": 12,
+                "2026-10-06": 6,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 72412,
+              "ns": 0,
+              "title": "Diagramme"
+            },
+            {
+              "pageid": 119834,
+              "ns": 0,
+              "title": "Veille technologique"
+            },
+            {
+              "pageid": 126611,
+              "ns": 0,
+              "title": "Carte"
+            },
+            {
+              "pageid": 137941,
+              "ns": 0,
+              "title": "Web Ontology Language"
+            },
+            {
+              "pageid": 244752,
+              "ns": 0,
+              "title": "Gestion mentale"
+            },
+            {
+              "pageid": 356506,
+              "ns": 0,
+              "title": "Résolution de problème",
+              "pageviews": {
+                "2026-09-08": 18,
+                "2026-09-09": 11,
+                "2026-09-10": 21,
+                "2026-09-11": 13,
+                "2026-09-12": 10,
+                "2026-09-13": 15,
+                "2026-09-14": 13,
+                "2026-09-15": 21,
+                "2026-09-16": 23,
+                "2026-09-17": 24,
+                "2026-09-18": 19,
+                "2026-09-19": 17,
+                "2026-09-20": 13,
+                "2026-09-21": 19,
+                "2026-09-22": 25,
+                "2026-09-23": 25,
+                "2026-09-24": 24,
+                "2026-09-25": 16,
+                "2026-09-26": 12,
+                "2026-09-27": 14,
+                "2026-09-28": 15,
+                "2026-09-29": 11,
+                "2026-09-30": 11,
+                "2026-10-01": 26,
+                "2026-10-02": 21,
+                "2026-10-03": 4,
+                "2026-10-04": 7,
+                "2026-10-05": 9,
+                "2026-10-06": 15,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 404420,
+              "ns": 0,
+              "title": "Microformat"
+            },
+            {
+              "pageid": 415136,
+              "ns": 0,
+              "title": "Folksonomie"
+            },
+            {
+              "pageid": 457886,
+              "ns": 0,
+              "title": "Application composite"
+            },
+            {
+              "pageid": 601095,
+              "ns": 0,
+              "title": "Réseau sémantique",
+              "pageviews": {
+                "2026-09-08": 2,
+                "2026-09-09": 2,
+                "2026-09-10": 7,
+                "2026-09-11": 2,
+                "2026-09-12": 2,
+                "2026-09-13": 2,
+                "2026-09-14": 2,
+                "2026-09-15": 5,
+                "2026-09-16": 4,
+                "2026-09-17": 1,
+                "2026-09-18": 1,
+                "2026-09-19": 4,
+                "2026-09-20": 1,
+                "2026-09-21": 7,
+                "2026-09-22": 1,
+                "2026-09-23": 6,
+                "2026-09-24": 2,
+                "2026-09-25": 6,
+                "2026-09-26": 1,
+                "2026-09-27": 1,
+                "2026-09-28": 7,
+                "2026-09-29": 3,
+                "2026-09-30": 6,
+                "2026-10-01": 5,
+                "2026-10-02": 4,
+                "2026-10-03": 5,
+                "2026-10-04": 3,
+                "2026-10-05": 5,
+                "2026-10-06": 0,
+                "2026-10-07": 0
+              }
+            },
+            {
+              "pageid": 622304,
+              "ns": 0,
+              "title": "Ingénierie pédagogique"
+            },
+            {
+              "pageid": 635266,
+              "ns": 0,
+              "title": "Plateforme de travail collaboratif",
+              "pageviews": {
+                "2026-09-08": 7,
+                "2026-09-09": 0,
+                "2026-09-10": 4,
+                "2026-09-11": 2,
+                "2026-09-12": 4,
+                "2026-09-13": 7,
+                "2026-09-14": 4,
+                "2026-09-15": 4,
+                "2026-09-16": 9,
+                "2026-09-17": 2,
+                "2026-09-18": 3,
+                "2026-09-19": 5,
+                "2026-09-20": 6,
+                "2026-09-21": 10,
+                "2026-09-22": 6,
+                "2026-09-23": 11,
+                "2026-09-24": 3,
+                "2026-09-25": 4,
+                "2026-09-26": 2,
+                "2026-09-27": 1,
+                "2026-09-28": 7,
+                "2026-09-29": 7,
+                "2026-09-30": 2,
+                "2026-10-01": 1,
+                "2026-10-02": 1,
+                "2026-10-03": 5,
+                "2026-10-04": 0,
+                "2026-10-05": 14,
+                "2026-10-06": 4,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 841411,
+              "ns": 0,
+              "title": "Schéma conceptuel",
+              "pageviews": {
+                "2026-09-08": 5,
+                "2026-09-09": 10,
+                "2026-09-10": 11,
+                "2026-09-11": 7,
+                "2026-09-12": 13,
+                "2026-09-13": 3,
+                "2026-09-14": 11,
+                "2026-09-15": 15,
+                "2026-09-16": 11,
+                "2026-09-17": 4,
+                "2026-09-18": 12,
+                "2026-09-19": 5,
+                "2026-09-20": 7,
+                "2026-09-21": 4,
+                "2026-09-22": 15,
+                "2026-09-23": 21,
+                "2026-09-24": 11,
+                "2026-09-25": 12,
+                "2026-09-26": 2,
+                "2026-09-27": 11,
+                "2026-09-28": 6,
+                "2026-09-29": 9,
+                "2026-09-30": 13,
+                "2026-10-01": 14,
+                "2026-10-02": 10,
+                "2026-10-03": 5,
+                "2026-10-04": 9,
+                "2026-10-05": 10,
+                "2026-10-06": 8,
+                "2026-10-07": 8
+              }
+            },
+            {
+              "pageid": 865482,
+              "ns": 0,
+              "title": "Arbre des causes"
+            },
+            {
+              "pageid": 1139431,
+              "ns": 0,
+              "title": "SPARQL",
+              "pageviews": {
+                "2026-09-08": 11,
+                "2026-09-09": 10,
+                "2026-09-10": 7,
+                "2026-09-11": 10,
+                "2026-09-12": 3,
+                "2026-09-13": 1,
+                "2026-09-14": 21,
+                "2026-09-15": 9,
+                "2026-09-16": 7,
+                "2026-09-17": 11,
+                "2026-09-18": 15,
+                "2026-09-19": 5,
+                "2026-09-20": 9,
+                "2026-09-21": 11,
+                "2026-09-22": 16,
+                "2026-09-23": 23,
+                "2026-09-24": 18,
+                "2026-09-25": 12,
+                "2026-09-26": 7,
+                "2026-09-27": 7,
+                "2026-09-28": 10,
+                "2026-09-29": 14,
+                "2026-09-30": 12,
+                "2026-10-01": 2,
+                "2026-10-02": 16,
+                "2026-10-03": 7,
+                "2026-10-04": 9,
+                "2026-10-05": 11,
+                "2026-10-06": 3,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 1181814,
+              "ns": 0,
+              "title": "PlanFacile",
+              "pageviews": {
+                "2026-09-08": 1,
+                "2026-09-09": 0,
+                "2026-09-10": null,
+                "2026-09-11": 0,
+                "2026-09-12": 1,
+                "2026-09-13": null,
+                "2026-09-14": 0,
+                "2026-09-15": 0,
+                "2026-09-16": 0,
+                "2026-09-17": null,
+                "2026-09-18": null,
+                "2026-09-19": null,
+                "2026-09-20": 0,
+                "2026-09-21": 0,
+                "2026-09-22": 1,
+                "2026-09-23": 0,
+                "2026-09-24": 0,
+                "2026-09-25": 0,
+                "2026-09-26": null,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 0,
+                "2026-09-30": null,
+                "2026-10-01": null,
+                "2026-10-02": 0,
+                "2026-10-03": null,
+                "2026-10-04": null,
+                "2026-10-05": 1,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 1386112,
+              "ns": 0,
+              "title": "Liste de logiciels KDE"
+            },
+            {
+              "pageid": 1404296,
+              "ns": 0,
+              "title": "Gilles Balmet"
+            },
+            {
+              "pageid": 1610526,
+              "ns": 0,
+              "title": "Carte mentale"
+            },
+            {
+              "pageid": 1933494,
+              "ns": 0,
+              "title": "Clé de détermination"
+            },
+            {
+              "pageid": 2663765,
+              "ns": 0,
+              "title": "Idéateur (informatique)"
+            },
+            {
+              "pageid": 3026067,
+              "ns": 0,
+              "title": "DBpedia"
+            },
+            {
+              "pageid": 3377737,
+              "ns": 0,
+              "title": "Arbre de connaissances"
+            },
+            {
+              "pageid": 3799938,
+              "ns": 0,
+              "title": "StarUML"
+            },
+            {
+              "pageid": 3857019,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 5479601,
+              "ns": 0,
+              "title": "Web des données"
+            },
+            {
+              "pageid": 5853585,
+              "ns": 0,
+              "title": "Triplestore"
+            },
+            {
+              "pageid": 6874866,
+              "ns": 0,
+              "title": "Mémoire spatiale"
+            },
+            {
+              "pageid": 7000489,
+              "ns": 0,
+              "title": "Représentation graphique",
+              "pageviews": {
+                "2026-09-08": 12,
+                "2026-09-09": 8,
+                "2026-09-10": 12,
+                "2026-09-11": 7,
+                "2026-09-12": 7,
+                "2026-09-13": 12,
+                "2026-09-14": 13,
+                "2026-09-15": 7,
+                "2026-09-16": 17,
+                "2026-09-17": 16,
+                "2026-09-18": 12,
+                "2026-09-19": 8,
+                "2026-09-20": 14,
+                "2026-09-21": 9,
+                "2026-09-22": 15,
+                "2026-09-23": 8,
+                "2026-09-24": 13,
+                "2026-09-25": 10,
+                "2026-09-26": 5,
+                "2026-09-27": 12,
+                "2026-09-28": 17,
+                "2026-09-29": 8,
+                "2026-09-30": 9,
+                "2026-10-01": 12,
+                "2026-10-02": 11,
+                "2026-10-03": 13,
+                "2026-10-04": 11,
+                "2026-10-05": 17,
+                "2026-10-06": 19,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 7039888,
+              "ns": 0,
+              "title": "Rizzoma",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": 0,
+                "2026-09-10": 3,
+                "2026-09-11": 0,
+                "2026-09-12": 2,
+                "2026-09-13": 3,
+                "2026-09-14": 3,
+                "2026-09-15": 1,
+                "2026-09-16": 1,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": 1,
+                "2026-09-20": 2,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 1,
+                "2026-09-25": null,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 1,
+                "2026-10-01": 0,
+                "2026-10-02": 2,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 0,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 7098421,
+              "ns": 0,
+              "title": "Heuristique (mathématiques)"
+            },
+            {
+              "pageid": 8628091,
+              "ns": 0,
+              "title": "Linked open data"
+            },
+            {
+              "pageid": 9059245,
+              "ns": 0,
+              "title": "Métaclasse (web sémantique)"
+            },
+            {
+              "pageid": 9341168,
+              "ns": 0,
+              "title": "Objet exceptionnel",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 0,
+                "2026-09-10": null,
+                "2026-09-11": 0,
+                "2026-09-12": 1,
+                "2026-09-13": null,
+                "2026-09-14": 2,
+                "2026-09-15": 2,
+                "2026-09-16": 2,
+                "2026-09-17": 2,
+                "2026-09-18": 3,
+                "2026-09-19": 1,
+                "2026-09-20": 3,
+                "2026-09-21": 0,
+                "2026-09-22": 0,
+                "2026-09-23": 0,
+                "2026-09-24": 1,
+                "2026-09-25": 3,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": null,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 0,
+                "2026-10-02": 0,
+                "2026-10-03": null,
+                "2026-10-04": 1,
+                "2026-10-05": null,
+                "2026-10-06": null,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 11402527,
+              "ns": 0,
+              "title": "JSON-LD"
+            },
+            {
+              "pageid": 11937970,
+              "ns": 0,
+              "title": "Socle interministériel des logiciels libres"
+            },
+            {
+              "pageid": 12075618,
+              "ns": 0,
+              "title": "Solid (projet de web décentralisé)"
+            },
+            {
+              "pageid": 12483490,
+              "ns": 0,
+              "title": "Contract Net Protocol"
+            },
+            {
+              "pageid": 12943757,
+              "ns": 0,
+              "title": "Intégration de chemin"
+            },
+            {
+              "pageid": 15119967,
+              "ns": 0,
+              "title": "N-Triplets"
+            },
+            {
+              "pageid": 15221231,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 16745931,
+              "ns": 0,
+              "title": "Logiciel d'étude"
+            },
+            {
+              "pageid": 17374851,
+              "ns": 0,
+              "title": "Notation de structuration des objectifs",
+              "pageviews": {
+                "2026-09-08": null,
+                "2026-09-09": null,
+                "2026-09-10": null,
+                "2026-09-11": 3,
+                "2026-09-12": 0,
+                "2026-09-13": 4,
+                "2026-09-14": null,
+                "2026-09-15": 0,
+                "2026-09-16": 2,
+                "2026-09-17": 0,
+                "2026-09-18": 1,
+                "2026-09-19": null,
+                "2026-09-20": 0,
+                "2026-09-21": null,
+                "2026-09-22": 1,
+                "2026-09-23": 1,
+                "2026-09-24": null,
+                "2026-09-25": null,
+                "2026-09-26": null,
+                "2026-09-27": null,
+                "2026-09-28": 0,
+                "2026-09-29": 1,
+                "2026-09-30": 0,
+                "2026-10-01": 1,
+                "2026-10-02": 0,
+                "2026-10-03": 1,
+                "2026-10-04": 0,
+                "2026-10-05": 1,
+                "2026-10-06": 1,
+                "2026-10-07": 0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "continue": {
+          "pvipcontinue": "XMind",
+          "continue": "||"
+        },
+        "query": {
+          "pages": [
+            {
+              "pageid": 1875,
+              "ns": 0,
+              "title": "Frise chronologique"
+            },
+            {
+              "pageid": 3101,
+              "ns": 0,
+              "title": "Uniform Resource Identifier",
+              "pageviews": {
+                "2026-09-08": 56,
+                "2026-09-09": 22,
+                "2026-09-10": 21,
+                "2026-09-11": 27,
+                "2026-09-12": 18,
+                "2026-09-13": 19,
+                "2026-09-14": 33,
+                "2026-09-15": 20,
+                "2026-09-16": 22,
+                "2026-09-17": 22,
+                "2026-09-18": 31,
+                "2026-09-19": 14,
+                "2026-09-20": 8,
+                "2026-09-21": 34,
+                "2026-09-22": 44,
+                "2026-09-23": 32,
+                "2026-09-24": 23,
+                "2026-09-25": 21,
+                "2026-09-26": 17,
+                "2026-09-27": 20,
+                "2026-09-28": 24,
+                "2026-09-29": 26,
+                "2026-09-30": 38,
+                "2026-10-01": 23,
+                "2026-10-02": 28,
+                "2026-10-03": 17,
+                "2026-10-04": 9,
+                "2026-10-05": 25,
+                "2026-10-06": 24,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 10377,
+              "ns": 0,
+              "title": "Réseau"
+            },
+            {
+              "pageid": 22624,
+              "ns": 0,
+              "title": "XML Schema",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 14,
+                "2026-09-10": 6,
+                "2026-09-11": 6,
+                "2026-09-12": 3,
+                "2026-09-13": 0,
+                "2026-09-14": 3,
+                "2026-09-15": 8,
+                "2026-09-16": 12,
+                "2026-09-17": 9,
+                "2026-09-18": 7,
+                "2026-09-19": 2,
+                "2026-09-20": 0,
+                "2026-09-21": 10,
+                "2026-09-22": 12,
+                "2026-09-23": 12,
+                "2026-09-24": 9,
+                "2026-09-25": 9,
+                "2026-09-26": 3,
+                "2026-09-27": 4,
+                "2026-09-28": 1,
+                "2026-09-29": 10,
+                "2026-09-30": 1,
+                "2026-10-01": 9,
+                "2026-10-02": 6,
+                "2026-10-03": 2,
+                "2026-10-04": 3,
+                "2026-10-05": 4,
+                "2026-10-06": 7,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 28587,
+              "ns": 0,
+              "title": "Management de la créativité"
+            },
+            {
+              "pageid": 33531,
+              "ns": 0,
+              "title": "Systématique",
+              "pageviews": {
+                "2026-09-08": 25,
+                "2026-09-09": 26,
+                "2026-09-10": 103,
+                "2026-09-11": 29,
+                "2026-09-12": 27,
+                "2026-09-13": 27,
+                "2026-09-14": 38,
+                "2026-09-15": 26,
+                "2026-09-16": 30,
+                "2026-09-17": 27,
+                "2026-09-18": 25,
+                "2026-09-19": 25,
+                "2026-09-20": 22,
+                "2026-09-21": 34,
+                "2026-09-22": 35,
+                "2026-09-23": 38,
+                "2026-09-24": 21,
+                "2026-09-25": 32,
+                "2026-09-26": 22,
+                "2026-09-27": 23,
+                "2026-09-28": 13,
+                "2026-09-29": 25,
+                "2026-09-30": 33,
+                "2026-10-01": 34,
+                "2026-10-02": 19,
+                "2026-10-03": 24,
+                "2026-10-04": 24,
+                "2026-10-05": 25,
+                "2026-10-06": 24,
+                "2026-10-07": 27
+              }
+            },
+            {
+              "pageid": 71525,
+              "ns": 0,
+              "title": "Open Database Connectivity"
+            },
+            {
+              "pageid": 72412,
+              "ns": 0,
+              "title": "Diagramme"
+            },
+            {
+              "pageid": 119834,
+              "ns": 0,
+              "title": "Veille technologique",
+              "pageviews": {
+                "2026-09-08": 21,
+                "2026-09-09": 23,
+                "2026-09-10": 29,
+                "2026-09-11": 13,
+                "2026-09-12": 13,
+                "2026-09-13": 7,
+                "2026-09-14": 22,
+                "2026-09-15": 30,
+                "2026-09-16": 16,
+                "2026-09-17": 41,
+                "2026-09-18": 16,
+                "2026-09-19": 9,
+                "2026-09-20": 12,
+                "2026-09-21": 20,
+                "2026-09-22": 39,
+                "2026-09-23": 24,
+                "2026-09-24": 22,
+                "2026-09-25": 19,
+                "2026-09-26": 9,
+                "2026-09-27": 9,
+                "2026-09-28": 30,
+                "2026-09-29": 11,
+                "2026-09-30": 51,
+                "2026-10-01": 27,
+                "2026-10-02": 21,
+                "2026-10-03": 7,
+                "2026-10-04": 5,
+                "2026-10-05": 24,
+                "2026-10-06": 22,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 126611,
+              "ns": 0,
+              "title": "Carte"
+            },
+            {
+              "pageid": 137941,
+              "ns": 0,
+              "title": "Web Ontology Language",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 11,
+                "2026-09-10": 5,
+                "2026-09-11": 5,
+                "2026-09-12": 7,
+                "2026-09-13": 4,
+                "2026-09-14": 10,
+                "2026-09-15": 6,
+                "2026-09-16": 10,
+                "2026-09-17": 5,
+                "2026-09-18": 10,
+                "2026-09-19": 5,
+                "2026-09-20": 3,
+                "2026-09-21": 13,
+                "2026-09-22": 14,
+                "2026-09-23": 8,
+                "2026-09-24": 7,
+                "2026-09-25": 9,
+                "2026-09-26": 4,
+                "2026-09-27": 5,
+                "2026-09-28": 6,
+                "2026-09-29": 13,
+                "2026-09-30": 7,
+                "2026-10-01": 12,
+                "2026-10-02": 8,
+                "2026-10-03": 3,
+                "2026-10-04": 6,
+                "2026-10-05": 19,
+                "2026-10-06": 5,
+                "2026-10-07": 11
+              }
+            },
+            {
+              "pageid": 244752,
+              "ns": 0,
+              "title": "Gestion mentale"
+            },
+            {
+              "pageid": 356506,
+              "ns": 0,
+              "title": "Résolution de problème"
+            },
+            {
+              "pageid": 404420,
+              "ns": 0,
+              "title": "Microformat"
+            },
+            {
+              "pageid": 415136,
+              "ns": 0,
+              "title": "Folksonomie"
+            },
+            {
+              "pageid": 457886,
+              "ns": 0,
+              "title": "Application composite"
+            },
+            {
+              "pageid": 601095,
+              "ns": 0,
+              "title": "Réseau sémantique"
+            },
+            {
+              "pageid": 622304,
+              "ns": 0,
+              "title": "Ingénierie pédagogique"
+            },
+            {
+              "pageid": 635266,
+              "ns": 0,
+              "title": "Plateforme de travail collaboratif"
+            },
+            {
+              "pageid": 841411,
+              "ns": 0,
+              "title": "Schéma conceptuel"
+            },
+            {
+              "pageid": 865482,
+              "ns": 0,
+              "title": "Arbre des causes"
+            },
+            {
+              "pageid": 1139431,
+              "ns": 0,
+              "title": "SPARQL"
+            },
+            {
+              "pageid": 1181814,
+              "ns": 0,
+              "title": "PlanFacile"
+            },
+            {
+              "pageid": 1386112,
+              "ns": 0,
+              "title": "Liste de logiciels KDE"
+            },
+            {
+              "pageid": 1404296,
+              "ns": 0,
+              "title": "Gilles Balmet"
+            },
+            {
+              "pageid": 1610526,
+              "ns": 0,
+              "title": "Carte mentale"
+            },
+            {
+              "pageid": 1933494,
+              "ns": 0,
+              "title": "Clé de détermination"
+            },
+            {
+              "pageid": 2663765,
+              "ns": 0,
+              "title": "Idéateur (informatique)"
+            },
+            {
+              "pageid": 3026067,
+              "ns": 0,
+              "title": "DBpedia"
+            },
+            {
+              "pageid": 3377737,
+              "ns": 0,
+              "title": "Arbre de connaissances"
+            },
+            {
+              "pageid": 3799938,
+              "ns": 0,
+              "title": "StarUML",
+              "pageviews": {
+                "2026-09-08": 0,
+                "2026-09-09": 2,
+                "2026-09-10": 1,
+                "2026-09-11": 0,
+                "2026-09-12": 0,
+                "2026-09-13": 2,
+                "2026-09-14": 0,
+                "2026-09-15": 6,
+                "2026-09-16": 3,
+                "2026-09-17": 1,
+                "2026-09-18": 1,
+                "2026-09-19": 6,
+                "2026-09-20": 2,
+                "2026-09-21": 4,
+                "2026-09-22": 3,
+                "2026-09-23": 2,
+                "2026-09-24": 2,
+                "2026-09-25": 1,
+                "2026-09-26": 2,
+                "2026-09-27": 3,
+                "2026-09-28": 5,
+                "2026-09-29": 4,
+                "2026-09-30": 1,
+                "2026-10-01": 3,
+                "2026-10-02": 1,
+                "2026-10-03": 0,
+                "2026-10-04": 0,
+                "2026-10-05": 0,
+                "2026-10-06": 3,
+                "2026-10-07": 4
+              }
+            },
+            {
+              "pageid": 3857019,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 5479601,
+              "ns": 0,
+              "title": "Web des données",
+              "pageviews": {
+                "2026-09-08": 10,
+                "2026-09-09": 6,
+                "2026-09-10": 6,
+                "2026-09-11": 8,
+                "2026-09-12": 7,
+                "2026-09-13": 4,
+                "2026-09-14": 10,
+                "2026-09-15": 6,
+                "2026-09-16": 2,
+                "2026-09-17": 3,
+                "2026-09-18": 7,
+                "2026-09-19": 2,
+                "2026-09-20": 2,
+                "2026-09-21": 9,
+                "2026-09-22": 12,
+                "2026-09-23": 10,
+                "2026-09-24": 8,
+                "2026-09-25": 4,
+                "2026-09-26": 3,
+                "2026-09-27": 6,
+                "2026-09-28": 2,
+                "2026-09-29": 6,
+                "2026-09-30": 7,
+                "2026-10-01": 5,
+                "2026-10-02": 5,
+                "2026-10-03": 4,
+                "2026-10-04": 3,
+                "2026-10-05": 5,
+                "2026-10-06": 8,
+                "2026-10-07": 1
+              }
+            },
+            {
+              "pageid": 5853585,
+              "ns": 0,
+              "title": "Triplestore",
+              "pageviews": {
+                "2026-09-08": 4,
+                "2026-09-09": 3,
+                "2026-09-10": 4,
+                "2026-09-11": 2,
+                "2026-09-12": 0,
+                "2026-09-13": 0,
+                "2026-09-14": 4,
+                "2026-09-15": 3,
+                "2026-09-16": 1,
+                "2026-09-17": 4,
+                "2026-09-18": 0,
+                "2026-09-19": 3,
+                "2026-09-20": 1,
+                "2026-09-21": 6,
+                "2026-09-22": 5,
+                "2026-09-23": 4,
+                "2026-09-24": 2,
+                "2026-09-25": 6,
+                "2026-09-26": 1,
+                "2026-09-27": 0,
+                "2026-09-28": 0,
+                "2026-09-29": 3,
+                "2026-09-30": 4,
+                "2026-10-01": 3,
+                "2026-10-02": 1,
+                "2026-10-03": 3,
+                "2026-10-04": 4,
+                "2026-10-05": 4,
+                "2026-10-06": 5,
+                "2026-10-07": null
+              }
+            },
+            {
+              "pageid": 6874866,
+              "ns": 0,
+              "title": "Mémoire spatiale"
+            },
+            {
+              "pageid": 7000489,
+              "ns": 0,
+              "title": "Représentation graphique"
+            },
+            {
+              "pageid": 7039888,
+              "ns": 0,
+              "title": "Rizzoma"
+            },
+            {
+              "pageid": 7098421,
+              "ns": 0,
+              "title": "Heuristique (mathématiques)"
+            },
+            {
+              "pageid": 8628091,
+              "ns": 0,
+              "title": "Linked open data"
+            },
+            {
+              "pageid": 9059245,
+              "ns": 0,
+              "title": "Métaclasse (web sémantique)"
+            },
+            {
+              "pageid": 9341168,
+              "ns": 0,
+              "title": "Objet exceptionnel"
+            },
+            {
+              "pageid": 11402527,
+              "ns": 0,
+              "title": "JSON-LD"
+            },
+            {
+              "pageid": 11937970,
+              "ns": 0,
+              "title": "Socle interministériel des logiciels libres",
+              "pageviews": {
+                "2026-09-08": 12,
+                "2026-09-09": 18,
+                "2026-09-10": 21,
+                "2026-09-11": 18,
+                "2026-09-12": 15,
+                "2026-09-13": 13,
+                "2026-09-14": 20,
+                "2026-09-15": 12,
+                "2026-09-16": 16,
+                "2026-09-17": 7,
+                "2026-09-18": 12,
+                "2026-09-19": 9,
+                "2026-09-20": 19,
+                "2026-09-21": 16,
+                "2026-09-22": 20,
+                "2026-09-23": 27,
+                "2026-09-24": 13,
+                "2026-09-25": 21,
+                "2026-09-26": 12,
+                "2026-09-27": 11,
+                "2026-09-28": 24,
+                "2026-09-29": 15,
+                "2026-09-30": 9,
+                "2026-10-01": 8,
+                "2026-10-02": 10,
+                "2026-10-03": 4,
+                "2026-10-04": 4,
+                "2026-10-05": 12,
+                "2026-10-06": 11,
+                "2026-10-07": 16
+              }
+            },
+            {
+              "pageid": 12075618,
+              "ns": 0,
+              "title": "Solid (projet de web décentralisé)",
+              "pageviews": {
+                "2026-09-08": 3,
+                "2026-09-09": 3,
+                "2026-09-10": 2,
+                "2026-09-11": 1,
+                "2026-09-12": 1,
+                "2026-09-13": 5,
+                "2026-09-14": 2,
+                "2026-09-15": 4,
+                "2026-09-16": 5,
+                "2026-09-17": 3,
+                "2026-09-18": 6,
+                "2026-09-19": 4,
+                "2026-09-20": 1,
+                "2026-09-21": 2,
+                "2026-09-22": 3,
+                "2026-09-23": 3,
+                "2026-09-24": 2,
+                "2026-09-25": 2,
+                "2026-09-26": 0,
+                "2026-09-27": 0,
+                "2026-09-28": 1,
+                "2026-09-29": 2,
+                "2026-09-30": 2,
+                "2026-10-01": 4,
+                "2026-10-02": 1,
+                "2026-10-03": 14,
+                "2026-10-04": 2,
+                "2026-10-05": 6,
+                "2026-10-06": 4,
+                "2026-10-07": 5
+              }
+            },
+            {
+              "pageid": 12483490,
+              "ns": 0,
+              "title": "Contract Net Protocol"
+            },
+            {
+              "pageid": 12943757,
+              "ns": 0,
+              "title": "Intégration de chemin"
+            },
+            {
+              "pageid": 15119967,
+              "ns": 0,
+              "title": "N-Triplets"
+            },
+            {
+              "pageid": 15221231,
+              "ns": 0,
+              "title": "XMind"
+            },
+            {
+              "pageid": 16745931,
+              "ns": 0,
+              "title": "Logiciel d'étude"
+            },
+            {
+              "pageid": 17374851,
+              "ns": 0,
+              "title": "Notation de structuration des objectifs"
+            }
+          ]
+        }
+      },
+      {
+        "batchcomplete": true,
+        "query": {
+          "pages": [
+            {
+              "pageid": 1875,
+              "ns": 0,
+              "title": "Frise chronologique"
+            },
+            {
+              "pageid": 3101,
+              "ns": 0,
+              "title": "Uniform Resource Identifier"
+            },
+            {
+              "pageid": 10377,
+              "ns": 0,
+              "title": "Réseau"
+            },
+            {
+              "pageid": 22624,
+              "ns": 0,
+              "title": "XML Schema"
+            },
+            {
+              "pageid": 28587,
+              "ns": 0,
+              "title": "Management de la créativité"
+            },
+            {
+              "pageid": 33531,
+              "ns": 0,
+              "title": "Systématique"
+            },
+            {
+              "pageid": 71525,
+              "ns": 0,
+              "title": "Open Database Connectivity"
+            },
+            {
+              "pageid": 72412,
+              "ns": 0,
+              "title": "Diagramme"
+            },
+            {
+              "pageid": 119834,
+              "ns": 0,
+              "title": "Veille technologique"
+            },
+            {
+              "pageid": 126611,
+              "ns": 0,
+              "title": "Carte"
+            },
+            {
+              "pageid": 137941,
+              "ns": 0,
+              "title": "Web Ontology Language"
+            },
+            {
+              "pageid": 244752,
+              "ns": 0,
+              "title": "Gestion mentale"
+            },
+            {
+              "pageid": 356506,
+              "ns": 0,
+              "title": "Résolution de problème"
+            },
+            {
+              "pageid": 404420,
+              "ns": 0,
+              "title": "Microformat"
+            },
+            {
+              "pageid": 415136,
+              "ns": 0,
+              "title": "Folksonomie"
+            },
+            {
+              "pageid": 457886,
+              "ns": 0,
+              "title": "Application composite"
+            },
+            {
+              "pageid": 601095,
+              "ns": 0,
+              "title": "Réseau sémantique"
+            },
+            {
+              "pageid": 622304,
+              "ns": 0,
+              "title": "Ingénierie pédagogique"
+            },
+            {
+              "pageid": 635266,
+              "ns": 0,
+              "title": "Plateforme de travail collaboratif"
+            },
+            {
+              "pageid": 841411,
+              "ns": 0,
+              "title": "Schéma conceptuel"
+            },
+            {
+              "pageid": 865482,
+              "ns": 0,
+              "title": "Arbre des causes"
+            },
+            {
+              "pageid": 1139431,
+              "ns": 0,
+              "title": "SPARQL"
+            },
+            {
+              "pageid": 1181814,
+              "ns": 0,
+              "title": "PlanFacile"
+            },
+            {
+              "pageid": 1386112,
+              "ns": 0,
+              "title": "Liste de logiciels KDE"
+            },
+            {
+              "pageid": 1404296,
+              "ns": 0,
+              "title": "Gilles Balmet"
+            },
+            {
+              "pageid": 1610526,
+              "ns": 0,
+              "title": "Carte mentale"
+            },
+            {
+              "pageid": 1933494,
+              "ns": 0,
+              "title": "Clé de détermination"
+            },
+            {
+              "pageid": 2663765,
+              "ns": 0,
+              "title": "Idéateur (informatique)"
+            },
+            {
+              "pageid": 3026067,
+              "ns": 0,
+              "title": "DBpedia"
+            },
+            {
+              "pageid": 3377737,
+              "ns": 0,
+              "title": "Arbre de connaissances"
+            },
+            {
+              "pageid": 3799938,
+              "ns": 0,
+              "title": "StarUML"
+            },
+            {
+              "pageid": 3857019,
+              "ns": 0,
+              "title": "Freeplane"
+            },
+            {
+              "pageid": 5479601,
+              "ns": 0,
+              "title": "Web des données"
+            },
+            {
+              "pageid": 5853585,
+              "ns": 0,
+              "title": "Triplestore"
+            },
+            {
+              "pageid": 6874866,
+              "ns": 0,
+              "title": "Mémoire spatiale"
+            },
+            {
+              "pageid": 7000489,
+              "ns": 0,
+              "title": "Représentation graphique"
+            },
+            {
+              "pageid": 7039888,
+              "ns": 0,
+              "title": "Rizzoma"
+            },
+            {
+              "pageid": 7098421,
+              "ns": 0,
+              "title": "Heuristique (mathématiques)"
+            },
+            {
+              "pageid": 8628091,
+              "ns": 0,
+              "title": "Linked open data"
+            },
+            {
+              "pageid": 9059245,
+              "ns": 0,
+              "title": "Métaclasse (web sémantique)"
+            },
+            {
+              "pageid": 9341168,
+              "ns": 0,
+              "title": "Objet exceptionnel"
+            },
+            {
+              "pageid": 11402527,
+              "ns": 0,
+              "title": "JSON-LD"
+            },
+            {
+              "pageid": 11937970,
+              "ns": 0,
+              "title": "Socle interministériel des logiciels libres"
+            },
+            {
+              "pageid": 12075618,
+              "ns": 0,
+              "title": "Solid (projet de web décentralisé)"
+            },
+            {
+              "pageid": 12483490,
+              "ns": 0,
+              "title": "Contract Net Protocol"
+            },
+            {
+              "pageid": 12943757,
+              "ns": 0,
+              "title": "Intégration de chemin"
+            },
+            {
+              "pageid": 15119967,
+              "ns": 0,
+              "title": "N-Triplets"
+            },
+            {
+              "pageid": 15221231,
+              "ns": 0,
+              "title": "XMind",
+              "pageviews": {
+                "2026-09-08": 6,
+                "2026-09-09": 6,
+                "2026-09-10": 8,
+                "2026-09-11": 7,
+                "2026-09-12": 2,
+                "2026-09-13": 1,
+                "2026-09-14": 9,
+                "2026-09-15": 8,
+                "2026-09-16": 9,
+                "2026-09-17": 6,
+                "2026-09-18": 3,
+                "2026-09-19": 3,
+                "2026-09-20": 5,
+                "2026-09-21": 11,
+                "2026-09-22": 6,
+                "2026-09-23": 3,
+                "2026-09-24": 5,
+                "2026-09-25": 4,
+                "2026-09-26": 3,
+                "2026-09-27": 5,
+                "2026-09-28": 3,
+                "2026-09-29": 8,
+                "2026-09-30": 7,
+                "2026-10-01": 3,
+                "2026-10-02": 5,
+                "2026-10-03": 1,
+                "2026-10-04": 2,
+                "2026-10-05": 8,
+                "2026-10-06": 6,
+                "2026-10-07": 6
+              }
+            },
+            {
+              "pageid": 16745931,
+              "ns": 0,
+              "title": "Logiciel d'étude"
+            },
+            {
+              "pageid": 17374851,
+              "ns": 0,
+              "title": "Notation de structuration des objectifs"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
