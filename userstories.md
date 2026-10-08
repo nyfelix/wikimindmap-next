@@ -318,7 +318,7 @@ Check the open points in `architecture.md` §13 with a throwaway script (`script
 - [x] The preview card states the direction in words
 - [x] The symbol legend sits in the bottom-right controls and in the drawer
 
-> Note: The legend is in the bottom-right controls; the drawer comes with US-18 (M4). Links back also count links through the center's redirects (TS-16).
+> Note: The legend is in the drawer (US-18) and, while the map labels are on, in a symbol key bottom right. It was first in the bottom-right controls, but looked like filters there, so the owner had it removed. Links back also count links through the center's redirects (TS-16).
 
 ### US-04 Search for a term · M · M3
 *As a reader, I want to type a term and pick from suggestions, so I land on the right article.*

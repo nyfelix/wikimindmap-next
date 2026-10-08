@@ -1,5 +1,4 @@
 import { DENSITY } from "../hooks/mapParams.ts";
-import { DirectionIcon } from "../map/DirectionGlyph.tsx";
 import panel from "./Panel.module.css";
 import styles from "./MapControls.module.css";
 
@@ -13,7 +12,7 @@ interface Props {
   onFit: () => void;
 }
 
-/** Bottom right: density, See also, the direction legend and zoom (US-03, US-19). */
+/** Bottom right: density, See also and zoom (US-03, US-19). The symbols are explained by `?`. */
 export function MapControls(props: Props) {
   return (
     <div className={`${panel.panel} ${panel.bottomRight}`} role="group" aria-label="Map controls">
@@ -37,16 +36,6 @@ export function MapControls(props: Props) {
         />
         See also
       </label>
-      <div className={styles.legend} aria-label="Link direction symbols">
-        <span>
-          <DirectionIcon direction="out" />
-          out
-        </span>
-        <span>
-          <DirectionIcon direction="both" />
-          both ways
-        </span>
-      </div>
       <div className={styles.zoom}>
         <button type="button" onClick={props.onZoomIn} aria-label="Zoom in" title="Zoom in (+)">
           +

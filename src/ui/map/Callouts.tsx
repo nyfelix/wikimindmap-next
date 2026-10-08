@@ -3,6 +3,14 @@ import type { CalloutTarget, LensExplanation } from "../../core/types.ts";
 import { CALLOUT, placeCallouts, type Anchor, type PlacedCallout } from "./callouts.ts";
 import styles from "./Callouts.module.css";
 import panel from "../panels/Panel.module.css";
+import { DirectionIcon } from "./DirectionGlyph.tsx";
+
+/** The three link directions, explained while the labels are on (owner: all three). */
+const SYMBOLS = [
+  ["out", "Out", "This article links there; that one doesn’t link back."],
+  ["both", "Both ways", "The two articles link each other."],
+  ["in", "In", "That article links here, but this one doesn’t link to it (Links in / out lens)."],
+] as const;
 
 interface Props {
   svg: RefObject<SVGSVGElement | null>;
@@ -118,11 +126,27 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
           </div>
         ))}
       </div>
+      <div className={styles.symbols} aria-hidden="true">
+        <b>Link directions</b>
+        {SYMBOLS.map(([direction, name, text]) => (
+          <div key={direction} className={styles.symbol}>
+            <DirectionIcon direction={direction} />
+            <span>
+              <b>{name}:</b> {text}
+            </span>
+          </div>
+        ))}
+      </div>
       {/* For screen readers, the labels as plain text. */}
       <div className={styles.srOnly}>
         {items.map((c) => (
           <p key={c.key}>
             {c.title}: {c.text}
+          </p>
+        ))}
+        {SYMBOLS.map(([direction, name, text]) => (
+          <p key={direction}>
+            Link direction {name}: {text}
           </p>
         ))}
       </div>

@@ -4,7 +4,8 @@
  */
 import type { CalloutTarget } from "../../core/types.ts";
 
-export const CALLOUT = { width: 220, height: 64, gap: 14, top: 86, bottom: 190 } as const;
+// bottom: room for the map controls and the symbol key in the bottom right.
+export const CALLOUT = { width: 220, height: 64, gap: 14, top: 86, bottom: 270 } as const;
 
 export interface Anchor {
   key: CalloutTarget;

@@ -51,3 +51,19 @@ test.describe("explanations and pages", () => {
     await expect(page.getByRole("button", { name: "About Mind map" })).toBeVisible();
   });
 });
+
+test("the labels explain all three link directions; the controls have no legend", async ({
+  page,
+}) => {
+  await mockWikipedia(page);
+  await page.goto("/en/Mind_map");
+  await expect(page.getByText("Link directions", { exact: true })).toBeVisible();
+  for (const name of ["Out:", "Both ways:", "In:"]) {
+    await expect(page.getByText(name, { exact: true })).toBeVisible();
+  }
+  await page.getByRole("button", { name: "Got it" }).click();
+  await expect(page.getByText("Link directions", { exact: true })).toHaveCount(0);
+  await expect(
+    page.getByRole("group", { name: "Map controls" }).getByText("both ways"),
+  ).toHaveCount(0);
+});
