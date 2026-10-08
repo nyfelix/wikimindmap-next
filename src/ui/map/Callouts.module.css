@@ -16,8 +16,10 @@
   fill: none;
 }
 
-.dot {
-  fill: var(--ink);
+.ring {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
 }
 
 .callout {

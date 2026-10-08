@@ -1,6 +1,14 @@
 import { useLayoutEffect, useState, type RefObject } from "react";
 import type { CalloutTarget, LensExplanation } from "../../core/types.ts";
-import { CALLOUT, placeCallouts, type Anchor, type PlacedCallout } from "./callouts.ts";
+import {
+  CALLOUT,
+  placeCallouts,
+  ringEdge,
+  ringOf,
+  type Anchor,
+  type PlacedCallout,
+  type Ring,
+} from "./callouts.ts";
 import styles from "./Callouts.module.css";
 import panel from "../panels/Panel.module.css";
 import { DirectionIcon } from "./DirectionGlyph.tsx";
@@ -51,6 +59,7 @@ const TARGETS: { key: CalloutTarget; selectors: string[] }[] = [
 interface Item extends PlacedCallout {
   title: string;
   text: string;
+  ring: Ring;
 }
 
 /** Map labels (US-18): dark callouts pinned to real elements of the map. */
@@ -67,7 +76,7 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
   useLayoutEffect(() => {
     const root = svg.current;
     if (!root) return;
-    const anchors: (Anchor & { name?: string })[] = [];
+    const anchors: (Anchor & { name?: string; ring: Ring })[] = [];
     for (const { key, selectors } of TARGETS) {
       if (!explain.callouts[key]) continue;
       for (const selector of selectors) {
@@ -81,6 +90,7 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
           key,
           x: r.left + r.width / 2,
           y: r.top + r.height / 2,
+          ring: ringOf(r.width, r.height),
           ...(name ? { name } : {}),
         });
         break;
@@ -92,8 +102,10 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
     setItems(
       placed.map((p) => {
         const copy = explain.callouts[p.key] ?? { title: "", text: "" };
-        const name = anchors.find((a) => a.key === p.key)?.name ?? "";
-        return { ...p, title: copy.title.replace("{name}", name), text: copy.text };
+        const anchor = anchors.find((a) => a.key === p.key);
+        const name = anchor?.name ?? "";
+        const ring = anchor?.ring ?? ringOf(0, 0);
+        return { ...p, ring, title: copy.title.replace("{name}", name), text: copy.text };
       }),
     );
   }, [svg, explain, version, size]);
@@ -111,10 +123,23 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
           {items.map((c) => {
             const ax = Math.max(c.left, Math.min(c.left + CALLOUT.width, c.x));
             const ay = c.y < c.top ? c.top : c.top + CALLOUT.height;
+            // A ring around the element, so nothing covers it; the line ends at the ring.
+            const edge = ringEdge(c.ring, c.x, c.y, ax, ay);
             return (
               <g key={c.key}>
-                <path d={`M${c.x} ${c.y}L${ax} ${ay}`} className={styles.line} />
-                <circle cx={c.x} cy={c.y} r={3.5} className={styles.dot} />
+                <path d={`M${edge.x} ${edge.y}L${ax} ${ay}`} className={styles.line} />
+                {c.ring.shape === "circle" ? (
+                  <circle cx={c.x} cy={c.y} r={c.ring.r} className={styles.ring} />
+                ) : (
+                  <rect
+                    x={c.x - c.ring.halfWidth}
+                    y={c.y - c.ring.halfHeight}
+                    width={2 * c.ring.halfWidth}
+                    height={2 * c.ring.halfHeight}
+                    rx={c.ring.halfHeight}
+                    className={styles.ring}
+                  />
+                )}
               </g>
             );
           })}

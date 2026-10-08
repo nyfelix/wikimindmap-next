@@ -48,7 +48,7 @@ The explanations from the concept previews stay in the product, in three layers.
 
 | Layer | Trigger | Content |
 |---|---|---|
-| **Map labels** (callouts) | Shown automatically the first time a reader opens a lens. `?` toggles them afterwards. | 4–5 dark callouts pinned to real elements of the current map: the article, a chapter, a subchapter, a direction symbol, ⊕. A bar at the top says "Labels explain the map. [Got it]". A symbol key in the same style, bottom right, explains all three link directions (out, both ways, in). |
+| **Map labels** (callouts) | Shown automatically the first time a reader opens a lens. `?` toggles them afterwards. | 4–5 dark callouts pinned to real elements of the current map: the article, a chapter, a subchapter, a direction symbol, ⊕. Each points at its element with a thin line ending in a ring around it (a circle, or a rounded outline around the center pill), so nothing covers the element. A bar at the top says "Labels explain the map. [Got it]". A symbol key in the same style, bottom right, explains all three link directions (out, both ways, in). |
 | **How this map is built** (drawer) | `i` | Per lens: the construction steps as a numbered list (a real sequence), the symbol legend, what is hidden and why, and the source line (article URL, revision). A button to show the map labels. |
 | **Preview card** | Click on a node | The chapter the link sits in, the direction in words ("Links go both ways"), and the summary. |
 

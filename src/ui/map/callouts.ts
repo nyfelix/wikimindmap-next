@@ -60,3 +60,31 @@ export function placeCallouts(anchors: Anchor[], width: number, height: number):
 }
 
 const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v));
+
+/** The ring around a labelled element: a circle, or a rounded outline for wide ones (the center). */
+export type Ring =
+  { shape: "circle"; r: number } | { shape: "pill"; halfWidth: number; halfHeight: number };
+
+const RING_GAP = 5;
+
+export function ringOf(width: number, height: number): Ring {
+  if (width > height * 1.6) {
+    return { shape: "pill", halfWidth: width / 2 + RING_GAP, halfHeight: height / 2 + RING_GAP };
+  }
+  return { shape: "circle", r: Math.max(width, height) / 2 + RING_GAP };
+}
+
+/** Where the leader line from (toX, toY) meets the ring around (x, y). */
+export function ringEdge(ring: Ring, x: number, y: number, toX: number, toY: number) {
+  const dx = toX - x;
+  const dy = toY - y;
+  const length = Math.hypot(dx, dy) || 1;
+  if (ring.shape === "circle")
+    return { x: x + (dx / length) * ring.r, y: y + (dy / length) * ring.r };
+  // The outline's bounding box is close enough for a pill: the line meets its nearest side.
+  const scale = Math.min(
+    dx === 0 ? Infinity : ring.halfWidth / Math.abs(dx),
+    dy === 0 ? Infinity : ring.halfHeight / Math.abs(dy),
+  );
+  return { x: x + dx * scale, y: y + dy * scale };
+}

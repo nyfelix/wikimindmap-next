@@ -42,3 +42,21 @@ describe("placeCallouts", () => {
     expect(placeCallouts([{ key: "group", x: -50, y: 300 }], W, H)).toEqual([]);
   });
 });
+
+describe("ring around a labelled element", async () => {
+  const { ringEdge, ringOf } = await import("../../src/ui/map/callouts.ts");
+
+  it("is a circle for small, square elements and a pill for wide ones", () => {
+    expect(ringOf(18, 18)).toEqual({ shape: "circle", r: 14 });
+    expect(ringOf(200, 54)).toEqual({ shape: "pill", halfWidth: 105, halfHeight: 32 });
+  });
+
+  it("ends the leader line on the ring, not on the element", () => {
+    const circle = ringEdge({ shape: "circle", r: 10 }, 0, 0, 30, 40);
+    expect(Math.hypot(circle.x, circle.y)).toBeCloseTo(10);
+    const pill = ringEdge({ shape: "pill", halfWidth: 100, halfHeight: 30 }, 0, 0, 0, 200);
+    expect(pill).toEqual({ x: 0, y: 30 });
+    const side = ringEdge({ shape: "pill", halfWidth: 100, halfHeight: 30 }, 0, 0, 400, 40);
+    expect(side.x).toBeCloseTo(100);
+  });
+});

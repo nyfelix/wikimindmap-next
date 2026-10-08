@@ -126,6 +126,8 @@ export const kindsQuery = (ref: ArticleRef, titles: Title[]) =>
   queryOptions<[Title, KindInfo][]>({
     queryKey: keys.kinds(ref.lang, ref.title),
     queryFn: async () => [...kindsFrom(await fetchWikidata(ref.lang, titles), KIND_MAP)],
+    // The Wikidata query service has short hiccups (timeouts): try twice more before showing an error.
+    retry: 2,
     staleTime: WEEK,
     gcTime: WEEK,
     persister: persisters.week.persisterFn,
