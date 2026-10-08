@@ -44,6 +44,7 @@ export function EditorialLayout({ title, crumb, children }: Props) {
         {children}
       </main>
       <footer className={styles.footer}>
+        <p className={styles.author}>© 2007–{new Date().getFullYear()} Felix Nyffenegger</p>
         <p>
           WikiMindMap is an independent project and is not affiliated with or endorsed by the
           Wikimedia Foundation. Wikipedia is a trademark of the Wikimedia Foundation.

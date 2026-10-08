@@ -201,3 +201,11 @@
   font: 400 0.85rem/1.5 var(--ui);
   color: var(--muted);
 }
+
+/* The author line, in small capitals like the eyebrows (styleguide.md §8). */
+.footer .author {
+  margin-bottom: 6px;
+  font: 500 0.72rem var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
