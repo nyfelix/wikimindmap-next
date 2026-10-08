@@ -1,10 +1,11 @@
 .outline {
   position: fixed;
   z-index: 3;
-  top: 76px;
-  left: 14px;
+  /* On the right, where its button is and where the drawer opens (owner feedback). */
+  top: 70px;
+  right: 14px;
   bottom: 84px;
-  width: min(440px, calc(100% - 28px));
+  width: min(400px, calc(100% - 28px));
   overflow: auto;
   padding: 16px 18px;
   display: grid;

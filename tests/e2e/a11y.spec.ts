@@ -30,7 +30,12 @@ test.describe("accessibility (US-11)", () => {
     await page.keyboard.press("o");
     await expect(page.getByRole("region", { name: "Mind map" })).toBeVisible();
     expect(await serious(page)).toEqual([]);
+    // The outline sits on the right, where its button is.
+    const box = await page.getByRole("region", { name: "Mind map" }).boundingBox();
+    expect(box!.x + box!.width).toBeGreaterThan(page.viewportSize()!.width - 30);
     await page.keyboard.press("i");
+    // The drawer takes its place on the right.
+    await expect(page.getByRole("region", { name: "Mind map" })).toHaveCount(0);
     expect(await serious(page)).toEqual([]);
   });
 

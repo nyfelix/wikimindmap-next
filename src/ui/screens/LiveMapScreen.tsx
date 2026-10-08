@@ -45,8 +45,12 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
   const queryClient = useQueryClient();
   const search = useRef<HTMLInputElement>(null);
   const [card, setCard] = useState<{ node: MapNode; anchor: Element }>();
-  const [drawer, setDrawer] = useState(false);
-  const [outline, setOutline] = useState(false);
+  // The drawer and the outline share the right side; opening one closes the other.
+  const [side, setSide] = useState<"drawer" | "outline">();
+  const drawer = side === "drawer";
+  const outline = side === "outline";
+  const toggleDrawer = () => setSide((p) => (p === "drawer" ? undefined : "drawer"));
+  const toggleOutline = () => setSide((p) => (p === "outline" ? undefined : "outline"));
   // After choosing a language the article isn't in, search happens there (US-09).
   const [searchLang, setSearchLang] = useState<Lang>();
   const [missingIn, setMissingIn] = useState<Lang>();
@@ -161,15 +165,15 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         search.current?.focus();
       } else if (e.key === "Escape") {
         setCard(undefined);
-        setDrawer(false);
+        setSide(undefined);
       } else if (typing || e.metaKey || e.ctrlKey || e.altKey) {
         return;
       } else if (e.key === "?") {
         labels.toggle();
       } else if (e.key === "i") {
-        setDrawer((d) => !d);
+        toggleDrawer();
       } else if (e.key === "o") {
-        setOutline((o) => !o);
+        toggleOutline();
       }
     };
     window.addEventListener("keydown", onKey);
@@ -208,7 +212,7 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         className={styles.skip}
         onClick={(e) => {
           e.preventDefault();
-          setOutline(true);
+          setSide("outline");
         }}
       >
         Show the map as an outline
@@ -239,9 +243,9 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
         labels={labels.visible}
         onLabels={labels.toggle}
         drawer={drawer}
-        onDrawer={() => setDrawer((d) => !d)}
+        onDrawer={toggleDrawer}
         outline={outline}
-        onOutline={() => setOutline((o) => !o)}
+        onOutline={toggleOutline}
       />
       {outline && live.status === "ready" && (
         <OutlineView
@@ -251,16 +255,16 @@ export function LiveMapScreen({ article: asked, isStart = false }: Props) {
           onRecenter={recenter}
           onFold={(node) => state.toggleFold(node.id)}
           onMore={(node) => state.toggleMore(node.parent ?? node.id)}
-          onClose={() => setOutline(false)}
+          onClose={() => setSide(undefined)}
         />
       )}
       {drawer && (
         <Drawer
           lens={lens}
           {...(live.article ? { article: live.article } : {})}
-          onClose={() => setDrawer(false)}
+          onClose={() => setSide(undefined)}
           onLabels={() => {
-            setDrawer(false);
+            setSide(undefined);
             labels.show();
           }}
         />
