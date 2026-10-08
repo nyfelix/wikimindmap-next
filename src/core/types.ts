@@ -280,6 +280,8 @@ export interface PositionedNode {
   text: string;
   /** Measured width of `text`. */
   textWidth: number;
+  /** Leaves drawn as a pill around symbol, label and ⊕ (the both-ways band, bipolar). */
+  pill?: boolean;
 }
 
 export interface PositionedEdge {
@@ -291,7 +293,7 @@ export interface PositionedEdge {
 }
 
 /** The text styles on the map; fonts per style come from the CSS tokens. */
-export type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count";
+export type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count" | "zone";
 
 /** Measures the rendered width of a text in a style. */
 export type MeasureText = (text: string, style: TextStyle) => number;

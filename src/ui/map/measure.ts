@@ -3,7 +3,7 @@
  * space a label takes. Font families come from the CSS tokens.
  */
 import type { MeasureText, TextStyle } from "../../core/types.ts";
-import { FONT_SIZE } from "../../layouts/geometry.ts";
+import { FONT_SIZE, ZONE } from "../../layouts/geometry.ts";
 
 const WEIGHT: Record<TextStyle, number> = {
   center: 700,
@@ -12,6 +12,7 @@ const WEIGHT: Record<TextStyle, number> = {
   leaf: 400,
   leafBold: 600,
   count: 400,
+  zone: 500,
 };
 
 const FAMILY_TOKEN: Record<TextStyle, string> = {
@@ -21,6 +22,7 @@ const FAMILY_TOKEN: Record<TextStyle, string> = {
   leaf: "--label",
   leafBold: "--label",
   count: "--label",
+  zone: "--mono",
 };
 
 /** The CSS font shorthand for a map text style. */
@@ -46,6 +48,8 @@ export function createMeasure(): MeasureText {
       if (context) {
         context.font = font;
         width = context.measureText(text).width;
+        // Zone labels are tracked (letter-spacing in CSS), which measureText doesn't apply.
+        if (style === "zone") width += [...text].length * ZONE.tracking * FONT_SIZE.zone;
       } else {
         width = text.length * FONT_SIZE[style] * 0.55;
       }

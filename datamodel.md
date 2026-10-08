@@ -161,7 +161,7 @@ interface LensOptions {
 
 **Rules for every lens**
 - `build` is pure and deterministic: the same input gives the same output, with no network or randomness.
-- Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded or doesn't cover the title yet (`linksChecked`). Incoming-only links (`in`) come from `linksHere`.
+- Every leaf gets a `direction`. Lenses that show links from the article use `out`, or `both` when the title is in `linksBack`, or `pending` while `linksBack` hasn't loaded or doesn't cover the title yet (`linksChecked`). Incoming-only links (`in`) come from `linksHere`. The Links lens also counts a link as `both` when its title is in `linksHere`; when `linksHere` is capped, the loader checks every link out that isn't on it before building the map.
 - Every node that has children can fold (`folded` is defined, `false` when open).
 - Leaves are deduplicated **within a group** (a link used twice in one chapter shows once). Across groups a leaf may repeat, and its node `id` includes the group so IDs stay unique.
 - When a group has more leaves than `density`, keep the first `density` by rank and add one `more` node with the count. Groups listed in `expanded` show all their leaves.
@@ -230,6 +230,7 @@ interface PositionedNode {
   depth: number;               // 0 = center, 1 = first-level group, …
   text: string;                // the label as drawn; long labels are shortened with "…"
   textWidth: number;           // measured width of text
+  pill?: boolean;              // bipolar: a both-ways leaf drawn as a pill around symbol, label and ⊕
 }
 
 interface PositionedEdge {
@@ -249,7 +250,7 @@ interface LayoutOptions {
   bold?: (node: MapNode) => boolean;                      // leaves with a cached map are drawn bold
   row?: number;                                           // leaf row distance (44 on touch screens)
 }
-type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count";
+type TextStyle = "center" | "group" | "subgroup" | "leaf" | "leafBold" | "count" | "zone";  // zone: bipolar zone labels
 ```
 
 ## 7. Housekeeping sections

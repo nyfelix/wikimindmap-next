@@ -23,6 +23,18 @@ test.describe("accessibility (US-11)", () => {
     expect(await serious(page)).toEqual([]);
   });
 
+  test("the Links in / out map and its outline have no serious axe issues", async ({ page }) => {
+    await mockWikipedia(page);
+    await page.goto("/en/Mind_map?lens=links");
+    await page.getByRole("button", { name: "Got it" }).click();
+    await expect(page.getByText(/^LINKS HERE · /)).toBeVisible();
+    expect(await serious(page)).toEqual([]);
+    await page.keyboard.press("o");
+    const outline = page.getByRole("region", { name: "Mind map" });
+    await expect(outline).toContainText("Links here");
+    expect(await serious(page)).toEqual([]);
+  });
+
   test("the outline, preview and drawer have no serious axe issues", async ({ page }) => {
     await mockWikipedia(page);
     await page.goto("/en/Mind_map");

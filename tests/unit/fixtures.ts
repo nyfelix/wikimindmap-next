@@ -7,6 +7,7 @@ import { parseSiteinfo, type SiteinfoResponse } from "../../src/sources/siteinfo
 import { KIND_MAP } from "../../src/lenses/kindMap.ts";
 import { sumPageviews, type PageviewsResponse } from "../../src/sources/pageviews.ts";
 import { kindsFrom } from "../../src/sources/wikidata.ts";
+import { parseLinksHere, type BacklinksPages } from "../../src/sources/linksHere.ts";
 
 export const FIXTURES = join(import.meta.dirname, "..", "fixtures");
 
@@ -96,4 +97,21 @@ export function fixtureKinds(f: Fixture) {
 export function fixturePageviews(f: Fixture) {
   const raw = readJson<{ titles: string[]; responses: PageviewsResponse[] }>(f, "pageviews.json");
   return sumPageviews(raw.titles, raw.responses);
+}
+
+/** The recorded incoming links of a fixture and the views of the longest (linkshere.json, TS-15). */
+export function fixtureLinksHere(f: Fixture) {
+  const raw = readJson<
+    BacklinksPages & { pageviews: { titles: string[]; responses: PageviewsResponse[] } }
+  >(f, "linkshere.json");
+  return {
+    linksHere: parseLinksHere(raw),
+    views: sumPageviews(raw.pageviews.titles, raw.pageviews.responses),
+  };
+}
+
+/** The recorded links-back check of a fixture (linksback.json, TS-16). */
+export function fixtureLinksBack(f: Fixture) {
+  const raw = readJson<{ checked: string[]; back: string[] }>(f, "linksback.json");
+  return { linksBack: new Set(raw.back), linksChecked: new Set(raw.checked) };
 }

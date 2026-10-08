@@ -16,7 +16,8 @@ const ABOUT: Record<string, string[]> = {
     "Leaves are ranked by how often they are read on Wikipedia.",
   ],
   links: [
-    "Where a topic comes from and where it leads: the articles that link here on one side, the ones it links to on the other, and those that go both ways on top.",
+    "Where a topic comes from and where it leads: the articles that link here on the left, the ones it links to on the right, and those that go both ways in a band on top. The articles that link here often show the bigger picture the article itself never mentions.",
+    "Each side shows the most read articles first, and counts every link in its direction. Wikipedia lists up to 2,000 articles that link here; beyond that the count shows “2,000+”, and the 100 longest of them are ranked by views.",
   ],
   metro: [
     "The ideas that run through a long article. A line is an article that is linked from several chapters; the chapters are its stations.",

@@ -52,7 +52,7 @@ sources ──► Article ──► Lens.build() ──► MapGraph ──► La
 |---|---|---|---|
 | Chapters | M2–M4 (MVP) | `sections`, `linksBack` | `mindmapTree` (two-sided tidy tree) |
 | Kinds | M5 | `sections`, `linksBack`, `pageviews`, `kinds` | `mindmapTree` |
-| Links in / out | M6 | `sections`, `pageviews`, `linksHere` | `bipolar` |
+| Links in / out | M6 | `sections`, `linksBack`, `pageviews`, `linksHere` | `bipolar` (columns left and right, a band of pills on top) |
 | Metro | M7 | `sections`, `linksBack` | `metroLines` |
 
 ## 4. Data sources

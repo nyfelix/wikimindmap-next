@@ -2,12 +2,17 @@ import type { MapNode, PositionedNode } from "../../core/types.ts";
 import {
   CENTER,
   COUNT_DX,
+  foldedLabel,
+  FOLD_R,
+  glyphHalf,
   GROUP_LABEL,
   LABEL_GAP,
+  PILL,
+  pillWidth,
   RECENTER_GAP,
   RECENTER_R,
+  ZONE,
 } from "../../layouts/geometry.ts";
-import { foldedLabel, glyphHalf } from "../../layouts/mindmapTree.ts";
 import { activate } from "./activate.ts";
 import { slotColor } from "./color.ts";
 import { DirectionGlyph } from "./DirectionGlyph.tsx";
@@ -31,15 +36,63 @@ interface Props extends MapActions {
   frame: Frame;
 }
 
+/** Edge styles drawn as a line with an arrowhead (styleguide.md §5). */
+const ARROWS = new Set(["in", "out", "both"]);
+const arrowId = (slot: number) => `wmm-arrow-${slot}`;
+
 /** Draws one frame of a PositionedMap (styleguide.md §4). */
 export function SvgMap({ frame, ...actions }: Props) {
   const color = new Map(frame.nodes.map((f) => [f.p.node.id, slotColor(f.p.node.colorSlot)]));
   const empty = new Set(frame.nodes.filter((f) => f.p.node.empty).map((f) => f.p.node.id));
+  const slots = new Map(frame.nodes.map((f) => [f.p.node.id, f.p.node.colorSlot ?? 0]));
+  // One arrowhead per group color, for the edges that show a direction (bipolar).
+  const arrowSlots = [
+    ...new Set(
+      frame.edges
+        .filter(({ e }) => ARROWS.has(e.edge.style))
+        .map(({ e }) => slots.get(e.edge.to) ?? 0),
+    ),
+  ];
   return (
     <>
+      {arrowSlots.length > 0 && (
+        <defs>
+          {arrowSlots.map((slot) => (
+            <marker
+              key={slot}
+              id={arrowId(slot)}
+              viewBox="0 0 10 10"
+              refX={8}
+              refY={5}
+              markerWidth={7}
+              markerHeight={7}
+              markerUnits="userSpaceOnUse"
+              orient="auto-start-reverse"
+            >
+              <path d="M0 0L10 5L0 10z" fill={slotColor(slot || undefined)} />
+            </marker>
+          ))}
+        </defs>
+      )}
       <g className={styles.edges}>
         {frame.edges.map(({ e, key, opacity }) => {
           const stroke = color.get(e.edge.to) ?? "var(--muted)";
+          if (ARROWS.has(e.edge.style)) {
+            const marker = `url(#${arrowId(slots.get(e.edge.to) ?? 0)})`;
+            return (
+              <path
+                key={key}
+                d={e.path}
+                fill="none"
+                stroke={stroke}
+                strokeWidth={e.width}
+                strokeLinecap="round"
+                opacity={0.85 * opacity}
+                markerEnd={marker}
+                {...(e.edge.style === "both" ? { markerStart: marker } : {})}
+              />
+            );
+          }
           if (empty.has(e.edge.to)) {
             return (
               <path
@@ -141,6 +194,7 @@ function CenterView({ p, actions, ...rest }: ViewProps) {
 }
 
 function GroupView({ p, actions, ...rest }: ViewProps) {
+  if (p.labelSide === "above") return <ZoneView p={p} actions={actions} {...rest} />;
   const { node, x, y, side } = p;
   const color = slotColor(node.colorSlot);
   const folded = node.folded === true;
@@ -186,6 +240,55 @@ function GroupView({ p, actions, ...rest }: ViewProps) {
   );
 }
 
+/** A group as a zone label (bipolar): fold toggle, then "LINKS HERE · 505" in tracked capitals. */
+function ZoneView({ p, actions, ...rest }: ViewProps) {
+  const { node, x, y, side } = p;
+  const textX = x + side * (FOLD_R + ZONE.dx);
+  const anchor = side > 0 ? "start" : "end";
+  return (
+    <g
+      data-node={node.kind}
+      data-id={node.id}
+      data-parent={node.parent}
+      data-side={side}
+      data-label={node.label}
+      {...(node.side === "top" ? { "data-top": true } : {})}
+      {...rest}
+    >
+      <text
+        className={`${styles.zone} ${node.empty ? styles.mutedLabel : ""}`}
+        x={textX}
+        y={y + ZONE.dy}
+        textAnchor={anchor}
+      >
+        {p.text}
+      </text>
+      {node.folded !== undefined ? (
+        <FoldToggle
+          x={x}
+          y={y}
+          color={slotColor(node.colorSlot)}
+          folded={node.folded}
+          label={node.label}
+          onToggle={() => actions.onFold?.(node)}
+        />
+      ) : (
+        <circle cx={x} cy={y} r={FOLD_R / 2} fill={slotColor(node.colorSlot)} opacity={0.6} />
+      )}
+      {(node.folded || node.empty) && (
+        <text
+          className={styles.count}
+          x={textX + side * (p.textWidth + COUNT_DX)}
+          y={y + ZONE.dy}
+          textAnchor={anchor}
+        >
+          {foldedLabel(node)}
+        </text>
+      )}
+    </g>
+  );
+}
+
 function LeafView({ p, actions, ...rest }: ViewProps) {
   const { node, x, y, side } = p;
   const half = glyphHalf(node);
@@ -201,8 +304,21 @@ function LeafView({ p, actions, ...rest }: ViewProps) {
       data-parent={node.parent}
       data-side={side}
       data-direction={node.direction ?? "pending"}
+      {...(p.pill ? { "data-top": true } : {})}
       {...rest}
     >
+      {p.pill && (
+        // The both-ways band: a pill around symbol, label and ⊕.
+        <rect
+          className={styles.pill}
+          x={x - half - PILL.pad}
+          y={y - PILL.height / 2}
+          width={pillWidth(p.textWidth, half)}
+          height={PILL.height}
+          rx={PILL.height / 2}
+          stroke={slotColor(node.colorSlot)}
+        />
+      )}
       <g
         className={styles.leaf}
         role="button"

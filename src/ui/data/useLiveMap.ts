@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { articleLinks, redirectTargets } from "../../core/links.ts";
 import type {
   Article,
@@ -20,6 +20,7 @@ import {
   keys,
   kindsQuery,
   linksBackQuery,
+  linksHereQuery,
   pageviewsQuery,
   redirectsQuery,
   type LinksBackData,
@@ -88,20 +89,38 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
   // of the article, so the lens can group and rank them all (owner decision).
   const wantsViews = lens.needs.includes("pageviews");
   const wantsKinds = lens.needs.includes("kinds");
+  const wantsHere = lens.needs.includes("linksHere");
   const allTargets = useMemo(
     () =>
-      article && ready && (wantsViews || wantsKinds)
+      article && ready && (wantsViews || wantsKinds || wantsHere)
         ? articleLinks(
             article,
             redirects,
             (l) => !l.redLink && (l.origin === "body" || l.origin === "hatnote"),
           ).map((l) => l.target)
         : [],
-    [article, ready, redirects, wantsViews, wantsKinds],
+    [article, ready, redirects, wantsViews, wantsKinds, wantsHere],
   );
   const viewsQ = useQuery({ ...pageviewsQuery(real, allTargets), enabled: ready && wantsViews });
   const kindsQ = useQuery({ ...kindsQuery(real, allTargets), enabled: ready && wantsKinds });
-  const enriched = (!wantsViews || viewsQ.isSuccess) && (!wantsKinds || kindsQ.isSuccess);
+  const hereQ = useQuery({ ...linksHereQuery(real), enabled: ready && wantsHere });
+
+  // A capped list of incoming links can't tell "both ways" from "out": the links-back check
+  // covers every link out that isn't on it, before the map is built (US-15).
+  const unsure = useMemo(() => {
+    if (!wantsLinks || !hereQ.data?.capped) return [];
+    const here = new Set(hereQ.data.titles);
+    return allTargets.filter((t) => !here.has(t));
+  }, [wantsLinks, hereQ.data, allTargets]);
+  const [failedFor, setFailedFor] = useState<string>();
+  const unsureFailed = failedFor === `${real.lang}:${real.title}`;
+  const checked = useMemo(() => new Set(linksQ.data?.checked ?? []), [linksQ.data]);
+  const directionsKnown = unsureFailed || unsure.every((t) => checked.has(t));
+
+  const enriched =
+    (!wantsViews || viewsQ.isSuccess) &&
+    (!wantsKinds || kindsQ.isSuccess) &&
+    (!wantsHere || (hereQ.isSuccess && directionsKnown));
 
   const enrichments = useMemo(() => {
     const data: Enrichments = { redirects };
@@ -111,25 +130,33 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
     }
     if (viewsQ.data) data.pageviews = new Map(viewsQ.data);
     if (kindsQ.data) data.kinds = new Map(kindsQ.data);
+    if (hereQ.data) {
+      const { titles, total, capped, views } = hereQ.data;
+      data.linksHere = { titles, total, capped };
+      data.pageviews = new Map([...views, ...(data.pageviews ?? [])]);
+    }
     return data;
-  }, [redirects, linksQ.data, viewsQ.data, kindsQ.data]);
+  }, [redirects, linksQ.data, viewsQ.data, kindsQ.data, hereQ.data]);
 
   const built = useMemo(
     () => (article && ready && enriched ? build(lens, article, enrichments, options) : undefined),
     [lens, article, ready, enriched, enrichments, options],
   );
 
-  // Check the visible leaves that haven't been checked yet.
+  // Check the visible leaves whose direction isn't known yet, and the unsure links out.
   const visible = useMemo(
     () =>
       [
-        ...new Set(
-          (built?.graph.nodes ?? []).flatMap((n) =>
-            n.kind === "leaf" && n.target && !n.redLink ? [n.target] : [],
+        ...new Set([
+          ...(built?.graph.nodes ?? []).flatMap((n) =>
+            n.kind === "leaf" && n.target && !n.redLink && n.direction === "pending"
+              ? [n.target]
+              : [],
           ),
-        ),
+          ...unsure,
+        ]),
       ].sort(),
-    [built],
+    [built, unsure],
   );
   const asking = useRef(new Set<string>());
   useEffect(() => {
@@ -148,15 +175,18 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
         void persisters.day.persistQueryByKey(key, queryClient);
       })
       .catch(() => {
-        // The symbols stay "pending"; a later change of the visible leaves asks again.
+        // The symbols stay "pending"; a later change of the visible leaves asks again. The
+        // Links lens then builds its map with the unsure links out as "pending".
+        if (missing.some((t) => unsure.includes(t))) setFailedFor(`${real.lang}:${real.title}`);
       })
       .finally(() => {
         for (const t of missing) asking.current.delete(t);
       });
-  }, [wantsLinks, linksQ.data, aliasesQ.data, visible, real.lang, real.title]);
+  }, [wantsLinks, linksQ.data, aliasesQ.data, visible, unsure, real.lang, real.title]);
 
   const notFound = articleQ.error instanceof HttpError && articleQ.error.kind === "NotFound";
-  const failed = articleQ.isError || redirectsQ.isError || viewsQ.isError || kindsQ.isError;
+  const failed =
+    articleQ.isError || redirectsQ.isError || viewsQ.isError || kindsQ.isError || hereQ.isError;
   const status: LiveStatus = notFound ? "notFound" : failed ? "error" : built ? "ready" : "loading";
   const result: LiveMap = {
     status,
@@ -167,10 +197,11 @@ export function useLiveMap(ref: ArticleRef, lensId: LensId, options: LensOptions
       if (redirectsQ.isError) void redirectsQ.refetch();
       if (viewsQ.isError) void viewsQ.refetch();
       if (kindsQ.isError) void kindsQ.refetch();
+      if (hereQ.isError) void hereQ.refetch();
     },
   };
   if (article) result.article = article;
-  const error = articleQ.error ?? redirectsQ.error ?? viewsQ.error ?? kindsQ.error;
+  const error = articleQ.error ?? redirectsQ.error ?? viewsQ.error ?? kindsQ.error ?? hereQ.error;
   if (error) result.error = error;
   return result;
 }

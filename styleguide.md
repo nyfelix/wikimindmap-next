@@ -77,6 +77,8 @@ Whether a reader has seen the labels is remembered per lens in `localStorage`. I
 | **Leaf** | Direction symbol (§5), then label in the label face, 14.5 px. Bold when a map for it is already cached. | Click: preview card |
 | **Recenter ⊕** | 18 px circle after the label, `--accent-soft` fill, `--accent` ring and cross. Filled `--accent` on hover. | Click: recenter |
 | **More** | `+N more` in muted text | Shows all links of that one group; the others keep the density. The group then ends with "Show fewer". Kept in the URL (`more=`). |
+| **Zone label** (Links in / out) | `LINKS HERE · 1,957+` in `--mono` capitals, `--muted`, after the fold toggle, above its side | The fold toggle folds the side. Folded: `+N links` after the label. Empty: `none linked`. |
+| **Pill** (both ways) | The band above the center: the leaf's symbol, label and ⊕ inside a `--paper` pill with a 2 px group-color outline, in centered rows | Like a leaf. One double arrow joins the band to the center; each column leaf has its own arrow, toward the center for links here, away from it for links out. |
 | **Red link** (missing article) | Label in `--muted`; a dashed 13 px ring instead of a direction symbol; no ⊕ | Click: a card saying the article doesn't exist yet on Wikipedia |
 
 **Hierarchy rule:** in **every lens**, every node that has children can be folded. That covers chapters, subchapters, kinds branches and metro lines with stations. Folding works with mouse and keyboard, the state is kept in the URL (`fold=`), and the layout re-flows smoothly.

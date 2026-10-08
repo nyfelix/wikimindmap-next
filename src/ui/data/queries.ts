@@ -11,9 +11,10 @@ import { loadSiteinfo } from "../../sources/siteinfo.ts";
 import { loadSummary } from "../../sources/summary.ts";
 import { langlink, loadWikipedias, type Wikipedia } from "../../sources/languages.ts";
 import { loadPageviews } from "../../sources/pageviews.ts";
+import { CANDIDATES, loadLinksHere } from "../../sources/linksHere.ts";
 import { fetchWikidata, kindsFrom } from "../../sources/wikidata.ts";
 import { KIND_MAP } from "../../lenses/kindMap.ts";
-import type { KindInfo } from "../../core/types.ts";
+import type { KindInfo, LinksHere } from "../../core/types.ts";
 import { persisters, queryClient, WEEK } from "./cache.ts";
 
 export const keys = {
@@ -26,6 +27,7 @@ export const keys = {
   wikipedias: () => ["wikipedias"] as const,
   pageviews: (lang: Lang, title: Title) => ["pageviews", lang, title] as const,
   kinds: (lang: Lang, title: Title) => ["kinds", lang, title] as const,
+  linksHere: (lang: Lang, title: Title) => ["linksHere", lang, title] as const,
   langlink: (lang: Lang, title: Title, target: Lang) => ["langlink", lang, title, target] as const,
 };
 
@@ -131,4 +133,24 @@ export const kindsQuery = (ref: ArticleRef, titles: Title[]) =>
     staleTime: WEEK,
     gcTime: WEEK,
     persister: persisters.week.persisterFn,
+  });
+
+export interface LinksHereData extends LinksHere {
+  /** Page views of the longest linking articles, as [title, views] pairs. */
+  views: [Title, number][];
+}
+
+/**
+ * The articles that link here (TS-15), and the page views of the CANDIDATES longest of them:
+ * views for all 2,000 would take 100+ requests (owner decision in M6).
+ */
+export const linksHereQuery = (ref: ArticleRef) =>
+  queryOptions<LinksHereData>({
+    queryKey: keys.linksHere(ref.lang, ref.title),
+    queryFn: async () => {
+      const here = await loadLinksHere(ref.lang, ref.title);
+      const views = await loadPageviews(ref.lang, here.titles.slice(0, CANDIDATES));
+      return { ...here, views: [...views] };
+    },
+    persister: persisters.day.persisterFn,
   });

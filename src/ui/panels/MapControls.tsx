@@ -24,7 +24,7 @@ export function MapControls(props: Props) {
           max={DENSITY.max}
           value={props.density}
           onChange={(e) => props.onDensity(Number(e.target.value))}
-          aria-label="Links per chapter"
+          aria-label="Links per branch"
         />
         <output className={styles.output}>{props.density}</output>
       </label>

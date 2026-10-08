@@ -90,7 +90,13 @@ export function PreviewCard({ lang, node, anchor, onClose, onRecenter }: Props) 
       <div className={`${cardStyles.head} ${thumb ? cardStyles.withThumb : ""}`}>
         <div className={cardStyles.head} style={{ padding: 0 }}>
           <span className={panel.caps}>
-            {isCenter ? "Center article" : chapter ? `In ${chapter}` : "Linked article"}
+            {isCenter
+              ? "Center article"
+              : chapter
+                ? `In ${chapter}`
+                : typeof node.meta?.zone === "string"
+                  ? node.meta.zone
+                  : "Linked article"}
           </span>
           <h3 className={cardStyles.title}>{title}</h3>
           {summary.data?.description && (

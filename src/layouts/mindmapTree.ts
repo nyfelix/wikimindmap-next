@@ -19,21 +19,18 @@ import type {
   PositionedNode,
 } from "../core/types.ts";
 import {
-  CAPSULE_HALF,
+  boundsOf,
   CENTER,
-  COUNT_DX,
   estimateText,
   FOLD_R,
-  GLYPH_R,
+  glyphHalf,
   GROUP_LABEL,
-  LABEL_GAP,
   MAX_CHARS,
-  RECENTER_GAP,
-  RECENTER_R,
   shorten,
-  textBox,
   type TextStyle,
 } from "./geometry.ts";
+
+export { foldedLabel, glyphHalf, nodeBoxes, type Box } from "./geometry.ts";
 
 /** Distance between two leaf rows; rows of different branches get a little more air. */
 export const ROW = 30;
@@ -218,91 +215,3 @@ function curve(x0: number, y0: number, x1: number, y1: number): string {
 }
 
 const f = (n: number) => String(Math.round(n * 10) / 10);
-
-/** The text next to a folded group, or an empty fixed branch. */
-export function foldedLabel(node: MapNode): string {
-  if (node.empty) return "none linked";
-  const n = node.count ?? 0;
-  return `+${n} ${n === 1 ? "link" : "links"}`;
-}
-
-export function glyphHalf(node: MapNode): number {
-  return node.direction === "both" ? CAPSULE_HALF : GLYPH_R;
-}
-
-export interface Box {
-  x0: number;
-  y0: number;
-  x1: number;
-  y1: number;
-}
-
-const span = (a: number, b: number) => [Math.min(a, b), Math.max(a, b)] as const;
-
-/** Where the text and symbols of a node are drawn: for the viewBox and the overlap test. */
-export function nodeBoxes(p: PositionedNode): Box[] {
-  const { node, x, y, side } = p;
-  const boxes: Box[] = [];
-  const add = (a: number, b: number, top: number, bottom: number) => {
-    const [x0, x1] = span(a, b);
-    boxes.push({ x0, y0: top, x1, y1: bottom });
-  };
-  switch (node.kind) {
-    case "center": {
-      const half = p.textWidth / 2 + CENTER.padding;
-      add(-half, half, y - CENTER.height / 2, y + CENTER.height / 2);
-      break;
-    }
-    case "group":
-    case "subgroup": {
-      const style = p.depth === 1 ? "group" : "subgroup";
-      const box = textBox(style);
-      const end = x - side * GROUP_LABEL.dx;
-      add(
-        end,
-        end - side * p.textWidth,
-        y - GROUP_LABEL.dy - box.above,
-        y - GROUP_LABEL.dy + box.below,
-      );
-      add(x - FOLD_R, x + FOLD_R, y - FOLD_R, y + FOLD_R);
-      if (node.folded || node.empty) {
-        const count = textBox("count");
-        const start = x + side * COUNT_DX;
-        const width = estimateText(foldedLabel(node), "count");
-        add(start, start + side * width, y - count.above + 4.5, y + count.below + 4.5);
-      }
-      break;
-    }
-    case "leaf": {
-      const box = textBox("leaf");
-      const half = glyphHalf(node);
-      let end = x + side * (half + LABEL_GAP + p.textWidth);
-      if (!node.redLink) end += side * (RECENTER_GAP + RECENTER_R);
-      add(x - side * half, end, y + 5 - box.above, y + 5 + box.below);
-      break;
-    }
-    case "more": {
-      const box = textBox("count");
-      add(x + side * 2, x + side * (2 + p.textWidth), y + 4.5 - box.above, y + 4.5 + box.below);
-      break;
-    }
-  }
-  return boxes;
-}
-
-function boundsOf(nodes: PositionedNode[], centerWidth: number): PositionedMap["viewBox"] {
-  let x0 = -centerWidth / 2;
-  let x1 = centerWidth / 2;
-  let y0 = -CENTER.height / 2;
-  let y1 = CENTER.height / 2;
-  for (const p of nodes) {
-    for (const b of nodeBoxes(p)) {
-      x0 = Math.min(x0, b.x0);
-      x1 = Math.max(x1, b.x1);
-      y0 = Math.min(y0, b.y0);
-      y1 = Math.max(y1, b.y1);
-    }
-  }
-  const pad = 24;
-  return { x: x0 - pad, y: y0 - pad, width: x1 - x0 + 2 * pad, height: y1 - y0 + 2 * pad };
-}

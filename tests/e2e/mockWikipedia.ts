@@ -97,23 +97,34 @@ function wikidata() {
   return wikidataCache;
 }
 
-/** Title → 30-day views per language, from every recorded pageviews.json. */
+interface PageviewsFile {
+  responses: {
+    query?: { pages?: { title: string; pageviews?: Record<string, number | null> }[] };
+  }[];
+}
+
+/**
+ * Title → 30-day views per language, from every recorded pageviews.json, and the views of the
+ * longest articles that link here (linkshere.json, M6).
+ */
 function pageviewsOf(lang: string): Map<string, number> {
   const views = new Map<string, number>();
-  for (const title of titlesOf(lang)) {
-    const path = join(dirOf(lang, title), "pageviews.json");
-    if (!existsSync(path)) continue;
-    const file = json(path) as {
-      responses: {
-        query?: { pages?: { title: string; pageviews?: Record<string, number | null> }[] };
-      }[];
-    };
+  const add = (file: PageviewsFile) => {
+    // One title's views are split over the responses that follow pvipcontinue.
+    const sums = new Map<string, number>();
     for (const r of file.responses)
       for (const page of r.query?.pages ?? []) {
         if (!page.pageviews) continue;
         const sum = Object.values(page.pageviews).reduce<number>((a, v) => a + (v ?? 0), 0);
-        views.set(page.title, (views.get(page.title) ?? 0) + sum);
+        sums.set(page.title, (sums.get(page.title) ?? 0) + sum);
       }
+    for (const [title, sum] of sums) views.set(title, sum);
+  };
+  for (const title of titlesOf(lang)) {
+    const path = join(dirOf(lang, title), "pageviews.json");
+    if (existsSync(path)) add(json(path) as PageviewsFile);
+    const here = join(dirOf(lang, title), "linkshere.json");
+    if (existsSync(here)) add((json(here) as { pageviews: PageviewsFile }).pageviews);
   }
   return views;
 }
@@ -229,6 +240,19 @@ async function handle(route: Route, log: MockLog, options: MockOptions) {
         }),
       },
     });
+  }
+
+  // Incoming links (M6): the recorded responses in order, following gblcontinue.
+  if (p.get("generator") === "backlinks") {
+    const path = join(dirOf(lang, p.get("gbltitle") ?? ""), "linkshere.json");
+    const responses = existsSync(path)
+      ? (json(path) as { responses: { continue?: { gblcontinue?: string } }[] }).responses
+      : [];
+    const from = p.get("gblcontinue");
+    const index = from
+      ? responses.findIndex((_, i) => responses[i - 1]?.continue?.gblcontinue === from)
+      : 0;
+    return reply(responses[index] ?? { query: { pages: [] } });
   }
 
   if (p.get("prop") === "pageprops") {

@@ -141,6 +141,24 @@
   fill: var(--muted);
 }
 
+/* Zone labels (bipolar): tracked mono capitals, like the other small labels (styleguide.md §8). */
+.zone {
+  fill: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.pill {
+  fill: var(--paper);
+  stroke-width: 2;
+}
+
 /* Page views: the group color at 25 % opacity (styleguide.md §5). */
 .weight {
   opacity: 0.25;

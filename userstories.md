@@ -76,14 +76,6 @@ Preview: `concepts/lens-kinds.html`
 
 Preview: `concepts/lens-links.html`
 
-### US-15 See where a topic comes from and leads to · M
-*As a student, I want to see which articles point to this one and which it points to, so I understand its context.*
-- [ ] `layouts/bipolar.ts`: incoming links on the left, outgoing on the right, both-way links as pills in a band on top, with arrows showing direction
-- [ ] Each side is ranked by page views and has its own density
-- [ ] Totals are shown per side ("Links here · 2,000+")
-- [ ] Leaves show direction symbols, including *in* (`styleguide.md` §5). Each side folds.
-- [ ] Explanation copy (callouts and drawer) for this lens
-
 ---
 
 ## M7 – Metro lens
@@ -439,3 +431,13 @@ A design decision made together with the owner, before any map is rendered.
 - [x] Links coming only from navigation boxes are excluded where they can be detected (optional, noted if not feasible)
 
 > Note: It uses `generator=backlinks` with `gblredirect=1` and `prop=info`: pages linking through a redirect ("Mind-map") count too, redirect pages are dropped and duplicates merged, and each page's length comes free. Page views for 2,000 titles would take 100+ requests and got HTTP 429 in the spike, so the list is ordered longest first and only the 100 longest get page views (owner decision). Navigation-box-only links aren't excluded: telling them apart would mean loading every linking page; not feasible. Fixtures: `npm run fixtures -- --linkshere-only` (only the fields the parser reads are kept).
+
+### US-15 See where a topic comes from and leads to · M · M6
+*As a student, I want to see which articles point to this one and which it points to, so I understand its context.*
+- [x] `layouts/bipolar.ts`: incoming links on the left, outgoing on the right, both-way links as pills in a band on top, with arrows showing direction
+- [x] Each side is ranked by page views and has its own density
+- [x] Totals are shown per side ("Links here · 2,000+")
+- [x] Leaves show direction symbols, including *in* (`styleguide.md` §5). Each side folds.
+- [x] Explanation copy (callouts and drawer) for this lens
+
+> Note: Density counts per side (default 6, as in the preview). Links out are body and hatnote links without red links, as in Kinds. Links here leave out anything the article links to anywhere (infoboxes too), so a side only holds links in its direction. "Links here" counts the incoming-only links, with "+" when the list is capped ("1,507+" for Albert Einstein). Ranking on that side follows TS-15: the 100 longest linking articles have page views, so "+N more" shows at most 100. A capped list can't tell both ways from out: the loader then checks every link out that isn't on it (links back, TS-16) before building the map; if that check fails, those leaves stay *pending*. Arrow keys: up from the center goes into the band, left and right move along it. `nodeBoxes` moved to `layouts/geometry.ts`, shared by both layouts.
