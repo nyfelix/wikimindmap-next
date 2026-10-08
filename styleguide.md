@@ -35,7 +35,7 @@ How WikiMindMap looks and behaves on screen. `architecture.md` says how it's bui
 | Top left | Logo, language, search | Clicking the logo opens a small menu: About, How lenses work, GitHub. The language picker `EN ▾` sits in the search panel, in mono capitals. The search field expands with suggestions while typing. `/` focuses it. |
 | Top right | Lens switch, `?` (label the map), `i` (how this map is built), `≡` (outline view, `o`) | Segmented control. The active lens is raised. Lenses that aren't built yet are shown with a small `SOON` in mono capitals, in `--muted`. They can't be selected: hover shows a one-line description, and a click opens the help page at that lens. |
 | Bottom left | Trail | Chapter-style breadcrumb. Clicking a step goes back to it. |
-| Bottom right | Map controls: density, See also, zoom | Only the controls the active lens uses. No symbol legend here: it looked like filters (owner); the symbols are explained by the map labels (`?`) and the drawer. |
+| Bottom right | Map controls: density, See also, zoom | Only the controls the active lens uses. No symbol legend here: it looked like filters (owner); the symbols are explained by the "Link direction" map label (`?`) and the drawer. |
 | Under bottom right | Attribution | `CONTENT FROM WIKIPEDIA · CC BY-SA` in mono capitals, `--muted`, linking to the article. Always visible. |
 | Right drawer | "How this map is built" (`i`) or the outline (`≡`, `o`) | 340–400 px, floats above the map, closed by default. Both open on the right, below their buttons, and replace each other. The outline is the same map as an indented list, for screen readers and for scanning a large map as text. |
 | Preview card | Next to the node that was clicked | 300 px. Stays inside the window. Closes with `Esc` or a click on the canvas. A thumbnail, if there is one, sits top right at 64 × 64 px with an 8 px radius. |
@@ -48,7 +48,7 @@ The explanations from the concept previews stay in the product, in three layers.
 
 | Layer | Trigger | Content |
 |---|---|---|
-| **Map labels** (callouts) | Shown automatically the first time a reader opens a lens. `?` toggles them afterwards. | 4–5 dark callouts pinned to real elements of the current map: the article, a chapter, a subchapter, a direction symbol, ⊕. Each points at its element with a thin line ending in a ring around it (a circle, or a rounded outline around the center pill), so nothing covers the element. A bar at the top says "Labels explain the map. [Got it]". A symbol key in the same style, bottom right, explains all three link directions (out, both ways, in). |
+| **Map labels** (callouts) | Shown automatically the first time a reader opens a lens. `?` toggles them afterwards. | 4–5 dark callouts pinned to real elements of the current map: the article, a chapter, a subchapter, a direction symbol, ⊕. Each points at its element with a thin line ending in a ring around it (a circle, or a rounded outline around the center pill), so nothing covers the element. A bar at the top says "Labels explain the map. [Got it]". The "Link direction" label explains all three directions (out, both ways, in), each with its symbol. Labels never overlap each other or cover the element they explain, and avoid the map's text where there is room: each tries positions all around its element and takes the one that covers least. |
 | **How this map is built** (drawer) | `i` | Per lens: the construction steps as a numbered list (a real sequence), the symbol legend, what is hidden and why, and the source line (article URL, revision). A button to show the map labels. |
 | **Preview card** | Click on a node | The chapter the link sits in, the direction in words ("Links go both ways"), and the summary. |
 
@@ -59,7 +59,7 @@ Callout copy is written per lens, and pinned to the element it describes. For Ch
 | Center | The article | The Wikipedia article you're exploring. Tap it for its summary. |
 | Chapter | A chapter: {name} | Each chapter heading becomes a branch. Tap − to fold it. |
 | Subchapter | A subchapter | Deeper levels get thinner branches and fold on their own. |
-| Direction symbol | Link direction | → this article links there. ⇄ that article links back too. |
+| Direction symbol | Link direction | The symbol before each leaf shows which way its link goes: then one row per symbol: **Out:** this article links there · **Both ways:** that article links back too · **In:** that article links here (Links in / out lens) |
 | ⊕ | Recenter | Tap ⊕ to make this article the new center of the map. |
 
 Whether a reader has seen the labels is remembered per lens in `localStorage`. If storage isn't available, the labels are shown again, which is harmless.

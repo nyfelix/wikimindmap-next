@@ -1,24 +1,37 @@
-import { useLayoutEffect, useState, type RefObject } from "react";
+import { useLayoutEffect, useRef, useState, type RefObject } from "react";
 import type { CalloutTarget, LensExplanation } from "../../core/types.ts";
 import {
-  CALLOUT,
+  labelPoint,
   placeCallouts,
   ringEdge,
   ringOf,
   type Anchor,
   type PlacedCallout,
+  type Rect,
   type Ring,
 } from "./callouts.ts";
 import styles from "./Callouts.module.css";
 import panel from "../panels/Panel.module.css";
 import { DirectionIcon } from "./DirectionGlyph.tsx";
 
-/** The three link directions, explained while the labels are on (owner: all three). */
+/** The three link directions: the "Link direction" label explains all of them (owner). */
 const SYMBOLS = [
-  ["out", "Out", "This article links there; that one doesn’t link back."],
-  ["both", "Both ways", "The two articles link each other."],
-  ["in", "In", "That article links here, but this one doesn’t link to it (Links in / out lens)."],
+  ["out", "Out", "this article links there"],
+  ["both", "Both ways", "that article links back too"],
+  ["in", "In", "that article links here (Links in / out lens)"],
 ] as const;
+
+/** The map's text, symbols and buttons: labels avoid covering them. */
+const OBSTACLES =
+  '[data-node] text, [data-glyph], [data-node="center"] rect, [aria-label^="Make"], [aria-expanded]';
+
+/** A label's height from its text (220 px wide, ~34 characters per line). */
+function heightOf(key: string, title: string, text: string): number {
+  const lines = Math.ceil(text.length / 34) + Math.ceil(title.length / 30);
+  return 22 + lines * 18 + (key === "leafDirection" ? SYMBOLS.length * 21 : 0);
+}
+
+const rectOf = (r: DOMRect): Rect => ({ x0: r.left, y0: r.top, x1: r.right, y1: r.bottom });
 
 interface Props {
   svg: RefObject<SVGSVGElement | null>;
@@ -65,6 +78,9 @@ interface Item extends PlacedCallout {
 /** Map labels (US-18): dark callouts pinned to real elements of the map. */
 export function Callouts({ svg, explain, version, onDone }: Props) {
   const [items, setItems] = useState<Item[]>([]);
+  // Real label heights, measured after the first placement; the estimate is only a start.
+  const [measured, setMeasured] = useState<Partial<Record<CalloutTarget, number>>>({});
+  const boxes = useRef(new Map<CalloutTarget, HTMLDivElement>());
   const [size, setSize] = useState({ w: window.innerWidth, h: window.innerHeight });
 
   useLayoutEffect(() => {
@@ -77,26 +93,36 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
     const root = svg.current;
     if (!root) return;
     const anchors: (Anchor & { name?: string; ring: Ring })[] = [];
+    const obstacles = [...root.querySelectorAll(OBSTACLES)]
+      .filter((e) => !e.closest('[aria-hidden="true"]'))
+      .map((e) => rectOf(e.getBoundingClientRect()));
+    // Elements away from the window's edges have room around them for a label.
+    const inside = (e: Element) => {
+      const r = e.getBoundingClientRect();
+      return r.left > 260 && r.right < size.w - 260 && r.top > 160 && r.bottom < size.h - 200;
+    };
     for (const { key, selectors } of TARGETS) {
       if (!explain.callouts[key]) continue;
-      for (const selector of selectors) {
-        const el = [...root.querySelectorAll(selector)].find(
-          (e) => !e.closest('[aria-hidden="true"]'),
-        );
-        if (!el) continue;
-        const r = el.getBoundingClientRect();
-        const name = el.closest("[data-label]")?.getAttribute("data-label") ?? undefined;
-        anchors.push({
-          key,
-          x: r.left + r.width / 2,
-          y: r.top + r.height / 2,
-          ring: ringOf(r.width, r.height),
-          ...(name ? { name } : {}),
-        });
-        break;
-      }
+      const candidates = selectors.map((selector) =>
+        [...root.querySelectorAll(selector)].filter((e) => !e.closest('[aria-hidden="true"]')),
+      );
+      // The first preferred element with room around it, else the first one at all.
+      const el =
+        candidates.map((list) => list.find(inside)).find((e) => e !== undefined) ??
+        candidates.flat()[0];
+      if (!el) continue;
+      const r = el.getBoundingClientRect();
+      const name = el.closest("[data-label]")?.getAttribute("data-label") ?? undefined;
+      const copy = explain.callouts[key] ?? { title: "", text: "" };
+      anchors.push({
+        key,
+        target: rectOf(r),
+        height: measured[key] ?? heightOf(key, copy.title.replace("{name}", name ?? ""), copy.text),
+        ring: ringOf(r.width, r.height),
+        ...(name ? { name } : {}),
+      });
     }
-    const placed = placeCallouts(anchors, size.w, size.h);
+    const placed = placeCallouts(anchors, obstacles, size.w, size.h);
     // Measuring the rendered map and then placing the labels is what layout effects are for.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setItems(
@@ -108,7 +134,21 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
         return { ...p, ring, title: copy.title.replace("{name}", name), text: copy.text };
       }),
     );
-  }, [svg, explain, version, size]);
+  }, [svg, explain, version, size, measured]);
+
+  // Place again once with the measured heights, if the estimate was off.
+  useLayoutEffect(() => {
+    const next: Partial<Record<CalloutTarget, number>> = {};
+    let changed = false;
+    for (const item of items) {
+      const height = boxes.current.get(item.key)?.offsetHeight;
+      if (height === undefined) continue;
+      next[item.key] = height;
+      if (Math.abs(height - item.height) > 2) changed = true;
+    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- measuring the labels, then placing them
+    if (changed) setMeasured((m) => ({ ...m, ...next }));
+  }, [items]);
 
   return (
     <>
@@ -121,8 +161,7 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
       <div className={styles.layer} aria-hidden="true">
         <svg className={styles.lines} width={size.w} height={size.h}>
           {items.map((c) => {
-            const ax = Math.max(c.left, Math.min(c.left + CALLOUT.width, c.x));
-            const ay = c.y < c.top ? c.top : c.top + CALLOUT.height;
+            const { x: ax, y: ay } = labelPoint(c);
             // A ring around the element, so nothing covers it; the line ends at the ring.
             const edge = ringEdge(c.ring, c.x, c.y, ax, ay);
             return (
@@ -145,20 +184,29 @@ export function Callouts({ svg, explain, version, onDone }: Props) {
           })}
         </svg>
         {items.map((c) => (
-          <div key={c.key} className={styles.callout} style={{ left: c.left, top: c.top }}>
+          <div
+            key={c.key}
+            ref={(el) => {
+              if (el) boxes.current.set(c.key, el);
+              else boxes.current.delete(c.key);
+            }}
+            className={styles.callout}
+            style={{ left: c.left, top: c.top, minHeight: c.height }}
+          >
             <b>{c.title}</b>
             <span>{c.text}</span>
-          </div>
-        ))}
-      </div>
-      <div className={styles.symbols} aria-hidden="true">
-        <b>Link directions</b>
-        {SYMBOLS.map(([direction, name, text]) => (
-          <div key={direction} className={styles.symbol}>
-            <DirectionIcon direction={direction} />
-            <span>
-              <b>{name}:</b> {text}
-            </span>
+            {c.key === "leafDirection" && (
+              <span className={styles.symbols}>
+                {SYMBOLS.map(([direction, name, text]) => (
+                  <span key={direction} className={styles.symbol}>
+                    <DirectionIcon direction={direction} />
+                    <span>
+                      <b>{name}:</b> {text}
+                    </span>
+                  </span>
+                ))}
+              </span>
+            )}
           </div>
         ))}
       </div>

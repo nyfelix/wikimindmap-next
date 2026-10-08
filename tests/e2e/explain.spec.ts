@@ -52,18 +52,42 @@ test.describe("explanations and pages", () => {
   });
 });
 
-test("the labels explain all three link directions; the controls have no legend", async ({
+test("the Link direction label explains all three directions; no separate legend", async ({
   page,
 }) => {
   await mockWikipedia(page);
   await page.goto("/en/Mind_map");
-  await expect(page.getByText("Link directions", { exact: true })).toBeVisible();
+  await expect(page.getByText("Link direction", { exact: true })).toBeVisible();
   for (const name of ["Out:", "Both ways:", "In:"]) {
     await expect(page.getByText(name, { exact: true })).toBeVisible();
   }
-  await page.getByRole("button", { name: "Got it" }).click();
   await expect(page.getByText("Link directions", { exact: true })).toHaveCount(0);
+  await page.getByRole("button", { name: "Got it" }).click();
+  await expect(page.getByText("Out:", { exact: true })).toHaveCount(0);
   await expect(
     page.getByRole("group", { name: "Map controls" }).getByText("both ways"),
   ).toHaveCount(0);
+});
+
+test("map labels don't overlap each other", async ({ page }) => {
+  await mockWikipedia(page);
+  await page.goto("/en/Mind_map");
+  await expect(page.getByText("Link direction", { exact: true })).toBeVisible();
+  await page.waitForTimeout(500);
+  const boxes = await page
+    .locator('[class*="callout"]')
+    .evaluateAll((els) =>
+      els
+        .map((e) => e.getBoundingClientRect())
+        .map((r) => ({ x0: r.left, y0: r.top, x1: r.right, y1: r.bottom })),
+    );
+  expect(boxes.length).toBeGreaterThanOrEqual(4);
+  for (let i = 0; i < boxes.length; i++)
+    for (let j = i + 1; j < boxes.length; j++) {
+      const a = boxes[i]!;
+      const b = boxes[j]!;
+      expect(a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1, `labels ${i} and ${j}`).toBe(
+        false,
+      );
+    }
 });

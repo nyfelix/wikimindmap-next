@@ -62,7 +62,7 @@ export const kinds: Lens = {
       },
       leafDirection: {
         title: "Link direction",
-        text: "→ this article links there. ⇄ that article links back too.",
+        text: "The symbol before each leaf shows which way its link goes:",
       },
       recenter: {
         title: "Recenter",
